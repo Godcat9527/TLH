@@ -1,0 +1,67 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+ROCK:
+  base:
+    material: COBBLESTONE
+    name: '&f 뀍 磨刀石'
+    tier: C
+    ability:
+      ability1: {}
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-advanced-enchants: true
+    lore:
+    - '&f 뀁 <#4ACFE3>● 合成需要'
+    - '&f 뀁 附魔等级>3'
+    - '&f 뀁 '
+    - '&f 뀁 <#FF00FF>● 效果'
+    - '&f 뀁 修复装备'
+    revision-id: 6
+    inedible: true
+    repair-percent: 20.0
+GEM_REMOVER:
+  base:
+    material: DIAMOND
+    disable-interaction: true
+    tier: C
+    random-unsocket: 1.0
+    inedible: true
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-advanced-enchants: true
+    name: '&f 뀍 &f宝石拆卸器'
+    lore:
+    - '&f 뀁 可随机取下物品上的'
+    - '&f 뀁 一个宝石并重置其属性'
+    disable-crafting: true
+UP_GEM_1:
+  base:
+    material: PAPER
+    name: <#DA70D6>普通升级石
+    tier: B
+    custom-model-data: 1127.0
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+    - ''
+    - <#4ACFE3>● 合成需要
+    - 附魔等级>5
+    - ''
+    - <#FF00FF>● 效果
+    - 提升装备等级
+    - ''
+    - <#EE0000>● 成功率
+    - 65%
+    upgrade:
+      reference: '321'
+    inedible: true
+    lore-format: default

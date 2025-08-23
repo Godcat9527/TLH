@@ -1,0 +1,39 @@
+info:
+  namespace: nogs_menagerie
+items:
+  nm_figure_drowned_unboxed:
+    display_name: '&f溺尸模型'
+    lore:
+    - '&8Shift-left click while holding to box up.'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: figures/nm_figure_drowned_unboxed
+    behaviours:
+      furniture:
+        entity: ITEM_FRAME
+        solid: false
+        small: false
+        fixed_rotation: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        sound:
+          place:
+            name: block.wooden_button.click_on
+          break:
+            name: block.wooden_button.click_off
+    events:
+      interact_mainhand.left_shift:
+          give_item:
+            item: nm_figure_drowned
+            amount: 1
+          decrement_amount:
+            amount: 1
+          play_sound_1:
+            name: block.wooden_button.click_on
+            delay: 0
+            volume: 1.4
+            pitch: 1.2
+#da12edf902b7a59ec240c17c9c84e191

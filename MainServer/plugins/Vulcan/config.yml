@@ -1,0 +1,4098 @@
+prefix: '&4&lTAC &8»'
+alerts:
+  # This is the chat format that will be followed when a player fails a check.
+  # Valid placeholders are %player% (player name), %max-vl% (max violations), %check% (name of check), %description% (check description),
+  # %version% (player's client version), %dev% (* for whether or not the check is experimental), %vl% (violation level),
+  # %ping% (the player's ping), %tps% (the server's TPS), and %type% (character denoting the type for the check, A, B, C, etc),
+  # %severity% for changing colors depending on the violations (options found in severity option below), %x% (player's X-coordinate),
+  # %y% (player's Y-coordinate), %z% (player's Z-coordinate), %world% (player's world), %complex-type% which will show a more
+  # advanced name for the check, such as Speed (Ground) instead of Speed (Type B)
+  format: '%prefix% &f%player% &7检测到 &f%check% %dev%&7(&f类型 %type%&7)%dev% &7[&4%vl%&7/&4%max-vl%&7]'
+  # This is the hover text that will be displayed when you hover over the alert message in chat.
+  # All of the same placeholders as the ones for the format are valid.
+  hover-message:
+  - '&7Ping: &c%ping% &8| &7TPS: &c%tps% &8| &7版本: &c%version% &8| &7客户端: &c%client-brand%'
+  - ''
+  - '&7描述:'
+  - '&7%description%'
+  - ''
+  - '&7信息:'
+  - '&7%info%'
+  - ''
+  - '&7点击传送到 &b%player%&7.'
+  # This is the command that will be executed when you click the alert message. Unfortunately we are limited to one
+  # command per ChatComponent so we use a little magic and make our own command that is able to execute a list of any commands.
+  # Valid placeholders
+  click-commands:
+  - /vulcan clickalert %player%
+  # The commands that will be run when you use /vulcan clickalert %player% (must be a player parameter)
+  click-alert-command-commands:
+  - tp %player%
+  # The message that will be sent when you toggle on alerts. Valid placeholder are %prefix%.
+  toggled-on-message: '%prefix% &7TAC 警报 &a启用&7!'
+  # The message that will be sent when you toggle off alerts. Valid placeholder are %prefix%.
+  toggled-off-message: '%prefix% &7TAC 警报 &c禁用&7!'
+  # Whether or not alerts will be printed to the console.
+  print-to-console: true
+  # The format for printing alerts to the console
+  console-format: '[TAC] %player% 检测到 %check% %dev%(Type %type%)%dev% (%vl%/%max-vl%)'
+  # This is a fully customizable list of commands that will be executed each time a player flags a check, just in case
+  # you want to do anything special when they flag without needing to use the API. All valid placeholders are the same
+  # as listed above once again.
+  custom-commands: []
+  # You can use this section to color code your alerts or add chances to them depending on the violation level.
+  severity:
+    violations:
+      '2': 4 # Values less than this number will be the color '1' below. Values greater than or equal to this number and less than '3' will be the color 2
+      '3': 8 # Values greater than or equal to this number and higher than '2' will be the color '3' below
+      '4': 12 # Values greater than or equal to this number and higher than '3' will be the color '4' below
+      '5': 16 # Values greater than or equal to this number and higher than '4' will be the color '5' below
+      '6': 16 # Values greater than or equal to this number and higher than '5' will be the color '6' below
+      '7': 16 # Values greater than or equal to this number and higher than '6' will be the color '7' below
+      '8': 16 # Values greater than or equal to this number and higher than '7' will be the color '8' below
+      '9': 16 # Values greater than or equal to this number and higher than '8' will be the color '9' below
+      '10': 16 # Values greater than or equal to this number and higher than '9' will be the color '10' below
+    colors: # This also supports hex color codes (in 1.16!+)
+      '1': '&a' # The color that this severity should be, whatever is less than '2' in the section above
+      '2': '&e' # The color that this severity should be, whatever is less than '3' and greater than or equal to '2' in the section above
+      '3': '&6' # The color that this severity should be, whatever is less than '4' and greater than or equal to '3' in the section above
+      '4': '&c' # The color that this severity should be, whatever is less than '5' and greater than or equal to '4' in the section above
+      '5': '&4' # The color that this severity should be, whatever is less than '6' and greater than or equal to '5' in the section above
+      '6': '&4' # The color that this severity should be, whatever is less than '7' and greater than or equal to '6' in the section above
+      '7': '&4' # The color that this severity should be, whatever is less than '8' and greater than or equal to '7' in the section above
+      '8': '&4' # The color that this severity should be, whatever is less than '9' and greater than or equal to '8' in the section above
+      '9': '&4' # The color that this severity should be, whatever is less than '10' and greater than or equal to '9' in the section above
+      '10': '&4' # The color that this severity should be, whatever is less than '11' and greater than or equal to '10' in the section above
+  # The symbol that will be displayed for the %dev% placeholder to denote experimental checks.
+  experimental-symbol: '*'
+verbose:
+  # Verbose notifications are sent whenever a player increases the buffer on a check. Only really here for developer
+  # purposes as it is very very spammy. All of the same info from above applies here. Not really recommended to be used
+  # as it will just completely spam your chat.
+  format: '%prefix% &f%player% &7verbosed &f%check% &7(&f%type%&7) %dev% &7[&4%percent%%&7]'
+  hover-message:
+  - '&7Ping: &c%ping% &8| &7TPS: &c%tps% &8| &7Version: &c%version%'
+  - ''
+  - '&7Description:'
+  - '&7%description%'
+  - ''
+  - '&7Buffer:'
+  - '&7%buffer%/%max-buffer%'
+  - ''
+  - '&7Click to teleport to &b%player%&7.'
+  click-commands:
+  - /tp %player%
+  toggled-on-message: '%prefix% &7Vulcan 详细模式 &a已启用&7!'
+  toggled-off-message: '%prefix% &7Vulcan 详细模式 &c已禁用&7!'
+log-file:
+  # 是否启用日志文件
+  enabled: false
+  # 当玩家未通过检查时记录的消息。
+  # 有效的占位符有 %player%（玩家名称）、%max-vl%（最大违规数）、%check%（检查名称）、%description%（检查描述），
+  # %version%（玩家客户端版本）、%dev%（检查是否为实验性的*）、%vl%（违规等级），
+  # %ping%（玩家的延迟）、%tps%（服务器的TPS）以及 %type%（表示检查类型的字符，A、B、C等）。
+  alert-message: '%player% 检测到 %check% %dev%(类型 %type%)%dev% [违规等级：%vl%] [延迟：%ping%]
+    [TPS：%tps%] [版本：%version%] [客户端：%client-brand%]'
+  # 当玩家因检查被惩罚时记录的消息。有效的占位符与上述相同。
+  # 如果启用（见下一节），关于惩罚的更多细节也将记录到punishments.txt文件中。
+  punishment-message: '%player% 因 %check% %dev%(类型 %type%)%dev% 被惩罚 [违规等级：%vl%] [延迟：%ping%]
+    [TPS：%tps%] [客户端：%client-brand%]'
+unloaded-chunks:
+  # 是否应该因为玩家发送与未加载区块相等的运动而将其回退
+  setback-enabled: false
+  # 是否应该通知管理员，设置为空字符串 '' 以禁用此消息
+  message: '%prefix% &c%player% &7因为处于未加载的区块而被回退!'
+  # 玩家被回退前的最大刻数
+  max-ticks: 40
+punishment-file:
+  # Whether or not the punishments.txt file is enabled.
+  enabled: true
+violation-reset:
+  # Whether or not violations should reset automatically
+  enabled: true
+  # The interval (in minutes) in which violations should automatically be reset.
+  interval-in-minutes: 8
+  # Whether or not a message will be sent when violations are reset (this is only sent to staff who have /alerts enabled).
+  message-enabled: true
+  # The message that is sent (only to staff with /alerts enabled) when violations are reset.
+  message: '%prefix% &7所有在线玩家的违规行为都已重置！'
+client-brand-alerts:
+  # 是否应该尝试解析玩家的客户端信息 - 关闭此选项将完全不会注册消息通道。
+  resolve: true
+  # 是否启用客户端信息警告。
+  enabled: true
+  # 不会发送警告的客户端品牌列表。这不需要完全匹配，例如 'lunar' 可以匹配 'lunarclient' 等。
+  ignore-alerts-list:
+  - vanilla
+  # 当玩家加入服务器时发送的消息。有效的占位符有 %player%（玩家名称）、%prefix%（插件前缀），
+  # %client-brand%（用户客户端品牌）和 %client-version%（用户客户端版本）。
+  message: '%prefix% &c%player% &7客户端为 &f%client-brand%&7!'
+  # 不允许的客户端品牌列表，当玩家使用这些客户端品牌时将被自动踢出。这里使用字符串比较，所以不需要完全匹配，例如 'forge' 会阻止 Forge，'lunar' 会阻止 lunar 等。
+  blocked-client-brands: []
+  unallowed-client-brand-kick-message: '&c你不能使用 %client-brand% 加入!'
+  # 是否应该将客户端品牌警告发送到控制台
+  console: false
+  # 如果启用上述选项，则应该打印到控制台的消息
+  console-message: '[TAC] %player% 使用了 %client-brand%!'
+  # 是否启用客户端品牌白名单。未包含在下面列表中的客户端品牌将不被允许加入
+  whitelist-enabled: false
+  # 将被白名单允许的客户端品牌。这里使用字符串比较，所以不需要完全匹配，例如 'forge' 会允许 Forge，'lunar' 会允许 lunar 等。
+  whitelisted-client-brands: []
+connection:
+  desync:
+    kick-enabled: true
+    max-ticks: 300
+    kick-message: 内部异常：io.netty.handler.timeout.ReadTimeoutException
+    staff-alert-message: '%prefix% &c%player% &7因与服务器不同步被踢出！&7(&c%ticks% &7刻)'
+    console-message: '[TAC] &c%player% &7因与服务器不同步被踢出！&7(&c%ticks% &7刻)'
+  transaction:
+    kick-enabled: true
+    max-delay: 45000
+    kick-message: 内部异常：io.netty.handler.timeout.ReadTimeoutException
+    staff-alert-message: '%prefix% &c%player% &7因未回复事务数据包被踢出！&7(&c%delay%毫秒&7)'
+    console-message: '[TAC] &c%player% &7因未回复事务数据包被踢出！&7(&c%delay%毫秒&7)'
+  keepalive:
+    kick-enabled: true
+    max-delay: 45000
+    kick-message: 内部异常：io.netty.handler.timeout.ReadTimeoutException
+    staff-alert-message: '%prefix% &c%player% &7因未回复保活数据包被踢出！&7(&c%delay%毫秒&7)'
+    console-message: '[TAC] &c%player% &7因未回复保活数据包被踢出！&7(&c%delay%毫秒&7)'
+  max-ping:
+    kick-enabled: true
+    max-ping: 20000
+    max-ticks: 20
+    kick-message: 内部异常：io.netty.handler.timeout.ReadTimeoutException
+    staff-alert-message: '%prefix% &c%player% &7因延迟过高被踢出！&7(&c%ping%毫秒&7)'
+    console-message: '[TAC] &c%player% &7因延迟过高被踢出！&7(&c%ping%毫秒&7)'
+punishments:
+  # 当玩家受到惩罚时发送的消息（仅发送给启用了 /alerts 的工作人员）
+  message: '%prefix% &c%player% &7因 &f%check% &7(&f类型 %type%&7) &7[&4x%vl%&7] 受到惩罚'
+  # 当玩家受到惩罚时将向整个服务器广播的消息
+  broadcast:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&cVulcan &7检测到 &c%player% &7作弊，已将其从服务器中移除。'
+  - '&7&m---»--*-------------------------------------*--«---'
+judgement-days:
+  # 当有人执行 /jday start 时将向服务器广播的消息
+  started-broadcast:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&cTAC 审判系统 已经开始工作...'
+  - '&7&m---»--*-------------------------------------*--«---'
+  # 当 Judgement Day 结束时将向服务器广播的消息
+  ended-broadcast:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&c判罚已经结束... 有 %amount% 名玩家受到惩罚。'
+  - '&7&m---»--*-------------------------------------*--«---'
+  # 将执行的命令，%player% 表示被添加到 Judgement Day 的玩家（/jday add (名字)）
+  commands:
+  - ban %player% &c[TAC] 你已被审查系统封禁，如有疑问请联系管理员
+  # 当 Judgement Day 中有人受到惩罚时将向服务器发送的广播
+  broadcast:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&c%player% &7被 &c[TAC] 审判系统&7 封禁。'
+  - '&7&m---»--*-------------------------------------*--«---'
+  # 玩家在审判日排队等待的时间间隔
+  cooldown: 1000
+  # 是否应该在指定的间隔自动运行审判日（如果上述选项为真）
+  run-at-interval: false
+  # 如果上述选项为true，它们应该运行的间隔（以刻计，20刻=1秒，默认=36000刻=30分钟）
+  interval: 36000
+freeze:
+  # 当玩家在冻结状态下登出时将执行的自定义命令列表
+  logged-out-while-frozen-commands: []
+ghost-blocks-fix:
+  enabled: true
+  ghost-water-fix: true
+  minimum-tps: 18.5
+  ignore-legacy-via: true
+  buffer:
+    max: 3
+    decay: 0.1
+  setback: true
+  update-blocks: false
+  ticks: 3
+  message-enabled: false
+  message: '&c你走在了一个幽灵方块上。它已经被更新了！'
+  staff-message-enabled: true
+  staff-message: '%prefix% &c%player%''s &7位置因为站在幽灵方块上而被更新了！(%world%, %x%, %y%, %z%)
+    &7[%ticks%]'
+  print-to-console: true
+  console-message: '%player% 位置因为站在幽灵方块上而被更新了！(%world%, %x%, %y%, %z%) &7[%ticks%]'
+messages:
+  no-permission: '&c你没有执行此命令的权限！'
+  cant-execute-from-console: '&c你不能从控制台执行此命令！'
+  ban-command-syntax: '%prefix% &7正确语法: &c/vulcan ban (玩家)&7.'
+  kb-command-syntax: '%prefix% &7正确语法: &c/vulcan knockback (玩家) &8| &c/vulcan kb (玩家)&7.'
+  profile-command-syntax: '%prefix% &7正确语法: &c/vulcan profile (玩家)&7.'
+  jday-command-syntax: '%prefix% &7正确语法: &c/jday add (玩家) &8| &c/jday execute &8|
+    &c/jday list &8| &c/jday remove (玩家)&7.'
+  reload-success: '%prefix% &a成功重新加载 Vulcan!'
+  invalid-target: '%prefix% &c找不到指定的玩家！'
+  kb-test-success: '%prefix% &a成功对 %player% 执行击退测试！'
+  jday-no-pending-bans: '%prefix% &c没有待处理的封禁！'
+  jday-added-to-list: '%prefix% &c%player% &7已成功添加到列表！'
+  reset-command: '%prefix% &7所有在线玩家的违规记录已重置！'
+  no-next-page: '%prefix% &c没有下一页！'
+  no-previous-page: '%prefix% &c没有上一页！'
+  enabled-all-checks: '%prefix% &a启用了所有检查！'
+  disabled-all-checks: '%prefix% &c禁用了所有检查！'
+  enabled-all-punishments: '%prefix% &a启用了所有惩罚！'
+  disabled-all-punishments: '%prefix% &c禁用了所有惩罚！'
+  disabled-check: '%prefix% &c禁用了检查 %check%！'
+  enabled-check: '%prefix% &a启用了检查 %check%！'
+  disabled-punishment: '%prefix% &c为 %check% 禁用了惩罚！'
+  enabled-punishment: '%prefix% &a为 %check% 启用了惩罚！'
+  disabled-hotbar-shuffle: '%prefix% &c为 %check% 禁用了热键栏测试！'
+  enabled-hotbar-shuffle: '%prefix% &a为 %check% 启用了热键栏测试！'
+  disabled-random-rotation: '%prefix% &c为 %check% 禁用了随机旋转！'
+  enabled-random-rotation: '%prefix% &a为 %check% 启用了随机旋转！'
+  disabled-broadcast-punishment: '%prefix% &c为 %check% 禁用了广播惩罚！'
+  enabled-broadcast-punishment: '%prefix% &a为 %check% 启用了广播惩罚！'
+  must-be-an-integer: '&c必须是整数！'
+  must-be-positive: '&c必须是正数！'
+  must-be-number: '&c必须是一个数字！'
+  set-max-buffer: '%prefix% &a为 %check% 设置最大缓冲区到 %value%！'
+  set-hotbar-shuffle-minimum-violations: '%prefix% &a为 %check% 设置洗牌热键栏的最小违规次数到 %value%！'
+  set-hotbar-shuffle-interval: '%prefix% &a为 %check% 设置热键栏洗牌间隔到 %value%！'
+  set-random-rotation-minimum-violations: '%prefix% &a为 %check% 设置随机旋转的最小违规次数到 %value%！'
+  set-random-rotation-interval: '%prefix% &a为 %check% 设置随机旋转间隔到 %value%！'
+  set-alert-interval: '%prefix% &a为 %check% 设置警报间隔到 %value%！'
+  set-buffer-decay: '%prefix% &a为 %check% 设置缓冲区衰减到 %value%！'
+  set-buffer-multiple: '%prefix% &a为 %check% 设置缓冲区倍数到 %value%！'
+  set-max-violations: '%prefix% &a为 %check% 设置最大违规次数到 %value%！'
+  set-minimum-violations-to-alert: '%prefix% &a为 %check% 设置警报的最小违规次数到 %value%！'
+  set-maximum-ping: '%prefix% &a为 %check% 设置最大延迟到 %value%！'
+  set-minimum-tps: '%prefix% &a为 %check% 设置最小 TPS 到 %value%！'
+  removed-punishment-command: '%prefix% &a从检查 %check% 中移除了命令 %command%！'
+  invalid-index-number: '%prefix% &c无效的索引号！'
+  stopped-editing-punishment-commands: '%prefix% &c停止编辑惩罚命令！'
+  added-punishment-command: '%prefix% &a添加了惩罚命令 %command% 到检查 %check%！'
+  enter-punishment-command: '%prefix% &a输入你想要添加的命令！输入 STOP 或 CANCEL 退出！'
+  remove-punishment-command: '%prefix% &c输入你想要移除的命令的索引。输入 STOP 或 CANCEL 退出！'
+  disable-check-command-syntax: '%prefix% &c正确语法: /vulcan disablecheck (检查名称) - 区分大小写。'
+  invalid-check: '%prefix% &c无效的检查名称！示例: AimA, BadPacketsF, AutoClickerJ.'
+  removed-check: '%prefix% &c禁用了检查 %check%！'
+  violations-command-syntax: '%prefix% &c正确语法: /vulcan violations (玩家)'
+  no-logs: '%prefix% &c此玩家没有触发任何日志！'
+  cps-command-syntax: '%prefix% &c正确语法: /vulcan cps (玩家)'
+  connection-command-syntax: '%prefix% &c正确语法: /vulcan connection (玩家)'
+  logs-command-syntax: '%prefix% &c正确语法: /logs (玩家) (页码)'
+  no-logs-file: '%prefix% &c没有日志文件！'
+  logs-command-no-logs: '%prefix% &c没有找到 %player% 的日志！'
+  no-page: '%prefix% &c对于 %player% 没有第 %page% 页！'
+  update-available: '%prefix% &7&cVulcan &7有新版本更新可用！(&cv%new-version%&7)'
+  latest-version: '%prefix% &a你正在运行 Vulcan 的最新版本！'
+  injection-failure: 你加入得太快了。请再试一次！
+  frozen: '&c你被冻结了！请等待工作人员的指示。'
+  logged-out-while-frozen: '%prefix% &c%player% 在冻结状态下登出了！'
+  froze: '%prefix% &7你冻结了 &a%player%&7！'
+  unfroze: '%prefix% &7你解冻了 &c%player%！'
+  freeze-command-syntax: '%prefix% &c正确语法: /vulcan freeze (玩家)'
+  shuffle-command-syntax: '%prefix% &c正确语法: /vulcan shuffle (玩家)'
+  shuffled-hotbar: '%prefix% &a成功为 %player% 洗牌热键栏！'
+  rotate-command-syntax: '%prefix% &c正确语法: /vulcan rotate (玩家)'
+  randomly-rotated: '%prefix% &a成功随机旋转 %player%！'
+  reset-command-syntax: '%prefix% &c正确语法: /vulcan reset (玩家)'
+  violations-reset: '%prefix% &a成功重置了 %player% 的违规记录！'
+  unknown-command: '%prefix% &c未知命令！'
+  unfroze-staff-broadcast: '%prefix% &c%player% &7被 &c%staff%&7 解冻了！'
+  froze-staff-broadcast: '%prefix% &c%player% &7被 &c%staff%&7 冻结了！'
+  removed-from-jday: '%prefix% &a成功从 Judgement Day 中移除 %player%！'
+  jday-remove-syntax: '%prefix% &c正确语法: /jday remove (玩家)'
+  punishlogs-syntax: '%prefix% &c正确语法: /punishlogs (玩家)'
+  sent-test-alert: '%prefix% &a成功执行测试警报！'
+  description-command-syntax: '%prefix% &cProper Syntax: /vulcan description (checkname) '
+commands:
+  # Vulcan 帮助命令消息。
+  help:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&cVulcan 作弊检测 %version% 由 &cfrep (.frap) 开发'
+  - '&r'
+  - '&c/vulcan help &8- &7打开此帮助菜单'
+  - '&c/vulcan profile &8 - &7显示玩家的 Vulcan 档案'
+  - '&c/vulcan ban (玩家) &8- &7通过 Vulcan 封禁玩家'
+  - '&c/vulcan reload &8- &7重新加载所有文件'
+  - '&c/vulcan disablecheck (检查) &8- &7禁用一个检查（大小写敏感）'
+  - '&c/vulcan violations (玩家) &8- &7显示指定玩家的所有违规记录'
+  - '&c/vulcan cps (玩家) &8- &7显示玩家的 CPS'
+  - '&c/vulcan kb (玩家) &8 | &c/vulcan knockback (玩家) &8- &7对玩家施加击退效果'
+  - '&c/vulcan checks &8- &7显示所有已启用的检查'
+  - '&c/vulcan connection (玩家) &8- &7显示玩家的连接信息'
+  - '&c/vulcan freeze (玩家) &8- &7冻结/解冻玩家'
+  - '&c/vulcan rotate (玩家) &8- &7随机旋转玩家的方向/俯仰角'
+  - '&c/vulcan shuffle (玩家) &8- &7随机打乱玩家的装备栏槽位'
+  - '&c/vulcan top &8- &7显示每个类别违规次数最多的玩家'
+  - '&c/vulcan testalert &8- &7测试 Discord webhooks/集成'
+  - '&r'
+  - '&c/jday add (玩家) &8- &7将玩家添加到判罚列表'
+  - '&c/jday execute &8- &7执行判罚'
+  - ''
+  - '&c/verbose &8- &7开启和关闭详细通知'
+  - '&c/alerts &8- &7开启和关闭作弊警报'
+  - ''
+  - '&c/logs (玩家) (页码) &8- &7阅读玩家的违规记录'
+  - '&c/punishlogs (玩家) &8- &7查看玩家的惩罚记录'
+  - '&7&m---»--*-------------------------------------*--«---'
+  ban:
+    # 执行 /vulcan ban (玩家) 时将执行的命令
+    commands:
+    - ban %player% &c[Vulcan] 不公平游戏
+    # 执行 /vulcan ban (玩家) 时将广播的消息
+    broadcast:
+    - '&7&m---»--*-------------------------------------*--«---'
+    - '&cTAC &7已检测到 &c%player% &7作弊，已将其从服务器中移除。'
+    - '&7&m---»--*-------------------------------------*--«---'
+  # /vulcan profile (名称) 命令的选项
+  profile:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&cTAC档案|玩家: %player%'
+  - ' &8» &7%uuid%'
+  - ''
+  - '&7版本: &c%client-version%'
+  - '&7客户端品牌: &c%client-brand%'
+  - '&7灵敏度: &c%sensitivity%%'
+  - '&7最大 CPS: &c%cps% CPS'
+  - ''
+  - '&7总违规次数 (&c%total-violations%&7):'
+  - ' &8» &7战斗: &c%combat-violations%'
+  - ' &8» &7移动: &c%movement-violations%'
+  - ' &8» &7玩家: &c%player-violations%'
+  - ''
+  - '&7碰撞:'
+  - '&8» &7附近方块: %nearby-blocks%'
+  - '&8» &7附近实体: %nearby-entities%'
+  - ''
+  - '&7药水效果: %potion-effects%'
+  - '&7&m---»--*-------------------------------------*--«---'
+  cps: '%prefix% &7最大 CPS 为 &c%player%&7: &c%cps%'
+  connection:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&c连接信息为 %player%:'
+  - ''
+  - '&7事务处理延迟: &c%transaction-ping%ms'
+  - '&7保持活跃连接延迟: &c%keepalive-ping%ms'
+  - ''
+  - '&7最后回复的事务: &c%last-replied-transaction%ms 之前'
+  - '&7排队事务: &c%queued-transactions%'
+  - ''
+  - '&7飞行延迟: &c%flying-delay%ms'
+  - '&7&m---»--*-------------------------------------*--«---'
+  logs:
+    color: '&7'
+    header-footer: '&7&m---»--*--&r&7[ Logs for &c%player% &7(&c%page%&8/&c%max-pages%&7)
+      &7]&7&m--*--«---'
+  top:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&cTop Total Violations:'
+  - ' &8- &7%total-1-name% &7(&c%total-1-violations% VL&7)'
+  - ' &8- &7%total-2-name% &7(&c%total-2-violations% VL&7)'
+  - ' &8- &7%total-3-name% &7(&c%total-3-violations% VL&7)'
+  - ' &8- &7%total-4-name% &7(&c%total-4-violations% VL&7)'
+  - ' &8- &7%total-5-name% &7(&c%total-5-violations% VL&7)'
+  - ''
+  - '&cTop Combat Violations:'
+  - ' &8- &7%combat-1-name% &7(&c%combat-1-violations% VL&7)'
+  - ' &8- &7%combat-2-name% &7(&c%combat-2-violations% VL&7)'
+  - ' &8- &7%combat-3-name% &7(&c%combat-3-violations% VL&7)'
+  - ' &8- &7%combat-4-name% &7(&c%combat-4-violations% VL&7)'
+  - ' &8- &7%combat-5-name% &7(&c%combat-5-violations% VL&7)'
+  - ''
+  - '&cTop Movement Violations:'
+  - ' &8- &7%movement-1-name% &7(&c%movement-1-violations% VL&7)'
+  - ' &8- &7%movement-2-name% &7(&c%movement-2-violations% VL&7)'
+  - ' &8- &7%movement-3-name% &7(&c%movement-3-violations% VL&7)'
+  - ' &8- &7%movement-4-name% &7(&c%movement-4-violations% VL&7)'
+  - ' &8- &7%movement-5-name% &7(&c%movement-5-violations% VL&7)'
+  - ''
+  - '&cTop Player Violations:'
+  - ' &8- &7%player-1-name% &7(&c%player-1-violations% VL&7)'
+  - ' &8- &7%player-2-name% &7(&c%player-2-violations% VL&7)'
+  - ' &8- &7%player-3-name% &7(&c%player-3-violations% VL&7)'
+  - ' &8- &7%player-4-name% &7(&c%player-4-violations% VL&7)'
+  - ' &8- &7%player-5-name% &7(&c%player-5-violations% VL&7)'
+  - '&7&m---»--*-------------------------------------*--«---'
+  jday:
+    list-header-footer: '&7&m---»--*-------------------------------------*--«---'
+    list-format: ' &8- &7%name%'
+  punishlogs:
+    header-footer: '&7&m---»--*--&r&7[ 惩罚日志 for &c%player% &7]&7&m--*--«---'
+  description: '%prefix% &7描述 for &c%check%&7: %description%'
+punishment-statistics-broadcast:
+  # 是否应该广播Vulcan惩罚了多少玩家。
+  enabled: false
+  # 广播消息的间隔时间（单位为刻，1刻 = 1/20秒）（默认 = 18000 = 15分钟）
+  interval: 18000
+  # 应该广播的消息
+  broadcast:
+  - '&7&m---»--*-------------------------------------*--«---'
+  - '&7在过去7天里，&cTAC &7已惩罚了 &c%amount% &7名玩家。'
+  - '&7&m---»--*-------------------------------------*--«---'
+settings:
+  # Whether or not alerts will automatically be enabled on-join for players who have the permission "vulcan.alerts"
+  toggle-alerts-on-join: true
+  # Whether or not the severity placeholder should be based off of per-check violations or the total violations of the player
+  per-check-severities: true
+  # Whether or not cinematic mode will be checked for certain aim checks. This isn't really a big deal and can be
+  # left disabled as this will pretty much NEVER happen unless done intentionally. Enabling this will slow
+  # detection speeds for certain checks.
+  cinematic: false
+  # This is just here in case I forget to remove a debug message when I post an update. If I forget to remove a debug
+  # message and you see [Vulcan Debug] on your server, disable this (it won't effect you if this is enabled or disabled
+  # unless I forget to remove a debug message, but if you see [Vulcan Debug] in chat, then set this to false and reload).
+  debug: true
+  # Whether or not 'A new update is available!' message will be set on join for players with 'vulcan.admin' permission
+  check-for-updates: true
+  # A setting for PacketEvents, we may ask you to change this if you're having issues injecting. If everything is working
+  # fine, don't touch this.
+  inject-early: true
+  # This is the time (in ticks - 20 ticks per second - default value is 80 (4 seconds)) of how long players should be exempt from certain
+  # checks after velocity gets applied to them via another plugin or something (such as Launchpads, crate plugins, etc etc).
+  max-velocity-ticks: 50
+  # This is the max file size (in KB) before the violations.txt should be zipped and put into the logs folder
+  max-logs-file-size: 7500
+  # If you have a bungee network and want to have a specific server name for punishment/alert messages, etc
+  server-name: Default
+  # Whether or not alert messages should be sent on the main thread or asynchronously. If your server is on bungee, it is recommended to keep this
+  # disabled as sending large chat component messages with so much info (hover, click commands, etc) like the alert commands can
+  # sometimes cause people to be kicked for 'The server you were on has went down' or something.
+  # TLDR:
+  # - Bungeecord Networks: leave this FALSE
+  # - Single servers: set this to TRUE to save some performance
+  async-alerts: false
+  # Whether or not the API should be enabled. If you want to hook into Vulcan and do anything fancy, then enable this, however
+  # the majority of people will never use this and disabling it allows for less runnables and more performance as the events dont
+  # need to be called at all (they are also forced to be called sync, so this is a win win performance gain)
+  enable-api: true
+  # Whether or not the update checker should be enabled
+  update-checker: true
+  # The delay in milliseconds (1000ms = 1 second)
+  punishment-delay: 10000
+  # Whether or not Vulcan should automatically ignore Bedrock players using Floodgate's API.
+  ignore-floodgate: true
+  # This is highly highly recommended to keep false as it can be spoofed by the client, however, if you're using Geyser and
+  # for whatever reason can't get Floodgate to work, then enable this. If you have floodgate-bukkit on your server
+  # and Geyser is working fine, then don't touch this.
+  ignore-flags-geyser-client-brand: false
+  # How long we should wait for everything to initialize before players start being checked (in milliseconds). Default
+  # value is 2500ms.
+  join-check-wait-time: 2500
+  # Whether or not players with UUID's starting with '000000' should be ignored and not flagged - used for exemptions of
+  # Geyser players if all else fails.
+  ignore-geyser-uuids: true
+  # Whether or not we should ignore flags for players whose usernames start with a certain character/string of characters
+  ignore-geyser-prefixes: true
+  # The string to be ignored - all players names who start with a * will not be flagged (case sensitive if not symbols)
+  ignore-geyser-prefix: '*'
+  # The max violation (violations above this won't be sent)
+  max-alert-violation: 250
+  # How long should people be exempt from checks when they were in /fly (default = 40 ticks, 2 seconds)
+  flight-cooldown: 40
+  # What the /vulcan top command should display if there aren't enough users for it to sort
+  top-command-unresolved: Unresolved
+  # Whether or not players who are in the judgement day queue should be able to be banned again.
+  ignore-if-in-judgement-day: false
+  # Whether or not players who join with Vivecraft should be ignored. Be careful with this as it can be spoofed.
+  ignore-vivecraft: false
+  # Scaffolding are really broken blocks, whether or not we should be more lenient for them for certain checks.
+  lenient-scaffolding: true
+  # Whether or not bStats should be loaded
+  bstats: true
+  # Whether or not Vulcan should account for entity collisions
+  entity-collision: true
+  # Whether or not Vulcan should hook into mcMMO if it is available.
+  hook-mcmmo: true
+  # Whether or not Vulcan should hook into MythicMobs if it is available.
+  hook-mythicmobs: true
+  # Whether or not Vulcan should hook into GSit if it is available
+  hook-gsit: true
+  # Whether or not Vulcan should hook with Brewery if available
+  hook-brewery: true
+  # Whether or not Vulcan should ignore alerts for violations which are greater than the max violations threshold
+  ignore-alerts-over-max-violations: false
+  # The amount greater than the max violations that should be ignored (example, 3 would mean that if the max violations
+  # was set to 10, alerts greater than VL 13 would be ignored)
+  ignore-alerts-over-max-violations-amount: 3
+  # Whether or not Vulcan should warn you if you may be using an incompatible spigot fork.
+  incompatability-manager: true
+  # Whether or not Vulcan should send plugin messages
+  plugin-messaging: true
+  # Whether or not Vulcan should setback players when they are lower than their last onGround position (this can lead to
+  # things such as anti-voids, so not particularly recommended if you have something like a SkyWars/BedWars server)
+  dont-setback-lower-positions: false
+  # Minimum ticks existed before a player is chcked, similar to join-check-wait-time above
+  min-ticks-existed: 3
+  # Whether or not we should calculate the distance between the player and WorldBorder to prevent false flags in the
+  # Velocity checks. Only needed on very specific servers.
+  velocity-world-border: false
+  # Whether or not Vulcan should account for having 10 kabillion entities in one place that launches you very fast and could
+  # 'false' some checks. Will not matter on 99% of servers
+  entity-cram-fix-enabled: false
+  # The amount of entities that should be accounted for
+  entity-cram-entities-amount: 10
+  # How long the checks should be exempted for if the above entities are encountered
+  entity-cram-exempt-ticks: 30
+  # Support for attribute modifiers
+  handle-attributes: true
+discord-webhook:
+  # Whether or not cooldown is enabled
+  cooldown: false
+  # How often the counter should reset in ticks (default = 12000 ticks or 10 mins, 20 ticks = 1 second)
+  cooldown-reset-ticks: 12000
+  # Max webhooks allowed in the above time period
+  cooldown-max-webhooks: 100
+  # The section for the Discord Webhook alerts
+  alerts:
+    # Whether or not Discord Webhook Alerts should be enabled
+    enabled: false
+    # Paste the URL to your webhook here. For how to create a webhook, please see https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+    url: insert-webhook-url-here
+    # The avatar for the webhook
+    avatar: https://i.imgur.com/JPG1Kwk.png
+    # Thumbnail for the webhook
+    thumbnail: http://cravatar.eu/avatar/%name%/64.png
+    # Colors for the webhook (use a website like https://www.rapidtables.com/web/color/RGB_Color.html to pick colors)
+    color-r: 252
+    color-g: 140
+    color-b: 3
+    # Username of the webhook
+    username: Vulcan
+    # Title of the webhook
+    title: Vulcan Alert
+    # Description of the webhook
+    description: '**%player%** failed %check% %dev%(Type %type%)%dev% [%vl%/%max-vl%]'
+    # Content will send text outside of the embed, so you can tag roles or people for example.
+    content: ''
+    information-field: false
+    client-version-field: true
+    client-brand-field: true
+    server-name-field: false
+    description-field: false
+    location-field: true
+    ping-tps-field: true
+  punishments:
+    # Same settings and explanations as above
+    enabled: false
+    url: insert-webhook-url-here
+    avatar: https://i.imgur.com/JPG1Kwk.png
+    thumbnail: http://cravatar.eu/avatar/%name%/64.png
+    color-r: 255
+    color-g: 0
+    color-b: 0
+    username: Vulcan
+    title: Vulcan Punishment
+    description: '**%player%** was punished for %check% (Type %type%) [VL: %vl%]'
+    content: ''
+    description-field: false
+    server-name-field: false
+    client-brand-field: false
+    client-version-field: false
+    ping-tps-field: false
+    location-field: false
+checks:
+  combat:
+    aim:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.75
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 8
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.5
+          decay: 0.65
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.5
+          decay: 0.75
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 8
+          multiple: 0.5
+          decay: 0.75
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.75
+          decay: 0.25
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      f:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 12
+          multiple: 0.5
+          decay: 0.45
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      g:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.75
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      h:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 7
+          multiple: 0.5
+          decay: 0.75
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      i:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 7
+          multiple: 0.5
+          decay: 0.75
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      k:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.5
+          decay: 0.25
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      l:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 10
+          multiple: 0.45
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      m:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.4
+          decay: 0.25
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      n:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.5
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      o:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.5
+          decay: 0.25
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      p:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.4
+          decay: 0.25
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      q:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.5
+          decay: 0.25
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      r:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 20
+          multiple: 0.3
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      s:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 20
+          multiple: 0.25
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      u:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      w:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 20
+          multiple: 0.25
+          decay: 0.125
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      x:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 12
+          multiple: 0.25
+          decay: 0.125
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      y:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: -1
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+    autoblock:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.5
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+    # AutoClicker checks not really recommended for banning since you can't ever be 100% certain, if you crank up
+    # the violations you should be fine but it's all just probability / statistics.
+    autoclicker:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-cps: 25
+      b:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.5
+      c:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 1
+      d:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.5
+      e:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.75
+      f:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 1.25
+      g:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.25
+          decay: 1.25
+      h:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 1
+      i:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.5
+          decay: 1.25
+      j:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 1.25
+      k:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.75
+      l:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 1
+      m:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.75
+      n:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 25
+          multiple: 0.15
+          decay: 0.75
+      o:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.25
+          decay: 1.25
+      p:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+      q:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 35
+          multiple: 0.3
+          decay: 2.0
+      r:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 50
+          multiple: 0.15
+          decay: 10
+      s:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 30
+          multiple: 0.15
+          decay: 0.825
+      t:
+        enabled: true
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 25
+          multiple: 0.15
+          decay: 0.75
+        min-kurtosis: 13
+    reach:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 8
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.035
+        max-reach: 3.03
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.25
+          decay: 0.225
+        max-reach: 3.15
+    fastbow:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.125
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+    criticals:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.05
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.05
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+    killaura:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.6
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 2
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.5
+          decay: 0.25
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      f:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 10
+          multiple: 0.25
+          decay: 2
+      h:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      j:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.5
+      k:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.75
+      l:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.6
+          decay: 0.5
+        hotbar-shuffle:
+          enabled: false
+          minimum-vl-to-shuffle: 2
+          shuffle-every: 2
+        random-rotation:
+          enabled: false
+          minimum-vl-to-randomly-rotate: 2
+          rotate-every: 2
+    hitbox:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.125
+        max-angle: 0.36
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.25
+          decay: 0.125
+        max-angle: 45
+    velocity:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.075
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.35
+          decay: 0.125
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.25
+          decay: 0.175
+      d:
+        enabled: false
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.05
+  movement:
+    noslow:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.15
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 7
+          multiple: 0.25
+          decay: 0.075
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 7
+          multiple: 0.25
+          decay: 0.15
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 7
+          multiple: 0.25
+          decay: 0.15
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 7
+          multiple: 0.25
+          decay: 0.15
+    motion:
+      a:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.25
+      b:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.25
+      c:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.05
+      d:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.05
+      e:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.05
+      g:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.15
+      h:
+        enabled: false
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.15
+    jump:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.15
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.15
+      c:
+        enabled: false
+        punishable: false
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.15
+    step:
+      a:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      b:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.25
+          decay: 0.35
+      c:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.1
+    boatfly:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.33
+          decay: 0.125
+        kick-out: false
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.25
+          decay: 0.25
+        kick-out: false
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.25
+          decay: 0.125
+        kick-out: false
+    entityflight:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.5
+          decay: 0.25
+        kick-out: false
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.5
+          decay: 0.25
+    antilevitation:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 8
+          multiple: 0.25
+          decay: 0.075
+    nosaddle:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.5
+          decay: 0.125
+    entityspeed:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.5
+          decay: 0.25
+        kick-out: false
+        min-difference: 0.01
+    elytra:
+      a:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.25
+        max-speed: 4.25
+      b:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 8
+          multiple: 0.25
+          decay: 0.125
+      c:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.5
+          decay: 0.125
+      f:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.25
+          decay: 0.125
+      g:
+        enabled: true
+        punishable: false
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 25
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.1
+      i:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.1
+      k:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.1
+      l:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.1
+      m:
+        enabled: true
+        punishable: true
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.1
+      n:
+        enabled: false
+        punishable: false
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 2
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.045
+    speed:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 12
+        alert-interval: 1
+        dont-alert-until: 2
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.35
+          decay: 0.125
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 2
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.045
+        min-difference: 0.0025
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 2
+        dont-alert-until: 2
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.045
+        min-difference: 0.001
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 2
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.045
+        min-difference: 0.0025
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 2
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.025
+    fastclimb:
+      a:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.125
+    wallclimb:
+      a:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.35
+          decay: 0.225
+    jesus:
+      a:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.025
+      b:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.175
+      c:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 10
+          multiple: 0.45
+          decay: 0.75
+      d:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.45
+          decay: 0.175
+      e:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 10
+          multiple: 0.25
+          decay: 0.175
+    flight:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 5
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 30
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.65
+          decay: 0.275
+        # Whether or not this check should be disabled for suspected ghost blocks - enabling this will make these checks prone
+        # to be bypasses by certain fly modules which spoof onGround values as if the player were on a ghost block, so if you enable
+        # this make sure to enable setbacks for ghost-blocks in the ghost-blocks-fix section.
+        ignore-ghost-blocks: true
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 5
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 30
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.275
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 5
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 30
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.75
+          decay: 0.225
+        # Whether or not this check should be disabled for suspected ghost blocks - enabling this will make these checks prone
+        # to be bypasses by certain fly modules which spoof onGround values as if the player were on a ghost block, so if you enable
+        # this make sure to enable setbacks for ghost-blocks in the ghost-blocks-fix section.
+        ignore-ghost-blocks: true
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 5
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 30
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.35
+          decay: 0.275
+        # Whether or not this check should be disabled for suspected ghost blocks - enabling this will make these checks prone
+        # to be bypasses by certain fly modules which spoof onGround values as if the player were on a ghost block, so if you enable
+        # this make sure to enable setbacks for ghost-blocks in the ghost-blocks-fix section.
+        ignore-ghost-blocks: true
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 5
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 30
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.4
+          decay: 0.5
+        # Whether or not this check should be disabled for suspected ghost blocks - enabling this will make these checks prone
+        # to be bypasses by certain fly modules which spoof onGround values as if the player were on a ghost block, so if you enable
+        # this make sure to enable setbacks for ghost-blocks in the ghost-blocks-fix section.
+        ignore-ghost-blocks: true
+      f:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 5
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 30
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[Vulcan] Unfair Advantage
+        buffer:
+          max: 2
+          multiple: 0.4
+          decay: 0.04
+    vclip:
+      a:
+        enabled: true
+        punishable: false
+        setback: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+    sprint:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.25
+          decay: 0.4
+    strafe:
+      a:
+        enabled: true
+        punishable: true
+        setback: false
+        min-vl-to-setback: 1
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 2
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.5
+          decay: 0.05
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.15
+          decay: 0.075
+  player:
+    fastuse:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+    fastplace:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-blocks: 15
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.25
+          decay: 0.5
+        max-blocks: 4
+    fastbreak:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.5
+        min-difference: -125
+    tower:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.75
+    scaffold:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.25
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.5
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.5
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.5
+      f:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.1
+      g:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.25
+      h:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 8
+          multiple: 0.25
+          decay: 0.35
+      i:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      j:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      k:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.35
+        max-blocks: 6
+      m:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 12
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.25
+      n:
+        enabled: false
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 12
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.25
+      o:
+        enabled: false
+        punishable: false
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 12
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+    timer:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 2
+        dont-alert-until: 3
+        maximum-ping: 100000
+        minimum-tps: 19.8
+        punishment-commands:
+        - 'minecraft:kick %player% Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+        buffer:
+          max: 35
+          multiple: 0.425
+          decay: 1.85
+        max-speed: 1.05
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 35
+        alert-interval: 2
+        dont-alert-until: 8
+        maximum-ping: 100000
+        minimum-tps: 19.8
+        punishment-commands:
+        - 'minecraft:kick %player% Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.25
+        max-balance: 75
+    baritone:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 20
+          multiple: 0.5
+          decay: 0.25
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.5
+          decay: 0.05
+    ghosthand:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        cancel: true
+    airplace:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+    badpackets:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.5
+          decay: 0.25
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.01
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      f:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      g:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      h:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      i:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      j:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      k:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.4
+      m:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 5
+          multiple: 0.33
+          decay: 0.25
+      n:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 20
+          multiple: 0.25
+          decay: 2.5
+      o:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.15
+      p:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.15
+      q:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.15
+      r:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.5
+          decay: 0.25
+      s:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      t:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      u:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      v:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 8
+          multiple: 0.5
+          decay: 0.075
+        kick-out: false
+      w:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 8
+          multiple: 0.5
+          decay: 0.75
+      x:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 6
+          multiple: 0.5
+          decay: 0.35
+      y:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      z:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 3
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      '1':
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 12
+          multiple: 0.25
+          decay: 0.25
+      '2':
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 12
+          multiple: 0.25
+          decay: 0.25
+      '4':
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.25
+          decay: 0.025
+      '5':
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+      '6':
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.05
+      '7':
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 10
+          multiple: 0.25
+          decay: 0.05
+      '8':
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - kick %player% &c[Vulcan] Unfair Advantage
+        buffer:
+          max: 5
+          multiple: 0.25
+          decay: 0.05
+    inventory:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.25
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.25
+    invalid:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 8
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.25
+          decay: 0.05
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 8
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.25
+          decay: 0.045
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 10
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 8
+          multiple: 0.25
+          decay: 0.5
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 8
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.01
+      f:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.01
+      g:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 2
+          multiple: 0.5
+          decay: 0.025
+      h:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.05
+      i:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 3
+          multiple: 0.5
+          decay: 0.05
+      j:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        setback: false
+        min-vl-to-setback: 1
+        broadcast-punishment: false
+        max-violations: 20
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 1
+          multiple: 0.5
+          decay: 0.05
+    groundspoof:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.125
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 5
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.125
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 15
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        buffer:
+          max: 4
+          multiple: 0.5
+          decay: 0.125
+    improbable:
+      a:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-combat-violations: 25
+      b:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-movement-violations: 30
+      c:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-player-violations: 30
+      d:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-autoclicker-violations: 30
+      e:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-total-violations: 50
+      f:
+        enabled: true
+        punishable: true
+        discord-alert-interval: 1
+        broadcast-punishment: false
+        max-violations: 1
+        alert-interval: 1
+        dont-alert-until: 1
+        maximum-ping: 100000
+        minimum-tps: 19.0
+        punishment-commands:
+        - 'litebans:warn %player% #TACwarn'
+        max-scaffold-violations: 25

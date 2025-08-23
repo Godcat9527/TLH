@@ -1,0 +1,53 @@
+Title: '&6&lTLH &a&l签到与在线奖励' #写在标题里了
+
+#建议每一个之间空一行，习惯，看起来不那么乱
+Layout:
+  - '@@ @@@ @@' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+        all: 
+          - 'open: 主菜单' 
+          - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'Title_shop':
+    display: 
+      material: clock
+      name: '&f[&6在线时长奖励&f]'
+      slots: 2
+      lore: 
+      - ''
+      - '&a➥点我查看在线时长奖励'
+    action: 
+        all: 
+          - 'close'
+          - 'player: cmi prewards' 
+          - 'sound: BLOCK_NOTE_BLOCK_COW_BELL'
+      
+
+  'Title_warehouse':
+    display: 
+      material: clock
+      name: '&f[&6每日签到&f]'
+      slots: 6
+      lore: 
+      - ''
+      - '&a➥点我进行签到'
+    action: 
+        all: 
+          - 'player: signin gui'
+          - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 

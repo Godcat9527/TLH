@@ -1,0 +1,167 @@
+info:
+  namespace: customhats
+items:
+  galaxy_hat:
+    enabled: true
+    display_name: <gradient:#6B2CC6:#9861FD>银河帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/galaxy_hat
+      model_id: 7103
+    behaviours:
+      hat: true
+  
+  capybara_hat:
+    enabled: true
+    display_name: <gradient:#FBB61D:#846710>水豚帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/capybara_hat
+      model_id: 7104
+    behaviours:
+      hat: true
+
+  pumpkin_hat:
+    enabled: true
+    display_name: <gradient:#F9A20D:#B1750D>南瓜帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/pumpkin_hat
+      model_id: 7105
+    behaviours:
+      hat: true
+
+  pokemon_hat:
+    enabled: true
+    display_name: <gradient:#F95151:#64B9FF>口袋妖怪帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/pokemon_hat
+      model_id: 7106
+    behaviours:
+      hat: true
+
+  lemon_slice_hat:
+    enabled: true
+    display_name: <gradient:#F4FF27:#C8C74F>柠檬片帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/lemon_slice_hat
+      model_id: 7107
+    behaviours:
+      hat: true
+
+  brown_paper_bag_hat:
+    enabled: true
+    display_name: <gradient:#C8AC55:#907C3D>牛皮纸袋帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/brown_paper_bag_hat
+      model_id: 7108
+    behaviours:
+      hat: true
+
+  cherry_blossom_hat:
+    enabled: true
+    display_name: <gradient:#F8BBFF:#C9B4FF>樱花帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/cherry_blossom_hat
+      model_id: 7109
+    behaviours:
+      hat: true
+
+  cowboy_hat:
+    enabled: true
+    display_name: <gradient:#8E5F2E:#C3833F>牛仔帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/cowboy_hat
+      model_id: 7110
+    behaviours:
+      hat: true
+
+  drowned_hat:
+    enabled: true
+    display_name: <gradient:#41BC42:#6AFFE9>溺水帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/drowned_hat
+      model_id: 7111
+    behaviours:
+      hat: true
+
+  hard_hat:
+    enabled: true
+    display_name: <gradient:#FFED00:#DDC83A>安全帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/hard_hat
+      model_id: 7112
+    behaviours:
+      hat: true
+
+  jet_pilot_helmet_hat:
+    enabled: true
+    display_name: <gradient:#D0D0D0:#656565>喷气飞行员头盔
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/jet_pilot_helmet_hat
+      model_id: 7113
+    behaviours:
+      hat: true
+
+  rubber_duck_hat:
+    enabled: true
+    display_name: <gradient:#FFF358:#FFEF1D>橡皮鸭帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/rubber_duck_hat
+      model_id: 7114
+    behaviours:
+      hat: true
+
+  shark_hat:
+    enabled: true
+    display_name: <gradient:#5F91FF:#90DAFF>鲨鱼帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/shark_hat
+      model_id: 7115
+    behaviours:
+      hat: true
+
+  turkey_hat:
+    enabled: true
+    display_name: <gradient:#74632F:#FF7E7E>火鸡帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/turkey_hat
+      model_id: 7116
+    behaviours:
+      hat: true
+
+  watermelon_hat:
+    enabled: true
+    display_name: <gradient:#3ECB59:#FF7171>西瓜帽
+    resource:
+      material: PAPER
+      generate: false
+      model_path: hats/watermelon_hat
+      model_id: 7117
+    behaviours:
+      hat: true

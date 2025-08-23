@@ -1,0 +1,1378 @@
+List:
+  smooth_stone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:smooth_stone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+    Handler: bukkit_item
+  stone_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:stone_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 2
+      Page: 1
+    Handler: bukkit_item
+  cracked_stone_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cracked_stone_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 3
+      Page: 1
+    Handler: bukkit_item
+  chiseled_stone_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_stone_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 4
+      Page: 1
+    Handler: bukkit_item
+  mossy_stone_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:mossy_stone_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 5
+      Page: 1
+    Handler: bukkit_item
+  smooth_sandstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:smooth_sandstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 7
+      Page: 1
+    Handler: bukkit_item
+  smooth_red_sandstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:smooth_red_sandstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 1
+    Handler: bukkit_item
+  polished_deepslate:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_deepslate"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 9
+      Page: 1
+    Handler: bukkit_item
+  chiseled_deepslate:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_deepslate"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 10
+      Page: 1
+    Handler: bukkit_item
+  deepslate_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:deepslate_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 11
+      Page: 1
+    Handler: bukkit_item
+  cracked_deepslate_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cracked_deepslate_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 12
+      Page: 1
+    Handler: bukkit_item
+  deepslate_tiles:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:deepslate_tiles"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 14
+      Page: 1
+    Handler: bukkit_item
+  cracked_deepslate_tiles:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cracked_deepslate_tiles"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 15
+      Page: 1
+    Handler: bukkit_item
+  chiseled_sandstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_sandstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 16
+      Page: 1
+    Handler: bukkit_item
+  chiseled_red_sandstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_red_sandstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 17
+      Page: 1
+    Handler: bukkit_item
+  polished_tuff:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_tuff"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 18
+      Page: 1
+    Handler: bukkit_item
+  chiseled_tuff:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_tuff"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 19
+      Page: 1
+    Handler: bukkit_item
+  tuff_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:tuff_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 20
+      Page: 1
+    Handler: bukkit_item
+  chiseled_tuff_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_tuff_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 22
+      Page: 1
+    Handler: bukkit_item
+  cut_sandstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cut_sandstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 25
+      Page: 1
+    Handler: bukkit_item
+  polished_blackstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_blackstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 27
+      Page: 1
+    Handler: bukkit_item
+  chiseled_polished_blackstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_polished_blackstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 28
+      Page: 1
+    Handler: bukkit_item
+  polished_blackstone_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_blackstone_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 29
+      Page: 1
+    Handler: bukkit_item
+  cracked_polished_blackstone_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cracked_polished_blackstone_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 30
+      Page: 1
+    Handler: bukkit_item
+  smooth_quartz:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:smooth_quartz"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 36
+      Page: 1
+    Handler: bukkit_item
+  chiseled_quartz_block:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_quartz_block"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 37
+      Page: 1
+    Handler: bukkit_item
+  quartz_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:quartz_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 38
+      Page: 1
+    Handler: bukkit_item
+  quartz_pillar:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:quartz_pillar"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 40
+      Page: 1
+    Handler: bukkit_item
+  quartz_block:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:quartz_block"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 41
+      Page: 1
+    Handler: bukkit_item
+  bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 2
+    Handler: bukkit_item
+  packed_mud:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:packed_mud"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 5
+      Page: 2
+    Handler: bukkit_item
+  mud_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:mud_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 6
+      Page: 2
+    Handler: bukkit_item
+  purpur_block:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:purpur_block"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 2
+    Handler: bukkit_item
+  nether_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:nether_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 9
+      Page: 2
+    Handler: bukkit_item
+  cracked_nether_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cracked_nether_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 10
+      Page: 2
+    Handler: bukkit_item
+  chiseled_nether_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_nether_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 11
+      Page: 2
+    Handler: bukkit_item
+  red_nether_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:red_nether_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 12
+      Page: 2
+    Handler: bukkit_item
+  purpur_pillar:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:purpur_pillar"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 17
+      Page: 2
+    Handler: bukkit_item
+  resin_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:resin_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 18
+      Page: 2
+    Handler: bukkit_item
+  chiseled_resin_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:chiseled_resin_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 20
+      Page: 2
+    Handler: bukkit_item
+  prismarine_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:prismarine_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 23
+      Page: 2
+    Handler: bukkit_item
+  end_stone_bricks:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:end_stone_bricks"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 24
+      Page: 2
+    Handler: bukkit_item
+  polished_granite:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_granite"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 36
+      Page: 2
+    Handler: bukkit_item
+  polished_diorite:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_diorite"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 37
+      Page: 2
+    Handler: bukkit_item
+  polished_andesite:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_andesite"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 38
+      Page: 2
+    Handler: bukkit_item
+  polished_basalt:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:polished_basalt"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 39
+      Page: 2
+    Handler: bukkit_item
+  smooth_basalt:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:smooth_basalt"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 41
+      Page: 2
+    Handler: bukkit_item
+  cut_red_sandstone:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cut_red_sandstone"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 26
+      Page: 1
+    Handler: bukkit_item
+  waxed_copper_block:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:waxed_copper_block"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 43
+      Page: 1
+    Handler: bukkit_item
+  waxed_oxidized_copper:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:waxed_oxidized_copper"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 44
+      Page: 1
+    Handler: bukkit_item
+  iron_pickaxe:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:iron_pickaxe"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 100.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: 4
+        SellAmount: -1
+        RestockTime: 86400
+    Shop_View:
+      Slot: 33
+      Page: 1
+    Handler: bukkit_item

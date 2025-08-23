@@ -1,0 +1,25 @@
+info:
+  namespace: nogs_menagerie
+items:
+  nm_card_armadillo:
+    display_name: '&f收集卡牌 - 犰狳'
+    resource:
+      material: PAPER
+      model_id: 633001
+      generate: false
+      model_path: cards/common/nm_card_armadillo
+    behaviours:
+      furniture:
+        entity: ITEM_FRAME
+        solid: false
+        small: false
+        fixed_rotation: true
+        placeable_on:
+          floor: false
+          ceiling: false
+          walls: true
+        sound:
+          place:
+            name: block.bamboo.place
+          break:
+            name: block.bamboo.break

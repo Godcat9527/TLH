@@ -1,0 +1,24 @@
+display-name: "&f钻石考古铲"
+lore:
+  - "&7钻石考古铲"
+texture: diamond_archaeological_shovel
+recipe_1:
+  shape:
+    - "AAA"
+    - "ABA"
+    - "AAA"
+  ingredients:
+    A:
+      material: diamond
+    B:
+      material: archaeological_shovel
+recipe_2:
+  shape:
+    - "AAA"
+    - "ABA"
+    - "AAA"
+  ingredients:
+    A:
+      material: diamond
+    B:
+      material: diamond_archaeological_shovel

@@ -1,0 +1,42 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+DOUBLE_OR_NOTHING:
+  base:
+    material: IRON_AXE
+    lore:
+    - §7§o这是一件强大又难操作的武器...
+    - §7§o请对他小心!
+    critical-strike-power:
+      base: 850.0
+      spread: 0.02
+      max-spread: 0.06
+    critical-strike-chance:
+      base: 50.0
+      spread: 0.02
+      max-spread: 0.04
+    attack-damage:
+      base: 1.45
+      spread: 0.01
+      max-spread: 0.03
+    attack-speed:
+      base: 1.05
+      spread: 0.02
+      max-spread: 0.05
+    required-level: 10.0
+    enchants:
+      unbreaking: 5
+    hide-enchants: true
+    name: §b§l§o翻倍机会（要么双倍获得要么一无所有）
+    gem-sockets:
+    - Red
+    - Uncolored
+    - Green
+    - Blue
+    ability:
+      on-hit:
+        type: SLOW
+        mode: ATTACK
+        cooldown: 30.0
+        duration: 4.0
+        amplifier: 2.0
+    pvp-damage: 12.0

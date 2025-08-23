@@ -1,0 +1,363 @@
+2025-08-23 01:33:19 [INFO]: Loading Overrides...
+2025-08-23 01:33:19 [INFO]: Loading World Types...
+2025-08-23 01:33:19 [INFO]: - World Type for 'world' set to 'NORMAL'
+2025-08-23 01:33:19 [INFO]: - World Type for 'world_nether' set to 'NETHER'
+2025-08-23 01:33:19 [INFO]: - World Type for 'world_the_end' set to 'NORMAL'
+2025-08-23 01:33:19 [INFO]: Loading Defaults...
+2025-08-23 01:33:19 [INFO]: Loading Custom Worlds...
+2025-08-23 01:33:19 [INFO]: [WARN] - Custom World 'custom_world_1' was not registered because world does NOT exist
+2025-08-23 01:33:19 [INFO]: [WARN] - Custom World 'other_custom_world' was not registered because world does NOT exist
+2025-08-23 01:33:19 [INFO]: Loading Permission Groups...
+2025-08-23 01:33:19 [INFO]: - Permission Group: default
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 3000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 600
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 3000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 600
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 3000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 600
+2025-08-23 01:33:19 [INFO]: - Permission Group: 初来乍到1
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 4000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 500
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 4000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 500
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 4000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 500
+2025-08-23 01:33:19 [INFO]: - Permission Group: 踏上旅程2
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 6000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 400
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 6000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 400
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 6000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 400
+2025-08-23 01:33:19 [INFO]: - Permission Group: 冒险家3
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 9000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 300
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 9000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 300
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 9000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 300
+2025-08-23 01:33:19 [INFO]: - Permission Group: 探索先锋4
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 12000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 200
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 12000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 200
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 12000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 200
+2025-08-23 01:33:19 [INFO]: - Permission Group: 远航使者5
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 15000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 100
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 15000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 100
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 15000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 100
+2025-08-23 01:33:19 [INFO]: - Permission Group: 开拓者6
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 20000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 50
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 20000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 50
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 20000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 1
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 50
+2025-08-23 01:33:19 [INFO]: - Permission Group: vip
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 40000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 2500
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 20
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 40000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 2500
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 20
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 40000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 2500
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 20
+2025-08-23 01:33:19 [INFO]: - Permission Group: mvp
+2025-08-23 01:33:19 [INFO]: - -- World: world
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 50000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 5000
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 10
+2025-08-23 01:33:19 [INFO]: - -- World: world_nether
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 50000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 5000
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 10
+2025-08-23 01:33:19 [INFO]: - -- World: world_the_end
+2025-08-23 01:33:19 [INFO]: - - MaxRadius: 50000
+2025-08-23 01:33:19 [INFO]: - - MinRadius: 5000
+2025-08-23 01:33:19 [INFO]: - - Cooldown: 10
+2025-08-23 01:33:19 [SEVERE]: The particle 'EXPLOSION_NORMAL' created a fatal error when loading particles! Your MC version isn't supported!
+2025-08-23 01:33:24 [INFO]: Database COOLDOWN:world configured and loaded!
+2025-08-23 01:33:24 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
+2025-08-23 01:33:24 [INFO]: Database COOLDOWN:world_nether configured and loaded!
+2025-08-23 01:33:24 [INFO]: Database COOLDOWN:world_the_end configured and loaded!
+2025-08-23 01:33:24 [INFO]: Database COOLDOWN:lobby configured and loaded!
+2025-08-23 01:33:24 [INFO]: Database PLAYERS:Players configured and loaded!
+2025-08-23 01:33:24 [INFO]: Database QUEUE:Queue configured and loaded!
+2025-08-23 01:33:24 [INFO]: Attempting to queue up some more safe locations...
+2025-08-23 01:33:29 [INFO]: Queue position generated: id= default_world, database_ID= 1246, location= x: 3589, y: 66, z: -368, world: world
+2025-08-23 01:33:31 [INFO]: Queue position generated: id= default_world, database_ID= 1247, location= x: -3370, y: 77, z: -2133, world: world
+2025-08-23 01:33:33 [INFO]: Queue position generated: id= default_world, database_ID= 1248, location= x: 3881, y: 63, z: 3897, world: world
+2025-08-23 01:33:35 [INFO]: Queue position generated: id= default_world, database_ID= 1249, location= x: 1049, y: 63, z: 3189, world: world
+2025-08-23 01:33:36 [INFO]: Queue position generated: id= default_world, database_ID= 1250, location= x: 2480, y: 74, z: -3573, world: world
+2025-08-23 01:33:37 [INFO]: Queue position generated: id= default_world, database_ID= 1251, location= x: -331, y: 63, z: 4121, world: world
+2025-08-23 01:33:40 [INFO]: Queue position generated: id= default_world, database_ID= 1252, location= x: -3648, y: 63, z: 961, world: world
+2025-08-23 01:33:42 [INFO]: Queue position generated: id= default_world, database_ID= 1253, location= x: 3193, y: 67, z: 4114, world: world
+2025-08-23 01:33:43 [INFO]: Queue position generated: id= default_world, database_ID= 1254, location= x: -2296, y: 80, z: -265, world: world
+2025-08-23 01:33:47 [INFO]: Queue position generated: id= default_world, database_ID= 1255, location= x: -2171, y: 118, z: -249, world: world
+2025-08-23 01:33:49 [INFO]: Queue position generated: id= default_world, database_ID= 1256, location= x: 268, y: 79, z: 2377, world: world
+2025-08-23 01:33:50 [INFO]: Queue position generated: id= default_world, database_ID= 1257, location= x: 2091, y: 65, z: 3113, world: world
+2025-08-23 01:33:53 [INFO]: Queue position generated: id= default_world, database_ID= 1258, location= x: -4616, y: 175, z: 892, world: world
+2025-08-23 01:33:54 [INFO]: Queue position generated: id= default_world, database_ID= 1259, location= x: 681, y: 64, z: 3161, world: world
+2025-08-23 01:33:58 [INFO]: Queue position generated: id= default_world, database_ID= 1260, location= x: -173, y: 101, z: -16, world: world
+2025-08-23 01:34:01 [INFO]: Queue position generated: id= default_world, database_ID= 1261, location= x: 88, y: 98, z: -1614, world: world
+2025-08-23 01:34:03 [INFO]: Queue position generated: id= default_world, database_ID= 1262, location= x: -252, y: 67, z: -2559, world: world
+2025-08-23 01:34:04 [INFO]: Queue position generated: id= default_world, database_ID= 1263, location= x: -1992, y: 67, z: -83, world: world
+2025-08-23 01:34:06 [INFO]: Queue position generated: id= default_world, database_ID= 1264, location= x: 1092, y: 63, z: 53, world: world
+2025-08-23 01:34:10 [INFO]: Queue position generated: id= default_world, database_ID= 1265, location= x: 366, y: 79, z: -4127, world: world
+2025-08-23 01:34:13 [INFO]: Queue position generated: id= default_world, database_ID= 1266, location= x: 1330, y: 102, z: -3770, world: world
+2025-08-23 01:34:15 [INFO]: Queue position generated: id= default_world, database_ID= 1267, location= x: 817, y: 80, z: 4545, world: world
+2025-08-23 01:34:16 [INFO]: Queue position generated: id= default_world, database_ID= 1268, location= x: -2391, y: 93, z: 3308, world: world
+2025-08-23 01:34:17 [INFO]: Queue position generated: id= default_world, database_ID= 1269, location= x: -4371, y: 63, z: 4987, world: world
+2025-08-23 01:34:19 [INFO]: Queue position generated: id= default_world, database_ID= 1270, location= x: -2006, y: 72, z: -552, world: world
+2025-08-23 01:34:20 [INFO]: Queue position generated: id= default_world, database_ID= 1271, location= x: -4289, y: 80, z: 4181, world: world
+2025-08-23 01:34:21 [INFO]: Max attempts to create a Queue reached for default_world (amount: 26)
+2025-08-23 01:34:21 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1272, location= x: -3010, y: 71, z: 2726, world: world_nether
+2025-08-23 01:34:22 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1273, location= x: -1590, y: 66, z: -2697, world: world_nether
+2025-08-23 01:34:23 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1274, location= x: 3619, y: 48, z: 2845, world: world_nether
+2025-08-23 01:34:24 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1275, location= x: 4840, y: 69, z: 255, world: world_nether
+2025-08-23 01:34:26 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1276, location= x: -4929, y: 41, z: 1668, world: world_nether
+2025-08-23 01:34:29 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1277, location= x: -2235, y: 45, z: -1671, world: world_nether
+2025-08-23 01:34:31 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1278, location= x: 3104, y: 50, z: -4416, world: world_nether
+2025-08-23 01:34:33 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1279, location= x: -210, y: 41, z: -1732, world: world_nether
+2025-08-23 01:34:36 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1280, location= x: -2703, y: 97, z: 326, world: world_nether
+2025-08-23 01:34:37 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1281, location= x: -4683, y: 69, z: -1960, world: world_nether
+2025-08-23 01:34:38 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1282, location= x: 502, y: 83, z: 3087, world: world_nether
+2025-08-23 01:34:39 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1283, location= x: 4350, y: 70, z: -642, world: world_nether
+2025-08-23 01:34:42 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1284, location= x: 78, y: 57, z: -3959, world: world_nether
+2025-08-23 01:34:48 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1285, location= x: 3000, y: 45, z: 1463, world: world_nether
+2025-08-23 01:34:50 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1286, location= x: -3389, y: 95, z: 2699, world: world_nether
+2025-08-23 01:34:51 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1287, location= x: 4631, y: 32, z: 3816, world: world_nether
+2025-08-23 01:34:52 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1288, location= x: -885, y: 48, z: 3711, world: world_nether
+2025-08-23 01:34:53 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1289, location= x: -1311, y: 68, z: 4993, world: world_nether
+2025-08-23 01:34:54 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1290, location= x: 1652, y: 100, z: -3615, world: world_nether
+2025-08-23 01:34:55 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1291, location= x: 647, y: 86, z: 1489, world: world_nether
+2025-08-23 01:34:56 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1292, location= x: -3004, y: 59, z: 3018, world: world_nether
+2025-08-23 01:34:58 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1293, location= x: -4633, y: 41, z: 509, world: world_nether
+2025-08-23 01:34:59 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1294, location= x: 2516, y: 32, z: -2183, world: world_nether
+2025-08-23 01:35:00 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1295, location= x: 4947, y: 76, z: 4075, world: world_nether
+2025-08-23 01:35:01 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1296, location= x: 2092, y: 84, z: 2435, world: world_nether
+2025-08-23 01:35:02 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1297, location= x: -4125, y: 42, z: 1656, world: world_nether
+2025-08-23 01:35:07 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1298, location= x: 1490, y: 63, z: -2415, world: world_nether
+2025-08-23 01:35:08 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1299, location= x: 4769, y: 43, z: -522, world: world_nether
+2025-08-23 01:35:10 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1300, location= x: -4209, y: 95, z: 472, world: world_nether
+2025-08-23 01:35:12 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1301, location= x: -2678, y: 95, z: 4047, world: world_nether
+2025-08-23 01:35:13 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1302, location= x: -1852, y: 44, z: -2943, world: world_nether
+2025-08-23 01:35:14 [INFO]: Queue position generated: id= default_world_nether, database_ID= 1303, location= x: -889, y: 43, z: -1739, world: world_nether
+2025-08-23 01:35:15 [INFO]: Max queue reached for default_world_nether (amount: 32) lastCount: 0
+2025-08-23 01:35:15 [INFO]: Queueing paused, max queue limit reached!
+2025-08-23 01:54:49 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 01:54:54 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-4615.5,y=175.0,z=892.5,pitch=-3.6101599,yaw=-100.27104}
+2025-08-23 02:34:05 [INFO]: CONSOLE executed: /rtp player Xiao_Lielie world
+2025-08-23 02:53:23 [INFO]: CONSOLE executed: /rtp player Xiao_Lielie world_nether
+2025-08-23 02:53:28 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-1851.5,y=44.0,z=-2942.5,pitch=19.350912,yaw=-93.14264}
+2025-08-23 02:55:40 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 02:55:42 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 02:55:48 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-2295.5,y=80.0,z=-264.5,pitch=16.950027,yaw=172.05011}
+2025-08-23 02:56:19 [INFO]: CONSOLE executed: /rtp player Xiao_Lielie world_nether
+2025-08-23 02:56:25 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=4350.5,y=70.0,z=-641.5,pitch=17.09999,yaw=-41.100006}
+2025-08-23 03:00:27 [INFO]: CONSOLE executed: /rtp player Xiao_Lielie world
+2025-08-23 03:00:32 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=1330.5,y=102.0,z=-3769.5,pitch=79.35077,yaw=100.656136}
+2025-08-23 03:06:13 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 04:45:16 [INFO]: CONSOLE executed: /rtp player Xiao_Lielie world
+2025-08-23 04:45:21 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=88.5,y=98.0,z=-1613.5,pitch=-7.3499866,yaw=-71.18942}
+2025-08-23 08:13:00 [INFO]: CONSOLE executed: /rtp player Xiao_Lielie world
+2025-08-23 08:13:05 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-2005.5,y=72.0,z=-551.5,pitch=25.650808,yaw=-141.14197}
+2025-08-23 09:07:12 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 09:07:13 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 09:07:18 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-3369.5,y=77.0,z=-2132.5,pitch=18.15002,yaw=-125.099945}
+2025-08-23 09:22:38 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 09:22:44 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-172.5,y=101.0,z=-15.5,pitch=39.899998,yaw=-132.15001}
+2025-08-23 09:22:54 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 09:25:28 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 09:25:33 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=3881.5,y=63.0,z=3897.5,pitch=-90.0,yaw=-96.60092}
+2025-08-23 09:34:51 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 09:34:56 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=681.5,y=64.0,z=3161.5,pitch=28.349974,yaw=-142.50003}
+2025-08-23 09:35:13 [INFO]: CONSOLE executed: /rtp player Akashi_Akao world
+2025-08-23 09:35:18 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=1092.5,y=63.0,z=53.5,pitch=-24.449228,yaw=115.95701}
+2025-08-23 09:36:22 [INFO]: CONSOLE executed: /rtp player iCy_wolf world_nether
+2025-08-23 09:36:27 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-3003.5,y=59.0,z=3018.5,pitch=88.350006,yaw=94.800224}
+2025-08-23 09:37:46 [INFO]: CONSOLE executed: /rtp player Akashi_Akao world_nether
+2025-08-23 09:37:54 [INFO]: CONSOLE executed: /rtp player Akashi_Akao world
+2025-08-23 09:37:59 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-2170.5,y=118.0,z=-248.5,pitch=17.24999,yaw=118.80004}
+2025-08-23 09:38:56 [INFO]: CONSOLE executed: /rtp player iCy_wolf world_resource
+2025-08-23 09:38:57 [INFO]: CONSOLE executed: /rtp player iCy_wolf world_resource
+2025-08-23 09:38:57 [INFO]: CONSOLE executed: /rtp player iCy_wolf world_resource
+2025-08-23 09:39:11 [INFO]: CONSOLE executed: /rtp player iCy_wolf world
+2025-08-23 09:39:16 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=366.5,y=79.0,z=-4126.5,pitch=64.35,yaw=156.44992}
+2025-08-23 09:40:47 [INFO]: CONSOLE executed: /rtp player Akashi_Akao world
+2025-08-23 09:40:52 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=2091.5,y=65.0,z=3113.5,pitch=22.349997,yaw=-149.69978}
+2025-08-23 09:54:53 [INFO]: CONSOLE executed: /rtp player dianwwacc world_resource
+2025-08-23 09:55:46 [INFO]: CONSOLE executed: /rtp player JiuMu9M world
+2025-08-23 09:55:52 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-4288.5,y=80.0,z=4181.5,pitch=12.600855,yaw=-118.194214}
+2025-08-23 10:22:45 [INFO]: CONSOLE executed: /rtp player dianwwacc world_resource
+2025-08-23 10:29:53 [INFO]: CONSOLE executed: /rtp player Lazycat8192 world_nether
+2025-08-23 10:29:53 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-884.5,y=48.0,z=3711.5,pitch=22.65005,yaw=-21.324776}
+2025-08-23 12:03:56 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_resource
+2025-08-23 12:04:14 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_resource
+2025-08-23 12:04:15 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_resource
+2025-08-23 13:43:31 [INFO]: CONSOLE executed: /rtp player dianwwacc world
+2025-08-23 13:43:32 [INFO]: CONSOLE executed: /rtp player dianwwacc world
+2025-08-23 13:43:37 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-2390.5,y=93.0,z=3308.5,pitch=22.800009,yaw=-165.7499}
+2025-08-23 13:49:35 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 13:49:40 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=3589.5,y=66.0,z=-367.5,pitch=0.9000554,yaw=107.69968}
+2025-08-23 13:52:16 [INFO]: CONSOLE executed: /rtp player fake_pno world
+2025-08-23 13:52:22 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=817.5,y=80.0,z=4545.5,pitch=12.899835,yaw=91.67627}
+2025-08-23 13:55:07 [INFO]: CONSOLE executed: /rtp player XiaDengXinLi world
+2025-08-23 13:55:13 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=268.5,y=79.0,z=2377.5,pitch=-3.4500315,yaw=-87.45}
+2025-08-23 14:00:38 [INFO]: CONSOLE executed: /rtp player RideAnt world
+2025-08-23 14:00:43 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-4370.5,y=63.0,z=4987.5,pitch=4.3500075,yaw=73.94998}
+2025-08-23 14:19:39 [INFO]: CONSOLE executed: /rtp player fake_pno world
+2025-08-23 14:19:45 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-3647.5,y=63.0,z=961.5,pitch=18.299974,yaw=-34.120605}
+2025-08-23 14:19:55 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 14:20:00 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-3009.5,y=71.0,z=2726.5,pitch=14.849918,yaw=-178.63025}
+2025-08-23 14:21:34 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 14:21:36 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 14:21:37 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 14:21:37 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 14:21:37 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 14:21:45 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 14:22:00 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 14:49:12 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 14:49:17 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=4631.5,y=32.0,z=3816.5,pitch=-4.4999886,yaw=-56.24991}
+2025-08-23 14:58:08 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 14:58:13 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=502.5,y=83.0,z=3087.5,pitch=24.749939,yaw=-73.650024}
+2025-08-23 15:55:15 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 15:55:16 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 15:55:16 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 15:55:17 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 15:55:17 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world_resource
+2025-08-23 15:55:22 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:00:44 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:00:46 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:00:51 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-330.5,y=63.0,z=4121.5,pitch=25.72538,yaw=-169.91418}
+2025-08-23 16:01:49 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:01:55 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:02:00 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=3193.5,y=67.0,z=4114.5,pitch=17.625635,yaw=-117.11371}
+2025-08-23 16:02:38 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:02:39 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:02:40 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:05:18 [INFO]: CONSOLE executed: /rtp player BlestHeart30539 world
+2025-08-23 16:05:23 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=1049.5,y=63.0,z=3189.5,pitch=16.050045,yaw=-61.053925}
+2025-08-23 16:47:38 [INFO]: CONSOLE executed: /rtp player RideAntToWorld world
+2025-08-23 16:47:45 [INFO]: CONSOLE executed: /rtp player RideAntToWorld world
+2025-08-23 16:47:54 [INFO]: CONSOLE executed: /rtp player RideAntToWorld world
+2025-08-23 16:47:59 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=2480.5,y=74.0,z=-3572.5,pitch=-4.5000052,yaw=-139.65009}
+2025-08-23 16:49:48 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 16:49:53 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=1490.5,y=63.0,z=-2414.5,pitch=27.300058,yaw=101.55066}
+2025-08-23 16:54:12 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 16:54:18 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-2677.5,y=95.0,z=4047.5,pitch=4.800288,yaw=-160.04852}
+2025-08-23 16:57:22 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 16:57:28 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 16:57:33 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-3388.5,y=95.0,z=2699.5,pitch=32.39955,yaw=120.15039}
+2025-08-23 16:58:19 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:00:01 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:00:06 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-888.5,y=43.0,z=-1738.5,pitch=6.900053,yaw=84.0014}
+2025-08-23 17:02:08 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:02:13 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-4632.5,y=41.0,z=509.5,pitch=55.799946,yaw=39.29892}
+2025-08-23 17:25:08 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:25:13 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-4208.5,y=95.0,z=472.5,pitch=76.65,yaw=92.84958}
+2025-08-23 17:28:40 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:28:46 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=78.5,y=57.0,z=-3958.5,pitch=46.34994,yaw=3.4516602}
+2025-08-23 17:38:41 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:38:46 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-2234.5,y=45.0,z=-1670.5,pitch=14.699993,yaw=71.700005}
+2025-08-23 17:39:27 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:39:41 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:39:46 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 17:39:51 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=3104.5,y=50.0,z=-4415.5,pitch=43.49997,yaw=78.59987}
+2025-08-23 17:41:31 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world
+2025-08-23 17:41:36 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-1991.5,y=67.0,z=-82.5,pitch=28.95,yaw=19.500336}
+2025-08-23 17:41:37 [INFO]: Attempting to queue up some more safe locations...
+2025-08-23 17:41:38 [INFO]: Queue position generated: id= rtp_world, database_ID= 1304, location= x: 4010, y: 69, z: -671, world: world
+2025-08-23 17:41:39 [INFO]: Queue position generated: id= rtp_world, database_ID= 1305, location= x: -202, y: 64, z: 3608, world: world
+2025-08-23 17:41:43 [INFO]: Queue position generated: id= rtp_world, database_ID= 1306, location= x: 3728, y: 67, z: 1261, world: world
+2025-08-23 17:41:44 [INFO]: Queue position generated: id= rtp_world, database_ID= 1307, location= x: -4845, y: 70, z: -4617, world: world
+2025-08-23 17:41:46 [INFO]: Queue position generated: id= rtp_world, database_ID= 1308, location= x: -2435, y: 67, z: 2633, world: world
+2025-08-23 17:41:48 [INFO]: Queue position generated: id= rtp_world, database_ID= 1309, location= x: -4868, y: 100, z: 4047, world: world
+2025-08-23 17:41:50 [INFO]: Queue position generated: id= rtp_world, database_ID= 1310, location= x: 3366, y: 65, z: -4067, world: world
+2025-08-23 17:41:51 [INFO]: Queue position generated: id= rtp_world, database_ID= 1311, location= x: -1047, y: 86, z: 1049, world: world
+2025-08-23 17:41:58 [INFO]: Queue position generated: id= rtp_world, database_ID= 1312, location= x: -3240, y: 71, z: -1764, world: world
+2025-08-23 17:41:59 [INFO]: Queue position generated: id= rtp_world, database_ID= 1313, location= x: 67, y: 65, z: 3642, world: world
+2025-08-23 17:42:04 [INFO]: Queue position generated: id= rtp_world, database_ID= 1314, location= x: 4146, y: 71, z: 4514, world: world
+2025-08-23 17:42:06 [INFO]: Queue position generated: id= rtp_world, database_ID= 1315, location= x: -2787, y: 63, z: 2464, world: world
+2025-08-23 17:42:07 [INFO]: Queue position generated: id= rtp_world, database_ID= 1316, location= x: 810, y: 142, z: 4071, world: world
+2025-08-23 17:42:08 [INFO]: Queue position generated: id= rtp_world, database_ID= 1317, location= x: -4651, y: 183, z: 924, world: world
+2025-08-23 17:42:10 [INFO]: Queue position generated: id= rtp_world, database_ID= 1318, location= x: -769, y: 66, z: -3081, world: world
+2025-08-23 17:42:12 [INFO]: Queue position generated: id= rtp_world, database_ID= 1319, location= x: 4401, y: 112, z: 4883, world: world
+2025-08-23 17:42:13 [INFO]: Queue position generated: id= rtp_world, database_ID= 1320, location= x: 975, y: 64, z: 4861, world: world
+2025-08-23 17:42:14 [INFO]: Queue position generated: id= rtp_world, database_ID= 1321, location= x: 2991, y: 64, z: 4275, world: world
+2025-08-23 17:42:15 [INFO]: Queue position generated: id= rtp_world, database_ID= 1322, location= x: 1894, y: 69, z: 3131, world: world
+2025-08-23 17:42:17 [INFO]: Queue position generated: id= rtp_world, database_ID= 1323, location= x: 2015, y: 69, z: -3941, world: world
+2025-08-23 17:42:23 [INFO]: Queue position generated: id= rtp_world, database_ID= 1324, location= x: -4405, y: 94, z: 521, world: world
+2025-08-23 17:42:24 [INFO]: Queue position generated: id= rtp_world, database_ID= 1325, location= x: -133, y: 63, z: 3045, world: world
+2025-08-23 17:42:25 [INFO]: Queue position generated: id= rtp_world, database_ID= 1326, location= x: -3614, y: 68, z: 4956, world: world
+2025-08-23 17:42:26 [INFO]: Queue position generated: id= rtp_world, database_ID= 1327, location= x: -104, y: 136, z: 2038, world: world
+2025-08-23 17:42:32 [INFO]: Max attempts to create a Queue reached for rtp_world (amount: 25)
+2025-08-23 17:50:46 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world
+2025-08-23 17:50:48 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_resource
+2025-08-23 17:50:51 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-3613.5,y=68.0,z=4956.5,pitch=26.70002,yaw=85.94885}
+2025-08-23 17:53:52 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_resource
+2025-08-23 17:53:54 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_resource
+2025-08-23 17:53:55 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_resource
+2025-08-23 18:10:12 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_nether
+2025-08-23 18:10:18 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-1310.5,y=68.0,z=4993.5,pitch=16.499926,yaw=-149.69936}
+2025-08-23 18:26:59 [INFO]: CONSOLE executed: /rtp player Blockliadar world
+2025-08-23 18:27:01 [INFO]: CONSOLE executed: /rtp player Blockliadar world
+2025-08-23 18:27:06 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-2434.5,y=67.0,z=2633.5,pitch=7.2000203,yaw=166.65031}
+2025-08-23 18:27:17 [INFO]: CONSOLE executed: /rtp player inomiya_sakana world
+2025-08-23 18:27:23 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-251.5,y=67.0,z=-2558.5,pitch=4.9500055,yaw=-100.2001}
+2025-08-23 18:45:22 [INFO]: CONSOLE executed: /rtp player FillAway world_nether
+2025-08-23 18:45:27 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=4840.5,y=69.0,z=255.5,pitch=37.200054,yaw=-58.06128}
+2025-08-23 19:20:08 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_nether
+2025-08-23 19:20:13 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=647.5,y=86.0,z=1489.5,pitch=9.9001045,yaw=-62.651367}
+2025-08-23 19:23:13 [INFO]: CONSOLE executed: /rtp player Qingzhong_v world_nether
+2025-08-23 19:23:18 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=4947.5,y=76.0,z=4075.5,pitch=27.750145,yaw=-102.40137}

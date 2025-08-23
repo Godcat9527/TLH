@@ -1,0 +1,12 @@
+shoot_balloon_spawn:
+  Action: REPLACE
+  Type: shoot_balloon
+  Chance: 0.02
+  Priority: 2
+  Worlds: world # <------ 请修改你的世界名称 Please change to your world name
+  Cooldown: 500
+  Conditions:
+  - raining false 
+  - outside true
+  - mobsInRadius{types=shoot_balloon;amount=<1;radius=15} true #限制半径内气球生成数量 amount调整数量 radius调整半径范围
+  #Limit the number of balloons generated within the radius. Amount adjusts the number. Radius adjusts the radius range.

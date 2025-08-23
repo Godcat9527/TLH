@@ -1,0 +1,37 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+UNRELIABLE_HAMMER:
+  base:
+    material: DIAMOND_AXE
+    name: §3不可思议的重锤
+    required-level: 10.0
+    tier: UNCOMMON
+    lore:
+      - §7这把重锤拥有随机的属性
+      - §7他可能时§非常低的耐久§7亦或是
+      - §7§c非常高§7的! 他将会在达到0时§c损毁§7
+      - §如果他被升级, 他将会§c降级§7
+      - §7同理可得其他特性。
+    max-durability:
+      base: 150.0
+      spread: 0.8
+      max-spread: 0.9
+    attack-damage:
+      base: 14.0
+      scale: 0.08
+      spread: 0.1
+      max-spread: 0.2
+    attack-speed: 1.4
+    critical-strike-chance:
+      base: 12.0
+      spread: 0.05
+      max-spread: 0.09
+    critical-strike-power:
+      base: 10.0
+      spread: 0.05
+      max-spread: 0.09
+    blunt-power: 3.0
+    blunt-rating: 30.0
+    will-break: true
+    break-downgrade: true
+    durability-bar: true

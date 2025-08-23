@@ -1,0 +1,411 @@
+Rent:
+  # Controls whether Shop Rent feature is enabled.
+  Enabled: true
+  # Sets limit for rent duration value.
+  # [*] Use -1 for unlimited.
+  MaxDuration: 60
+  # Sets limit for rent price per currency.
+  # [*] Use -1 for unlimited.
+  MaxPrice:
+    vault: 10000.0
+Shops:
+  # Sets whether or not invalid shops (that can not be loaded properly) will be auto deleted.
+  Delete_Invalid_Shop_Configs: false
+  # Sets custom shop's owner name for admin shops.
+  AdminShop_Name: AdminShop
+  # Default shop name, that will be used on shop creation.
+  Default_Name: Shop
+  # Sets max. possible length for shop name.
+  # Useful to prevent players from setting ridiculously long names for their shops.
+  Max_Name_Length: 12
+  # Sets the default ChestShop currency. It will be used for new products and when no other currencies are available.
+  # As well as for shop creation/deletion price.
+  Default_Currency: vault
+  # Sets default product purchase menu config.
+  # You can create and edit Cart UIs in /menu/product_carts/ directory.
+  Default_Cart_UI: default
+  # Controls whether plugin should check shop's location safety before player teleports to it.
+  Check_Safe_Location: true
+  # Sets whether or not players must have 'excellentshop.chestshop.currency.[name]' permissions to use specific currencies from 'Allowed_Currencies' list.
+  Check_Currency_Permission: false
+  # A list of currencies that can be used for Chest Shop products.
+  Allowed_Currencies:
+  - vault
+  # A list of Materials, that can be used for shop creation.
+  # Only 'Container' block materials can be used!
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Container.html
+  Allowed_Containers:
+  - barrel
+  - shulker_box
+  - chest
+  - trapped_chest
+  # Sets whether or not player's shop bank will be auto-managed without manual operations.
+  # This means that players will gain/lose their funds instantly for each transaction in their shops.
+  Auto_Bank: true
+  # Sets whether or not plugin will withdraw/deposit currency directly
+  # from/to shop owner's account when player is offline instead of shop bank usage.
+  #
+  # Why? Even with 'Auto_Bank' option enabled, players can't sell items to shops with offline owners
+  # unless there are enough funds in the shop bank.
+  # This setting will bypass that.
+  #
+  # [*] This feature may damage performance (depends on the currency plugin and its offline player data handling).
+  # [*] This feature is not available for some currencies.
+  OfflineTransactions: false
+  InfiniteStorage:
+    # Sets whether or not infinite storage system is enabled.
+    # Infinite storage allows you to store as many items in your shops as you want/can,
+    # and don't uses block inventories.
+    Enabled: false
+  Product:
+    InitialPrice:
+      # Sets initial buy price for new products added in chest shops.
+      Buy: 10.0
+      # Sets initial sell price for new products added in chest shops.
+      Sell: 2.0
+  ItemCreation:
+    # Sets whether or not players can create shops by placing specific item.
+    Enabled: false
+    # Assigns custom shop creation items with specific container types.
+    # These items, when placed, will turn out into assigned container with a shop created on it:
+    # -- Items:
+    # ---- <container_type>: # See 'Allowed_Containers'
+    # ------ <item settings> # https://nightexpressdev.com/nightcore/configuration/item-formation/
+    Items:
+      barrel:
+        Material: PLAYER_HEAD
+        SkinURL: 5193c89d1df679854f33c2215247b676a159d5395392d0c61b8476f813d9edb0
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>木桶</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      yellow_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: e780feff71541bf6eb4368e726f868871cc549f2599d45cc0e1c729825fee9df
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>黄色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      gray_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: a95bde13c45754468cfc8c3a00133d997362fa7e302b0b0fbc4bd0fca6890059
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>灰色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      pink_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: a374cf299874af600608acfb55169237fda244ccca0e23aa08c2e335bd73406b
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>粉红色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      cyan_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: 101facfbdea4980bb0182dcf259341093e22b87375e70b849b88cfad17fc5b27
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>青色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      orange_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: a83cbb7b98e1954dd2c007ea45975fc7fe1f6ebea7c12d75a578d0960f34996
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>橙色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      brown_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: b41956931d1f6d1d1b6f82f077b8a265b259f5d29f567869e9955cc6f9a82f12
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>棕色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      magenta_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: 83524237183c2ba221ba61923a7130099e37166227cacb1f65cec93b6c33a6a8
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>品红色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      chest:
+        Material: PLAYER_HEAD
+        SkinURL: edc36c9cb50a527aa55607a0df7185ad20aabaa903e8d9abfc78260705540def
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>箱子</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      green_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: efd8881d02fe9cee859ac597731b2df46bee6d52c446205f9da9dfa7bd111694
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>绿色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      white_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: 7e066c569d4b94e49b23770e46c9a0e1d736711becb702809375e2d5a32f2a99
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>白色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      blue_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: 47d0d86e1f1108468ac150dafa28e7d0619a6e3066cb42994bc6c1866bd267e3
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>蓝色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      red_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: 324aa7bf056ccd3d4e63197b04d89f0e9ba79fa6049c503029521724e234054a
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>红色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      lime_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: f45cf042172c9e4e7c8eea570ac8bbd76dc7d8d561ae0f7b60937b3bd4d92e19
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>黄绿色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      light_gray_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: 56a48c4037343731bd5fd1510ca15c573788389f258677a17f014e08aeaa9560
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>淡灰色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      black_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: bf6174c01a67e1eada9db16bb551ddee32dfcbf37611382f88cdb1e62895bab2
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>黑色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      purple_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: 30eed20b95873611c2b60e54f8df6f4e6654fb9575fc47e63f63327f9f6c56cf
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>紫色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+      light_blue_shulker_box:
+        Material: PLAYER_HEAD
+        SkinURL: dbcf2e5a0ee72bbd63b08336918f11730120a49df3557cfa84ff6450fbc4c65c
+        Name: <lyellow><b>Shop Block</b></lyellow> <gray>(<white>淡蓝色潜影盒</white>)</gray>
+        Lore:
+        - <gray>Place down to create a shop!</gray>
+  Creation:
+    Cost:
+      # Sets how much player have to pay in order to create a chest shop.
+      Create: 0.0
+      # Sets how much player have to pay in order to remove a chest shop.
+      Remove: 0.0
+    # List of worlds, where chest shop creation is not allowed.
+    World_Blacklist:
+    - another_world
+    - custom_world
+    # Sets amount of possible shops available for certain ranks/permissions.
+    # Use '-1' for unlimited amount.
+    Max_Shops_Per_Rank:
+      # Available values: RANK, PERMISSION
+      # ==================== RANK MODE ====================
+      # Get value by player's permission group. All keys in 'Values' list will represent permission group names.
+      # If player has none of specified groups, the 'Default_Value' setting will be used then
+      #   Values:
+      #     vip: 1 # -> Player must be in 'vip' permission group.
+      #     gold: 2 # -> Player must be in 'gold' permission group.
+      #     emerald: 3 # -> Player must be in 'emerald' permission group.
+      #
+      # ==================== PERMISSION MODE ====================
+      # Get value by player's permissions. All keys in 'Values' list will represent postfixes for the 'Permission_Prefix' setting (see below).
+      # If player has none of specified permissions, the 'Default_Value' setting will be used then
+      #   Permission_Prefix: 'example.prefix.'
+      #   Values:
+      #     vip: 1 # -> Player must have 'example.prefix.vip' permission.
+      #     gold: 2 # -> Player must have 'example.prefix.gold' permission.
+      #     emerald: 3 # -> Player must have 'example.prefix.emerald' permission.
+      Mode: RANK
+      # Sets permission prefix for the 'PERMISSION' mode.
+      Permission_Prefix: excellentshop.chestshop.shops.amount.
+      Default_Value: 10
+      Values:
+        vip: 20
+        admin: -1
+    # Sets whether or not plugin will simulate block placing to make sure that player can crate shops there.
+    # This setting should be enough as universal compatibility solution with claim/protection plugins.
+    # Disable this only if you're experiencing major issues.
+    Check_Build_Access: true
+    In_Player_Claims_Only:
+      # Sets whether or not players can create shops in their own claims only.
+      # Supported Plugins: Lands, GriefPrevention, WorldGuard, Kingdoms
+      Enabled: false
+  Products:
+    # Sets how many products a player with certain rank/permission can put in a shop at the same time.
+    # Use '-1' for unlimited amount.
+    Max_Products_Per_Shop:
+      # Available values: RANK, PERMISSION
+      # ==================== RANK MODE ====================
+      # Get value by player's permission group. All keys in 'Values' list will represent permission group names.
+      # If player has none of specified groups, the 'Default_Value' setting will be used then
+      #   Values:
+      #     vip: 1 # -> Player must be in 'vip' permission group.
+      #     gold: 2 # -> Player must be in 'gold' permission group.
+      #     emerald: 3 # -> Player must be in 'emerald' permission group.
+      #
+      # ==================== PERMISSION MODE ====================
+      # Get value by player's permissions. All keys in 'Values' list will represent postfixes for the 'Permission_Prefix' setting (see below).
+      # If player has none of specified permissions, the 'Default_Value' setting will be used then
+      #   Permission_Prefix: 'example.prefix.'
+      #   Values:
+      #     vip: 1 # -> Player must have 'example.prefix.vip' permission.
+      #     gold: 2 # -> Player must have 'example.prefix.gold' permission.
+      #     emerald: 3 # -> Player must have 'example.prefix.emerald' permission.
+      Mode: RANK
+      # Sets permission prefix for the 'PERMISSION' mode.
+      Permission_Prefix: excellentshop.chestshop.products.amount.
+      Default_Value: 3
+      Values:
+        vip: 5
+        admin: -1
+    # When enabled, all items added as products in chest shops will be added with 1 amount no matter of the stack amount player used in.
+    New_Products_Single_Amount: false
+    # List of items that can not be added as shop products.
+    # Vanilla Names: https://minecraft.wiki/w/Java_Edition_data_values -> Blocks / Items -> Resource location column.
+    # Supported Plugins: ExcellentCrates, ExecutableItems, ItemsAdder, MMOItems, Nexo, Oraxen
+    Material_Blacklist:
+    - custom_item_123
+    - barrier
+    # Items containing the following words in their lore will be disallowed from being used as shop products.
+    Lore_Blacklist:
+    - ass hole bitch
+    - fuck
+    # Items containing the following words in their name will be disallowed from being used as shop products.
+    Name_Blacklist:
+    - sample text
+    - shit
+    Format:
+      # Product lore format. Use '%lore%' placeholder to insert original lore of the product item.
+      # You can use 'Chest Product' placeholders: https://nightexpressdev.com/excellentshop/placeholders
+      Main:
+      - '%lore%'
+      - ''
+      - '%buy%'
+      - ''
+      - '%sell%'
+      - ''
+      - <dgray>Hold <lgray>Shift</lgray> to buy & sell quickly.</dgray>
+      # Lore that will appear if product is buyable.
+      # Placeholder: %buy%
+      Buy:
+      - <green><b>BUY:</b></green>
+      - <green>←<white> Left Click to buy for </white>%product_price_buy_formatted%</green>
+      - '<green>✔<white> Items Left: </white>%product_stock_global_buy_amount_left%</green>'
+      # Text to appear if product is sellable.
+      # Placeholder: %sell%
+      Sell:
+      - <red><b>SELL:</b></red>
+      - <red>→<white> Right Click to sell for </white>%product_price_sell_formatted%</red>
+      - <red>→<white> Press [F] to sell all for </white>%product_price_sell_all_formatted%</red>
+      - '<red>✔<white> Shop Space: </white>%product_stock_global_sell_amount_left%</red>'
+Shop:
+  Product:
+    Bypass_Plugin_Detection:
+      # When enabled, allows players to bypass plugin detection of the item they want to put as a shop product.
+      Enabled: false
+      # When enabled, bypass plugin detection for a shop products will work only when player holds the Shift key (sneaking).
+      Hold_Shift: false
+Display:
+  # Sets an item that will be used as default shop showcase.
+  # You can provide different showcases for different shop types you set in 'Allowed_Containers' option.
+  # Use 'default' keyword to set showcase item for all unlisted here container types.
+  # Available item options including model data: https://nightexpressdev.com/nightcore/configuration/item-formation/
+  Showcase:
+    default:
+      Material: GLASS
+    chest:
+      Material: WHITE_STAINED_GLASS
+  PlayerCustomization:
+    # Sets whether or not players can customize displays for their shops personally.
+    # This feature can also be regulated by the following permission: 'excellentshop.chestshop.display.customization.
+    Enabled: true
+    # List of items available to be used by players as shop showcases.
+    Showcases:
+      glass:
+        Material: GLASS
+      blue_glass:
+        Material: BLUE_STAINED_GLASS
+      black_glass:
+        Material: BLACK_STAINED_GLASS
+      gray_glass:
+        Material: GRAY_STAINED_GLASS
+      white_glass:
+        Material: WHITE_STAINED_GLASS
+      purple_glass:
+        Material: PURPLE_STAINED_GLASS
+      light_gray_glass:
+        Material: LIGHT_GRAY_STAINED_GLASS
+      orange_glass:
+        Material: ORANGE_STAINED_GLASS
+      lime_glass:
+        Material: LIME_STAINED_GLASS
+      light_blue_glass:
+        Material: LIGHT_BLUE_STAINED_GLASS
+      brown_glass:
+        Material: BROWN_STAINED_GLASS
+      green_glass:
+        Material: GREEN_STAINED_GLASS
+      red_glass:
+        Material: RED_STAINED_GLASS
+      cyan_glass:
+        Material: CYAN_STAINED_GLASS
+      pink_glass:
+        Material: PINK_STAINED_GLASS
+      magenta_glass:
+        Material: MAGENTA_STAINED_GLASS
+      yellow_glass:
+        Material: YELLOW_STAINED_GLASS
+  # Defines update interval for shop displays (in seconds).
+  Update_Interval: 3
+  # Sets shop display visibility distance.
+  # Players will see shop displays when they are close enough.
+  Visible_Distance: 10
+  Title:
+    # When 'true', creates a client-side hologram above the shop.
+    Enabled: true
+    Values:
+      # Sets hologram text format for player and admin shops when both options, buying and selling, are available.
+      # You can use 'Chest Shop' placeholders: https://nightexpressdev.com/excellentshop/placeholders
+      # Display item name: %product_name%
+      # Display item price: %product_price_buy%, %product_price_sell%
+      # PlaceholderAPI is also supported here.
+      ADMIN:
+      - <lyellow><b>%shop_name%</b></lyellow>
+      - <lgray>%product_name%</lgray>
+      - '%buy% %sell%'
+      # Sets hologram text format for player and admin shops when both options, buying and selling, are available.
+      # You can use 'Chest Shop' placeholders: https://nightexpressdev.com/excellentshop/placeholders
+      # Display item name: %product_name%
+      # Display item price: %product_price_buy%, %product_price_sell%
+      # Display item stock: %product_stock%
+      # PlaceholderAPI is also supported here.
+      PLAYER:
+      - <lyellow><b>%shop_name%</b></lyellow>
+      - <lgray>%product_name%</lgray>
+      - '%buy% %sell%'
+      - '<lgray>Stock: <lyellow>%product_stock%</lyellow></lgray>'
+    # Sets hologram text for rentable shops.
+    Rent:
+    - <lyellow><b>For Rent</b></lyellow>
+    - <lgray>%shop_rent_duration%</lgray>
+    - <lgray>%shop_rent_price%</lgray>
+    # Sets hologram text to appear for '%buy%' placeholder when buying option is available for displayed product.
+    # Price placeholder: %product_price_buy%
+    # All placeholders from 'Title -> Values' option are available here too.
+    BuyValue:
+      PLAYER: '<lgray><green>B: </green><lgreen>%product_price_buy%</lgreen></lgray>'
+      ADMIN: '<lgray><green>B: </green><lgreen>%product_price_buy%</lgreen></lgray>'
+    # Sets hologram text to appear for '%sell%' placeholder when selling option is available for displayed product.
+    # Price placeholder: %product_price_sell%
+    # All placeholders from 'Title -> Values' option are available here too.
+    SellValue:
+      PLAYER: '<lgray><red>S: </red><lred>%product_price_sell%</lred></lgray>'
+      ADMIN: '<lgray><red>S: </red><lred>%product_price_sell%</lred></lgray>'
+  Hologram:
+    # When enabled, forces plugin to use Armor Stand entities instead of Display ones.
+    Force_ArmorStands: false
+    # Sets distance between hologram lines.
+    LineGap: 0.3
+Transaction_Logs:
+  Output:
+    File: true
+    Console: true
+  Format:
+    Date: dd/MM/yyyy HH:mm:ss
+    Purchase: '%type%: %player_name% - x%amount% of %item% for %price% in %shop_name% shop. [%shop_location_x%, %shop_location_y%, %shop_location_z% in %shop_location_world%, owned by %shop_owner%]'

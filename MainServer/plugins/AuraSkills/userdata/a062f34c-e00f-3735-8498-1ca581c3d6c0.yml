@@ -1,0 +1,80 @@
+uuid: a062f34c-e00f-3735-8498-1ca581c3d6c0
+skills:
+  auraskills/foraging:
+    level: 0
+    xp: 0.0
+  auraskills/agility:
+    level: 0
+    xp: 137.7084
+  auraskills/alchemy:
+    level: 0
+    xp: 0.0
+  auraskills/mining:
+    level: 0
+    xp: 1.2
+  auraskills/defense:
+    level: 0
+    xp: 0.0
+  auraskills/farming:
+    level: 0
+    xp: 0.0
+  auraskills/excavation:
+    level: 0
+    xp: 2.3
+  auraskills/enchanting:
+    level: 0
+    xp: 0.0
+  auraskills/fighting:
+    level: 0
+    xp: 15.0
+  auraskills/fishing:
+    level: 0
+    xp: 0.0
+  auraskills/archery:
+    level: 0
+    xp: 0.0
+mana: 20.0
+action_bar:
+  idle: true
+stat_modifiers:
+  '0':
+    name: mmoitems_WISDOM
+    stat: auraskills/wisdom
+    value: 0.0
+  '1':
+    name: mmoitems_STRENGTH
+    stat: auraskills/strength
+    value: 0.0
+  '2':
+    name: mmoitems_TOUGHNESS
+    stat: auraskills/toughness
+    value: 0.0
+  '3':
+    name: mmoitems_REGENERATION
+    stat: auraskills/regeneration
+    value: 0.0
+  '4':
+    name: mmoitems_CRIT_CHANCE
+    stat: auraskills/crit_chance
+    value: 0.0
+  '5':
+    name: mmoitems_SPEED
+    stat: auraskills/speed
+    value: 0.0
+  '6':
+    name: mmoitems_CRIT_DAMAGE
+    stat: auraskills/crit_damage
+    value: 0.0
+  '7':
+    name: mmoitems_LUCK
+    stat: auraskills/luck
+    value: 0.0
+  '8':
+    name: mmoitems_HEALTH
+    stat: auraskills/health
+    value: 0.0
+trait_modifiers:
+  '0':
+    name: mmoitems_max_mana
+    trait: auraskills/max_mana
+    value: 0.0

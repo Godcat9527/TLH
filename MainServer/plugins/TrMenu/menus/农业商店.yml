@@ -1,0 +1,49 @@
+title: '&a&l农业商店'
+
+Layout:
+  - '@@@@@@@@@'
+  - '@@ @@@ @@' 
+  - '@@@@@@@@@'
+
+
+
+
+
+Icons: 
+
+  '@':
+    display:
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+
+  'farmtool':
+    display:
+      material: golden_hoe
+      name: '&f[&a农具出售&f]'
+      slots: 11
+      lore: 
+      - ''
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'console: vshop open farming %player_name%'
+      right:
+        - 'console: vshop open farming %player_name%'
+
+  'crop':
+    display:
+      material: wheat
+      name: '&f[&a农作物收购&f]'
+      slots: 15
+      lore: 
+      - ''
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'console: vshop open crop %player_name%'
+      right:
+        - 'console: vshop open crop %player_name%'

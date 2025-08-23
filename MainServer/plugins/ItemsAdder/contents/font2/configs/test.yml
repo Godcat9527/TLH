@@ -1,0 +1,171 @@
+﻿info:
+  namespace: "test"
+font_images:
+  fengji:
+    path: "fengji.png"
+    suggest_in_command: false
+    symbol: "\ue130"
+    scale_ratio: 8
+    y_position: 7
+    #E100
+  helper:
+    path: "helper.png"
+    suggest_in_command: false
+    symbol: "\ue131"
+    scale_ratio: 8
+    y_position: 7
+  lowshop:
+    path: "lowshop.png"
+    suggest_in_command: false
+    symbol: "\ue132"
+    scale_ratio: 8
+    y_position: 7
+  twitch:
+    path: "twitch.png"
+    suggest_in_command: false
+    symbol: "\ue133"
+    scale_ratio: 8
+    y_position: 7
+  vip:
+    path: "vip.png"
+    suggest_in_command: false
+    symbol: "\ue134"
+    scale_ratio: 8
+    y_position: 7
+  mvp:
+    path: "mvp.png"
+    suggest_in_command: false
+    symbol: "\ue135"
+    scale_ratio: 8
+    y_position: 7
+   #E105
+  gd1:
+    path: "gd1.png"
+    suggest_in_command: false
+    symbol: "\ue136"
+    scale_ratio: 7
+    y_position: 7
+  #E105
+  hs1:
+    path: "hs1.png"
+    suggest_in_command: false
+    symbol: "\ue137"
+    scale_ratio: 7
+    y_position: 7
+  #11111
+  #E106
+  builder:
+    path: "builder.png"
+    suggest_in_command: false
+    symbol: "\ue138"
+    scale_ratio: 7
+    y_position: 7
+    #E107
+  jzs1:
+    path: "jzs1.png"
+    suggest_in_command: false
+    symbol: "\ue139"
+    scale_ratio: 7
+    y_position: 7
+    #E108
+  bilibili:
+    path: "bilibili.png"
+    suggest_in_command: false
+    symbol: "\ue13A"
+    scale_ratio: 7
+    y_position: 7
+    #11111
+    #E109
+  shop:
+    path: "shop.png"
+    suggest_in_command: false
+    symbol: "\ue13B"
+    scale_ratio: 7
+    y_position: 7
+    #11111
+    #E10a
+  tiktok:
+    path: "tiktok.png"
+    suggest_in_command: false
+    symbol: "\ue13C"
+    scale_ratio: 7
+    y_position: 7
+    #E10b
+  yingtao:
+    path: "yingtao.png"
+    suggest_in_command: false
+    symbol: "\ue13D"
+    scale_ratio: 7
+    y_position: 7
+    #E10c
+  sxxc:
+    path: "sxxc.png"
+    suggest_in_command: false
+    symbol: "\ue13E"
+    scale_ratio: 7
+    y_position: 7
+    #E10d
+  scj:
+    path: "scj.png"
+    suggest_in_command: false
+    symbol: "\ue13F"
+    scale_ratio: 7
+    y_position: 7
+    #E10e
+  director:
+    path: "director.png"
+    suggest_in_command: false
+    symbol: "\ue140"
+    scale_ratio: 7
+    y_position: 7
+    #E10f
+  pengke:
+    path: "pengke.png"
+    suggest_in_command: false
+    symbol: "\ue142"
+    scale_ratio: 7
+    y_position: 7
+    #E111
+  monk:
+    path: "monk.png"
+    suggest_in_command: false
+    symbol: "\ue143"
+    scale_ratio: 7
+    y_position: 7
+    #E112
+  player:
+    path: "player.png"
+    suggest_in_command: false
+    symbol: "\ue144"
+    scale_ratio: 7
+    y_position: 7
+  scj1:
+    path: "scj1.png"
+    suggest_in_command: false
+    symbol: "\ue145"
+    scale_ratio: 7
+    y_position: 7
+  fmz1:
+    path: "fmz1.png"
+    suggest_in_command: false
+    symbol: "\ue146"
+    scale_ratio: 7
+    y_position: 7
+  sff:
+    path: "stff.png"
+    suggest_in_command: false
+    symbol: "\ue147"
+    scale_ratio: 8
+    y_position: 7
+  szn:
+    path: "szn.png"
+    suggest_in_command: false
+    symbol: "\ue201"
+    scale_ratio: 8
+    y_position: 7
+  signin:
+    path: "signin.png"
+    suggest_in_command: false
+    symbol: "\ue202"
+    scale_ratio: 8
+    y_position: 7

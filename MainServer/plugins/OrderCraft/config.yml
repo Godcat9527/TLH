@@ -1,0 +1,164 @@
+# OrderCraft 委托系统配置文件
+
+# 数据库配置
+database:
+  type: "sqlite" # 支持 sqlite 或 mysql
+  sqlite:
+    file: "orders.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "ordercraft"
+    username: "root"
+    password: "password"
+
+# 经济系统配置
+economy:
+  enabled: true
+  currency_symbol: "星币"
+  min_reward: 1.0
+  max_reward: 10000.0
+  publish_fee_percentage: 0.00 # 发布委托收取5%手续费
+
+# GUI界面配置
+gui:
+  # 主界面配置
+  main_menu:
+    title: "&6&l委托大厅"
+    size: 54
+    
+  # 发布委托界面
+  publish_menu:
+    title: "&a&l发布委托"
+    size: 45
+    
+  # 我的委托界面
+  my_orders_menu:
+    title: "&b&l我的委托"
+    size: 54
+
+# 委托配置
+orders:
+  max_orders_per_player: 5 # 每个玩家最多同时发布的委托数
+  max_description_length: 200 # 委托描述最大长度
+  auto_expire_days: 7 # 委托自动过期天数
+  
+# 物品模板配置
+items:
+  # 发布委托按钮
+  publish_button:
+    material: "EMERALD"
+    name: "&a&l发布委托"
+    lore:
+      - "&7点击发布新的委托"
+      - ""
+      - "&e左键: 发布委托"
+      - "&c需要权限: ordercraft.publish"
+      
+  # 我的委托按钮
+  my_orders_button:
+    material: "BOOK"
+    name: "&b&l我的委托"
+    lore:
+      - "&7查看我发布和接取的委托"
+      - ""
+      - "&e左键: 查看委托"
+      
+  # 委托物品模板
+  order_item:
+    material: "PAPER"
+    name: "&6委托: &f{title}"
+    lore:
+      - "&7发布者: &a{publisher}"
+      - "&7奖励: &e{reward}{currency}"
+      - "&7状态: {status}"
+      - "&7发布时间: &f{publish_time}"
+      - ""
+      - "&7描述:"
+      - "&f{description}"
+      - ""
+      - "&e左键: 接取委托"
+      - "&c右键: 查看详情"
+      
+  # 已接取委托模板
+  accepted_order_item:
+    material: "WRITABLE_BOOK"
+    name: "&6委托: &f{title}"
+    lore:
+      - "&7发布者: &a{publisher}"
+      - "&7接取者: &b{accepter}"
+      - "&7奖励: &e{reward}{currency}"
+      - "&7状态: {status}"
+      - "&7接取时间: &f{accept_time}"
+      - ""
+      - "&7描述:"
+      - "&f{description}"
+      - ""
+      - "&a左键: 标记完成"
+      - "&c右键: 放弃委托"
+      
+  # 装饰物品
+  decoration:
+    #material: "GRAY_STAINED_GLASS_PANE"
+    material: "LIME_STAINED_GLASS_PANE" 
+    name: " "
+    lore: []
+
+# 消息配置
+messages:
+  prefix: "&6[委托系统] "
+  
+  # 成功消息
+  order_published: "&a委托发布成功！扣除手续费 {fee}{currency}"
+  order_accepted: "&a成功接取委托: {title}"
+  order_submitted: "&a已提交完成申请，等待发布者确认"
+  order_completed: "&a委托完成！获得奖励 {reward}{currency}"
+  order_confirmed: "&a已确认委托 {title} 完成，奖励 {reward}{currency} 已发放给接取者"
+  order_cancelled: "&c委托已取消，退还 {reward}{currency}"
+  order_deleted: "&c管理员已删除委托 #{id}: {title}"
+  order_deleted_refund: "&c管理员删除了你的委托 {title}，已退还 {reward}{currency}"
+  order_deleted_accepter: "&c你接取的委托 {title} 已被管理员删除"
+  order_abandoned: "&c你已放弃委托: {title}"
+  order_abandoned_publisher: "&c委托 &e{title} &c已被接取者 &b{accepter} &c放弃！"
+  
+  # 错误消息
+  no_permission: "&c你没有权限执行此操作！"
+  insufficient_funds: "&c余额不足！需要 {amount}"
+  order_not_found: "&c未找到指定的委托！"
+  order_already_accepted: "&c此委托已被接取！"
+  cannot_accept_own_order: "&c不能接取自己发布的委托！"
+  max_orders_reached: "&c你已达到最大委托发布数量限制！"
+  order_expired: "&c此委托已过期！"
+  invalid_reward_amount: "&c奖励金额无效！必须在 {min} 到 {max} 之间"
+  payment_failed: "&c支付失败！请稍后重试"
+  database_error: "&c数据库错误！请联系管理员"
+  cannot_complete_order: "&c无法完成此委托！"
+  cannot_submit_order: "&c无法提交此委托！"
+  cannot_confirm_order: "&c无法确认此委托！"
+  not_order_accepter: "&c你不是此委托的接取者！"
+  not_order_publisher: "&c你不是此委托的发布者！"
+  cannot_cancel_order: "&c无法取消此委托！"
+  cannot_abandon_order: "&c无法放弃此委托！"
+  
+  # 通知消息
+  order_accepted_publisher: "&a你的委托 &e{title} &a已被 &b{accepter} &a接取！"
+  order_submitted_publisher: "&e委托 &e{title} &e已被 &b{submitter} &e提交完成，请确认！"
+  order_completed_publisher: "&a你的委托 &e{title} &a已被 &b{completer} &a完成！"
+  order_cancelled_accepter: "&c委托 &e{title} &c已被发布者取消！"
+  
+  # 状态文本
+  status:
+    pending: "&e等待接取"
+    accepted: "&b已接取"
+    submitted: "&6等待确认"
+    completed: "&a已完成"
+    cancelled: "&c已取消"
+    expired: "&8已过期"
+    
+  # 帮助信息
+  help:
+    - "&6&l=== OrderCraft 委托系统帮助 ==="
+    - "&e/oc open &7- 打开委托大厅"
+    - "&e/oc reload &7- 重载配置文件 &c(管理员)"
+    - "&e/oc delete <ID> &7- 删除指定委托 &c(管理员)"
+    - "&e/oc help &7- 显示此帮助信息"

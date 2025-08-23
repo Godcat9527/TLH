@@ -1,0 +1,300 @@
+info:
+  namespace: t-material
+items:   
+  t-material-1:
+    display_name: "暗黑之源碎片"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-1
+      model_id: 130
+  t-material-2:
+    display_name: "大天使之源碎片"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-2
+      model_id: 131
+  t-material-3:
+    display_name: "耀光之源碎片"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-3
+      model_id: 134
+  t-material-4:
+    display_name: "圣骑士之源碎片"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-4
+      model_id: 135
+  t-material-5:
+    display_name: "材料-5"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-5
+      model_id: 136
+  t-material-6:
+    display_name: "材料-6"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-6
+      model_id: 137
+  t-material-7:
+    display_name: "材料-7"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-7
+      model_id: 138
+  t-material-8:
+    display_name: "材料-8"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-8
+      model_id: 139
+  t-material-9:
+    display_name: "材料-9"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-9
+      model_id: 140
+  t-material-10:
+    display_name: "材料-10"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-10
+      model_id: 141
+  t-material-11:
+    display_name: "材料-11"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-11
+      model_id: 142
+  t-material-12:
+    display_name: "腐烂之根"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-12
+      model_id: 143
+  t-material-13:
+    display_name: "材料-13"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-13
+      model_id: 144
+  t-material-14:
+    display_name: "材料-14"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-14
+      model_id: 145
+  t-material-15:
+    display_name: "材料-15"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-15
+      model_id: 146
+  t-material-16:
+    display_name: "材料-16"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-16
+      model_id: 147
+  t-material-17:
+    display_name: "材料-17"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-17
+      model_id: 148
+  t-material-18:
+    display_name: "材料-18"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-18
+      model_id: 149
+  t-material-19:
+    display_name: "材料-19"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-19
+      model_id: 150
+  t-material-20:
+    display_name: "材料-20"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-20
+      model_id: 151
+  t-material-21:
+    display_name: "材料-21"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-21
+      model_id: 152
+  t-material-22:
+    display_name: "材料-22"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-22
+      model_id: 153
+  t-material-23:
+    display_name: "材料-23"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-23
+      model_id: 154
+  t-material-24:
+    display_name: "材料-24"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-24
+      model_id: 155
+  t-material-25:
+    display_name: "材料-25"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-25
+      model_id: 156
+  t-material-26:
+    display_name: "材料-26"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-26
+      model_id: 157
+  t-material-27:
+    display_name: "材料-27"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-27
+      model_id: 158
+  t-material-28:
+    display_name: "冰术师结晶"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-28
+      model_id: 159
+  t-material-29:
+    display_name: "材料-29"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-29
+      model_id: 160
+  t-material-30:
+    display_name: "材料-30"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-30
+      model_id: 161
+  t-material-31:
+    display_name: "材料-31"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-31
+      model_id: 162
+  t-material-32:
+    display_name: "材料-32"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-32
+      model_id: 163
+  t-material-33:
+    display_name: "材料-33"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-material-33
+      model_id: 164

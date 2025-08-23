@@ -1,0 +1,460 @@
+List:
+  itemsadder_elitecreatures:wine_decoration_v1_wine_sign_black:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_sign_black
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_sign_wood:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_sign_wood
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 1
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_tray:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_tray
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 9
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_opener:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_opener
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 10
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_glass_red_wine:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_glass_red_wine
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 11
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_glass_no_wine:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_glass_no_wine
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 12
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_barrel_vertical:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_barrel_vertical
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 44
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_barrel_wine:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_barrel_wine
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 43
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_barrel_no_wine:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_barrel_no_wine
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 42
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_bottle:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_bottle
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 13
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_poster:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_poster
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_shelf_wine:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_shelf_wine
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 17
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_picture_wine:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_picture_wine
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 7
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_tray:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_tray
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 18
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_steak:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_steak
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 19
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_cheese:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_cheese
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 20
+      Page: 1
+  itemsadder_elitecreatures:wine_decoration_v1_wine_case:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: elitecreatures:wine_decoration_v1_wine_case
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 16
+      Page: 1

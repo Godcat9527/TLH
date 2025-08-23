@@ -1,0 +1,26 @@
+info:
+  namespace: res_class_set_1
+categories:
+  res_class_set_1:
+    enabled: true
+    skip_if_already: false
+    icon: "res_class_set_1:warrior_sword"
+    name: 基础套装
+    permission: ia.menu
+    items:
+      - "res_class_set_1:warrior_sword"
+      - "res_class_set_1:archer_bow"
+      - "res_class_set_1:archer_arrow"
+      - "res_class_set_1:mage_staff"
+      - "res_class_set_1:warrior_helmet"
+      - "res_class_set_1:warrior_chestplate"
+      - "res_class_set_1:warrior_leggings"
+      - "res_class_set_1:warrior_boots"
+      - "res_class_set_1:archer_helmet"
+      - "res_class_set_1:archer_chestplate"
+      - "res_class_set_1:archer_leggings"
+      - "res_class_set_1:archer_boots"
+      - "res_class_set_1:mage_helmet"
+      - "res_class_set_1:mage_chestplate"
+      - "res_class_set_1:mage_leggings"
+      - "res_class_set_1:mage_boots"

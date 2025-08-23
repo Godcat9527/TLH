@@ -1,0 +1,5 @@
+on click holding a clock:
+    name of player's tool contains "§b§l快捷菜单"
+    tool's lore contains "§e快捷菜单"
+    make player execute command "opencd"
+    cancel event

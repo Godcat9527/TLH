@@ -1,0 +1,23 @@
+name: 冒险家
+permissions:
+- betterrtp.group.冒险家
+- cmi.command.workbench
+- auraskills.multiplier.20
+- cmi.command.flyc:
+    value: true
+    context:
+      world:
+      - one_world
+      - three_world
+      - world
+      - world_nether
+      - world_resource
+      - world_the_end
+parents:
+- 踏上旅程2
+prefixes:
+- '&#B0C4DE[&#63B8FF冒险家&#B0C4DE]':
+    priority: 30
+suffixes:
+- '&#ffffff':
+    priority: 30

@@ -1,0 +1,542 @@
+List:
+  itemsadder_nogs_menagerie:nm_plushie_couscous:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_couscous
+      Amount: 1
+    Rotating: true
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 10
+        SellAmount: -1
+        RestockTime: -1
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 259200
+    Shop_View:
+      Slot: -1
+      Page: -1
+  itemsadder_nogs_menagerie:nm_plushie_cozy_ibex:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_cozy_ibex
+      Amount: 1
+    Rotating: true
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 10
+        SellAmount: -1
+        RestockTime: -1
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 259200
+    Shop_View:
+      Slot: -1
+      Page: -1
+  itemsadder_nogs_menagerie:nm_plushie_big_eared_rapscallion:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_big_eared_rapscallion
+      Amount: 1
+    Rotating: true
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 20.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: -1
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 259200
+    Shop_View:
+      Slot: -1
+      Page: -1
+  itemsadder_nogs_menagerie:nm_plushie_cozy_tiger:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_cozy_tiger
+      Amount: 1
+    Rotating: true
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 10
+        SellAmount: -1
+        RestockTime: -1
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 259200
+    Shop_View:
+      Slot: -1
+      Page: -1
+  itemsadder_nogs_menagerie:nm_plushie_cozy_owl:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_cozy_owl
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+  itemsadder_nogs_menagerie:nm_plushie_cozy_robin:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_cozy_robin
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 1
+      Page: 1
+  itemsadder_nogs_menagerie:nm_plushie_cozy_villager:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_cozy_villager
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 2
+      Page: 1
+  itemsadder_nogs_menagerie:nm_plushie_cozy_snow_leopard:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_cozy_snow_leopard
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 3
+      Page: 1
+  itemsadder_nogs_menagerie:nm_plushie_black_scowling_penguin:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_plushie_black_scowling_penguin
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 4
+      Page: 1
+  itemsadder_furnituresplus:yellowfabric:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: furnituresplus:yellowfabric
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 100.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 7
+      Page: 1
+  itemsadder_furnituresplus:redfabric:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: furnituresplus:redfabric
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 100.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 1
+  itemsadder_nogs_menagerie:nm_card_camel:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_card_camel
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: 2.0
+      BUY: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 27
+      Page: 1
+  itemsadder_nogs_menagerie:nm_card_cod:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_card_cod
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: 2.0
+      BUY: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 28
+      Page: 1
+  itemsadder_nogs_menagerie:nm_card_panda:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_card_panda
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: 2.0
+      BUY: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 29
+      Page: 1
+  itemsadder_nogs_menagerie:nm_card_cat:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_card_cat
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: 2.0
+      BUY: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 36
+      Page: 1
+  itemsadder_nogs_menagerie:nm_card_donkey:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_card_donkey
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: 2.0
+      BUY: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 37
+      Page: 1
+  itemsadder_nogs_menagerie:nm_card_armadillo:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_card_armadillo
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: 2.0
+      BUY: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 38
+      Page: 1
+  itemsadder_nogs_menagerie:nm_card_frog:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: nogs_menagerie:nm_card_frog
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: 2.0
+      BUY: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 39
+      Page: 1
+  command_item:
+    Type: COMMAND
+    Content:
+      Preview: '{components:{"minecraft:custom_name":''{"extra":[{"bold":false,"color":"aqua","italic":false,"obfuscated":false,"strikethrough":false,"text":"兑换700点飞行能量","underlined":false}],"text":""}''},count:1,id:"minecraft:elytra"}'
+      Commands:
+      - flightcharge add %player_name% 700
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: 10
+        SellAmount: -1
+        RestockTime: 86400
+    Shop_View:
+      Slot: 43
+      Page: 1
+    Handler: bukkit_item
+  itemsadder_t-items:t-items-9:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: t-items:t-items-9
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 20.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 44
+      Page: 1

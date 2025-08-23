@@ -1,0 +1,54 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+GOLD_COIN:
+  base:
+    material: GOLD_NUGGET
+    name: '&f金币'
+    lore:
+    - '&7不像是假的。'
+    enchants:
+      unbreaking: 1
+    hide-enchants: true
+    disable-crafting: true
+HUMAN_SOUL:
+  base:
+    material: PHANTOM_MEMBRANE
+    disable-repairing: false
+    disable-enchanting: false
+    hide-enchants: true
+    enchants:
+      unbreaking: 1
+    name: '&6魂魄'
+    disable-crafting: true
+    lore:
+    - '&7&o能听到敌人的怒吼，'
+    - '&7&o或者战友的哀嚎······'
+MYSTERIOUS_PEARL:
+  base:
+    material: ENDER_PEARL
+    enchants:
+      luck_of_the_sea: 1.0
+    hide-enchants: true
+    name: §9神秘珍珠
+    lore:
+      - §7§o谁知道它藏着什么秘密······
+      - §3无法堆叠。
+    unstackable: true
+    tier: RARE
+LEVEL_1_KEY:
+  base:
+    material: SHEARS
+    name: §3§n一级权限§3秘钥
+    lore:
+      - §7手持时获得§cmmoitems.key
+      - §7权限。
+    granted-permissions:
+      - mmoitems.key
+    tier: UNIQUE
+    unstackable: true
+    disable-interaction: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smelting: true
+    disable-smithing: true
+    unbreakable: true

@@ -1,0 +1,13 @@
+name: 初来乍到
+permissions:
+- betterrtp.group.初来乍到
+- cmi.command.sethome.2
+- displayname.{#FFE7BA}初来乍到
+parents:
+- default
+prefixes:
+- '&#B0C4DE[&#FFE7BA初来乍到&#B0C4DE]':
+    priority: 10
+suffixes:
+- '&#ffffff':
+    priority: 10

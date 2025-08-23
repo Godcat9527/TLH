@@ -1,0 +1,229 @@
+info:
+  namespace: darkworldpack
+items:
+  darkworld_axe:
+    display_name: '&4&l暗黑世界[斧]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[斧]'
+    resource:
+      material: DIAMOND_AXE
+      generate: false
+      model_path: normal/axe
+      model_id: 220
+  darkworld_claymore:
+    display_name: '&4&l暗黑世界[双刃砍刀]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[双刃砍刀]'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/bigsword
+      model_id: 220
+  darkworld_bow:
+    display_name: '&4&l暗黑世界[弓]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[弓]'
+    resource:
+      material: BOW
+      generate: false
+      model_path: normal/bow
+      model_id: 220
+  darkworld_chest:
+    display_name: '&4&l暗黑世界[箱子]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[箱子]'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: normal/chest
+      model_id: 220
+    behaviours:
+      furniture:
+        solid: true
+        small: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          height: 1
+          length: 1
+          width: 1
+  darkworld_open_chest:
+    display_name: '&4&l暗黑世界[打开的箱子]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[打开的箱子]'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: normal/chest_opening
+      model_id: 221
+    behaviours:
+      furniture:
+        solid: true
+        small: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          height: 1
+          length: 1
+          width: 1
+  darkworld_crossbow:
+    display_name: '&4&l暗黑世界[弩]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[弩]'
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: normal/crossbow
+      model_id: 220
+  darkworld_dagger:
+    display_name: '&4&l暗黑世界[尖刀]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[尖刀]'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/dagger
+      model_id: 221
+  darkworld_halberd:
+    display_name: '&4&l暗黑世界[戟]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[戟]'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/halberd
+      model_id: 222
+  darkworld_helmet:
+    display_name: '&4&l暗黑世界[头盔]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[头盔]'
+    resource:
+      material: DIAMOND
+      generate: false
+      model_path: normal/helmet
+      model_id: 223
+    behaviours:
+      hat: true
+  darkworld_hoe:
+    display_name: '&4&l暗黑世界[锄]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[锄]'
+    resource:
+      material: DIAMOND_HOE
+      generate: false
+      model_path: normal/hoe
+      model_id: 220
+  darkworld_katana:
+    display_name: '&4&l暗黑世界[武士刀]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[武士刀]'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/katana
+      model_id: 223
+  darkworld_key:
+    display_name: '&4&l暗黑世界[钥匙]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[钥匙]'
+    resource:
+      material: DIAMOND
+      generate: false
+      model_path: normal/key
+      model_id: 222
+  darkworld_pickaxe:
+    display_name: '&4&l暗黑世界[鸭嘴锄]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[] Pickaxe'
+    resource:
+      material: DIAMOND_PICKAXE
+      generate: false
+      model_path: normal/pickaxe
+      model_id: 220
+  darkworld_shield:
+    display_name: '&4&l暗黑世界[盾]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[盾]'
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: normal/shield
+      model_id: 220
+  darkworld_shovel:
+    display_name: '&4&l暗黑世界[铲]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[铲]'
+    resource:
+      material: DIAMOND_SHOVEL
+      generate: false
+      model_path: normal/shovel
+      model_id: 220
+  darkworld_sickle:
+    display_name: '&4&l暗黑世界[镰刀]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[镰刀]'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/sickle
+      model_id: 224
+  darkworld_spear:
+    display_name: '&4&l暗黑世界[矛]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[矛]'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/spear
+      model_id: 225
+  darkworld_staff:
+    display_name: '&4&l暗黑世界[法杖]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[] Staff'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/staff
+      model_id: 226
+  darkworld_sword:
+    display_name: '&4&l暗黑世界[长剑]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[长剑]'
+    resource:
+      material: DIAMOND_SWORD
+      generate: false
+      model_path: normal/sword
+      model_id: 227
+  darkworld_wings:
+    display_name: '&4&l暗黑世界[翅膀]'
+    permission: permission_model
+    lore:
+      - '&4&l暗黑世界[翅膀]'
+    resource:
+      material: DIAMOND
+      generate: false
+      model_path: normal/wings
+      model_id: 224

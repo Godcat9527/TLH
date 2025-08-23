@@ -1,0 +1,103 @@
+name: default
+permissions:
+- cosmeticscore.user.cosmetics.seeingui.*
+- ia.user.recipe.*
+- lands.player.setting.*
+- lands.role.setting.*
+- lands.command.*
+- lands.setting.*
+- lands.teleport.*
+- lands.bypass.wilderness.fly:
+    value: true
+    context:
+      world:
+      - one_world
+      - spawn
+      - three_world
+      - world_nether
+      - world_the_end
+- bukkit.command.help:
+    value: false
+- bukkit.command.plugins:
+    value: false
+- bukkit.command.version:
+    value: false
+- cmi.chorusteleport
+- cmi.command.back
+- cmi.command.back.ondeath
+- cmi.command.balance
+- cmi.command.baltop
+- cmi.command.dback
+- cmi.command.dispose
+- cmi.command.flightcharge
+- cmi.command.hat
+- cmi.command.home
+- cmi.command.homes
+- cmi.command.msg
+- cmi.command.pay
+- cmi.command.ping
+- cmi.command.playtime
+- cmi.command.prewards
+- cmi.command.removehome
+- cmi.command.sethome
+- cmi.command.sit
+- cmi.command.sit.stairs
+- cmi.command.spawn
+- cmi.command.tpa
+- cmi.command.tpaccept
+- cmi.command.tpahere
+- cmi.command.tpbypass
+- cmi.command.tpdeny
+- cmi.command.warp
+- cmi.customalias.getop:
+    value: false
+- cmi.customalias.help
+- cmi.customalias.seeghostgo
+- cmi.customalias.wardenroar
+- cmi.elevator.use
+- cmi.kit.新手礼包
+- coreprotect.lookup
+- coreprotect.lookup.chat:
+    value: false
+- coreprotect.lookup.command:
+    value: false
+- coreprotect.lookup.inventory:
+    value: false
+- coreprotect.lookup.item:
+    value: false
+- coreprotect.lookup.kill
+- coreprotect.lookup.near:
+    value: false
+- coreprotect.lookup.session:
+    value: false
+- coreprotect.lookup.sign:
+    value: false
+- coreprotect.lookup.username:
+    value: false
+- cosmeticscore.user.wardrobe.enterarea
+- dungeons.play
+- excellentshop.auction.command.open
+- excellentshop.auction.command.sell
+- excellentshop.auction.currency.vault
+- ia.user.ia
+- ia.user.recipe.itemsadder.furnituresplus
+- itemsadder.furnituresplus
+- minecraft.command.help:
+    value: false
+- minecraft.command.me:
+    value: false
+- minecraft.command.msg:
+    value: false
+- minecraft.command.teammsg:
+    value: false
+- nameplates.admin
+- odailyquests.use
+- playerpoints.pay:
+    value: false
+- quickshop.player
+- tab.scoreboard.toggle
+- trmenu.shortcut
+- ultimateshop.menu
+- yamipa.item.remove:
+    value: false
+- trmenu.shortcut

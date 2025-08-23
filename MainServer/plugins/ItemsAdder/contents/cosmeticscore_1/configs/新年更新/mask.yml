@@ -1,0 +1,13 @@
+info:
+  namespace: cosmeticspack3
+items:
+  mask:
+    display_name: 面具
+    permission: cosmeticspack3.mask
+    behaviours:
+      hat: true
+    resource:
+      material: PAPER
+      generate: false
+      model_path: mask
+      model_id: 7003

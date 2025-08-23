@@ -1,0 +1,9 @@
+current-color: '当前颜色: {value}'
+cosmetic-icon-lore-equip: 左键配置
+cosmetic-icon-lore-unequip: 左键取消配置
+cosmetic-icon-lore-customize: 右键染色
+message-warning-hidden-hat-creative: '&6在创造模式下隐藏帽子以避免重复问题.'
+cosmetic-icon-lore-not-owned: '&cʟᴏᴄᴋᴇᴅ'
+message-no-permission: '&cYou don''t have permission to do that.'
+message-command-disabled-in-wardrobe: '&cThis command is disabled while in the wardrobe.'
+message-item-cannot-be-colored: '&cThis item cannot be colored.'

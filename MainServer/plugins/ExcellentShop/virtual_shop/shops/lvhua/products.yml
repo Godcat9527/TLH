@@ -1,0 +1,649 @@
+List:
+  itemsadder_magic_store:medieval_plant_shelf:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_shelf
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+  itemsadder_magic_store:medieval_plant_wooden_table_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_wooden_table_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 1
+      Page: 1
+  itemsadder_magic_store:medieval_plant_wooden_table_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_wooden_table_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 2
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_8:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_8
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 5
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_7:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_7
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 6
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_3:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 7
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_17:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_17
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 15
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_15:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_15
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 16
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_16:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_16
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 17
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_20:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_20
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 24
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_11:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_11
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 25
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 26
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_5:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_5
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 32
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_4:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_4
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 33
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_19:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_19
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 34
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_10:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_10
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 35
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_13:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_13
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 36
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_12:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_12
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 37
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_6:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_6
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 41
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_14:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_14
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 42
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_9:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_9
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 43
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot_18:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot_18
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 44
+      Page: 1
+  itemsadder_magic_store:medieval_plant_plot:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: magic_store:medieval_plant_plot
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 1000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 27
+      Page: 1

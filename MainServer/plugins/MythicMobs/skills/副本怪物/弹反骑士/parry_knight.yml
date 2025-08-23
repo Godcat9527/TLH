@@ -1,0 +1,437 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+### DEBUG ###
+debug:
+  Skills:
+  - effect:particles{particle=flame;amount=15;hS=1;vS=1}
+
+parryknight_damagecounter:
+  Conditions:
+  - stance{s=shield} false
+  Skills:
+  - changepart{m=parry_knight;pid=body;nm=parry_knight_dmg;npid=body} @self
+  - changepart{m=parry_knight;pid=head;nm=parry_knight_dmg;npid=head} @self
+  - changepart{m=parry_knight;pid=right_leg;nm=parry_knight_dmg;npid=right_leg} @self
+  - changepart{m=parry_knight;pid=right_foot;nm=parry_knight_dmg;npid=right_foot} @self
+  - changepart{m=parry_knight;pid=left_leg;nm=parry_knight_dmg;npid=left_leg} @self
+  - changepart{m=parry_knight;pid=left_foot;nm=parry_knight_dmg;npid=left_foot} @self
+  - changepart{m=parry_knight;pid=right_pauldron;nm=parry_knight_dmg;npid=right_pauldron} @self
+  - changepart{m=parry_knight;pid=right_arm;nm=parry_knight_dmg;npid=right_arm} @self
+  - changepart{m=parry_knight;pid=right_forearm;nm=parry_knight_dmg;npid=right_forearm} @self
+  - changepart{m=parry_knight;pid=right_hand;nm=parry_knight_dmg;npid=right_hand} @self
+  - changepart{m=parry_knight;pid=left_pauldron;nm=parry_knight_dmg;npid=left_pauldron} @self
+  - changepart{m=parry_knight;pid=left_arm;nm=parry_knight_dmg;npid=left_arm} @self
+  - changepart{m=parry_knight;pid=left_forearm;nm=parry_knight_dmg;npid=left_forearm} @self
+  - changepart{m=parry_knight;pid=left_hand;nm=parry_knight_dmg;npid=left_hand} @self
+  - modifytargetscore{objective=damage;action=add;value=1} @self
+  - delay 2
+  - changepart{m=parry_knight;pid=body;nm=parry_knight;npid=body} @self
+  - changepart{m=parry_knight;pid=head;nm=parry_knight;npid=head} @self
+  - changepart{m=parry_knight;pid=right_leg;nm=parry_knight;npid=right_leg} @self
+  - changepart{m=parry_knight;pid=right_foot;nm=parry_knight;npid=right_foot} @self
+  - changepart{m=parry_knight;pid=left_leg;nm=parry_knight;npid=left_leg} @self
+  - changepart{m=parry_knight;pid=left_foot;nm=parry_knight;npid=left_foot} @self
+  - changepart{m=parry_knight;pid=right_pauldron;nm=parry_knight;npid=right_pauldron} @self
+  - changepart{m=parry_knight;pid=right_arm;nm=parry_knight;npid=right_arm} @self
+  - changepart{m=parry_knight;pid=right_forearm;nm=parry_knight;npid=right_forearm} @self
+  - changepart{m=parry_knight;pid=right_hand;nm=parry_knight;npid=right_hand} @self
+  - changepart{m=parry_knight;pid=left_pauldron;nm=parry_knight;npid=left_pauldron} @self
+  - changepart{m=parry_knight;pid=left_arm;nm=parry_knight;npid=left_arm} @self
+  - changepart{m=parry_knight;pid=left_forearm;nm=parry_knight;npid=left_forearm} @self
+  - changepart{m=parry_knight;pid=left_hand;nm=parry_knight;npid=left_hand} @self
+  
+parryknight_run:
+  Conditions:
+  - score{o=run;v=1} false
+  - stance{s=shield} false
+  - incombat true
+  - targetwithin{d=5} false
+  Skills:
+  - modifytargetscore{objective=run;action=set;value=1} @self
+  - defaultstate{m=parry_knight;t=walk;s=run} @self
+  - setspeed{type=walking;speed=1.6} @self
+  
+parryknight_walk:
+  Conditions:
+  - score{o=run;v=1} true
+  - targetwithin{d=5} true
+  Skills:
+  - modifytargetscore{objective=run;action=set;value=0} @self
+  - defaultstate{m=parry_knight;t=walk;s=walk} @self
+  - setspeed{type=walking;speed=1.2} @self
+
+
+parryknight_shieldup:
+  Conditions:
+  - score{o=damage;v=>3} true
+  - offgcd true
+  - stance{s=shield} false
+  Skills:
+  - gcd{ticks=10}
+  - defaultstate{m=parry_knight;t=walk;s=walk;sp=.6} @self
+  - potion{type=DAMAGE_RESISTANCE;duration=45;level=4}
+  - setspeed{type=walking;speed=0} @self
+  - state{s=shield_up} @self
+  - delay 5
+  - modifytargetscore{objective=shield_parry;action=set;value=1} @self
+  - setstance{stance=shield} @self
+  - state{s=shield_hold} @self
+  - delay 10
+  - setspeed{type=walking;speed=.6} @self
+  - delay 10
+  - modifytargetscore{objective=shield_parry;action=set;value=0} @self
+  - delay 20
+  - skill{s=parryknight_shielddown} @self
+  
+parryknight_shieldblock:
+  Conditions:
+  - score{o=shieldup;v=1} false
+  - stance{s=shield} true
+  Skills:
+  - skill{s=PARRYKNIGHT_shield_RANDOM}
+  - lockmodel{l=true} @self
+  - effect:particles{particle=block;material=spruce_planks;amount=10;hS=0;vS=0;speed=5} @modelpart{m=parry_knight;p=left_hand}
+  - setspeed{type=walking;speed=0} @self
+  - lunge{v=.2;vy=-2} @forward{f=-1}
+  - state{s=shield_block} @self
+  - delay 10
+  #- state{s=shield_hold} @self
+  - setspeed{type=walking;speed=.6} @self
+  - lockmodel{l=false} @self
+
+parryknight_shieldbash_sync:
+  Skills:
+  - CancelEvent
+  - skill{s=parryknight_shieldbash} @self
+
+
+parryknight_shieldbash:
+  Conditions:
+  - score{o=shield_parry;v=1} true
+  Skills:
+  - potionclear{} @self
+  - delay 10
+  - lockmodel{l=true} @self
+  - state{s=shield_bash} @self
+  - totem{ch=1;md=2;oH=parryknight_shield_damage;hS=1;vS=1;hnp=true} @forward{f=.5}
+  - delay 5
+  - lockmodel{l=false} @self
+  - skill{s=parryknight_riposte} @self
+  
+parryknight_riposte:
+  Skills:
+  - delay 5
+  - totem{ch=1;md=2;oH=parryknight_riposte_damage;hS=3;vS=1;hnp=true;repeat=5;repeatInterval=1} @self
+  - skill{s=PARRYKNIGHT_grunt_RANDOM} @self
+  - gcd{ticks=10}
+  - lockmodel{l=true} @self
+  - state{s=riposte} @self
+  - lunge{v=1;vy=.1} @target
+  - setstance{stance=default} @self
+  - state{s=shield_hold;r=true} @self
+  - delay 5
+  - defaultstate{m=parry_knight;t=walk;s=walk;sp=1} @self
+  - lockmodel{l=false} @self
+  - modifytargetscore{objective=damage;action=set;value=0} @self
+  
+parryknight_riposte_damage:
+  Cooldown: 1
+  Skills:
+  - damage{a=3}
+  
+  
+parryknight_shield_damage:
+  Cooldown: 1
+  TargetConditions:
+  - samefaction false
+  Skills:
+  - skill{s=PARRYKNIGHT_shield_bash_RANDOM}
+  #- throw{v=2;vy=.25}
+  - potion{type=SLOW;duration=15;level=1}
+  - potion{type=WEAKNESS;duration=40;level=1}
+  - damage{a=10}
+  - recoil{r=15;pitch=-.5}
+  - delay 1
+  - recoil{r=15;pitch=.4}
+  - delay 1
+  - recoil{r=15;pitch=-.3}
+  - delay 1
+  - recoil{r=15;pitch=.2}
+  
+parryknight_shielddown:
+  Conditions:
+  #- targetwithin{d=5} false
+  #- offgcd true
+  - stance{s=shield} true
+  Skills:
+  - gcd{ticks=10}
+  - potionclear{} @self
+  - setspeed{type=walking;speed=1.2} @self
+  - state{s=shield_down} @self
+  - state{s=shield_hold;r=true} @self
+  - delay 10
+  - setstance{stance=default} @self
+  - defaultstate{m=parry_knight;t=walk;s=walk;sp=1} @self
+  - modifytargetscore{objective=damage;action=set;value=0} @self
+  
+  
+  
+parryknight_attack_sync:
+  Skills:
+  - CancelEvent
+  - skill{s=parryknight_attack_init} @self
+  
+parryknight_attack_init:
+  Conditions:
+  - stance{s=shield} false
+  - offgcd true
+  Skills:
+  - gcd{ticks=25}
+  - setspeed{type=walking;speed=0} @self
+  - state{s=attack_1} @self
+  - bodyclamp{mh=0;mb=0;m=parry_knight} @self
+  - delay 20
+  - skill{s=parryknight_blocking_check} @target
+  - delay 4
+  - skill{s=PARRYKNIGHT_grunt_RANDOM} @self
+  - skill{s=parryknight_attack} @target
+  
+parryknight_blocking_check:
+  TargetConditions:
+  - blocking{} true
+  Skills:
+  - modifytargetscore{objective=parry;action=set;value=1} @self
+
+parryknight_attack:
+  TargetConditions:
+  - blocking{} castinstead parryknight_parried_distance
+  Skills:
+  - gcd{ticks=20}
+  - totem{ch=1;md=2;oH=parryknight_attack_damage;hS=1;vS=1;hnp=true} @forward{f=.5}
+  - delay 10
+  - setspeed{type=walking;speed=1.2} @self
+  - bodyclamp{mh=15;mb=15;m=parry_knight} @self
+  - modifytargetscore{objective=parry;action=set;value=0} @self
+  
+parryknight_parried_distance:
+  Conditions:
+  - targetnotwithin{d=2} castinstead parryknight_attack_noparry
+  Skills:
+  - skill{s=parryknight_parried}
+  
+parryknight_parried:
+  Conditions:
+  - score{o=parry;v=1} castinstead parryknight_attack_noparry
+  Skills:
+  - gcd{ticks=40}
+  - lunge{v=.5;vy=.1} @forward{f=-1}
+  - modifytargetscore{objective=crit;action=set;value=1} @self
+  - sendtitle{title="";subtitle="&aPARRIED!";d=20} @target
+  - state{s=attack_1;r=true} @self
+  - state{s=parry} @self
+  - delay 30
+  - modifytargetscore{objective=crit;action=set;value=0} @self
+  - setspeed{type=walking;speed=1.2} @self
+  - bodyclamp{mh=15;mb=15;m=parry_test} @self
+  
+parryknight_attack_noparry:
+  Skills:
+  - totem{ch=1;md=2;oH=parryknight_attack_damage;hS=1;vS=1;hnp=true} @forward{f=.5}
+  - delay 10
+  - setspeed{type=walking;speed=1.2} @self
+  - bodyclamp{mh=15;mb=15;m=parry_test} @self
+  - modifytargetscore{objective=parry;action=set;value=0} @self
+  
+parryknight_attack_damage:
+  Cooldown: 1
+  TargetConditions:
+  - samefaction false
+  - blocking{} castinstead parryknight_block_dmg
+  Skills:
+  - skill{s=PARRYKNIGHT_impact_RANDOM}
+  - damage{a=20;pi=false}
+  
+parryknight_block_dmg:
+  Skills:
+  - throw{v=2;vy=.25} @target
+  - sendtitle{title="";subtitle="&CBLOCKED!";d=20} @target
+  - skill{s=PARRYKNIGHT_shield_RANDOM} @target
+  
+parryknight_crit_dmg:
+  Conditions:
+  - score{o=crit;v=1} true
+  Skills:
+  - effect:particles{particle=crit;amount=25;speed=.25;y=1} @self
+  - actionmessage{m="CRITICAL HIT!"} @trigger
+  - damage{a=<skill.var.damage-amount>*3} @self
+  
+  
+parryknight_death:
+  Skills:
+  - skill{s=LR_hpbar_remove} @self
+  - changepart{m=parry_knight;pid=body;nm=parry_knight;npid=body} @self
+  - changepart{m=parry_knight;pid=head;nm=parry_knight;npid=head} @self
+  - changepart{m=parry_knight;pid=right_leg;nm=parry_knight;npid=right_leg} @self
+  - changepart{m=parry_knight;pid=right_foot;nm=parry_knight;npid=right_foot} @self
+  - changepart{m=parry_knight;pid=left_leg;nm=parry_knight;npid=left_leg} @self
+  - changepart{m=parry_knight;pid=left_foot;nm=parry_knight;npid=left_foot} @self
+  - changepart{m=parry_knight;pid=right_pauldron;nm=parry_knight;npid=right_pauldron} @self
+  - changepart{m=parry_knight;pid=right_arm;nm=parry_knight;npid=right_arm} @self
+  - changepart{m=parry_knight;pid=right_forearm;nm=parry_knight;npid=right_forearm} @self
+  - changepart{m=parry_knight;pid=right_hand;nm=parry_knight;npid=right_hand} @self
+  - changepart{m=parry_knight;pid=left_pauldron;nm=parry_knight;npid=left_pauldron} @self
+  - changepart{m=parry_knight;pid=left_arm;nm=parry_knight;npid=left_arm} @self
+  - changepart{m=parry_knight;pid=left_forearm;nm=parry_knight;npid=left_forearm} @self
+  - changepart{m=parry_knight;pid=left_hand;nm=parry_knight;npid=left_hand} @self
+  - sound{s=littleroom_parryknight:littleroom.parryknight.death;v=1;sc=HOSTILE} @self
+  - sound{s=littleroom_parryknight:littleroom.parryknight.death_ground;v=1;sc=HOSTILE} @self
+  - delay 60
+  - model{mid=parry_knight;r=true} @self
+  - effect:particles{particle=cloud;amount=50;speed=0;y=.1;hs=.5;vs=.25} @self
+  
+  
+  
+  
+#### SOUND STUFF ####
+
+
+  
+PARRYKNIGHT_swing_RANDOM:
+  Skills:
+  - randomskill{skills=PARRYKNIGHT_swing1,PARRYKNIGHT_swing2,PARRYKNIGHT_swing3,PARRYKNIGHT_swing4} @self
+
+PARRYKNIGHT_swing1:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing1;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_swing2:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing2;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_swing3:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing3;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_swing4:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing4;v=1;sc=HOSTILE} @self
+  
+  
+  
+  
+PARRYKNIGHT_grunt_RANDOM:
+  Skills:
+  - randomskill{skills=PARRYKNIGHT_grunt1,PARRYKNIGHT_grunt2,PARRYKNIGHT_grunt3,PARRYKNIGHT_grunt4,PARRYKNIGHT_grunt5,PARRYKNIGHT_grunt6} @self
+
+PARRYKNIGHT_grunt1:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.grunt1;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_grunt2:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.grunt2;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_grunt3:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.grunt3;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_grunt4:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.grunt4;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_grunt5:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.grunt5;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_grunt6:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.grunt6;v=1;sc=HOSTILE} @self
+
+
+
+  
+PARRYKNIGHT_impact_RANDOM:
+  Skills:
+  - randomskill{skills=PARRYKNIGHT_impact1,PARRYKNIGHT_impact2,PARRYKNIGHT_impact3,PARRYKNIGHT_impact4} @self
+
+PARRYKNIGHT_impact1:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.impact1;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_impact2:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.impact2;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_impact3:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.impact3;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_impact4:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.impact4;v=1;sc=HOSTILE} @self
+  
+  
+  
+  
+  
+PARRYKNIGHT_shield_RANDOM:
+  Skills:
+  - randomskill{skills=PARRYKNIGHT_shield_1,PARRYKNIGHT_shield_2} @self
+
+PARRYKNIGHT_shield_1:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.shield_1;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_shield_2:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.shield_2;v=1;sc=HOSTILE} @self
+  
+  
+  
+  
+  
+PARRYKNIGHT_shield_bash_RANDOM:
+  Skills:
+  - randomskill{skills=PARRYKNIGHT_shield_bash_1,PARRYKNIGHT_shield_bash_2} @self
+
+PARRYKNIGHT_shield_bash_1:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.shield_bash_1;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_shield_bash_2:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.shield_bash_2;v=1;sc=HOSTILE} @self
+  
+  
+  
+  
+  
+  
+PARRYKNIGHT_swing_RANDOM:
+  Skills:
+  - randomskill{skills=PARRYKNIGHT_swing1,PARRYKNIGHT_swing2,PARRYKNIGHT_swing3,PARRYKNIGHT_swing4,PARRYKNIGHT_swing5} @self
+
+PARRYKNIGHT_swing1:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing1;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_swing2:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing2;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_swing3:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing3;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_swing4:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing4;v=1;sc=HOSTILE} @self
+
+PARRYKNIGHT_swing5:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.swing5;v=1;sc=HOSTILE} @self
+  
+PARRYKNIGHT_parried:
+  Skills:
+  - sound{s=littleroom_parryknight:littleroom.parryknight.parried;v=1;sc=HOSTILE} @self

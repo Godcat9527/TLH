@@ -1,0 +1,26 @@
+title: '{shop-name}'
+size: 54
+
+open-actions:
+  1:
+    type: sound
+    sound: item.book.page_turn
+
+layout:
+  - '000000000'
+  - '0ABCDEFG0'
+  - '0HIJKLMN0'
+  - '0OPQRSTU0'
+  - '000000000'
+  - 'a0003000b'
+
+buttons:
+  3:
+    display-item:
+      material: player_head
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmUzOGQ0ZDAxYjRlMDVkZWE2MmZhMTFjMjUwZjhkZDc5M2E4MDc0NDMzYTk3NzMyOWI4MTc5ZmNiMzUzY2MwZSJ9fX0='
+      name: '&c« 回到上一级'
+    actions:
+      1:
+        type: open_menu
+        menu: main

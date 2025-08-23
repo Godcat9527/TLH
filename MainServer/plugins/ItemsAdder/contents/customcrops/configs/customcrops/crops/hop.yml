@@ -1,0 +1,108 @@
+info:
+  namespace: customcrops
+items:
+  hop_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_1
+      model_id: 2098
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  hop_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_2
+      model_id: 2099
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  hop_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_3
+      model_id: 2100
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  hop_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/stage_4
+      model_id: 2101
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  hop_seeds:
+    display_name: 啤酒花种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/hop/hop_seeds
+      model_id: 2102
+  hop:
+    display_name: 啤酒花
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/hop/hop
+      model_id: 2103
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  hop_silver_star:
+    display_name: 啤酒花(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/hop/hop_silver_star
+      model_id: 2104
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  hop_golden_star:
+    display_name: 啤酒花(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/hop/hop_golden_star
+      model_id: 2105
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_hop:
+    enabled: true
+    icon: customcrops:hop
+    name: 'Hop'
+    items:
+      - customcrops:hop
+      - customcrops:hop_silver_star
+      - customcrops:hop_golden_star
+      - customcrops:hop_seeds
+      - customcrops:hop_stage_1
+      - customcrops:hop_stage_2
+      - customcrops:hop_stage_3
+      - customcrops:hop_stage_4

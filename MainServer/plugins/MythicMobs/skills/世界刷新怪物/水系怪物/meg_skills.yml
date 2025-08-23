@@ -1,0 +1,236 @@
+##=============================================##
+##                                             ##
+##             Developed by T1n C4n            ##
+##                    My Shop                  ##
+##  https://mcmodels.net/vendors/119/t1n-c4n   ##
+##                                             ##
+##=============================================##
+
+##=============================================##
+##                  LEVIATHAN                  ##
+##=============================================##
+
+##=============       ATTACK      =============##
+MegBite:
+  Cooldown: 2
+  Conditions:
+  - targetwithin{d=15} true
+  - hasaura Attack false
+  Skills: 
+  - state{mid=leviathan;s=walk;li=0;lo=0;r=true} @self 
+  - state{mid=leviathan;s=idle;li=0;lo=0;r=true} @self  
+  - Aura{auraName=Attack;interval=1;duration=30} @self
+  - state{mid=leviathan;s=bite;li=0;lo=0;r=false;i=false} @self
+  - auraremove{aura=Moving;stacks=1} @self
+  - delay 16
+  - totem{ch=2;onStart=MegBiteTotem;int=10;hR=3;md=1} @Forward{f=7;y=0}
+MegBiteTotem:
+  Cooldown: 1
+  Conditions:
+  Skills: 
+  - skill{s=MegBiteTotemDamageHigh} @EntitiesNearOrigin{r=8}
+  - pull{velocity=4;repeat=5;repeatInterval=1} @EntitiesNearOrigin{r=8}
+MegBiteTotemDamageHigh:
+  TargetConditions:
+  Cooldown: 0
+  Skills:
+  - damage{amount=12;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+  - delay 1
+  - throw{velocity=3;velocityY=-1} @EntitiesNearOrigin{r=7}
+  
+##=============                   =============##
+MegRip:
+  Cooldown: 5
+  Conditions:
+  - targetwithin{d=15} true
+  - hasaura Attack false
+  Skills: 
+  - state{mid=leviathan;s=walk;li=0;lo=0;r=true} @self 
+  - state{mid=leviathan;s=idle;li=0;lo=0;r=true} @self  
+  - Aura{auraName=Attack;interval=1;duration=70} @self
+  - state{mid=leviathan;s=rip;li=0;lo=0;r=false;i=false} @self
+  - auraremove{aura=Moving;stacks=1} @self
+  - delay 16
+  - velocity{m=set;x=0;y=0;z=0;repeat=50;repeatInterval=1} @self
+  - totem{ch=2;onStart=MegRipTotem;int=10;hR=5;md=1;repeat=4;repeatInterval=5} @Forward{f=7;y=0}
+  - delay 36
+  - dismountall{mid=leviathan;p=man} @self
+MegRipTotem:
+  Cooldown: 1
+  Conditions:
+  Skills: 
+  - skill{s=MegRipDamageHigh} @EntitiesNearOrigin{r=8}
+  - pull{velocity=1;repeat=36;repeatInterval=1} @EntitiesNearOrigin{r=8}
+MegRipDamageHigh:
+  Cooldown: 0
+  Skills:
+  - damage{amount=8;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1} 
+    
+##=============================================##
+##                    SHARK                    ##
+##=============================================##
+
+shark_cancel:
+  Conditions:
+  - targetwithin{d=3} orElseCast shark_enable
+  Skills:
+  - runaigoalselector{goal=clear} @self 
+  
+shark_enable:
+  Skills:
+  - runaigoalselector{goal=meleeattack} @self 
+
+shark_player_aggro:
+  Conditions:
+  - playerwithin{d=16}
+  Skills:
+  - setstance{stance=aggro} @self
+  - threat{amount=10000} @pir{r=16}   
+  - defaultstate{type=idle;state=swim_idle} @self
+  - runaitargetselector{target=players} @self 
+  - runaigoalselector{goal=movetowardstarget} @self 
+
+##=============       ATTACK      =============##
+shark_bite1:
+  Cooldown: 1
+  Conditions:
+  - targetwithin{d=14} true
+  - targetnotwithin{d=7} true
+  - offgcd true
+  Skills:
+  - gcd{ticks=100}
+  - setspeed{type=walk;speed=0} @self
+  - state{s=bite1} @self
+  - delay 25
+  - skill{s=shark_barrel;repeat=40;repeatInterval=1} @forward
+  - setspeed{type=walk;speed=6} @self
+  - delay 20
+  - totem{md=2;hs=1;vs=1;oH=shark_bite1_damage;int=1;hR=3;md=1;repeat=8;repeatInterval=1}
+ 
+shark_bite1_close:
+  Cooldown: 1
+  Conditions:
+  - targetwithin{d=4} true
+  - offgcd true
+  Skills:
+  - gcd{ticks=40}
+  - lockmodel{l=true} @self
+  - lockmodel{l=false;delay=10} @self
+  - setspeed{type=walk;speed=0} @self
+  - state{s=bite2} @self
+  - skill{s=shark_barrel;repeat=5;repeatInterval=1} @forward
+  - setspeed{type=walk;speed=6} @self
+  - delay 5
+  
+shark_barrel:
+  Conditions:
+  - inblock{b=water} true
+  Skills:
+  - propel{v=.5}  
+
+shark_bite1_damage:
+  Cooldown: 1
+  Skills:
+  - sound{s=entity.evoker_fangs.attack;v=1;sc=HOSTILE;p=<random.float.0.8to1.2>} @self
+  - damage{a=5}
+  - throw{v=5;v=1}
+  - recoil{r=5;pitch=-3to3} 
+  - effect:particle{p=reddust;color=#E96F6F;a=5;hs=.25;vs=.25;y=1;delay=15;repeat=15;repeatInterval=1} ?inblock{b=water}
+  - effect:particle{p=reddust;a=5;hs=.25;vs=.25;y=1;repeat=15;repeatInterval=1} ?inblock{b=water}
+  - effect:particle{p=bubble;a=1;hs=.25;vs=.25;y=1;repeat=40;repeatInterval=1} ?inblock{b=water}
+  - effect:particle{p=block;m=nether_wart;a=55;hs=.25;vs=.25;y=1} ?inblock{b=air}
+  
+##=============      DEATH        =============##
+shark_death:
+  Skills:
+  - delay 50
+  - effect:particle{p=poof;a=25;hs=.5;vs=.5} @modelpart{pid=head}
+  - effect:particle{p=poof;a=25;hs=.5;vs=.5} @modelpart{pid=body}
+  - effect:particle{p=poof;a=25;hs=.5;vs=.5} @modelpart{pid=tail_2}
+  
+##=============================================##
+##                    JELLY                    ##
+##=============================================##  
+
+jelly_death:
+  Skills:
+  - delay 10
+  - effect:particle{p=poof;a=15;hs=.25;vs=.25} @modelpart{pid=torso}
+
+##=============================================##
+##                   SEE MINE                  ##
+##=============================================##
+
+mine_spawn:
+  Skills:  
+  - delay 1
+  - bodyclamp{m=t_mine;mh=0;mb=0} @self
+  - projectile{onTick=mine_proxy;v=20;i=1;hR=0;vR=0;sE=false;syo=1;sB=false;sfo=0;sso=0}
+  
+mine_proxy:
+  Skills:    
+  - skill{s=mine_chain}
+  
+mine_chain:
+  TargetConditions:
+  - blocktype{type=WATER} true
+  Skills:
+  - setblock{m=CHAIN;md=0}
+  
+mine_detonate:
+  Cooldown: 20
+  Conditions:
+  - offgcd true
+  TargetConditions:
+  - owner false
+  - ismoving true
+  Skills:
+  - gcd{ticks=100}
+  - changepart{m=t_mine;pid=mine;nm=t_mine_parts;npid=mine} @self
+  - sound{s=entity.creeper.death;v=1;sc=HOSTILE} @self
+  - delay 4
+  - changepart{m=t_mine;pid=mine;nm=t_mine;npid=mine} @self
+  - delay 10
+  - changepart{m=t_mine;pid=mine;nm=t_mine_parts;npid=mine} @self
+  - sound{s=entity.creeper.death;v=1;sc=HOSTILE} @self
+  - delay 4
+  - changepart{m=t_mine;pid=mine;nm=t_mine;npid=mine} @self
+  - delay 5
+  - changepart{m=t_mine;pid=mine;nm=t_mine_parts;npid=mine} @self
+  - sound{s=entity.creeper.death;v=1;sc=HOSTILE} @self
+  - delay 5
+  - changepart{m=t_mine;pid=mine;nm=t_mine;npid=mine} @self
+  - delay 5
+  - changepart{m=t_mine;pid=mine;nm=t_mine_parts;npid=mine} @self
+  - sound{s=entity.creeper.death;v=1;sc=HOSTILE} @self
+  - delay 5
+  - changepart{m=t_mine;pid=mine;nm=t_mine;npid=mine} @self
+  - delay 5
+  - changepart{m=t_mine;pid=mine;nm=t_mine_parts;npid=mine} @self
+  - sound{s=entity.creeper.death;v=1;sc=HOSTILE} @self
+  - delay 5
+  - sound{s=entity.generic.explode;v=1;sc=HOSTILE} @self
+  - damage{a=50} @eir{r=8}
+  - skill{s=recoil} @pir{r=16}
+  - throw{v=10;vy=-5} @pir{r=16}
+  - effect:particles{particle=flash;amount=1} @selflocation{y=1}
+  - effect:particles{particle=bubble;amount=200;hS=2;vS=2;speed=1} @selflocation{y=1}
+  - sound{s=entity.generic.explode;v=10;sc=HOSTILE} @self
+  - setblock{m=AIR;md=0} @BlocksNearOrigin{r=2;s=SPHERE}
+  - effect:blockmask{m=light;r=1;d=10;oa=true} @selflocation{y=1}
+  - remove @self
+  
+recoil:
+  Skills:
+  - delay 1
+  - recoil{r=15;pitch=-.3}
+  - delay 1
+  - recoil{r=13;pitch=.2}
+  - delay 1
+  - recoil{r=10;pitch=-.1}
+  - delay 1
+  - recoil{r=8;pitch=.1}
+    
+#U0Z5M1QxRXNYRlbhxWNGRVZrdVW3tGRPRTRq10dnRlTwMmVkxmVNZVYkdFbyUTTTJ3d44UO

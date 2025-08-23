@@ -1,0 +1,29 @@
+info:
+  namespace: t-money
+categories:
+  moeny_menu:
+    enabled: true
+    skip_if_already: false
+    icon: "t-money:money_1"
+    name: 金币
+    permission: ia.menu
+    items:
+      - "t-money:money_2"
+      - "t-money:money_7"
+      - "t-money:money_8"
+      - "t-money:money_9"
+      - "t-money:money_10"
+      - "t-money:money_11"
+      - "t-money:money_12"
+      - "t-money:money_13"
+      - "t-money:money_14"
+      - "t-money:money_15"
+      - "t-money:money_16"
+      - "t-money:money_17"
+      - "t-money:money_18"
+      - "t-money:money_19"
+      - "t-money:money_20"
+      - "t-money:money_21"
+      - "t-money:money_22"
+      - "t-money:money_23"
+      - "t-money:money_24"

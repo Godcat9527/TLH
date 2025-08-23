@@ -1,0 +1,1100 @@
+# 插件版本 5.2.2.3
+# Plugin Version 5.2.2.3
+Command:
+  Editor:
+    Desc: 打开抽奖箱和钥匙编辑器
+  Drop:
+    Usage: <抽奖箱> <x> <y> <z> [世界]
+    Desc: 在世界里指定的位置放置抽奖箱
+    Done: '&7在 &b%location_world% &7世界 (&e%location_x%&7，&e%location_y%&7，&e%location_z%&7) 这位置放置了 &b%crate_name% &7抽奖箱'
+  DropKey:
+    Usage: <钥匙> <x> <y> <z> [世界]
+    Desc: 在指定位置放置钥匙
+    Done: '&7在 &b%location_world% &7世界 (&e%location_x%&7，&e%location_y%&7，&e%location_z%&7) 这位置放置了 &b%key_name% &7抽奖箱'
+  Open:
+    Desc: 打开一个抽奖箱
+    Usage: <抽奖箱>
+  OpenFor:
+    Desc: 为玩家打开抽奖箱
+    Usage: <玩家> <抽奖箱> [-f] [-s]
+    Done: '&7为 &a%player_name% &7打开了 &b%crate_name%'
+    Notify: '&7你被强制打开了 &b%crate_name% &7抽奖箱'
+  Give:
+    Usage: <玩家> <抽奖箱> [数量] [-s]
+    Desc: 给予玩家指定数量的抽奖箱
+    Done: '&7给予 &a%player_name% &e%amount% &7个 &b%crate_name% &7抽奖箱'
+    Notify: '&7你收到了 &e%amount% &7个 &b%crate_name% &7抽奖箱'
+  Key:
+    Desc: 管理玩家的钥匙
+    Usage: '[帮助]'
+    Give:
+      Usage: <玩家> <钥匙> <数量> [-s] [-nosave]
+      Desc: 给予玩家指定数量的钥匙
+      Done: '&7给予 &a%player_name% &e%amount% &7个 &b%key_name% &7钥匙'
+      Notify: '&7你收到了 &e%amount% &7个 &b%key_name% &7钥匙'
+    GiveAll:
+      Usage: <玩家> <钥匙> <数量> [-s]
+      Desc: 给予所有在线玩家指定数量的钥匙
+      Done: '&7给予所有玩家 &e%amount% &7个 &b%key_name% &7钥匙'
+    Take:
+      Usage: <玩家> <钥匙> <数量> [-s] [-nosave]
+      Desc: 从玩家那扣除指定数量的钥匙
+      Done: '&7从 &a%player_name% &7那扣除了 &e%amount% &7个 &b%key_name% &7钥匙'
+      Notify: '&c你被扣除了 &e%amount% &c个 &b%key_name% &c钥匙'
+    Set:
+      Usage: <玩家> <钥匙> <数量> [-s] [-nosave]
+      Desc: 为玩家设置指定数量的钥匙
+      Done: '&7为 &a%player_name% &7设置了 &e%amount% &7个 &b%key_name% &7钥匙数量'
+      Notify: '&7你的 &b%key_name% &7数量已被更改为了 &e%amount% &7个'
+    Show:
+      Desc: 查看 [玩家] 的虚拟钥匙
+      Usage: '[玩家]'
+      Format:
+        List:
+        - ''
+        - '&a%player_name% &7的虚拟钥匙:'
+        - '%entry%'
+        - ''
+        Entry: '&e| &b%key_name%: &e%amount% &7个'
+  Preview:
+    Desc: 预览抽奖箱
+    Usage: <抽奖箱> [玩家]
+    Done:
+      Others: '&7为 &a%player_display_name% &7打开了 &b%crate_name% &7抽奖箱内容预览'
+  ResetLimit:
+    Desc: 重置指定抽奖箱和奖励的获奖限制
+    Usage: <玩家> <抽奖箱> [奖励]
+    Done:
+      Crate: '&7重置了 &a%player_name% &7对 &b%crate_name% &7抽奖箱的所有奖励的获奖限制'
+      Reward: '&7重置了 &a%player_name% &7对 &b%crate_name% &7抽奖箱的 &b%reward_name% &7奖励的获奖限制'
+  ResetCooldown:
+    Desc: 重置玩家的抽奖箱打开的冷却时间
+    Usage: <玩家> <抽奖箱>
+    Done: '&7重置了 &a%player_name% &7对 &b%crate_name% &7抽奖箱打开的冷却时间'
+  Menu:
+    Usage: '[菜单]'
+    Desc: 打开抽奖箱菜单
+    Done:
+      Others: '&7为 &a%player_display_name% &7打开了抽奖箱菜单'
+  Argument:
+    Name:
+      Crate: crate
+      Key: key
+      X: x
+      Y: y
+      Z: z
+Crate:
+  Open:
+    Error:
+      InventorySpace:
+      - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+      - '&c背包空间不足!'
+      - '&7请清理背包空间以打开抽奖箱！'
+      Cooldown:
+        Temporary:
+        - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+        - '&c抽奖箱冷却中!'
+        - '&7你在 &a%time% &7后才能再次打开它'
+        OneTimed:
+        - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+        - '&c无法开启!'
+        - '&7你已经打开过这个一次性抽奖箱了！'
+      NoKey:
+      - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+      - '&c缺少钥匙!'
+      - '&7你没有这个抽奖箱的钥匙！'
+      NoHoldKey:
+      - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+      - '&c缺少钥匙!'
+      - '&7你必须持有钥匙才能打开抽奖箱！'
+      NoRewards:
+      - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+      - '&c谢谢惠顾!'
+      - '&7恭喜你获得了一个空气！'
+      CantAfford:
+      - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+      - '&c余额不足!'
+      - '&7你至少需要 &e%amount% &7金币才能打开这个抽奖箱！'
+      Already:
+      - <output:'titles:20:80:20'><sound:'entity_villager_no'>
+      - '&c开启中!'
+      - '&7你已经在打开这个抽奖箱了！'
+      TooExpensive:
+      - <output:"titles:20:80:20"><sound:"entity.villager.no;0.6;1.0">
+      - <lred><b>Whoops!</b></lred>
+      - <lgray>You need <lred>%crate_open_cost%</lred> to open it!</lgray>
+    Reward:
+      Info:
+      - <noprefix>
+      - '&7你从 &b%crate_name% &7获得了 &b%reward_name% &7!'
+      Broadcast:
+      - <noprefix><sound:'block_note_block_bell'>
+      - ''
+      - '&7玩家 &a%player_display_name% &7刚刚从 &b%crate_name% &7赢得了 &b%reward_name% &7!'
+      - ''
+      - ''
+    Milestone:
+      Completed:
+      - <noprefix>
+      - <sound:'entity_player_levelup'>
+      - '&7你完成了 &e%milestone_openings% &7次开箱里程碑并获得了 &b%reward_name% &7作为奖励！'
+  Error:
+    Invalid: '&c无效的抽奖箱！'
+    Exists: '&c该抽奖箱已经存在！'
+  Key:
+    Error:
+      Invalid: '&c无效的钥匙！'
+      Exists: '&c该钥匙已经存在！'
+  Preview:
+    Error:
+      Cooldown: <lgray>You can preview this crate again in <lred>%time%</lred></lgray>
+  Create:
+    Error:
+      Duplicated: <lred>Crate with such ID already exists!</lred>
+Editor:
+  Reward:
+    Error:
+      Create:
+        Exist: '&7奖励已经存在！'
+    Enter:
+      Chance: '&7输入 &a[概率]'
+      Command: '&7输入 &a[命令]'
+      Id: '&7输入 &a[奖励标识符]'
+      Rarity: '&7输入 &a[稀有度]'
+      Permissions: '&7输入 &a[权限节点]'
+  Title:
+    Crates: 抽奖箱编辑器
+    Keys: 钥匙编辑器
+    Main: <black>高级宝箱编辑器</black>
+    ItemSave: <black>物品保存方式</black>
+    Crate:
+      Settings: <black>宝箱设置</black>
+      OpenCosts: <black>开启消耗</black>
+      Milestones: <black>里程碑</black>
+      Effect: <black>宝箱特效</black>
+      Placement: <black>放置设置</black>
+    Reward:
+      List: <black>奖励列表</black>
+      Creation: <black>奖励创建器</black>
+      Content: <black>奖励物品</black>
+      Settings: <black>奖励设置</black>
+      Limits: <black>奖励限制</black>
+      Sort: <black>奖励排序</black>
+    Key:
+      Settings: <black>Key Settings</black>
+  Enter:
+    DisplayName: '&7输入 &a[显示名称]'
+    Amount: '&7输入 &a[数量]'
+    Value: '&7输入 &a[数值]'
+    Text: <lgray>Enter <lgreen>[Text]</lgreen></lgray>
+  Crate:
+    Enter:
+      Seconds: '&7输入 &a[秒数]'
+      Id: '&7输入 &a[抽奖箱标识符]'
+      Particle:
+        Name: '&7输入 &a[粒子名称]'
+      KeyId: '&7输入 &a[钥匙标识符]'
+      BlockLocation: '&7点击一个 &a[方块] &7来放置抽奖箱'
+      HologramTemplate: '&7输入 &a[全息图模板]'
+      AnimationConfig: '&7输入 &a[动画名称]'
+      PreviewConfig: '&7输入 &a[预览名称]'
+      Open_Cost: '&7输入 &a[货币] [数量]'
+      ModelName: <lgray>Enter <lgreen>[Model Name]</lgreen></lgray>
+      Currency: <lgray>Enter <lgreen>[Currency ID]</lgreen></lgray>
+  Item:
+    Crates:
+      Name: '&b抽奖箱'
+      Lore:
+      - '&b| &7左键点击 &b跳转'
+    Keys:
+      Name: '&b钥匙'
+      Lore:
+      - '&b| &7左键点击 &b跳转'
+    Crate:
+      Object:
+        Name: '%crate_name%'
+        Lore:
+        - '%crate_inspect%'
+        - ''
+        - '&a| &7左键点击 &a编辑'
+        - '&c| &7SHIFT+右键 &c删除 &8(无法撤销)'
+        Description:
+        - '%inspection_problems%'
+        Formatted: true
+        CurrentInfo:
+          ID: '%crate_id%'
+        ClickActions:
+          LEFT: navigate
+      Create:
+        Name: '&b新建抽奖箱'
+        Lore: []
+      DisplayName:
+        Name: '&b显示名称'
+        Lore:
+        - '&7抽奖箱名称用于消息，占位符和全'
+        - '&7息图'
+        - ''
+        - '&7当前: &b%crate_name%'
+        - ''
+        - '&e| &7左键点击 &e更改'
+      Permission:
+        Name: '&b权限要求'
+        Lore:
+        - '&7启用权限要求才能打开这个抽奖箱'
+        - ''
+        - '&7启用: %crate_permission_required%'
+        - '&7权限: &d%crate_permission%'
+        - ''
+        - '&e| &7左键点击 &e切换'
+      OpenCooldown:
+        Name: '&b打开冷却'
+        Lore:
+        - '&7每个玩家打开这抽奖箱的冷却时间'
+        - ''
+        - '&7冷却时间: %crate_open_cooldown%'
+        - ''
+        - '&a| &7左键点击 &a设置冷却时间'
+        - '&c| &7右键点击 &c移除'
+        - '&e| &7[Q] 键 &e设为一次性'
+      PreviewAndOpening:
+        Name: '&b预览与打开'
+        Lore:
+        - '&7该选项适用于:'
+        - '  &e抽奖箱预览 GUI (&6/previews/)'
+        - '  &e抽奖箱打开动画 (&6/openingsv2/)'
+        - ''
+        - '&7预览: %crate_preview_config%'
+        - '&7打开: %crate_animation_config%'
+        - ''
+        - '&e| &7左键点击 &e更改预览'
+        - '&e| &7右键点击 &e更改打开动作'
+        - '&c| &7SHIFT+左键点击 &c禁用预览'
+        - '&c| &7SHIFT+右键点击 &c禁用打开动作'
+      KeyRequirement:
+        Name: '&b钥匙要求'
+        Lore:
+        - '&7玩家必须拥有指定的钥匙才能打开'
+        - '&7这个抽奖箱'
+        - ''
+        - '&7启用: %crate_key_required%'
+        - '&7钥匙:'
+        - '%crate_key_ids%'
+        - ''
+        - '&a| &7左键点击 &a添加钥匙'
+        - '&c| &7右键点击 &c移除所有'
+        - '&e| &7[Q] 键点击 &e切换要求'
+      OpenCost:
+        Name: '&b打开费用'
+        Lore:
+        - '&7玩家需要支付指定的货币数量才能'
+        - '&7打开这个抽奖箱'
+        - ''
+        - '&7当前: %crate_open_cost%'
+        - ''
+        - '&a| &7左键点击 &a添加费用'
+        - '&c| &7[Q] 键点击 &c移除所有'
+        Object:
+          Name: <lyellow><b>%name%</b></lyellow>
+          Lore:
+          - '<lyellow>● <lgray>货币ID: </lgray>%id%</lyellow>'
+          - '<lyellow>● <lgray>数量： </lgray>%amount%</lyellow>'
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>左键单击<lyallow>更改金额</lyellow>.</lgray>
+          - <lyellow>[▶]</lyellow> <lgray>右键单击以<lyallow>删除</lyellow>.</lgray>
+        Create:
+          Name: <lyellow><b>Add Cost</b></lyellow>
+          Lore: []
+      InventoryItem:
+        Name: '&b容器物品'
+        Lore:
+        - '&7在菜单和玩家物品栏中表示抽奖箱的物品'
+        - '&7菜单和玩家库存中'
+        - ''
+        - '&7你应该只使用 &e预览 &7物品'
+        - '&7你不能从此处编辑它'
+        - ''
+        - '&7[&c!&7] &c不支持 &7NBT标签！'
+        - ''
+        - '&e| &7拖放 &e替换'
+        - '&a| &7左键点击 &a获取物品'
+        - '&e| &7右键点击 &e获取原物品副本'
+      Placement:
+        Info:
+          Name: '&b放置'
+          Lore:
+          - '&7将带有粒子效果和全息图的抽奖箱'
+          - '&7放置在世界任何地方！'
+          - ''
+          - '&b| &7左键点击 &b跳转'
+        Locations:
+          Name: '&b指定方块'
+          Lore:
+          - '&7%crate_locations%'
+          - ''
+          - '&7将抽奖箱指定给你世界中的指定方'
+          - '&7块，并在单击它们时 &e打开 &7并 &e预览 '
+          - '&7抽奖箱！'
+          - ''
+          - '&a| &7左键点击 &a指定方块'
+          - '&c| &7右键点击 &c移除所有'
+        Pushback:
+          Name: '&e弹回'
+          Lore:
+          - '&7如果玩家不满足要求，则将玩家从'
+          - '&7抽奖箱旁弹回'
+          - ''
+          - '&7状态: %crate_pushback_enabled%'
+          - ''
+          - '&e| &7左键点击 &e切换'
+        Hologram:
+          Name: '&e全息图'
+          Lore:
+          - '&7在抽奖箱方块上方添加一个使用所'
+          - '&7选模板的文本全息图'
+          - ''
+          - '&7在 &dconfig.yml &7中编辑全息图模板'
+          - ''
+          - '&7状态: %crate_hologram_enabled%'
+          - '&7模板: %crate_hologram_template%'
+          - '&7Y轴偏移: %crate_hologram_y_offset%'
+          - ''
+          - '&e| &7左键点击 &e切换'
+          - '&a| &7右键点击 &a更改模板'
+          - '&e| &7SHIFT+左键点击 &e更改Y轴偏移'
+        Effects:
+          Name: '&e粒子效果'
+          Lore:
+          - '&7在抽奖箱周围显示酷炫的粒子效果'
+          - ''
+          - '&7模型: %crate_effect_model%'
+          - '&7粒子: %crate_effect_particle_name%'
+          - '&7数据: %crate_effect_particle_data%'
+          - ''
+          - '&e| &7[Q] 键 &e切换模型'
+          - '&a| &7左键点击 &a更改粒子'
+          - '&a| &7右键点击 &a更改数据'
+        #====
+        HologramToggle:
+          Name: <lyellow><b>全息显示状态</b></lyellow>
+          Lore:
+          - '<lyellow>● <lgray>已启用: </lgray>%crate_hologram_enabled%</lyellow>'
+          - ''
+          - <lgray>在宝箱方块上方显示全息文字</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>切换</lyellow></lgray>
+          
+        HologramTemplate:
+          Name: <lyellow><b>全息文字模板</b></lyellow>
+          Lore:
+          - '%inspection_crate_hologram%'
+          - ''
+          - '<lyellow>● <lgray>当前: </lgray>%crate_hologram_template%</lyellow>'
+          - ''
+          - <lgray>全息文字内容取决于</lgray>
+          - <lgray>选择的全息文字模板</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>修改</lyellow></lgray>
+
+        HologramYOffset:
+          Name: <lyellow><b>全息高度偏移</b></lyellow>
+          Lore:
+          - '<lyellow>● <lgray>当前: </lgray>%crate_hologram_y_offset%</lyellow>'
+          - ''
+          - <lgray>调整全息文字在垂直方向</lgray>
+          - <lgray>上的显示高度</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>调整</lyellow></lgray>
+
+        Effect:
+          Model:
+            Name: <lyellow><b>特效模型</b></lyellow>
+            Lore:
+            - '<lyellow>● <lgray>当前: </lgray>%crate_effect_model%</lyellow>'
+            - ''
+            - <lgray>设置特效模型或</lgray>
+            - <lgray>关闭特效显示</lgray>
+            - ''
+            - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>更换</lyellow></lgray>
+            - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>禁用</lyellow></lgray>
+          
+          Particle:
+            Name: <lyellow><b>特效粒子</b></lyellow>
+            Lore:
+            - '<lyellow>● <lgray>当前: </lgray>%crate_effect_particle_name%</lyellow>'
+            - ''
+            - <lgray>设置特效粒子类型</lgray>
+            - ''
+            - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>更换</lyellow></lgray>
+          
+          ParticleData:
+            Name: <lyellow><b>粒子参数</b></lyellow>
+            Lore:
+            - '%inspection_crate_particle_data%'
+            - ''
+            - <lgray>设置粒子效果参数</lgray>
+            - ''
+            - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>编辑</lyellow></lgray>
+      Particle:
+        Data:
+          Red:
+            Name: '&c红色'
+            Lore:
+            - '&b| &7当前: %value%'
+            - ''
+            - '&e| &7左键点击 &e更改'
+          Green:
+            Name: '&a绿色'
+            Lore:
+            - '&b| &7当前: %value%'
+            - ''
+            - '&e| &7左键点击 &e更改'
+          Blue:
+            Name: '&b蓝色'
+            Lore:
+            - '&b| &7当前: %value%'
+            - ''
+            - '&e| &7左键点击 &e更改'
+          Size:
+            Name: '&b大小'
+            Lore:
+            - '&e| &7当前: %value%'
+            - ''
+            - '&e| &7左键点击 &e更改'
+          Material:
+            Name: '&b材质'
+            Lore:
+            - '&e| &7当前: %value%'
+            - ''
+            - '&e| &7拖放一个物品 &e更改'
+          Number:
+            Name: '&b数量'
+            Lore:
+            - '&e| &7当前: %value%'
+            - ''
+            - '&e| &7左键点击 &e更改'
+      Rewards:
+        Name: '&b奖励'
+        Lore:
+        - '&7抽奖箱的所有可能奖励，包括获奖'
+        - '&7和里程碑'
+        - ''
+        - '&7数量: %crate_rewards_amount%'
+        - ''
+        - '&b| &7左键点击 &b跳转'
+      Milestones:
+        Name: '&b里程碑'
+        Lore:
+        - '&7里程碑是以另一种方式来 &6奖励 &7你'
+        - '&7的玩家并且 &6激励 &7他们打开更多抽'
+        - '&7奖箱！'
+        - ''
+        - '&7里程碑: %crate_milestones_amount%'
+        - '&7可重复: %crate_milestones_repeatable%'
+        - ''
+        - '&7每次他们打开这个抽奖箱给他们独'
+        - '&7特的奖励 &6X 次'
+        - ''
+        - '&b| &7左键点击 &b跳转'
+        - '&e| &7右键点击 &e切换可重复'
+      Delete:
+        Name: <lyellow><b><lred>删除宝箱</lred></b></lyellow>
+        Lore:
+        - <lgray>永久删除此宝箱</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>删除</lyellow></lgray>
+
+      Description:
+        Name: <lyellow><b>描述文本</b></lyellow>
+        Lore:
+        - '%crate_description%'
+        - ''
+        - <lgray>设置宝箱的描述文字</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>添加行</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>清空</lyellow></lgray>
+
+      Preview:
+        Name: <lyellow><b>预览界面</b></lyellow>
+        Lore:
+        - '%inspection_crate_preview%'
+        - ''
+        - '<lyellow>● <lgray>启用: </lgray>%crate_preview_enabled%</lyellow>'
+        - '<lyellow>● <lgray>ID: </lgray>%crate_preview_id%</lyellow>'
+        - ''
+        - <lgray>设置此宝箱的预览界面</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>修改ID</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>切换</lyellow></lgray>
+
+      Animation:
+        Name: <lyellow><b>开启动画</b></lyellow>
+        Lore:
+        - '%inspection_crate_animation%'
+        - ''
+        - '<lyellow>● <lgray>启用: </lgray>%crate_animation_enabled%</lyellow>'
+        - '<lyellow>● <lgray>ID: </lgray>%crate_animation_id%</lyellow>'
+        - ''
+        - <lgray>设置此宝箱的开启动画</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>修改ID</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>切换</lyellow></lgray>
+
+      InventoryStack:
+        Name: <lyellow><b>背包物品</b></lyellow>
+        Lore:
+        - '%inspection_crate_item%'
+        - ''
+        - <lgray>设置此宝箱的展示物品</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>拖拽<lyellow>替换</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>获取</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>复制源码</lyellow></lgray>
+    Reward:
+      Object:
+        Name: '&b%reward_name%&7 (ID: &f%reward_id%&7)'
+        Lore:
+        - '%reward_inspect_content%'
+        - ''
+        - '&7权重: %reward_weight%'
+        - '&7抽取概率: %reward_roll_chance%%'
+        - '&7稀有度: %reward_rarity_name%'
+        - ''
+        - '&a| &7左键点击 &a编辑'
+        - '&a| &7SHIFT+左键点击 &a增加权重'
+        - '&c| &7SHIFT+右键点击 &c减少权重'
+        - '&c| &7[Q] 键点击 &c删除 &8(无法撤销)'
+      Create:
+        Name: '&b创建奖励'
+        Lore:
+        - ''
+        - '&b简易模式'
+        - '&7点击带有物品的光标，快速创建带'
+        - '&7有实体物品的奖励'
+        - ''
+        - '&b专家模式'
+        - '&7空光标点击，创建不带实体物品的'
+        - '&7奖励'
+      Sort:
+        Info:
+          Name: '&b奖励排序'
+          Lore:
+          - '&7按指定顺序自动排序奖励'
+          - ''
+          - '&b| &7左键点击 &b跳转'
+        ByWeight:
+          Name: '&b按权重'
+          Lore: []
+        ByRarity:
+          Name: '&b按稀有度'
+          Lore: []
+        ByChance:
+          Name: '&b按概率'
+          Lore: []
+        ByName:
+          Name: '&b按名称'
+          Lore: []
+        ByItem:
+          Name: '&b按物品'
+          Lore: []
+      DisplayName:
+        Name: '&b显示名称'
+        Lore:
+        - '&7奖励的名称用于消息和占位符'
+        - ''
+        - '&7当前: %reward_name%'
+        - ''
+        - '&a| &7左键点击 &a更改'
+        - '&e| &7SHIFT+左键点击 &e从预览中继承'
+        - '&e| &7SHIFT+右键点击 &e为预览设置'
+      Preview:
+        Name: '&b预览物品'
+        Lore:
+        - '&7代表此奖励的物品'
+        - ''
+        - '&7如果奖励有 &6一个 &7或 &6多个 &7实体物品'
+        - '&7你可能希望设置一个特定的物品来'
+        - '&7标识奖励'
+        - ''
+        - '&a| &7拖放 &a替换'
+        - '&e| &7右键点击 &e获取副本'
+      Weight:
+        Name: '&b稀有度与权重'
+        Lore:
+        - '&7稀有度: %reward_rarity_name%'
+        - '&7权重: %reward_weight%'
+        - '&7抽取概率: %reward_roll_chance%%'
+        - ''
+        - '&7抽取概率取决于奖励和稀有度 &b权重'
+        - '&7权重 &b越大 &7概率越大'
+        - ''
+        - '&7阅读 &6文档 &7了解详情'
+        - '&7它解释了一切'
+        - ''
+        - '&a| &7左键点击 &a设置稀有度'
+        - '&a| &7右键点击 &a设置权重'
+      Commands:
+        Name: '&b获奖命令'
+        Lore:
+        - '%reward_editor_commands%'
+        - ''
+        - '&7当玩家获取此奖励时，指定的命令'
+        - '&7将会由 &6服务器的控制台 &7执行'
+        - ''
+        - '&7你可以使用所有的 &6PlaceholderAPI &7占位符'
+        - '&7使用 &6%player_name% &7来替换玩家名称'
+        - ''
+        - '&a| &7左键点击 &a添加命令'
+        - '&c| &7右键点击 &c移除所有'
+      Items:
+        Name: '&b获胜物品'
+        Lore:
+        - '%reward_editor_items%'
+        - ''
+        - '&7当玩家获取此奖励时，指定的物品'
+        - '&7会被添加到 &6玩家的背包中'
+        - ''
+        - '&7你可以使用所有 &6PlaceholderAPI &7占位符'
+        - '&7使用 &6%player_name% &7来替换玩家名称'
+        - ''
+        - '&e| &7左键点击 &b跳转'
+      Broadcast:
+        Name: '&b胜利广播'
+        Lore:
+        - '&7启用: %reward_broadcast%'
+        - ''
+        - '&7启用时，当有人获取此奖励时，'
+        - '&7广播一条消息'
+        - ''
+        - '&e| &7左键点击 &e切换'
+      GlobalWinLimit:
+        Name: '&b全局获奖限制'
+        Lore:
+        - '&7为 &6整个服务器 &7设置奖励冷却和可'
+        - '&7能获奖的次数'
+        - ''
+        - '&7启用: %reward_global_win_limit_enabled%'
+        - '&7数量: %reward_global_win_limit_amount%'
+        - '&7冷却: %reward_global_win_limit_cooldown%'
+        - '&7冷却步骤: %reward_global_win_limit_step%'
+        - ''
+        - '&7阅读 &6文档 &7获取更多详情'
+        - ''
+        - '&a| &7[Q] 键 &a切换'
+        - '&e| &7左键点击 &e更改数量'
+        - '&e| &7右键点击 &e更改冷却'
+        - '&e| &7SHIFT+左键点击 &e更改冷却步骤'
+        - '&a| &7SHIFT+右键点击 &a设置为午夜冷却'
+        - '&c| &7[F] 键 &c重置存储数据'
+      PlayerWinLimit:
+        Name: '&b玩家获奖限制'
+        Lore:
+        - '&7为 &6每个玩家 &7设置奖励冷却和可能'
+        - '&7获奖的次数'
+        - ''
+        - '&7阅读 &6文档 &7获取更多详情'
+        - ''
+        - '&7启用: %reward_player_win_limit_enabled%'
+        - '&7数量: %reward_player_win_limit_amount%'
+        - '&7冷却: %reward_player_win_limit_cooldown%'
+        - '&7冷却步骤: %reward_player_win_limit_step%'
+        - ''
+        - '&a| &7[Q] 键 &a切换'
+        - '&e| &7左键点击 &e更改数量'
+        - '&e| &7右键点击 &e更改冷却'
+        - '&e| &7SHIFT+左键点击 &e更改冷却步骤'
+        - '&a| &7SHIFT+右键点击 &a设置为午夜冷却'
+      IgnoredPermissions:
+        Name: '&b忽略权限'
+        Lore:
+        - '%reward_ignored_for_permissions%'
+        - ''
+        - '&7拥有任何指定权限的玩家，永远不'
+        - '&7会获奖此奖励'
+        - ''
+        - '&a| &7左键点击 &a添加'
+        - '&c| &7右键点击 &c移除所有'
+      Creation:
+        Button:
+          Name: <lyellow><b>创建奖励</b></lyellow>
+          Lore:
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>导航</lyellow></lgray>
+        
+        Info:
+          Name: <lyellow><b>创建向导</b></lyellow>
+          Lore:
+          - ''
+          - '<lgray><lyellow><b>第一步</b></lyellow></lgray>'
+          - <lgray>点击背包中的物品</lgray>
+          - <lgray>作为新奖励的基础</lgray>
+          - ''
+          - '<lgray><lyellow><b>第二步</b></lyellow></lgray>'
+          - <lgray>选择并点击奖励类型按钮</lgray>
+          - <lgray>创建新奖励</lgray>
+
+        Item:
+          Name: <lyellow><b>物品奖励</b></lyellow>
+          Lore:
+          - <lgray>抽取时直接将物品</lgray>
+          - <lgray>发放至玩家背包</lgray>
+          - ''
+          - <lgray><green>✔</green> 自定义物品</lgray>
+          - <lgray><green>✔</green> 支持NBT</lgray>
+          - <lgray><green>✔</green> 占位符</lgray>
+          - <lgray><green>✔</green> 最多27个物品</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>创建</lyellow></lgray>
+
+        Command:
+          Name: <lyellow><b>指令奖励</b></lyellow>
+          Lore:
+          - <lgray>抽取时执行指定指令</lgray>
+          - <lgray>支持占位符替换</lgray>
+          - ''
+          - <lgray><green>✔</green> 自定义名称</lgray>
+          - <lgray><green>✔</green> 自定义描述</lgray>
+          - <lgray><green>✔</green> 占位符</lgray>
+          - <lgray><green>✔</green> 无限指令</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>创建</lyellow></lgray>
+
+      Delete:
+        Name: <lyellow><b><lred>删除奖励</lred></b></lyellow>
+        Lore:
+        - <lgray>永久删除此奖励</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>删除</lyellow></lgray>
+
+      Name:
+        Name: <lyellow><b>显示名称</b></lyellow>
+        Lore:
+        - '<lyellow>● <lgray>当前: </lgray>%reward_name%</lyellow>'
+        - ''
+        - <lgray>设置奖励名称</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>修改</lyellow></lgray>
+
+      Description:
+        Name: <lyellow><b>描述文本</b></lyellow>
+        Lore:
+        - '%reward_description%'
+        - ''
+        - <lgray>设置奖励描述</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>添加行</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>清空</lyellow></lgray>
+
+      CustomPreview:
+        Name: 自定义图标
+        Description:
+        - 控制此奖励是否
+        - 使用自定义图标
+        Formatted: true
+        CurrentInfo:
+          Enabled: '%reward_editor_custom_preview%'
+        ClickActions:
+          LEFT: toggle
+
+      Icon:
+        Name: <lyellow><b>图标</b></lyellow>
+        Lore:
+        - '%inspection_reward_preview%'
+        - ''
+        - <lgray>设置奖励图标</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>拖拽<lyellow>替换</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>复制</lyellow></lgray>
+
+      SetPlaceholders:
+        Name: <lyellow><b>应用占位符？</b></lyellow>
+        Lore:
+        - '<lyellow>● <lgray>启用: </lgray>%reward_placeholder_apply%</lyellow>'
+        - ''
+        - <lgray>启用后允许在奖励的</lgray>
+        - <lgray>物品/指令中使用占位符：</lgray>
+        - <lgray><lyellow>✔</lyellow> 宝箱占位符 <dgray>(见wiki)</dgray></lgray>
+        - <lgray><lyellow>✔</lyellow> 奖励占位符 <dgray>(见wiki)</dgray></lgray>
+        - <lgray><lyellow>✔</lyellow> PlaceholderAPI占位符</lgray>
+        - ''
+        - <lgray><lred><b>(!)</b></lred> 可能<lred>影响</lred>自定义物品</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>切换</lyellow></lgray>
+
+      Rarity:
+        Name: <lyellow><b>稀有度</b></lyellow>
+        Lore:
+        - '<lyellow>● <lgray>当前: </lgray>%reward_rarity_name%</lyellow>'
+        - '<lyellow>● <lgray>抽取概率: </lgray>%reward_rarity_roll_chance%%</lyellow>'
+        - ''
+        - <lgray>设置奖励稀有度</lgray>
+        - <lgray>影响抽取概率</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>修改</lyellow></lgray>
+
+      CommandsContent:
+        Name: <lyellow><b>指令内容</b></lyellow>
+        Lore:
+        - '%inspection_reward_content%'
+        - '%reward_editor_commands%'
+        - ''
+        - <lgray>抽取时执行列出的指令</lgray>
+        - ''
+        - <lgray>使用 <lorange>%player_name%</lorange> 表示玩家</lgray>
+        - <lgray>添加 <lorange>player:</lorange> 前缀以玩家身份执行</lgray>
+        - <lgray>启用 <lorange>应用占位符</lorange> 获取更多功能</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>添加指令</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>清空</lyellow></lgray>
+
+      ItemsContent:
+        Name: <lyellow><b>物品内容</b></lyellow>
+        Lore:
+        - '%inspection_reward_content%'
+        - '%reward_editor_items%'
+        - ''
+        - <lgray>抽取时发放列出的物品</lgray>
+        - ''
+        - <lgray>启用 <lorange>应用占位符</lorange> 使用占位符</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>打开</lyellow></lgray>
+
+      Limit:
+        Global:
+          Name: <lyellow><b>全局抽取限制</b></lyellow>
+          Lore:
+          - <lgray>限制<lorange>所有玩家</lorange>的抽取次数</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>导航</lyellow></lgray>
+        
+        Player:
+          Name: <lyellow><b>玩家抽取限制</b></lyellow>
+          Lore:
+          - <lgray>限制<lorange>每个玩家</lorange>的抽取次数</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>导航</lyellow></lgray>
+        
+        Toggle:
+          Name: <lyellow><b>启用</b></lyellow>
+          Lore:
+          - '<lyellow>● <lgray>当前: </lgray>%limit_enabled%</lyellow>'
+          - ''
+          - <lgray>控制是否启用限制</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>切换</lyellow></lgray>
+        
+        Amount:
+          Name: <lyellow><b>限制数量</b></lyellow>
+          Lore:
+          - '<lyellow>● <lgray>当前: </lgray>%limit_amount%</lyellow>'
+          - ''
+          - <lgray>设置可抽取次数</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>修改</lyellow></lgray>
+          - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>无限</lyellow></lgray>
+        
+        Cooldown:
+          Name: <lyellow><b>重置时间</b></lyellow>
+          Lore:
+          - '<lyellow>● <lgray>当前: </lgray>%limit_cooldown%</lyellow>'
+          - ''
+          - <lgray>设置抽取次数的重置间隔</lgray>
+          - <lgray>恢复初始值</lgray>
+          - ''
+          - <lgray>使用 <lyellow>-1</lyellow> 永不重置</lgray>
+          - <lgray>使用 <lyellow>-2</lyellow> 午夜重置</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>修改</lyellow></lgray>
+        
+        CooldownStep:
+          Name: <lyellow><b>重置步长</b></lyellow>
+          Lore:
+          - '<lyellow>● <lgray>当前: </lgray>%limit_cooldown_step%</lyellow>'
+          - ''
+          - <lgray>设置重置时间生效</lgray>
+          - <lgray>所需抽取次数</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>修改</lyellow></lgray>
+        
+        Reset:
+          Name: <lyellow><b>清除数据</b></lyellow>
+          Lore:
+          - <lgray>清除此奖励的全局</lgray>
+          - <lgray>和个人限制数据</lgray>
+          - ''
+          - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>重置</lyellow></lgray>
+
+      RequiredPermissions:
+        Name: <lyellow><b>所需权限</b></lyellow>
+        Lore:
+        - '%reward_required_permissions%'
+        - ''
+        - <lgray>玩家需拥有任一列出的</lgray>
+        - <lgray>权限才能抽取此奖励</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>左键<lyellow>添加权限</lyellow></lgray>
+        - <lyellow>[▶]</lyellow> <lgray>右键<lyellow>清空</lyellow></lgray>
+    Milestone:
+      Create:
+        Name: '&b新建里程碑'
+        Lore: []
+      Object:
+        Name: '&b里程碑: %milestone_openings%'
+        Lore:
+        - '%milestone_inspect_reward%'
+        - ''
+        - '&7开启次数: %milestone_openings%'
+        - '&7奖励ID: %milestone_reward_id%'
+        - ''
+        - '&e| &7左键点击 &e更改开启次数'
+        - '&e| &7右键点击 &e更改奖励'
+        - '&c| &7SHIFT+右键点击 &c删除 &8(无法撤销)'
+    Key:
+      Object:
+        Name: '&b%key_name%&7 (ID: &f%key_id%)'
+        Lore:
+        - '&7虚拟: %key_virtual%'
+        - ''
+        - '&a| &7左键点击 &a编辑'
+        - '&c| &7SHIFT+右键点击 &c删除 &8(无法撤销)'
+      Create:
+        Name: '&b新建钥匙'
+        Lore: []
+      DisplayName:
+        Name: '&b显示名称'
+        Lore:
+        - '&7钥匙的名称用于消息，占位符和全'
+        - '&7息图'
+        - ''
+        - '&7当前: %key_name%'
+        - ''
+        - '&e| &7左键点击 &e更改'
+      Item:
+        Name: '&b钥匙物品'
+        Lore:
+        - '&7代表钥匙在玩家背包中的物品'
+        - ''
+        - '&7你应该只使用 &e预览 &7物品'
+        - '&7你不能从此处编辑它'
+        - ''
+        - '&7[&c!&7] &c不支持 &7NBT标签！'
+        - ''
+        - '&e| &7拖放 &e替换'
+        - '&a| &7左键点击 &a获取钥匙物品'
+        - '&e| &7右键点击 &e获取原始副本'
+      Virtual:
+        Name: '&e虚拟'
+        Lore:
+        - '&7启用: %key_virtual%'
+        - ''
+        - '&7设定钥匙是否为虚拟'
+        - ''
+        - '&e| &7左键点击 &e切换'
+      Delete:
+        Name: <lyellow><b><lred>删除钥匙</lred></b></lyellow>
+        Lore:
+        - <lgray>永久删除此钥匙</lgray>
+        - ''
+        - <lyellow>[▶]</lyellow> <lgray>点击<lyellow>删除</lyellow></lgray>
+  Button:
+    Crate:
+      ItemStackable:
+        Name: 物品可堆叠
+        Description:
+        - 控制宝箱物品是否可堆叠
+        Formatted: true
+        CurrentInfo:
+          Current: '%crate_item_stackable%'
+        ClickActions:
+          LEFT: toggle
+    
+    Key:
+      ItemStackable:
+        Name: 物品可堆叠
+        Description:
+        - 控制钥匙物品是否可堆叠
+        Formatted: true
+        CurrentInfo:
+          Current: '%key_item_stackable%'
+        ClickActions:
+          LEFT: toggle
+
+    Reward:
+      SortMode:
+        Name: '%mode%'
+        Description:
+        - 按<lyellow>%mode%</lyellow>排序奖励
+        Formatted: true
+        ClickActions:
+          RIGHT: descending
+          LEFT: ascending
+
+    ItemType:
+      ByNBT:
+        Name: 原始NBT存储
+        Description:
+        - 按物品NBT数据存储
+        - ''
+        - <gray><green>✔</green> 完整保存物品NBT数据</gray>
+        - <gray>兼容新版MC版本</gray>
+        - ''
+        - <gray><red>✘</red> <red>不会</red>反映原始插件配置</gray>
+        - <gray>的任何更改</gray>
+        Formatted: true
+        ClickActions:
+          LEFT: select
+      
+      ByID:
+        Name: 物品ID存储
+        Description:
+        - 按物品唯一ID存储
+        - ''
+        - <gray><green>✔</green> 始终反映原始插件配置</gray>
+        - <gray>的所有更改</gray>
+        - ''
+        - <gray><red>✘</red> <red>不会</red>保存物品配置外</gray>
+        - <gray>的任何NBT数据</gray>
+        Formatted: true
+        ClickActions:
+          LEFT: select
+Menu:
+  Invalid: '&c菜单不存在！'
+Other:
+  Midnight: 午夜
+  Free: 免费
+  Cooldown:
+    Ready: <lgreen>可开启！</lgreen>
+  LastOpener:
+    Empty: '-'
+  LastReward:
+    Empty: '-'
+  NextMilestone:
+    Empty: '-'
+  BrokenItem:
+    Name: <lred><b>< 无效物品 ></b></lred>
+    Description:
+    - <lgray>此物品解析失败</lgray>
+    - <lgray>请查看控制台日志获取详情</lgray>
+    Formatted: false
+#RewardSortMode:
+#  WEIGHT: Weight
+#  RARITY: Rarity
+#  CHANCE: Chance
+#  NAME: Name
+ # ITEM: Item
+RewardSortMode:
+  WEIGHT: 权重
+  RARITY: 稀有度
+  CHANCE: 概率
+  NAME: 名称
+  ITEM: 物品
+Error:
+  Command:
+    Argument:
+      InvalidCrate: <lgray><lred>%value%</lred> 不是有效的宝箱！</lgray>
+      InvalidKey: <lgray><lred>%value%</lred> 不是有效的钥匙！</lgray>
+Key:
+  Create:
+    Error:
+      Duplicated: <lred>已存在相同ID的钥匙！</lred>
+Inspection:
+  Problems: '%amount% problem(s)'
+  NoProblems: No problems found

@@ -1,0 +1,108 @@
+info:
+  namespace: customcrops
+items:
+  cabbage_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_1
+      model_id: 2082
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  cabbage_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_2
+      model_id: 2083
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  cabbage_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_3
+      model_id: 2084
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  cabbage_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/stage_4
+      model_id: 2085
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  cabbage_seeds:
+    display_name: 卷心菜种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/cabbage/cabbage_seeds
+      model_id: 2086
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  cabbage:
+    display_name: 卷心菜
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/cabbage/cabbage
+      model_id: 2087
+  cabbage_silver_star:
+    display_name: 卷心菜(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/cabbage/cabbage_silver_star
+      model_id: 2088
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  cabbage_golden_star:
+    display_name: 卷心菜(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/cabbage/cabbage_golden_star
+      model_id: 2089
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_cabbage:
+    enabled: true
+    icon: customcrops:cabbage
+    name: 'Cabbage'
+    items:
+      - customcrops:cabbage
+      - customcrops:cabbage_silver_star
+      - customcrops:cabbage_golden_star
+      - customcrops:cabbage_seeds
+      - customcrops:cabbage_stage_1
+      - customcrops:cabbage_stage_2
+      - customcrops:cabbage_stage_3
+      - customcrops:cabbage_stage_4

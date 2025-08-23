@@ -1,0 +1,128 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+AMPLIFICATION_TOME:
+  base:
+    material: ENCHANTED_BOOK
+    name: '&9充能卷轴'
+    required-level: 9.0
+    lore:
+    - '&7产生一个强大的光环。'
+    - '&7拿起它以&5极大地增强'
+    - '&7你的法力。'
+    magic-damage:
+      base: 85.0
+      spread: 0.02
+      max-spread: 0.06
+WYVERN_FEATHER:
+  base:
+    material: FEATHER
+    disable-crafting: true
+    name: '&f龙羽'
+    fall-damage-reduction: 65.0
+WYVERN_SOUL:
+  base:
+    material: ENDER_EYE
+    name: '&f龙魂'
+    disable-interaction: true
+    disable-crafting: true
+    enchants:
+      unbreaking: 1
+    perm-effects:
+      LEVITATION: 2
+    hide-enchants: true
+TOME_OF_ACCURACY:
+  base:
+    material: ENCHANTED_BOOK
+    disable-repairing: true
+    name: '&e精准卷轴'
+    critical-strike-power:
+      base: 27.5
+      spread: 0.03
+      max-spread: 0.08
+    critical-strike-chance:
+      base: 7.5
+      spread: 0.08
+      max-spread: 0.25
+    lore:
+    - '&7增加暴击率，让您刀刀致命。'
+NAUGHTY_SPELL_BOOK:
+  base:
+    material: ENCHANTED_BOOK
+    disable-repairing: true
+    name: '&8调皮法书'
+    required-level: 20.0
+    ability:
+      right-click:
+        type: CURSED_BEAM
+        mode: RIGHT_CLICK
+        cooldown: 30.0
+        damage: 6.0
+    lore:
+    - '&7右键召唤一束&5诅咒光线&7.'
+    - '&7诅咒光线对击中的第一个敌人造成&57'
+    - '&5伤害&7。'
+CELESTIAL_TOME:
+  base:
+    material: BOOK
+    enchants:
+      luck_of_the_sea: 1.0
+    disable-interaction: true
+    lore:
+      - §f§o由天使所著。
+      - §b这部卷轴受上帝庇佑，别人无法
+      - §b带走。死亡时不会掉落。
+    name: §b§l天国卷轴
+    tier: EPIC
+    ability:
+      ability1:
+        type: HOLY_MISSILE
+        mode: RIGHT_CLICK
+        duration: 5.0
+        damage: 9.0
+        cooldown: 8.0
+    disable-death-drop: true
+OMNIELEMENTAL_TOME:
+  base:
+    material: BOOK
+    name: §c§l全§6§l能§e§l元§a§l素§2§l卷§3§l轴§9§l—§b§l—§f§l弱§e§l者§a§l会§6§l站§c§l起§6§l来
+    required-level: 30.0 
+    tier: VERY_RARE
+    magic-damage:
+      base: 30.0
+      scale: 0.15
+      spread: 0.1
+      max-spread: 0.3
+    element:
+      wind:
+        damage: 25.0
+      earth:
+        damage: 25.0
+      thunder:
+        damage: 25.0
+      water:
+        damage: 25.0
+    lore:
+      - §7混乱创生一切。
+    ability:
+      ability1:
+        type: SWIFTNESS
+        duration: 6.0
+        amplifier: 1.0
+        cooldown: 10.0
+        mode: SHIFT_RIGHT_CLICK
+      ability2:
+        type: SHOCKWAVE
+        cooldown: 10.0
+        knock-up: 2.0
+        length: 5.0
+        mode: SHIFT_RIGHT_CLICK
+      ability3:
+        type: SMITE
+        mode: SHIFT_RIGHT_CLICK
+        damage: 8.0
+        cooldown: 10.0
+      ability4:
+        type: HEAL
+        mode: SHIFT_RIGHT_CLICK
+        heal: 10.0
+        cooldown: 10.0

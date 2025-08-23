@@ -1,0 +1,91 @@
++ Updated: All sounds to the new format in 1.21 (default config). You may need to update your existing sound configs.
+LANDS WILL PRINT A WARNING TO THE CONSOLE, IF YOUR SOUNDS ARE INVALID. THIS IS NOT A PLUGIN ISSUE. YOU CAN FIX IT BY ADJUSTING YOUR CONFIG AND GUI LOCALE. SEE DEFAULT CONFIG FOR REFERENCE: https://github.com/IncrediblePlugins/Lands/blob/5a3d47735769a8e51c8b941f7e1ce60ed982ac71/config.yml#L782
+
++ Added: Support for happy ghast
+
+--> Language file (en-US.yml): 
++ Message: help.command.lands.admin.player.give.first-join-items
++ Message: help.command.lands.admin.land.removespawn
++ Message: lands.message.menu-reopen
++ Message: lands.command.general.input.world-disabled.general
++ Message: lands.command.general.input.world-disabled.claiming
++ Message: lands.command.merge.already
++ Message: lands.command.merge.cost
++ Message: lands.command.merge.requested
++ Message: lands.command.relations.allies.add.max
++ Message: lands.command.relations.allies.add.broadcast
++ Message: lands.command.relations.enemies.add.max
++ Message: lands.command.relations.enemies.remove.broadcast
++ Message: wars.message.noaccess.allies
++ Message: wars.message.end.broadcast.won
++ Message: wars.message.end.broadcast.surrendered
++ Message: wars.message.end.broadcast.draw
++ Message: wars.message.capture.destroy.invaders-break
++ Message: wars.message.capture.progress.none
++ Message: wars.message.capture.progress.none.area
++ Message: wars.message.capture.progress.none.broadcast
+
+--> GUI file (en-US.yml): 
++ Item: common.items.default.child_failure_nation_none
++ Item: gui.list_area_invites.items.default
++ Item: gui.list_area_invites.items.default.entry_object_merge
++ Item: gui.land.items.default
++ Item: gui.land.items.default.child_failure_mainblock_claim
++ Item: gui.land.items.default.child_failure_mainblock_space
++ Item: gui.player_invite.items.default
++ Item: gui.player_invite.items.default.accept_merge
++ Item: gui.list_player_invites.items.default
++ Item: gui.list_player_invites.items.default.entry_object_merge
++ Item: common.items.default.placeholder_1
+
+--> Language file (en-US.yml): 
++ Message: help.command.lands.admin.player.give.first-join-items
++ Message: help.command.lands.admin.land.removespawn
++ Message: lands.message.menu-reopen
++ Message: lands.command.general.input.world-disabled.general
++ Message: lands.command.general.input.world-disabled.claiming
++ Message: lands.command.merge.already
++ Message: lands.command.merge.cost
++ Message: lands.command.merge.requested
++ Message: lands.command.relations.allies.add.max
++ Message: lands.command.relations.allies.add.broadcast
++ Message: lands.command.relations.enemies.add.max
++ Message: lands.command.relations.enemies.remove.broadcast
++ Message: wars.message.noaccess.allies
++ Message: wars.message.end.broadcast.won
++ Message: wars.message.end.broadcast.surrendered
++ Message: wars.message.end.broadcast.draw
++ Message: wars.message.capture.destroy.invaders-break
++ Message: wars.message.capture.progress.none
++ Message: wars.message.capture.progress.none.area
++ Message: wars.message.capture.progress.none.broadcast
+
+--> GUI file (en-US.yml): 
++ Item: common.items.default.child_failure_nation_none
++ Item: gui.list_area_invites.items.default
++ Item: gui.list_area_invites.items.default.entry_object_merge
++ Item: gui.land.items.default
++ Item: gui.land.items.default.child_failure_mainblock_claim
++ Item: gui.land.items.default.child_failure_mainblock_space
++ Item: gui.player_invite.items.default
++ Item: gui.player_invite.items.default.accept_merge
++ Item: gui.list_player_invites.items.default
++ Item: gui.list_player_invites.items.default.entry_object_merge
++ Item: common.items.default.placeholder_1
+
+--> Language file (zh-CN.yml): 
++ Message: help.command.lands.admin.player.give.first-join-items
++ Message: lands.command.relations.allies.add.broadcast
++ Message: lands.command.relations.enemies.remove.broadcast
++ Message: wars.message.noaccess.allies
++ Message: wars.message.end.broadcast.won
++ Message: wars.message.end.broadcast.surrendered
++ Message: wars.message.end.broadcast.draw
++ Message: wars.message.capture.destroy.invaders-break
++ Message: wars.message.capture.progress.none
++ Message: wars.message.capture.progress.none.area
++ Message: wars.message.capture.progress.none.broadcast
+
+--> GUI file (zh-CN.yml): 
++ Item: common.items.default.child_failure_nation_none
++ Item: common.items.default.placeholder_1

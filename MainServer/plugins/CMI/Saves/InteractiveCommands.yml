@@ -1,0 +1,10 @@
+Dummy:
+  Commands:
+  - fromConsole! mm mobs spawn DummyBoo [playerName]
+  SignLines:
+  - ' '
+  - Dummy
+  - ' '
+  - ' '
+  Public: true
+  ReqPerm: false

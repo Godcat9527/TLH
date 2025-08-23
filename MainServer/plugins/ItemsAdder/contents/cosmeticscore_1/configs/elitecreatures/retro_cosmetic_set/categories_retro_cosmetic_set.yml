@@ -1,0 +1,28 @@
+info:
+  namespace: elitecreatures
+categories:
+  retro_cosmetic_set:
+    enabled: true
+    icon: "elitecreatures:retro_cosmetic_set_backpack_1"
+    name: "Retro Cosmetic Set"
+    permission: "ia.menu.retro_cosmetic_set"
+    items:
+      - "elitecreatures:retro_cosmetic_set_backpack_1"
+      - "elitecreatures:retro_cosmetic_set_backpack_2"
+      - "elitecreatures:retro_cosmetic_set_backpack_3"
+      - "elitecreatures:retro_cosmetic_set_balloon_1"
+      - "elitecreatures:retro_cosmetic_set_balloon_2"
+      - "elitecreatures:retro_cosmetic_set_balloon_3"
+      - "elitecreatures:retro_cosmetic_set_helmet_1"
+      - "elitecreatures:retro_cosmetic_set_helmet_2"
+      - "elitecreatures:retro_cosmetic_set_helmet_3"
+
+
+
+
+
+
+
+# Downloaded from https://nullforums.net/resources/elitecreatures-retro-cosmetic-set.5286/
+# 378949OX18BKZMTOBHXG7UD0XVJ787K4S3R344W153R4UFLV25BI
+# MViZFufK76/yiwBrgKAh4JY+yApvzbxrhF367QD8CqYiZQkFM7oFVWSw5ey5wx8NNDtwmg0rBPJQaHNZt3c5QPqv+6Rem177SWOleCdVvPI=

@@ -1,0 +1,72 @@
+Settings:
+  # GUI title.
+  Title: <black>Shop Products</black>
+  # GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 18
+  # GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0
+  PlaceholderAPI:
+    # Sets whether PlaceholderAPI placeholders will be applied on all items from the 'Content' section of this GUI.
+    # [*] Disable if you don't use any PlaceholderAPI placeholders on your items to improve GUI performance.
+    Enabled: false
+Products:
+  Slots: 0,1,2,3,4,5,6,7,8
+  Free:
+    Material: PLAYER_HEAD
+    SkinURL: dd10aa51522d3d6a2d8232ed886c79987e1e53956646dafbabd9eddff6986
+    Name: <lgreen><b>✔ Available Slot</b></lgreen>
+    Lore:
+    - <lgray>Drop item here to add it to the shop!</lgray>
+  Locked:
+    Material: PLAYER_HEAD
+    SkinURL: 4051b59085d2c4249577823f63e1e2eb9f7cf64b7c78785a21805fad3ef14
+    Name: <lred><b>✘ Locked Slot</b></lred>
+    Lore:
+    - <lgray>Oh! This slot is not available currently.</lgray>
+    - ''
+    - <lgray>You can unlock slots with our ranks:</lgray>
+    - <lred>www.put_your_store.com</lred>
+  Product:
+    Name: <lyellow><b>%product_preview_name%</b></lyellow>
+    Lore:
+    - '%product_preview_lore%'
+    - ''
+    - '<lyellow>▪ <lgray>Currency: </lgray>%product_currency%</lyellow>'
+    - '<lyellow>▪ <lgray>Price Type: </lgray>%product_price_type%</lyellow>'
+    - '<lyellow>▪ <lgray>Buy Price: </lgray>%product_price_buy_formatted%</lyellow>'
+    - '<lyellow>▪ <lgray>Sell Price: </lgray>%product_price_sell_formatted%</lyellow>'
+    - ''
+    - <lgray><lyellow>[▶]</lyellow> Left-Click to <lyellow>edit</lyellow>.</lgray>
+    - <lgray><lyellow>[▶]</lyellow> Shift-Right to <lyellow>delete</lyellow>.</lgray>
+# ==================== GUI CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# The following values are available as button Types:
+# CLOSE
+# RETURN
+# ==================== ITEM OPTIONS ====================
+# > Item: Item to display. Please check: https://nightexpressdev.com/nightcore/configuration/item-formation/
+# > Priority: Button priority. Better values will override other item(s) in the same slot(s).
+# > Slots: Button slots. From [0] to [Size - 1]. Split with commas.
+# > Click_Commands: Execute custom commands on click. PlaceholderAPI available here.
+#     Available click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4, NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9
+#     Use prefix 'player:' to run command by a player.
+#     Click_Commands:
+#       LEFT:
+#       - say Hello
+#       - give %player_name% diamond 1
+#       - player: menu open shops
+# ==================================================
+Content:
+  return:
+    Priority: 10
+    Item:
+      Material: PLAYER_HEAD
+      SkinURL: be9ae7a4be65fcbaee65181389a2f7d47e2e326db59ea3eb789a92c85ea46
+      Name: <lgray><b>Return</b></lgray>
+      Display_Name: <lgray><b>Return</b></lgray>
+    Slots: '13'
+    Type: return

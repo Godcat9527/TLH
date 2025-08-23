@@ -1,0 +1,51 @@
+Options:
+  Proxy: true
+  Force-Proxy: true
+  Double-Transfer: true
+  Always-Listen: true
+
+
+Formats:
+  - condition: ~
+    priority: 100
+    msg:
+      default-color: '&f'
+      hover: '&7Date: %server_time_HH:mm:ss%'
+    prefix:
+      world:
+        text: '&8[&{#00FFFF}生存世界&8]&f%playerTitle_use%'
+        hover: |-
+          &f
+          &8▪  &{#00FFFF}生存世界&7, &2%player_x%/%player_y%/%player_z%
+          &f
+          &f
+      part-before-player:
+        text: ' '
+      player:
+        - condition: 'player op'
+          text: '&{#FFFF00}%player_name%'
+          hover: |-
+            &f
+            &8▪ &7Ping: &3%player_ping% Ms
+            &8▪ &7Health: &c%player_health_rounded% ❤
+            &f
+            &6▶ &eClick to contact with op
+            &f
+          suggest: '/tell %player_name% '
+        - text: '&7%player_name%'
+          hover: |-
+            &f
+            &8▪ &7Ping: &3%player_ping% Ms
+            &8▪ &7Health: &c%player_health_rounded% ❤
+            &f
+            &6▶ &eClick to chat with me
+            &f
+          suggest: '/tell %player_name% '
+      part-before-msg:
+        text: '&7: '
+    suffix:
+      example:
+        text: ''
+Events:
+  Process: |-
+    filter get &message

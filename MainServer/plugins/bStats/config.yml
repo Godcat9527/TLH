@@ -1,0 +1,6 @@
+enabled: true
+serverUuid: d02afa30-90c1-495e-9332-47084f663be2
+logFailedRequests: false
+serverUUID: 167e9d16-430b-4a2e-8af1-91494c337064
+logSentData: false
+logResponseStatusText: false

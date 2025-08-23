@@ -1,0 +1,74 @@
+Title: '&{#FFFFE0}&l星辰点购买'
+
+
+Layout:
+    - 'a@b@c@d@e'
+    - '@@@@@@@@@'
+
+
+Bindings:
+ # Items:
+ #   - 'material:clock'
+
+  Close:
+    - 'sound: BLOCK_CHEST_CLOSE-1-0'
+
+Icons:
+  '@':
+    display:
+      material: white_stained_glass_pane
+      name: '&e&l请选择你要购买的数量'
+      lore:
+        - ''
+
+  'a':
+    display:
+      material: sugar{model-data=1012}
+      name: '&{#00FFFF}&l购买300星辰点'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'title: &a充值系统维护中,请群内联系腐竹手动购买' 
+
+
+  'b':
+    display:
+      material: sugar{model-data=1012}
+      name: '&{#00FFFF}&l购买300星辰点'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'title: &a充值系统维护中,请群内联系腐竹手动购买'
+
+
+  'c':
+    display:
+      material: sugar{model-data=1012}
+      name: '&{#00FFFF}&l购买680星辰点'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'title: &a充值系统维护中,请群内联系腐竹手动购买'
+
+  'd':
+    display:
+      material: sugar{model-data=1012}
+      name: '&{#00FFFF}&l购买980星辰点'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'title: &a充值系统维护中,请群内联系腐竹手动购买' 
+
+  'e':
+    display:
+      material: sugar{model-data=1012}
+      name: '&{#00FFFF}&l购买1980星辰点'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'title: &a充值系统维护中,请群内联系腐竹手动购买'

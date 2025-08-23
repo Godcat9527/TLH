@@ -1,0 +1,231 @@
+info:
+  namespace: t-items
+items: 
+  update-12:
+    display_name: "&e菜单图标"
+    enabled: true
+    resource:
+      material: NAME_TAG
+      generate: true
+      model_id: 1110
+      textures:
+      - update-12
+  t-items-1:
+    display_name: "耀光宝石"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1115
+      textures:
+      - t_items_1
+  t-items-2:
+    display_name: 初级强化石"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1116
+      textures:
+      - t_items_2
+  t-items-3:
+    display_name: "物品-3"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1117
+      textures:
+      - t_items_3
+  t-items-4:
+    display_name: "物品-4"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1118
+      textures:
+      - t_items_4
+  t-items-5:
+    display_name: "暗黑之源碎片"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1119
+      textures:
+      - t_items_5
+  t-items-6:
+    display_name: "大天使之源碎片"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1120
+      textures:
+      - t_items_6
+  t-items-7:
+    display_name: "物品-7"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1121
+      textures:
+      - t_items_7
+  t-items-8:
+    display_name: "物品-8"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1122
+      textures:
+      - t_items_8
+  t-items-9:
+    display_name: "建材终端"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1123
+      textures:
+      - t_items_9
+    lore:
+    - ''
+    - '&b访问建材商店总菜单'
+    - '&7集成式快捷终端!'
+    events:
+      interact:
+        right:
+          execute_commands:
+            cmd1:
+              command: 'menu open 建材购买 {player}'
+              as_console: true
+              delay: 0
+  t-items-10:
+    display_name: "物品-10"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1124
+      textures:
+      - t_items_10
+  t-items-11:
+    display_name: "物品-11"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1125
+      textures:
+      - t_items_11
+  t-items-12:
+    display_name: "物品-12"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1126
+      textures:
+      - t_items_12  
+  t-items-13:
+    display_name: "紫晶升级石"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1127
+      textures:
+      - t_items_13
+  t-items-14:
+    display_name: "物品-14"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1128
+      textures:
+      - t_items_14
+  t-items-15:
+    display_name: "物品-15"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1129
+      textures:
+      - t_items_1 
+  t-items-16:
+    display_name: "物品-16"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1130
+      textures:
+      - t_items_16
+  t-items-17:
+    display_name: "物品-17"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1131
+      textures:
+      - t_items_17
+  t-items-18:
+    display_name: "物品-18"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1132
+      textures:
+      - t_items_18   
+  t-items-19:
+    display_name: "物品-19"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1133
+      textures:
+      - t_items_19
+  t-items-20:
+    display_name: "物品-20"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1134
+      textures:
+      - t_items_20  
+  t-items-21:
+    display_name: "物品-21"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1135
+      textures:
+      - t_items_21 
+  t-items-22:
+    display_name: "物品-22"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1136
+      textures:
+      - t_items_22 
+  t-items-23:
+    display_name: "TLH音乐包唱片-第一期"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      model_id: 1137
+      textures:
+      - t_items_23 

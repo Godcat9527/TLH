@@ -1,0 +1,50 @@
+# 传送时音效
+Sounds:
+  Enabled: true
+  # # 是否使用客户端音效，即只有玩家本人能听到，需安装ProtocolLib前置
+  ProtocolLibSound: false
+  # # 传送延迟中音效，更多音效可至： https://www.spigotmc.org/wiki/cc-sounds-list/
+  Delay: entity_tnt_primed
+  # # 传送成功音效
+  Success: entity_generic_explode
+Titles:
+  Enabled: true # 随机传送时开启Title标语
+  # # 可用变量 %player% %x% %y% 以及 %z%
+  NoDelay: # 若传送没有延迟时间时显示此条
+    Title: '&6传送中...'
+    Subtitle: '&8稍等，马上就好'
+    SendMessage: true
+  Teleport:
+    Title: '&6已随机传送'
+    Subtitle: '&fx=%x% y=%y% z=%z% 尝试了%attempts%次'
+    SendMessage: true # 同时也在聊天栏发送提示
+  Delay: # 若传送有延迟时间时显示此条
+    Title: ''
+    Subtitle: '&f稍等，将在 %time% 秒内开始传送...'
+    SendMessage: true # 同时也在聊天栏发送提示
+  Cancelled:
+    Title: '&e你刚刚动了一下...'
+    Subtitle: '&c传送已取消！'
+    SendMessage: true # 同时也在聊天栏发送提示
+  Loading:
+    Title: ''
+    Subtitle: '&7正在加载区块... 请等待'
+    SendMessage: true # 同时也在聊天栏发送提示
+  Failed:
+    Title: ''
+    Subtitle: '&c传送失败，未找到安全位置'
+    SendMessage: true # 同时也在聊天栏发送提示
+Particles: # 可使用 `rtp info particles` 列出粒子效果列表
+  Enabled: true
+  Type: # 可在这里查询粒子效果名称 https://github.com/ByteZ1337/ParticleLib/blob/master/src/main/java/xyz/xenondevs/particle/ParticleEffect.java
+    - EXPLOSION_NORMAL
+    - CRIT
+  Shape: EXPLODE # 允许的种类有 "Scan, Teleport 和 Explode", 你也可以使用 `/rtp info shapes` 列出可选粒子效果模式
+Invincible: # 玩家传送后有几秒无敌时间
+  Enabled: true
+  Seconds: 5
+Potions: # 可使用 `/rtp info potion_effects` 列出药水效果列表
+  Enabled: true
+  Types: # 格式 <药水名称>:[持续tick时长]:[药水等级] #默认持续tick=60, 等级=1
+    - Blindness:60:1
+    - Invisibility:60:1

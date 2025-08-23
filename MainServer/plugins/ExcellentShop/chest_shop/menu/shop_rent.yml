@@ -1,0 +1,101 @@
+# ==================== [SECTION] SETTINGS ====================
+# > [MenuType] : String | Represents the menu type. Allowed values: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/MenuType.html
+# > [Title] : String | Sets menu title.
+# > [Auto_Refresh] : Integer | Defines menu refresh rate in seconds. Set 0 to disable.
+# > [PlaceholderAPI -> Enabled] : Boolean | When enabled, applies PlaceholderAPI placeholders for all items in the menu per player.
+#  
+# ==================== [SECTION] CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# > [Item] : Section | Item to display.
+#     [*] Navigate to https://nightexpressdev.com/nightcore/configuration/item-formation/ for a list of available options.
+# > [Priority] : Integer | Item priority. Higher values will override other item(s) in the same slot(s).
+# > [Slots] : Int Array | Item slots, starts from 0. Split with commas.
+#     Slots: '0,4,9,10'
+# > [Type] : String | Defines item click action.
+#     [*] Available types: ['close', 'return', 'rent_enabled', 'rent_duration', 'rent_currency', 'rent_price', 'rent_cancel']
+# > [Click_Commands] : Section | Executes commands on click with PlaceholderAPI support.
+#     [*] Works only if [Type] is not set (null).
+#     [*] Available click types: [LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, DRAG_N_DROP]
+#     [*] Use prefix 'player:' to run command by a player.
+#     Click_Commands:
+#       LEFT:
+#       - say Hello
+#       - give %player_name% diamond 1
+#       - player: warp shop
+# ==================================================
+Settings:
+  MenuType: generic_9x4
+  Title: <black>Rent Settings</black>
+  Auto_Refresh: -1
+  PlaceholderAPI:
+    Enabled: false
+Content:
+  return:
+    Priority: 0
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b><lgray><b>Return</b></lgray></b></lyellow>
+      Lore:
+      - '%empty-if-above%'
+      - '%empty-if-below%'
+      SkinURL: be9ae7a4be65fcbaee65181389a2f7d47e2e326db59ea3eb789a92c85ea46
+    Slots: '31'
+    Type: return
+  rent_enabled:
+    Priority: 10
+    Item:
+      Material: minecraft:lime_dye
+      Display_Name: <lyellow><b>Enabled</b></lyellow>
+      Lore:
+      - '<lyellow>● <lgray>Current: </lgray>%rent_enabled%</lyellow>'
+      - ''
+      - <lgray><lyellow>➥</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+    Slots: '10'
+    Type: rent_enabled
+  rent_duration:
+    Priority: 10
+    Item:
+      Material: minecraft:clock
+      Display_Name: <lyellow><b>Duration</b></lyellow>
+      Lore:
+      - '<lyellow>● <lgray>Current: </lgray>%rent_duration%</lyellow>'
+      - ''
+      - <lgray><lyellow>➥</lyellow> Click to <lyellow>change</lyellow>.</lgray>
+    Slots: '12'
+    Type: rent_duration
+  rent_currency:
+    Priority: 10
+    Item:
+      Material: minecraft:map
+      Display_Name: <lyellow><b>Currency</b></lyellow>
+      Lore:
+      - '<lyellow>● <lgray>Current: </lgray>%rent_currency_name%</lyellow>'
+      - ''
+      - <lgray><lyellow>➥</lyellow> Click to <lyellow>change</lyellow>.</lgray>
+    Slots: '14'
+    Type: rent_currency
+  rent_price:
+    Priority: 10
+    Item:
+      Material: minecraft:diamond
+      Display_Name: <lyellow><b>Price</b></lyellow>
+      Lore:
+      - '<lyellow>● <lgray>Current: </lgray>%rent_price%</lyellow>'
+      - ''
+      - <lgray><lyellow>➥</lyellow> Click to <lyellow>change</lyellow>.</lgray>
+    Slots: '16'
+    Type: rent_price
+  rent_cancel:
+    Priority: 10
+    Item:
+      Material: minecraft:redstone
+      Display_Name: <red><b>Cancel Rent</b></red>
+      Lore:
+      - '<red>● <lgray>Rented by: </lgray>%shop_rented_by%</red>'
+      - ''
+      - <lgray>Cancels current rent and revokes</lgray>
+      - <lgray>renter's access to the shop.</lgray>
+      - ''
+      - <lgray><red>➥</red> Click to <red>cancel</red>.</lgray>
+    Slots: '4'
+    Type: rent_cancel

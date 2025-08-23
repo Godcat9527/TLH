@@ -1,0 +1,32 @@
+info:
+  namespace: t-key
+categories:
+  key_menu:
+    enabled: true
+    skip_if_already: false
+    icon: "t-key:t-key-1"
+    name: 钥匙
+    permission: ia.menu
+    items:
+      - "t-key:t-key-1"
+      - "t-key:t-key-2"
+      - "t-key:t-key-3"
+      - "t-key:t-key-4"
+      - "t-key:t-key-5"
+      - "t-key:t-key-6"
+      - "t-key:t-key-7"
+      - "t-key:t-key-8"
+      - "t-key:t-key-9"
+      - "t-key:t-key-10"
+      - "t-key:t-key-11"
+      - "t-key:t-key-12"
+      - "t-key:dungeon_key_amethyst"
+      - "t-key:dungeon_key_crimson"
+      - "t-key:key_golden"
+      - "t-key:key_silver"
+      - "t-key:dungeon_key_gold"
+      - "t-key:key_fragment_uncommon"
+      - "t-key:key_fragment_common"
+      - "t-key:key_fragment_epic"
+      - "t-key:key_fragment_legendary"
+      - "t-key:key_fragment_rare"

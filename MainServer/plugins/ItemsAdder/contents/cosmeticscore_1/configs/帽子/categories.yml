@@ -1,0 +1,25 @@
+info:
+  namespace: custom_hats
+categories:
+  custom_hats:
+    enabled: true
+    name: "&5Custom Hats"
+    title: ""
+    permission: "ia.menu.seecategory.hats"
+    icon: customhats:galaxy_hat
+    items:
+      - customhats:brown_paper_bag_hat
+      - customhats:capybara_hat
+      - customhats:cherry_blossom_hat
+      - customhats:cowboy_hat
+      - customhats:drowned_hat
+      - customhats:galaxy_hat
+      - customhats:hard_hat
+      - customhats:jet_pilot_helmet_hat
+      - customhats:lemon_slice_hat
+      - customhats:pokemon_hat
+      - customhats:pumpkin_hat
+      - customhats:rubber_duck_hat
+      - customhats:shark_hat
+      - customhats:turkey_hat
+      - customhats:watermelon_hat

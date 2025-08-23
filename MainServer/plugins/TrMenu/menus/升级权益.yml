@@ -1,0 +1,133 @@
+Title: '&6&lTLH &a&l权益升级' 
+
+
+Layout:
+  - '$$$$$$$$$' #菜单的边框
+  - '$$a$$$b$$'
+  - '$$A$$$B$$' #菜单的主图标
+  - '$$$$#$$$$' #菜单的边框
+
+
+
+Icons: #正式开始写图标咯
+  '$': # 叫做 #的图标，写在layout里面了
+    display: #图标显示部分
+      material: light_blue_stained_glass_pane #图标的材质
+      name: '&7当前处于 &e升级权益'
+      lore: 
+      - ''
+      - '&a👍 服务器会变质,但绝不会倒闭！'
+    action: #按钮的动作
+      all: #所有均可触发
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' #播放声音
+
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  a: 
+    display: 
+      material: sugar{model-data=1006}
+      name: '&f' #一样的物品名字
+      lore: #一样的物品描述
+      - ''
+      - '&f升级权益VIP: '
+      - ''
+      - ' &a ① &f签到额外获取&e&l云翼能量&f;'
+      - ' &a ② &fhome上限为 &e&l4个&f;'
+      - ' &a ③ &e&l专属签到组奖励&f;'
+      - ' &a ④ &f打开&a&l随身多功能工具台&f;'
+      - ' &a ⑤ &e&l领地的&f额外权益;'
+      - ' &a ⑥ &e&l更大的&f随机传送范围和&e&l更快的&fCD;'
+      - '      &e&l更多额外权益;'
+      - ''
+      
+    actions: 
+      all: 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  b: #一个叫做A的图标
+    display: #一样的显示部分
+      material: sugar{model-data=1011}
+      name: '&f' #一样的物品名字
+      lore: #一样的物品描述
+      - ''
+      - '&f专属&f:'
+      - ''
+      - ' &a ① &f有效期内&b&l解锁&f的全部功能&f;'
+      - ' &a ② &f签到额外获取更多&b&l云翼能量&f;'
+      - ' &a ③ &fhome上限提升为 &b&l8个&f;'
+      - ' &a ④ &b&l专属签到组奖励&f;'
+      - ' &a ⑤ 每日获得额外的&b&l游戏筹码;'
+      - ' &a ⑥ &f/heal指令治愈自己&f;'
+      - ' &a ⑦ &f更多的&b&l商店优惠与售出;'
+      - ' &a ⑧ &b&l超大的&f随机传送范围和&b&l超快的&fCD;'
+      - '     &b&l更多额外权益'
+      - ''
+    
+    actions: #一样的动作部分
+      all: #一样的所有操作触发
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL'
+
+  A: 
+    display: 
+      material: sugar{model-data=1012}
+      name: '&6&l购买&f' 
+      lore: 
+      - ''
+      - ''
+      - '&f✦ 需支付: &e350星辰点'
+      - '&f✦ 获得服务: &f'
+      - '&f✦ 获得权益天数: &a30天'
+      - ''
+      - '&f✦ 你剩余的权益天数: *%luckperms_group_expiry_time_vip%*'
+      - ''
+      - '&a▶ 点击升级或续费'
+    actions: #一样的动作部分
+       left:
+        - condition: check papi *%playerpoints_points% >= *350 
+          actions:
+            - 'close'
+            - 'take-points: 350'
+            - 'title: &a感谢支持！'
+            - 'tell: &a你已经成功购买&f，并获得30天的支持!'                                   
+            - 'console: lp user %player_name% parent addtemp vip 30d'  
+          deny:
+            - 'close'
+            - 'title: &c支付失败！'
+            - 'tell: &c你的&e星辰点&c似乎不足以购买该项目！' 
+
+  B: #一个叫做A的图标
+    display:
+      material: sugar{model-data=1012}
+      name: '&6&l购买&f' #一样的物品名字
+      lore: #一样的物品描述
+      - ''
+      - ''
+      - '&f✦ 需支付: &b600星辰点'
+      - '&f✦ 获得服务: &f'
+      - '&f✦ 获得服务天数: &a30天'
+      - ''
+      - '&f✦ 你剩余的服务天数: *%luckperms_group_expiry_time_mvp%*'
+      - ''
+      - '&a▶ 点击升级或续费'
+    actions:
+       left:
+        - condition: check papi *%playerpoints_points% >= *600 #检测
+          actions:
+            - 'close'
+            - 'take-points: 600'
+            - 'title: &a感谢支持！'
+            - 'tell: &a你已经成功购买&f，并获得30天的支持!'                                   
+            - 'console: lp user %player_name% parent addtemp mvp 30d'  
+          deny:
+            - 'close'
+            - 'title: &c支付失败！'
+            - 'tell: &c你的&b星辰点&c似乎不足以购买该项目！' 

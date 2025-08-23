@@ -1,0 +1,34 @@
+goblinking:
+  Type: VINDICATOR
+  Display: '&4&l哥布林酋长'
+  Health: 1000
+  Equipment:
+  - air HEAD
+  Modules:
+    ThreatTable: true
+  Damage: 2
+  Faction: goblin
+  Options:
+    Silent: true
+    MovementSpeed: 0.2
+    FollowRange: 35
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+    LockPitch: true
+  BossBar:
+    Enabled: true
+    Title: '&4&l哥布林酋长'
+    Range: 50
+    Color: RED
+    Style: SEGMENTED_10
+  Skills:
+  - model{mid=goblinking;n=true} @Self ~onSpawn
+  - sound{s=entity.ender_dragon.growl;p=0;v=0.1} @Self ~onTimer:100
+  #- speak{offset=0.6f;radius=30;maxlinelength=22;lineprefix="&5";message=" 쓸모없는 것들! 내가 직접 나서야 겠느냐! 각오해라! ";duration=200} @self ~onSpawn
+  - skill{s=CancelDamageEvent;sync=true} ~onAttack
+  - skill{s=GoblinkingAttack;sync=true}  @Self
+  - skill{s=GoblinkingWideAreaAttack;sync=true} @Target ~onTimer:250
+  - skill{s=GoblinkingSummon;sync=true} @Self ~onTimer:50
+  - state{s=death;li=3;lo=2} @Self ~onDeath
+  - skill{s=GoblinkingDEATH_sound} @Self ~onDeath

@@ -1,0 +1,369 @@
+Name: 普通卡牌宝箱
+Description: []
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{components:{"minecraft:custom_data":{itemsadder:{id:"nm_card_trader_llama",namespace:"nogs_menagerie"}},"minecraft:custom_model_data":{floats:[633016.0f]},"minecraft:custom_name":''{"color":"white","italic":false,"text":"收集卡牌 -商人"}'',"minecraft:item_name":''{"color":"white","italic":false,"text":"收集卡牌 -商人"}''},count:1,id:"minecraft:paper"}'
+    DataVersion: 4189
+ItemStackable: false
+Permission_Required: false
+Preview:
+  Enabled: true
+  Id: default
+Animation:
+  Enabled: true
+  Id: default
+Opening:
+  Cooldown: 0
+Key:
+  Required: true
+  Ids:
+  - card
+Block:
+  Positions:
+  - 69,82,42,lobby
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: none
+    Particle:
+      Name: CLOUD
+Milestones:
+  Repeatable: false
+_dataver: 600
+Rewards:
+  List:
+    nogs_menagerienm_card_camel:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_camel
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_cod:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_cod
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_cat:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_cat
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_donkey:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_donkey
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_armadillo:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_armadillo
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_frog:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_frog
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_glow_squid:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_glow_squid
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_llama:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_llama
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_mule:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_mule
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_rabbit:
+      Type: ITEM
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_rabbit
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189
+    nogs_menagerienm_card_rare_panda:
+      Type: ITEM
+      Weight: 3.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Ignored_For_Permissions: []
+      Required_Permissions: []
+      Custom_Preview: false
+      ItemsData:
+        '0':
+          Type: CUSTOM
+          Handler: ItemsAdder
+          ItemId: nogs_menagerie:nm_card_rare_panda
+          Amount: 1
+      PreviewData:
+        Tag:
+          Value: '{}'
+          DataVersion: 4189

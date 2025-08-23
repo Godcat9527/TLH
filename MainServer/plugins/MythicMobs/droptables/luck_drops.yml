@@ -1,0 +1,8 @@
+luck_drops:
+  TotalItems: 0
+  MinItems: 0
+  MaxItems: 2
+  BonusLuckItems: 1to2
+  Drops:
+  - mmoitems{type=CONSUMABLE;id=ROCK} 1 1
+  - DIAMOND 1 0.2

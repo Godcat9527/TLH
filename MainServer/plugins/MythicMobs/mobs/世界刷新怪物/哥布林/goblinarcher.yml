@@ -1,0 +1,26 @@
+goblinarcher:
+  Type: SKELETON
+  Display: '哥布林弓箭手'
+  Health: 40
+  Equipment:
+  - air HEAD
+  - Bow HAND
+  Modules:
+    ThreatTable: true
+  Damage: 5
+  Drops:
+  - goblinDrops_2
+  Faction: goblin
+  Options:
+    Silent: true
+    FollowRange: 35
+    MovementSpeed: 0.2
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Skills:
+  - model{mid=goblinarcher;n=true} @Self ~onSpawn
+  - skill{s=goblinarcherShoot;sync=true} @Target ~onShoot
+  - skill{s=CancelDamageEvent;sync=true} ~onShoot
+  - state{s=death;li=3;lo=2} @Self ~onDeath
+  - skill{s=GoblinDeath_Random_sound} @Self ~onDeath

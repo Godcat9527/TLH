@@ -1,0 +1,129 @@
+info:
+  namespace: customcrops
+items:
+  speed_grow_1:
+    display_name: '生长速度提升 I'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/speed_grow_1
+      model_id: 2730
+  speed_grow_2:
+    display_name: '生长速度提升 II'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/speed_grow_2
+      model_id: 2731
+  speed_grow_3:
+    display_name: '生长速度提升 III'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/speed_grow_3
+      model_id: 2732
+  soil_retain_1:
+    display_name: '土地饱肥 I'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/soil_retain_1
+      model_id: 2733
+  soil_retain_2:
+    display_name: '土地饱肥 II'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/soil_retain_2
+      model_id: 2734
+  soil_retain_3:
+    display_name: '土地饱肥 III'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/soil_retain_3
+      model_id: 2735
+  quality_1:
+    display_name: '肥料'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/quality_1
+      model_id: 2736
+  quality_2:
+    display_name: '优质肥料'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/quality_2
+      model_id: 2737
+  quality_3:
+    display_name: '金坷垃肥料'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/quality_3
+      model_id: 2738
+  yield_increase_1:
+    display_name: '产量提升'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/yield_increase_1
+      model_id: 2739
+  yield_increase_2:
+    display_name: '优质产量提升'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/yield_increase_2
+      model_id: 2740
+  yield_increase_3:
+    display_name: '产量超级加倍'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/yield_increase_3
+      model_id: 2741
+  variation_1:
+    display_name: '魔瓶'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/variation_1
+      model_id: 2742
+  variation_2:
+    display_name: '中级魔瓶'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/variation_2
+      model_id: 2743
+  variation_3:
+    display_name: '高级魔瓶'
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/fertilizers/variation_3
+      model_id: 2744
+categories:
+  customcrops_fertilizers:
+    enabled: true
+    icon: customcrops:quality_3
+    name: 'display-category-customcrops_fertilizers'
+    items:
+      - customcrops:quality_1
+      - customcrops:quality_2
+      - customcrops:quality_3
+      - customcrops:speed_grow_1
+      - customcrops:speed_grow_2
+      - customcrops:speed_grow_3
+      - customcrops:variation_1
+      - customcrops:variation_2
+      - customcrops:variation_3
+      - customcrops:yield_increase_1
+      - customcrops:yield_increase_2
+      - customcrops:yield_increase_3
+      - customcrops:soil_retain_1
+      - customcrops:soil_retain_2
+      - customcrops:soil_retain_3

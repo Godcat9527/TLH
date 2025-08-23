@@ -1,0 +1,22 @@
+info:
+  namespace: "npcs"
+entities:
+  npc_explorer:
+    display_name: explorer
+    type: VILLAGER
+    model_folder: entity/explorer
+    silent: true
+    speed:
+      movement: 0.25
+      flying: 0
+    max_health: 20
+  npc_mikasa:
+    display_name: npc_mikasa
+    type: PLAYER
+    model_folder: entity/npc_mikasa
+    silent: true
+    can_sun_burn: false
+    speed:
+      movement: 1
+      flying: 0
+    max_health: 20

@@ -1,0 +1,97 @@
+cosmetics:
+  juicy_fruity_orange_backpack:
+    display_name: "香橙榨汁机"
+    type: BODY_ITEM
+    model:
+      gui: juicy_fruity:orange_backpack
+      normal: juicy_fruity:orange_backpack
+      self: juicy_fruity:orange_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_orange_helmet:
+    display_name: "香橙头盔"
+    type: HAT
+    model:
+      gui: juicy_fruity:orange_helmet
+      normal: juicy_fruity:orange_helmet
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_strawberry_backpack:
+    display_name: "草莓榨汁机"
+    type: BODY_ITEM
+    model:
+      gui: juicy_fruity:strawberry_backpack
+      normal: juicy_fruity:strawberry_backpack
+      self: juicy_fruity:strawberry_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_strawberry_helmet:
+    display_name: "草莓头盔"
+    type: HAT
+    model:
+      gui: juicy_fruity:strawberry_helmet
+      normal: juicy_fruity:strawberry_helmet
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_grapes_backpack:
+    display_name: "葡萄榨汁机"
+    type: BODY_ITEM
+    model:
+      gui: juicy_fruity:grapes_backpack
+      normal: juicy_fruity:grapes_backpack
+      self: juicy_fruity:grapes_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_grapes_helmet:
+    display_name: "葡萄头盔"
+    type: HAT
+    model:
+      gui: juicy_fruity:grapes_helmet
+      normal: juicy_fruity:grapes_helmet
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_watermelon_backpack:
+    display_name: "西瓜榨汁机"
+    type: BODY_ITEM
+    model:
+      gui: juicy_fruity:watermelon_backpack
+      normal: juicy_fruity:watermelon_backpack
+      self: juicy_fruity:watermelon_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_watermelon_helmet:
+    display_name: "西瓜头盔"
+    type: HAT
+    model:
+      gui: juicy_fruity:watermelon_helmet
+      normal: juicy_fruity:watermelon_helmet
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_avocado_backpack:
+    display_name: "鳄梨榨汁机" 
+    type: BODY_ITEM
+    model:
+      gui: juicy_fruity:avocado_backpack
+      normal: juicy_fruity:avocado_backpack
+      self: juicy_fruity:avocado_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  juicy_fruity_avocado_helmet:
+    display_name: "鳄梨头盔"
+    type: HAT
+    model:
+      gui: juicy_fruity:avocado_helmet
+      normal: juicy_fruity:avocado_helmet
+    dye:
+      enabled: false
+      default: "#000000"
+#MFTWtmZrhXUHdXRnd3U100ZNxmW61EVPd3Y61kMJRlT49WMV9ES1Bja0cEeJllbq5Ea3M3M

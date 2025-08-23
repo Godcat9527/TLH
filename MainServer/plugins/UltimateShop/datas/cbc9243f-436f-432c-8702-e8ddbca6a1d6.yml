@@ -1,0 +1,119 @@
+useTimes:
+  crop2:
+    J:
+      lastSellTime: '2025-07-06 20:00:09'
+      sellUseTimes: 300
+    I: {}
+    B: {}
+    C: {}
+    E: {}
+    A: {}
+    K:
+      lastSellTime: '2025-07-06 20:00:10'
+      sellUseTimes: 41
+    F: {}
+    G: {}
+    H: {}
+    D: {}
+    L:
+      lastSellTime: '2025-07-06 20:00:10'
+      sellUseTimes: 15
+  manure:
+    N: {}
+    L: {}
+    O: {}
+    E: {}
+    J: {}
+    G: {}
+    M: {}
+    F: {}
+    I: {}
+    B: {}
+    C: {}
+    K:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 19:32:14'
+    A: {}
+    D:
+      buyUseTimes: 4
+      lastBuyTime: '2025-07-06 19:32:24'
+    H: {}
+  farmtools:
+    A:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 16:44:58'
+    I: {}
+    K:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 19:32:05'
+    D: {}
+    H:
+      buyUseTimes: 20
+      lastBuyTime: '2025-07-06 19:31:52'
+    E:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 20:00:46'
+    G: {}
+    C: {}
+    B: {}
+    J:
+      buyUseTimes: 3
+      lastBuyTime: '2025-07-06 19:52:54'
+    F: {}
+  crop:
+    C:
+      lastSellTime: '2025-07-06 18:22:04'
+      sellUseTimes: 1
+    M: {}
+    N: {}
+    K: {}
+    S: {}
+    J: {}
+    P: {}
+    O: {}
+    Q: {}
+    H: {}
+    U: {}
+    L: {}
+    B:
+      lastSellTime: '2025-07-06 18:22:03'
+      sellUseTimes: 2
+    I: {}
+    F: {}
+    A:
+      lastSellTime: '2025-07-06 18:22:02'
+      sellUseTimes: 9
+    T: {}
+    D:
+      lastSellTime: '2025-07-06 19:27:22'
+      sellUseTimes: 2
+    R: {}
+    G: {}
+    E: {}
+  seed:
+    K: {}
+    E: {}
+    I:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 20:00:31'
+    L: {}
+    H: {}
+    C:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 16:46:59'
+    J:
+      buyUseTimes: 3
+      lastBuyTime: '2025-07-06 16:44:43'
+    G:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 20:00:39'
+    F:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 20:00:38'
+    A: {}
+    D:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 16:46:59'
+    B:
+      buyUseTimes: 1
+      lastBuyTime: '2025-07-06 20:00:30'

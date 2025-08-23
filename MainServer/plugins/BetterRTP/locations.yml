@@ -1,0 +1,25 @@
+# 指定中心地点的随机传送
+# 格式如下:
+# 中心地点名称:
+#   World: world 所在世界
+#   CenterX: 100
+#   CenterY: 150
+#   MaxRadius: 100
+#   MinRadius: 5
+
+Enabled: false
+RequirePermission: false # 玩家必须拥有权限 `betterrtp.location.<世界名称>`
+UseLocationIfAvailable: true # 若玩家所在世界有位置可用，将在本世界随机传送
+UseLocationsInSameWorld: true # 只在相同世界里随机传送                                                                                  
+
+Locations:
+- main_loc:
+    World: world_name
+    CenterX: 100
+    CenterZ: 150
+    MaxRadius: 100
+    MinRadius: 5
+    Shape: square
+    MinY: 0
+    MaxY: 320
+    Cooldown: 300

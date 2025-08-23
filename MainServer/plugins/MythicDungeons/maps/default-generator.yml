@@ -1,0 +1,58 @@
+### MYTHIC DUNGEONS 生成器设置 ###
+# 尽管这里有很多注释，建议查看 Wiki 以获得关于这些配置选项的进一步解释和示例。
+# https://git.lumine.io/mythiccraft/MythicDungeons/-/wikis/Procedural-Dungeons
+
+# Layout 决定了房间如何生成。包含的布局模式有：
+# BRANCHING - 线性生成，有生成分支的可能性。（在 'BranchSettings' 下配置）
+# MINECRAFTY - 生成地牢的方式类似于 Minecraft 的要塞和地狱堡垒，尝试在每个连接点生成一个房间。
+Layout: BRANCHING
+# 适用于所有生成的地牢的通用设置。
+General:
+  # 一个有效的 Spigot 材质（必须是一个方块），将包围所有地牢房间。（如果不想要包围块，请设置为 AIR。）
+  # 有关材质名称的列表，请参阅 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+  SurroundingBlock: STONE
+  # MINECRAFTY 地牢必须生成的最小房间数。
+  MinRooms: 8
+  # MINECRAFTY 地牢允许的最大房间数。
+  MaxRooms: 16
+  # 是否强制地牢至少有上述的最小房间数。如果地牢难以生成足够的房间，请设置为 false。
+  StrictRoomCount: true
+
+# 使用 BRANCHING 布局模式生成时的配置选项。
+BranchSettings:
+  # 这是地牢的主要部分；第一个“分支”。我们称之为“树干”。
+  # 注意：这个部分是地牢生成所必需的，不能重命名。如果缺失，将使用默认值。
+  TRUNK:
+    # 此分支可以使用的房间列表。留空则使用所有房间。([] 表示空)。例如：
+    # Rooms:
+    # - stairs1
+    # - bend1
+    # - hallway1
+    Rooms: []
+    # 此分支可能结束的房间列表。格式与上述房间列表相同。
+    EndRooms: []
+    # 生成器偏向直线生成的权重（在可能的情况下）。范围从 0 到 1.0
+    # 注意：这是一个优先级系统，而不是保证！
+    Straightness: 0.5
+    # 树干将具有的最小房间数。（在这种情况下，这是地牢主要部分的房间数量。）
+    MinRooms: 12
+    # 树干可以拥有的最大房间数。
+    MaxRooms: 24
+    # 是否强制分支至少具有上述的最小房间数。如果地牢难以生成足够的房间，请设置为 false。
+    StrictRoomCount: true
+  # 这是一个备用分支的示例。这里的名称可以是任何你想要的！
+  deep_branch:
+    Rooms: []
+    EndRooms: []
+    Straightness: 0.5
+    # 此类型分支可以具有的最小房间数。
+    MinRooms: 6
+    # 此类型分支可以具有的最大房间数。
+    MaxRooms: 12
+    StrictRoomCount: true
+    # 此分支可以生成的地牢深度范围。支持运算符，如 >, >=, <, <= 等。
+    Depth: 8
+    # 此分支可以生成的次数范围。支持运算符，如 >, >=, <, <= 等。
+    Occurrences: 0-1
+    # 是否强制此分支至少发生上述次数。如果地牢难以生成足够的分支，请设置为 false。
+    StrictBranchCount: true

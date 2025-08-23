@@ -1,0 +1,68 @@
+Title: '&6&lTLH &a&l游戏设置'
+
+
+Layout:
+  - '@@ @ @ @@' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+  'Skill_display':
+    display: 
+      name: '&6属性状态栏显示'
+      material: iron_pickaxe
+      slots: 2
+      lore: 
+      - ''
+      - '&a➥点击我 &a&l切换'
+    action: 
+      all: 
+        - 'close'
+        - 'player: abtoggle' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  'group_chat':
+    display: 
+      name: '&6切换群消息免打扰模式'
+      material: iron_pickaxe
+      slots: 4
+      lore: 
+      - ''
+      - '&a将在&2正常&f|&6不显示图片&f|&c完全不显示&a中切换'
+      - '&a➥点击我 &a&l切换'
+    action: 
+      all: 
+        - 'close'
+        - 'player: mchat dnd' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  'board_display':
+    display: 
+      material: iron_pickaxe
+      name: '&6计分板显示'
+      slots: 6
+      lore: 
+      - ''
+      - '&a➥点击我 &a&l切换'
+    action: 
+      all: 
+        - 'close'
+        - 'player: tab scoreboard' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 

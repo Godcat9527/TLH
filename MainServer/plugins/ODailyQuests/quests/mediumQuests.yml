@@ -1,0 +1,244 @@
+# ==============================================================
+#                        MEDIUM QUESTS FILE
+# ==============================================================
+# Quests must be numbered and increment from 1 to 1.
+# Please be attentive to the indentation and respect the scheme.
+# This could cause several bugs.
+# ==============================================================
+# AVAILABLE QUESTS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/quests-types
+# ==============================================================
+# AVAILABLE REWARDS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/rewards-types
+# ==============================================================
+# AVAILABLE ENTITY TYPES :
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html
+# ==============================================================
+# AVAILABLE ITEM TYPES :
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# ==============================================================
+# AVAILABLE PLUGIN PLACEHOLDERS FOR QUESTS DESCRIPTIONS :
+# %progress% is replaced by the progression of the quest.
+# %required% is replaced by the required amount to complete the quest.
+# ==============================================================
+# More tips available on Wiki :
+# https://ordwenplugins.gitbook.io/odailyquests/
+# Need help ? https://discord.com/invite/NPAUE7kTgJ
+# For more affected objects or types, please make suggestion.
+# ==============================================================
+quests:
+  1:
+    name: "蛋糕大师"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "制作&6蛋糕&e来完成这个任务"
+      - "奖励&b200&e星币"
+    quest_type: CRAFT
+    required_item: CAKE
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 200
+  2:
+    name: "禁止瞬移"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "&c击杀&63 &c末影人"
+      - "&a奖励&b200 &a星币"
+    quest_type: KILL
+    required_entity: ENDERMAN
+    required_amount: 3
+    reward:
+      reward_type: MONEY
+      amount: 200
+  3:
+    name: "挖掘铁矿石"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "挖掘&6铁矿石&e来完成这个任务"
+      - "奖励&b200&e星币"
+    quest_type: BREAK
+    required_item: IRON_ORE
+    required_amount: 16
+    reward:
+      reward_type: MONEY
+      amount: 200
+  4:
+    name: "冶炼铁矿石"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "冶炼&6粗铁&e来完成这个任务"
+      - "奖励&b250&e星币"
+    quest_type: COOK
+    required_item: IRON_INGOT
+    required_amount: 32
+    reward:
+      reward_type: MONEY
+      amount: 250
+  5:
+    name: "锻造专家"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "制作&6钻石稿&e来完成这个任务"
+      - "奖励&b240&e星币"
+    quest_type: CRAFT
+    required_item: DIAMOND_PICKAXE
+    required_amount: 1
+    reward:
+      reward_type: MONEY
+      amount: 240
+  6:
+    name: "铁的来源"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "击杀&6铁傀儡&e来完成这个任务"
+      - "&e奖励&b120&e星币"
+      - "&e奖励&b10&a建筑基质"
+    quest_type: KILL
+    required_entity: IRON_GOLEM
+    required_amount: 2
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "money give %player% 120"
+        - "coinsengine:building give %player% 10"  
+  7:
+    name: "海的心脏"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "拾取&6海洋之心&e来完成这个任务"
+      - "&e奖励&b180&e星币"
+    quest_type: PICKUP
+    required_item: HEART_OF_THE_SEA
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "money give %player% 180"
+
+  8:
+    name: "入门的猎魔人"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "累计击杀&c25只僵尸/骷髅/爬行者&e来完成这个任务"
+      - "奖励&b400&e星币"
+    quest_type: KILL
+    required_entity: 
+      - ZOMBIE
+      - SKELETON
+      - CREEPER
+    required_amount: 25
+    reward:
+      reward_type: MONEY
+      amount: 400 
+  9:
+    name: "世界探索[主世界]"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+        - "&f在以下坐标的&c&l半径范围内"
+        - "&c&l点击一次&f任务进行完成"
+        - "&a主世界[world]"
+        - "&fX: &b1500"
+        - "&fY: &b108"
+        - "&fZ: &b-2387"
+        - "&c半径范围: &b100"
+        - "&f奖励&b200&e星币"
+    quest_type: LOCATION
+    location:
+      world: world
+      x: 1500
+      y: 108
+      z: -2387
+      radius: 100
+    reward:
+      reward_type: MONEY
+      amount: 200
+  10:
+    name: "&a海晶装饰者"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "&b制作15个海晶灯"
+      - "&e奖励&b150&e星币"
+      - "&e奖励&b20&a建筑基质"
+    quest_type: CRAFT
+    required_item: SEA_LANTERN
+    required_amount: 15
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "money give %player% 150"
+        - "coinsengine:building give %player% 20"
+  11:
+    name: "园丁的委托[兰花]"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "摘取&a5朵兰花&e来完成这个任务"
+      - "奖励&b120&e星币"
+    quest_type: BREAK
+    required_item: BLUE_ORCHID
+    required_amount: 5
+    reward:
+      reward_type: MONEY
+      amount: 120
+  12:
+    name: "园丁的委托[蓝花美耳草]"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "摘取&a5朵蓝花美耳草&e来完成这个任务"
+      - "奖励&b120&e星币"
+    quest_type: BREAK
+    required_item: AZURE_BLUET
+    required_amount: 5
+    reward:
+      reward_type: MONEY
+      amount: 120
+  13:
+    name: "园丁的委托[虞美人]"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "摘取&a5朵虞美人&e来完成这个任务"
+      - "奖励&b120&e星币"
+    quest_type: BREAK
+    required_item: POPPY
+    required_amount: 5
+    reward:
+      reward_type: MONEY
+      amount: 120
+  14:
+    name: "园丁的委托[蒲公英]"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "摘取&a5朵蒲公英&e来完成这个任务"
+      - "奖励&b120&e星币"
+    quest_type: BREAK
+    required_item: DANDELION
+    required_amount: 5
+    reward:
+      reward_type: MONEY
+      amount: 120
+  15:
+    name: "园丁的委托[白色郁金香]"
+    menu_item: itemsadder:daily_quest:medium_quest
+    description:
+      - "摘取&a5朵白色郁金香&e来完成这个任务"
+      - "奖励&b120&e星币"
+    quest_type: BREAK
+    required_item: WHITE_TULIP
+    required_amount: 5
+    reward:
+      reward_type: MONEY
+      amount: 120
+  16:
+    name: "&6&l获得经验"
+    menu_item: itemsadder:daily_quest:easy_quest
+    description:
+      - "&e获取100点经验"
+      - "&e奖励&b120&e星币"
+      - "&e奖励&b20&a建筑基质"
+    quest_type: EXP_POINTS
+    required_amount: 100
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "money give %player% 120"
+        - "coinsengine:building give %player% 20"

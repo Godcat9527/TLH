@@ -1,0 +1,60 @@
+# NEVER DELETE A %variable%
+# Messages support HEX colours codes.
+
+player_help: |-
+  &a&n玩家命令：
+  &e/quests me &a: 查看自己的任务
+  &e/quests show <global/easy/medium/hard> &a: 查看某个类别的任务
+admin_help: |-
+  &c&n管理员命令：
+  &e/qadmin complete <player> <index> &a: 完成玩家的任务
+  &e/qadmin reset <quests/total> <player> &a: 为玩家绘制新任务，或重置他完成的总任务数。
+  &e/qadmin show <player> &a: 查看玩家的任务
+no_permission: '&c你没有权限。'
+no_permission_category: '&c你没有权限查看这个类别。'
+player_only: '&c只有玩家可以执行这个命令。'
+invalid_category: '&c无效的任务类别。'
+invalid_player: '&c这个玩家不存在，或者离线。'
+invalid_quest_id: '&c你必须指定一个有效的任务ID。'
+invalid_quest_index: '&c指定的索引无效。'
+categorized_enabled: '&c分类任务已启用，全局菜单不可用。'
+categorized_disabled: '&c分类任务已禁用，只有全局菜单可用。'
+global_disabled: '&c全局任务已禁用，只有分类菜单可用。'
+already_achieved: '&c这个任务已经完成了。'
+hologram_categorized_enabled: '&c分类任务已启用，无法创建全局全息图。'
+hologram_categorized_disabled: '&c分类任务已禁用，无法创建分类全息图。'
+hologram_deleted: '&a全息图成功删除。'
+hologram_invalid_index: '&c全息图的索引无效。'
+quests_in_progress: '&e你还有日常任务需要完成！'
+all_quests_achieved_connect: '&a你已经完成了所有的日常任务！'
+quests_renewed: '&a你有新的日常任务需要完成！'
+quests_renewed_admin: '&e你已经重置了%target%的任务。'
+quest_achieved: '&a你完成了任务 &e%questName%&a，干得好！'
+all_quests_achieved: '&a你完成了所有的日常任务，干得好！'
+easy_reward: '&a你完成了所有简单任务！'
+medium_reward: '&a你完成了所有中等任务！'
+hard_reward: '&a你完成了所有困难任务！'
+not_enough_items: '&c你没有足够的物品来完成这个任务。'
+total_amount_reset: '&e你的完成任务总数已经被管理员重置了。'
+total_amount_reset_admin: '&e%target%的完成任务总数已经被管理员重置了。'
+reward_command: '&a你收到了一些奖励命令。'
+reward_exp_levels: '&a你收到了 &e%rewardAmount% &bEXP &a等级。'
+reward_exp_points: '&a你收到了 &e%rewardAmount% &bEXP &a点数。'
+reward_money: '&a你收到了 &e%rewardAmount% &b$&a。'
+reward_points: '&a你收到了 &e%rewardAmount% &b点数&a。'
+reward_coins_engine: '&a你收到了 &e%rewardAmount% &b%currencyName%&a。'
+new_day: '&6新的一天！'
+too_far: '&c你离指定位置太远。'
+bad_world: '&c你在错误的世界。'
+placeholder_api_not_enabled: '&cPlaceholderAPI插件未启用。请通知管理员。'
+placeholder_not_number: '&c占位符 %placeholder% 不是数字。请通知管理员。'
+invalid_amount: '&c指定的数量无效。'
+quest_rerolled: '&a你重新掷了你的任务号 %index%！'
+quest_rerolled_admin: '&e你重新掷了 %target% 的任务号 %index%。'
+add_total_admin: '&e你给 %target% 的完成任务总数增加了 %amount%。'
+add_total_target: '&e管理员给你的完成任务总数增加了 %amount%。'
+world_disabled: '&c你不能在这个世界完成任务。'
+not_required_world: '&c你不能在这个世界完成这个任务。'
+cannot_complete_quest_with_off_hand: '&c所有必需的物品必须在你的背包里， 而不是在你的副手中。'
+not_required_region: '&cYou can''t complete this quest in this region.'
+cannot_reroll_if_achieved: '&cYou can''t reroll a quest that you have already achieved!'

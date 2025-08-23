@@ -1,0 +1,159 @@
+Name: '&l随机金币宝箱'
+Preview_Config: default
+Permission_Required: false
+Opening:
+  Cooldown: 360
+Key:
+  Ids:
+  - money
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+Block:
+  Pushback:
+    Enabled: false
+  Hologram:
+    Enabled: true
+    Template: money
+    Y_Offset: 0.0
+  Effect:
+    Model: HEART
+    Particle:
+      Name: FALLING_DUST
+      Material: STONE
+  Positions:
+  - 85,123,227,spawn
+Milestones:
+  Repeatable: false
+Rewards:
+  List:
+    '500':
+      Name: '&e&l500金币'
+      Weight: 40.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k00010004qb400amqqbeclhn4ob6egt70r31f5in4nr8clgm82g00dq62poa003m8qbje1m62u880024sobdck018up2ehingt1278h3ac1gt63p3pdog4h7q00a00556qrldhm4utreclp0k00aa1p6us35e9q6ipbj1400gt35f1q7asj5ec500000044001amc5m7ap80mhiniihgb9c6gc34b156oorp94r6auaaah9j0r2f95l70dq9dpb7ioi394r4irb861i4gg9m9hsjic2qb1k30p2o99m66u9lehgledbcb4pkkq2qdp8naojdaoo4ocqidhikgkhhcdmlatid698niji7a9l4sl37et76kr3a9la4iu2ddl4j2jbadhk4shq6dh75ek9gb9a66uipdlanejqkddrlkh2h69d6ql9l9lt66u2pd936qjjqdhm4uh256974ei9g9ll6ecafat36kjq398smcm1g7k0002o0094m80000025hoa4q8caai52npquaji53d1jq0000400agrfeln78080
+      Commands:
+      - money give %player_name% 500
+      Items: []
+      Ignored_For_Permissions: []
+    '800':
+      Name: '&e&l800金币'
+      Weight: 30.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k00010004qb400amqqbeclhn4ob6egt70r31f5in4nr8clgm82g00dq62poa003m8qbje1m62u880024sobdck018up2ehingt1278h3gc1gt63p3pdog4h7q00a00556qrldhm4utreclp0k00aa1p6us35e9q6ipbj1400gt35f1q7asj5ec500000044001amc5m7ap80mhiniihgb9c6gc34b156oorp94r6auaaah9j0r2f95l70dq9dpb7ioi394r4irb861i4gg9m9hsjic2qb1k30p2o99m66u9lehgledbcb4pkkq2qdp8naojdaoo4ocqidhikgkhhcdmlatid698niji7a9l4sl37et76kr3a9la4iu2ddl4j2jbadhk4shq6dh75ek9gb9a66uipdlanejqkddrlkh2h69d6ql9l9lt66u2pd936qjjqdhm4uh256974ei9g9ll6ecafat36kjq398smcm1g7k0002o0094m80000025hoa4q8caai52npquaji53d1jq0000400agrfeln78080
+      Commands:
+      - money give %player_name% 800
+      Items: []
+      Ignored_For_Permissions: []
+    '1200':
+      Name: '&e&l1200金币'
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 5000080016ip002lmmirj5cdp62pjk79o6oobpclp5uq35c5i0k003ehgme2g00ti6isrgdhgni2000h762rb500anm8jkcls788hq48oj4c1gt63p3pdog4h7q00a00556qrldhm4utreclp0k00aa1p6us35e9q6ipbj1400gt35f1q7asj5ec500000044001amc5m7ap80mhiniihgb9c6gc34b156oorp94r6auaaah9j0r2f95l70dq9dpb7ioi394r4irb861i4gg9m9hsjic2qb1k30p2o99m66u9lehgledbcb4pkkq2qdp8naojdaoo4ocqidhikgkhhcdmlatid698niji7a9l4sl37et76kr3a9la4iu2ddl4j2jbadhk4shq6dh75ek9gb9a66uipdlanejqkddrlkh2h69d6ql9l9lt66u2pd936qjjqdhm4uh256974ei9g9ll6ecafat36kjq398smcm1g7k0002o0094m80000025hoa4q8caai52npquaji53d1jq0000400agrfeln78080
+      Commands:
+      - money give %player_name% 1200
+      Items: []
+      Ignored_For_Permissions: []
+    '1500':
+      Name: '&e&l1500金币'
+      Weight: 13.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 5000080016ip002lmmirj5cdp62pjk79o6oobpclp5uq35c5i0k003ehgme2g00ti6isrgdhgni2000h762rb500anm8jkcls788hq48ojac1gt63p3pdog4h7q00a00556qrldhm4utreclp0k00aa1p6us35e9q6ipbj1400gt35f1q7asj5ec500000044001amc5m7ap80mhiniihgb9c6gc34b156oorp94r6auaaah9j0r2f95l70dq9dpb7ioi394r4irb861i4gg9m9hsjic2qb1k30p2o99m66u9lehgledbcb4pkkq2qdp8naojdaoo4ocqidhikgkhhcdmlatid698niji7a9l4sl37et76kr3a9la4iu2ddl4j2jbadhk4shq6dh75ek9gb9a66uipdlanejqkddrlkh2h69d6ql9l9lt66u2pd936qjjqdhm4uh256974ei9g9ll6ecafat36kjq398smcm1g7k0002o0094m80000025hoa4q8caai52npquaji53d1jq0000400agrfeln78080
+      Commands:
+      - money give %player_name% 1500
+      Items: []
+      Ignored_For_Permissions: []
+    '2000':
+      Name: '&e&l2000金币'
+      Weight: 5.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 5000080016ip002lmmirj5cdp62pjk79o6oobpclp5uq35c5i0k003ehgme2g00ti6isrgdhgni2000h762rb500anm8jkcls788hq48p30c1gt63p3pdog4h7q00a00556qrldhm4utreclp0k00aa1p6us35e9q6ipbj1400gt35f1q7asj5ec500000044001amc5m7ap80mhiniihgb9c6gc34b156oorp94r6auaaah9j0r2f95l70dq9dpb7ioi394r4irb861i4gg9m9hsjic2qb1k30p2o99m66u9lehgledbcb4pkkq2qdp8naojdaoo4ocqidhikgkhhcdmlatid698niji7a9l4sl37et76kr3a9la4iu2ddl4j2jbadhk4shq6dh75ek9gb9a66uipdlanejqkddrlkh2h69d6ql9l9lt66u2pd936qjjqdhm4uh256974ei9g9ll6ecafat36kjq398smcm1g7k0002o0094m80000025hoa4q8caai52npquaji53d1jq0000400agrfeln78080
+      Commands:
+      - money give %player_name% 2000
+      Items: []
+      Ignored_For_Permissions: []
+    '3000':
+      Name: '&e&l3000金币'
+      Weight: 2.0
+      Rarity: common
+      Broadcast: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 60
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 5000080016ip002lmmirj5cdp62pjk79o6oobpclp5uq35c5i0k003ehgme2g00ti6isrgdhgni2000h762rb500anm8jkcls788hq48pj0c1gt63p3pdog4h7q00a00556qrldhm4utreclp0k00aa1p6us35e9q6ipbj1400gt35f1q7asj5ec500000044001amc5m7ap80mhiniihgb9c6gc34b156oorp94r6auaaah9j0r2f95l70dq9dpb7ioi394r4irb861i4gg9m9hsjic2qb1k30p2o99m66u9lehgledbcb4pkkq2qdp8naojdaoo4ocqidhikgkhhcdmlatid698niji7a9l4sl37et76kr3a9la4iu2ddl4j2jbadhk4shq6dh75ek9gb9a66uipdlanejqkddrlkh2h69d6ql9l9lt66u2pd936qjjqdhm4uh256974ei9g9ll6ecafat36kjq398smcm1g7k0002o0094m80000025hoa4q8caai52npquaji53d1jq0000400agrfeln78080
+      Commands:
+      - money give %player_name% 3000
+      Items: []
+      Ignored_For_Permissions: []
+Animation_Config: csgo
+Last_Opener: arealiy6500
+Last_Reward: '&e&l1500金币'
+Item:
+  Material: CHEST

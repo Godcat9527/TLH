@@ -1,0 +1,26 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+OAK_WAND:
+  base:
+    material: STICK
+    name: '&f橡木法杖'
+    required-level: 1.0
+    range: 20.0
+    attack-damage:
+      base: 3.5
+      spread: 0.1
+      max-spread: 0.3
+    attack-speed:
+      base: 1.15
+      spread: 0.04
+      max-spread: 0.12
+    critical-strike-chance:
+      base: 9.0
+      spread: 0.03
+      max-spread: 0.1
+    ability:
+      right-click:
+        type: SPARKLE
+        mode: RIGHT_CLICK
+        damage: 3.0
+        cooldown: 15.0

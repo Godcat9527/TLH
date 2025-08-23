@@ -1,0 +1,71 @@
+Title: '&6&lTLH &2&l领地帮助'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@ @ @ @ @' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'lands_menu':
+    display: 
+      material: grass_block
+      name: '&6打开领地系统主菜单'
+      slots: 10
+      lore: 
+      - ''
+      - '&a➥点击打开领地主菜单'
+      - '&a➥查看所有领地、邀请、领地地图...'
+    action: 
+      all: 
+        - 'close'
+        - 'player: lands menu' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'lands_help':
+    display: 
+      material: spyglass
+      name: '&6查看详细帮助wiki'
+      slots: 12
+      lore: 
+      - ''
+      - '&a➥点击前往wiki查看详细帮助'
+    action: 
+      all: 
+        - 'close'
+        - 'json: &b%player_name% <&2&n点我查看领地帮助wiki@url=https://www.yuque.com/naixiya/tlh/wlhwlzlux5bg1wvd?singleDoc>'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'Server_test':
+    display: 
+      material: structure_void
+      name: '&6待补充'
+      slots: 14
+      lore: 
+      - ''
+      - ''
+    action: 
+      all: 
+        - '' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 

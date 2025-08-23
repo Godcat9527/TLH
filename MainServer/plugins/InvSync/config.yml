@@ -1,0 +1,67 @@
+# 调试模式（开启此选项后台日志会变多）
+debug: false
+# 是否 hook plan插件
+hook-plan: false
+redis:
+  host: localhost
+  port: 6379
+#  password: ""
+#  prefix: "server"
+# 玩家冻结系统 def 为默认 plib 为同步完成之前拦截所有发包
+freeze: def
+mysql:
+  host: localhost
+  port: 3306
+  database: invsync
+  user: root
+  passwd: tlh2021
+  ssl: false
+mobs:
+  # 是否同步宝可梦数据
+  pixelmon: false
+  # 是否同步 ftbQuests
+  ftbQuests: false
+  armourersWorkshop: false
+sync:
+  # 是否同步统计数据
+  statistics: true
+  # 是否同步经验等级
+  exp: true
+  # 是否同步末影箱
+  ender: true
+  # 是否同步血量
+  health: true
+  # 是否同步饥饿值
+  food: true
+  # 是否同步背包
+  inventory: true
+  # 是否同步成就数据
+  advancement: false
+  # 是否同步药水效果
+  buff: false
+  # 是否同步游戏模式
+  gameMode: false
+  # 是否同步最大血量
+  maxHealth: false
+  # 是否同步PersistentDataContainer数据
+  persistentDataContainer: false
+  # 是否同步OP
+  op: false
+  # 是否同步CMI飞行能量
+  cmiFlyCharge: true
+  # 如果数据库没有飞行能量数据是否从这个服务器读取
+  initFlyCharge: true
+  # 是否同步vault经济
+  vault: false
+  # 如果数据库没有vault数据是否从这个服务器读取
+  initVault: true
+  # 是否同步服务器中的位置
+  location: false
+# 同步时跳过的物品名称 名称会忽略颜色符号完全匹配
+skip-items:
+- 不同步物品名1
+- 不同步物品名2
+options:
+  advancement-main-thread: false
+migrator-pds: false
+skip-items-lore: []

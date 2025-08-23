@@ -1,0 +1,151 @@
+title: '&6&lTLH &a&l主城导航'
+
+Layout:
+  - '#@@@ @ @#'
+  - '#@ @@@@ #' 
+  - '# ==+== #'  
+  - '#@ @@@@@#'  
+  - '#@@@@@ @#'  
+  - '#@@@ @@@#'
+
+Icons:
+ 
+  '@':
+    display:
+      material: green_stained_glass_pane
+      name: ' '
+
+  '#':
+    display:
+      material: gray_stained_glass_pane
+      name: ' '
+
+  '=':
+    display:
+      material: light_blue_stained_glass_pane
+      name: ' '
+
+  '+':
+    display:
+      material: grass_block
+      name: '&b前往生存世界'
+      lore:
+        - ''
+        - '&f从此处开启你的旅程！'
+    action:
+      all:
+        - 'console: rtp player %player_name% world'
+        - 'close'
+
+  'Spawn':
+    display:
+      material: red_bed
+      name: '主城导航处'
+      slots: 49
+      lore:
+        - ''
+        - '&a你正在此处'
+
+  'Clothes':
+    display:
+      material: chainmail_chestplate
+      name: '服装店'
+      slots: 29
+      lore:
+        - ''
+        - '&f可以在此替换时装'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 185 117 125 spawn 0 -90'
+        - 'close'
+
+  'Enchant':
+    display:
+      material: enchanted_book
+      name: '附魔店'
+      slots: 42
+      lore:
+        - ''
+        - '&f可以在此进行装备附魔'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 120 118 107 spawn 0 180'
+        - 'close'
+
+  'Rank':
+    display:
+      material: gold_ingot
+      name: '排行榜'
+      slots: 19
+      lore:
+        - ''
+        - '&f可以在此查看财富排行'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 218 120 190 spawn 0 -90'
+        - 'close'
+
+  'Market':
+    display:
+      material: oak_chest_boat
+      name: '集市'
+      slots: 25
+      lore:
+        - ''
+        - '&f可以在此购买或出售物品'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 88 119 128 spawn 0 30'
+        - 'close'
+
+  'Farm':
+    display:
+      material: wheat
+      name: '农场'
+      slots: 11
+      lore:
+        - ''
+        - '&f可以在此交易农产品'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 161 116 185 spawn 0 -45'
+        - 'close'
+
+  'Dungeon':
+    display:
+      material: netherite_sword
+      name: '副本大厅'
+      slots: 16
+      lore:
+        - ''
+        - '&f可以在此挑战副本'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 88 121 162 spawn 0 0'
+        - 'close'
+
+  'Gaming':
+    display:
+      material: recovery_compass
+      name: '游戏厅'
+      slots: 4
+      lore:
+        - ''
+        - '&f可以在此游玩小游戏'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 153 116 222 spawn 0 0'
+        - 'close'
+
+  'Gucha':
+    display:
+      material: jukebox
+      name: '抽奖大厅'
+      slots: 6
+      lore:
+        - ''
+        - '&f可以在此抽取奖励'
+    action:
+      all:
+        - 'console: tppos -p:%player_name% 101 122 210 spawn 0 60'
+        - 'close'

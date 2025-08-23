@@ -1,0 +1,113 @@
+info:
+  namespace: creature_cosmetic_set
+items:
+  panda_hat:
+    display_name: Panda Hat
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: panda_hat
+      model_id: 7009
+    behaviours:
+      hat: true
+  bamboo_pot:
+    display_name: Bamboo Pot
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: bamboo_pot
+      model_id: 7010
+  bamboo_pot_self:
+    display_name: Bamboo Pot
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: bamboo_pot_self
+      model_id: 7011
+  bamboo_stick:
+    display_name: Bamboo Stick
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: bamboo_stick
+      model_id: 7012
+  fox_hat:
+    display_name: Fox Hat
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: fox_hat
+      model_id: 7013
+    behaviours:
+      hat: true
+  fox_backpack:
+    display_name: Fox Backpack
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: fox_backpack
+      model_id: 7014
+  fox_backpack_self:
+    display_name: Fox Backpack
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: fox_backpack_self
+      model_id: 7015
+  fox_tail:
+    display_name: Fox Tail
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: fox_tail
+      model_id: 7016
+  fox_tail_self:
+    display_name: Fox Tail
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: fox_tail_self
+      model_id: 7017
+  warden_hat:
+    display_name: Warden Hat
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: warden_hat
+      model_id: 7018
+    behaviours:
+      hat: true
+  backy_shrieker:
+    display_name: Backy Shrieker
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: backy_shrieker
+      model_id: 7019
+  backy_shrieker_self:
+    display_name: Backy Shrieker
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: backy_shrieker_self
+      model_id: 7020
+  sculk_arm:
+    display_name: Sculk Arm
+    permission: none
+    resource:
+      material: KELP
+      generate: false
+      model_path: sculk_arm
+      model_id: 7021

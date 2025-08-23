@@ -1,0 +1,39 @@
+
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+
+parry_knight:
+  Type: IRON_GOLEM
+  Display: 'parry_knight' 
+  Health: 400  
+  Faction: PARRYKNIGHT
+  Modules:
+    ThreatTable: true
+  AITargetSelectors:
+  - players
+  Options:
+    PreventOtherDrops: true
+    Despawn: true
+    Persistent: false
+    KnockbackResistance: 1
+    Collidable: true
+    Silent: true
+    FollowRange: 32
+  Drops: 
+  - cmd{c="crate key give %player_name% test-1 1"} 1 1
+  Skills:
+  - skill{s=LR_hpbar_show} @self ~onDamaged
+  - skill{s=parryknight_walk} @self ~onTimer:10
+  - skill{s=parryknight_run} @self ~onTimer:10
+  - skill{s=parryknight_death} @self ~onDeath
+  - skill{s=parryknight_crit_dmg} @self ~onDamaged
+  - skill{s=parryknight_damagecounter} @self ~onDamaged
+  - randomskill{skills=parryknight_shieldbash_sync,parryknight_shieldblock} @self ~onDamaged
+  - skill{s=parryknight_shieldup} @self ~onTimer:20
+  - skill{s=parryknight_attack_sync;sync=true} @self ~onAttack
+  - bodyclamp{mh=10;mb=10;m=parry_knight} @self ~onSpawn
+  - model{mid=parry_knight;d=false;i=true;step=1;ride=true} @self ~onSpawn
+  - model{mid=parry_knight;d=false;i=true;step=1;ride=true} @self ~onLoad  

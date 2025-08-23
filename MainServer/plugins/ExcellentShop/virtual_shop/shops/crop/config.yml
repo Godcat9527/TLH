@@ -1,0 +1,17 @@
+Name: '&a&l农作物收购'
+Description: []
+Icon:
+  Material: minecraft:wheat
+  Lore: []
+Pages: 1
+Permission_Required: false
+Transaction_Allowed:
+  BUY: true
+  SELL: true
+MainMenu:
+  Slot: -1
+Aliases: []
+Layout:
+  Name: default
+  ByPage:
+    '1': farming

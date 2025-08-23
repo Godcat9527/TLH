@@ -1,0 +1,20 @@
+cosmetics:
+  cyberspace_helmet:
+    enabled: true
+    display_name: "电子猫头套"
+    type: HAT
+    model:
+      gui: ghost_pepper_cyberspace:cyberspace_helmet
+      normal: ghost_pepper_cyberspace:cyberspace_helmet
+    dye:
+      enabled: false
+  amethyst_helmet:
+    enabled: true
+    display_name: "紫水晶头盔"
+    type: HAT
+    model:
+      gui: ghost_pepper_cyberspace:amethyst_helmet
+      normal: ghost_pepper_cyberspace:amethyst_helmet
+    dye:
+      enabled: false
+# nawVOA2lkeRbVEDzu4MzkQEzVdzQ+a9Ba2Cj9uOcyWirNsiv7jIrGzQbaQ32fVEv/RfJQ0tMGbhZZ4ywlz2hX8yyMEGpa9Zc6sCjcfzeZVc=

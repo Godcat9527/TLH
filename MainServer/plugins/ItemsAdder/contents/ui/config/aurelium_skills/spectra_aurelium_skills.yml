@@ -1,0 +1,226 @@
+info:
+  namespace: spectra_aurelium_skills
+font_images:
+  skills_menu_book:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "skills_menu_book.png"
+    y_position: 48
+    scale_ratio: 256
+  abilities_menu:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "abilities_menu.png"
+    y_position: 48
+    scale_ratio: 256
+  progress_menu:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "progress_menu.png"
+    y_position: 48
+    scale_ratio: 256
+  stats_menu:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_menu.png"
+    y_position: 48
+    scale_ratio: 256
+  leaderboard_menu:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "leaderboard_menu.png"
+    y_position: 48
+    scale_ratio: 256
+  
+
+  stat_hearts:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stat_hearts.png"
+    y_position: 9
+    scale_ratio: 11
+  stats_regeneration:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_regeneration.png"
+    y_position: 9
+    scale_ratio: 11
+  stats_speed:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_speed.png"
+    y_position: 9
+    scale_ratio: 11
+    symbol: ""
+  stats_strength:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_strength.png"
+    y_position: 9
+    scale_ratio: 11
+  stats_luck:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_luck.png"
+    y_position: 9
+    scale_ratio: 11
+  stats_toughness:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_toughness.png"
+    y_position: 9
+    scale_ratio: 11
+  stats_wisdom:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_wisdom.png"
+    y_position: 9
+    scale_ratio: 11
+  stats_crit_chance:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_crit_chance.png"
+    y_position: 9
+    scale_ratio: 11
+  stats_crit_damage:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "stats_crit_damage.png"
+    y_position: 9
+    scale_ratio: 11
+    symbol: ""
+  
+
+  skill_book_sources:
+    show_in_gui: false
+    suggest_in_command: false
+    path: "book_all_squares.png"
+    y_position: 48
+    scale_ratio: 256
+
+  xp_bar_white_lore:
+    path: "xp_bar_white"
+    scale_ratio: 7
+    y_position: 6
+
+  
+items:
+  skill_empty_slot:
+    display_name: "&f"
+    resource:
+      material: BRICK
+      model_id: 40051
+      generate: true
+      textures:
+      - empty_slot
+  skill_left_arrow:
+    display_name: "&f"
+    resource:
+      material: BRICK
+      model_id: 40052
+      generate: true
+      textures:
+      - left_arrow
+  skill_right_arrow:
+    display_name: "&f"
+    resource:
+      material: BRICK
+      model_id: 40053
+      generate: true
+      textures:
+      - right_arrow
+  
+
+  skills_level_completed:
+    display_name: "&f"
+    resource:
+      material: BRICK
+      model_id: 40068
+      generate: true
+      textures:
+      - skills_level_completed
+  skills_level_locked:
+    display_name: "&f"
+    resource:
+      material: BRICK
+      model_id: 40069
+      generate: true
+      textures:
+      - skills_level_locked
+  skills_level_progress:
+    display_name: "&f"
+    resource:
+      material: BRICK
+      model_id: 40070
+      generate: true
+      textures:
+      - skills_level_progress
+  
+  skills_head:
+    display_name: Skill Head
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 100
+      model_path: skills_head
+
+  book_previous_nav:
+    display_name: ''
+    resource:
+      material: BRICK
+      model_id: 40071
+      generate: false
+      model_path: book_previous_nav
+
+  book_next_nav:
+    display_name: ''
+    resource:
+      material: BRICK
+      model_id: 40074
+      generate: false
+      model_path: book_next_nav
+
+  icon_mana:
+    display_name: ''
+    resource:
+      material: BRICK
+      model_id: 40079
+      generate: true
+      textures: 
+        - icon_mana
+
+  icon_ability:
+    display_name: ''
+    resource:
+      material: BRICK
+      model_id: 40080
+      generate: true
+      textures: 
+        - icon_ability
+
+  icon_mana_locked:
+    display_name: ''
+    resource:
+      material: BRICK
+      model_id: 40081
+      generate: true
+      textures: 
+        - icon_mana_locked
+
+  icon_ability_locked:
+    display_name: ''
+    resource:
+      material: BRICK
+      model_id: 40082
+      generate: true
+      textures: 
+        - icon_ability_locked
+
+  
+  
+
+  
+
+  
+
+  

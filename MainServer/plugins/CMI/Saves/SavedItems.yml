@@ -1,0 +1,21 @@
+dc:
+  飞行兑换券[150]:
+    Item:
+      v: 3700
+      type: FEATHER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":["飞行能量兑换券"]}'
+        lore: ['{"text":"","extra":[{"text":"使用后获得150点飞行能量","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}']
+  test1:
+    Item:
+      v: 3700
+      type: FEATHER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":["飞行能量兑换券"]}'
+        lore: ['{"text":"","extra":[{"text":"使用后获得150点飞行能量","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}',
+          '{"text":"","extra":[{"text":"物品使用: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}']
+        custom: H4sIAAAAAAAA/+NiYGBm4AhKzEvJz/VMCXzquoSTgdvPKcQ5PzcXKFjMwcDAwMjgEJAeWuqT6GOYb15eVurolOnpFelYauyY5V8Q6eUe6ROZa+6eWBJc6e1tbu4ZaBheFJjom+RWYKCtXVgWlWfo6s7MIOLs6+mTmZtZkpoSWpzqXFpUlJpXAjKcmUEARco3sQJsJwBDs0x4mgAAAA==

@@ -1,0 +1,177 @@
+info:
+  namespace: res_class_set_1
+equipments:
+  warrior_armor:
+    type: armor
+    layer_1: warrior_layer_1
+    layer_2: warrior_layer_2
+  archer_armor:
+    type: armor
+    layer_1: archer_layer_1
+    layer_2: archer_layer_2
+  mage_armor:
+    type: armor
+    layer_1: mage_layer_1
+    layer_2: mage_layer_2
+
+#===================
+
+items:
+  warrior_helmet:
+    name: 骑士
+    resource:
+      generate: true
+      texture: warrior_helmet
+      material: IRON_HELMET
+      model_id: 70001
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:warrior_armor
+      slot_attribute_modifiers:
+        armor: 1
+  warrior_chestplate:
+    name: 骑士
+    resource:
+      generate: true
+      texture: warrior_chestplate
+      material: IRON_CHESTPLATE
+      model_id: 70001
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:warrior_armor
+      slot_attribute_modifiers:
+        armor: 1
+  warrior_leggings:
+    name: 骑士
+    resource:
+      generate: true
+      texture: warrior_leggings
+      material: IRON_LEGGINGS
+      model_id: 70001
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:warrior_armor
+      slot_attribute_modifiers:
+        armor: 1
+  warrior_boots:
+    name: 骑士
+    resource:
+      generate: true
+      texture: warrior_boots
+      material: IRON_BOOTS
+      model_id: 70001
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:warrior_armor
+      slot_attribute_modifiers:
+        armor: 1
+#===================================================
+  archer_helmet:
+    name: 弓箭手
+    resource:
+      generate: true
+      texture: archer_helmet
+      material: IRON_HELMET
+      model_id: 70002
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:archer_armor
+      slot_attribute_modifiers:
+        armor: 1
+  archer_chestplate:
+    name: 弓箭手
+    resource:
+      generate: true
+      texture: archer_chestplate
+      material: IRON_CHESTPLATE
+      model_id: 70002
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:archer_armor
+      slot_attribute_modifiers:
+        armor: 1
+  archer_leggings:
+    name: 弓箭手
+    resource:
+      generate: true
+      texture: archer_leggings
+      material: IRON_LEGGINGS
+      model_id: 70002
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:archer_armor
+      slot_attribute_modifiers:
+        armor: 1
+  archer_boots:
+    name: 弓箭手
+    resource:
+      generate: true
+      texture: archer_boots
+      material: IRON_BOOTS
+      model_id: 70002
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:archer_armor
+      slot_attribute_modifiers:
+        armor: 1
+#===================================================
+  mage_helmet:
+    name: 法师
+    resource:
+      generate: true
+      texture: mage_helmet
+      material: IRON_HELMET
+      model_id: 70003
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:mage_armor
+      slot_attribute_modifiers:
+        armor: 1
+  mage_chestplate:
+    name: 法师
+    resource:
+      generate: true
+      texture: mage_chestplate
+      material: IRON_CHESTPLATE
+      model_id: 70003
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:mage_armor
+      slot_attribute_modifiers:
+        armor: 1
+  mage_leggings:
+    name: 法师
+    resource:
+      generate: true
+      texture: mage_leggings
+      material: IRON_LEGGINGS
+      model_id: 70003
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:mage_armor
+      slot_attribute_modifiers:
+        armor: 1
+  mage_boots:
+    name: 法师
+    resource:
+      generate: true
+      texture: mage_boots
+      material: IRON_BOOTS
+      model_id: 70003
+    durability:
+      max_durability: 165
+    equipment:
+      id: res_class_set_1:mage_armor
+      slot_attribute_modifiers:
+        armor: 1

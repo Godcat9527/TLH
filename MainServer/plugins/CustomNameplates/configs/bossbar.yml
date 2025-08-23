@@ -1,0 +1,9 @@
+# https://mo-mi.gitbook.io/xiaomomi-plugins/plugin-wiki/customnameplates/config/bossbar.yml
+bossbar_1:
+  color: YELLOW
+  overlay: PROGRESS
+  conditions: []
+  text-display-order:
+    1:
+      duration: 200
+      text: '%np_background_time%  %np_background_location%  %np_background_season%'

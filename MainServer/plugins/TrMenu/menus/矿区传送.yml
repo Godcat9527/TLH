@@ -1,0 +1,74 @@
+title: '&6&lTLH &a&l前往矿区'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@@ @ @ @@' 
+  - '@@@@@@@@@'
+
+
+
+
+Icons: 
+
+  '@':
+    display:
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'LowRank':
+    display:
+      material: coal
+      name: '&f[&a初级矿区&f]'
+      slots: 11
+      lore: 
+      - ''
+      - '&{#FF8247}&l刷新矿物:'
+      - '&7煤矿,&{#FFDAB9}铁矿,&e金矿,&a绿宝石,&9青金石,&b钻石'
+      - '&f门票:&71000星币/次'
+    action: 
+       left:
+        - condition: check papi *%vault_eco_balance% >= *1000
+          actions:
+            - 'close'
+            - 'take-money: 1000'
+            - 'title: &a你已经成功购买门票,正在前往初级矿区' 
+          deny:
+            - 'close'
+            - 'title: &c你的星币不足余额!'
+
+  'MiddleRank':
+    display:
+      material: iron_ingot
+      name: '&f[&b中级矿区&f]'
+      slots: 13
+      lore: 
+      - ''
+      - '&{#FF8247}&l刷新矿物:'
+      - '&7深煤矿,&{#FFDAB9}深铁矿,&e深金矿,&a深绿宝石,&9深青金石,&b深钻石,&{#8B1A1A}下界残骸'
+      - '&c钻石，绿宝石概率大大提高!'
+      - '&f门票:&73000星币/次'
+    action: 
+       left:
+        - condition: check papi *%vault_eco_balance% >= *3000
+          actions:
+            - 'close'
+            - 'take-money: 3000'
+            - 'title: &a你已经成功购买门票,正在前往中级矿区' 
+          deny:
+            - 'close'
+            - 'title: &c你的星币不足余额!'
+    
+  'AdvRank':
+    display:
+      material: diamond
+      name: '&f[&6高级矿区&f]'
+      slots: 15
+      lore: 
+      - ''
+      - '&a➥暂未开放!'
+    action: 
+      all:
+        - 'title: &尽情期待'
+

@@ -1,0 +1,50 @@
+DamageType:
+  freeze: Freeze
+  outside_border: Outside Border
+  mace_smash: Mace Smash
+  wind_charge: Wind Charge
+  out_of_world: Out Of World
+  stalagmite: Stalagmite
+  in_fire: In Fire
+  mob_attack_no_aggro: Mob Attack No Aggro
+  drown: Drown
+  ender_pearl: Ender Pearl
+  thorns: Thorns
+  thrown: Thrown
+  fall: Fall
+  sting: Sting
+  lightning_bolt: Lightning Bolt
+  wither_skull: Wither Skull
+  mob_attack: Mob Attack
+  on_fire: On Fire
+  explosion: Explosion
+  wither: Wither
+  bad_respawn_point: Bad Respawn Point
+  trident: Trident
+  generic: Generic
+  cramming: Cramming
+  spit: Spit
+  dragon_breath: Dragon Breath
+  in_wall: In Wall
+  falling_block: Falling Block
+  player_attack: Player Attack
+  generic_kill: Generic Kill
+  fireball: Fireball
+  hot_floor: Hot Floor
+  unattributed_fireball: Unattributed Fireball
+  sweet_berry_bush: Sweet Berry Bush
+  arrow: Arrow
+  falling_stalactite: Falling Stalactite
+  cactus: Cactus
+  lava: Lava
+  sonic_boom: Sonic Boom
+  dry_out: Dry Out
+  fly_into_wall: Fly Into Wall
+  falling_anvil: Falling Anvil
+  mob_projectile: Mob Projectile
+  magic: Magic
+  indirect_magic: Indirect Magic
+  starve: Starve
+  fireworks: Fireworks
+  player_explosion: Player Explosion
+  campfire: Campfire

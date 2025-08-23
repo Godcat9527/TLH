@@ -1,0 +1,21 @@
+cosmetics:
+  cyberspace_jet:
+    enabled: true
+    display_name: "电子猫之翼"
+    type: BODY_ITEM
+    model:
+      gui: ghost_pepper_cyberspace:cyberspace_jet
+      normal: ghost_pepper_cyberspace:cyberspace_jet
+      self: ghost_pepper_cyberspace:cyberspace_jet_self
+    dye:
+      enabled: false
+  amethyst_wings:
+    enabled: true
+    display_name: "紫水晶之翼"
+    type: BODY_ITEM
+    model:
+      gui: ghost_pepper_cyberspace:amethyst_wings
+      normal: ghost_pepper_cyberspace:amethyst_wings
+      self: ghost_pepper_cyberspace:amethyst_wings_self
+    dye:
+      enabled: false

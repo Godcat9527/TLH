@@ -1,0 +1,68 @@
+血月介绍:
+  Loc: lobby;-146.91;77.36;-155.79
+  NewDisplay: true
+  Lines:
+  - 【&4精英怪DLC&f】
+  - 可怕的血月和全新的怪物体系
+  - 在此处，你将没有休憩之地!
+  - 只有无止尽的战斗下去!
+  - 包含3个大型线性副本和若干挑战副本
+  - '&4注意！该世界与空岛一样独立背包'
+  - 可获得专属的血月点用于购买特殊物品
+考古介绍:
+  Loc: lobby;-66.95;75.62;-68.34
+  NewDisplay: true
+  Lines:
+  - 想要购买珍宝店的各种藏品吗?
+  - 在此处购买考古刷子
+  - 前往冒险世界发掘可疑的方块
+  - 将发掘的物品在此兑换考古经验
+  - 使用考古经验购买那些稀有珍品吧!
+awa:
+  Loc: spawn;71.22;119.62;236.3
+  NewDisplay: true
+  ND:
+    IScale: 1.01
+  Lines:
+  - '%server_online%'
+金钱排行榜:
+  Loc: spawn;222.09;123.29;190.5
+  Interval: 159.19
+  PageInterval: 5.0
+  Range: 6
+  RangeExtra: 23
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 90
+    BColor: '{#Black}'
+    BAlpha: 10
+    ScaleW: 1.12
+    ScaleH: 1.12
+    SL: 13
+  Lines:
+  - '&6&l服务器金钱排行榜'
+  - '&a&lNo.1 &f%xconomy_top_player_1% 当前金币:%xconomy_top_balance_1%'
+  - '&a&lNo.2 &f%xconomy_top_player_2% 当前金币:%xconomy_top_balance_2%'
+  - '&a&lNo.3 &f%xconomy_top_player_3% 当前金币:%xconomy_top_balance_3%'
+  - '&a&lNo.4 &f%xconomy_top_player_4% 当前金币:%xconomy_top_balance_4%'
+  - '&a&lNo.5 &f%xconomy_top_player_5% 当前金币:%xconomy_top_balance_5%'
+  - '&a&lNo.6 &f%xconomy_top_player_6% 当前金币:%xconomy_top_balance_6%'
+  - '&a&lNo.7 &f%xconomy_top_player_7% 当前金币:%xconomy_top_balance_7%'
+  - '&a&lNo.8 &f%xconomy_top_player_8% 当前金币:%xconomy_top_balance_8%'
+  - '&a&lNo.9 &f%xconomy_top_player_9% 当前金币:%xconomy_top_balance_9%'
+  - '&a&lNo.10 &f%xconomy_top_player_10% 当前金币:%xconomy_top_balance_10%'
+party:
+  Loc: spawn;89.26;123.02;163.47
+  NewDisplay: true
+  Lines: []
+冒险世界:
+  Loc: lobby;10.33;73.62;3.34
+  NewDisplay: true
+  Lines:
+  - 冒险世界充满未知与挑战
+  - 危机四伏和各种机遇
+  - 全新的地形和怪物
+  - 考古研究将在此处进行
+  - 你做好准备了吗
+  

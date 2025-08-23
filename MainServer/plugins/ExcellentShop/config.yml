@@ -1,0 +1,56 @@
+General:
+  DateFormat: MM/dd/yyyy HH:mm
+  # Sets how often (in seconds) plugin will check shops for possible 'updates', such as:
+  # - Rotation time for Rotating Shops.
+  # - Available discounts for Static Shops.
+  # - Update time for Float prices of both, Virtual and Static Shops.
+  # Do not touch unless you know what and why you're doing.
+  # [Default is 60 seconds]
+  Shop_Update_Interval: 60
+  # Sets wheter players can purchase items from shop with full inventory.
+  Buy_With_Full_Inventory: false
+  # Sets whether or not Shop GUI should be closed when you sold/bought items.
+  Close_GUI_After_Trade: false
+Modules:
+  VirtualShop:
+    # Sets whether or not Virtual Shop module is enabled.
+    Enabled: true
+    # Command aliases (names) for the Virtual Shop module. Split with commas.
+    # [*] You must reboot the server to apply changes.
+    Command_Aliases: vshop
+  ChestShop:
+    # Sets whether or not Chest Shop module is enabled.
+    Enabled: false
+    # Command aliases (names) for the Chest Shop module. Split with commas.
+    # [*] You must reboot the server to apply changes.
+    Command_Aliases: chestshop,cshop,cs
+  Auction:
+    # Sets whether or not Auction module is enabled.
+    Enabled: true
+    # Command aliases (names) for the Auction module. Split with commas.
+    # [*] You must reboot the server to apply changes.
+    Command_Aliases: auction,auc,ah
+Data:
+  # Sets how often (in seconds) modified product & shop datas will be saved to the database.
+  # Data including:
+  # - Product's price data (float, dynamic).
+  # - Product's stock data (global, player).
+  # - Shop's rotation data.
+  # [*] Data is also saved on server reboot and plugin reload.
+  # [*] You can disable it if you're on SQLite or don't care about syncing across multiple servers.
+  SaveInterval: 5
+  PriceTable: price_data
+  StocksTable: stocks
+  RotationsTable: rotations
+GUI:
+  # [Outdated. There is dedicated PlaceholderAPI setting in GUI files]
+  Use_PlaceholderAPI: false
+  # Sets actions for specified clicks on products in shop GUIs.
+  # Allowed click types: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/ClickType.html
+  # Allowed values: BUY_SELECTION, SELL_SELECTION, SELL_ALL, BUY_SINGLE, SELL_SINGLE, PURCHASE_OPTION, UNDEFINED
+  Click_Types:
+    RIGHT: SELL_SELECTION
+    SWAP_OFFHAND: SELL_ALL
+    SHIFT_LEFT: BUY_SINGLE
+    LEFT: BUY_SELECTION
+    SHIFT_RIGHT: SELL_SINGLE

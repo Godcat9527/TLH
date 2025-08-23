@@ -1,0 +1,109 @@
+List:
+  mmoitems_material:money_1:
+    Type: PLUGIN
+    Handler: MMOItems
+    Content:
+      ItemId: MATERIAL:MONEY_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 19
+      Page: 1
+  mmoitems_material:money_2:
+    Type: PLUGIN
+    Handler: MMOItems
+    Content:
+      ItemId: MATERIAL:MONEY_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 3.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 20
+      Page: 1
+  mmoitems_material:money_3:
+    Type: PLUGIN
+    Handler: MMOItems
+    Content:
+      ItemId: MATERIAL:MONEY_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 5.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 21
+      Page: 1
+  brush:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{PublicBukkitValues:{"customarcheology:archeology_tool_id":"archaeological_shovel","customarcheology:is_archeology_tool":1b}},"minecraft:custom_model_data":{floats:[10000.0f]},"minecraft:lore":[''{"extra":[{"color":"gray","italic":false,"text":"考古铲"}],"text":""}'']},count:1,id:"minecraft:brush"}'
+    Item_Meta_Enabled: true
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 2000.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 24
+      Page: 1
+    Handler: bukkit_item

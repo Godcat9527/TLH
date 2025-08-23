@@ -1,0 +1,30 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+SKILLED_SWORD:
+  base:
+    material: GOLDEN_SWORD
+    name: §f大师之剑
+    tier: EPIC
+    dodge-rating: 15.0
+    parry-rating: 40.0
+    parry-cooldown-reduction: 30.0
+    dodge-cooldown-reduction: 20.0
+    cooldown-reduction: 20.0
+    attack-damage: 17.0
+    attack-speed: 1.65
+    critical-strike-chance: 70.0
+    critical-strike-power:
+      base: 50.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    lore:
+      - '§6“无他，唯手熟尔。”'
+    required-level: 14.0
+    ability:
+      ability1:
+        type: THRUST
+        mode: RIGHT_CLICK
+        damage: 15.0
+        cooldown: 4.0
+        stamina: 2.0

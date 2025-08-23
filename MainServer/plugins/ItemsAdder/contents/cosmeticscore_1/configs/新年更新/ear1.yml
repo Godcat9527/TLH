@@ -1,0 +1,14 @@
+info:
+  namespace: cosmeticspack3
+items:
+  ear1:
+    display_name: 兔耳
+    permission: cosmeticspack3.ear1
+    behaviours:
+      hat: true
+    resource:
+      material: PAPER
+      generate: false
+      model_path: ear1
+      model_id: 7007
+# uW3lprQdm7NJi1w7Z7KVVKEK5uK9B96RihpbjcVQjiJnU42Qno/qdLXgF53+J11Y/NhCv6eCA1Ya8nanRv9elhh3pjmWJJEBHcn4PMD5jr4=

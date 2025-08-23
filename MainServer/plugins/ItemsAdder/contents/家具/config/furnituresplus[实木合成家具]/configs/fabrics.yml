@@ -1,0 +1,218 @@
+info:
+  namespace: "furnituresplus"
+recipes:
+  crafting_table:
+    fabric_machine_plus:
+      permission: itemsadder.furnituresplus    
+      lore:
+        - "&6布料制作台"          
+      enabled: false
+      ingredients:
+        P: "OAK_PLANKS"
+        S: "STRING"
+      pattern:
+        - "PPP"
+        - "SSS"
+        - "PPP"
+      result:
+        item: "furnituresplus:fabric_machine_plus"
+        amount: 1
+
+      
+items:
+  cyansummerfabric:
+    display_name: "&3青色布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/cyansummer.png
+  acaciagray:
+    display_name: "&3金合欢布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/acaciagray.png
+  redfabric:
+    display_name: "&3红色布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/redfabric.png
+  yellowfabric:
+    display_name: "&3黄色布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/yellowfabric.png
+  blackfabric:
+    display_name: "&7黑色布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/darkgrayfabric.png
+  greenfabric:
+    display_name: "&2绿色布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/greenfabric.png
+  bluefabric:
+    display_name: "&1蓝色布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/bluefabric.png
+  amethystfabric:
+    display_name: "&5紫水晶布料"
+    permission: itemsadder.furnituresplus
+    lore:
+      - "&6从织布机制作"    
+    resource:
+      material: STICK
+      generate: true
+      textures:
+      - item/amethystfabric.png
+      
+#############################################################
+#############################################################
+#############################################################
+
+  fabric_machine_plus:
+    display_name: "高级织布机"
+    permission: itemsadder.furnituresplus
+    resource:
+      material: PAPER
+      generate: false
+      model_path: machine/fabric_machine_plus
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL
+          break_particles_material: LOOM
+        light_level: 6
+    behaviours:
+      block_trade_machine:
+        title: 高级织布机
+        trades_list:
+          cyansummerfabric:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: CYAN_DYE
+                amount: 1
+            result:
+              item: cyansummerfabric
+              amount: 3
+              
+          acaciagray:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: ORANGE_DYE
+                amount: 1
+            result:
+              item: acaciagray
+              amount: 3
+              
+          redfabric:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: RED_DYE
+                amount: 1
+            result:
+              item: redfabric
+              amount: 3
+              
+          yellowfabric:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: YELLOW_DYE
+                amount: 1
+            result:
+              item: yellowfabric
+              amount: 3
+          blackfabric:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: BLACK_DYE
+                amount: 1
+            result:
+              item: blackfabric
+              amount: 3
+          greenfabric:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: GREEN_DYE
+                amount: 1
+            result:
+              item: greenfabric
+              amount: 3
+          bluefabric:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: BLUE_DYE
+                amount: 1
+            result:
+              item: bluefabric
+              amount: 3
+          amethystfabric:
+            ingredients:
+              slot1:
+                item: STRING
+                amount: 3
+              slot2:
+                item: AMETHYST_SHARD
+                amount: 1
+            result:
+              item: amethystfabric
+              amount: 3
+              
+
+# 55085328430731689407659

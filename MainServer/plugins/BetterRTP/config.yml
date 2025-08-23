@@ -1,0 +1,286 @@
+# MCBBS 秋风残叶 授权搬运并汉化 请支持原作者SuperRonanCraft #
+# 原帖地址：https://www.spigotmc.org/resources/betterrtp.36081/ #
+
+Language-File: cn.yml
+Settings:
+  Logger:
+    Enabled: true # Log all things rtp related to the log.log file
+    LogToConsole: false
+    Format: yyyy-MM-dd HH:mm:ss
+  Respect:
+    MinePlots: false
+    FactionsBridge: false
+    CrashClaim: false
+    # # 不会传送到WorldGuard区域内 (https://dev.bukkit.org/projects/worldguard)
+    WorldGuard: true
+    # # 不会传送到GriefPrevention保护区域内 (https://www.spigotmc.org/resources/griefprevention.1884/)
+    GriefPrevention: false
+    # # 不会传送到Towny保护区域内 (https://www.spigotmc.org/resources/towny.72694/)
+    Towny: false
+    # # 不会传送到RedProtect保护区域内 (https://www.spigotmc.org/resources/redprotect.15841/)
+    RedProtect: false
+    # # 不会传送到FactionsUUID派系领地内 (https://www.spigotmc.org/resources/factionsuuid.1035/)
+    FactionsUUID: false
+    # # 不会传送到Lands保护区域内 (https://www.spigotmc.org/resources/lands.53313/)
+    Lands: true
+    # # 不会传送到Residence保护区域内 (https://www.spigotmc.org/resources/residence.11480/)
+    Residence: true
+    # # 不会传送到KingdomsX保护区域内 (https://www.spigotmc.org/resources/kingdomsx.77670/)
+    KingdomsX: false
+    # # 不会传送到hClaims保护区域内 (https://www.spigotmc.org/resources/hclaims.90540/)
+    hClaims: false
+    # # 不会传送到GriefDefender保护区域内 (https://www.spigotmc.org/resources/griefdefender.68900/)
+    GriefDefender: false
+    # # 不会传送到UltimateClaims保护区域内 (https://songoda.com/marketplace/product/ultimateclaims-the-ultimate-claiming-plugin.65)
+    UltimateClaims: false
+    # # 不会传送到Pueblos保护区域内 (https://www.spigotmc.org/resources/pueblos.91255/) (My Favorite :D)
+    Pueblos: false
+    # # 不会传送到SaberFactions保护区域内 (https://www.spigotmc.org/resources/saberfactions.69771/) (Added in 3.4.5)
+    SaberFactions: false
+    # # 不会传送到HuskTowns保护区域内 (https://www.spigotmc.org/resources/husktowns.92672/) (Added in 3.4.5)
+    HuskTowns: false
+  # # 向控制台输出debug信息
+  Debugger: false
+  # # 对于选中的安全区域，预加载区块的数量
+  PreloadRadius: 5
+  # # 最大尝试传送次数，如果没有定位到安全位置，系统最多会尝试多少次来定位新位置？ #
+  MaxAttempts: 32
+  RtpOnFirstJoin: # 玩家第一次进服就随机传送，此机制将从控制台执行
+    Enabled: false
+    World: world # 随机传送进的世界
+    SetAsRespawn: true # 并保存此随机传送位置为玩家重生点？
+  # # 冷却时间，单位是秒
+  Cooldown:
+    Enabled: true
+    LockAfter: 0 # 多少次随机传送后进入永久冷却状态 (0 为禁用此机制)
+    Time: 60
+    PerWorld: false # 每个世界分开计数冷却时间? 若禁用则所有世界共用一个冷却时间
+  # # 玩家输入随机传送指令延迟传送的时间，单位是秒，设置为0将取消延迟  
+  Delay:
+    Enabled: true
+    Time: 5
+    # # 如果玩家在传送之前移动了，是否取消传送？推荐设置成true
+    CancelOnMove: true
+  Queue:
+    Enabled: true # 是否允许本插件在玩家使用指令 `/rtp` 之前就自动队列寻找可用的安全传送点  
+  # # 禁止查询更新  
+  DisableUpdater: false
+
+# # 默认随机传送参数，如果上面的UseWorldBorder设置成false的话这里才启用
+Default:
+  RTPOnDeath: false
+  # # 请注意!!!这里的WorldBorder是系统自带的世界边界，不是WorldBorder插件! 系统自带的边界默认是xz坐标正负3千万坐标!!#
+  # # 如果不需要的话请设置为false! 推荐设置成false!#
+  UseWorldBorder: false
+  # # "Biomes: []" 代表所有生物群系均可传送
+  # # 生物群系名称列表 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html
+  Biomes: []
+  MaxRadius: 5000
+  MinRadius: 10
+  # # 传送的中心坐标 如果上面的 "UseWorldBorder" 设置成true, 这些设置将被忽略
+  CenterX: 0
+  CenterZ: 0
+  Shape: square # 传送范围形状 ，square为方形，circle为圆形
+  MaxY: 320
+  MinY: 0 # Y轴的范围
+
+# # 不安全的方块，随机传送时不会传送到这些上面，方块名称列表: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html #  
+BlacklistedBlocks:
+- stationary_water
+- stationary_lava
+- water
+- flowing_water
+- lava
+- flowing_lava
+- cactus
+- leaves
+- leaves_2
+- air
+- void_air
+- bedrock
+- oak_leaves
+- jungle_leaves
+- kelp
+# # 禁止随机传送的世界 #
+DisabledWorlds:
+- prison
+- creative
+CustomWorlds:
+- custom_world_1:
+    UseWorldBorder: false
+    MaxRadius: 1000
+    MinRadius: 100
+    CenterX: 0
+    CenterZ: 0
+    Price: 50
+    Shape: square
+    MaxY: 320
+    MinY: 0
+    Cooldown: 60
+- other_custom_world:
+    MaxRadius: 10000
+    MinRadius: 150
+    CenterX: 123
+    CenterZ: -123
+    Price: 0
+    Biomes:
+    - desert
+    - forest
+    Shape: circle
+# # 不受跨世界限制的世界，玩家可以用指令随意从一个世界跨到另一个世界    
+Overrides:
+- master_world: world
+- creative_world: world
+
+WorldType: # 世界类型，允许的世界类型有 NORMAL, NETHER
+  - world: NORMAL
+  - world_nether: NETHER
+  - world_the_end: NORMAL
+
+PermissionGroup: # 玩家必须拥有权限 "betterrtp.group.<世界名>" 才能使这些设置项生效
+  Enabled: true
+  Groups:
+  - default:
+    - world:
+        MaxRadius: 3000
+        MinRadius: 1
+        Price: 0
+        Cooldown: 600
+    - world_nether:
+        MaxRadius: 3000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 600
+    - world_the_end:
+        MaxRadius: 3000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 600
+  - 初来乍到1:
+    - world:
+        MaxRadius: 4000
+        MinRadius: 1
+        Price: 0
+        Cooldown: 500
+    - world_nether:
+        MaxRadius: 4000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 500
+    - world_the_end:
+        MaxRadius: 4000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 500
+  - 踏上旅程2:
+    - world:
+        MaxRadius: 6000
+        MinRadius: 1
+        Price: 0
+        Cooldown: 400
+    - world_nether:
+        MaxRadius: 6000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 400
+    - world_the_end:
+        MaxRadius: 6000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 400
+  - 冒险家3:
+    - world:
+        MaxRadius: 9000
+        MinRadius: 1
+        Price: 0
+        Cooldown: 300
+    - world_nether:
+        MaxRadius: 9000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 300
+    - world_the_end:
+        MaxRadius: 9000
+        MinRadius: 1
+        Price: 200
+        Cooldown: 300
+  - 探索先锋4:
+    - world:
+        MaxRadius: 12000
+        MinRadius: 1
+        Price: 0
+        Cooldown: 200
+    - world_nether:
+        MaxRadius: 12000
+        MinRadius: 1
+        Price: 150
+        Cooldown: 200
+    - world_the_end:
+        MaxRadius: 12000
+        MinRadius: 1
+        Price: 150
+        Cooldown: 200
+  - 远航使者5:
+    - world:
+        MaxRadius: 15000
+        MinRadius: 1
+        Price: 0
+        Cooldown: 100
+    - world_nether:
+        MaxRadius: 15000
+        MinRadius: 1
+        Price: 100
+        Cooldown: 100
+    - world_the_end:
+        MaxRadius: 15000
+        MinRadius: 1
+        Price: 100
+        Cooldown: 100
+  - 开拓者6:
+    - world:
+        MaxRadius: 20000
+        MinRadius: 1
+        Price: 0
+        Cooldown: 50
+    - world_nether:
+        MaxRadius: 20000
+        MinRadius: 1
+        Price: 30
+        Cooldown: 50
+    - world_the_end:
+        MaxRadius: 20000
+        MinRadius: 1
+        Price: 30
+        Cooldown: 50
+  - vip:
+    - world:
+        MaxRadius: 40000
+        MinRadius: 2500
+        Price: 0
+        Cooldown: 20
+    - world_nether:
+        MaxRadius: 40000
+        MinRadius: 2500
+        Price: 0
+        Cooldown: 20
+    - world_the_end:
+        MaxRadius: 40000
+        MinRadius: 2500
+        Price: 0
+        Cooldown: 20
+  - mvp:
+    - world:
+        MaxRadius: 50000
+        MinRadius: 5000
+        Price: 0
+        Cooldown: 10
+    - world_nether:
+        MaxRadius: 50000
+        MinRadius: 5000
+        Price: 0
+        Cooldown: 10
+    - world_the_end:
+        MaxRadius: 50000
+        MinRadius: 5000
+        Price: 0
+        Cooldown: 10

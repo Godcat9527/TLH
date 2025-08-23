@@ -1,0 +1,41 @@
+info:
+  namespace: customcrops
+items:
+  watering_can_1:
+    display_name: '铜制洒水壶'
+    resource:
+      generate: false
+      material: GOLDEN_HORSE_ARMOR
+      model_path: item/wateringcans/watering_can_1
+      model_id: 2780
+  watering_can_2:
+    display_name: '钢制洒水壶'
+    resource:
+      generate: false
+      material: GOLDEN_HORSE_ARMOR
+      model_path: item/wateringcans/watering_can_2
+      model_id: 2781
+  watering_can_3:
+    display_name: '金制洒水壶'
+    resource:
+      generate: false
+      material: GOLDEN_HORSE_ARMOR
+      model_path: item/wateringcans/watering_can_3
+      model_id: 2782
+  watering_can_4:
+    display_name: '铱制洒水壶'
+    resource:
+      generate: false
+      material: GOLDEN_HORSE_ARMOR
+      model_path: item/wateringcans/watering_can_4
+      model_id: 2783
+categories:
+  customcrops_wateringcans:
+    enabled: true
+    icon: customcrops:watering_can_1
+    name: 'display-category-customcrops_wateringcans'
+    items:
+      - customcrops:watering_can_1
+      - customcrops:watering_can_2
+      - customcrops:watering_can_3
+      - customcrops:watering_can_4

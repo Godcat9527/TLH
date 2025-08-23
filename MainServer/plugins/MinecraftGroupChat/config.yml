@@ -1,0 +1,63 @@
+websocket:
+  host: "127.0.0.1"
+  port: 3001
+  api-key: "yDbNJoNmhm6WOlNB4lPy"
+  reconnect-delay: 5000
+  auto-reconnect: true
+  max-reconnect-attempts: 5
+  connection-timeout: 30000  # WebSocket 连接超时时间（毫秒）
+
+query-websocket:
+  enabled: true  # 是否启用查询功能
+  host: "127.0.0.1"
+  port: 8090
+  token: "zsCfopRVDHwcgf3x1cMp6h"  # 查询WebSocket的认证token
+  reconnect-delay: 5000
+  auto-reconnect: true
+  max-reconnect-attempts: 5
+  connection-timeout: 30000
+
+database:
+  host: "localhost"
+  port: 3306
+  name: "bot"
+  user: "root"
+  password: "tlh2021"
+
+target-group-id: 866631779  # 设置目标群号
+bot-qq-id: 671470014  # 机器人QQ号
+
+message:
+  minecraft-to-group: "生存世界:<%player%> %message%"
+  group-to-minecraft: "§6[群聊] §f%sender%: %message%"
+  cache-expire-time: 300  # 消息缓存过期时间（秒）
+  join-server: "玩家 %player% 加入了生存世界"  # 玩家加入服务器的消息模板
+  quit-server: "玩家 %player% 离开了生存世界"  # 玩家退出服务器的消息模板
+  at-notification: "§e%sender% §f艾特了你"  # 艾特提醒消息模板
+
+filters:
+  enabled: true
+  blocked-words: 
+    - "广告*"  # 支持通配符
+    - "test*spam"
+    - "fuck"
+    - "https"
+    - "http"
+  min-length: 1
+  max-length: 256
+  cleanup-interval: 300  # 清理间隔（秒）
+  
+  # 垃圾消息检测
+  spam:
+    enabled: true
+    threshold: 3  # 在时间窗口内允许的相似消息数量
+    time-window: 10  # 时间窗口（秒）
+
+  # 玩家加入/退出通知过滤
+  join-quit-notification:
+    enabled: false  # 是否启用加入/退出通知
+    ignored-players:  # 不通知的玩家列表
+      - "Milk_Shak"
+      - "ZSSB"
+
+debug: false  # 是否启用调试模式

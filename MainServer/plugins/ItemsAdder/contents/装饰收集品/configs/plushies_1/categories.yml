@@ -1,0 +1,30 @@
+info:
+  namespace: nogs_menagerie
+categories:
+  nogs_menagerie:
+    enabled: true
+    name: "&3布偶娃娃"
+    title: ""
+    icon: nogs_menagerie:nm_plushie_big_eared_rapscallion
+    items:
+      - nogs_menagerie:nm_plushie_big_eared_rapscallion
+      - nogs_menagerie:nm_plushie_black_scowling_penguin
+      - nogs_menagerie:nm_plushie_couscous
+      - nogs_menagerie:nm_plushie_darnell
+      - nogs_menagerie:nm_plushie_eindhoven_frog
+      - nogs_menagerie:nm_plushie_floppy_eared_dog
+      - nogs_menagerie:nm_plushie_pink_hat_rabbit
+      - nogs_menagerie:nm_plushie_silly_little_penguin
+      - nogs_menagerie:nm_plushie_small_white_cat
+      - nogs_menagerie:nm_plushie_spikey_eared_rascal
+      - nogs_menagerie:pack_nm_plushie
+      - nogs_menagerie:nm_plushie_cozy_ibex
+      - nogs_menagerie:nm_plushie_cozy_owl
+      - nogs_menagerie:nm_plushie_cozy_penguin
+      - nogs_menagerie:nm_plushie_cozy_polar_bear
+      - nogs_menagerie:nm_plushie_cozy_raccoon
+      - nogs_menagerie:nm_plushie_cozy_snow_leopard
+      - nogs_menagerie:nm_plushie_cozy_squirrel
+      - nogs_menagerie:nm_plushie_cozy_tiger
+      - nogs_menagerie:nm_plushie_cozy_villager
+      - nogs_menagerie:nm_plushie_cozy_robin

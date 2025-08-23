@@ -1,0 +1,12 @@
+
+
+DIVING_BOOTS:
+  base:
+    material: GOLDEN_BOOTS
+    name: Diving Boots
+    trim-material: copper
+    trim-pattern: wild
+    water-movement-efficiency: 1.0
+    gravity: 2.0
+    step-height: 0.5
+

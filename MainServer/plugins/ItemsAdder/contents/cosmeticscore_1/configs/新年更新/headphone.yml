@@ -1,0 +1,13 @@
+info:
+  namespace: cosmeticspack3
+items:
+  headphone:
+    display_name: 头戴耳机
+    permission: cosmeticspack3.headphone
+    behaviours:
+      hat: true
+    resource:
+      material: PAPER
+      generate: false
+      model_path: headphone
+      model_id: 7005

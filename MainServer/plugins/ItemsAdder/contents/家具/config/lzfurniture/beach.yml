@@ -1,0 +1,524 @@
+info:
+  namespace: lzfurniture
+items:
+  beach_chair_blue:
+    display_name: '蓝色沙滩椅'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_chair_blue
+      model_id: 5018
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.7             
+  beach_chair_red:
+    display_name: '红色沙滩椅'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_chair_red
+      model_id: 5019
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.7   
+  beach_chair_green:
+    display_name: '绿色沙滩椅'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_chair_green
+      model_id: 5020
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.7         
+  beach_inflatable_flamingo:
+    display_name: '沙滩充气火烈鸟'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_inflatable_flamingo
+      model_id: 5021
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          width_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break             
+      furniture_sit:
+        sit_height: 0.5 
+  beach_lifebuoy:
+    display_name: '沙滩救生圈'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_lifebuoy
+      model_id: 5022
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        placeable_on:
+          floor: false
+          ceiling: false
+          walls: true
+        solid: false
+        hitbox:
+          length: 0.4
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break         
+  beach_parasol_blue:
+    display_name: '蓝色沙滩遮阳伞'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_parasol_blue
+      model_id: 5023
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0 
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+  beach_parasol_green:
+    display_name: '绿色沙滩遮阳伞'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_parasol_green
+      model_id: 5024
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0 
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break  
+  beach_parasol_red:
+    display_name: '红色沙滩遮阳伞'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_parasol_red
+      model_id: 5025
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0 
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break             
+  beach_roofed_chair_blue:
+    display_name: '蓝色带顶沙滩椅'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_roofed_chair_blue
+      model_id: 5026
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 2
+          height: 2
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.9             
+  beach_roofed_chair_green:
+    display_name: '绿色带顶沙滩椅'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_roofed_chair_green
+      model_id: 5027
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 2
+          height: 2
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break 
+      furniture_sit:
+        sit_height: 0.9             
+  beach_roofed_chair_red:
+    display_name: '红色带顶沙滩椅'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_roofed_chair_red
+      model_id: 5028
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 2
+          height: 2
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break 
+      furniture_sit:
+        sit_height: 0.9            
+  beach_sandcastle:
+    display_name: '沙滩沙堡'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_sandcastle
+      model_id: 5029
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          width_offset: 0
+        sound:
+          place:
+            name: block.sand.place
+          break:
+            name: block.sand.break
+  beach_surfboard_blue:
+    display_name: '蓝色冲浪板'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_surfboard_blue
+      model_id: 5030
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+  beach_surfboard_green:
+    display_name: '绿色冲浪板'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_surfboard_green
+      model_id: 5031
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+  beach_surfboard_red:
+    display_name: '红色冲浪板'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_surfboard_red
+      model_id: 5032
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break            
+  beach_towel_blue:
+    display_name: '蓝色沙滩毛巾'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_towel_blue
+      model_id: 5033
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 2
+          height: 0.2
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wool.place
+          break:
+            name: block.wool.break            
+  beach_towel_green:
+    display_name: '绿色沙滩毛巾'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_towel_green
+      model_id: 5034
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 2
+          height: 0.2
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wool.place
+          break:
+            name: block.wool.break              
+  beach_towel_red:
+    display_name: '红色沙滩毛巾'
+    permission: beach
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/beach/beach_towel_red
+      model_id: 5035
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 2
+          height: 0.2
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wool.place
+          break:
+            name: block.wool.break

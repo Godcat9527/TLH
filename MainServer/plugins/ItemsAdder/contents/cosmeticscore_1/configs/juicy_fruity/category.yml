@@ -1,0 +1,27 @@
+info:
+  namespace: juicy_fruity
+categories:
+  juicy_fruity:
+    enabled: true
+    skip_if_already: false
+    icon: "juicy_fruity:orange_backpack"
+    name: Juicy Fruity Set
+    permission: ia.menu
+    items:
+      - "juicy_fruity:orange_backpack"
+      - "juicy_fruity:orange_helmet"
+      - "juicy_fruity:orange_dagger"
+      - "juicy_fruity:strawberry_backpack"
+      - "juicy_fruity:strawberry_helmet"
+      - "juicy_fruity:strawberry_staff"
+      - "juicy_fruity:grapes_backpack"
+      - "juicy_fruity:grapes_helmet"
+      - "juicy_fruity:grapes_pistol"
+      - "juicy_fruity:watermelon_backpack"
+      - "juicy_fruity:watermelon_helmet"
+      - "juicy_fruity:watermelon_hammer"
+      - "juicy_fruity:avocado_backpack"
+      - "juicy_fruity:avocado_helmet"
+      - "juicy_fruity:avocado_shield"
+
+

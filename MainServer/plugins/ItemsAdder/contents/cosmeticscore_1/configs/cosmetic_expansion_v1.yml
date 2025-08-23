@@ -1,0 +1,143 @@
+info:
+  namespace: cosmetic_expansion_v1
+items:
+  ce1_chicken_hat:
+    display_name: Chicken Hat
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: chicken_hat
+      model_id: 7124
+  ce1_chicken_wings:
+    displayname: Chicken Wings
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: chicken_wings
+      model_id: 7125
+  ce1_cutlass:
+    displayname: Cutlass
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: cutlass
+      model_id: 7126
+  ce1_cyber_blade:
+    displayname: Cyber Blade
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: cyber_blade
+      model_id: 7127
+  ce1_cyber_jetpack:
+    displayname: Cyber Jetpack
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: cyber_jetpack
+      model_id: 7128
+  ce1_cyber_visor:
+    displayname: Cyber Visor
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: cyber_visor
+      model_id: 7129
+  ce1_egg_staff:
+    displayname: Egg Staff
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: egg_staff
+      model_id: 7130
+  ce1_phantom_king_crown:
+    displayname: Phantom King Crown
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: phantom_king_crown
+      model_id: 7131
+  ce1_phantom_king_shield:
+    displayname: Phantom King Shield
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: phantom_king_shield
+      model_id: 7132
+  ce1_phantom_septer:
+    displayname: Phantom Septer
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: phantom_septer
+      model_id: 7133
+  ce1_pirate_hat:
+    displayname: Pirate Hat
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: pirate_hat
+      model_id: 7134
+  ce1_shadow_dragon:
+    displayname: Shadow Dragon
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: shadow_dragon
+      model_id: 7135
+  ce1_shadow_dragon_claw:
+    displayname: Shadow Dragon Claw
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: shadow_dragon_claw
+      model_id: 7136
+  ce1_shadow_dragon_wings:
+    displayname: Shadow Dragon Wings
+    specific_properties:
+      leather_horse_armor:
+        color: WHITE
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: shadow_dragon_wings
+      model_id: 7137

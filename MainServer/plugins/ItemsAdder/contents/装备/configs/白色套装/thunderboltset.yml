@@ -1,0 +1,139 @@
+info:
+  namespace: thunderboltset
+items:
+  thunderbolt_axe:
+    display_name: 圣骑士斧
+    permission: permission_model
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: axe
+      model_id: 200
+  thunderbolt_bow:
+    display_name: 圣骑士弓
+    permission: permission_model
+    resource:
+      material: BOW
+      generate: false
+      model_path: bow
+      model_id: 200
+  thunderbolt_chest:
+    display_name: 圣骑士宝箱
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest
+      model_id: 211
+    behaviours:
+      furniture:
+        entity: item_frame
+        solid: true
+        hitbox:
+          width: 1.0
+          height: 1.0
+          length: 1.0
+  thunderbolt_chest_opening:
+    display_name: 圣骑士宝箱&7(开启状态)
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: chest_opening
+      model_id: 210
+    behaviours:
+      furniture:
+        entity: item_frame
+        solid: true
+        hitbox:
+          width: 1.0
+          height: 1.0
+          length: 1.0
+  thunderbolt_fishing_rod:
+    display_name: 圣骑士钓鱼竿
+    permission: permission_model
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: fishing_rod
+      model_id: 200
+  thunderbolt_hammer:
+    display_name: 圣骑士锤
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: hammer
+      model_id: 200
+  thunderbolt_hoe:
+    display_name: 圣骑士锄
+    permission: permission_model
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: hoe
+      model_id: 200
+  thunderbolt_key:
+    display_name: 圣骑士宝箱钥匙
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: key
+      model_id: 201
+  thunderbolt_pickaxe:
+    display_name: 圣骑士镐
+    permission: permission_model
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: pickaxe
+      model_id: 200
+  thunderbolt_shield:
+    display_name: 圣骑士盾牌
+    permission: permission_model
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: shield
+      model_id: 200
+  thunderbolt_shovel:
+    display_name: 圣骑士锹
+    permission: permission_model
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: shovel
+      model_id: 200
+  thunderbolt_spear:
+    display_name: 圣骑士矛
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: spear
+      model_id: 201
+  thunderbolt_sword:
+    display_name: 圣骑士剑
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: sword
+      model_id: 202
+  thunderbolt_scythe:
+    display_name: 圣骑士镰刀
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: scythe
+      model_id: 203
+  thunderbolt_wings:
+    display_name: 圣骑士翅膀
+    permission: permission_model
+    resource:
+      material: PAPER
+      generate: false
+      model_path: wings
+      model_id: 202

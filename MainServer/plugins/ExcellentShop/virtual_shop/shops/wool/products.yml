@@ -1,0 +1,919 @@
+List:
+  white_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:white_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+    Handler: bukkit_item
+  light_gray_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:light_gray_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 1
+      Page: 1
+    Handler: bukkit_item
+  gray_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:gray_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 2
+      Page: 1
+    Handler: bukkit_item
+  black_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:black_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 3
+      Page: 1
+    Handler: bukkit_item
+  white_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:white_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 5
+      Page: 1
+    Handler: bukkit_item
+  light_gray_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:light_gray_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 6
+      Page: 1
+    Handler: bukkit_item
+  gray_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:gray_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 7
+      Page: 1
+    Handler: bukkit_item
+  black_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:black_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 1
+    Handler: bukkit_item
+  brown_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:brown_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 9
+      Page: 1
+    Handler: bukkit_item
+  red_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:red_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 10
+      Page: 1
+    Handler: bukkit_item
+  orange_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:orange_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 11
+      Page: 1
+    Handler: bukkit_item
+  yellow_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:yellow_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 12
+      Page: 1
+    Handler: bukkit_item
+  brown_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:brown_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 14
+      Page: 1
+    Handler: bukkit_item
+  red_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:red_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 15
+      Page: 1
+    Handler: bukkit_item
+  orange_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:orange_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 16
+      Page: 1
+    Handler: bukkit_item
+  yellow_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:yellow_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 17
+      Page: 1
+    Handler: bukkit_item
+  lime_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:lime_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 18
+      Page: 1
+    Handler: bukkit_item
+  green_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:green_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 19
+      Page: 1
+    Handler: bukkit_item
+  cyan_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cyan_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 20
+      Page: 1
+    Handler: bukkit_item
+  light_blue_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:light_blue_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 21
+      Page: 1
+    Handler: bukkit_item
+  lime_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:lime_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 23
+      Page: 1
+    Handler: bukkit_item
+  green_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:green_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 24
+      Page: 1
+    Handler: bukkit_item
+  cyan_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:cyan_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 25
+      Page: 1
+    Handler: bukkit_item
+  light_blue_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:light_blue_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 26
+      Page: 1
+    Handler: bukkit_item
+  blue_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:blue_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 27
+      Page: 1
+    Handler: bukkit_item
+  purple_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:purple_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 28
+      Page: 1
+    Handler: bukkit_item
+  magenta_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:magenta_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 29
+      Page: 1
+    Handler: bukkit_item
+  pink_wool:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:pink_wool"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 30
+      Page: 1
+    Handler: bukkit_item
+  blue_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:blue_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 32
+      Page: 1
+    Handler: bukkit_item
+  purple_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:purple_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 33
+      Page: 1
+    Handler: bukkit_item
+  magenta_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:magenta_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 34
+      Page: 1
+    Handler: bukkit_item
+  pink_carpet:
+    Type: VANILLA
+    Content:
+      Item: '{count:3,id:"minecraft:pink_carpet"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 35
+      Page: 1
+    Handler: bukkit_item
+  cobweb:
+    Type: VANILLA
+    Content:
+      Item: '{count:4,id:"minecraft:cobweb"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 22
+      Page: 1
+    Handler: bukkit_item
+  shears:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:shears"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 100.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: 4
+        SellAmount: -1
+        RestockTime: 86400
+    Shop_View:
+      Slot: 4
+      Page: 1
+    Handler: bukkit_item

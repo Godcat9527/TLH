@@ -1,0 +1,182 @@
+Name: '&l随机金币宝箱'
+Permission_Required: false
+Opening:
+  Cooldown: 0
+Key:
+  Ids:
+  - moeny
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+Block:
+  Pushback:
+    Enabled: false
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: none
+    Particle:
+      Name: END_ROD
+  Positions:
+  - 73,82,42,lobby
+Milestones:
+  Repeatable: false
+Rewards:
+  List:
+    '300':
+      Name: 300星币
+      Weight: 40.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - money give %player_name% 300
+      Ignored_For_Permissions: []
+      Type: COMMAND
+      Placeholder_Apply: true
+      Required_Permissions: []
+      Description: []
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{count:1,id:"minecraft:emerald"}'
+          DataVersion: 4189
+    '600':
+      Name: '&e&l600金币'
+      Weight: 30.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - money give %player_name% 600
+      Ignored_For_Permissions: []
+      Type: COMMAND
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{count:1,id:"minecraft:emerald"}'
+          DataVersion: 4189
+      Placeholder_Apply: false
+      Required_Permissions: []
+      Description: []
+    '1200':
+      Name: '&e&l1200金币'
+      Weight: 10.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - money give %player_name% 1200
+      Ignored_For_Permissions: []
+      Type: COMMAND
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{count:1,id:"minecraft:emerald"}'
+          DataVersion: 4189
+      Placeholder_Apply: false
+      Required_Permissions: []
+      Description: []
+    '2400':
+      Name: '&e&l2400金币'
+      Weight: 13.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - money give %player_name% 2400
+      Ignored_For_Permissions: []
+      Type: COMMAND
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{count:1,id:"minecraft:emerald"}'
+          DataVersion: 4189
+      Placeholder_Apply: false
+      Required_Permissions: []
+      Description: []
+    '4800':
+      Name: '&e&l4800金币'
+      Weight: 5.0
+      Rarity: common
+      Broadcast: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Commands:
+      - money give %player_name% 4800
+      Ignored_For_Permissions: []
+      Type: COMMAND
+      PreviewData:
+        Type: VANILLA
+        Tag:
+          Value: '{count:1,id:"minecraft:emerald"}'
+          DataVersion: 4189
+      Placeholder_Apply: false
+      Required_Permissions: []
+      Description: []
+Last_Opener: arealiy6500
+Last_Reward: '&e&l1500金币'
+_dataver: 600
+ItemProvider:
+  Type: VANILLA
+  Tag:
+    Value: '{count:1,id:"minecraft:chest"}'
+    DataVersion: 4189
+Preview:
+  Enabled: true
+  Id: default
+Animation:
+  Enabled: true
+  Id: csgo
+Description: []
+ItemStackable: true

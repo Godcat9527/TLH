@@ -1,0 +1,127 @@
+# 注意: 这些是插件的默认配置
+# 并不一定意味着玩家会有良好的游戏体验。我们希望您会根据自己的想法创建定制的配置，让玩家体验到您服务器的独特之处。
+
+weekend_competition:
+  # TOTAL_SCORE 总比分
+  # CATCH_AMOUNT 捕鱼总量
+  # MAX_SIZE 最大鱼尺寸
+  # TOTAL_SIZE 总尺寸
+  # RANDOM 随机
+  goal: RANDOM
+
+  # 可选
+  # 1-7
+  start-weekday:
+    - 6
+    - 7
+
+  # Optional
+  start-time:
+    - '13:00'
+    - '21:00'
+
+  # 秒
+  duration: 600
+
+  # 开始比赛所需的最少玩家
+  min-players: 5
+
+  # 未能开始的动作
+  skip-actions:
+    broadcast:
+      type: broadcast
+      value:
+        - '[钓鱼比赛] 玩家数量不足，比赛未能如期举行.'
+
+  bossbar:
+    enable: true
+    color: WHITE
+    overlay: PROGRESS
+    text:
+      - '<gray>[<#87CEFA>🎣<gray>] <gradient:#F0F8FF:#87CEFA:#F0F8FF>剩余时间: <#E6E6FA>{seconds}s <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>你的排名: <#E6E6FA>{rank} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>No.1 玩家: <#E6E6FA>{1_player}'
+      - '<gray>[<#87CEFA>🎣<gray>] <gradient:#F0F8FF:#87CEFA:#F0F8FF>剩余时间: <#E6E6FA>{minute}{second} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>你的分数: <#E6E6FA>{score} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>No.1 分数: <#E6E6FA>{1_score}'
+      - '<gray>[<#87CEFA>🎣<gray>] <gradient:#F0F8FF:#87CEFA:#F0F8FF>剩余时间: <#E6E6FA>{minute}{second} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>取胜条件: <#E6E6FA>{goal}'
+    refresh-rate: 20
+    switch-interval: 200
+    only-show-to-participants: true
+
+  actionbar:
+    enable: false
+    text:
+      - '<gradient:#F0F8FF:#87CEFA:#F0F8FF>剩余时间: <#E6E6FA>{seconds}s <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>你的排名: <#E6E6FA>{rank} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>No.1 玩家: <#E6E6FA>{1_player}'
+      - '<gradient:#F0F8FF:#87CEFA:#F0F8FF>剩余时间: <#E6E6FA>{minute}{second} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>你的分数: <#E6E6FA>{score} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>No.1 分数: <#E6E6FA>{1_score}'
+      - '<gradient:#F0F8FF:#87CEFA:#F0F8FF>剩余时间: <#E6E6FA>{minute}{second} <gray>| <gradient:#F0F8FF:#87CEFA:#F0F8FF>取胜条件: <#E6E6FA>{goal}'
+    refresh-rate: 5
+    switch-interval: 200
+    only-show-to-participants: true
+
+  start-actions:
+    broadcast:
+      type: broadcast
+      value:
+        - '<#D4F2E7>◤─────────────────────────◥'
+        - ''
+        - '             <gray>[<#87CEFA>🎣<gray>]  <gradient:#F0F8FF:#87CEFA:#F0F8FF>钓鱼比赛'
+        - ''
+        - '      <#E1FFFF>目标:'
+        - '         <#B0C4DE>捕获尽可能多的鱼'
+        - '           <#B0C4DE>开始钓鱼以参与比赛!'
+        - ''
+        - '<#D4F2E7>◣─────────────────────────◢'
+  end-actions:
+    broadcast:
+      type: broadcast
+      value:
+        - '<#D4F2E7>◤─────────────────────────◥'
+        - ''
+        - '             <gray>[<#87CEFA>🎣<gray>]  <gradient:#F0F8FF:#87CEFA:#F0F8FF>钓鱼比赛'
+        - ''
+        - '      <#E1FFFF>成绩:'
+        - '              <gradient:#FFF8DC:#FFD700:#FFF8DC>No.①: {1_player} - {1_score}'
+        - '              <gradient:#F5FFFA:#F5F5F5:#F5FFFA>No.②: {2_player} - {2_score}'
+        - '              <gradient:#D2B48C:#CD853F:#D2B48C>No.③: {3_player} - {3_score}'
+        - ''
+        - '<#D4F2E7>◣─────────────────────────◢'
+  participate-actions:
+    message:
+      type: message
+      value:
+        - '你已成功参加比赛. 祝你好运！'
+
+  rewards:
+    1:
+      command_action:
+        type: command
+        value:
+          - 'eco give {player} 800'
+      messages_action:
+        type: message
+        value:
+          - '<#FF4500>[1st] 恭喜你! 你是 NO. 1!'
+    2:
+      command_action:
+        type: command
+        value:
+          - 'eco give {player} 550'
+      messages_action:
+        type: message
+        value:
+          - '<#FF4500>[2nd] 恭喜你! 你是 NO. 2!'
+    3:
+      command_action:
+        type: command
+        value:
+          - 'eco give {player} 300'
+      messages_action:
+        type: message
+        value:
+          - '<#FF4500>[3rd] 恭喜你! 你是 NO. 3!'
+    participation:
+      command_action:
+        type: command
+        value:
+          - 'eco give {player} 20'
+      messages_action:
+        type: message
+        value:
+          - '<#FF4500>感谢参与,下次加油!'

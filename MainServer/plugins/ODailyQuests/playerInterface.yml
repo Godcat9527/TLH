@@ -1,0 +1,91 @@
+# ======================================================
+# Here you can create your own player quests interface.
+#
+# NEVER DELETE A %variable%
+# %progress% is replaced by the progression of the quest.
+# %required% is replaced by the required amount to complete the quest.
+# %achieved% is replaced by the number of completed quests.
+# %drawIn% is replaced by the time remaining before the next quests draw.
+# ======================================================
+player_interface:
+  disable_status: false
+  size: 27
+  use_placeholders: true
+  inventory_name: "&f%img_offset_-8%%img_daily_quest%"
+  progress: '&f当前进度: #b82b2b%progress%&8/#64ba3f%required%'
+  status: ''
+  achieved: '&f当前进度: #64ba3f已完成'
+  glowing_if_achieved: false
+  complete_get_type: ' #64ba3f→ 点击提交此任务'
+  player_head:
+    enabled: true
+    use_placeholders: true
+    slot: 1
+    item_name: '&6任务信息'
+    custom_model_data: 1
+    item_description:
+    - '#a5d0e9完成的任务总数: #64ba3f%odailyquests_total%'
+    - ''
+    - '&f您的徽章: #c372de%luckperms_meta_badge%'
+    - ''
+    - '&7今日完成的任务: &6%achieved%&8/&612'
+    - ''
+    - '&f下次刷新时间: #dc3333%drawIn%'
+  # ========================================================
+  # Available types : FILL, PLAYER_COMMAND, CONSOLE_COMMAND
+  # Placeholders : %player%
+  # More info on Wiki.
+  # ========================================================
+  quests: # set the position of quests items
+    '1': 4
+    '2': 5
+    '3': 6
+    '4': 13
+    '5': 14
+    '6': 15
+    '7': 22
+    '8': 23
+    '9': 24
+  items:
+    '0':
+      type: CONSOLE_COMMAND
+      use_placeholders: true
+      item:
+        material: SUGAR
+        name: '&6排行榜'
+        lore:
+        - '#a1aab7暂未开放'
+        slot: 9
+        custom_model_data: 1101
+      commands:
+      - dm open quest_leaderboard %player%
+    '1':
+      type: CONSOLE_COMMAND
+      use_placeholders: true
+      item:
+        material: SUGAR
+        name: '&6徽章'
+        lore:
+        - '#a1aab7暂未开放 '
+        slot: 18
+        custom_model_data: 1102
+      commands:
+      - dm open quest_badges %player%
+    '2':
+      type: CONSOLE_COMMAND
+      use_placeholders: true
+      item:
+        material: SUGAR
+        name: '&6任务信息'
+        lore:
+        - '#a5d0e9完成的任务总数: #64ba3f%odailyquests_total%'
+        - ''
+        - '&f您的徽章: #c372de%luckperms_meta_badge%'
+        - ''
+        - '&7今日完成的任务: &6%achieved%&8/&612'
+        - ''
+        - '&f下次刷新时间: #dc3333%drawIn%'
+        slot: 2
+        custom_model_data: 1100
+      commands:
+      - dm open quest_badges %player%

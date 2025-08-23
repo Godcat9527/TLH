@@ -1,0 +1,33 @@
+Options:
+  Target: ALL
+  Proxy: true
+  Force-Proxy: true
+  Double-Transfer: true
+  Always-Listen: true
+  Ports: ~
+
+
+Formats:
+  - condition: null
+    prefix:
+      server:
+        text: '&8[&3生存世界&8] '
+        hover: |-
+          &7Server &生存世界
+          &f
+          &7Version: &6%server_version%
+          &7Online: &a%server_online%&7/&2%server_max_players%
+          &7TPS: &b%server_tps%
+      player:
+        text: '&e%player_name%&8: '
+    msg:
+      default-color: 'f'
+      hover: '&7Date: %server_time_HH:mm:ss%'
+
+# Can't use placeholders!
+Console:
+  - prefix:
+      server:
+        text: '&eServer&8: '
+    msg:
+      default-color: 'f'

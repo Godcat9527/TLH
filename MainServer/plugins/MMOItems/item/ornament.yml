@@ -1,0 +1,18 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+BOOK_OF_STRENGTH:
+  base:
+    material: BOOK
+    name: §c力量法书
+    lore: 
+      - §7就算在§9物品栏§7里，
+      - §7也会为你施加力量。
+    tier: RARE
+    projectile-damage: 15.0
+    physical-damage: 10.0
+    magic-damage: 10.0
+    weapon-damage: 10.0
+    damage-reduction: 5.0
+    required-class:
+      - Warrior
+    required-level: 15.0

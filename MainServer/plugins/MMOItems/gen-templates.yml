@@ -1,0 +1,59 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+basic-template:
+
+    # 这个模板可以替换的一组方块。
+    replace: [STONE]
+    
+    # 被选中进行世界生成的区块的几率。
+    # (0.7 = 70% 的几率)
+    chunk-chance: 0.7
+    
+    # 生成的深度范围。此示例允许方块在 Y 坐标 10 和 24 之间生成。
+    depth: 10=24
+    
+    # 每个矿脉中生成的方块数。
+    # （请注意这是最大值，可能会出现更小的矿脉）
+    vein-size: 5
+    
+    # 每个区块中要生成的矿脉数量。
+    vein-count: 2
+
+slime-chunks-only:
+    replace: [STONE]
+    
+    # 使用此选项仅在史莱姆区块中启用此模板
+    slime-chunk: true
+    
+    chunk-chance: 0.6
+    depth: 0=100
+    vein-size: 1
+    vein-count: 4
+
+# 使用 'biome' 选项的示例
+moutain-template:
+    replace: [EMERALD_ORE]
+    chunk-chance: 0.7
+    depth: 10=100
+    vein-size: 6
+    vein-count: 2
+    
+    # 生成在山脉生物群系中
+    # 如果使用 '!mountains'，方块将在除山脉生物群系之外的所有地方生成。
+    # 没有 ! -> 生物群系白名单
+    # 使用 ! -> 生物群系黑名单
+    biomes:
+    - mountains
+
+# 使用 'world' 选项的示例
+nether-template:
+    replace: [NETHER_QUARTZ_ORE]
+    chunk-chance: 0.7
+    depth: 10=100
+    vein-size: 6
+    vein-count: 2
+    
+    # 在这里提供世界列表。基于白名单/黑名单。
+    # 对于世界列表，仍然可以使用 ! 来实现黑名单。
+    worlds:
+    - world_nether

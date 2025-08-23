@@ -1,0 +1,217 @@
+info:
+  namespace: elitecreatures
+equipments:
+  knight_animated_weapon_set:
+    type: armor
+    layer_1: knight_animated_weapon_set/knight_armor_layer_1
+    layer_2: knight_animated_weapon_set/knight_armor_layer_2
+items:
+  knight_animated_weapon_set_helmet:
+    name: 骑士头盔
+    resource:
+      generate: false
+      model_path: knight_animated_weapon_set/helmet
+      material: IRON_HELMET
+      model_id: 210
+    durability:
+      max_durability: 165
+    equipment:
+      slot_attribute_modifiers:
+        armor: 2.5
+  knight_animated_weapon_set_chestplate:
+    name: 骑士胸甲
+    resource:
+      generate: true
+      texture: knight_animated_weapon_set/knight_chestplate
+      material: IRON_CHESTPLATE
+      model_id: 210
+    durability:
+      max_durability: 165
+    equipment:
+      id: elitecreatures:knight_animated_weapon_set
+      slot_attribute_modifiers:
+        armor: 1
+  knight_animated_weapon_set_leggings:
+    name: 骑士腿甲
+    resource:
+      generate: true
+      texture: knight_animated_weapon_set/knight_leggings
+      material: IRON_LEGGINGS
+      model_id: 210
+    durability:
+      max_durability: 165
+    equipment:
+      id: elitecreatures:knight_animated_weapon_set
+      slot_attribute_modifiers:
+        armor: 1
+  knight_animated_weapon_set_boots:
+    name: 骑士鞋
+    resource:
+      generate: true
+      texture: knight_animated_weapon_set/knight_boots
+      material: IRON_BOOTS
+      model_id: 210
+    durability:
+      max_durability: 165
+    equipment:
+      id: elitecreatures:knight_animated_weapon_set
+      slot_attribute_modifiers:
+        armor: 1
+
+#==============================================================
+
+  knight_animated_weapon_set_axe:
+    display_name: Axe
+    permission: elitecreatures.use
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: knight_animated_weapon_set/axe
+      model_id: 210
+  knight_animated_weapon_set_bow:
+    display_name: Bow
+    permission: elitecreatures.use
+    resource:
+      material: BOW
+      generate: false
+      model_path: knight_animated_weapon_set/bow
+      model_id: 210
+  knight_animated_weapon_set_chest:
+    display_name: Chest
+    permission: elitecreatures.use
+    resource:
+      material: PAPER
+      generate: false
+      model_path: knight_animated_weapon_set/chest
+      model_id: 211
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: armor_stand
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  knight_animated_weapon_set_crossbow:
+    display_name: Crossbow
+    permission: elitecreatures.use
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: knight_animated_weapon_set/crossbow
+      model_id: 210
+  knight_animated_weapon_set_fishing_rod:
+    display_name: Fishing Rod
+    permission: elitecreatures.use
+    resource:
+      material: FISHING_ROD
+      generate: false
+      model_path: knight_animated_weapon_set/fishing_rod
+      model_id: 210
+  knight_animated_weapon_set_hammer:
+    display_name: Hammer
+    permission: elitecreatures.use
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: knight_animated_weapon_set/hammer
+      model_id: 211
+  knight_animated_weapon_set_hoe:
+    display_name: Hoe
+    permission: elitecreatures.use
+    resource:
+      material: IRON_HOE
+      generate: false
+      model_path: knight_animated_weapon_set/hoe
+      model_id: 210
+  knight_animated_weapon_set_key:
+    display_name: Key
+    permission: elitecreatures.use
+    resource:
+      material: PAPER
+      generate: false
+      model_path: knight_animated_weapon_set/key
+      model_id: 213
+  knight_animated_weapon_set_pickaxe:
+    display_name: Pickaxe
+    permission: elitecreatures.use
+    resource:
+      material: IRON_PICKAXE
+      generate: false
+      model_path: knight_animated_weapon_set/pickaxe
+      model_id: 210
+  knight_animated_weapon_set_quiver:
+    display_name: Quiver
+    permission: elitecreatures.use
+    resource:
+      material: PAPER
+      generate: false
+      model_path: knight_animated_weapon_set/quiver
+      model_id: 214
+  knight_animated_weapon_set_shield:
+    display_name: Shield
+    permission: elitecreatures.use
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: knight_animated_weapon_set/shield
+      model_id: 210
+  knight_animated_weapon_set_shovel:
+    display_name: Shovel
+    permission: elitecreatures.use
+    resource:
+      material: IRON_SHOVEL
+      generate: false
+      model_path: knight_animated_weapon_set/shovel
+      model_id: 210
+  knight_animated_weapon_set_spear:
+    display_name: Spear
+    permission: elitecreatures.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: knight_animated_weapon_set/spear
+      model_id: 210
+  knight_animated_weapon_set_staff:
+    display_name: Staff
+    permission: elitecreatures.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: knight_animated_weapon_set/staff
+      model_id: 212
+  knight_animated_weapon_set_sword:
+    display_name: Sword
+    permission: elitecreatures.use
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: knight_animated_weapon_set/sword
+      model_id: 213
+  knight_animated_weapon_set_thornpendulum:
+    display_name: Thornpendulum 211
+    permission: elitecreatures.use
+    resource:
+      material: IRON_AXE
+      generate: false
+      model_path: knight_animated_weapon_set/thornpendulum
+      model_id: 212
+  knight_animated_weapon_set_wing:
+    display_name: '<#FF4040>耀光之翼'
+    permission: elitecreatures.use
+    lore:
+    - ' '
+    - '包裹着死去的骑士,一生的荣耀...'
+    resource:
+      material: PAPER
+      model_id: 215
+      generate: false
+      model_path: knight_animated_weapon_set/wing

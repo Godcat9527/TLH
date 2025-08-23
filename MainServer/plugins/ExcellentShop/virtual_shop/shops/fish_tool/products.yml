@@ -1,0 +1,254 @@
+List:
+  fishing_rod_4:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{cur_dur:16,id:"magical_rod",max_dur:16}},"minecraft:custom_model_data":{floats:[50006.0f]},"minecraft:custom_name":''{"bold":true,"color":"#7B68EE","italic":false,"text":"魔法钓鱼竿"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":" - 这款独特的钓鱼竿是魔法创新的产物，使用书作为鱼饵。"}'',''{"color":"gray","italic":false,"text":" - 其复杂的卷线机构和魔法吸引力要求使用者的经验等级，"}'',''{"color":"gray","italic":false,"text":"
+        - 在每次投掷时消耗经验经验等级。"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":" - 从钓鱼中获得附魔书。"}'',''{"color":"gray","italic":false,"text":" - 需要较长时间来咬钩。"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#CD5C5C","italic":false,"text":"要求:"}'',''{"color":"gray","italic":false,"text":" - 1x 书作为鱼饵"}'',''{"color":"gray","italic":false,"text":" - 10 经验等级"}'',''{"extra":[{"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'',''{"extra":[{"extra":[{"color":"gray","text":"Durability"},{"color":"white","extra":[{"color":"gray","text":"/"},"
+        16"],"text":": 16 "}],"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'']},count:1,id:"minecraft:fishing_rod"}'
+    Item_Meta_Enabled: true
+    Rotating: true
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 70.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: -1
+      Page: -1
+    Handler: bukkit_item
+  fishing_rod_5:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{cur_dur:128,id:"master_rod",max_dur:128}},"minecraft:custom_model_data":{floats:[50007.0f]},"minecraft:custom_name":''{"bold":true,"color":"#FFFF00","italic":false,"text":"大师钓鱼竿"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":" - 只有技艺高超的的钓手才能驾驭的大师的钓鱼竿代表了钓鱼工艺的巅峰。"}'',''{"color":"gray","italic":false,"text":" - 为了精准而精心制作，大大缩短了鱼儿上钩的时间。"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":"
+        - 减少上钩时间"}'',''{"color":"gray","italic":false,"text":" - 增加钓鱼的难度"}'',''{"color":"gray","italic":false,"text":" - 提高钓到优质鱼的概率"}'',''{"extra":[{"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'',''{"extra":[{"extra":[{"color":"gray","text":"Durability"},{"color":"white","extra":[{"color":"gray","text":"/"}," 128"],"text":": 128 "}],"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'']},count:1,id:"minecraft:fishing_rod"}'
+    Item_Meta_Enabled: true
+    Rotating: true
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 100.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: -1
+      Page: -1
+    Handler: bukkit_item
+  fishing_rod_6:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{cur_dur:128,id:"star_rod",max_dur:128}},"minecraft:custom_model_data":{floats:[50004.0f]},"minecraft:custom_name":''{"bold":true,"color":"#FFFF00","italic":false,"text":"星辰钓鱼竿"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":" - 星辰钓鱼竿由星尘雕刻而成，沐浴在宇宙能量中，"}'',''{"color":"gray","italic":false,"text":" - 是宇宙奇迹的见证。它无穷无尽的魔力储藏库确"}'',''{"color":"gray","italic":false,"text":"
+        - 保时间仿佛静止，让钓手有如永恒般完美捕获鱼。"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":" - 增加15秒钓鱼游戏时间"}'',''{"extra":[{"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'',''{"extra":[{"extra":[{"color":"gray","text":"Durability"},{"color":"white","extra":[{"color":"gray","text":"/"}," 128"],"text":": 128 "}],"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'']},count:1,id:"minecraft:fishing_rod"}'
+    Item_Meta_Enabled: true
+    Rotating: true
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_archaeology
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 50.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: -1
+      Page: -1
+    Handler: bukkit_item
+  fishing_rod:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{cur_dur:64,id:"beginner_rod",max_dur:64}},"minecraft:custom_model_data":{floats:[50001.0f]},"minecraft:custom_name":''{"bold":true,"color":"#EEE9E9","italic":false,"text":"初学者钓鱼竿"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":" - 初学者钓鱼竿专为初学钓鱼的人设计"}'',''{"color":"gray","italic":false,"text":" - 是新手钓鱼者最好的朋友"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":"
+        - 增加咬钩时间"}'',''{"color":"gray","italic":false,"text":" - 减少钓鱼难度"}'',''{"extra":[{"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'',''{"extra":[{"extra":[{"color":"gray","text":"Durability"},{"color":"white","extra":[{"color":"gray","text":"/"}," 64"],"text":": 64 "}],"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'']},count:1,id:"minecraft:fishing_rod"}'
+    Item_Meta_Enabled: true
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 3000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+    Handler: bukkit_item
+  fishing_rod_2:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{cur_dur:96,id:"silver_rod",max_dur:96}},"minecraft:custom_model_data":{floats:[50002.0f]},"minecraft:custom_name":''{"bold":true,"color":"#C0C0C0","italic":false,"text":"白银钓鱼竿"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":" - 白银钓鱼竿制作精美，表面光彩夺目，是每"}'',''{"color":"gray","italic":false,"text":" - 一位追求银星品质鱼类的钓鱼者的梦想."}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":"
+        - 增加获得银星鱼的概率"}'',''{"extra":[{"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'',''{"extra":[{"extra":[{"color":"gray","text":"Durability"},{"color":"white","extra":[{"color":"gray","text":"/"}," 96"],"text":": 96 "}],"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'']},count:1,id:"minecraft:fishing_rod"}'
+    Item_Meta_Enabled: true
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 5000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 1
+      Page: 1
+    Handler: bukkit_item
+  fishing_rod_1:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{cur_dur:80,id:"golden_rod",max_dur:80}},"minecraft:custom_model_data":{floats:[50003.0f]},"minecraft:custom_name":''{"bold":true,"color":"#FFD700","italic":false,"text":"黄金钓鱼竿"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":" - 在阳光下闪闪发光，散发着奢华光辉，"}'',''{"color":"gray","italic":false,"text":" - 黄金钓鱼竿是高级钓具的典范"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":"
+        - 增加获得金星鱼的概率"}'',''{"extra":[{"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'',''{"extra":[{"extra":[{"color":"gray","text":"Durability"},{"color":"white","extra":[{"color":"gray","text":"/"}," 80"],"text":": 80 "}],"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'']},count:1,id:"minecraft:fishing_rod"}'
+    Item_Meta_Enabled: true
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 8000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 2
+      Page: 1
+    Handler: bukkit_item
+  fishing_rod_3:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{cur_dur:32,id:"bone_rod",max_dur:32}},"minecraft:custom_model_data":{floats:[50005.0f]},"minecraft:custom_name":''{"bold":true,"color":"#CD2626","italic":false,"text":"骨质钓鱼竿"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":" - 由古老骷髅的骨骼锻造而成，并注入了黑暗魔法的力量，"}'',''{"color":"gray","italic":false,"text":" - 骨质钓鱼竿不是胆小者所用。它让勇者或疯子在炽热的"}'',''{"color":"gray","italic":false,"text":"
+        - 熔岩中垂钓，打破了常规钓鱼竿的限制。"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":" - 在熔岩中钓鱼"}'',''{"color":"gray","italic":false,"text":" - 有时骷髅会抓住鱼钩"}'',''{"extra":[{"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'',''{"extra":[{"extra":[{"color":"gray","text":"Durability"},{"color":"white","extra":[{"color":"gray","text":"/"}," 32"],"text":": 32 "}],"italic":false,"text":""}],"score":{"name":"cf","objective":"durability"}}'']},count:1,id:"minecraft:fishing_rod"}'
+    Item_Meta_Enabled: true
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 8000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 3
+      Page: 1
+    Handler: bukkit_item
+  paper_1:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{id:"simple_bait"}},"minecraft:custom_model_data":{floats:[50001.0f]},"minecraft:custom_name":''{"bold":true,"color":"#00BFFF","italic":false,"text":"简易鱼饵"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":"由天然成分制成, 以平稳而稳定的方式吸引"}'',''{"color":"gray","italic":false,"text":"鱼类.对于那些喜欢简单而可靠的钓鱼体验的"}'',''{"color":"gray","italic":false,"text":"人来说这是不二之选."}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":"
+        - 降低钓鱼难度"}'',''{"color":"white","italic":false,"text":""}'']},count:1,id:"minecraft:paper"}'
+    Item_Meta_Enabled: true
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 30.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 7
+      Page: 1
+    Handler: bukkit_item
+  paper:
+    Type: VANILLA
+    Content:
+      Item: '{components:{"minecraft:custom_data":{CustomFishing:{id:"wild_bait"}},"minecraft:custom_model_data":{floats:[50003.0f]},"minecraft:custom_name":''{"bold":true,"color":"#2E8B57","italic":false,"text":"野生鱼饵"}'',"minecraft:lore":[''{"color":"white","italic":false,"text":""}'',''{"color":"#7FFFD4","italic":false,"text":"描述:"}'',''{"color":"gray","italic":false,"text":"为无畏的钓鱼者精心制作,野生鱼饵"}'',''{"color":"gray","italic":false,"text":"蕴含多种有效的天然成分,散发出对"}'',''{"color":"gray","italic":false,"text":"大型水生野兽无法抗拒的芳香"}'',''{"color":"white","italic":false,"text":""}'',''{"color":"#FFD700","italic":false,"text":"效果:"}'',''{"color":"gray","italic":false,"text":"
+        - 增加钓鱼难度"}'',''{"color":"gray","italic":false,"text":" - 增加捕获的鱼的大小"}'',''{"color":"white","italic":false,"text":""}'']},count:1,id:"minecraft:paper"}'
+    Item_Meta_Enabled: true
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 30.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 1
+    Handler: bukkit_item

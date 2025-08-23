@@ -1,0 +1,2352 @@
+# 本配置文件展示了大多数常用的设定选项, 供您了解.
+# !!! 如果您直接修改本配置的替换/屏蔽项, 它将不会生效 !!!
+# 因为我们限制了生效所需的权限、客户端语言. 请前往 70 行查看它们.
+
+# 此替换配置文件的相关设定.
+Options:
+  # 是否开启本替换配置. 若为false则不会为这个文件处理. 若未定义, 默认为false.
+  Enabled: true
+  # 本文件的优先级. 若有多个替换配置, 优先级高的最早替换. 默认为5.
+  Priority: 5
+  # 可选参数
+  Version: '2.0'
+  # 可选参数
+  Author: 'Equal'
+  # 匹配字符串的方式. 可选值:
+  # 'Contain' : 只要包含就替换 (默认)
+  # 'Equal' : 要求设置与原字符串完全匹配
+  # 'Regex' : 使用Java正则表达式
+  # 不区分大小写.
+  Match-Mode: 'Contain'
+  # 筛选功能. 用于指定此文件处理字符串的条件.
+  Filter:
+    # 监听类型.
+    # 指定处理何处的字符串. 默认为全部. 可选值:
+    # 'ActionBar' : 处理动作栏信息文本
+    # 'Chat' : 处理聊天信息文本
+    # 'Chat-Preview' : 处理聊天预览(Chat Preview)中的文本
+    # 'Tab-Complete' : 处理 Tab Complete 中的文本
+    # 'Sign' : 处理告示牌文本
+    # 'Title' : 处理标题(title|subtitle)文本
+    # 'Entity' : 处理实体名文本
+    # 'Boss-Bar' : 处理Boss血量条文本
+    # 'ItemStack' : 处理物品(物品名|Lore|书署名|书内容)文本
+    # 'Window-Title' : 处理容器标题文本
+    # 'ScoreBoard' : 处理计分板(标题|实体名称)
+    # 'Console' : 处理控制台内显示的文本信息
+    # 'Kick-Disconnect' : 处理踢出玩家时客户端上的踢出消息
+    # 'Combat-Kill' : 处理玩家重生界面上的死亡信息
+    # 不区分大小写.
+    Listen-Types:
+      - ActionBar
+      - Chat
+      - Window-Title
+      - ItemStack
+      - Sign
+      - Title
+      - Entity
+      - ScoreBoard
+    # 针对计分板监听的特定过滤
+    ScoreBoard:
+      # 是否处理计分板标题. 默认为false.
+      Handle-Title: false
+      # 是否处理计分板中的实体名称. 默认为false.
+      # 注: 对于玩家, 实体名称为玩家名称; 对于非玩家则为UUID.
+      Handle-Entity-Name: false
+      # 是否处理计分板中的团队显示名称. 默认为false.
+      Handle-Team-Display-Name: false
+      # 是否处理计分板中的团队显示前缀. 默认为false.
+      Handle-Team-Prefix: false
+      # 是否处理计分板中的团队显示后缀. 默认为false.
+      Handle-Team-Suffix: false
+    # 针对物品监听的特定过滤
+    ItemStack:
+      # 仅 Json. 是否处理物品的完整 nbt. 默认为false.
+      Handle-Nbt-Compound: false
+      # 仅 Json. 是否处理物品的 Lore nbt 列表. 默认为false.
+      Handle-Nbt-Lore-List: false
+      # 是否处理物品的 Display nbt 组件中的各个元素. 默认为true.
+      Handle-Nbt-Display-Entries: true
+      # 过滤要处理的物品类型. 若设为 null 或空列表, 则会处理所有物品.
+      # 否则, PSR 只会处理此处列出的物品类型.
+      Handle-Item-Types: []
+        # - DIRT
+        # - STONE
+    User:
+      # 处理所需权限. 若设定, 用户必须拥有该权限
+      # 才能使该替换配置为其生效.
+      Permission: 'psr.MythicDungeons'
+      # 所需客户端语言. 只会为在下面列出的客户端语言处理.
+      # 设为空列表或者移除以跳过语言检查.
+      # 语言列表: https://minecraft.fandom.com/wiki/Language#Languages
+      Locales:
+        - en_us  # English (US)
+        - en_gb  # English (UK)
+        - zh_cn  # 简体中文（中国大陆）
+        - zh_hk  # 繁體中文（香港特別行政區）
+        - zh_tw  # 繁體中文（台灣）
+        - lzh    # 文言（華夏）
+    # PSR 将忽略长度超过此处定义值的字符串(但不是整个数据包)处理.
+    # 设为 -1 以禁用此功能.
+    Max-Length:
+      # 常规文本. (或者 Common)
+      Text: -1
+      # Json.
+      Json: -1
+      # Direct. 直观替换模式.
+      Direct: -1
+
+# 替换的字符串列表.
+# 替换模式优先度: Direct > Json > Common, 忽略文件优先度.
+# 提示: 您可以使用 /psr capture 指令以快速抓取准确的原字符串.
+Replaces:
+  # 常规文本替换模式.
+  # 常规替换模式中的每个条目根据 Json 中的不同格式分割.
+  # 使用常规模式的一大好处就是它不会破坏组件中的格式.
+  Common:
+    - Original: '§c§lBACK'
+      Replacement: "§c§l返回"
+
+######################################
+    - Original: '§8Select a Function'
+      Replacement: '§8选择一个功能'
+
+    - Original: '§6Dungeon Functions'
+      Replacement: '§6地牢功能'
+    - Original: '§eFunctions relating to general'
+      Replacement: '§e与一般地牢行为'
+    - Original: '§edungeon behaviour.'
+      Replacement: '§e相关的功能.'
+    - Original: '§8Checkpoint, start, signals, etc.'
+      Replacement: '§e检查点,启动,信号等.'
+
+    - Original: '§aPlayer Functions'
+      Replacement: '§a玩家功能'
+    - Original: '§eFunctions involving or effecting'
+      Replacement: '§e涉及或影响'
+    - Original: '§eplayers and party members.'
+      Replacement: '§e玩家和队员的功能.'
+    - Original: '§8Messages, keys, commands, etc.'
+      Replacement: '§8消息,钥匙,命令等.'
+      
+    - Original: '§dLocation Functions'
+      Replacement: '§e位置功能'
+    - Original: '§eFunctions involving or effecting'
+      Replacement: '§e涉及或影响'
+    - Original: '§etheir location.'
+      Replacement: '§e其地牢位置的功能.'
+    - Original: '§8Mob spawners, sounds, doors, etc.'
+      Replacement: '§8生物生成器,声音,门等.'
+
+    - Original: '§bMeta Functions'
+      Replacement: '§b元功能'
+    - Original: '§eFunctions involving or effecting'
+      Replacement: '§b涉及或影响'
+    - Original: '§eother functions and triggers.'
+      Replacement: '§b其他功能和触发器的功能'
+    - Original: '§8Multi-functions, randoms, skills, etc.'
+      Replacement: '§8多功能,随机,技能等.'
+
+    - Original: '§cRoom Functions'
+      Replacement: '§b房间功能'
+    - Original: '§eFunctions involving or effecting'
+      Replacement: '§b涉及或影响'
+    - Original: '§erooms in procedural dungeons.'
+      Replacement: '§b程序性地牢中房间的功能.'
+    - Original: '§8Connector doors, locking and unlocking, etc.'
+      Replacement: '§b连接门,锁定和解锁等.'
+    - Original: '§dOnly available in randomly generated dungeons.'
+      Replacement: '§d仅在随机生成的地牢中可用.'
+    - Original: '§cThese functions are only available in randomly generated dungeons!'
+      Replacement: '§c这些功能仅在随机生成的地牢中可用!'
+
+    - Original: '§8Select a Trigger'
+      Replacement: '§8选择触发器'
+    - Original: '§cNONE'
+      Replacement: '§c没有'
+    - Original: '§cCreate a function without a'
+      Replacement: '§c创建一个没有触发器'
+    - Original: '§ctrigger.'
+      Replacement: '§c的功能.'
+    - Original: '§cThis function requires a trigger!'
+      Replacement: '§c这个功能需要一个触发器!'
+    
+    - Original: '§6Dungeon Triggers'
+      Replacement: '§6地牢触发器'
+    - Original: '§eTriggers caused by dungeon-related'
+      Replacement: '§e由地牢相关事件引起'
+    - Original: '§eevents.'
+      Replacement: '§e的触发器'
+    - Original: '§8Dungeon start, signals, etc.'
+      Replacement: '§8地牢开始,信号等.'
+    
+    - Original: '§aPlayer Triggers'
+      Replacement: '§a玩家触发器'
+    - Original: '§eTriggers caused by a direct player'
+      Replacement: '§b由玩家或队伍操作引起'
+    - Original: '§eor party action.'
+      Replacement: '§e的触发器'
+    - Original: '§8Right-click, player death, etc.'
+      Replacement: '§8右键交互点击,玩家死亡等.'
+
+    - Original: '§bMeta Triggers'
+      Replacement: '§b元触发器'
+    - Original: '§eTriggers contain and interact with'
+      Replacement: '§e触发器包含并直接与其他'
+    - Original: '§eother triggers directly.'
+      Replacement: '§e触发器交互.'
+    - Original: '§8AND gates, OR gates, etc.'
+      Replacement: '§8与门,或门等.'
+
+    - Original: '§5General Triggers'
+      Replacement: '§5常规触发器'
+    - Original: '§eTriggers caused by anything outside'
+      Replacement: '§e由其他类别之外的任何事物'
+    - Original: '§ethe other categories.'
+      Replacement: '§e引起的触发器'
+    - Original: '§8Mob deaths, redstone signal, etc.'
+      Replacement: '§8生物死亡,红石信号等.'
+
+    - Original: '§cRoom Triggers'
+      Replacement: '§c房间触发器'
+    - Original: '§eTriggers caused by something changing'
+      Replacement: '§e由房间中的某些内容变化'
+    - Original: '§ein the room.'
+      Replacement: '§e引起的触发器.'
+    - Original: '§8Doors opening/closing, etc.'
+      Replacement: '§8门的打开/关闭等.'
+    - Original: '§dOnly available in randomly generated dungeons.'
+      Replacement: '§d仅在随机生成的地牢中可用.'
+    - Original: '§cThese triggers are only available in randomly generated dungeons!'
+      Replacement: '§c这些触发器仅在随机生成的地牢中可用!'
+
+    - Original: '§8Put your item here'
+      Replacement: '§8把你的物品放在这里'
+    - Original: '§aSaved item for this trigger!'
+      Replacement: '§a此触发器的已保存物品!'
+    - Original: '§aSaved item for this function!'
+      Replacement: '§a此功能的已保存物品!'
+    - Original: '§8Select a Condition'
+      Replacement: '§8选择条件'
+    - Original: '§8Edit a Condition'
+      Replacement: '§8编辑条件'
+    - Original: '§6Options:'
+      Replacement: '§6选项:'
+    - Original: '§8Remove a Condition'
+      Replacement: '§8删除条件'
+    - Original: '§cRemoved'
+      Replacement: '§c删除'
+    - Original: '§ccondition from trigger.'
+      Replacement: '§c触发器中的条件.'
+    # - Original: '§8Select a Trigger'
+    #   Replacement: '§8选择触发器'
+    - Original: '§8Edit a Trigger'
+      Replacement: '§8编辑触发器'
+    - Original: '§eTriggers:'
+      Replacement: '§e触发器:'
+    - Original: '§8Remove a Trigger'
+      Replacement: '§8删除触发器'
+    - Original: '§ctrigger.'
+      Replacement: '§c触发器'
+
+    - Original: '§8Edit a Function'
+      Replacement: '§8编辑功能'
+    - Original: '§eTrigger: §7'
+      Replacement: '§e触发器: §7'
+    - Original: '§eFunctions:'
+      Replacement: '§e功能:'
+    - Original: '§8Remove a Function'
+      Replacement: '§8删除功能'
+    - Original: '§cfunction.'
+      Replacement: '§c功能'
+    - Original: '§8Edit Function Triggers'
+      Replacement: '§8编辑功能触发器'
+    - Original: '§d§lTrigger: §7§l'
+      Replacement: '§d§l触发器: §7§l'
+
+
+    - Original: '§a§lEdit Function'
+      Replacement: '§a§l编辑功能'
+    - Original: '§e§lChange Trigger'
+      Replacement: '§e§l修改触发器'
+    - Original: '§3§lCopy Function'
+      Replacement: '§3§l复制功能'
+    - Original: '§eFunction copied!'
+      Replacement: '§e功能已复制!'
+    - Original: '§3§lCut Function'
+      Replacement: '§3§l剪切功能'
+    - Original: '§eFunction cut!'
+      Replacement: '§e功能已剪切!'
+    - Original: '§3§lPaste Function'
+      Replacement: '§3§l粘贴功能'
+    - Original: '§cThere is already a function here!'
+      Replacement: '§c这里已经有一个功能了!'
+    - Original: '§ePasted function to the clicked block!'
+      Replacement: '§e粘贴功能到点击的方块!'
+    # - Original: '§cThere is already a function here!'
+    #   Replacement: '§b元功能'
+    - Original: '§eCut-and-pasted function to the clicked block!'
+      Replacement: '§e将剪贴功能粘贴到点击的方块!'
+    - Original: '§c§lDelete Function'
+      Replacement: '§c§l删除功能'
+    - Original: '§cFunction deleted...'
+      Replacement: '§c功能已删除...'
+
+    - Original: '§a§lEdit Connector'
+      Replacement: '§a§l编辑连接器'
+    - Original: '§cLook at a block to select or create a connector!'
+      Replacement: '§c看着一个方块来选择或创建一个连接器!'
+    - Original: "§cThis block isn't inside the selected room!"
+      Replacement: '§c这个方块不在所选定的房间里!'
+    - Original: '§cRoom connectors must be added to the edge of a room!'
+      Replacement: '§c房间连接器必须添加到房间的边缘!'
+    - Original: '§aAdded room connector at the target location!'
+      Replacement: '§a在目标位置添加了房间连接器!'
+
+    - Original: '§e§lEdit Rules'
+      Replacement: '§e§l编辑规则'
+
+    - Original: '§d§lDefault Weight'
+      Replacement: '§d§l默认权重'
+    - Original: '§eHow likely this room will'
+      Replacement: '§e这个房间相对于其他房间会'
+    - Original: '§egenerate relative to others.'
+      Replacement: '§e生成的可能性有多大.'
+    - Original: '§eHow is this room weighted? Higher values makes the room more likely to generate.'
+      Replacement: '§e这个房间的权重是多少?数值越高,房间越有可能生成.'
+    - Original: '§eCurrent weight: §6'
+      Replacement: '§e当前权重: §6'
+    - Original: "§aSet room default weight to '§6"
+      Replacement: "§a将房间默认权重设置为 '§6"
+    - Original: '§bNOTE: You can set up connectors to have a custom weight for each room.'
+      Replacement: '§b注意: 您可以设置连接器,为每个房间设置自定义权重.'
+
+    - Original: '§d§lSet Spawn'
+      Replacement: '§d§l设置出生点'
+    - Original: '§eMakes this room a valid starting'
+      Replacement: '§e使该房间成为有效的起始'
+    - Original: '§eroom and places the spawn point'
+      Replacement: '§e房间并将出生点放置在'
+    - Original: '§eat the target location.'
+      Replacement: '§e目标位置.'
+    - Original: "§cLook at a block to set or delete this room's spawn point!"
+      Replacement: '§c看着一个方块来设置或删除该房间的重生点!'
+    - Original: "§eRemoved this room's spawn point."
+      Replacement: '§e移除了这个房间的重生点.'
+    - Original: "§aSet this room's spawn to the block you're looking at. Use left-click to set facing direction."
+      Replacement: '§a将这个房间的出生点设置为您正在查看的方块.使用左键单击设置面向方向.'
+    - Original: '§bThis room has also been added to the list of possible starting rooms.'
+      Replacement: '§b这个房间也被添加到了可能的起始房间列表中.'
+    - Original: "§aSet spawn direction to '§6"
+      Replacement: "将出生点方向设置为“§6”"
+    - Original: "§a' degrees. (Where you're looking.)"
+      Replacement: "§a'度. (你看着的方向.)"
+    - Original: '§3§lExpand § Shrink'
+      Replacement: '§3§l扩大§缩小'
+    - Original: '§eExpands or shrinks the room by one'
+      Replacement: '§e将房间向您所面对的'
+    - Original: "§ein the direction you're facing."
+      Replacement: '§e方向扩大或缩小一格.'
+    - Original: '§8Left-click expands.'
+      Replacement: '§8左键点击扩大.'
+    - Original: '§8Right-click shrinks.'
+      Replacement: '§8右键点击缩小'
+    - Original: '§aShrank room 1 block '
+      Replacement: '§a房间缩小1个方块'
+    - Original: '§aExpanded room 1 block '
+      Replacement: '§a房间扩大1个方块'
+    - Original: '§d§lSelect Area'
+      Replacement: '§d§l选择区域'
+    - Original: '§8Right-click selects corner 1'
+      Replacement: '§8右键点击选择角1'
+    - Original: '§8Left-click selects corner 2'
+      Replacement: '§8左键点击选择角2'
+    - Original: '§c§lDelete Room'
+      Replacement: '§c§l删除房间'
+    - Original: '§eAre you sure you want to delete this room? Click again to confirm.'
+      Replacement: '§e你确定要删除这个房间吗?再次点击进行确认.'
+    - Original: '§cDeleted the selected room.'
+      Replacement: '§c删除了所选的房间.'
+    - Original: '§e§lEdit Allowed Rooms'
+      Replacement: '§e§l编辑允许的房间'
+    - Original: '§eOpens a menu for customizing'
+      Replacement: '§e打开一个编辑菜单,用于'
+    - Original: '§ea whitelist of what rooms can'
+      Replacement: '§e自定义哪些房间可以连接'
+    - Original: '§ebe connected to this one.'
+      Replacement: '§e到此房间的白名单'
+    - Original: '§d§lGeneration Limit'
+      Replacement: '§d§l生成限制'
+    - Original: '§eHow many times this room should'
+      Replacement: '§e这个房间应该在地牢'
+    - Original: '§egenerate in the dungeon.'
+      Replacement: '§e中生成多少次.'
+    - Original: '§dSupports ranges like 0-3, or 2+!'
+      Replacement: '§d支持 0-3 或 2+ 等范围!'
+    - Original: '§eHow many times should this room generate? (Supports ranges like 0-3 or 2+)'
+      Replacement: '§e这个房间应该生成多少次?(支持 0-3 或 2+ 等范围)'
+    - Original: '§eCurrent value: §6'
+      Replacement: '§e当前值: §6'
+    - Original: "§aSet generation limit to '§6"
+      Replacement: "§a将生成限制设置为 '§6"
+    - Original: "§a' copies of this room."
+      Replacement: "§a' 这个房间的复制品."
+    - Original: '§d§lGeneration Depth'
+      Replacement: '§d§l生成深度?'
+    - Original: '§eHow many rooms deep into the dungeon'
+      Replacement: '§e这个房间应该在地牢'
+    - Original: '§ethis room should generate.'
+      Replacement: '§e深处生成多少个房间.'
+    # - Original: '§dSupports ranges like 0-3, or 2+!'
+    #   Replacement: '§b元功能'
+    - Original: '§eHow many rooms deep into the dungeon should this room generate? (Supports ranges like 0-3 or 2+)'
+      Replacement: '§e这个房间应该在地牢深处生成多少个房间?(支持 0-3 或 2+ 等范围)'
+    - Original: "§aSet generation depth for this room to '§6"
+      Replacement: "§a将这个房间的生成深度设置为 '§6"
+    - Original: '§e§lPrevious Page'
+      Replacement: '§e§l上一页'
+    - Original: '§e§lNext Page'
+      Replacement: '§e§l下一页'
+    - Original: '§8Choose who to revive'
+      Replacement: '§8选择要复活的对象'
+    - Original: '§8Party Listings'
+      Replacement: '§8队伍列表'
+    - Original: '§cPassword Required!'
+      Replacement: '§c需要密码!'
+    - Original: '§7Empty Slot'
+      Replacement: '§7空槽'
+    - Original: '§8Edit Room Whitelist'
+      Replacement: '§8编辑房间白名单'
+    - Original: '§aAdd Room'
+      Replacement: '§a添加房间'
+    - Original: '§eEdit Room'
+      Replacement: '§e编辑房间'
+    - Original: '§cNO FUNCTIONALITY HERE!'
+      Replacement: '§c这里没有功能!'
+    - Original: '§cThis button may be replaced with an explainer tooltip.'
+      Replacement: '§c该按钮可能会被替换为解释工具提示.'
+    - Original: '§cNO FUNCTIONALITY HERE! This button may be replaced with an explainer tooltip.'
+      Replacement: '§c这里没有功能!此按钮可以替换为解释器工具提示.'
+    - Original: '§cRemove Room'
+      Replacement: '§c删除房间'
+    - Original: '§eClick to §aACTIVATE §eremoval mode.'
+      Replacement: '§e点击§a激活§e删除模式.'
+    - Original: '§eClick to §cDEACTIVATE §eremoval mode.'
+      Replacement: '§e点击§a停用§e删除模式.'
+    # - Original: '§eClick to §aACTIVATE §eremoval mode.'
+    #   Replacement: '§b元功能'
+    - Original: '§8Edit Connector Whitelist'
+      Replacement: '§8编辑连接器白名单'
+    - Original: '§eWeight of §6'
+      Replacement: '§e权重为§6'
+    - Original: '§7Determines the chance of this room'
+      Replacement: '§7确定该房间与其他房间'
+    - Original: '§7compared to others. A room with a'
+      Replacement: '§7相比的机会权重为 4 的'
+    - Original: '§7weight of 4 is twice as common as a'
+      Replacement: '§7房间的出现频率是权'
+    - Original: '§7room with a weight of 2.'
+      Replacement: '§7重为 2 的房间的两倍.'
+    - Original: '§8Left and Shift-Left click increases.'
+      Replacement: '§8左键和 Shift-Left 键点击增加.'
+    - Original: '§8Right and Shift-Right click decreases.'
+      Replacement: '§8右键和 Shift-Left 键点击减少.'
+    - Original: '§8Click with an item to set icon.'
+      Replacement: '§8点击一个物品设置图标.'
+###############
+    - Original: '§d§lSet Chance'
+      Replacement: '§d§l设置机会'
+    - Original: '§7Current chance: §6'
+      Replacement: '§7当前机会: §6'
+    - Original: '§eWhat is the percent chance of this trigger running? (0.0-1.0)'
+      Replacement: '§e这个触发器运行的百分比机会是多少？ (0.0-1.0)'
+    - Original: "§aSet success chance to '§6"
+      Replacement: "§a将成功机会设置为 '§6"
+
+    - Original: '§dTrigger Chance'
+      Replacement: '§d触发机会'
+    - Original: '§eRandomizes whether or not the'
+      Replacement: '§e随机决定触发器'
+    - Original: '§etrigger should run.'
+      Replacement: '§e是否应该运行。'
+
+    - Original: '§d§lSet Difficulty'
+      Replacement: '§d§l设置难度'
+    - Original: '§7Current difficulty: §6'
+      Replacement: '§7当前难度: §6'
+    - Original: '§eWhat difficulty level must the dungeon be?'
+      Replacement: '§e地牢必须是什么难度级别？'
+    - Original: '§eCurrent difficulty needed: §6'
+      Replacement: '§e当前需要的难度: §6'
+    - Original: '§aSet required difficulty to: §6'
+      Replacement: '§a将所需难度设置为: §6'
+
+    - Original: '§dDungeon Difficulty'
+      Replacement: '§d地牢难度'
+    - Original: '§eChecks if the dungeon is set to'
+      Replacement: '§e检查地牢是否设置为'
+    - Original: '§ea specific difficulty level.'
+      Replacement: '§e某个特定难度级别。'
+    - Original: "§cNOTE: Unrelated to Minecraft's"
+      Replacement: '§c注意：与Minecraft的'
+    - Original: '§c/difficulty command!'
+      Replacement: '§c/difficulty 命令无关！'
+
+    - Original: '§d§lSet Comparison'
+      Replacement: '§d§l设置比较'
+    - Original: '§7Current comparison: §6'
+      Replacement: '§7当前比较: §6'
+    - Original: '§eWhat status must the dungeon have?'
+      Replacement: '§e地牢必须具备什么状态？'
+    - Original: '§eExamples:'
+      Replacement: '§e示例：'
+    - Original: '§aSet required status to: §6'
+      Replacement: '§a将所需状态设置为: §6'
+
+    - Original: '§dVariable Comparison'
+      Replacement: '§d变量比较'
+    - Original: '§eChecks if a variable matches'
+      Replacement: '§e检查变量是否匹配'
+    - Original: '§ea given comparison value.'
+      Replacement: '§e给定的比较值。'
+
+    - Original: '§d§lSet Mob Type'
+      Replacement: '§d§l设置生物类型'
+    - Original: '§eWhat kind of mob are we checking for?'
+      Replacement: '§e我们要检查哪种生物？'
+    - Original: '§eWhat kind of mob or MythicMob are we checking for?'
+      Replacement: '§e我们要检查哪种生物或 MythicMob？'
+    - Original: "§aSet mob to '§6"
+      Replacement: "§a将生物设置为 '§6"
+
+    - Original: '§d§lDistance'
+      Replacement: '§d§l范围'
+    - Original: '§eWhat is the range of the trigger in blocks?'
+      Replacement: '§e触发器的范围是多少方块？'
+    - Original: "§aSet condition radius to '"
+      Replacement: "§a将条件半径设置为 '"
+
+    - Original: '§d§lMobs Required'
+      Replacement: '§d§l所需生物'
+    - Original: '§d§lMinimum Mobs Required'
+      Replacement: '§d§l最低所需生物'
+    - Original: '§eHow many are required?'
+      Replacement: '§e需要多少个？'
+    - Original: "§aSet required mobs to '"
+      Replacement: '§a将所需生物设置为 '
+
+    - Original: '§d§lRequired Mobs Exact'
+      Replacement: '§d§l所需生物精确'
+    - Original: "§aSwitched to 'Required mobs is exact'"
+      Replacement: '§a切换到“所需生物是精确的”'
+    - Original: "§aSwitched to 'Required mobs is a minimum'"
+      Replacement: '§a切换到“所需生物是最低的”'
+
+    - Original: '§dMobs Within'
+      Replacement: '§d范围内的生物'
+    - Original: '§eChecks for a number of specified'
+      Replacement: '§e检查指定数量的'
+    - Original: '§emobs within a configured radius'
+      Replacement: '§e在配置的半径内的生物'
+    - Original: '§efrom this function.'
+      Replacement: '§e来自此功能。'
+    - Original: '§dSupports MythicMobs!'
+      Replacement: '§d支持 MythicMobs！'
+
+    - Original: '§d§lMythic Condition Data'
+      Replacement: '§d§l神话条件数据'
+    - Original: '§eEnter the mythic condition and its values.'
+      Replacement: '§e输入神话条件及其值。'
+    - Original: '§eCurrent data: §6'
+      Replacement: '§e当前数据: §6'
+    - Original: "§aSet mythic condition data to '§6"
+      Replacement: "§a将神话条件数据设置为 '§6"
+
+    - Original: '§d§lCondition Targets Player'
+      Replacement: '§d§l条件目标玩家'
+    - Original: "§bEnabled §acondition compares to the triggering player.'"
+      Replacement: '§b启用的§a条件与触发玩家进行比较。'
+    - Original: "§bNote: This option only works on 'player' triggers!"
+      Replacement: '§b注意：此选项仅适用于“玩家”触发器！'
+    - Original: '§cDisabled §acondition compares to the triggering player.'
+      Replacement: '§c禁用的§a条件与触发玩家进行比较。'
+    
+    - Original: '§bMythic Condition'
+      Replacement: '§b神话条件'
+    - Original: '§eChecks if a configured Mythic'
+      Replacement: '§e检查配置的神话'
+    - Original: '§eMobs condition is met.'
+      Replacement: '§e生物条件是否满足。'
+
+    - Original: '§d§lPlayers Required'
+      Replacement: '§d§l所需玩家'
+    - Original: '§d§lMinimum Players Required'
+      Replacement: '§d§l最低所需玩家'
+    - Original: '§eHow many are required?'
+      Replacement: '§e需要多少个？'
+    - Original: "§aSet required players to '§6"
+      Replacement: "§a将所需玩家设置为 '§6"
+
+    - Original: '§d§lRequired Players Exact'
+      Replacement: '§d§l所需玩家精确'
+    - Original: "§aSwitched to '§6Required player is exact§a'"
+      Replacement: "§a切换到 '§6所需玩家是精确的§a'"
+    - Original: "§aSwitched to '§6Required players is a minimum§a'"
+      Replacement: "§a切换到 '§6所需玩家是最低的§a'"
+
+    - Original: '§d§lBased On Starting Players'
+      Replacement: '§d§l基于起始玩家'
+    - Original: "§aSwitched to '§6Required players check based on the start of the dungeon§a'"
+      Replacement: "§a切换到 '§6所需玩家检查基于地牢开始时的情况§a'"
+    - Original: "§aSwitched to '§6Required players check based on the current number of players§a'"
+      Replacement: "§a切换到 '§6所需玩家检查基于当前玩家数量§a'"
+
+    - Original: '§6Player Count'
+      Replacement: '§6玩家数量'
+    - Original: '§eChecks if the specified number'
+      Replacement: '§e检查指定数量是否'
+    - Original: '§eof players are in the instance,'
+      Replacement: '§e的玩家在实例中，'
+    - Original: '§ewith support for a minimum.'
+      Replacement: '§e支持最低数量。'
+
+    - Original: '§d§lDistance'
+      Replacement: '§d§l范围'
+    - Original: '§eWhat is the range of the trigger in blocks?'
+      Replacement: '§e触发器的范围是多少方块？'
+    - Original: "§aSet condition radius to '§6"
+      Replacement: "§a将条件半径设置为 '§6"
+
+    - Original: '§d§lPlayers Required'
+      Replacement: '§d§l所需玩家'
+    - Original: '§d§lMinimum Players Required'
+      Replacement: '§d§l最低所需玩家'
+    - Original: '§eHow many are required?'
+      Replacement: '§e需要多少个？'
+    - Original: "§aSet required players to '§6"
+      Replacement: "§a将所需玩家设置为 '§6"
+
+    # - Original: '§d§lRequired Players Exact'
+    #   Replacement: '§d§l所需玩家精确'
+    - Original: "§aSwitched to '§6Required players is exact§a'"
+      Replacement: "§a切换到 '§6所需玩家是精确的§a'"
+    - Original: "§aSwitched to '§6Required players is a minimum§a'"
+      Replacement: "§a切换到 '§6所需玩家是最低的§a'"
+
+    - Original: '§dPlayers Within'
+      Replacement: '§d范围内的玩家'
+    - Original: '§eChecks for a number of players'
+      Replacement: '§e检查范围内的玩家数量'
+    - Original: '§ewithin a configured radius from'
+      Replacement: '§e在配置的半径内'
+    - Original: '§ethis function.'
+      Replacement: '§e来自此功能。'
+
+    - Original: '§d§lSet Status'
+      Replacement: '§d§l设置状态'
+    - Original: '§7Current status: §6'
+      Replacement: '§7当前状态: §6'
+    - Original: '§eWhat status must the dungeon have?'
+      Replacement: '§e地牢必须具有什么状态？'
+    - Original: '§eCurrent status needed: §6'
+      Replacement: '§e当前所需状态: §6'
+    - Original: '§aSet required status to: §6'
+      Replacement: '§a将所需状态设置为: §6'
+    
+    - Original: '§dDungeon Status'
+      Replacement: '§d地牢状态'
+    - Original: '§eChecks if the dungeon is set to'
+      Replacement: '§e检查地牢是否设置为'
+    - Original: '§ea specific status.'
+      Replacement: '§e特定状态。'
+    - Original: '§7Similar to Mythic Mobs stances.'
+      Replacement: '§7类似于神话生物的姿态。'
+
+    - Original: '§d§lMinimum Time'
+      Replacement: '§d§l最小时间'
+    - Original: '§d§lMaximum Time'
+      Replacement: '§d§l最大时间'
+    - Original: "§eWhat's the minimum dungeon time for this condition (in seconds)?"
+      Replacement: '§e此条件下地牢的最小时间是多少（秒）？'
+    - Original: "§eWhat's the max dungeon time for this condition (in seconds)?"
+      Replacement: '§e此条件下地牢的最大时间是多少（秒）？'
+    - Original: '§bCurrent time:'
+      Replacement: '§b当前时间:'
+    - Original: "§aSet required dungeon run time to '§bAT LEAST §6"
+      Replacement: "§a将所需地牢运行时间设置为 '§b至少 §6"
+    - Original: "§aSet required dungeon run time to '§bLESS THAN §6"
+      Replacement: "§a将所需地牢运行时间设置为 '§b少于 §6"
+
+    - Original: '§6Time Elapsed'
+      Replacement: '§6已用时间'
+    - Original: '§eChecks if the dungeon has been'
+      Replacement: '§e检查地牢是否已'
+    - Original: '§eactive for at least a,'
+      Replacement: '§e至少保持活动，'
+    - Original: '§ea specified duration.'
+      Replacement: '§e指定的时间。'
+
+    # - Original: '§a§lSet Function'
+    #   Replacement: '§8点击一个物品设置图标.'
+    - Original: '§e§lEdit Function'
+      Replacement: '§e§l编辑功能'
+    - Original: "§cYou haven't set a function to run!"
+      Replacement: '§c您尚未设置要运行的功能！'
+    - Original: '§d§lStart Delay'
+      Replacement: '§d§l启动延迟'
+    - Original: '§eHow long should we wait before running the function in ticks?'
+      Replacement: '§e在运行功能之前，我们应该等待多少 tick？'
+    - Original: "§aSet delay to '§6"
+      Replacement: "§a将延迟设置为 '§6"
+
+    - Original: '§bDelayed Function'
+      Replacement: '§b延迟功能'
+    - Original: '§eRuns a configured function'
+      Replacement: '§e运行已配置的功能'
+    - Original: '§eafter a delayed interval.'
+      Replacement: '§e在延迟间隔后。'
+
+    - Original: '§a§lAdd Function'
+      Replacement: '§a§l添加功能'
+    - Original: "§cYou can't add any more functions!"
+      Replacement: '§c您不能添加更多功能！'
+    
+    # - Original: '§e§lEdit Function'
+    #   Replacement: '§8点击一个物品设置图标.'
+    - Original: '§c§lRemove Function'
+      Replacement: '§c§l移除功能'
+    - Original: '§e§lChange Triggers'
+      Replacement: '§e§l更改触发器'
+
+    - Original: '§bMulti-Function'
+      Replacement: '§b多功能'
+    - Original: '§eRuns a set of multiple functions'
+      Replacement: '§e在触发时运行'
+    - Original: '§ewhen triggered.'
+      Replacement: '§e一组多个功能。'
+
+    - Original: '§bFunction Randomizer'
+      Replacement: '§b功能随机化器'
+    - Original: '§eRuns a random function from a'
+      Replacement: '§e从一个随机功能'
+    - Original: '§econfigured list.'
+      Replacement: '§e配置的列表中运行。'
+
+    - Original: '§a§lSet Function'
+      Replacement: '§a§l设置功能'
+    # - Original: '§e§lEdit Function'
+    #   Replacement: '§8点击一个物品设置图标.'
+    - Original: "§cYou haven't set a function to repeat!"
+      Replacement: '§c您尚未设置要重复的功能！'
+
+    - Original: '§d§lStart Delay'
+      Replacement: '§d§l启动延迟'
+    - Original: '§eHow long should we wait before starting the repeater in ticks?'
+      Replacement: '§e在开始重复器之前，我们应该等待多少 tick？'
+    - Original: "§aSet delay to '§6"
+      Replacement: "§a将延迟设置为 '§6"
+
+    - Original: '§d§lRepeater Interval'
+      Replacement: '§d§l重复器间隔'
+    - Original: '§eHow frequently in ticks should the function run?'
+      Replacement: '§e功能应以ticks频率运行多少次？'
+    - Original: "§aSet interval to '§6"
+      Replacement: "§a设置间隔为'§6"
+    - Original: "§a' ticks between each run."
+      Replacement: "§a' ticks之间每次运行."
+
+    - Original: '§d§lMax Repeats'
+      Replacement: '§d§l最大重复次数'
+    - Original: '§eHow many times should the function run?'
+      Replacement: '§e功能应运行多少次？'
+    - Original: "§aSet max repeats to '§6"
+      Replacement: "§a设置最大重复次数为'§6"
+    - Original: '§bFunction Repeater'
+      Replacement: '§b功能重复器'
+    - Original: '§eRuns a configured function'
+      Replacement: '§e运行一个配置的功能'
+    - Original: '§erepeatedly on an interval.'
+      Replacement: '§e在间隔上重复运行。'
+
+    - Original: '§d§lLoop Sequence'
+      Replacement: '§d§l循环序列'
+    - Original: "§aSwitched to '§6sequence loops when finished§a'"
+      Replacement: "§a切换为'§6完成时循环序列§a'"
+    - Original: "§aSwitched to '§6sequence does §cNOT §6loop when finished§a'"
+      Replacement: "§a切换为'§6完成时不循环序列§c不§6§a'"
+
+    - Original: '§bFunction Sequencer'
+      Replacement: '§b功能序列器'
+    - Original: '§eRuns a list of functions'
+      Replacement: '§e运行一个功能列表'
+    - Original: '§eone at a time in order'
+      Replacement: '§e一个一个按顺序运行'
+    - Original: "§eeach time it's triggered."
+      Replacement: '§e每次触发时。'
+
+    - Original: '§d§lSet Loot Table'
+      Replacement: '§d§l设置战利品表'
+    - Original: "§eWhat's the unique name of the loot table?"
+      Replacement: '§e战利品表的唯一名称是什么？'
+    - Original: '§eCurrent loot table: §6'
+      Replacement: '§e当前战利品表: §6'
+    - Original: '§cWARNING: Loot tables cannot have spaces in their names!'
+      Replacement: '§c警告: 战利品表的名称中不能包含空格！'
+    - Original: '§cAll spaces will be replaced with underscores.'
+      Replacement: '§c所有空格将替换为下划线。'
+    - Original: '§cWARNING: No loot table by this name exists!'
+      Replacement: '§c警告: 该名称不存在战利品表！'
+    - Original: '§b§lClick here §bto create it!'
+      Replacement: '§b§l点击这里 §b创建它！'
+    - Original: 'dungeon loot create '
+      Replacement: '地牢战利品创建 '
+    - Original: "§aSet loot table to '§6"
+      Replacement: "§a设置战利品表为'§6"
+
+    - Original: '§d§lExp Reward'
+      Replacement: '§d§l经验奖励'
+    - Original: '§eHow much EXP should this reward give?'
+      Replacement: '§e这个奖励应该给多少经验？'
+    - Original: "§aSet exp reward to '§6"
+      Replacement: "§a设置经验奖励为'§6"
+
+    - Original: '§d§lExp Levels Reward'
+      Replacement: '§d§l经验等级奖励'
+    - Original: '§eHow many levels should this reward give?'
+      Replacement: '§e这个奖励应该给多少等级？'
+    - Original: "§aSet exp reward to '§6"
+      Replacement: "§a设置经验奖励为'§6"
+
+    - Original: '§a§lCooldown Settings'
+      Replacement: '§a§l冷却设置'
+    - Original: '§eLoot Table Rewards'
+      Replacement: '§e战利品表奖励'
+    - Original: '§eGenerates rewards from a loot'
+      Replacement: '§e从生成战利品奖励'
+    - Original: '§etable when opened.'
+      Replacement: '§e在打开时。'
+    - Original: '§7Use /dungeon loot [create/edit]'
+      Replacement: '§7使用 /dungeon loot [create/edit]'
+    - Original: '§7to create or edit a loot table.'
+      Replacement: '§7创建或编辑战利品表。'
+    - Original: '§dSupports Mythic Mobs drop tables!'
+      Replacement: '§d支持神话生物战利品表！'
+
+    - Original: '§d§lMin Rewards'
+      Replacement: '§d§l最小奖励'
+    - Original: "§eWhat's the minimum number of rewards?"
+      Replacement: '§e最少需要多少奖励？'
+    - Original: "§aSet minimum reward count to '§6"
+      Replacement: "§a设置最小奖励数量为'§6"
+    - Original: '§d§lMax Rewards'
+      Replacement: '§d§l最大奖励'
+    - Original: "§eWhat's the maximum number of rewards?"
+      Replacement: '§e最多需要多少奖励？'
+    - Original: "§aSet maximum reward count to '§6"
+      Replacement: "§a设置最大奖励数量为'§6"
+
+    - Original: '§eRandom Rewards'
+      Replacement: '§e随机奖励'
+    - Original: '§eCreates a random rewards menu'
+      Replacement: '§e在此位置创建一个'
+    - Original: '§eat this location.'
+      Replacement: '§e随机奖励菜单。'
+
+    - Original: '§d§lToggle Cooldown Enabled'
+      Replacement: '§d§l切换冷却启用'
+    - Original: '§aDisabled cooldown.'
+      Replacement: '§a禁用冷却。'
+    - Original: '§aEnabled cooldown!'
+      Replacement: '§a已启用冷却！'
+
+    - Original: '§e§lToggle Custom Cooldown'
+      Replacement: '§e§l切换自定义冷却'
+    - Original: '§aEnabled custom reward cooldown!'
+      Replacement: '§a已启用自定义奖励冷却！'
+    - Original: '§aDisabled custom reward cooldown.'
+      Replacement: '§a禁用自定义奖励冷却。'
+
+    - Original: '§d§lType: '
+      Replacement: '§d§l类型: '
+    - Original: "§aSwitched cooldown type to '§6"
+      Replacement: "§a切换冷却类型为'§6"
+
+    - Original: '§d§lCooldown in Minutes'
+      Replacement: '§d§l冷却时间（分钟）'
+    - Original: '§d§lHour of Day'
+      Replacement: '§d§l一天的小时'
+    - Original: '§eHow long in minutes should the cooldown be?'
+      Replacement: '§e冷却时间应为多少分钟？'
+    - Original: '§eWhat hour of the day should the reward reset?'
+      Replacement: '§e奖励应在一天中的哪个小时重置？'
+    - Original: "§aSet cooldown time to '§6"
+      Replacement: "§a设置冷却时间为'§6"
+
+    - Original: '§d§lDay of Week'
+      Replacement: '§d§l星期几'
+    - Original: '§d§lDay of Month'
+      Replacement: '§d§l本月几号'
+    - Original: '§eWhat day of the week should the reward reset?'
+      Replacement: '§e奖励应在星期几重置？'
+    - Original: '§eWhat day of the month should the reward reset?'
+      Replacement: '§e奖励应在本月的哪一天重置？'
+    - Original: "§aSet reset day to '§6"
+      Replacement: "§a设置重置日期为'§6"
+
+    - Original: '§d§lEdit Rewards'
+      Replacement: '§d§l编辑奖励'
+    - Original: '§d§lExp Reward'
+      Replacement: '§d§l经验奖励'
+    - Original: '§eHow much EXP should this reward give?'
+      Replacement: '§e这个奖励应该给多少经验？'
+    - Original: "§aSet exp reward to '§6"
+      Replacement: "§a设置经验奖励为'§6"
+
+    - Original: '§d§lExp Levels Reward'
+      Replacement: '§d§l经验等级奖励'
+    - Original: '§eHow many levels should this reward give?'
+      Replacement: '§e这个奖励应该给多少等级？'
+    - Original: "§aSet exp reward to '§6"
+      Replacement: "§a设置经验奖励为'§6"
+
+    # - Original: '§a§lCooldown Settings'
+    #   Replacement: '§a§l冷却设置'
+    - Original: '§eRewards'
+      Replacement: '§e奖励'
+    - Original: '§eCreates a rewards menu at this'
+      Replacement: '§e在此位置创建奖励菜单。'
+    # - Original: '§elocation.'
+    #   Replacement: '§e奖励菜单。'
+
+    - Original: '§aSaved rewards!'
+      Replacement: '§a已保存奖励！'
+    - Original: '§d§lDoor Name'
+      Replacement: '§d§l门的名称'
+    - Original: '§eWhat is the name of the door you want to open/close?'
+      Replacement: '§e你想打开/关闭的门的名称是什么？'
+    - Original: "§eEnter 'all' for all doors with rooms on the other side of them."
+      Replacement: '§e输入“all”以选择所有另一侧有房间的门。'
+    - Original: '§eCurrent door is: §6'
+      Replacement: '§e当前门是：§6'
+    - Original: "§aSet the target door to '§6"
+      Replacement: "§a将目标门设置为 '§6"
+
+    - Original: "§cHeads up! There's no door by that name in this room. Are you sure you entered it correctly?"
+      Replacement: '§c注意！这个房间里没有这个名称的门。你确定输入正确吗？'
+    - Original: '§d§lAction: '
+      Replacement: '§d§l动作：'
+    - Original: "§aSwitched door action to '§6"
+      Replacement: "§a已将门的动作切换为 '§6"
+    - Original: '§d§lKeep Entrance Open'
+      Replacement: '§d§l保持入口开放'
+    - Original: '§7Whether to keep the door the player'
+      Replacement: '§7是否保持玩家'
+    - Original: '§7entered from open.'
+      Replacement: '§7进入的门保持打开。'
+    - Original: "§aSwitched to '§6Keep entrance open§a'"
+      Replacement: "§a已切换到 '§6保持入口开放§a"
+    - Original: "§aSwitched to '§cDON'T §6keep entrance open§a'"
+      Replacement: "§a已切换到 '§c不要 §6保持入口开放§a"
+
+    - Original: '§dRoom Door Controller'
+      Replacement: '§d房间门控制器'
+    - Original: '§eOpens or closes a specified room'
+      Replacement: '§e打开或关闭指定的房间'
+    - Original: '§edoors. Room doors can be created'
+      Replacement: '§e门。房间门可以在'
+    - Original: '§ewhen editing a connector.'
+      Replacement: '§e编辑连接器时创建。'
+
+    - Original: '§d§lEdit Name'
+      Replacement: '§d§l编辑名称'
+    - Original: '§eWhat is the variable called?'
+      Replacement: '§e变量叫什么？'
+    - Original: '§eCurrent name: §6'
+      Replacement: '§e当前名称：§6'
+    - Original: "§aSet variable name to '§6"
+      Replacement: "§a将变量名称设置为 '§6"
+    - Original: '§d§lEdit Mode: '
+      Replacement: '§d§l编辑模式：'
+    - Original: "§aSwitched mode to '§6"
+      Replacement: "§a已切换模式为 '§6"
+
+    - Original: '§d§lValue'
+      Replacement: '§d§l值'
+    - Original: '§eWhat should the variable be set to?'
+      Replacement: '§e变量应该设置为多少？'
+    - Original: '§eHow much should we add to the variable?'
+      Replacement: '§e我们应该给变量增加多少？'
+    - Original: '§eHow much should we subtract from the variable?'
+      Replacement: '§e我们应该从变量中减去多少？'
+    - Original: '§eCurrent value: §6'
+      Replacement: '§e当前值：§6'
+    - Original: "§aSet value to '§6"
+      Replacement: "§a将值设置为 '§6"
+
+    - Original: '§aDungeon Variable'
+      Replacement: '§a地牢变量'
+    - Original: '§eStores and manages instance-wide'
+      Replacement: '§e存储和管理实例范围内的'
+    - Original: '§evariables. Used in combination with'
+      Replacement: '§e变量。与'
+    - Original: '§ethe dungeon variable trigger condition.'
+      Replacement: '§e地牢变量触发条件一起使用。'
+
+    - Original: '§d§lToggle Place'
+      Replacement: '§8点击一个物品设置图标.'
+    - Original: "§aSwitched to '§6Placing Blocks Allowed§a'"
+      Replacement: '§8点击一个物品设置图标.'
+    - Original: "§aSwitched to '§6Deny Placing Blocks§a'"
+      Replacement: '§8点击一个物品设置图标.'
+
+    - Original: '§d§lToggle Place'
+      Replacement: '§d§l切换放置'
+    - Original: "§aSwitched to '§6Placing Blocks Allowed§a'"
+      Replacement: "§a已切换为 '§6允许放置方块§a"
+    - Original: "§aSwitched to '§6Deny Placing Blocks§a'"
+      Replacement: "§a已切换为 '§6禁止放置方块§a"
+
+    - Original: '§d§lToggle Break'
+      Replacement: '§d§l切换破坏'
+    - Original: "§aSwitched to '§6Breaking Blocks Allowed§a'"
+      Replacement: "§a已切换为 '§6允许破坏方块§a"
+    - Original: "§aSwitched to '§6Deny Breaking Blocks§a'"
+      Replacement: "§a已切换为 '§6禁止破坏方块§a"
+
+    - Original: '§dAllow Block Place/Break'
+      Replacement: '§d允许放置/破坏方块'
+    - Original: '§eAllows whitelisting or'
+      Replacement: '§e允许在此位置白名单或'
+    - Original: '§eblacklisting the placing or'
+      Replacement: '§e黑名单放置或'
+    - Original: '§ebreaking of a block at this'
+      Replacement: '§e破坏方块.'
+    # - Original: '§elocation.'
+    #   Replacement: '§e位置。'
+    
+    - Original: '§d§lBlock Type'
+      Replacement: '§d§l方块类型'
+    - Original: '§eWhat kind of block should be placed here?'
+      Replacement: '§e这里应该放置什么类型的方块？'
+    - Original: "§eWhat kind of block will be removed? ('ANY' for any block.)"
+      Replacement: '§e将移除什么类型的方块？（输入“ANY”以代表任何方块。）'
+    - Original: '§eCurrent block is: §6'
+      Replacement: '§e当前方块是：§6'
+    - Original: 'Block Remover'
+      Replacement: '方块移除器'
+    - Original: "§aSet block to '§6"
+      Replacement: "§a将方块设置为 '§6"
+    - Original: '§cYou must specify a valid block material!'
+      Replacement: '§c你必须指定一个有效的方块材料！'
+    - Original: '§bClick here to view a list of valid materials.'
+      Replacement: '§b点击这里查看有效材料列表。'
+
+    - Original: '§d§lToggle Remover'
+      Replacement: '§d§l切换移除器'
+    - Original: "§aSet to '§6function §cremoves §6the block§a'"
+      Replacement: "§a设置为 '§6功能 §cremoves §6方块§a"
+    - Original: ' Remover'
+      Replacement: ' 移除器'
+    - Original: "§aSet to '§6function §bplaces §6the specified block§a'"
+      Replacement: "§a设置为 '§6功能 §bplaces §6指定方块§a"
+    - Original: ' Placer'
+      Replacement: ' 放置器'
+
+    - Original: '§d§lBlock Direction'
+      Replacement: '§d§l方块方向'
+    - Original: "§cYou can't set a direction when removing a block!"
+      Replacement: '§c移除方块时不能设置方向！'
+    - Original: "§cYou can't set a direction for this block type!"
+      Replacement: '§c无法为此方块类型设置方向！'
+
+    - Original: '§eWhat direction should the block face?'
+      Replacement: '§e方块应该朝哪个方向？'
+    - Original: '§eCurrent direction is: §6'
+      Replacement: '§e当前方向是：§6'
+    - Original: "§aSet direction to '§6"
+      Replacement: "§a将方向设置为 '§6"
+    - Original: '§cYou must specify a valid direction!'
+      Replacement: '§c你必须指定一个有效的方向！'
+    - Original: '§bClick here to view a list of valid directions.'
+      Replacement: '§b点击这里查看有效方向列表。'
+
+    - Original: "§aSet axis to '§6"
+      Replacement: "§a将轴设置为 '§6"
+    - Original: '§cYou must specify a valid direction!'
+      Replacement: '§c你必须指定一个有效的方向！'
+    - Original: '§bValid directions for this block type are: X, Y, Z'
+      Replacement: '§b此方块类型有效的方向为：X，Y，Z'
+
+    - Original: '§dBlock Editor'
+      Replacement: '§d方块编辑器'
+    - Original: '§ePlaces or removes a specified'
+      Replacement: '§e放置或移除指定的'
+    - Original: "§eblock at the function's location."
+      Replacement: '§e在功能位置放置方块。'
+
+    - Original: '§d§lPlayer Direction'
+      Replacement: '§d§l玩家方向'
+    - Original: "§aSet player spawn direction to '§6"
+      Replacement: "§a将玩家重生方向设置为'§6"
+    - Original: "§a' degrees. (Where you're looking.)"
+      Replacement: "§a'度。（视线方向。）"
+
+    - Original: '§d§lUse as Save Point'
+      Replacement: '§d§l用作保存点'
+    - Original: '§bMakes it so if the player leaves without finishing the dungeon, they will start here next time they play.'
+      Replacement: '§b如果玩家在未完成地牢的情况下离开，他们下次游戏时将从这里开始。'
+    - Original: '§a§lENABLED'
+      Replacement: '§a§l已启用'
+    - Original: '§c§lDISABLED'
+      Replacement: '§c§l已禁用'
+  
+    - Original: '§6Respawn Checkpoint'
+      Replacement: '§6重生检查点'
+    - Original: '§eSets a respawn checkpoint at'
+      Replacement: '§e在此位置设置重生检查点。'
+    - Original: '§ethis location. If the checkpoint'
+      Replacement: '§e如果检查点被触发，'
+    - Original: '§ehas been triggered, players will'
+      Replacement: '§e玩家将在此重生。'
+    - Original: '§erespawn here after losing a life.'
+      Replacement: '§e失去复活次数后将在这里重生。'
+
+    - Original: '§aRadius of chunks to load around this function. (0 for default single chunk)'
+      Replacement: '§a加载此功能周围的区块半径。（0为默认单区块）'
+    - Original: "§aSet radius to '§6"
+      Replacement: "§a将半径设置为'§6"
+    - Original: '§d§lRadius'
+      Replacement: '§d§l半径'
+    
+    - Original: '§6Chunk Loader'
+      Replacement: '§6区块加载器'
+    - Original: '§eForce-loads the chunks in'
+      Replacement: '§e以此功能为中心的半径'
+    - Original: '§ea radius around this function'
+      Replacement: '§e强制加载此功能周围'
+    - Original: '§eusing it as the center.'
+      Replacement: '§e的区块.'
+    - Original: '§eTriggering again releases the chunk.'
+      Replacement: '再次触发将释放该区块。'
+    - Original: '§7Useful for keeping mobs and'
+      Replacement: '§7对于保持生物和'
+    - Original: '§7redstone responsive even when'
+      Replacement: '§7红石反应即使在'
+    - Original: '§7players are far away.'
+      Replacement: '§7玩家远离时也能保持反应。'
+
+    - Original: '§d§lSet Command'
+      Replacement: '§d§l设置命令'
+    - Original: '§eWithout the /, what command should be run by this function?'
+      Replacement: '§e不带 /，此功能应运行什么命令？'
+    - Original: '§eCurrent command: §6'
+      Replacement: '§e当前命令: §6'
+    - Original: '§aSet command to: §6'
+      Replacement: '§a将命令设置为: §6'
+
+    - Original: '§d§lCommand Sender: '
+      Replacement: '§d§l命令发送者: '
+    - Original: "§aCommand will be run as '§6"
+      Replacement: "§a命令将以'§6"
+    - Original: "§dNote: This will attempt to force the player to run the command, even if they don't have permission."
+      Replacement: '§d注意: 这将尝试强制玩家运行命令，即使他们没有权限。'
+    - Original: "§dIf the command doesn't work, consider changing '§eCommandFunctionAsOp§d' to '§6true§d' in the main config.yml"
+      Replacement: "§d如果命令无效，请考虑在主 config.yml 中将 '§eCommandFunctionAsOp§d' 更改为 '§6true§d'。"
+
+    - Original: "§d§lToggle 'For Each Player'"
+      Replacement: '§d§l切换“对每个玩家”'
+    - Original: "§aSwitched to '§6Run command once for each player§a'!"
+      Replacement: "§a切换为 '§6每个玩家运行一次命令§a'!"
+    - Original: "§aSwitched to '§6Run command once§a'!"
+      Replacement: "§a切换为 '§6只运行一次命令§a'!"
+
+    - Original: '§cCould not force-run command!'
+      Replacement: '§c无法强制运行命令！'
+    - Original: "§cCommand function in dungeon '"
+      Replacement: '§c地牢中的命令功能‘'
+    - Original: "' has an empty command!"
+      Replacement: '没有命令！'
+    - Original: "§c-- Position X:"
+      Replacement: '§c-- 位置 X:'
+    - Original: '§bCommand Sender'
+      Replacement: '§b命令发送者'
+    - Original: '§eRuns a command as the player(s),'
+      Replacement: '§e以玩家身份运行命令，'
+    - Original: "§eOP'd player(s), or console."
+      Replacement: '§eOP玩家或控制台。'
+
+    - Original: '§d§lStart Locked'
+      Replacement: '§d§l默认锁定'
+    - Original: "§aSwitched to '§6Door Locked by Default§a'"
+      Replacement: "§a切换为 '§6门默认锁定§a'"
+    - Original: "§aSwitched to '§6Door Unlocked by Default§a'"
+      Replacement: "§a切换为 '§6门默认解锁§a'"
+
+    - Original: '§d§lAuto Open/Close'
+      Replacement: '§d§l自动开关'
+    - Original: "§aSwitched to '§6Door Auto Opens/Closes§a'"
+      Replacement: "§a切换为 '§6门自动开关§a'"
+    - Original: "§aSwitched to '§6Door Doesn't Auto Open/Close§a'"
+      Replacement: "§a切换为 '§6门不自动开关§a'"
+
+    - Original: '§dDoor Controller'
+      Replacement: '§d门控制器'
+    - Original: '§eUnlocks or locks a door at'
+      Replacement: '§e在此位置解锁或锁定门。'
+    - Original: '§ethis location.'
+      Replacement: '§e该位置。'
+
+    - Original: '§d§lLeave Dungeon'
+      Replacement: '§d§l离开地牢'
+    - Original: "§aSwitched to '§6Player leaves after triggering§a'"
+      Replacement: "§a切换为 '§6玩家在触发后离开§a'"
+    - Original: "§aSwitched to '§6Player stays after triggering§a'"
+      Replacement: "§a切换为 '§6玩家在触发后留下§a'"
+
+    - Original: '§6Finish Dungeon'
+      Replacement: '§6完成地牢'
+    - Original: '§eFormally finishes the dungeon,'
+      Replacement: '§e正式完成地牢，'
+    - Original: '§emarking the dungeon as finished'
+      Replacement: '§e对于玩家将地牢标'
+    - Original: '§efor the player.'
+      Replacement: '§e记为已完成。'
+    - Original: '§eAlso puts the dungeon on cooldown'
+      Replacement: '§e如果有进入冷却时间，'
+    - Original: '§eif there is an access cooldown.'
+      Replacement: '§e也会让地牢进入冷却。'
+
+    - Original: '§d§lChoose Item'
+      Replacement: '§d§l选择物品'
+    - Original: '§d§lToggle Drop'
+      Replacement: '§d§l切换掉落'
+
+    - Original: "§aSet behaviour to "
+      Replacement: "§a设置行为为 "
+    - Original: "§6item is dropped at this location"
+      Replacement: "§6物品在此位置掉落"
+    - Original: "§6item is given to the target player(s)"
+      Replacement: "§6物品给予目标玩家"
+    
+    - Original: '§d§lToggle Notification'
+      Replacement: '§d§l切换通知'
+    - Original: '§aPlayers §bwill §abe notified when they receive the item.'
+      Replacement: '§a玩家 §b将在获得物品时 §a收到通知。'
+    - Original: '§aPlayers §cwill NOT §abe notified when they receive the item.'
+      Replacement: '§a玩家 §c将不会 §a收到通知。'
+
+    - Original: '§aItem Dispenser'
+      Replacement: '§a物品发放器'
+    - Original: '§eGives or drops an item at this'
+      Replacement: '§e在此位置给予或掉落物品.'
+    - Original: '§elocation.'
+      Replacement: '§e'
+
+    - Original: '§aKey Dispenser'
+      Replacement: '§a钥匙发放器'
+    - Original: '§eGives or drops a key item to the'
+      Replacement: '§e给予或掉落钥匙物品给'
+    - Original: "§eplayer for use on "
+      Replacement: '§e玩家用于'
+    - Original: "§dKey Item"
+      Replacement: '§d钥匙物品'
+    - Original: "§dDetector "
+      Replacement: '§d探测器'
+    - Original: "§etriggers."
+      Replacement: '§e触发。'
+    - Original: '§8Similar to Item Dispenser, but'
+      Replacement: '§8类似于物品发放器，但'
+    - Original: '§8informs the players about the'
+      Replacement: '§8告知玩家有关'
+    - Original: '§8key.'
+      Replacement: '§8钥匙。'
+
+    - Original: '§d§lSet Location'
+      Replacement: '§d§l设置位置'
+    - Original: "§aSet hologram location to where you're standing!"
+      Replacement: '§a将全息图位置设置为您站立的地方！'
+    - Original: '§eCurrent location is §6NONE'
+      Replacement: '§e当前位置是 §6无'
+    - Original: "§eClick again to set the location to where you're standing."
+      Replacement: '§e再次点击将位置设置为您站立的地方。'
+    - Original: '§eCurrent location is '
+      Replacement: '§e当前位置是 '
+    - Original: "§eClick again to set the location to where you're standing."
+      Replacement: '§e再次点击将位置设置为您站立的地方。'
+
+    - Original: '§d§lHologram Message'
+      Replacement: '§d§l全息图消息'
+    - Original: '§eWhat message should be shown? §b(Use \\n for new lines!)'
+      Replacement: '§e应该显示什么消息？ §b(使用 \\n 换行！)'
+    - Original: '§eWhat message should be shown?'
+      Replacement: '§e应该显示什么消息？'
+    - Original: '§eCurrent message is:'
+      Replacement: '§e当前消息为：'
+    - Original: '§aSet hologram to:'
+      Replacement: '§a设置全息图为：'
+
+    - Original: '§d§lView Distance'
+      Replacement: '§d§l视距'
+    - Original: '§eFrom how far should players be able to see the hologram?'
+      Replacement: '§e玩家应该能从多远看到全息图？'
+    - Original: "§aSet the view distance to '§6"
+      Replacement: "§a将视距设置为 '§6"
+
+    - Original: '§d§lVisible by Default'
+      Replacement: '§d§l默认可见'
+    - Original: "§aSwitched to '§6Hologram is §bVISIBLE §6by default§a'"
+      Replacement: "§a切换为 '§6全息图默认是 §b可见 §6的§a"
+    - Original: "§aSwitched to '§6Hologram is §cINVISIBLE §6by default§a'"
+      Replacement: "§a切换为 '§6全息图默认是 §c不可见 §6的§a"
+  
+    - Original: '§bHologram'
+      Replacement: '§b全息图'
+    - Original: '§eDisplays hologram text at a'
+      Replacement: '§e在指定位置显示全息图文本。'
+    - Original: '§especified location. Triggering'
+      Replacement: '§e指定位置。触发'
+    - Original: '§etoggles hologram visibility.'
+      Replacement: '§e切换全息图可见性。'
+
+    - Original: '§6Leave Dungeon'
+      Replacement: '§6离开地牢'
+    - Original: '§eImmediately takes the player'
+      Replacement: '§e立即将玩家'
+    - Original: '§eor players out of the dungeon.'
+      Replacement: '§e或玩家们带出地牢。'
+
+    - Original: '§d§lSet Lives'
+      Replacement: '§d§l设置复活次数'
+    - Original: '§eHow many lives should the player gain?'
+      Replacement: '§e玩家应该获得多少复活次数？'
+    - Original: "§eWhat should we set the player's lives to?"
+      Replacement: '§e我们应该将玩家的复活次数设置为多少？'
+    - Original: "§eHow much should we multiply the player's lives by?"
+      Replacement: '§e我们应该将玩家的复活次数乘以多少？'
+    - Original: "§aSet lives to: '§6"
+      Replacement: "§a设置复活次数为： '§6"
+
+    - Original: '§d§lSet Lives Change Mode'
+      Replacement: '§d§l设置复活次数变化模式'
+    - Original: "§aSet lives change mode to '§6"
+      Replacement: "§a将复活次数变化模式设置为 '§6"
+
+    - Original: '§cUnable to edit player lives: Lives are disable in dungeon'
+      Replacement: '§c无法编辑玩家复活次数：地牢中已禁用复活次数'
+    - Original: "§cMake sure '§ePlayerLives§c' are set to §61 or more §cin the dungeon's config!"
+      Replacement: "§c确保 '§ePlayerLives§c' 在地牢配置中设置为 §61 或更多！"
+    - Original: '§6Lives Editor'
+      Replacement: '§6复活次数编辑器'
+    - Original: '§eChanges the number of lives the'
+      Replacement: '§e更改玩家的复活次数数量。'
+    - Original: '§eplayer(s) have.'
+      Replacement: '§e玩家拥有。'
+
+    - Original: '§d§lMessage Type'
+      Replacement: '§d§l消息类型'
+    - Original: "§aSwitched message type to '§6"
+      Replacement: "§a切换消息类型为 '§6"
+
+    - Original: '§d§lEdit Message'
+      Replacement: '§d§l编辑消息'
+    - Original: '§eWhat should the message say?'
+      Replacement: '§e消息内容应是什么？'
+    - Original: '§eCurrent message: §6'
+      Replacement: '§e当前消息： §6'
+    - Original: "§aSet message to '§6"
+      Replacement: "§a将消息设置为 '§6"
+
+    - Original: '§aMessage Sender'
+      Replacement: '§a消息发送者'
+    - Original: '§eSends a chat or action bar'
+      Replacement: '§e发送聊天或动作条'
+    - Original: '§emessage to the target player(s).'
+      Replacement: '§e消息发送给目标玩家。'
+
+    - Original: '§d§lSet Destination'
+      Replacement: '§d§l设置目标'
+    - Original: "§aSet moving block destination to where you're looking!"
+      Replacement: '§a将移动块目标设置为您所看的地方！'
+    - Original: '§eCurrent location is §6NONE'
+      Replacement: '§e当前位置是 §6无'
+    - Original: "§eClick again to set the destination to where you're looking."
+      Replacement: '§e再次点击将目标设置为您所看的地方。'
+    - Original: '§eCurrent destination is'
+      Replacement: '§e当前目标是'
+    - Original: "§eClick again to set the destination to the block you're looking at."
+      Replacement: '§e再次点击将目标设置为您所看的方块。'
+
+    - Original: '§d§lMovement Speed'
+      Replacement: '§d§l移动速度'
+    - Original: '§eMany blocks should the block travel per second?'
+      Replacement: '§e每秒方块应该移动多少个？'
+    - Original: '§eCurrent speed:'
+      Replacement: '§e当前速度：'
+    - Original: "§aSet speed to '§6"
+      Replacement: "§a将速度设置为 '§6"
+    - Original: "§a' blocks per second."
+      Replacement: '§a每秒方块。'
+
+    - Original: '§aMoving Block'
+      Replacement: '§a移动方块'
+    - Original: '§eTurns the block at this location'
+      Replacement: '§e将该位置的方块变为'
+    - Original: '§einto a moving block with a'
+      Replacement: '§e一个可移动的方块，具有'
+    - Original: '§econfigurable destination.'
+      Replacement: '§e可配置的目标。'
+
+    - Original: '§d§lSelect Area'
+      Replacement: '§d§l选择区域'
+    - Original: '§8Right-click selects corner 1'
+      Replacement: '§8右键选择角落 1'
+    - Original: '§8Left-click selects corner 2'
+      Replacement: '§8左键选择角落 2'
+    - Original: '§aSet first corner to your position.'
+      Replacement: '§a将第一个角落设置为您的位置。'
+    - Original: '§aSet first corner to target block.'
+      Replacement: '§a将第一个角落设置为目标方块。'
+    - Original: '§bAdded blocks in selected area!'
+      Replacement: '§b在选择的区域中添加了方块！'
+    - Original: '§aSet second corner to your position.'
+      Replacement: '§a将第二个角落设置为您的位置。'
+    - Original: '§aSet second corner to target block.'
+      Replacement: '§a将第二个角落设置为目标方块。'
+    - Original: '§bAdded blocks in selected area!'
+      Replacement: '§b在选择的区域中添加了方块！'
+
+    - Original: '§d§lRemove Area'
+      Replacement: '§d§l移除区域'
+    - Original: '§bRemoved blocks in selected area!'
+      Replacement: '§b在选择的区域中移除了方块！'
+
+    - Original: '§aMoving Block Cluster'
+      Replacement: '§a移动方块集群'
+    - Original: '§eTurns a group of blocks into'
+      Replacement: '§e将一组方块变为'
+    - Original: '§emoving blocks with a configurable'
+      Replacement: '§e可移动方块，具有可配置的'
+    - Original: '§edestination.'
+      Replacement: '§e目标。'
+
+    - Original: '§d§lSignal Name'
+      Replacement: '§d§l信号名称'
+    - Original: '§eWhat signal should be sent?'
+      Replacement: '§e应该发送什么信号？'
+    - Original: "§eCurrent signal is: §6"
+      Replacement: '§e当前信号为： §6'
+    - Original: "§aSet signal to '§6"
+      Replacement: "§a将信号设置为 '§6"
+    - Original: 'Signal: '
+      Replacement: '信号： '
+
+    - Original: '§d§lRange'
+      Replacement: '§d§l范围'
+    - Original: "§eWhat's the range in blocks of the mobs we are sending the signal to?"
+      Replacement: '§e我们发送信号给的生物的范围是多少个方块？'
+    - Original: "§aSet signal radius to '§6"
+      Replacement: "§a将信号半径设置为 '§6"
+
+    - Original: '§d§lMob Filter'
+      Replacement: '§d§l生物过滤器'
+    - Original: '§eWhat mobs should receive the signal? (Separate multiple mob names by §6,§e)'
+      Replacement: '§e应该让哪些生物接收信号？（用 §6,§e 分隔多个生物名称）'
+    - Original: '§eCurrent filter is: §6'
+      Replacement: '§e当前过滤器为： §6'
+    - Original: "§aSet mob filter to '§6"
+      Replacement: "§a将生物过滤器设置为 '§6"
+
+    - Original: '§bMythic Signal'
+      Replacement: '§b神话信号'
+    - Original: '§eBroadcasts a MythicMobs signal for'
+      Replacement: '§e广播 MythicMobs 信号用于'
+    - Original: "§euse with '~onSignal' Mythic triggers."
+      Replacement: "§e与 '~onSignal' 神话触发器一起使用。"
+
+    - Original: '§d§lSkill Name'
+      Replacement: '§d§l技能名称'
+    - Original: '§eWhat skill should be performed?'
+      Replacement: '§e应该执行什么技能？'
+    - Original: '§eCurrent skill is: §6'
+      Replacement: '§e当前技能为： §6'
+    - Original: '§cERROR :: No skill exists by that name!'
+      Replacement: '§c错误 :: 没有该名称的技能！'
+    - Original: "§aSet skill to '§6"
+      Replacement: "§a将技能设置为 '§6"
+    - Original: 'Skill: '
+      Replacement: '技能： '
+
+    - Original: '§bMythic Skill'
+      Replacement: '§b神话技能'
+    - Original: '§ePerforms a specified skill from'
+      Replacement: '§e在此位置执行神话'
+    - Original: '§eMythic Mobs at this location.'
+      Replacement: '§e生物的指定技能.'
+
+    - Original: '§d§lSet Sound'
+      Replacement: '§d§l设置音效'
+    - Original: '§eWhat sound should be played?'
+      Replacement: '§e应该播放什么音效？'
+    - Original: '§eCurrent sound: §6'
+      Replacement: '§e当前音效： §6'
+    - Original: "§aSet sound to: '§6"
+      Replacement: "§a将音效设置为： '§6"
+
+    - Original: '§d§lSet Category'
+      Replacement: '§d§l设置类别'
+    - Original: "§eWhat should the sound's category be?"
+      Replacement: '§e音效的类别应是什么？'
+    - Original: '§eCurrent category: §6'
+      Replacement: '§e当前类别： §6'
+    - Original: "§aSet sound category to '§6"
+      Replacement: "§a将音效类别设置为 '§6"
+    - Original: '§cInvalid category! Valid categories are:'
+      Replacement: '§c无效的类别！有效的类别有：'
+
+    - Original: '§d§lSet Pitch'
+      Replacement: '§d§l设置音高'
+    - Original: '§eWhat should the pitch of the sound be?'
+      Replacement: '§e音效的音高应是多少？'
+    - Original: '§eCurrent pitch: §6'
+      Replacement: '§e当前音高： §6'
+    - Original: "§aSet pitch to: '§6"
+      Replacement: "§a将音高设置为： '§6"
+
+    - Original: '§d§lSet Volume'
+      Replacement: '§d§l设置音量'
+    - Original: '§eWhat should the volume of the sound be?'
+      Replacement: '§e音效的音量应是多少？'
+    - Original: '§eCurrent volume: §6'
+      Replacement: '§e当前音量： §6'
+    - Original: "§aSet volume to: '§6"
+      Replacement: "§a将音量设置为： '§6"
+
+    - Original: '§d§lToggle Sound Location'
+      Replacement: '§d§l切换音效位置'
+    - Original: "§aSwitched to '§6Play the sound at the §bfunction's §6location§a'!"
+      Replacement: "§a切换为 '§6在 §b功能的 §6位置播放音效§a'！"
+    - Original: "§aSwitched to '§6Play the sound at the §bplayer's §6location§a'!"
+      Replacement: "§a切换为 '§6在 §b玩家的 §6位置播放音效§a'！"
+
+    - Original: '§dSound Player'
+      Replacement: '§d音效播放器'
+    - Original: '§ePlays a sound to the player(s).'
+      Replacement: '§e向玩家播放音效。'
+
+    - Original: '§d§lWeight'
+      Replacement: '§d§l重量'
+    - Original: '§eHow heavy is this block when the player tries to push it?'
+      Replacement: '§e当玩家试图推动这个方块时，它有多重？'
+    - Original: "§bPush speed is the pushing player's movement speed - weight."
+      Replacement: '§b推送速度是推动玩家的移动速度 - 重量。'
+    - Original: '§eCurrent weight: §6'
+      Replacement: '§e当前重量： §6'
+    - Original: "§aSet weight to '§6"
+      Replacement: "§a将重量设置为 '§6"
+
+    - Original: '§d§lSlipperiness'
+      Replacement: '§d§l滑溜度'
+    - Original: '§eHow many ticks will it take for this block to stop moving?'
+      Replacement: '§e这个方块需要多少个刻才能停止移动？'
+    - Original: "§aSet slipperiness to '§6"
+      Replacement: "§a将滑溜度设置为 '§6"
+
+    - Original: '§aPushable Block'
+      Replacement: '§a可推动的方块'
+    - Original: '§eTurns the block at this location'
+      Replacement: '§e将此位置的方块'
+    - Original: '§einto a block players can push.'
+      Replacement: '§e变为玩家可以推动的方块。'
+    - Original: '§7Includes options for slipperiness'
+      Replacement: '§7包括滑溜度的选项'
+    - Original: '§7and weight.'
+      Replacement: '§7和重量。'
+
+    - Original: '§a§lDelay'
+      Replacement: '§a§l延迟'
+    - Original: '§eHow long should the wait be before placing redstone?'
+      Replacement: '§e放置红石之前应该等待多久？'
+    - Original: "§aSet redstone delay to '§6"
+      Replacement: "§a将红石延迟设置为 '§6"
+
+    - Original: '§a§lRepeat Count'
+      Replacement: '§a§l重复次数'
+    - Original: '§eHow many times should we repeat the redstone signal?'
+      Replacement: '§e我们应该重复红石信号多少次？'
+    - Original: "§aSet repeat count to '§6"
+      Replacement: "§a将重复次数设置为 '§6"
+
+    - Original: '§a§lRepeat Interval'
+      Replacement: '§a§l重复间隔'
+    - Original: '§eHow long should the pause between signals be?'
+      Replacement: '§e信号之间的暂停应该多长时间？'
+    - Original: "§aSet repeat interval to '§6"
+      Replacement: "§a将重复间隔设置为 '§6"
+
+    - Original: '§dPlace Redstone Block'
+      Replacement: '§d放置红石块'
+    - Original: '§ePlaces a redstone block at'
+      Replacement: '§e在这个位置放置'
+    - Original: '§ethis location.'
+      Replacement: '§e一个红石块。'
+
+    - Original: '§d§lSignal Name'
+      Replacement: '§d§l信号名称'
+    - Original: '§eWhat is the name of the signal we will send?'
+      Replacement: '§e我们将发送的信号名称是什么？'
+    - Original: '§eCurrent signal name is: §6'
+      Replacement: '§e当前信号名称为： §6'
+    - Original: "§aSet signal name to '§6"
+      Replacement: "§a将信号名称设置为 '§6"
+    - Original: 'Signal: '
+      Replacement: '信号： '
+
+    - Original: '§d§lSignal Range'
+      Replacement: '§d§l信号范围'
+    - Original: '§eHow far does the signal reach? (0 for infinite.)'
+      Replacement: '§e信号的范围有多远？（0 表示无限。）'
+    - Original: '§eCurrent range: '
+      Replacement: '§e当前范围： '
+    - Original: "§aSet signal range to '§6"
+      Replacement: "§a将信号范围设置为 '§6"
+
+    - Original: '§6Signal Sender'
+      Replacement: '§6信号发送器'
+    - Original: '§eSends a signal to any Signal'
+      Replacement: '§e向任何信号发送信号'
+    - Original: '§eReceiver triggers.'
+      Replacement: '§e接收器触发。'
+
+    - Original: '§d§lMax Revives'
+      Replacement: '§d§l最大复活次数'
+    - Original: '§eHow many times can players use this reviver? (0 for infinite)'
+      Replacement: '§e玩家可以使用此复活器多少次？（0 表示无限）'
+    - Original: "§aSet max revives to '§6"
+      Replacement: "§a将最大复活次数设置为 '§6"
+
+    - Original: '§d§lLives After Revival'
+      Replacement: '§d§l复活后的生命数'
+    - Original: '§eHow many lives will the player have after being revived?'
+      Replacement: '§e玩家复活后将拥有多少条生命？'
+    - Original: "§aSet revival lives to '§6"
+      Replacement: "§a将复活生命数设置为 '§6"
+
+    - Original: '§6Player Reviver'
+      Replacement: '§6玩家复活器'
+    - Original: '§eAllows players to revive other'
+      Replacement: '§e允许玩家复活其他'
+    - Original: '§edead players still spectating.'
+      Replacement: '§e仍在观战的死去的玩家。'
+
+    - Original: '§d§lSet Difficulty'
+      Replacement: '§d§l设置难度'
+    - Original: '§7Current difficulty: §6'
+      Replacement: '§7当前难度： §6'
+    - Original: '§eWhat should the dungeons new difficulty be?'
+      Replacement: '§e地牢的新难度应是多少？'
+    - Original: '§eCurrent difficulty: §6'
+      Replacement: '§e当前难度： §6'
+    - Original: '§aSet dungeon difficulty to: §6'
+      Replacement: '§a将地牢难度设置为： §6'
+
+    - Original: '§dDungeon Difficulty'
+      Replacement: '§d地牢难度'
+    - Original: '§eSets the difficulty level of the'
+      Replacement: '§e设置地牢的难度级别，'
+    - Original: '§edungeon, which can be used for'
+      Replacement: '§e可用于'
+    - Original: '§econdition checks and triggers.'
+      Replacement: '§e条件检查和触发。'
+    - Original: "§cNOTE: Unrelated to Minecraft's"
+      Replacement: '§c注意：与Minecraft的'
+    - Original: '§c/difficulty command!'
+      Replacement: '§c/difficulty 命令无关！'
+
+    - Original: '§d§lSet Status'
+      Replacement: '§d§l设置状态'
+    - Original: '§7Current status: §6'
+      Replacement: '§7当前状态： §6'
+    - Original: '§eWhat should the dungeons new status be?'
+      Replacement: '§e地牢的新状态应是什么？'
+    - Original: '§eCurrent status: §6'
+      Replacement: '§e当前状态： §6'
+    - Original: '§aSet dungeon status to: §6'
+      Replacement: '§a将地牢状态设置为： §6'
+
+    - Original: '§dDungeon Status'
+      Replacement: '§d地牢状态'
+    - Original: '§eSets the status of the dungeon,'
+      Replacement: '§e设置地牢的状态，'
+    - Original: '§ewhich can be used for condition'
+      Replacement: '§e可用于条件'
+    - Original: '§echecks and triggers.'
+      Replacement: '§e检查和触发。'
+    - Original: '§7Similar to Mythic Mobs stances.'
+      Replacement: '§7类似于神话生物的姿态。'
+
+    - Original: '§d§lMob Name'
+      Replacement: '§d§l生物名称'
+    - Original: "§eWhat's the type of mob or mythic mob?"
+      Replacement: '§e生物或神话生物的类型是什么？'
+    - Original: "§eWhat's the type of mob?"
+      Replacement: '§e生物的类型是什么？'
+    - Original: '§eCurrent mob is: §6'
+      Replacement: '§e当前生物为： §6'
+    - Original: "§aSet mob to '§6"
+      Replacement: "§a将生物设置为 '§6"
+    # - Original: ' Spawner'
+    #   Replacement: ' 生成'
+
+    - Original: '§d§lMythic Mob Level'
+      Replacement: '§d§l神话生物等级'
+    - Original: '§eIf this is a Mythic Mob, what level should the mob be?'
+      Replacement: '§e如果这是一个神话生物，生物应该是什么等级？'
+    - Original: '§eCurrent level: '
+      Replacement: '§e当前等级： '
+    - Original: "§aSet the mob level to '§6"
+      Replacement: "§a将生物等级设置为 '§6"
+
+    - Original: '§d§lAmount'
+      Replacement: '§d§l数量'
+    - Original: '§eHow many of this mob will spawn from here?'
+      Replacement: '§e此处将生成多少个此生物？'
+    - Original: "§aSet amount of mobs to '§6"
+      Replacement: "§a将生物数量设置为 '§6"
+    - Original: '§d§lSpawn Delay'
+      Replacement: '§d§l生成延迟'
+    - Original: '§eHow long should we wait before spawning mobs in ticks?'
+      Replacement: '§e在生成生物之前应该等待多久（以刻为单位）？'
+    - Original: "§aSet delay to '§6"
+      Replacement: "§a将延迟设置为 '§6"
+
+    - Original: '§d§lSpawn Interval'
+      Replacement: '§d§l生成间隔'
+    - Original: '§eHow long should the delay between spawns be in ticks?'
+      Replacement: '§e生成之间的延迟应该是多少（以刻为单位）？'
+    - Original: "§aSet interval to '§6"
+      Replacement: "§a将间隔设置为 '§6"
+
+    - Original: '§d§lMob Direction'
+      Replacement: '§d§l生物方向'
+    - Original: "§aSet mob spawn direction to '§6"
+      Replacement: "§a将生物生成方向设置为 '§6"
+    - Original: "§a' degrees. (Where you're looking.)"
+      Replacement: "§a' 度数。 （看向的方向。）"
+
+    - Original: '§dMob Spawner'
+      Replacement: '§d生物生成器'
+    - Original: '§eSpawns mobs at this location.'
+      Replacement: '§e在此位置生成生物。'
+    - Original: '§dSupports MythicMobs!'
+      Replacement: '§d支持 MythicMobs！'
+
+    - Original: '§d§lNPC ID'
+      Replacement: '§d§lNPC ID'
+    - Original: "§eWhat's the NPC ID?"
+      Replacement: "§eNPC ID 是什么？"
+    - Original: "§aSet NPC ID to '§6"
+      Replacement: "§a将 NPC ID 设置为 '§6"
+    - Original: '§d§lNPC Direction'
+      Replacement: '§d§lNPC 方向'
+    - Original: "§aSet NPC spawn direction to '§6"
+      Replacement: "§a将 NPC 生成方向设置为 '§6"
+    - Original: "§a' degrees. (Where you're looking.)"
+      Replacement: "§a' 角度数。（朝你看的方向。）"
+    - Original: '§dNPC Spawner'
+      Replacement: '§dNPC 生成器'
+    - Original: '§eSpawns a Citizens NPC at this'
+      Replacement: '§e在此位置生成一个 Citizens NPC 位置。'
+    # - Original: '§elocation.'
+    #   Replacement: '§e位置。'
+
+    - Original: '§6Start Dungeon'
+      Replacement: '§6开始地牢'
+    - Original: '§eStarts the dungeon when the'
+      Replacement: '§e当满足触发条件时开始地牢。'
+    - Original: '§etrigger condition is met.'
+      Replacement: '§e触发条件已满足。'
+
+    - Original: '§d§lSet Location'
+      Replacement: '§d§l设置位置'
+    - Original: "§aSet teleport location to where you're standing!"
+      Replacement: "§a将传送位置设置为你所站的位置！"
+    - Original: '§eCurrent location is §6NONE'
+      Replacement: '§e当前位置是 §6无'
+    - Original: "§eClick again to set the location to where you're standing."
+      Replacement: "§e再次点击以将位置设置为你所站的位置。"
+    - Original: '§eCurrent location is '
+      Replacement: '§e当前位置是 '
+    - Original: "§eClick again to set the location to where you're standing."
+      Replacement: "§e再次点击以将位置设置为你所站的位置。"
+
+    - Original: '§aTeleporter'
+      Replacement: '§a传送器'
+    - Original: '§eTeleports the target player(s)'
+      Replacement: '§e将目标玩家传送到'
+    - Original: '§eto a configured location.'
+      Replacement: '§e到配置的位置。'
+
+    - Original: '§d§lEdit Title'
+      Replacement: '§d§l编辑标题'
+    - Original: '§eWhat should the title say?'
+      Replacement: '§e标题应该是什么？'
+    - Original: '§eCurrent title: §6'
+      Replacement: '§e当前标题：§6'
+    - Original: "§aSet title to '§6"
+      Replacement: "§a将标题设置为 '§6"
+
+    - Original: '§d§lEdit Subtitle'
+      Replacement: '§d§l编辑副标题'
+    - Original: '§eWhat should the subtitle say?'
+      Replacement: '§e副标题应该是什么？'
+    - Original: '§eCurrent subtitle: §6'
+      Replacement: '§e当前副标题：§6'
+    - Original: "§aSet subtitle to '§6"
+      Replacement: "§a将副标题设置为 '§6"
+
+    - Original: '§d§lDuration'
+      Replacement: '§d§l持续时间'
+    - Original: '§eHow many ticks should the title remain for?'
+      Replacement: '§e标题应该持续多少个ticks？'
+    - Original: "§aSet title duration to '§6"
+      Replacement: "§a将标题持续时间设置为 '§6"
+
+    - Original: '§d§lFade-In Ticks'
+      Replacement: '§d§l渐入时间'
+    - Original: '§eHow many ticks should it take to fade in?'
+      Replacement: '§e渐入需要多少个ticks？'
+    - Original: "§aSet fade-in time to '§6"
+      Replacement: "§a将渐入时间设置为 '§6"
+
+    - Original: '§d§lFade-Out Ticks'
+      Replacement: '§d§l渐出时间'
+    - Original: '§eHow many ticks should it take to fade out?'
+      Replacement: '§e渐出需要多少个ticks？'
+    - Original: "§aSet fade-out time to '§6"
+      Replacement: "§a将渐出时间设置为 '§6"
+
+    - Original: '§aTitle Sender'
+      Replacement: '§a标题发送器'
+    - Original: '§eSends a title and subtitle'
+      Replacement: '§e发送标题和副标题'
+    - Original: '§eto the target player(s).'
+      Replacement: '§e给目标玩家。'
+
+    - Original: '§7Empty Slot'
+      Replacement: '§7空槽'
+    - Original: '§8Edit Loot'
+      Replacement: '§8编辑战利品'
+    - Original: '§8Click to edit.'
+      Replacement: '§8点击编辑。'
+    - Original: '§8Shift-Click to remove.'
+      Replacement: '§8Shift-点击移除。'
+
+    - Original: '§eAt most §6'
+      Replacement: '§e最多 §6'
+    - Original: ' §eitems'
+      Replacement: ' §e物品'
+    - Original: '§7Determines the maximum amount of'
+      Replacement: '§7确定此战利品表可以生成的最大数量'
+    - Original: '§7the below items this loot table can'
+      Replacement: '§7以下物品在此战利品表中可以'
+    - Original: '§7generate.'
+      Replacement: '§7生成。'
+    - Original: '§8Left click increases.'
+      Replacement: '§8左键点击增加。'
+    - Original: '§8Right click decreases.'
+      Replacement: '§8右键点击减少。'
+    - Original: '§aAllow duplicate items'
+      Replacement: '§a允许重复物品'
+    - Original: '§cDo not allow duplicate items'
+      Replacement: '§c不允许重复物品'
+    - Original: '§aDuplicate Items'
+      Replacement: '§a重复物品'
+    - Original: '§cDuplicate Items'
+      Replacement: '§c重复物品'
+    - Original: '§7Toggles whether or not multiple'
+      Replacement: '§7切换是否允许多个'
+    - Original: '§7of the same item can generate in'
+      Replacement: '§7相同物品可以在'
+    - Original: '§7a loot table.'
+      Replacement: '§7一个战利品表中生成。'
+
+    - Original: '§eAt least §6'
+      Replacement: '§e至少 §6'
+    - Original: '§7Determines the min amount of this'
+      Replacement: '§7确定此物品的最小数量'
+    - Original: '§7item when it appears.'
+      Replacement: '§7物品出现时。'
+    - Original: '§8Left click increases.'
+      Replacement: '§8左键点击增加。'
+    - Original: '§8Right click decreases.'
+      Replacement: '§8右键点击减少。'
+    - Original: '§7Determines the max amount of this'
+      Replacement: '§7确定此物品的最大数量'
+    - Original: '§eWeight of §6'
+      Replacement: '§e权重为 §6'
+    - Original: '§7Determines the chance of this item'
+      Replacement: '§7确定此物品的概率'
+    - Original: '§7compared to others. An item with a'
+      Replacement: '§7与其他物品相比。权重为'
+    - Original: '§7weight of 4 is twice as common as an'
+      Replacement: '§7权重为 4 的物品是权重为 2 的物品的两倍。'
+    - Original: '§7item with a weight of 2.'
+      Replacement: '§7物品的权重为 2。'
+    - Original: '§8Left and Shift-Left click increases.'
+      Replacement: '§8左键和 Shift-左键点击增加。'
+    - Original: '§8Right and Shift-Right click decreases.'
+      Replacement: '§8右键和 Shift-右键点击减少。'
+
+    - Original: '§a§lAdd Trigger'
+      Replacement: '§a§l添加触发器'
+    - Original: "§cYou can't add any more triggers to this gate!"
+      Replacement: '§c无法向此门添加更多触发器！'
+    - Original: '§e§lEdit Trigger'
+      Replacement: '§e§l编辑触发器'
+    - Original: '§c§lRemove Trigger'
+      Replacement: '§c§l移除触发器'
+
+    - Original: '§bAND Gate'
+      Replacement: '§b与门'
+    - Original: '§eTriggered when several other'
+      Replacement: '§e当多个其他触发器被'
+    - Original: '§especified triggers have been'
+      Replacement: '§e激活时触发。'
+    - Original: '§eactivated.'
+      Replacement: '§e激活。'
+
+    - Original: '§bOR Gate'
+      Replacement: '§b或门'
+    - Original: '§eTriggered when one of several'
+      Replacement: '§e当多个中的一个触发器被'
+    - Original: '§especified triggers have been'
+      Replacement: '§e激活时触发。'
+    - Original: '§eactivated.'
+      Replacement: '§e激活。'
+
+    - Original: '§d§lAllow Retrigger'
+      Replacement: '§d§l允许重触发'
+    - Original: "§aSwitched to '§6Triggering Again Allowed§a'"
+      Replacement: "§a切换到 '§6允许再次触发§a'"
+    - Original: "§aSwitched to '§6Prevent Triggering Again§a'"
+      Replacement: "§a切换到 '§6防止再次触发§a'"
+
+    - Original: '§d§lDoor Name'
+      Replacement: '§d§l门名'
+    - Original: "§eWhat is the name of the door that will trigger this? (Enter 'any' for any door.)"
+      Replacement: "§e将触发此事件的门名是什么？（输入 '任何' 表示任何门。）"
+    - Original: "§eCurrent door is: §6"
+      Replacement: "§e当前门是：§6"
+    - Original: "§aSet the triggering door to '§6"
+      Replacement: "§a将触发门设置为 '§6"
+
+    - Original: '§d§lAction: '
+      Replacement: '§d§l动作：'
+    - Original: "§aSwitched to '§6trigger when this door §bOPENS§a'"
+      Replacement: "§a切换到 '§6当这扇门 §b打开§a 时触发'"
+    - Original: "§aSwitched to '§6trigger when this door §cCLOSES§a'"
+      Replacement: "§a切换到 '§6当这扇门 §c关闭§a 时触发'"
+
+    - Original: '§aRoom Door Open/Close'
+      Replacement: '§a房间门开启/关闭'
+    - Original: '§eTriggered when a door in this'
+      Replacement: '§e当此房间中的门被'
+    - Original: '§eroom is opened or closed.'
+      Replacement: '§e打开或关闭时触发。'
+
+    - Original: '§d§lBreak or Place'
+      Replacement: '§d§l打破或放置'
+    - Original: "§aSet detector to '§6trigger on §bbreak§a'"
+      Replacement: "§a设置探测器为 '§6在 §b破坏§a 时触发'"
+    - Original: "§aSet detector to '§6trigger on §bplace§a'"
+      Replacement: "§a设置探测器为 '§6在 §b放置§a 时触发'"
+
+    - Original: '§d§lSet Block'
+      Replacement: '§d§l设置方块'
+    - Original: "§eWhat block needs to be placed here? ('ANY' for any block.)"
+      Replacement: "§e这里需要放置什么方块？（'任何' 表示任何方块。）"
+    - Original: '§eCurrent block: §6'
+      Replacement: '§e当前方块：§6'
+      
+    - Original: "§aSet block needed to '§6"
+      Replacement: "§a将所需方块设置为 '§6"
+    - Original: "§cYou must specify a valid block material!"
+      Replacement: '§c你必须指定一个有效的方块材料！'
+    - Original: '§bClick here to view a list of valid materials.'
+      Replacement: '§b点击这里查看有效材料列表。'
+
+    - Original: '§aBlock Detector'
+      Replacement: '§a方块探测器'
+    - Original: '§eTriggered when a block is placed'
+      Replacement: '§e当在此位置放置或'
+    - Original: '§eor broken at this location.'
+      Replacement: '§e破坏方块时触发.'
+    - Original: '§7Also allows placing or breaking'
+      Replacement: '§7也允许在此位置'
+    - Original: '§7blocks at this location.'
+      Replacement: '§7放置或破坏方块.'
+
+    - Original: '§d§lEdit Required Text'
+      Replacement: '§d§l编辑所需文本'
+    - Original: '§eWhat should the player type in chat?'
+      Replacement: '§e玩家在聊天中应该输入什么？'
+    - Original: '§eCurrent message: §6'
+      Replacement: '§e当前消息：§6'
+    - Original: "§aSet required text to '§6"
+      Replacement: "§a将所需文本设置为 '§6"
+
+    - Original: '§d§lExact Text'
+      Replacement: '§d§l确切文本'
+    - Original: "§aSet to '§6Message must match required text exactly§a'"
+      Replacement: "§a设置为 '§6消息必须完全匹配所需文本§a'"
+    - Original: "§aSet to '§6Message must contain required text§a'"
+      Replacement: "§a设置为 '§6消息必须包含所需文本§a'"
+
+    - Original: '§d§lCase Sensitive'
+      Replacement: '§d§l区分大小写'
+    - Original: "§aSet to '§6Capitals letters must match§a'"
+      Replacement: "§a设置为 '§6大写字母必须匹配§a'"
+    - Original: "§aSet to '§6Capital letters don't matter§a'"
+      Replacement: "§a设置为 '§6大写字母不重要§a'"
+
+    - Original: '§aChat Message'
+      Replacement: '§a聊天消息'
+    - Original: '§eTriggered when a player sends'
+      Replacement: '§e当玩家发送时触发'
+    - Original: '§ea message with matching or'
+      Replacement: '§e包含匹配或'
+    - Original: '§easimilar text.'
+      Replacement: '§e类似文本。'
+
+    # - Original: '§d§lAllow Retrigger'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: "§aSwitched to '§6Triggering Again Allowed§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+    - Original: '§bThis means it will only trigger every time the minimum required players are detected.'
+      Replacement: '§b这意味着每次检测到所需的最低玩家时才会触发。'
+    # - Original: "§aSwitched to '§6Prevent Triggering Again§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+      
+    - Original: '§d§lDistance'
+      Replacement: '§d§l距离'
+    - Original: '§eWhat is the range of the trigger in blocks?'
+      Replacement: '§e触发器的范围是多少个方块？'
+    - Original: "§aSet trigger radius to "
+      Replacement: "§a将触发半径设置为 "
+
+    - Original: '§d§lMinimum Players'
+      Replacement: '§d§l最少玩家数'
+    - Original: '§eHow many players must be in range of the trigger?'
+      Replacement: '§e触发器范围内必须有多少玩家？'
+    - Original: "§eEnter '§6all§e' for all living players in the dungeon."
+      Replacement: "§e输入 '§6all§e' 表示地牢中的所有生存玩家。"
+    - Original: "§aSet number of players needed to '§6all present§a'"
+      Replacement: "§a将所需玩家数设置为 '§6所有在场§a'"
+    - Original: "§aSet number of players needed to "
+      Replacement: "§a将所需玩家数设置为 "
+
+    - Original: '§d§lFor Each Player'
+      Replacement: '§d§l针对每个玩家'
+    - Original: "§aSet behaviour to '§6trigger for every player in range§a'"
+      Replacement: "§a设置行为为 '§6对范围内的每个玩家触发§a'"
+    - Original: "§aSet behaviour to '§6trigger for the nearest player§a'"
+      Replacement: "§a设置行为为 '§6对最近的玩家触发§a'"
+
+    - Original: '§aPlayer Detector'
+      Replacement: '§a玩家探测器'
+    - Original: '§eTriggered when a player or players'
+      Replacement: '§e当一个或多个玩家'
+    - Original: '§eare within range of this location.'
+      Replacement: '§e在此位置范围内时触发。'
+
+    - Original: '§6Dungeon Start'
+      Replacement: '§6地牢开始'
+    - Original: '§eTriggered when the dungeon'
+      Replacement: '§e当地牢'
+    - Original: '§ebegins.'
+      Replacement: '§e开始时触发。'
+
+    # - Original: '§d§lAllow Retrigger'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: "§aSwitched to '§6Triggering Again Allowed§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: "§aSwitched to '§6Prevent Triggering Again§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+
+    - Original: '§aRight-Click Block'
+      Replacement: '§a右击方块'
+    - Original: '§eTriggered when a player'
+      Replacement: '§e当玩家'
+    - Original: '§eright-clicks the block at this'
+      Replacement: '§e右击此位置的方块时触发。'
+    # - Original: '§elocation.'
+    #   Replacement: '§e触发。'
+
+    - Original: '§d§lChoose Item'
+      Replacement: '§d§l选择物品'
+    - Original: '§d§lToggle Consume Item'
+      Replacement: '§d§l切换消耗物品'
+    - Original: "§aSet to '§6item §bwill §6be consumed when used§a'!"
+      Replacement: "§a设置为 '§6物品 §b在使用时会被消耗§a'!"
+    - Original: "§aSet to '§6item §cwill NOT §6be consumed when used§a'!"
+      Replacement: "§a设置为 '§6物品 §c在使用时不会被消耗§a'!"
+
+    - Original: '§d§lToggle Use Anywhere'
+      Replacement: '§d§l切换随处使用'
+    - Original: "§aSet to '§6item §bcan §6be used anywhere§a'!"
+      Replacement: "§a设置为 '§6物品 §b可以随处使用§a'!"
+    - Original: "§aSet to '§6item §cmust §6be used at this function§a'!"
+      Replacement: "§a设置为 '§6物品 §c必须在此功能使用§a'!"
+    - Original: '§d§lClick Type: '
+      Replacement: '§d§l点击类型：'
+    - Original: "§aSet required click type to"
+      Replacement: "§a将所需点击类型设置为"
+    - Original: '§aKey Item Detector'
+      Replacement: '§a钥匙物品探测器'
+    - Original: '§eTriggers when a player uses'
+      Replacement: '§e当玩家通过右键单击'
+    - Original: '§ean item with right-click.'
+      Replacement: '§e使用物品时触发。'
+
+    # - Original: '§d§lAllow Retrigger'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: "§aSwitched to '§6Triggering Again Allowed§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: "§aSwitched to '§6Prevent Triggering Again§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+
+    - Original: '§6Leave Dungeon Listener'
+      Replacement: '§6离开地牢监听器'
+    - Original: '§eTriggered when a player leaves'
+      Replacement: '§e当玩家离开时触发'
+    - Original: '§ethe dungeon.'
+      Replacement: '§e地牢。'
+    - Original: '§7Optionally, can also stop players'
+      Replacement: '§7可选地，也可以阻止玩家'
+    - Original: '§7from leaving with /leave or leave'
+      Replacement: '§7通过 /leave 或离开来离开'
+    - Original: '§7functions.'
+      Replacement: '§7功能。'
+
+    - Original: '§d§lMob'
+      Replacement: '§d§l生物'
+    - Original: "§eWhat mob needs to be killed? ('any' for any mob.)"
+      Replacement: "§e需要杀死哪个生物？（'any' 表示任何生物。）"
+    - Original: '§eMob is currently:'
+      Replacement: '§e当前生物是:'
+    # - Original: "§aSet mob to '§6"
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: ' Death'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§d§lAmount'
+    #   Replacement: '§8点击一个物品设置图标.'
+    - Original: '§eHow many of the mob needs to be killed?'
+      Replacement: '§e需要杀死多少个生物？'
+    - Original: "§aSet amount to "
+      Replacement: "§a将数量设置为 "
+    # - Original: '§d§lAllow Retrigger'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: "§aSwitched to '§6Triggering Again Allowed§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: "§aSwitched to '§6Prevent Triggering Again§a'"
+    #   Replacement: '§8点击一个物品设置图标.'
+    - Original: '§d§lMob Radius'
+      Replacement: '§d§l生物半径'
+    - Original: '§eHow close must the mob be to this function? (0 for infinite.)'
+      Replacement: '§e生物必须离此功能多近？（0表示无限。）'
+    - Original: '§eCurrent radius: §6'
+      Replacement: '§e当前半径：§6'
+    - Original: "§aSet radius to "
+      Replacement: "§a将半径设置为 "
+    - Original: '§5Mob Death Counter'
+      Replacement: '§5生物死亡计数器'
+    - Original: '§eTriggered when a certain number of'
+      Replacement: '§e当特定数量的'
+    - Original: '§ea mob has died.'
+      Replacement: '§e生物死亡时触发。'
+    - Original: '§dSupports MythicMobs!'
+      Replacement: '§d支持 MythicMobs！'
+
+    - Original: "§eHow many players must die?"
+      Replacement: "§e需要多少玩家死亡？"
+
+    - Original: '§d§lToggle Deaths Per Player'
+      Replacement: '§d§l切换每个玩家的死亡'
+    - Original: "§aSwitched to '§6Count One Death Per Player§a'"
+      Replacement: "§a切换为 '§6每个玩家计算一次死亡§a'"
+    - Original: "§aSwitched to '§6Count All Player Deaths§a'"
+      Replacement: "§a切换为 '§6计算所有玩家的死亡§a'"
+
+    - Original: '§aPlayer Death Counter'
+      Replacement: '§a玩家死亡计数器'
+    - Original: '§eplayers have died.'
+      Replacement: '§e玩家已经死亡。'
+      
+    - Original: '§5Redstone Receiver'
+      Replacement: '§5红石接收器'
+    - Original: '§eTriggered when the block at this'
+      Replacement: '§e当此位置的方块'
+    - Original: '§elocation receives a redstone'
+      Replacement: '§e接收到红石'
+    - Original: '§esignal.'
+      Replacement: '§e信号时触发。'
+    - Original: '§dNote: Functions triggered by this'
+      Replacement: '§d注意：由此触发的功能'
+    - Original: "§dcan't target specific players or"
+      Replacement: '§d无法指定特定玩家或'
+    - Original: '§dparties.'
+      Replacement: '§d队伍。'
+
+    - Original: '§eWhat signal is this trigger waiting for?'
+      Replacement: '§e此触发器在等待哪个信号？'
+    - Original: '§eSignal name is currently: §6'
+      Replacement: '§e当前信号名称为：§6'
+
+    - Original: '§d§lWait For Conditions'
+      Replacement: '§d§l等待条件'
+    - Original: "§aSwitched to '§6Wait for conditions after triggering§a'"
+      Replacement: "§a切换为 '§6触发后等待条件§a'"
+    - Original: "§aSwitched to '§6Require conditions be met at the time of triggering§a'"
+      Replacement: "§a切换为 '§6触发时必须满足条件§a'"
+
+    - Original: '§6Signal Receiver'
+      Replacement: '§6信号接收器'
+    - Original: '§eTriggered when a signal sender'
+      Replacement: '§e当信号发送者'
+    - Original: '§esends a signal with a matching'
+      Replacement: '§e发送匹配信号时触发'
+    - Original: '§econfigured name.'
+      Replacement: '§e配置名称时触发。'
+
+    - Original: '§8Dungeon Functions'
+      Replacement: '§8地牢功能'
+      
+    - Original: '§8Player Functions'
+      Replacement: '§8玩家功能'
+
+    - Original: '§8Location Functions'
+      Replacement: '§8位置功能'
+
+    - Original: '§8Meta Functions'
+      Replacement: '§8元功能'
+      
+    - Original: '§8Room Functions'
+      Replacement: '§8房间功能'
+
+    - Original: '§6Dungeon Key'
+      Replacement: '§6地牢钥匙'
+
+    - Original: '§8Room Functions'
+      Replacement: '§8房间功能.'
+
+    - Original: ' §eTrigger: §7'
+      Replacement: ' §e触发器: §7'
+
+    - Original: '§a§lTrigger: '
+      Replacement: '§a§l触发器: '
+    - Original: '§a§lTrigger: NONE'
+      Replacement: '§a§l触发器: 无'
+    - Original: "§eThis function doesn't have a trigger!"
+      Replacement: '§e这个功能没有触发器！'
+
+    - Original: '§d§lTarget Type: All Players'
+      Replacement: '§d§l目标类型: 全部玩家'
+    - Original: "§aSwitched target type to '"
+      Replacement: "§a将目标类型切换为 '"
+    - Original: "§6Player"
+      Replacement: "§6玩家"
+    - Original: "§6Party"
+      Replacement: "§6队伍"
+    - Original: "§6Players in Room"
+      Replacement: "§6房间里的玩家"
+    - Original: "§6None"
+      Replacement: "§6无"
+
+    - Original: '§d§lTarget Type: PARTY'
+      Replacement: '§d§l目标类型: 玩家'
+      
+    - Original: '§a§lTrigger Conditions'
+      Replacement: '§a§l触发条件'
+      
+    - Original: '§d§lLimit to Room'
+      Replacement: '§d§l限制到房间'
+    - Original: "§aSwitched to '§6trigger must be from the same room§a'"
+      Replacement: "§a切换为 '§6触发必须来自同一房间§a'"
+    - Original: "§aSwitched to '§6trigger can come from anywhere§a'"
+      Replacement: "§a切换为 '§6触发可以来自任何地方§a'"
+
+    - Original: '§a§lAdd Condition'
+      Replacement: '§a§l添加条件'
+    - Original: "§cYou can't add any more conditions to this trigger!"
+      Replacement: '§c你不能再向此触发器添加任何条件！'
+
+    - Original: '§e§lEdit Condition'
+      Replacement: '§e§l编辑条件'
+    - Original: '§c§lRemove Condition'
+      Replacement: '§c§l移除条件'
+
+    - Original: '§d§lToggle Condition Requirement'
+      Replacement: '§d§l切换条件要求'
+    - Original: "§aSwitched to '§6Condition §cmust NOT §6be met§a'"
+      Replacement: "§a切换为 '§6条件§c不需要§6满足§a'"
+    - Original: "§aSwitched to '§6Condition §bmust §6be met§a'"
+      Replacement: "§a切换为 '§6条件§b必须§6满足§a'"
+      
+    - Original: '§8Player Triggers'
+      Replacement: '§8玩家触发器'
+    - Original: '§8Dungeon Triggers'
+      Replacement: '§8地牢触发器'
+    - Original: '§8Room Triggers'
+      Replacement: '§8房间触发器'
+    - Original: '§8Meta Triggers'
+      Replacement: '§8元数据触发器'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+    # - Original: '§8Room Functions'
+    #   Replacement: '§8点击一个物品设置图标.'
+  # Json 替换模式, 适合高级用户.
+  # 不支持使用 Json 替换的监听类型有:
+  # ItemStack(版本1.12及以上书内容除外)、控制台消息,
+  # 以及计分板中的实体名称、版本1.12及以下的计分板标题.
+  # Json:
+  #   # 修改客户端上熔炉界面标题显示的名称.
+  #   - Original: '{"translate":"container.furnace"}'
+  #     Replacement: '{"text":"恭喜您打开了一个熔炉! 666!"}'
+  # 直观替换模式. 适合不熟悉 Json 替换的用户.
+  # 默认情况下, 若直观模式替换过任何内容, Json 和常规文本替换模式
+  # 将不再对该数据包生效. 您可以在 Config.yml 中调整此设定.
+  # 除 Json 外, 这也是支持 1.16+ HEX 的替换模式.
+  # 注意: 如果直观替换模式替换过文本, 它将破坏 Json 中的非文本组件显示效果.
+  # ^ 这意味着替换后(如果有的话)会产生消息会无法点击，
+  # ^ 移除鼠标悬停信息、翻译效果等副作用.
+  # Direct:
+  #   - Original: '§f<§f§4Rothes§f> §f我正在聊天'
+  #     Replacement: '§7* Rothes 正在聊天'
+
+# 屏蔽的字符串列表. 如果一个数据包中的任何字符串被匹配,
+# 这整个数据包将被屏蔽发送给玩家.
+# 此功能同样适用于控制台消息.
+# Blocks:
+#   Common:
+#     - '这条消息会被屏蔽'
+#     - '这条同样也会'
+#   Json:
+#     - '{"text":"这条json会被屏蔽"}'
+#   # 空列表.
+#   Direct: []

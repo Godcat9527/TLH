@@ -1,0 +1,522 @@
+#奖励设置
+Reward-Settings:
+    #权限组优先级，顺序从上到下
+    Groups-Priority:
+    - MVP
+    - VIP
+    - Default
+    #权限组设置
+    Permission-Groups:
+        #这个是默认组，不可删除也无法添加权限
+        Default:
+            #正常签到时触发
+            Normal-Time:
+                #在签到时发送信息
+                #支持PlaceholderAPI变量
+                Messages: 
+                - '{prefix}&a签到奖励已获取.'
+                - '{prefix}&a获得40点云翼能量.'
+                #在签到时奖励物品
+                #在这个选项中，你可以直接填写原版物品的名字，
+                #或者是RewardSettings.yml中（包含手动设置的、用命令添加的）的物品。
+                #格式： "[物品名字|收藏品名字]:[数量]"
+                #示例： "diamond:5" 奖励5个钻石
+                #你可以使用 "[最小值]-[最大值]" 以随机奖励物品的数量。
+                #示例： "diamond:1-3" 随机奖励1-3个钻石。
+                Reward-Items:
+                - 'gold_ingot:1'
+                - 'iron_ingot:2'
+                #在签到时发送广播信息
+                #在此选项中的信息将会被所有人看见
+                Broadcast-Messages: []
+                #在签到时播放声音
+                #格式： [声音]-[音量]-[音调]-[是否所有人都能听见]
+                Play-Sounds: 
+                - 'ENTITY_EXPERIENCE_ORB_PICKUP-1-1-FALSE'
+                #在签到时执行命令
+                #格式： "[执行类型]:[命令]"
+                #"执行类型" 可以是 "op" 、 "server"、 无
+                #分别对应 "玩家以OP权限执行命令"、 "执行控制台命令"、"玩家执行命令"
+                #示例： 
+                # "server:say hello" 在控制台中执行"say hello"命令
+                # "op:gamemode creative" 玩家以OP权限执行"gamemode creative"命令
+                # "spawn" 玩家正常执行"spawn"命令
+                #支持PlaceholderAPI变量
+                Commands: 
+                - 'server:money give %player_name% 300'
+                - 'server:flightcharge add %player_name% 100 -s'
+                #- 'server:ecrates key give %player_name% whiteknight 1'
+            #当玩家使用补签卡进行补签时触发
+            Retroactive-Time:
+                #禁止玩家通过补签获得以下模块的奖励
+                Disabled-Modules:
+                    #建议开启， 以防止玩家直接获得某些特殊日期的专属奖励
+                    Special-Dates: true
+                    Special-Weeks: true
+                    Statistics-Times: false
+                    Statistics-Times-Of-Month: false
+                Play-Sounds: 
+                - 'ENTITY_EXPERIENCE_ORB_PICKUP-1-1-FALSE'
+                Reward-Items:
+                - 'gold_ingot:1'
+                - 'iron_ingot:2'
+                Commands: 
+                - 'server:money give %player_name% 300'
+            #连续签到一定次数时触发
+            Special-Times:
+                2:
+                    #是否覆盖正常签到下的奖励
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到两天！获得额外奖励'
+                    - '{prefix}&a获得150点云翼能量.'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:2'
+                    - 'iron_ingot:3'
+                    Commands: 
+                    - 'server:money give {player} 330'
+                    - 'server:flightcharge add {player} 150 -s'
+                #    - 'server:ecrates key give %player_name% whiteknight 1'
+                3:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到三天！获得额外奖励'
+                    - '{prefix}&a获得200点云翼能量.'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:3'
+                    - 'iron_ingot:6'
+                    Commands: 
+                    - 'server:money give {player} 360'
+                    - 'server:flightcharge add {player} 200 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 1'
+                    
+                4:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到四天！获得额外奖励'
+                    - '{prefix}&a获得250点云翼能量.'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:3'
+                    - 'iron_ingot:6'
+                    Commands: 
+                    - 'server:money give {player} 390'
+                    - 'server:flightcharge add {player} 250 -s'
+                #    - 'server:ecrates key give %player_name% whiteknight 1'
+                5:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到五天！获得额外奖励'
+                    - '{prefix}&a获得300点云翼能量.'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:1'
+                    - 'gold_ingot:3'
+                    - 'iron_ingot:6'
+                    Commands: 
+                    - 'server:money give {player} 420'
+                    - 'server:flightcharge add {player} 300 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 1'
+                6:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到六天！获得额外奖励'
+                    - '{prefix}&a获得90点云翼能量.'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:2'
+                    - 'gold_ingot:5'
+                    - 'iron_ingot:10'
+                    Commands: 
+                    - 'server:money give {player} 450'
+                    - 'server:flightcharge add {player} 350 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 1'
+                7:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到七天！ 奖励&e翻倍&a！'
+                    - '{prefix}&a获得400点云翼能量.'
+                    Broadcast-Messages:
+                    - '{prefix}&a玩家 &e{player} &a连续签到了七天!'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:1'
+                    - 'gold_ingot:3'
+                    - 'iron_ingot:6'
+                    Commands: 
+                    - 'server:money give {player} 500'
+                    - 'server:ecrates key give {player} erverywek 1'
+                    - 'server:flightcharge add {player} 400 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 2'
+
+            #特别周签到时触发
+            Special-Weeks:
+                #周日
+                7:
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a今天是周末，额外奖励一个金苹果！'
+                    Reward-Items:
+                    - 'golden_apple:1'
+            #签到累计达到一定次数时触发
+            Statistics-Times:
+                100:
+                    Messages: 
+                    - '{prefix}&a签到次数总计达到100次，获得&e10000&a游戏硬币。'
+                    Commands:
+                    - 'server:eco give {player} 10000'
+            #在特殊日期进行签到时触发
+            Special-Dates:
+                #格式: MM-dd （月-日）注意不要把如一月一号写成“1-1”，而是“01-01”
+                '12-25':
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a今天是国庆节， 国庆节快乐！'
+                    Reward-Items:
+                    - 'golden_apple:32'
+            #每日签到时得到指定名次时触发
+            Special-Ranking:
+                #全服第一名
+                '1':
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a你今天是全服第一个签到的玩家，获得额外3500飞行能量！'
+                    Reward-Items:
+                    - 'diamond:1'
+                    - 'gold_ingot:3'
+                    - 'iron_ingot:6'
+                    Commands:
+                    - 'server:money give {player} 300'
+                    - 'server:flightcharge add {player} 3500 -s'
+                '2':
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a你今天是全服第二个签到的玩家，获得额外2000飞行能量！'
+                    Reward-Items:
+                    - 'diamond:1'
+                    - 'gold_ingot:3'
+                    - 'iron_ingot:6'
+                    Commands:
+                    - 'server:money give {player} 300'
+                    - 'server:flightcharge add {player} 2000 -s'
+            #每月连续签到一定次数时触发
+            Special-Times-Of-Month:
+                #十五次
+                15:
+                    #生效的月份，请填入月份对应的数字
+                    Valid-Months: [] #即为每年一月、二月、三月生效
+                    #是否覆盖正常签到下的奖励
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a本月连续签到达到了15天，签到奖励&e翻倍&a！'
+                    Reward-Items:
+                    - 'diamond:1'
+                    - 'gold_ingot:3'
+                    - 'iron_ingot:6'
+            #每月签到累计达到一定次数时触发
+            Statistics-Times-Of-Month:
+                #十五次
+                15:
+                    #生效的月份，请填入月份对应的数字
+                    Valid-Months: [] #即为每年一月、二月、三月生效
+                    #是否覆盖正常签到下的奖励
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a本月签到次数总计达到15次，额外获得&e1000&a游戏硬币。'
+                    Commands:
+                    - 'server:eco give {player} 1000'
+        #这个是自定义的组，以示范
+        VIP:
+            #使用权限
+            #当玩家拥有这个权限时，将会采用这个组的参数
+            #前提是你没有搞错组与组之间的优先级！
+            Permission: signin.reward.vip
+            Normal-Time:
+                Messages: 
+                - '{prefix}&a亲爱的VIP玩家,你的每日奖励已发放.'
+                - '{prefix}&a亲爱的VIP玩家,你已获得更多的云翼能量.'
+                Reward-Items:
+                - 'gold_ingot:3'
+                - 'iron_ingot:6'
+                Commands: 
+                - 'server:money give {player} 600'
+                - 'server:flightcharge add {player} 1000 -s'
+                - 'server:ecrates key give %player_name% whiteknight 2'
+            Retroactive-Time:
+                Disabled-Modules:
+                    Special-Dates: true
+                    Special-Weeks: true
+                    Special-Times: false
+                    Statistics-Times: false
+                Messages: 
+                - '{prefix}&a亲爱的VIP玩家,你的补签奖励已发放.'
+                Reward-Items:
+                - 'gold_ingot:3'
+                - 'iron_ingot:6'
+                Commands: 
+                - 'server:money give {player} 400'
+            Special-Times:
+                2:
+                    #是否覆盖正常签到下的奖励
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到两天！获得额外奖励'
+                    - '{prefix}&a亲爱的VIP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:4'
+                    - 'iron_ingot:6'
+                    Commands: 
+                    - 'server:money give {player} 800'
+                    - 'server:flightcharge add {player} 1500 -s'
+                   # - 'server:ecrates key give %player_name% whiteknight 2'
+                3:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到三天！获得额外奖励'
+                    - '{prefix}&a亲爱的VIP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:9'
+                    Commands: 
+                    - 'server:money give {player} 1000'
+                    - 'server:flightcharge add  {player} 2000 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 2'
+                4:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到四天！获得额外奖励'
+                    - '{prefix}&a亲爱的VIP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:12'
+                    Commands: 
+                    - 'server:money give {player} 1200'
+                    - 'server:flightcharge add {player} 3000 -s'
+                  #  - 'server:ecrates key give %player_name% whiteknight 2'
+                5:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到五天！获得额外奖励'
+                    - '{prefix}&a亲爱的VIP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:2'
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:12'
+                    Commands: 
+                    - 'server:money give {player} 1400'
+                    - 'server:flightcharge add {player} 4000 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 2'
+                6:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到六天！获得额外奖励'
+                    - '{prefix}&a亲爱的VIP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:2'
+                    - 'gold_ingot:5'
+                    - 'iron_ingot:10'
+                    Commands: 
+                    - 'server:money give {player} 1600'
+                    - 'server:flightcharge add {player} 5000 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 2'
+                7:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到七天！ 奖励&e翻倍&a！'
+                    - '{prefix}&a亲爱的VIP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Broadcast-Messages:
+                    - '{prefix}&a玩家 &e{player} &a连续签到了七天!'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:2'
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:12'
+                    Commands: 
+                    - 'server:money give {player} 1800'
+                    - 'server:ecrates key give {player} money 2'
+                    - 'server:flightcharge add {player} 6000 -s'
+                 #   - 'server:ecrates key give %player_name% whiteknight 2'
+            Statistics-Times:
+                100:
+                    Messages: 
+                    - '{prefix}&a签到次数总计达到100次，获得&e10000&a游戏硬币。'
+                    Commands:
+                    - 'server:eco give {player} 10000'
+            Special-Dates:
+                '10-1':
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a今天是国庆节， 国庆节快乐！'
+                    Reward-Items:
+                    - 'golden_apple:32'
+        MVP:
+            #使用权限
+            #当玩家拥有这个权限时，将会采用这个组的参数
+            #前提是你没有搞错组与组之间的优先级！
+            Permission: signin.reward.mvp
+            Normal-Time:
+                Messages: 
+                - '{prefix}&a亲爱的MVP玩家,你的每日奖励已发放.'
+                - '{prefix}&a亲爱的MVP玩家,你已获得更多的云翼能量.'
+                Reward-Items:
+                - 'gold_ingot:3'
+                - 'iron_ingot:6'
+                Commands: 
+                - 'server:money give {player} 1000'
+                - 'server:flightcharge add  {player} 3000 -s'
+                - 'server:ecrates key give %player_name% moeny 1'
+            Retroactive-Time:
+                Disabled-Modules:
+                    Special-Dates: true
+                    Special-Weeks: true
+                    Special-Times: false
+                    Statistics-Times: false
+                Messages: 
+                - '{prefix}&a亲爱的MVP玩家,你的补签奖励已发放.'
+                Reward-Items:
+                - 'gold_ingot:3'
+                - 'iron_ingot:6'
+                Commands: 
+                - 'server:money give {player} 1200'
+                - 'server:flightcharge add  {player} 3000 -s'
+                - 'server:ecrates key give %player_name% moeny 1'
+            Special-Times:
+                2:
+                    #是否覆盖正常签到下的奖励
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到两天！获得额外奖励'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:4'
+                    - 'iron_ingot:6'
+                    Commands: 
+                    - 'server:money give {player} 1500'
+                    - 'server:flightcharge add {player} 4000 -s'
+                    - 'server:ecrates key give %player_name% moeny 1'
+                3:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到三天！获得额外奖励'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得云翼能量'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:9'
+                    Commands: 
+                    - 'server:money give {player} 1800'
+                    - 'server:flightcharge add  {player} 5000 -s'
+                    - 'server:ecrates key give %player_name% moeny 1'
+                    
+                4:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到四天！获得额外奖励'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得云翼能量'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得游戏筹码'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:12'
+                    Commands: 
+                    - 'server:money give {player} 2100'
+                    - 'server:flightcharge add {player} 6000 -s'
+                    - 'server:ecrates key give %player_name% moeny 1'
+                5:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到五天！获得额外奖励'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得云翼能量'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得游戏筹码'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:2'
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:12'
+                    Commands: 
+                    - 'server:money give {player} 2400'
+                    - 'server:flightcharge add {player} 7000 -s'
+                    - 'server:ecrates key give %player_name% moeny 1'
+                6:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到六天！获得额外奖励'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得云翼能量'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得游戏筹码'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:2'
+                    - 'gold_ingot:5'
+                    - 'iron_ingot:10'
+                    Commands: 
+                    - 'server:money give {player} 2700'
+                    - 'server:flightcharge add {player} 8000 -s''
+                    - 'server:ecrates key give %player_name% moeny 1'
+                7:
+                    Override-default-rewards: true
+                    Messages: 
+                    - '{prefix}&a连续签到七天！ 奖励&e翻倍&a！'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得云翼能量'
+                    - '{prefix}&a亲爱的MVP用户,你可以额外获得游戏筹码'
+                    - '{prefix}&b感谢你对服务器的支持'
+                    Broadcast-Messages:
+                    - '{prefix}&a玩家 &e{player} &a连续签到了七天!'
+                    Play-Sounds: 
+                    - 'ENTITY_PLAYER_LEVELUP-1-0-TRUE'
+                    Reward-Items:
+                    - 'diamond:2'
+                    - 'gold_ingot:6'
+                    - 'iron_ingot:12'
+                    Commands: 
+                    - 'server:money give {player} 3000'
+                    - 'server:flightcharge add {player} 10000 -s'
+                    - 'server:ecrates key give %player_name% moeny 2'
+            Statistics-Times:
+                100:
+                    Messages: 
+                    - '{prefix}&a签到次数总计达到100次，获得&e10000&a游戏硬币。'
+                    Commands:
+                    - 'server:eco give {player} 10000'
+            Special-Dates:
+                '10-1':
+                    Override-default-rewards: false
+                    Messages: 
+                    - '{prefix}&a今天是国庆节， 国庆节快乐！'
+                    Reward-Items:
+                    - 'golden_apple:32'

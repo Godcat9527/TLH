@@ -1,0 +1,14 @@
+
+
+ # 所有组的默认设置，如果没有做特殊的设置，所有组都将采用这个设置
+_DEFAULT_:
+  tabprefix: "%vault-prefix%"
+  tagprefix: "%playerTitle_use%"
+  customtabname: "%essentials_nickname%"
+  customtagname: "%essentials_nickname%" # 需要开启 unlimited nametag mode
+  abovename: "%vault-prefix%"
+per-world:
+  world1:
+    Owner:
+      tabprefix: "&0&l[&4&l管理员&0&l] &f&l"
+      tagprefix: "&4&l管理员&f&l"

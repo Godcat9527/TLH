@@ -1,0 +1,14 @@
+name: 开拓者
+permissions:
+- betterrtp.group.开拓者
+- cmi.command.ender
+- auraskills.multiplier.100
+- cmi.command.sethome.5
+parents:
+- 开拓者5
+prefixes:
+- '&#B0C4DE[&#FFFF00开拓者&#B0C4DE]':
+    priority: 60
+suffixes:
+- '&#ffffff':
+    priority: 60

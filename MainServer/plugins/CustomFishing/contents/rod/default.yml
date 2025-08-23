@@ -1,0 +1,248 @@
+# 注意: 这些是插件的默认配置
+# 并不一定意味着玩家会有良好的游戏体验。我们希望您会根据自己的想法创建定制的配置，让玩家体验到您服务器的独特之处。
+
+# 原版普通鱼竿的属性
+FISHING_ROD:
+  tag: false
+  material: fishing_rod
+  effects:
+    effect_1:
+      type: wait-time-multiplier
+      value: 1.5
+
+# 自定义鱼竿
+beginner_rod:
+  material: fishing_rod
+  display:
+    name: "<b><#EEE9E9>初学者钓鱼竿"
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 初学者钓鱼竿专为初学钓鱼的人设计'
+      - '<gray> - 是新手钓鱼者最好的朋友'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 增加咬钩时间'
+      - '<gray> - 减少钓鱼难度'
+  custom-model-data: 50001
+  max-durability: 64
+  effects:
+    effect_1:
+      type: wait-time-multiplier
+      value: 1.8
+    effect_2:
+      type: difficulty
+      value: -8
+
+silver_rod:
+  material: fishing_rod
+  display:
+    name: "<b><#C0C0C0>白银钓鱼竿"
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 白银钓鱼竿制作精美，表面光彩夺目，是每'
+      - '<gray> - 一位追求银星品质鱼类的钓鱼者的梦想.'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 增加获得银星鱼的概率'
+  custom-model-data: 50002
+  max-durability: 96
+  effects:
+    effect_1:
+      type: group-mod
+      value:
+        - silver_star:+8
+
+golden_rod:
+  material: fishing_rod
+  display:
+    name: "<b><#FFD700>黄金钓鱼竿"
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 在阳光下闪闪发光，散发着奢华光辉，'
+      - '<gray> - 黄金钓鱼竿是高级钓具的典范'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 增加获得金星鱼的概率'
+  custom-model-data: 50003
+  max-durability: 80
+  effects:
+    effect_1:
+      type: group-mod
+      value:
+        - golden_star:+3
+
+star_rod:
+  material: fishing_rod
+  display:
+    name: "<b><#FFFF00>星辰钓鱼竿"
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 星辰钓鱼竿由星尘雕刻而成，沐浴在宇宙能量中，'
+      - '<gray> - 是宇宙奇迹的见证。它无穷无尽的魔力储藏库确'
+      - '<gray> - 保时间仿佛静止，让钓手有如永恒般完美捕获鱼。'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 增加15秒钓鱼游戏时间'
+  custom-model-data: 50004
+  max-durability: 128
+  effects:
+    effect_1:
+      type: game-time
+      value: 15
+
+bone_rod:
+  material: fishing_rod
+  display:
+    name: "<b><#CD2626>骨质钓鱼竿"
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 由古老骷髅的骨骼锻造而成，并注入了黑暗魔法的力量，'
+      - '<gray> - 骨质钓鱼竿不是胆小者所用。它让勇者或疯子在炽热的'
+      - '<gray> - 熔岩中垂钓，打破了常规钓鱼竿的限制。'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 在熔岩中钓鱼'
+      - '<gray> - 有时骷髅会抓住鱼钩'
+  custom-model-data: 50005
+  max-durability: 32
+  effects:
+    effect_1:
+      type: lava-fishing
+
+magical_rod:
+  material: fishing_rod
+  display:
+    name: '<b><#7B68EE>魔法钓鱼竿'
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 这款独特的钓鱼竿是魔法创新的产物，使用书作为鱼饵。'
+      - '<gray> - 其复杂的卷线机构和魔法吸引力要求使用者的经验等级，'
+      - '<gray> - 在每次投掷时消耗经验经验等级。'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 从钓鱼中获得附魔书。'
+      - '<gray> - 需要较长时间来咬钩。'
+      - ''
+      - '<#CD5C5C>要求:'
+      - '<gray> - 1x 书作为鱼饵'
+      - '<gray> - 10 经验等级'
+  custom-model-data: 50006
+  max-durability: 16
+  requirements:
+    requirement_1:
+      type: level
+      value: 10
+      not-met-actions:
+        action_1:
+          type: message
+          value:
+            - '你没有足够的经验等级来控制这根钓鱼竿.'
+    requirement_2:
+      type: bait
+      value:
+        - BOOK
+      not-met-actions:
+        action_message:
+          type: message
+          value:
+            - '你必须用书作为鱼饵.'
+  events:
+    cast:
+      action_level:
+        type: level
+        value: -10
+  effects:
+    effect_1:
+      type: group-mod-ignore-conditions
+      value:
+        - enchantments:+10
+    effect_2:
+      type: wait-time-multiplier
+      value: 3
+
+master_rod:
+  material: fishing_rod
+  display:
+    name: "<b><#FFFF00>大师钓鱼竿"
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 只有技艺高超的的钓手才能驾驭的大师的钓鱼竿代表了钓鱼工艺的巅峰。'
+      - '<gray> - 为了精准而精心制作，大大缩短了鱼儿上钩的时间。'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 减少上钩时间'
+      - '<gray> - 增加钓鱼的难度'
+      - '<gray> - 提高钓到优质鱼的概率'
+  custom-model-data: 50007
+  max-durability: 128
+  effects:
+    effect_1:
+      type: wait-time-multiplier
+      value: 0.95
+    effect_2:
+      type: difficulty
+      value: +10
+    effect_3:
+      type: group-mod
+      value:
+        - silver_star:+5
+        - golden_star:+3
+
+magical_rod_rlxuank:
+  material: fishing_rod
+  display:
+    name: '<b><#7B68EE>魔法钓鱼竿'
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 这款独特的钓鱼竿是魔法创新的产物，使用书作为鱼饵。'
+      - '<gray> - 其复杂的卷线机构和魔法吸引力要求使用者的经验等级，'
+      - '<gray> - 在每次投掷时消耗经验经验等级。'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 从钓鱼中获得附魔书。'
+      - '<gray> - 需要较长时间来咬钩。'
+      - ''
+      - '<#CD5C5C>要求:'
+      - '<gray> - 1x 书作为鱼饵'
+      - '<gray> - 10 经验等级'
+  custom-model-data: 50006
+  max-durability: 16
+  requirements:
+    requirement_1:
+      type: level
+      value: 10
+      not-met-actions:
+        action_1:
+          type: message
+          value:
+            - '你没有足够的经验等级来控制这根钓鱼竿.'
+    requirement_2:
+      type: bait
+      value:
+        - BOOK
+      not-met-actions:
+        action_message:
+          type: message
+          value:
+            - '你必须用书作为鱼饵.'
+  events:
+    cast:
+      action_level:
+        type: level
+        value: -10
+  effects:
+    effect_1:
+      type: group-mod-ignore-conditions
+      value:
+        - enchantments:+10
+    effect_2:
+      type: wait-time-multiplier
+      value: 3

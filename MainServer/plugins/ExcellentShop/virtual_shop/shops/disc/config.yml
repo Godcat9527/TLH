@@ -1,0 +1,21 @@
+Name: 唱片商店
+Description: []
+Icon:
+  Material: minecraft:paper
+  Lore: []
+  Item_Name: <!italic><white>TLH音乐包唱片-第一期
+  Display_Name: <!italic><white>TLH音乐包唱片-第一期
+  Model:
+    Data: 1137.0
+Pages: 1
+Permission_Required: false
+Transaction_Allowed:
+  BUY: true
+  SELL: true
+MainMenu:
+  Slot: -1
+Aliases: []
+Layout:
+  Name: default
+  ByPage:
+    '1': building

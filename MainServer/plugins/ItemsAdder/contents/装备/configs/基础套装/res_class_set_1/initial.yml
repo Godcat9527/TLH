@@ -1,0 +1,41 @@
+info:
+  namespace: res_class_set_1
+items:
+  warrior_sword:
+    display_name: "战士长剑"
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 6
+        attackSpeed: 2.5
+        armorToughness: 2
+        maxHealth: 2.0
+    resource:
+      material: STONE_SWORD
+      model_id: 70001
+      generate: false
+      model_path: class_weapons/warrior_sword
+  archer_bow:
+    display_name: "游侠之弓"
+    permission: archer_bow
+    resource:
+      material: BOW
+      model_id: 70002
+      generate: false
+      model_path: class_weapons/archer_bow
+  archer_arrow:
+    display_name: "archer_箭"
+    permission: archer_arrow
+    resource:
+      material: ARROW
+      model_id: 70002
+      generate: false
+      model_path: class_weapons/archer_arrow
+  mage_staff:
+    display_name: "魔法师之杖"
+    permission: mage_staff
+    resource:
+      material: STONE_SWORD
+      model_id: 70003
+      generate: false
+      model_path: class_weapons/mage_staff
+#===============================================

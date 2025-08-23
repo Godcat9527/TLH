@@ -1,0 +1,16 @@
+rewards:
+  reward_1:
+    reward:
+      material: emerald
+    amount: 1
+    chance: 40
+  reward_2:
+    reward:
+      material: diamond
+    amount: 1
+    chance: 40
+  reward_3:
+    reward:
+      material: iron_ingot
+    amount: 1~2
+    chance: 40

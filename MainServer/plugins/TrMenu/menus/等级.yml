@@ -1,0 +1,450 @@
+Title: '&6&lTLH &a&l等级升级'
+
+Layout:
+  - '@@@@A@@@@'
+  - '@1234567@' 
+  - '@@@@#@@@@'
+
+Options:
+  Arguments: false
+  Default-Arguments: [ ]
+  Default-Layout: 0
+  Min-Click-Delay: 200
+  Pure-Packet: false
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'A':
+      display: 
+        material: red_bed
+      icons:
+       - display: 
+          material: red_bed
+          name: '&{#54FF9F}&l初来乍到'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 普通玩家'
+            - '&{#B0C4DE}下一个等级: 初来乍到'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成5个每日任务'
+            - ''
+            - '&{#ff3300}花费5000星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *5000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 5000'
+                  - 'console: lp user %player_name% parent set 初来乍到1'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 78
+         condition: 'check papi *%odailyquests_total% >= *5'
+       - display:
+          material: red_bed
+          name: '&{#54FF9F}&l初来乍到'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 普通玩家'
+            - '&{#B0C4DE}下一个等级: 初来乍到'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成5个每日任务'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+            - '你当前的任务数量%odailyquests_total%'
+         priority: 79
+#==========================================================
+       - display:
+          material: red_bed
+          name: '&{#54FF9F}&l初来乍到'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 初来乍到'
+            - '&{#B0C4DE}下一个等级: 踏上旅程'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成20个每日任务'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+         priority: 77
+         condition: 'perm *group.初来乍到1'
+         
+       - display: 
+          material: red_bed
+          name: '&{#54FF9F}&l初来乍到'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 初来乍到'
+            - '&{#B0C4DE}下一个等级: 踏上旅程'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成20个每日任务'
+            - ''
+            - '&{#ff3300}花费2万星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *20000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 20000'
+                  - 'console: lp user %player_name% parent set 踏上旅程2'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 76
+         condition: 'all [ perm *group.初来乍到1 check papi *%odailyquests_total% >= *20 ]'     
+                    #condition: 'all [ perm *group.初来乍到1 check papi *%odailyquests_total% >= *30'    
+#========================================================
+       - display:
+          material: red_bed
+          name: '&{#FF8247}&l踏上旅程'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 踏上旅程'
+            - '&{#B0C4DE}下一个等级: 冒险家'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成30个每日任务'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+         priority: 75
+         condition: 'perm *group.踏上旅程2'
+
+       - display: 
+          material: red_bed
+          name: '&{#63B8FF}&l冒险家'
+          lore:
+            - ''
+            - '&{#FF8247}当前等级: 踏上旅程'
+            - '&{#B0C4DE}下一个等级: 冒险家'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成30个每日任务'
+            - ''
+            - '&{#ff3300}花费10w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+
+         action: 
+            left:
+              - condition: 'money *100000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 100000'
+                  - 'console: lp user %player_name% parent set 冒险家3'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 74
+         condition: 'all [ perm *group.踏上旅程2 check papi *%odailyquests_total% >= *30 ]'
+#===========================================================
+       - display:
+          material: red_bed
+          name: '&{#8B658B}&l探索先锋'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 冒险家'
+            - '&{#B0C4DE}下一个等级: 探索先锋'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成60个每日任务'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+         priority: 73
+         condition: 'perm *group.冒险家3'
+
+       - display: 
+          material: red_bed
+          name: '&{#8B658B}&l探索先锋'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 冒险家'
+            - '&{#B0C4DE}下一个等级: 探索先锋'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成60个每日任务'
+            - ''
+            - '&{#ff3300}花费70w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *700000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 700000'
+                  - 'console: lp user %player_name% parent set 探索先锋4'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 72
+         condition: 'all [ perm *group.冒险家3 check papi *%odailyquests_total% >= *60 ]'
+#========================================================
+       - display:
+          material: red_bed
+          name: '&{#FFE4E1}&l远航使者'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 探索先锋'
+            - '&{#B0C4DE}下一个等级: 远航使者'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成120个每日任务'
+            - '&{#B0C4DE}玩家属性平均等级达到3级'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+         priority: 71
+         condition: 'perm *group.探索先锋4'
+
+       - display: 
+          material: red_bed
+          name: '&{#FFE4E1}&l远航使者'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 探索先锋'
+            - '&{#B0C4DE}下一个等级: 远航使者'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成120个每日任务'
+            - '&{#B0C4DE}玩家属性平均等级达到3级'
+            - ''
+            - '&{#ff3300}花费200w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *2000000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 2000000'
+                  - 'console: lp user %player_name% parent set 远航使者5'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 70
+         condition: 'all [ perm *group.探索先锋4 check papi *%odailyquests_total% >= *120  check papi *%auraskills_average_int% >= *3 ]'
+#========================================================
+       - display:
+          material: red_bed
+          name: '&{#FFFF00}&l开拓者'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 远航使者'
+            - '&{#B0C4DE}下一个等级: 开拓者'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成200个每日任务'
+            - '&{#B0C4DE}玩家属性平均等级达到6级'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+         priority: 69
+         condition: 'perm *group.远航使者5'
+
+       - display: 
+          material: red_bed
+          name: '&{#FFFF00}&l开拓者'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 远航使者'
+            - '&{#B0C4DE}下一个等级: 开拓者'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成200个每日任务'
+            - '&{#B0C4DE}玩家属性平均等级达到6级'
+            - ''
+            - '&{#ff3300}花费400w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *4000000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 4000000'
+                  - 'console: lp user %player_name% parent set 开拓者6'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 68
+         condition: 'all [ perm *group.远航使者5 check papi *%odailyquests_total% >= *200 && check papi *%auraskills_average_int% >= *6 ]'
+#====================================================
+       - display:
+          material: red_bed
+          name: '&{#FFFF00}&l开拓者'
+          lore:
+            - ''
+            - '&{#F0FFF0}当前等级: 开拓者'
+            - '&{#F0FFF0}下一个等级: 你已经到达目前最高等级'
+            - ''
+            - '&{#ff3300}尽情期待后续等级!'
+         priority: 67
+         condition: 'perm *group.开拓者6'
+  '1':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    icons:
+      - display:
+          name: '&{#54FF9F}&l初来乍到'
+          lore:
+            - ''
+            - '&{#FFF68F}home上限:&{#F0FFF0}2'
+            - ''
+            - '&{#00FF7F}随机传送范围:&{#F0FFF0}4000*4000'
+            - '&{#00FF7F}随机传送冷却:&{#F0FFF0}500秒'
+            - '&{#00FF7F}随机传送价格:&{#F0FFF0}200星币'
+            - ''
+            - '&{#00BFFF}最大可加盟领地数:&{#F0FFF0}3'
+            - ''
+            - '&{#FF6A6A}Back冷却:&{#F0FFF0}120'
+            - '&{#FF6A6A}Home冷却:&{#F0FFF0}100'
+        priority: 100  
+  '2':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    icons:
+      - display:
+          name: '&{#FF8247}&l踏上旅程'
+          lore:
+            - ''
+            - '&{#FFF68F}home上限:&{#F0FFF0}3'
+            - ''
+            - '&{#00FF7F}随机传送范围:&{#F0FFF0}6000*6000'
+            - '&{#00FF7F}随机传送冷却:&{#F0FFF0}400秒'
+            - '&{#00FF7F}随机传送价格:&{#F0FFF0}200星币'
+            - ''
+            - '&{#00BFFF}最大可加盟领地数:&{#F0FFF0}4'
+            - '&{#00BFFF}可创建的领地数量:&{#F0FFF0}3'
+            - ''
+            - '&{#FF6A6A}Back冷却:&{#F0FFF0}105'
+            - '&{#FF6A6A}Home冷却:&{#F0FFF0}90'
+            - ''
+            - '&{#F0FFF0}玩家技能经验加成:10%'
+        priority: 100  
+  '3':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    icons:
+      - display:
+          name: '&{#63B8FF}&l冒险家'
+          lore:
+            - ''
+            - '&{#FFF68F}home上限:&{#F0FFF0}3'
+            - '&{#FFF68F}指令:&{#F0FFF0}/workbench 打开随身工作台'
+            - '&{#FFF68F}指令:&{#F0FFF0}/flyc 开启飞行模式'
+            - ''
+            - '&{#00FF7F}随机传送范围:&{#F0FFF0}9000*9000'
+            - '&{#00FF7F}随机传送冷却:&{#F0FFF0}300秒'
+            - '&{#00FF7F}随机传送价格:&{#F0FFF0}200星币'
+            - ''
+            - '&{#00BFFF}最大可加盟领地数:&{#F0FFF0}5'
+            - '&{#00BFFF}可创建的领地数量:&{#F0FFF0}4'
+            - ''
+            - '&{#FF6A6A}Back冷却:&{#F0FFF0}90'
+            - '&{#FF6A6A}Home冷却:&{#F0FFF0}80'
+            - ''
+            - '&{#F0FFF0}玩家技能经验加成:&{#F0FFF0}20%'
+        priority: 100  
+  '4':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    icons:
+      - display:
+          name: '&{#8B658B}&l探索先锋'
+          lore:
+            - ''
+            - '&{#FFF68F}home上限:&{#F0FFF0}4'
+            - '&{#FFF68F}指令:&{#F0FFF0}/stonecutter 打开随身切石机'
+            - ''
+            - '&{#00FF7F}随机传送范围:&{#F0FFF0}12000*12000'
+            - '&{#00FF7F}随机传送冷却:&{#F0FFF0}200秒'
+            - '&{#00FF7F}随机传送价格:&{#F0FFF0}200星币'
+            - ''
+            - '&{#00BFFF}最大可加盟领地数:&{#F0FFF0}6'
+            - '&{#00BFFF}可创建的领地数量:&{#F0FFF0}5'
+            - ''
+            - '&{#FF6A6A}Back冷却:&{#F0FFF0}75'
+            - '&{#FF6A6A}Home冷却:&{#F0FFF0}60'
+            - ''
+            - '&{#F0FFF0}玩家技能经验加成:&{#F0FFF0}40%'
+        priority: 100  
+  '5':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    icons:
+      - display:
+          name: '&{#FFE4E1}&l远航使者'
+          lore:
+            - ''
+            - '&{#FFF68F}home上限:&{#F0FFF0}5'
+            - '&{#FFF68F}指令:&{#F0FFF0}/grindstone 打开随身砂轮'
+            - ''
+            - '&{#00FF7F}随机传送范围:&{#F0FFF0}15000*15000'
+            - '&{#00FF7F}随机传送冷却:&{#F0FFF0}100秒'
+            - '&{#00FF7F}随机传送价格:&{#F0FFF0}100星币'
+            - ''
+            - '&{#00BFFF}最大可加盟领地数:&{#F0FFF0}8'
+            - '&{#00BFFF}可创建的领地数量:&{#F0FFF0}6'
+            - ''
+            - '&{#FF6A6A}Back冷却:&{#F0FFF0}60'
+            - '&{#FF6A6A}Home冷却:&{#F0FFF0}40'
+            - ''
+            - '&{#F0FFF0}玩家技能经验加成:&{#F0FFF0}60%'
+        priority: 100  
+  '6':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    icons:
+      - display:
+          name: '&{#FFFF00}&l开拓者'
+          lore:
+            - ''
+            - '&{#FFF68F}home上限:&{#F0FFF0}6'
+            - '&{#FFF68F}指令:&{#F0FFF0}/ender 打开末影箱'
+            - ''
+            - '&{#00FF7F}随机传送范围:&{#F0FFF0}20000*20000'
+            - '&{#00FF7F}随机传送冷却:&{#F0FFF0}50秒'
+            - '&{#00FF7F}随机传送价格:&{#F0FFF0}30星币'
+            - ''
+            - '&{#00BFFF}最大可加盟领地数:&{#F0FFF0}12'
+            - '&{#00BFFF}可创建的领地数量:&{#F0FFF0}8'
+            - ''
+            - '&{#FF6A6A}Back冷却:&{#F0FFF0}40'
+            - '&{#FF6A6A}Home冷却:&{#F0FFF0}20'
+            - ''
+            - '&{#F0FFF0}玩家技能经验加成:&{#F0FFF0}100%'
+        priority: 100  

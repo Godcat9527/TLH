@@ -1,0 +1,134 @@
+info:
+  namespace: customcrops
+items:
+  grape_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/grape/stage_1
+      model_id: 2064
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  grape_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/grape/stage_2
+      model_id: 2065
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  grape_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/grape/stage_3
+      model_id: 2066
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  grape_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/grape/stage_4
+      model_id: 2067
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  grape_stage_5:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/grape/stage_5
+      model_id: 2068
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  grape_stage_6:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/grape/stage_6
+      model_id: 2069
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  grape_seeds:
+    display_name: 葡萄种子
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/grape/grape_seeds
+      model_id: 2070
+  grape:
+    display_name: 葡萄
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/grape/grape
+      model_id: 2071
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  grape_silver_star:
+    display_name: 葡萄(银星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/grape/grape_silver_star
+      model_id: 2072
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+  grape_golden_star:
+    display_name: 葡萄(金星)
+    resource:
+      generate: false
+      material: APPLE
+      model_path: item/crops/grape/grape_golden_star
+      model_id: 2073
+    events:
+      eat:
+        feed:
+          amount: 1
+          saturation: 1
+categories:
+  customcrops_grape:
+    enabled: true
+    icon: grape
+    name: 'Grape'
+    items:
+      - customcrops:grape_seeds
+      - customcrops:grape
+      - customcrops:grape_silver_star
+      - customcrops:grape_golden_star
+      - customcrops:grape_stage_1
+      - customcrops:grape_stage_2
+      - customcrops:grape_stage_3
+      - customcrops:grape_stage_4
+      - customcrops:grape_stage_5
+      - customcrops:grape_stage_6

@@ -1,0 +1,1305 @@
+info:
+  namespace: magic_store
+items:
+  medieval_plant_hanging_plot_0:
+    display_name: '中世纪悬挂花盆 0'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_0
+      model_id: 5086
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_1:
+    display_name: '中世纪悬挂花盆 1'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_1
+      model_id: 5087
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_2:
+    display_name: '中世纪悬挂花盆 2'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_2
+      model_id: 5088
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_3:
+    display_name: '中世纪悬挂花盆 3'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_3
+      model_id: 5089
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_4:
+    display_name: '中世纪悬挂花盆 4'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_4
+      model_id: 5090
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_5:
+    display_name: '中世纪悬挂花盆 5'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_5
+      model_id: 5091
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_6:
+    display_name: '中世纪悬挂花盆 6'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_6
+      model_id: 5092
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_7:
+    display_name: '中世纪悬挂花盆 7'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_7
+      model_id: 5093
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_hanging_plot_8:
+    display_name: '中世纪悬挂花盆 8'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_hanging_plot_8
+      model_id: 5094
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_1:
+    display_name: '中世纪橡木藤蔓 1'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_1
+      model_id: 5095
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_2:
+    display_name: '中世纪橡木藤蔓 2'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_2
+      model_id: 5096
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_3:
+    display_name: '中世纪橡木藤蔓 3'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_3
+      model_id: 5097
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_4:
+    display_name: '中世纪云杉藤蔓 4'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_4
+      model_id: 5098
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_5:
+    display_name: '中世纪云杉藤蔓 5'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_5
+      model_id: 5099
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_6:
+    display_name: '中世纪云杉藤蔓 6'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_6
+      model_id: 5100
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_7:
+    display_name: '中世纪桦木藤蔓 7'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_7
+      model_id: 5101
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_8:
+    display_name: '中世纪桦木藤蔓 8'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_8
+      model_id: 5102
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_vine_9:
+    display_name: '中世纪桦木藤蔓 9'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_vine_9
+      model_id: 5103
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: false
+          ceiling: true
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+items:
+  medieval_plant_shelf:
+    display_name: '中世纪植物架'
+    permission: medieval_fullpack_3
+    resource:
+      material: COAL
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_shelf
+      model_id: 5104
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: true
+        placeable_on:
+          floor: false
+          ceiling: false
+          walls: true
+        hitbox:
+          length: 1
+          width: -2
+          height: 1
+          width_offset: 0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_wooden_table_1:
+    display_name: '中世纪木质桌子 1'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_wooden_table_1
+      model_id: 5105
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_wooden_table_2:
+    display_name: '中世纪木质桌子 2'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_wooden_table_2
+      model_id: 5106
+    behaviours:
+      furniture:
+        entity: item_frame
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: true
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot:
+    display_name: '中世纪植物花盆'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot
+      model_id: 5107
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_1:
+    display_name: '中世纪植物花盆 1'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_1
+      model_id: 5108
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_2:
+    display_name: '中世纪植物花盆 2'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_2
+      model_id: 5109
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_3:
+    display_name: '中世纪植物花盆 3'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_3
+      model_id: 5110
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_4:
+    display_name: '中世纪植物花盆 4'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_4
+      model_id: 5111
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_5:
+    display_name: '中世纪植物花盆 5'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_5
+      model_id: 5112
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_6:
+    display_name: '中世纪植物花盆 6'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_6
+      model_id: 5113
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_7:
+    display_name: '中世纪植物花盆 7'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_7
+      model_id: 5114
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_8:
+    display_name: '中世纪植物花盆 8'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_8
+      model_id: 5115
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_9:
+    display_name: '中世纪植物花盆 9'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_9
+      model_id: 5116
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_10:
+    display_name: '中世纪植物花盆 10'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_10
+      model_id: 5117
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_11:
+    display_name: '中世纪植物花盆 11'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_11
+      model_id: 5118
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_12:
+    display_name: '中世纪植物花盆 12'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_12
+      model_id: 5119
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_13:
+    display_name: '中世纪植物花盆 13'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_13
+      model_id: 5120
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_14:
+    display_name: '中世纪植物花盆 14'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_14
+      model_id: 5121
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_15:
+    display_name: '中世纪植物花盆 15'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_15
+      model_id: 5122
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_16:
+    display_name: '中世纪植物花盆 16'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_16
+      model_id: 5123
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_17:
+    display_name: '中世纪植物花盆 17'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_17
+      model_id: 5124
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_18:
+    display_name: '中世纪植物花盆 18'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_18
+      model_id: 5125
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_19:
+    display_name: '中世纪植物花盆 19'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_19
+      model_id: 5126
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8
+
+  medieval_plant_plot_20:
+    display_name: '中世纪植物花盆 20'
+    permission: medieval_fullpack_3
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      generate: false
+      model_path: furnitures/medieval_fullpack_3/medieval_plant_plot_20
+      model_id: 5127
+    behaviours:
+      furniture:
+        entity: armor_stand
+        gravity: false
+        fixed_rotation: false
+        small_hitbox: false
+        solid: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      # furniture_sit:
+      #   sit_height: 0.8

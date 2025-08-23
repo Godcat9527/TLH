@@ -1,0 +1,32 @@
+info:
+  namespace: shizuart_furnitures
+
+categories:
+  fisherman_props:
+    enabled: true
+    icon: "shizuart_furnitures:fisherman_blue_fish"
+    name: "Fisherman props"
+    items:
+      - "shizuart_furnitures:fisherman_blue_fish"
+      - "shizuart_furnitures:fisherman_cyan_fish"
+      - "shizuart_furnitures:fisherman_orange_fish"
+      - "shizuart_furnitures:fisherman_red_fish"
+      - "shizuart_furnitures:fisherman_boat"
+      - "shizuart_furnitures:fisherman_chair"
+      - "shizuart_furnitures:fisherman_fish_box"
+      - "shizuart_furnitures:fisherman_fish_rack"
+      - "shizuart_furnitures:fisherman_fishing_pole"
+      - "shizuart_furnitures:fisherman_fishingpole_rack"
+      - "shizuart_furnitures:fisherman_floatie"
+      - "shizuart_furnitures:fisherman_hanging_fish"
+      - "shizuart_furnitures:fisherman_landing_net"
+      - "shizuart_furnitures:fisherman_large_fishnet"
+      - "shizuart_furnitures:fisherman_lobster_trap"
+      - "shizuart_furnitures:fisherman_stand"
+      - "shizuart_furnitures:fisherman_table"
+      - "shizuart_furnitures:fisherman_armor"
+      - "shizuart_furnitures:fisherman_leggings"
+      - "shizuart_furnitures:fisherman_boots"
+      - "shizuart_furnitures:fisherman_hat"
+
+#47e9fc11ef703093a1d6a70bdf75f953

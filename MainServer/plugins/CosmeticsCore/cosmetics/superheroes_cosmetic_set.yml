@@ -1,0 +1,85 @@
+cosmetics:
+  superheroes_cosmetic_set_helmet_1:
+    display_name: "[超级英雄系列] 头盔_1"
+    type: HAT
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_helmet_1
+      normal: elitecreatures:superheroes_cosmetic_set_helmet_1
+    dye:
+      enabled: false
+      default: "#000000"
+  superheroes_cosmetic_set_helmet_2:
+    display_name: "[超级英雄系列] 头盔_2"
+    type: HAT
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_helmet_2
+      normal: elitecreatures:superheroes_cosmetic_set_helmet_2
+    dye:
+      enabled: false
+      default: "#000000"
+  superheroes_cosmetic_set_helmet_3:
+    display_name: "[超级英雄系列] 头盔_3"
+    type: HAT
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_helmet_3
+      normal: elitecreatures:superheroes_cosmetic_set_helmet_3
+    dye:
+      enabled: false
+      default: "#000000"
+  superheroes_cosmetic_set_backpack_1:
+    display_name: "[超级英雄系列] 背包_1"
+    type: BODY_ITEM
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_backpack_1
+      normal: elitecreatures:superheroes_cosmetic_set_backpack_1
+      self: elitecreatures:superheroes_cosmetic_set_backpack_1_self
+    dye:
+      enabled: false
+      default: "#000000"
+  superheroes_cosmetic_set_backpack_2:
+    display_name: "[超级英雄系列] 背包_2"
+    type: BODY_ITEM
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_backpack_2
+      normal: elitecreatures:superheroes_cosmetic_set_backpack_2
+      self: elitecreatures:superheroes_cosmetic_set_backpack_2_self
+    dye:
+      enabled: false
+      default: "#000000"
+  superheroes_cosmetic_set_backpack_3:
+    display_name: "[超级英雄系列] 背包_3"
+    type: BODY_ITEM
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_backpack_3
+      normal: elitecreatures:superheroes_cosmetic_set_backpack_3
+      self: elitecreatures:superheroes_cosmetic_set_backpack_3_self
+    dye:
+      enabled: false
+      default: "#000000"
+  superheroes_cosmetic_set_balloon_1:
+    enabled: true
+    display_name: "[超级英雄系列] 气球_1"
+    type: MEG_BALLOON_ENTITY
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_balloon_1
+      normal: superheroes_cosmetic_set_balloon_1
+    dye:
+      enabled: false
+  superheroes_cosmetic_set_balloon_2:
+    enabled: true
+    display_name: "[超级英雄系列] 气球_2"
+    type: MEG_BALLOON_ENTITY
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_balloon_2
+      normal: superheroes_cosmetic_set_balloon_2
+    dye:
+      enabled: false
+  superheroes_cosmetic_set_balloon_3:
+    enabled: true
+    display_name: "[超级英雄系列] 气球_3"
+    type: MEG_BALLOON_ENTITY
+    model:
+      gui: elitecreatures:superheroes_cosmetic_set_balloon_3
+      normal: superheroes_cosmetic_set_balloon_3
+    dye:
+      enabled: false

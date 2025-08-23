@@ -1,0 +1,946 @@
+List:
+  white_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:white_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+    Handler: bukkit_item
+  light_gray_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:light_gray_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 1
+      Page: 1
+    Handler: bukkit_item
+  gray_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:gray_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 2
+      Page: 1
+    Handler: bukkit_item
+  black_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:black_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 3
+      Page: 1
+    Handler: bukkit_item
+  brown_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:brown_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 9
+      Page: 1
+    Handler: bukkit_item
+  red_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:red_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 10
+      Page: 1
+    Handler: bukkit_item
+  orange_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:orange_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 11
+      Page: 1
+    Handler: bukkit_item
+  yellow_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:yellow_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 12
+      Page: 1
+    Handler: bukkit_item
+  lime_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:lime_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 18
+      Page: 1
+    Handler: bukkit_item
+  green_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:green_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 19
+      Page: 1
+    Handler: bukkit_item
+  cyan_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:cyan_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 20
+      Page: 1
+    Handler: bukkit_item
+  light_blue_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:light_blue_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 21
+      Page: 1
+    Handler: bukkit_item
+  tinted_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:tinted_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 22
+      Page: 1
+    Handler: bukkit_item
+  blue_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:blue_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 27
+      Page: 1
+    Handler: bukkit_item
+  purple_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:purple_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 28
+      Page: 1
+    Handler: bukkit_item
+  magenta_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:magenta_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 29
+      Page: 1
+    Handler: bukkit_item
+  pink_stained_glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:pink_stained_glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 30
+      Page: 1
+    Handler: bukkit_item
+  glass:
+    Type: VANILLA
+    Content:
+      Item: '{count:16,id:"minecraft:glass"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 1.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 38
+      Page: 1
+    Handler: bukkit_item
+  white_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:white_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 5
+      Page: 1
+    Handler: bukkit_item
+  light_gray_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:light_gray_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 6
+      Page: 1
+    Handler: bukkit_item
+  gray_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:gray_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 7
+      Page: 1
+    Handler: bukkit_item
+  black_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:black_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 8
+      Page: 1
+    Handler: bukkit_item
+  glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:16,id:"minecraft:glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 42
+      Page: 1
+    Handler: bukkit_item
+  brown_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:brown_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 14
+      Page: 1
+    Handler: bukkit_item
+  red_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:red_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 15
+      Page: 1
+    Handler: bukkit_item
+  orange_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:orange_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 16
+      Page: 1
+    Handler: bukkit_item
+  yellow_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:yellow_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 17
+      Page: 1
+    Handler: bukkit_item
+  lime_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:lime_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 23
+      Page: 1
+    Handler: bukkit_item
+  green_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:green_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 24
+      Page: 1
+    Handler: bukkit_item
+  cyan_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:cyan_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 25
+      Page: 1
+    Handler: bukkit_item
+  light_blue_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:light_blue_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 26
+      Page: 1
+    Handler: bukkit_item
+  blue_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:blue_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 32
+      Page: 1
+    Handler: bukkit_item
+  purple_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:purple_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 33
+      Page: 1
+    Handler: bukkit_item
+  magenta_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:magenta_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 34
+      Page: 1
+    Handler: bukkit_item
+  pink_stained_glass_pane:
+    Type: VANILLA
+    Content:
+      Item: '{count:6,id:"minecraft:pink_stained_glass_pane"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: coinsengine_building
+    Price:
+      Type: FLAT
+      BUY: 3.0
+      SELL: -1.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 35
+      Page: 1
+    Handler: bukkit_item

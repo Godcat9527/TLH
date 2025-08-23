@@ -1,0 +1,65 @@
+cosmetics:
+
+  bearhat:
+    enabled: true
+    display_name: "棕熊头套"
+    type: HAT
+    model:
+      gui: cosmeticspack3:bearhat
+      normal: cosmeticspack3:bearhat
+    dye:
+      enabled: false
+  ear1:
+    enabled: true
+    display_name: "兔耳"
+    type: HAT
+    model:
+      gui: cosmeticspack3:ear1
+      normal: cosmeticspack3:ear1
+    dye:
+      enabled: false
+  ear2:
+    enabled: true
+    display_name: "兔耳"
+    type: HAT
+    model:
+      gui: cosmeticspack3:ear2
+      normal: cosmeticspack3:ear2
+    dye:
+      enabled: false
+  mask:
+    enabled: true
+    display_name: "面具"
+    type: HAT
+    model:
+      gui: cosmeticspack3:mask
+      normal: cosmeticspack3:mask
+    dye:
+      enabled: false
+  hornhat:
+    enabled: true
+    display_name: "高帽"
+    type: HAT
+    model:
+      gui: cosmeticspack3:hornhat
+      normal: cosmeticspack3:hornhat
+    dye:
+      enabled: false
+  divingglasses:
+    enabled: true
+    display_name: "潜水镜"
+    type: HAT
+    model:
+      gui: cosmeticspack3:divingglasses
+      normal: cosmeticspack3:divingglasses
+    dye:
+      enabled: false
+  headphone:
+    enabled: true
+    display_name: "头戴耳机"
+    type: HAT
+    model:
+      gui: cosmeticspack3:headphone
+      normal: cosmeticspack3:headphone
+    dye:
+      enabled: false

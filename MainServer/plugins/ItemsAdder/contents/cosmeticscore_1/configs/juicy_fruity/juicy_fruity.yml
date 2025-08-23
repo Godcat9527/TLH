@@ -1,0 +1,175 @@
+info:
+  namespace: juicy_fruity
+items:
+  orange_backpack:
+    display_name: "香橙榨汁机"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: orange_backpack
+      model_id: 7058
+  orange_backpack_self:
+    display_name: Orange Backpack 
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: orange_backpack_self
+      model_id: 7059
+  orange_helmet:
+    display_name: "香橙头盔"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: orange_helmet
+      model_id: 7060
+    behaviours:
+      hat: true
+  orange_dagger:
+    display_name: "香橙刀"
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: orange_dagger
+      model_id: 7061
+  strawberry_backpack:
+    display_name: "草莓榨汁机"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: strawberry_backpack
+      model_id: 7062
+  strawberry_backpack_self:
+    display_name: Strawberry Backpack 
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: strawberry_backpack_self
+      model_id: 7063
+  strawberry_helmet:
+    display_name: "草莓头盔"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: strawberry_helmet
+      model_id: 7064
+    behaviours:
+      hat: true
+  strawberry_staff:
+    display_name: "草莓法杖"
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: strawberry_staff
+      model_id: 7065
+  grapes_backpack:
+    display_name: "葡萄榨汁机"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: grape_backpack
+      model_id: 7067
+  grapes_backpack_self:
+    display_name: Grapes Backpack 
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: grape_backpack_self
+      model_id: 7068
+  grapes_helmet:
+    display_name: "葡萄头盔"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: grape_helmet
+      model_id: 7069
+    behaviours:
+      hat: true
+  grapes_pistol:
+    display_name: "葡萄枪"
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: grape_pistol
+      model_id: 7070
+  watermelon_backpack:
+    display_name: "西瓜榨汁机"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: watermelon_backpack
+      model_id: 7071
+  watermelon_backpack_self:
+    display_name: Watermelon Backpack 
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: watermelon_backpack_self
+      model_id: 7072
+  watermelon_helmet:
+    display_name: "西瓜头盔"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: watermelon_helmet
+      model_id: 7073
+    behaviours:
+      hat: true
+  watermelon_hammer:
+    display_name: "西瓜锤子"
+    permission: permission_model
+    resource:
+      material: IRON_SWORD
+      generate: false
+      model_path: watermelon_hammer
+      model_id: 7074
+  avocado_backpack:
+    display_name: "鳄梨榨汁机" 
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: avocado_backpack
+      model_id: 7075
+  avocado_backpack_self:
+    display_name: Avocado Backpack 
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: avocado_backpack_self
+      model_id: 7076
+  avocado_helmet:
+    display_name: "鳄梨头盔"
+    permission: permission_model
+    resource:
+      material: KELP
+      generate: false
+      model_path: avocado_helmet
+      model_id: 7077
+    behaviours:
+      hat: true
+  avocado_shield:
+    display_name: "鳄梨盾牌"
+    permission: permission_model
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: avocado_shield
+      model_id: 7078
+#MFTWtmZrhXUHdXRnd3U100ZNxmW61EVPd3Y61kMJRlT49WMV9ES1Bja0cEeJllbq5Ea3M3M
+# K/UhAR2XMGvad1MBHICCehhAmJ8p+STbLwOcjlwmT1ikb3PymcbQq9xLgiVP4H/whdTkXHoVbkOvNTZp+fA5sK70NoCSIAakl9YFIlwlQf4=

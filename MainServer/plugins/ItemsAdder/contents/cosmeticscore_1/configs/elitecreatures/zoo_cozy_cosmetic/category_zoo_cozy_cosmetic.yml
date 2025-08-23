@@ -1,0 +1,19 @@
+info:
+  namespace: elitecreatures
+categories:
+  zoo_cozy_cosmetic:
+    enabled: true
+    skip_if_already: false
+    icon: "elitecreatures:zoo_cozy_cosmetic_rabbit_ears"
+    name: Zoo Cozy Cosmetic
+    permission: ia.menu
+    items:
+      - "elitecreatures:zoo_cozy_cosmetic_bear_backpack"
+      - "elitecreatures:zoo_cozy_cosmetic_bear_hand"
+      - "elitecreatures:zoo_cozy_cosmetic_bear_hat"
+      - "elitecreatures:zoo_cozy_cosmetic_frog_backpack"
+      - "elitecreatures:zoo_cozy_cosmetic_frog_hand"
+      - "elitecreatures:zoo_cozy_cosmetic_frog_hat"
+      - "elitecreatures:zoo_cozy_cosmetic_rabbit_backpack"
+      - "elitecreatures:zoo_cozy_cosmetic_rabbit_carrot"
+      - "elitecreatures:zoo_cozy_cosmetic_rabbit_ears"

@@ -1,0 +1,534 @@
+# 支持 '&' 颜色代码和十六进制代码! 十六进制代码格式: <#000000>
+# 使用 $1, $2, 等. 代表参数
+general:
+  prefix: <#9753f5>[地牢]
+  # 功能编辑器工具的物品显示名称.
+  function-editor-name: '&6功能构建器'
+  function-editor-lore:
+  - '&6----------------------'
+  - '&e右键点击一个方块'
+  - '&e来创建一个功能!'
+  room-editor-name: '&d房间编辑器'
+  room-editor-lore:
+  - '&d----------------------'
+  - '&e右键选择第一个角落.'
+  - '&e左键选择第二个角落.'
+  - ''
+  - '&e在房间内右键点击'
+  - '&e以编辑房间的设置.'
+  # 用于某些复杂系统消息的语言.(例如冷却时间消息)
+  # 语言列表可以在这里找到:https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html#util-text
+  # 注意:并非所有翻译都可能被支持!
+  java-locale: zh-CN
+
+# #####################
+# # 命令消息 ##
+# #####################
+# 命令显示的消息.
+
+commands:
+  # /recruit
+  recruit:
+    no-party-system: '&c服务器上没有安装队伍系统!'
+    already-recruiting: '&c你已经在进行招募!'
+    leader-only: '&c只有队长能够招募成员!'
+    recruit-for: '&e请用三个词语或更少的词语描述你正在招募什么队友?'
+    setup:
+      # $1 = 最大字符数.
+      too-many-characters: '&c不能超过 $1 个字符!'
+      # $1 = 最大词数.
+      too-many-words: '&c不能超过 $1 个词!'
+      # $1 = 招募标签.(队伍在招募什么)
+      label-set: '&b标签设置为 "&6$1&b"!'
+      description: '&e输入招募描述以提供更多细节!'
+      # $1 = 招募描述.
+      description-set: '&b描述设置为 "&6$1&b"!'
+      players: '&e你想招募多少玩家?'
+      party-too-small: '&c队伍规模至少为2人!'
+      party-too-big: '&c队伍规模不能超过12人!'
+      # $1 = 招募列表中所需的玩家数量.
+      players-set: '&b玩家数量设置为 "&6$1&b"!'
+      password: '&e输入一个密码以限制谁可以加入! 输入 "none" 表示无密码.'
+      no-spaces: '&c招募密码不能包含空格!'
+      # $1 = 招募列表的密码.
+      password-set: '&b招募密码设置为 "&6$1&b"!'
+      open-recruitment: '&b将队伍招募开放给所有人!'
+      complete: '&b招募设置完成!'
+    cancel:
+      not-recruiting: '&c你现在没有进行队友招募!'
+      success: '&e你取消了队友招募.'
+    join:
+      unspecified: '&c你必须指定一名玩家加入队伍!'
+      join-self: '&c你不能加入自己的队伍!'
+      player-not-found: '&c没有找到这个名称的玩家!'
+      not-recruiting: '&c这名玩家尚未进行招募其他玩家!'
+  # /leave 和 /md leave
+  leave:
+    not-in-dungeon: '&c你尚未处于地牢中!'
+    left-queue: '&e你取消了和你的队伍一起进入地牢.'
+  # /ready
+  ready:
+    not-queued: '&c你尚未在排队进入地牢的队伍中!'
+    # $1 = 准备好的玩家名称.
+    # $2 = 准备好的玩家数量.
+    # $3 = 进入地牢需要准备的总玩家数量.
+    success: '&a&l$1 &a已准备好进入地下城! &b($2/$3)'
+  # /notready
+  notready:
+    not-queued: '&c你尚未在排队进入地牢的队伍中!'
+    # $1 = 取消准备未准备好的玩家名.
+    cancel: '&c&l$1 &c取消了进入地牢.'
+  # /stuck 和 /md stuck
+  stuck:
+    not-in-dungeon: '&c你尚未不在地下城中!'
+    success: '&d哦不! 正在将你传送回你的上一个记录点.'
+  # /md loot
+  loot:
+    create:
+      # $1 = 提供的战利品表名称.
+      already-exists: '&c已有名为 ''&6$1&c'' 的战利品表!'
+      # $1 = 提供的战利品表名称.
+      success: '&a创建新的战利品表 ''&6$1&a''!'
+    remove:
+      # $1 = 提供的战利品表名称.
+      success: '&e删除战利品表 ''&6$1&e''!'
+    edit:
+      # $1 = 提供的战利品表名称.
+      not-found: '&c未找到名为 ''&6$1&c'' 的战利品表!'
+      # $1 = 提供的战利品表名称.
+      already-editing: '&c有人正在编辑战利品表 ''&6$1&c''!'
+  # /md play
+  play:
+    # $1 = 提供的玩家名称.
+    player-not-found: '&c未找到名为 ''&6$1&c'' 的玩家!'
+    console-needs-player: '&c从控制台运行此命令时,需要指定玩家!'
+    already-in-dungeon: '&c你已经在一个地牢中!'
+    already-in-queue: '&c你已经在排队等候其他地牢!'
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    party-lead-only: '&c只有队伍队长可以开始进入地牢!'
+    # $1 = 当前在地牢中的玩家名称.
+    player-in-dungeon: '&6&l$1 &c正在探索其他地牢中!'
+    requirements-not-met: '&6&l$1 &c不符合进入该地牢的条件!'
+    instances-full: '&c当前所有地牢都已满! 当有空闲地牢时向你发送提醒消息.'
+    how-to-cancel: '&b你正在排队等待一个地牢! 使用 &6/leave &b取消排队等待.'
+  lives:
+    not-in-dungeon: '&c你当前不在地牢中!'
+    infinite-lives: '&e你有 &6无限 &e次复活机会.'
+    # $1 = 剩余复活次数.
+    lives-remaining: '&e你还有 &6$1 &e次复活机会.'
+  join:
+    not-in-dungeon: '&c这名玩家当前不在地牢中!'
+  kick:
+    not-in-dungeon: '&c这名玩家当前不在地牢中!'
+    kick-alert: '&c你被管理员踢出了地牢.'
+  status:
+    # $1 = 运行中的地牢实例总数.
+    total-instances: '&e地牢总数: $1'
+    # $1 = 所有地牢实例中的玩家总数.
+    total-players: '&e地牢总玩家数: $1'
+    # $1 = 特定地牢实例的运行数量.
+    dungeon-instances: '&e - 地牢实例数量: $1'
+    # $1 = 特定地牢所有实例的玩家数量.
+    dungeon-players: '&e - 地牢实例玩家数量: $1'
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    none-loaded: '&e当前没有加载此地牢的实例!'
+  reload:
+    config-reloading: '&e正在重新加载配置和战利品表...'
+    config-reloaded: '&a配置已重新加载!'
+    all-dungeons-reloading: '&e正在重新加载所有地牢...'
+    all-dungeons-reloaded: '&a地牢已重新加载!'
+    reload-all-warning: '&c这将会踢出所有目前在地牢中的玩家!'
+    reload-all-confirm: '&c请再次使用 &6/dungeon reload all &c命令进行确认.'
+    # $1 = 正在重新加载的地牢名称
+    dungeon-reloading: '&e正在重新加载地牢 $1...'
+    # $1 = 已重新加载的地牢名称
+    dungeon-reloaded: '&a$1 已重新加载!'
+    # $1 = 尝试重新加载的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    # $1 = 我们正在尝试重新加载的地牢.
+    reload-dungeon-warning: '&c这将会踢出在地牢 $1 中的所有玩家!'
+    # $1 = 我们正在尝试重新加载的地牢.
+    reload-dungeon-confirm: '&c请再次使用 &6/dungeon reload $1 &c命令进行确认.'
+  create:
+    already-exists: '&c已存在名称相同的地牢!'
+    failed-to-create: '&c无法创建地牢! 请检查控制台获取详细信息...'
+    # $1 = 提供的地牢名称.
+    success: '&a成功创建空白地牢 &6$1'
+  edit:
+    already-in-dungeon: '&c你已经在一个地牢中!'
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    no-permission: '&c你没有权限编辑该地牢!'
+    loading: 正在加载地牢...
+  delete:
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    edit-in-progress: '&c有人正在编辑此地牢!'
+    delete-warning: '&c你确认要删除这个地牢吗? (将会保留备份.)'
+    delete-confirm: '&b再次运行命令进行确认.'
+    notification: '&c该地牢已被管理员删除!'
+    # $1 = 被删除的地牢名称.
+    success: '&c地牢 ''$1'' 已成功删除.'
+  addkey:
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    no-permission: '&c你没有权限编辑该地牢!'
+    no-held-item: '&c你没有拿着任何东西!'
+    success: '&a已将你手中的物品添加为该地牢的进入钥匙!'
+  removekey:
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    no-permission: '&c你没有权限编辑该地牢!'
+    no-held-item: '&c你没有拿着任何东西!'
+    no-key-found: '&c未找到与你主手中物品匹配的该地牢进入钥匙.'
+    success: '&a已将你手中的物品从地牢进入钥匙中移除.'
+  setlobby:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+    # $1 = X 位置
+    # $2 = Y 位置
+    # $3 = Z 位置
+    # $4 = YAW 位置
+    success: '&a已成功将地牢大厅位置设置在 &6X: $1 Y: $2 Z: $3 偏航: $4'
+  setspawn:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+    # $1 = X 位置
+    # $2 = Y 位置
+    # $3 = Z 位置
+    # $4 = YAW 位置
+    success: '&a已成功将地牢出生点位置设置在 &6X: $1 Y: $2 Z: $3 偏航: $4'
+  setexit:
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    # $1 = X 位置
+    # $2 = Y 位置
+    # $3 = Z 位置
+    # $4 = YAW 位置
+    success: '&a已成功将地牢出口位置设置在 &6X: $1 Y: $2 Z: $3 偏航: $4'
+  banitem:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+    success: '&e已成功将手中物品添加到地牢的''禁止物品''列表中.'
+  unbanitem:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+    not-banned: '&c该物品未在该地牢中被禁止!'
+    success: '&e已成功将手中物品从地牢的''禁止物品''列表中移除.'
+  dungeonitem:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+    success: '&e已成功将手中物品设置为地牢物品.'
+  functiontool:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+  save:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+    saving: '&e正在保存地牢...'
+    # $1 = 要保存的地牢的名称.
+    success: '&a地牢 &6$1 &a保存完成!'
+  import:
+    # $1 = 提供的世界名称.
+    world-not-found: '&c未找到名为 &6$1 &c的世界.'
+    # $1 = 提供的维度类型.
+    invalid-dimension: '&c$1 不是一个有效的维度类型!'
+    failed: '&c无法导入地牢! 请检查控制台获取详细信息...'
+    # $1 = 提供的世界名称.
+    success: '&a成功导入地牢 &6$1'
+  dxlimport:
+    # $1 = 提供的 DungeonXL 地图名称.
+    importing: '&e正在尝试转换 DXL 地图 ''&6$1&e''...'
+    failed: '&c&l失败! &c无法导入 DXL 地图! 请检查控制台获取详细信息.'
+    success: '&a&l成功! &a完成导入 DXL 地图!'
+    check-console: '&d请查看控制台以获取你需要手动配置的任何功能!'
+    clean-signs: '&d你可以使用 &6&l/dungeon cleansigns &d命令来移除 DXL 地牢中的告示牌!'
+  cleansigns:
+    not-in-dungeon: '&c你当前没有在编辑地牢!'
+    # $1 = 清理的告示牌数量.
+    success: '&e清理了 &6$1 &e个告示牌. (不包括互动触发器.)'
+  setcooldown:
+    # $1 = 提供的地牢名称.
+    dungeon-not-found: '&c未找到名为 ''&6$1&c'' 的地牢!'
+    # $1 = 提供的玩家名称.
+    player-not-found: '&c未找到名为 ''&6$1&c'' 的玩家!'
+    invalid-duration: '&c无效的持续时间! 请输入一个数字使用 &6s (秒), m(分钟), h (小时), 或 d (天)&c 为单位确定持续时间.'
+    # $1 = 提供的玩家名称.
+    # $2 = 提供的地牢名称.
+    success: '&e已成功为玩家 &6$1 &e设置地牢 &6$2&e 的冷却时间!'
+    # $1 = 地牢解锁的时间.
+    cooldown-time: '&e地牢还有 &6$1 &e冷却时间.'
+  # /party
+  party:
+    # 基本命令.
+    not-in-party: '&c你当前不在任何队伍中. 运行 &6/party invite [玩家名称] &c邀请其他玩家并创建队伍.'
+    # /party invite
+    invite:
+      # $1 = 提供的玩家名称.
+      player-not-found: '&c未找到名为 ''&6$1&c'' 的玩家!'
+      player-is-self: '&d一个人的时候叫孤独,不是队伍!'
+      # $1 = 提供的玩家名称.
+      player-is-in-a-party: '&6$1 &c已经加入了一个队伍!'
+      sender-not-leader: '&c只有队长可以邀请玩家!'
+      player-is-in-sender-party: '&c该玩家已经在你的队伍中!'
+      success: '&b已邀请玩家 &6$1 &b加入你的队伍,请等待对方接受.'
+    # /party join
+    join:
+      no-pending-invites: '&c你当前没有收到任何队伍邀请.'
+    # /party leave
+    leave:
+      not-in-party: '&c你当前不在任何队伍中.'
+      # $1 = 队伍领袖的名称.
+      success: '&b你离开了 &6$1''s &b的队伍.'
+    # /party givelead
+    givelead:
+      not-in-party: '&c你当前不在任何队伍中.'
+      not-party-lead: '&c只有队长可以转让队长身份.'
+      # $1 = 提供的玩家名称.
+      player-not-found: '&c在队伍中找不到名为 ''&6$1&c'' 的玩家.'
+    # /party kick
+    kick:
+      not-in-party: '&c你当前不在任何队伍中.'
+      not-party-lead: '&c只有队长可以踢出队伍中的玩家.'
+      # $1 = 提供的玩家名称.
+      player-not-found: '&c在队伍中找不到名为 ''&6$1&c'' 的玩家.'
+      player-is-self: '&d你知道有一个离开命令, 对吧?'
+    # /party disband
+    disband:
+      not-in-party: '&c你当前不在任何队伍中.'
+      not-party-lead: '&c只有队长可以解散队伍.'
+    # /party chat
+    chat:
+      not-in-party: '&c你当前不在任何队伍中.'
+    # /party spy
+    spy:
+      enabled: '&a你现在正在监听其他玩家的队伍消息!'
+      disabled: '&c你不再监听其他玩家的队伍消息.'
+  roomtool:
+    not-in-procedural: '&cThis tool is only available in procedural dungeons!'
+
+# ######################
+# #       实例消息     ##
+# ######################
+# 专门用于地牢实例操作的消息.
+
+instance:
+  menu:
+    difficulty-select: '&8选择难度'
+  loading: 加载地牢中...
+  is-saving: '&c地牢正在保存中! 请稍候再试.'
+  timed-out: '&c无法加载地牢! 请联系管理员. (加载超时)'
+  loaded: 地牢加载完成!
+  failed: '&c加载地牢失败! 请联系管理员查看控制台.'
+  stealth-join: '&7作为旁观者进入地牢; 你不会被视为参与者.'
+  prevent-teleport-in: '&c你不能传送到正在进行的地牢中!'
+  requirements:
+    # $1 = 不满足进入该地牢要求的玩家名字.
+    requirements-not-met: '&6$1 &c未满足进入此地牢的要求!'
+    # $1 = 此地牢允许的最大队伍大小.
+    party-too-big: '&c此地牢要求最多 &6$1 &c名玩家的队伍.'
+    # $1 = 此地牢要求的最小队伍大小.
+    party-too-small: '&c此地牢要求最小 &6$1 &c名玩家的队伍.'
+    # $1 = 玩家缺少的权限.
+    no-permission: '&c缺少权限: &6$1'
+    on-cooldown: '&c地牢冷却中,你需要等待地牢冷却结束才可进入!'
+    # $1 = 地牢解锁的时间.
+    cooldown-time: '&e解锁时间: &6$1'
+    # $1 = 玩家需要通关的前置地牢.
+    complete-required: '&c你需要先通关地牢 &6$1 &c!'
+    # $1 = 进入此地牢所需的游戏币数量.
+    not-enough-money: '&c你没有足够的金币进入地牢! 费用: &6$1'
+    # $1 = 进入地牢时消耗的游戏币数量.
+    money-deducted: '&e你花费了 &6$1 &e金币进入地牢!'
+    # $1 = 被禁止的物品名称.
+    banned-item: '&c在这个地牢中禁止使用此物品: &6$1'
+    no-access-key: '&c你需要一把进入地牢的钥匙!'
+  events:
+    # $1 = 离开地牢的玩家名称.
+    player-leave: '&6$1 &e离开了地牢.'
+    # $1 = 因为离线而被踢出地牢的玩家名字.
+    player-kicked: '&6$1 &c因为长时间离线而被踢出地牢!'
+    # $1 = 回到地牢的玩家名字.
+    player-returned: '&6$1 &a返回了地牢!'
+    # $1 = 死亡的玩家名称.
+    # $2 = 玩家还剩多少复活次数.
+    life-lost: '&6$1 &c死亡了! 还剩下 &6$2 &c次复活机会...'
+    # $1 = 失去所有复活次数的玩家名称.
+    all-lives-lost: '&6$1 &c用完了所有的复活机会!'
+    all-lives-lost-and-spectating: '&c所有玩家都用完了复活机会! 使用命令 &6/md leave &c离开地牢.'
+    all-lives-lost-and-spectating-auto-close: '&c所有玩家都用完了复活机会! 正在关闭地牢.'
+    # $1 = 继承离开玩家的地牢钥匙的玩家名称.
+    key-inheritance: '&e他们的钥匙已交给 &6$1&e.'
+    # $1 = 继承离开玩家的地牢物品的玩家名称.
+    dungeon-item-inheritance: '&e他们的地牢物品已交给 &6$1&e.'
+    enderpearl-deny: '&c这里禁止使用末影珍珠!'
+    chorus-fruit-deny: '&c这里禁止使用紫颂果!'
+    bucket-deny: '&c这里禁止使用水桶!'
+    item-banned: '&c在这个地牢里禁止使用此物品!'
+    command-deny: '&c在这个地牢里不允许使用这个命令!'
+    spectate-deny: '&c不能在地牢之外旁观该玩家!'
+  queue:
+    # $1 = 玩家即将进入的地牢名称.
+    dungeon-ready: '&e地牢 ''&6$1&e'' 现在可以进入了! 你准备好了吗?'
+    click-one: ' &e点击选择 →  '
+    ready-button: '&b&l[准备就绪!] '
+    cancel-button: '&c&l[取消] '
+    dungeon-ready-title: '&6地牢准备就绪!'
+    not-all-ready: '&c并非所有玩家都已准备好! 队列已取消...'
+    all-ready: '&e所有玩家已准备就绪. 进入地牢!'
+  editmode:
+    autosaving: '&e&l正在自动保存地牢...'
+    autosaved: '&a&l自动保存完成!'
+    function-select: '&e选择你要在这里构建的功能!'
+    # $1 = 选择的功能名称.
+    function-selected: '&e选择的功能: $1'
+    room-click-required: '&c你必须点击一个方块来选择一个角落.'
+    room-select-1: '&e已选择第一个角落.'
+    room-select-2: '&e已选择第二个角落.'
+    room-name-request: '&e这个房间的名称是什么?&b再次使用房间工具来取消.'
+    room-name-invalid: '&c房间名称不能包含空格或符号!请重试.'
+    room-create-cancelled: '&e已取消房间创建.'
+    # $1 = 新创建的房间名称.
+    room-created: '&a已创建新房间 &6$1&a!'
+    room-edit-cancelled: '&e已取消新的房间区域选择.'
+    # $1 = 编辑的房间名称.
+    room-edited: '&a已设置房间 &6$1&a 的新区域!'
+    room-connectors-outside: '&e警告!有连接器在房间边界之外!'
+    function-outside-room: '&c无法在房间外放置功能!'
+    room-whitelist:
+      add-prompt: '&e输入你想要添加的房间名称,或者右键点击其中的一个方块.'
+      # $1 = 添加的房间名称.
+      add-success: '&a已将房间 &6$1 &a添加到白名单!'
+      edit-prompt: '&e输入你想要编辑权重的房间名称,或者右键点击其中的一个方块.'
+      remove-prompt: '&e点击你想要从白名单中移除的房间.'
+      # $1 = 移除的房间名称.
+      remove-success: '&c已将房间 &6$1 &c从白名单中移除.'
+  rewards:
+    gui-display-name: 奖励
+    # $1 = 获得的经验数量.
+    xp-received: '&a你获得了 $1 经验!'
+    # $1 = 获得的经验等级数.
+    levels-received: '&a你获得了 $1 经验等级!'
+    rewards-inv-info: '&e这些物品将添加到你的奖励背包中! 通关地牢后你将获得这些物品.'
+    view-rewards-info: '&b使用命令 &l/rewards &b浏览你的奖励'
+    already-received: '&c你最近已经领取过这个奖励了!'
+    # $1 = 奖励将再次领取的时间.
+    cooldown-time: '&e解锁时间: &6$1'
+    on-cooldown: ''
+    added-to-inv: '&e你没有领取的奖励已添加到你的背包中.'
+    added-to-rewards-inv: '&e你没有领取的奖励已添加到你的奖励背包中.'
+    unclaimed-rewards: '&e你有未领取的奖励! &b&l点击此处获取奖励!'
+    invalid-loottable: '&c错误: 这个箱子有一个无效的战利品表! 请告知管理员!'
+  time-limit:
+    # $1 = 地牢名称.
+    ten-minute-warning: '&e剩余通过地牢 &6$1 &e的时间 10 分钟.'
+    # $1 = 地牢名称.
+    five-minute-warning: '&e剩余通过地牢 &6$1 &e的时间 5 分钟.'
+    # $1 = 地牢名称.
+    one-minute-warning: '&e剩余通过地牢 &6$1 &e的时间 1 分钟.'
+    # $1 = 地牢名称.
+    times-up: '&c时间到!! 地牢即将关闭...'
+  functions:
+    start-dungeon-ready: '&e你已经准备好进入地牢了.'
+    finish-dungeon: '&a你完成了地牢 $1&a!'
+    checkpoint: '&e已到达重生检查点!'
+    savepoint: '&e从队伍队长的上一个重生检查点开始!'
+    # $1 = 玩家当前的复活次数.
+    # $2 = 与玩家之前复活次数的变化, + 或 -.
+    lives-editor: '&e你现在有 &6$1 &e次复活机会. ($2&e)'
+    # $1 = 获得的物品数量.
+    # $2 = 获得的物品名称.
+    item-dispenser: '&a你获得了 &b$1 &6$2&a!'
+    # $1 = 完成通关的地牢名称.
+    keys:
+      key-ground: '&e队伍成员找到了一把钥匙! 它掉落在地上了...'
+      # $1 = 发现钥匙的玩家名称.
+      key-player: '&6$1 &e找到了一把钥匙!'
+      # $1 = 队伍队长的名称.
+      key-leader: '&e队伍成员找到了一把钥匙! 钥匙交给了队长 &6$1'
+    doors:
+      lock: '&c门锁住了!'
+      unlock: '&a门解锁了!'
+      # $1 = 钥匙物品的名称.
+      locked-key: '&c门被锁住了! 你需要 &6$1 &c来打开它!'
+      locked: '&c门是锁着的!'
+    reviver:
+      no-uses: '&c这个复活器不能再复活更多玩家了!'
+      infinite-uses: '&a你可以无限次使用这个复活器.'
+      # $1 = 剩余可使用的次数.
+      uses-remaining: '&a你还可以使用这个复活器 &6$1 &a次.'
+      # $1 = 被复活的玩家名称.
+      not-in-dungeon: '&c尝试复活 &6$1&c, 但他已经不在地牢里了!'
+      not-dead: '&c这个玩家还没死亡!'
+      # $1 = 被成功复活的玩家名称.
+      revived: '&a&l$1 &a已复活!!'
+
+# ###################
+# #     队伍消息    ##
+# ###################
+# 有关队伍系统的消息.
+party:
+  prefix: '&b[队伍]'
+  invite:
+    # $1 = 邀请者的名字.
+    message: '&6$1 &b邀请你加入他们的队伍.'
+    join-prompt: '&e&l[加入]'
+    # $1 = 邀请者的名字.
+    expired: '&c来自&6$1&c的队伍邀请已过期...'
+  # $1 = 加入队伍的玩家名字.
+  join: '&6$1 &b加入了队伍!'
+  # $1 = 离开队伍的玩家名字.
+  leave: '&6$1 &b离开了队伍!'
+  kick:
+    # $1 = 踢出玩家的队长名字.
+    kicked-player-alert: '&c你被 &6$1''s &c从队伍中踢出.'
+    # $1 = 被踢出队伍的玩家名字.
+    party-kicked-player-alert: '&6$1 &c被踢出了队伍.'
+    # $1 = 因为长时间离线而被踢出队伍的玩家名字.
+    offline-too-long: '&6$1 &c因为长时间离线而被踢出队伍!'
+  disband: '&c队伍已解散.'
+  new-leader:
+    # $1 = 新队长的名字.
+    success: '&6$1 &b现在是队伍的队长!'
+    # $1 = 被任命为队长的玩家名字.
+    failure: '&c玩家 &6$1 &c不是队伍成员.'
+  # 当玩家使用命令 /party 命令请求查看队伍信息时显示
+  # $1 = 队伍队长的名称.
+  info: '&b&l队伍所有者 &6$1'
+  # $1 = 玩家登录的名字.
+  login: '&6$1 &b已回到队伍中.'
+  # $1 = 玩家登出的名字.
+  logout: '&6$1 &b已下线.'
+  # 显示因队伍队长离开而取消招募的消息.
+  recruit:
+    # $1 = 主机的名称.
+    # $2 = 招募列表的名称.
+    listing: '&6&l$1 &e正在招募 ''&b$2&e''!'
+    cancel-leader-left: '&c因为队伍队长离开,队伍招募已取消.'
+    join:
+      button: '&b&l--[点击加入]--'
+      cancel: '&c取消加入此招募...'
+    already-in-party: '&c你已经在这个队伍中了!'
+    listing-expired: '&c这个队伍已经不再招募成员!'
+    password:
+      request: '&e输入此次招募的密码.'
+      no-spaces: '&c密码不能包含空格!'
+      incorrect: '&c密码错误, 请重试! (注意: 密码区分大小写.)'
+      correct: '&b密码验证成功!'
+    # $1 = 队伍大小
+    complete: '&b队伍招募完成! 已招募到 &a$1/$1 &b名玩家!'
+  chat:
+    enable: '&b已启用队伍聊天.'
+    disable: '&b已禁用队伍聊天.'
+    # $1 = 发送消息的玩家的显示名称.
+    # $2 = 发送的消息.
+    format: '$b[队伍] &6$1&f: &b$2'
+    # $1 = 发送消息的玩家的队伍队长名称.
+    # $2 = 发送消息的玩家的显示名称.
+    # $3 = 发送的消息.
+    spy-format: '&7[$1的队伍] &f&6$2&f: &b$3'
+
+
+# ###########################
+# #        杂项 消息        ##
+# ###########################
+# 不属于特定类别的消息.
+
+misc:
+  item-dropped: '&c你的背包已满! 物品已掉落到地上...'
+  rewards-unavailable: '&c在这个地牢中,不是所有的奖励你都可以获得!'

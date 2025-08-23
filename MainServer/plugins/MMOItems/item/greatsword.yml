@@ -1,0 +1,151 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+HARDENED_STEEL_CLAYMORE:
+  base:
+    material: IRON_SWORD
+    name: §f钢制大剑
+    required-level: 13.0
+    tier: RARE
+    required-class:
+      - Warrior
+      - Paladin
+    attack-damage:
+      base: 5.5
+      spread: 0.03
+      max-spread: 0.08
+    attack-speed:
+      base: 1.3
+      spread: 0.02
+      max-spread: 0.07
+    critical-strike-chance: 12.0
+    critical-strike-power: 24.0
+    two-handed: true
+    unbreakable: true
+    enchants:
+      sharpness: 4
+      knockback: 2
+    gem-sockets:
+      - Red
+      - Blue
+    perm-effects:
+      FAST_DIGGING: 3
+    ability:
+      right-click:
+        type: CIRCULAR_SLASH
+        mode: RIGHT_CLICK
+        damage: 7.2
+        cooldown: 19.0
+      on-hit:
+        type: SHOCK
+        mode: ATTACK
+        duration: 1.3
+        cooldown: 25.0
+    max-durability: 1000.0
+CANDY_CANE_SWORD:
+  base:
+    material: WOODEN_SWORD
+    name: §f糖§c果§f姜§c饼§f手§c杖§f剑 
+    attack-damage: 8.0
+    unbreakable: true
+    attack-speed:
+      base: 1.7
+      spread: 0.02
+      max-spread: 0.06
+    lore:
+      - §7这把剑体现了圣诞节的精神.
+      - §7攻击怪物并使它飞翔!
+      - §e2023年圣诞节期间获得!
+    critical-strike-chance: 20.0
+    critical-strike-power: 60.0
+    ability:
+      on-hit:
+        type: DEATH_MARK
+        mode: ATTACK
+        cooldown: 10.0
+
+TWO_HANDED_STEEL_SWORD:
+  base:
+    material: IRON_SWORD
+    name: §f双手钢剑
+    enchants:
+      sharpness: 4
+      knockback: 1
+      unbreaking: 6
+    two-handed: true
+    unbreakable: true
+    attack-damage:
+      base: 8.5
+      spread: 0.05
+      max-spread: 0.15
+    attack-speed:
+      base: 0.9
+      spread: 0.03
+      max-spread: 0.01
+    critical-strike-chance:
+      base: 8.5
+      spread: 0.05
+      max-spread: 0.15
+    critical-strike-power:
+      base: 190.0
+      spread: 0.03
+      max-spread: 0.1
+    required-level: 2.0
+    element:
+      ice:
+        damage: 7.0
+    gem-sockets:
+      - Blue
+      - Blue
+    tier: UNCOMMON
+    ability:
+      right-click:
+        type: CIRCULAR_SLASH
+        mode: RIGHT_CLICK
+        cooldown: 8.0
+        damage: 4.0
+    lore:
+      - §7右键以§c§n打碎§7附近的敌人
+      - §7造成§c4点§7伤害
+    hide-enchants: true
+EARTHLY_GREATSWORD:
+  base:
+    material: STONE_SWORD
+    max-durability: 8400.0
+    required-level: 30.0
+    attack-damage:
+      base: 32.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    critical-strike-chance:
+      base: 10.0
+      scale: 0.1
+      spread: 0.2
+    critical-strike-power:
+      base: 60.0
+      scale: 0.1
+      spread: 0.2
+    required-class:
+      - Warrior
+    tier: EPIC
+    name: §2大地巨剑
+    gem-sockets:
+      - Green
+    element:
+      earth:
+        damage: 50.0
+    attack-speed: 1.45
+    perm-effects:
+      SLOW: 1.0
+    two-handed: true
+    lore:
+      - §7当你手持该武器时获得§c缓慢 I§7效果.
+      - §7需要§c双持§7.
+    ability:
+      ability1:
+        type: CIRCULAR_SLASH
+        damage: 15.0
+        cooldown: 3.0
+        knockback: 2.0
+        radius: 4.0
+        mode: RIGHT_CLICK

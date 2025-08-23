@@ -1,0 +1,93 @@
+info:
+  namespace: elitecreatures
+items:
+  superheroes_cosmetic_set_backpack_1:
+    display_name: "[超级英雄系列] 背包_1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/backpack_1
+      model_id: 7034
+  superheroes_cosmetic_set_backpack_1_self:
+    display_name: Backpack 1 Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/backpack_1_self
+      model_id: 7035
+  superheroes_cosmetic_set_backpack_2:
+    display_name: "[超级英雄系列] 背包_2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/backpack_2
+      model_id: 7036
+  superheroes_cosmetic_set_backpack_2_self:
+    display_name: Backpack 2 Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/backpack_2_self
+      model_id: 7037
+  superheroes_cosmetic_set_backpack_3:
+    display_name: "[超级英雄系列] 背包_3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/backpack_3
+      model_id: 7038
+  superheroes_cosmetic_set_backpack_3_self:
+    display_name: Backpack 3 Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/backpack_3_self
+      model_id: 7039
+  superheroes_cosmetic_set_balloon_1:
+    display_name: "[超级英雄系列] 气球_1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/balloon_1
+      model_id: 7040
+  superheroes_cosmetic_set_balloon_2:
+    display_name: "[超级英雄系列] 气球_2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/balloon_2
+      model_id: 7041
+  superheroes_cosmetic_set_balloon_3:
+    display_name: "[超级英雄系列] 气球_3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/balloon_3
+      model_id: 7042
+  superheroes_cosmetic_set_helmet_1:
+    display_name: "[超级英雄系列] 头盔_1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/helmet_1
+      model_id: 7043
+    behaviours:
+      hat: true
+  superheroes_cosmetic_set_helmet_2:
+    display_name: "[超级英雄系列] 头盔_2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/helmet_2
+      model_id: 7044
+    behaviours:
+      hat: true
+  superheroes_cosmetic_set_helmet_3:
+    display_name: "[超级英雄系列] 头盔_3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: superheroes_cosmetic_set/helmet_3
+      model_id: 7045
+    behaviours:
+      hat: true

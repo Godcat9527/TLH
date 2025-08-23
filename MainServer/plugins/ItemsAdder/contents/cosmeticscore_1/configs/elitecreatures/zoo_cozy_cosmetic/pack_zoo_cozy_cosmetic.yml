@@ -1,0 +1,101 @@
+info:
+  namespace: elitecreatures
+items:
+  zoo_cozy_cosmetic_bear_backpack:
+    display_name: Bear Backpack
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/bear_backpack
+      model_id: 7046
+  zoo_cozy_cosmetic_bear_backpack_self:
+    display_name: Bear Backpack Self
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/bear_backpack_self
+      model_id: 7047
+  zoo_cozy_cosmetic_bear_hand:
+    display_name: Bear Hand
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/bear_hand
+      model_id: 7048
+  zoo_cozy_cosmetic_bear_hat:
+    display_name: Bear Hat
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/bear_hat
+      model_id: 7049
+  zoo_cozy_cosmetic_frog_backpack:
+    display_name: Frog Backpack
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/frog_backpack
+      model_id: 7050
+  zoo_cozy_cosmetic_frog_backpack_self:
+    display_name: Frog Backpack Self
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/frog_backpack_self
+      model_id: 7051
+  zoo_cozy_cosmetic_frog_hand:
+    display_name: Frog Hand
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/frog_hand
+      model_id: 7052
+  zoo_cozy_cosmetic_frog_hat:
+    display_name: Frog Hat
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/frog_hat
+      model_id: 7053
+  zoo_cozy_cosmetic_rabbit_backpack:
+    display_name: Rabbit Backpack
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/rabbit_backpack
+      model_id: 7054
+  zoo_cozy_cosmetic_rabbit_backpack_self:
+    display_name: Rabbit Backpack Self
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/rabbit_backpack_self
+      model_id: 7055
+  zoo_cozy_cosmetic_rabbit_carrot:
+    display_name: Rabbit Carrot
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/rabbit_carrot
+      model_id: 7056
+  zoo_cozy_cosmetic_rabbit_ears:
+    display_name: Rabbit Ears
+    permission: elitecreatures.use
+    resource:
+      material: paper
+      generate: false
+      model_path: zoo_cozy_cosmetic/rabbit_ears
+      model_id: 7057
+#IFRPhnRLRXVvVkaKlHZvhUMjZ1TyUFRPVTT65UeVRUT6lVVUFjd3QVWqZ2bplTaolXYuNmN
+# hL/McqPg4abWTIub/AlgzR2j+/Z35IumXtZVCQcMt17RxtCwgBhazL+5Xw4Q5Ju8jxd9Zq6+nqtb3ZdCyHWChHwMnqMhZDK9/ikJeu0jPrk=

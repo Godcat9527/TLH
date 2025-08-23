@@ -1,0 +1,1000 @@
+List:
+  itemsadder_customcrops:dry_pot:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:dry_pot
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 800
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 10
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 0
+      Page: 1
+  itemsadder_customcrops:greenhouse_glass:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:greenhouse_glass
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 600.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 400
+        SellAmount: -1
+        RestockTime: 86400
+      PLAYER:
+        BuyAmount: 20
+        SellAmount: -1
+        RestockTime: 86400
+    Shop_View:
+      Slot: 1
+      Page: 1
+  itemsadder_customcrops:scarecrow:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:scarecrow
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 600.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 600
+        SellAmount: -1
+        RestockTime: 604800
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 604800
+    Shop_View:
+      Slot: 2
+      Page: 1
+  itemsadder_customcrops:soil_surveyor:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:soil_surveyor
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 400.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 604800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 604800
+    Shop_View:
+      Slot: 3
+      Page: 1
+  itemsadder_customcrops:sprinkler_1_item:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:sprinkler_1_item
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 30
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 5
+      Page: 1
+  itemsadder_customcrops:sprinkler_2_item:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:sprinkler_2_item
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 4000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 30
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 6
+      Page: 1
+  itemsadder_customcrops:sprinkler_3_item:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:sprinkler_3_item
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 8000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 30
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 7
+      Page: 1
+  itemsadder_customcrops:quality_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:quality_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 9
+      Page: 1
+  itemsadder_customcrops:quality_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:quality_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 300.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 10
+      Page: 1
+  itemsadder_customcrops:quality_3:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:quality_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 400.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 11
+      Page: 1
+  itemsadder_customcrops:speed_grow_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:speed_grow_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 60.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 12
+      Page: 1
+  itemsadder_customcrops:speed_grow_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:speed_grow_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 170.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 13
+      Page: 1
+  itemsadder_customcrops:speed_grow_3:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:speed_grow_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 300.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 14
+      Page: 1
+  itemsadder_customcrops:variation_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:variation_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 15
+      Page: 1
+  itemsadder_customcrops:variation_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:variation_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 16
+      Page: 1
+  itemsadder_customcrops:variation_3:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:variation_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 1000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 17
+      Page: 1
+  itemsadder_customcrops:yield_increase_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:yield_increase_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 300.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 18
+      Page: 1
+  itemsadder_customcrops:yield_increase_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:yield_increase_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 400.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 19
+      Page: 1
+  itemsadder_customcrops:yield_increase_3:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:yield_increase_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 500.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 20
+      Page: 1
+  itemsadder_customcrops:soil_retain_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:soil_retain_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 24
+      Page: 1
+  itemsadder_customcrops:soil_retain_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:soil_retain_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 300.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 25
+      Page: 1
+  itemsadder_customcrops:soil_retain_3:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:soil_retain_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 400.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 26
+      Page: 1
+  itemsadder_customcrops:watering_can_1:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:watering_can_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 400.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 30
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 2
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 21
+      Page: 1
+  itemsadder_customcrops:watering_can_2:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:watering_can_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 700.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 30
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 22
+      Page: 1
+  itemsadder_customcrops:watering_can_3:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:watering_can_3
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 2000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 30
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 23
+      Page: 1
+  itemsadder_customcrops:watering_can_4:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:watering_can_4
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 4000.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 10
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 1
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 31
+      Page: 1
+  itemsadder_customcrops:cabbage_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:cabbage_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 28
+      Page: 1
+  itemsadder_customcrops:garlic_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:garlic_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 29
+      Page: 1
+  itemsadder_customcrops:hop_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:hop_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 30
+      Page: 1
+  itemsadder_customcrops:chinese_cabbage_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:chinese_cabbage_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 32
+      Page: 1
+  itemsadder_customcrops:eggplant_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:eggplant_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 33
+      Page: 1
+  itemsadder_customcrops:pitaya_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:pitaya_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 34
+      Page: 1
+  itemsadder_customcrops:corn_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:corn_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 38
+      Page: 1
+  itemsadder_customcrops:tomato_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:tomato_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 39
+      Page: 1
+  itemsadder_customcrops:pepper_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:pepper_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 40
+      Page: 1
+  itemsadder_customcrops:grape_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:grape_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 41
+      Page: 1
+  itemsadder_customcrops:pineapple_seeds:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: customcrops:pineapple_seeds
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      SELL: -1.0
+      BUY: 200.0
+    Stock:
+      GLOBAL:
+        BuyAmount: 80
+        SellAmount: -1
+        RestockTime: 172800
+      PLAYER:
+        BuyAmount: 5
+        SellAmount: -1
+        RestockTime: 172800
+    Shop_View:
+      Slot: 42
+      Page: 1

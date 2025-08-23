@@ -1,0 +1,14 @@
+name: 探索先锋
+permissions:
+- betterrtp.group.探索先锋
+- cmi.command.sethome.4
+- cmi.command.stonecutter
+- auraskills.multiplier.40
+parents:
+- 冒险家3
+prefixes:
+- '&#B0C4DE[&#8B658B探索先锋&#B0C4DE]':
+    priority: 40
+suffixes:
+- '&#ffffff':
+    priority: 40

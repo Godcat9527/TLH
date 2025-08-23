@@ -1,0 +1,13 @@
+Name: 矿物商店
+Description: []
+Permission_Required: false
+Citizens:
+  Attached_NPC: '6'
+Pages: 1
+Layout:
+  Name: default
+Transaction_Allowed:
+  BUY: false
+  SELL: true
+Icon:
+  Material: IRON_ORE

@@ -1,0 +1,34 @@
+general:
+  display-name: "&fSuspicious Sculk"
+  replace-block: sculk
+  biomes: all
+  distribution: -64 ~ 0
+  structure:
+    type: ancient_city
+  max-per-chunk: 16
+  loot-tables:
+    - stone
+
+brush-tools:
+  archaeological_shovel:
+    efficiency: 1.0
+  diamond_archaeological_shovel:
+    efficiency: 2.0
+  netherite_archaeological_shovel:
+    efficiency: 3.0
+
+states:
+  default:
+    texture: suspicious_sculk_0
+    hardness: 1.0
+  state_1:
+    texture: suspicious_sculk_1
+    hardness: 1.0
+  state_2:
+    texture: suspicious_sculk_2
+    hardness: 1.0
+  state_3:
+    texture: suspicious_sculk_3
+    hardness: 1.0
+  finished:
+    material: sculk

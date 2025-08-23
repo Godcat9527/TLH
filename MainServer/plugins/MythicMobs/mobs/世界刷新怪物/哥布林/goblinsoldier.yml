@@ -1,0 +1,26 @@
+goblinsoldier:
+  Type: VINDICATOR
+  Display: '哥布林士兵'
+  Health: 60
+  Equipment:
+  - air HEAD
+  Modules:
+    ThreatTable: true
+  Damage: 7
+  Drops:
+  - goblinDrops_2
+  Faction: goblin
+  Options:
+    Silent: true
+    FollowRange: 35
+    MovementSpeed: 0.25
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+  Skills:
+  - model{mid=goblinsoldier;n=true} @Self ~onSpawn
+  - skill{s=CancelDamageEvent;sync=true} @Self ~onAttack
+  - skill{s=GoblinSoldieronAttacksync;sync=true} @Self ~onAttack 1
+  - skill{s=GoblinSoldierLunge;sync=true} @Self ~onTimer:100
+  - state{s=death;li=3;lo=2} @Self ~onDeath
+  - skill{s=GoblinDeath_Random_sound} @Self ~onDeath

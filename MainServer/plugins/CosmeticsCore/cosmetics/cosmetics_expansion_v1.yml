@@ -1,0 +1,73 @@
+cosmetics:  
+  shadow_dragon_head:
+    display_name: "影龙之首"
+    type: HAT
+    model:
+      gui: cosmetic_expansion_v1:ce1_shadow_dragon
+      normal: cosmetic_expansion_v1:ce1_shadow_dragon
+    dye:
+      enabled: true
+  shadow_dragon_wings:
+    display_name: "影龙之翼"
+    type: BODY_ITEM
+    model:
+      gui: cosmetic_expansion_v1:ce1_shadow_dragon_wings
+      normal: cosmetic_expansion_v1:ce1_shadow_dragon_wings
+    dye:
+      enabled: true
+  phantom_king_crown:
+    display_name: "幻影王冠"
+    type: HAT
+    model:
+      gui: cosmetic_expansion_v1:ce1_phantom_king_crown
+      normal: cosmetic_expansion_v1:ce1_phantom_king_crown
+    dye:
+      enabled: true
+  phantom_king_shield:
+    display_name: "巫师披风"
+    type: BODY_ITEM
+    model:
+      gui: cosmetic_expansion_v1:ce1_phantom_king_shield
+      normal: cosmetic_expansion_v1:ce1_phantom_king_shield
+    dye:
+      enabled: true
+  cyber_visor:
+    display_name: "赛博面罩"
+    type: HAT
+    model:
+      gui: cosmetic_expansion_v1:ce1_cyber_visor
+      normal: cosmetic_expansion_v1:ce1_cyber_visor
+    dye:
+      enabled: true
+  cyber_jetpack:
+    display_name: "赛博背包"
+    type: BODY_ITEM
+    model:
+      gui: cosmetic_expansion_v1:ce1_cyber_jetpack
+      normal: cosmetic_expansion_v1:ce1_cyber_jetpack
+    dye:
+      enabled: true
+  chicken_hat:
+    display_name: "小鸡帽"
+    type: HAT
+    model:
+      gui: cosmetic_expansion_v1:ce1_chicken_hat
+      normal: cosmetic_expansion_v1:ce1_chicken_hat
+    dye:
+      enabled: true
+  chicken_wings:
+    display_name: "鸡翅"
+    type: BODY_ITEM
+    model:
+      gui: cosmetic_expansion_v1:ce1_chicken_wings
+      normal: cosmetic_expansion_v1:ce1_chicken_wings
+    dye:
+      enabled: true
+  pirate_hat:
+    display_name: "海盗帽"
+    type: HAT
+    model:
+      gui: cosmetic_expansion_v1:ce1_pirate_hat
+      normal: cosmetic_expansion_v1:ce1_pirate_hat
+    dye:
+      enabled: true

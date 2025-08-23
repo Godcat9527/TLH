@@ -1,0 +1,472 @@
+# In this file you can edit/add default land and nation levels.
+# Please note that each config section (level section) name and level name must be unique.
+# You must insert valid YAML format. To verify your format, you can paste the content of this file here: https://yaml-online-parser.appspot.com
+
+# Default land and nation levels. You can also add your own levels.
+# The order of the levels is ascending (lowest level -> highest).
+# This file can not be reloaded via /lands reload.
+
+general:
+  # If enabled, lands and nations won't downgrade, if they no longer meet their current level requirements.
+  keep-level: false
+
+land:
+  # Enable land levels?
+  enabled: true
+  # Here you can edit existing or add new levels.
+  levels:
+    1:
+      # Set the name of the level.
+      title: '小型营地'
+      # These values are only active if the land isn't a member of any nation.
+      # Attributes of a level will apply on top of whatever the current value for the land or nation is.
+      attributes:
+        # The chunks attribute will add or remove (= negative value) chunks to the land. That means that the land can claim more (or less) chunks at /claim.
+        chunks:
+          description: '&7扩展 {value} 个区块'
+          value: 0
+        # The upkeep attribute will higher or lower (= negative value) their upkeep costs by a given value.
+        # This attribute is not active, if the land is part of a nation.
+        upkeep:
+          description: '&7{value}% 维护费调整'
+          # The increase or decrease is in percent. So setting this value to 5 will increate the upkeep by 5 percent in total (not per chunk).
+          value: -80
+    2:
+      title: '营地'
+      requirements:
+        # Required members to get this level assigned.
+        members:
+          required: 1
+          title: '加入 {req} 名成员'
+          description:
+            - '&7拥有 {req} 名成员.'
+            - '&7邀请指令: &e/lands trust'
+        # Required chunks to get this level assigned.
+        chunks:
+          required: 12
+          title: '领土大小达到 {req} 个区块'
+          description:
+            - '&7Claim {req} chunks for this land.'
+            - '&7扩展指令: &e/claim'
+        # Required bank balance to get this level assigned (/lands balance).
+        balance:
+          required: 5000
+          title: '领地拥有 ${req}资金'
+          description:
+            - '&7向该领地银行存入 ${req} .'
+            - '&7相关指令: &e/lands deposit'
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 1
+            title: '{req} Upgradeable Farm'
+            description:
+              - '&7Have {req} upgradeable farm in your land.'
+              - '&7Command: &e/farm get'
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 5
+            title: '{req} Upgradeable Hoppers'
+            description:
+              - '&7Have {req} upgradeable hoppers in your land.'
+              - '&7Command: &e/hopper get'
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 3
+            title: '{req} Upgradeable Spawners'
+            description:
+              - '&7Have {req} upgradeable spawners in your land.'
+              - '&7Command: &e/spawner get'
+      attributes:
+        chunks:
+          description: '&7{value} 区块上限'
+          value: 33
+        upkeep:
+          description: '&7{value}% 维护费'
+          value: -20
+      # Execute console commands, if the land reaches this level or gets downgraded from this level to the previous one.
+      # Available placeholders:
+      # {level}: Name of the level
+      # {land}: Parameter name of the land = without spaces.
+      # {land_name}: Name of the land. Might contain spaces.
+      # {owner}: The player name of the land owner.
+      # {member}: The player name a land member.
+      # If the command contains the {member} placeholder, the command will be executed for each player that is trusted in the land.
+      commands:
+        # When a land reaches this level.
+        reached: [ ]
+        # When a land gets downgraded from the next level to this one.
+        down: [ ]
+    3:
+      title: '聚落'
+      requirements:
+        members:
+          required: 1
+          title: '加入 {req} 名成员'
+          description:
+            - '&7拥有 {req} 名成员.'
+            - '&7邀请指令: &e/lands trust'
+        chunks:
+          required: 36
+          title: '领土大小达到 {req} 个区块'
+          description:
+            - '&7Claim {req} chunks for this land.'
+            - '&7扩展指令: &e/claim'
+        balance:
+          required: 12000
+          title: '领地拥有 ${req}资金'
+          description:
+            - '&7向该领地银行存入 ${req} .'
+            - '&7相关指令: &e/lands deposit'
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 3
+            title: '{req} Upgradeable Farms'
+            description:
+              - '&7Have {req} upgradeable farms in your land.'
+              - '&7Command: &e/farm get'
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 8
+            title: '{req} Upgradeable Hoppers'
+            description:
+              - '&7Have {req} upgradeable hoppers in your land.'
+              - '&7Command: &e/hopper get'
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 3
+            title: '{req} Upgradeable Spawners'
+            description:
+              - '&7Have {req} upgradeable spawners in your land.'
+              - '&7Command: &e/spawner get'
+      attributes:
+        chunks:
+          description: '&7{value} 区块上限'
+          value: 84
+        upkeep:
+          description: '&7{value}% 维护费'
+          value: 0
+      commands:
+        reached: [ ]
+        down: [ ]
+    4:
+      title: '庄园'
+      requirements:
+        members:
+          required: 2
+          title: '加入 {req} 名成员'
+          description:
+            - '&7拥有 {req} 名成员.'
+            - '&7邀请指令: &e/lands trust'
+        chunks:
+          required: 81
+          title: '领土大小达到 {req} 个区块'
+          description:
+            - '&7Claim {req} chunks for this land.'
+            - '&7扩展指令: &e/claim'
+        balance:
+          required: 26000
+          title: '领地拥有 ${req}资金'
+          description:
+            - '&7向该领地银行存入 ${req} .'
+            - '&7相关指令: &e/lands deposit'
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 5
+            title: '{req} Upgradeable Farms'
+            description:
+              - '&7Have {req} upgradeable farms in your land.'
+              - '&7Command: &e/farm get'
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 15
+            title: '{req} Upgradeable Hoppers'
+            description:
+              - '&7Have {req} upgradeable hoppers in your land.'
+              - '&7Command: &e/hopper get'
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 5
+            title: '{req} Upgradeable Spawners'
+            description:
+              - '&7Have {req} upgradeable spawners in your land.'
+              - '&7Command: &e/spawner get'
+      attributes:
+        chunks:
+          description: '&7{value} 区块上限'
+          value: 209
+        upkeep:
+          description: '&7{value}% 维护费'
+          value: 60
+      commands:
+        reached: [ ]
+        down: [ ]
+    5:
+      title: '村庄'
+      requirements:
+        members:
+          required: 5
+          title: '加入 {req} 名成员'
+          description:
+            - '&7拥有 {req} 名成员.'
+            - '&7邀请指令: &e/lands trust'
+        chunks:
+          required: 196
+          title: '领土大小达到 {req} 个区块'
+          description:
+            - '&7Claim {req} chunks for this land.'
+            - '&7扩展指令: &e/claim'
+        balance:
+          required: 56000
+          title: '领地拥有 ${req}资金'
+          description:
+            - '&7向该领地银行存入 ${req} .'
+            - '&7相关指令: &e/lands deposit'
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 6
+            title: '{req} Upgradeable Farms'
+            description:
+              - '&7Have {req} upgradeable farms in your land.'
+              - '&7Command: &e/farm get'
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 25
+            title: '{req} Upgradeable Hoppers'
+            description:
+              - '&7Have {req} upgradeable hoppers in your land.'
+              - '&7Command: &e/hopper get'
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 6
+            title: '{req} Upgradeable Spawners'
+            description:
+              - '&7Have {req} upgradeable spawners in your land.'
+              - '&7Command: &e/spawner get'
+      attributes:
+        chunks:
+          description: '&7{value} 区块上限'
+          value: 308
+        upkeep:
+          description: '&7{value}% 维护费'
+          value: 130
+      commands:
+        reached: [ ]
+        down: [ ]
+
+
+nation:
+  # Enable nation levels?
+  enabled: true
+  # Here you can edit existing or add new nation levels.
+  levels:
+    1:
+      # Set the name of the level.
+      title: '城镇'
+      # For the entry level, there are not attributes set. But you could add them anyways, if you modify the value options.
+      # Attributes of a level will apply on top of whatever the current value for the land or nation is.
+      attributes:
+        chunks:
+          description: '&7{value} 个扩展区块'
+          value: 0
+        upkeep:
+          description: '&7{value}% 维护费'
+          value: 100
+        effects:
+          description: '&a+ 解锁效果: {value}'
+          value: [ ]
+        effects_amount:
+          description: '&a+ 同时激活 {value} 个效果'
+          value: 0
+    2:
+      title: '联邦'
+      requirements:
+        # 国家必须拥有的最少独特领地数量。
+        # 这不包括首都领地。
+        lands:
+          required: 3
+          title: '{req} 领地'
+          description:
+            - '&7邀请 {req} 个领地加入你的国家'
+            - '&7并让他们接受你的邀请。'
+            - '&7命令：&e/nation trust'
+        # 达到此等级需要的成员数量（总独特玩家数）。
+        members:
+          required: 15
+          title: '{req} 独特玩家'
+          description:
+            - '&7总共有 {req} 名玩家被信任。'
+            - '&7命令：&e/lands trust'
+        # 达到此等级需要的总区块数。
+        chunks:
+          required: 320
+          title: '认领 {req} 区块'
+          description:
+            - '&7总共有 {req} 个认领。'
+            - '&7命令：&e/claim'
+        # 达到此等级需要的总余额（所有领地的余额）。
+        balance:
+          required: 600000
+          title: '余额 ${req}'
+          description:
+            - '&7所有领地中存有 ${req} 。'
+            - '&7命令：&e/lands deposit'
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 9
+            title: '{req} Upgradeable Farms'
+            description:
+              - '&7Have {req} upgradeable farms in your land.'
+              - '&7Command: &e/farm get'
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 24
+            title: '{req} Upgradeable Hoppers'
+            description:
+              - '&7Have {req} upgradeable hoppers in your land.'
+              - '&7Command: &e/hopper get'
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 9
+            title: '{req} Upgradeable Spawners'
+            description:
+              - '&7Have {req} upgradeable spawners in your land.'
+              - '&7Command: &e/spawner get'
+      attributes:
+        # 为国家中的每个领地提供额外的区块数量。
+        chunks:
+          description: '&7{value} 认领'
+          value: 39
+        # 修改维护费用的百分比。这也支持负值。
+        # 国家向服务器支付维护费用。
+        upkeep:
+          description: '&7{value}% 维护成本'
+          value: 200
+        # 允许国家在其国家内激活特定数量的效果。效果可以通过等级提升来解锁。
+        effects:
+          description: '&a+ 解锁效果：{value}'
+          # 为这个等级配置一个解锁效果的列表。有效效果：https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html 
+          # 格式：EFFECT:AMPLIFIER
+          # 放大器是效果的强度（等级）。示例：JUMP:2 -> 跳跃 II
+          value:
+            - JUMP
+            - SPEED
+            - FAST_DIGGING
+            - DOLPHINS_GRACE
+        # 修改可以同时激活的效果数量。
+        effects_amount:
+          description: '&a+ 同时激活 {value} 个效果'
+          value: 1
+      # Execute console commands, if the nation reaches this level or gets downgraded from this level to the previous one.
+      # Available placeholders:
+      # {level}: Name of the level
+      # {nation}: Name of the nation
+      # {owner}: The player name of nation owner.
+      # {land}: Parameter name of the land that is part of the nation. Doesn't contain spaces.
+      # {land_name}: Name of the land that is part of the nation. May contain spaces.
+      # If the command contains the {land} placeholder, the command will be executed for each land, which is part of the nation.
+      commands:
+        # When a nation reaches this level.
+        reached: [ ]
+        # When a nation gets downgraded from the next level to this one.
+        down: [ ]
+    3:
+      title: '共和国'
+      requirements:
+        lands:
+          required: 6
+          title: '{req} 领地'
+          description:
+            - '&7邀请 {req} 个领地加入你的国家'
+            - '&7并让他们接受你的邀请。'
+            - '&7命令：&e/nations trust'
+        members:
+          required: 35
+          title: '{req} 独特玩家'
+          description:
+            - '&7总共有 {req} 名玩家被信任。'
+            - '&7命令：&e/lands trust'
+        chunks:
+          required: 450
+          title: '认领 {req} 区块'
+          description:
+            - '&7总共有 {req} 个认领。'
+            - '&7命令：&e/claim'
+        balance:
+          required: 1200000
+          title: '余额 ${req}'
+          description:
+            - '&7所有领地中存有 ${req} 。'
+            - '&7命令：&e/lands deposit'
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 18
+            title: '{req} Upgradeable Farms'
+            description:
+              - '&7Have {req} upgradeable farms in your land.'
+              - '&7Command: &e/farm get'
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 30
+            title: '{req} Upgradeable Hoppers'
+            description:
+              - '&7Have {req} upgradeable hoppers in your land.'
+              - '&7Command: &e/hopper get'
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 18
+            title: '{req} Upgradeable Spawners'
+            description:
+              - '&7Have {req} upgradeable spawners in your land.'
+              - '&7Command: &e/spawner get'
+      attributes:
+        chunks:
+          description: '&7{value} 最大区块'
+          value: 76
+        upkeep:
+          description: '&7{value}% 维护成本'
+          value: 450
+        effects:
+          description: '&a+ 解锁效果：{value}'
+          value:
+            - JUMP:2
+            - SPEED:2
+            - FAST_DIGGING:2
+            - DOLPHINS_GRACE:2
+            - ABSORPTION
+            - NIGHT_VISION
+            - LUCK
+            - INCREASE_DAMAGE
+            - HEALTH_BOOST
+        effects_amount:
+          description: '&a+ 同时激活 {value} 个效果'
+          value: 3
+      commands:
+        reached: [ ]
+        down: [ ]
+
+
+# You can disable sounds by setting them to ''
+sound:
+  # 领地或国家等级提升时播放给每个玩家的声音。
+  up: 'BLOCK_BELL_USE'
+  # 领地或国家等级下降时播放给每个玩家的声音。
+  down: 'BLOCK_ANVIL_DESTROY'
+

@@ -1,0 +1,19 @@
+rewards:
+  reward_1:
+    reward:
+        hook-plugin: ItemsAdder
+        hook-item: nogs_menagerie:nm_plushie_cozy_ibex
+    amount: 1
+    chance: 1
+  reward_2:
+    reward:
+        hook-plugin: ItemsAdder
+        hook-item: nogs_menagerie:nm_plushie_cozy_owl
+    amount: 1
+    chance: 1
+  reward_3:
+    reward:
+        hook-plugin: ItemsAdder
+        hook-item: nogs_menagerie:nm_plushie_cozy_penguin
+    amount: 1
+    chance: 1

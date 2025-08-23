@@ -1,0 +1,17 @@
+
+        
+command /signincheck:
+    trigger:
+        make player execute command "signin gui"
+            
+command /gcd:
+    trigger:
+        remove clock named "§b§l快捷菜单" from player
+        give a clock named "§b§l快捷菜单" with lore "§e快捷菜单" to the player
+
+command /tpem:
+    trigger:
+        if player has permission "group.冒险家3":
+            execute console command "server %player% Elitemobs"
+        else:
+            send "&c你最低需要 [冒险家] 身份组才能前往此DLC！" to player        

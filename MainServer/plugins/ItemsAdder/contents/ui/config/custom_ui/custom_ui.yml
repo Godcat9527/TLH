@@ -1,0 +1,38 @@
+info:
+  namespace: custom_ui
+font_images:
+   mi_forging:
+      path: custom_ui/mi_forging
+      y_position: 19
+      scale_ratio: 256
+      symbol: 뫼
+   mi_npc_forging:
+      path: custom_ui/mi_npc_forging
+      y_position: 19
+      scale_ratio: 256
+      symbol: 다
+   mi_material:
+      symbol: ꀰ
+      path: custom_ui/mi_material
+      y_position: 19
+      scale_ratio: 256
+      permission: somerandom.perm
+items:
+  forging-locked:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 66
+      textures:
+      - custom_ui/locked
+
+  forging-queue:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 67
+      textures:
+      - custom_ui/queue
+      

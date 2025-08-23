@@ -1,0 +1,65 @@
+Title: '&6&lTLH &a&l社交系统' #写在标题里了
+
+#建议每一个之间空一行，习惯，看起来不那么乱
+Layout:
+  - '@@ @ @ @@' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'Personal_title':
+    display: 
+      material: name_tag
+      name: '&f[&6个人称号&f]'
+      slots: 2
+      lore: 
+      - ''
+      - '&a➥点我查看称号菜单'
+    action: 
+      all: 
+        - 'open: 称号' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  'Teleport_warp':
+    display:
+      material: flower_banner_pattern
+      name: '&f[&6玩家地标&f]'
+      slots: 4
+      lore: 
+      - ''
+      - '&a➥点击选择想去的地标！'
+    action: 
+      all: 
+       - 'command: plw open'
+       - 'sound BLOCK_NOTE_BLOCK_COW_BELL'
+
+  'Friend':
+    display: 
+      material: player_head
+      name: '&f[&6好友系统&f]'
+      slots: 6
+      lore: 
+      - ''
+      - '&a➥SHIFT+右键点击玩家,即可发送好友申请'
+    action: 
+      all: 
+        - 'close'
+        - 'command: hyronicfriends' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 

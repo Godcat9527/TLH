@@ -1,0 +1,48 @@
+# Airdrop balloon
+shoot_balloon:
+  Type: PARROT
+  Display: '飘荡的气球'
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+  AIGoalSelectors:
+  - clear
+  # - gotolocation 0,150,0
+  AITargetSelectors:
+  - clear
+  Skills:
+  - goto @Forward{f=10;lockpitch=true} ~onTimer:20
+  - model{mid=shoot_balloon;n=false;save=true} @self ~onSpawn
+  - model{mid=shoot_balloon;n=false;save=true} @self ~onLoad
+  - summon{t=shoot_balloon_box} @self ~onDeath
+  - sound{s=my_sounds:balloon.boom;volume=5;pitch=1} @self ~onDeath
+  - teleport @selflocation{y="<random.10to20>"} ~onspawn
+  # - fakeexplosion @self ~onDeath
+  Health: '20'
+  Faction: '1'
+
+# Airdrop Entity
+shoot_balloon_box:
+  Type: PIG
+  Display: '神秘的盒子'
+  Drops:
+  - shoot_balloon_drops 
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    Despawn: PERSISTENT
+    Glowing: true
+    Collidable: false
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=shoot_balloon_box;n=false;save=true;d=false} @self ~onSpawn
+  - model{mid=shoot_balloon_box;n=false;save=true;d=false} @self ~onLoad
+  - velocity{m=set;x=0;y=0;z=0} @self ~onDamaged
+  - sound{s=block.wood.break;volume=5;pitch=1} @self ~onDeath
+  Health: '0.5'
+  DamageModifiers:
+  - FALL 0.001
+

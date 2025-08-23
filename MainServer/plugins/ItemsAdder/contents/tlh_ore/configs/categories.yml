@@ -1,0 +1,66 @@
+info:
+  namespace: minerals_pack
+categories:
+  minerals_pack:
+    enabled: true
+    name: "&3Minerals Pack"
+    title: ""
+    icon: minerals_pack:amethyst_ore
+    items:
+      - minerals_pack:mythril_ore
+      - minerals_pack:mythril_ore_deepslate
+      - minerals_pack:raw_mythril_block
+      - minerals_pack:mythril_block
+      - minerals_pack:raw_mythril
+      - minerals_pack:mythril_ingot
+      - minerals_pack:mythril_nugget
+      - minerals_pack:malachite_ore
+      - minerals_pack:malachite_ore_deepslate
+      - minerals_pack:raw_malachite_block
+      - minerals_pack:malachite_block
+      - minerals_pack:malachite
+      - minerals_pack:malachite_ingot
+      - minerals_pack:malachite_nugget
+      - minerals_pack:amethyst_ore
+      - minerals_pack:amethyst_ore_deepslate
+      - minerals_pack:raw_amethyst_block
+      - minerals_pack:amethyst_block
+      - minerals_pack:amethyst
+      - minerals_pack:amethyst_ingot
+      - minerals_pack:amethyst_nugget
+      - minerals_pack:amber_ore
+      - minerals_pack:amber_ore_deepslate
+      - minerals_pack:raw_amber_block
+      - minerals_pack:amber_block
+      - minerals_pack:amber
+      - minerals_pack:amber_ingot
+      - minerals_pack:amber_nugget
+      - minerals_pack:ruby_ore
+      - minerals_pack:ruby_ore_deepslate
+      - minerals_pack:raw_ruby_block
+      - minerals_pack:ruby_block
+      - minerals_pack:ruby
+      - minerals_pack:ruby_ingot
+      - minerals_pack:ruby_nugget
+      - minerals_pack:jade_ore
+      - minerals_pack:jade_ore_deepslate
+      - minerals_pack:raw_jade_block
+      - minerals_pack:jade_block
+      - minerals_pack:raw_jade
+      - minerals_pack:jade_ingot
+      - minerals_pack:jade_nugget
+      - minerals_pack:silver_ore
+      - minerals_pack:silver_ore_deepslate
+      - minerals_pack:raw_silver_block
+      - minerals_pack:silver_block
+      - minerals_pack:silver
+      - minerals_pack:silver_ingot
+      - minerals_pack:silver_nugget
+      - minerals_pack:iridium_ore
+      - minerals_pack:iridium_ore_deepslate
+      - minerals_pack:raw_iridium_block
+      - minerals_pack:iridium_block
+      - minerals_pack:raw_iridium
+      - minerals_pack:iridium_ingot
+      - minerals_pack:iridium_nugget
+# 248674019115481687855200

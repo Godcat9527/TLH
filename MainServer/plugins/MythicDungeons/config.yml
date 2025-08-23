@@ -1,0 +1,43 @@
+General:
+  # 使用哪个插件作为队伍系统。默认使用DungeonParties,由Mythic Dungeons提供。
+  PartyPlugin: Default
+  # 启用或禁用内置的队伍聊天系统
+  PartyChat: false
+  # 服务器上可以运行的最大副本数量。
+  MaxInstances: 10
+  # 在编辑模式下地牢的自动保存间隔时间（单位：秒）。0表示禁用自动保存。（不推荐）
+  AutoSaveInterval: 300
+  # 功能构建器物品的材质。必须是有效的Spigot材质。
+  # 如果你有其他插件也使用羽毛作为工具,比如goPaint,这个设置会很有用。
+  FunctionBuilderItem: FEATHER
+  # `/md stuck`命令是否会杀死玩家。
+  StuckKillsPlayer: false
+  # 是否只允许队长为队伍开始地牢。
+  LeaderOnlyQueue: true
+  # 在执行play命令后,是否要求所有队员确认他们已准备好再进入地牢。
+  # 注意：如果没有队列进入地牢,这个检查将会使用。
+  ReadyCheckOnCommand: true
+  # 在排队等待后进入地牢时,是否要求所有队员确认他们已准备好。
+  ReadyCheckInQueue: true
+  # 地牢可用后,准备检查等待所有玩家准备好的时间（单位：秒）。
+  ReadyCheckTime: 45
+  # 当上面的计时器到期时,是否将所有准备好的玩家传送到地牢。
+  StartWithoutUnreadyPlayers: false
+  # 在没有所有玩家准备好的情况下开始时,是否要求队长也准备好。
+  ReadyCheckRequireLeader: true
+  PartyFinder:
+    # 是否定期自动广播队伍招募信息。
+    AutoBroadcast: true
+    # 每次广播招募信息的间隔时间（单位：分钟）。
+    ListingBroadcastPeriod: 5
+# 与程序化（基于房间）地下城生成相关的设置。
+Generator:
+  # 生成器将花费多长时间（以秒为单位）尝试创建一个有效的地下城布局。如果你有特别复杂的地下城,考虑增加这个值。
+  # 注意：这是异步处理的,不会锁住你的服务器！太棒了！这对于非常大的地下城或有很多限制规则的房间非常有用。
+  Timeout: 5
+# 这些配置选项可能会引起意外的问题和奇怪的现象。
+Experimental:
+  # 实体是否会跟随移动的方块一起移动。
+  # 警告：向上移动将不起作用,除非在server.properties中将`allow-flight`设置为TRUE！使用风险自负！
+  # 警告2：由于延迟问题,从移动的方块上跳跃不起作用！我们正在调查是否能修复,但由于原版限制,这似乎不太可能。
+  MovingBlocksMoveEntities: false

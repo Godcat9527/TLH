@@ -1,0 +1,90 @@
+# 注意: 这些是插件的默认配置
+# 并不一定意味着玩家会有良好的游戏体验。我们希望您会根据自己的想法创建定制的配置，让玩家体验到您服务器的独特之处。
+
+# 使用普通物品作为鱼饵
+BOOK:
+  tag: false
+  material: book
+  requirements:
+    requirement_1:
+      type: rod
+      value:
+        - magical_rod
+      not-met-actions:
+        action_message:
+          type: message
+          value:
+            - '这个鱼饵只能在<#7B68EE>魔法钓鱼竿<reset>上使用'
+
+simple_bait:
+  material: paper
+  display:
+    name: '<b><#00BFFF>简易鱼饵'
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray>由天然成分制成, 以平稳而稳定的方式吸引'
+      - '<gray>鱼类.对于那些喜欢简单而可靠的钓鱼体验的'
+      - '<gray>人来说这是不二之选.'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 降低钓鱼难度'
+      - ''
+  custom-model-data: 50001
+  effects:
+    effect_1:
+      type: difficulty
+      value: -10
+
+magnetic_bait:
+  material: paper
+  display:
+    name: '<b><red>磁<blue>性<gray>鱼饵'
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray>其璀璨的光泽和独特的能量脉冲'
+      - '<gray>对好奇的鱼类具有不可抗拒的吸引力'
+      - '<gray>以前所未有的速度把它们吸引过来.'
+      - '<gray>这不仅仅是鱼饵.更是一场鱼类无法'
+      - '<gray>抗拒的奇观.'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 减少鱼类上钩时间'
+      - '<gray> - 延长钓鱼游戏时间'
+      - ''
+  custom-model-data: 50002
+  effects:
+    effect_1:
+      type: wait-time-multiplier
+      value: 0.9
+    effect_2:
+      type: game-time
+      value: 2
+
+wild_bait:
+  material: paper
+  display:
+    name: '<b><#2E8B57>野生鱼饵'
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray>为无畏的钓鱼者精心制作,野生鱼饵'
+      - '<gray>蕴含多种有效的天然成分,散发出对'
+      - '<gray>大型水生野兽无法抗拒的芳香'
+      - ''
+      - '<#FFD700>效果:'
+      - '<gray> - 增加钓鱼难度'
+      - '<gray> - 增加捕获的鱼的大小'
+      - ''
+  custom-model-data: 50003
+  effects:
+    effect_1:
+      type: difficulty
+      value: +20
+    effect_2:
+      type: size-multiplier
+      value: 1.5
+    effect_3:
+      type: game-time
+      value: -2

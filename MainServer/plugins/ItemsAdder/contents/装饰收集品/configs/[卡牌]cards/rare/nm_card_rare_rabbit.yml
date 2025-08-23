@@ -1,0 +1,25 @@
+info:
+  namespace: nogs_menagerie
+items:
+  nm_card_rare_rabbit:
+    display_name: '&b稀有收集卡牌 - 兔子'
+    resource:
+      material: PAPER
+      model_id: 633112
+      generate: false
+      model_path: cards/rare/nm_card_rare_rabbit
+    behaviours:
+      furniture:
+        entity: ITEM_FRAME
+        solid: false
+        small: false
+        fixed_rotation: true
+        placeable_on:
+          floor: false
+          ceiling: false
+          walls: true
+        sound:
+          place:
+            name: block.bamboo.place
+          break:
+            name: block.bamboo.break

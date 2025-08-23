@@ -1,0 +1,71 @@
+title: '&b&l商店MENU'
+size: 45
+
+bedrock:
+  enabled: true
+  content: '&fWelcome to shop.'
+
+open-actions:
+  1:
+    type: sound
+    sound: block.note_block.pling
+    open-once: true
+
+layout:
+  - '000000000'
+  - '0A0B0C0D0'
+  - '000000000'
+  - '0E0F0G0H0'
+  - '0000Z0000'
+
+buttons:
+  A:
+    display-item:
+      material: wheat
+      name: '&a&l农作物收购'
+      lore:
+        - '&7收购自定义农作物'
+    actions:
+      1:
+        type: shop_menu
+        shop: crop
+  E:
+    display-item:
+      material: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ0OTQ2OTQwMDE5MDZlOWY5MzMxNDM4YWFmYzkxOWRiMWRmNWNiNzVjMmFlMzg4N2VkMjM2YzNjZmI1Nzg3ZSJ9fX0='
+      name: '&b&l农具购买'
+      lore:
+        - '&7购买农具以更好种植作物'
+    actions:
+      1:
+        type: shop_menu
+        shop: farmtools
+  F:
+    display-item:
+      material: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FhZGIzN2RkNTU2ZjllZWZiYjhlYTU0OTQzZTFmNjU3ZmFjNDU0MDllMzRjZDk5YzgxMGQ0ZGQ0NjFiYzYzMyJ9fX0='
+      name: '&b&l种子购买'
+      lore:
+        - '&7购买种子以进行作物种植'
+    actions:
+      1:
+        type: shop_menu
+        shop: seed
+  G:
+    display-item:
+      material: PLAYER_HEAD
+      skull: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjgzMjUyZGJlYmI3Y2QwOWQ3MzNlZmM0OTNjNzMzOGIxNjllZmZhMzRiZmY1MzJhYjVmYzVlNzI1YThhZGE2NyJ9fX0='
+      name: '&b&l肥料购买'
+      lore:
+        - '&7购买肥料使作物更快生长'
+    actions:
+      1:
+        type: shop_menu
+        shop: manure
+  Z:
+    display-item:
+      material: BARRIER
+      name: '&c返回'
+    actions:
+      1:
+        type: close

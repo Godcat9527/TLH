@@ -1,0 +1,32 @@
+goblinshaman:
+  Type: SKELETON
+  Display: '哥布林萨满'
+  Health: 20
+  Equipment:
+  - air HEAD
+  - bow HAND
+  Modules:
+    ThreatTable: true
+  Damage: 1
+  Drops:
+  - goblinDrops_2
+  Faction: goblin
+  Options:
+    Silent: true
+    FollowRange: 35
+    MovementSpeed: 0.2
+    PreventSunburn: true
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+  AITargetSelectors:
+  - clear
+  - players
+  - golems
+  Skills:
+  - model{mid=goblinshaman;n=true} @Self ~onSpawn
+  - skill{s=GoblinFireBall;sync=true} @Target ~onShoot
+  - skill{s=CancelDamageEvent;sync=true} ~onShoot
+  - skill{s=GoblinHeal;sync=true} @Self ~onTimer:300
+  - state{s=death;li=3;lo=2} @Self ~onDeath
+  - skill{s=GoblinDeath_Random_sound} @Self ~onDeath

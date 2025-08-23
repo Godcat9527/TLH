@@ -1,0 +1,25 @@
+info:
+  namespace: nogs_menagerie
+items:
+  nm_card_ultra-rare_iron_golem:
+    display_name: '&d铁傀儡卡牌'
+    resource:
+      material: PAPER
+      model_id: 633201
+      generate: false
+      model_path: cards/ultra-rare/nm_card_ultra-rare_iron_golem
+    behaviours:
+      furniture:
+        entity: ITEM_FRAME
+        solid: false
+        small: false
+        fixed_rotation: true
+        placeable_on:
+          floor: false
+          ceiling: false
+          walls: true
+        sound:
+          place:
+            name: block.bamboo.place
+          break:
+            name: block.bamboo.break

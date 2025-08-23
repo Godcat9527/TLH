@@ -1,0 +1,63 @@
+info:
+  namespace: ghost_pepper_cyberspace
+items:
+  cyberspace_helmet:
+    display_name: "Cyberspace Helmet"
+    permission: cyberspace.cyberspace_helmet
+    lore:
+    - ''
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cosmetics/cyberspace_helmet
+      model_id: 7118
+  cyberspace_jet:
+    display_name: "Cyberspace Jet"
+    permission: cyberspace.cyberspace_jet
+    lore:
+    - ''
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cosmetics/cyberspace_jet
+      model_id: 7119
+  cyberspace_jet_self:
+    display_name: "Cyberspace Jet Self"
+    permission: cyberspace.cyberspace_jet
+    lore:
+    - ''
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cosmetics/cyberspace_jet_self
+      model_id: 7120
+  amethyst_helmet:
+    display_name: "Amethyst Helmet"
+    permission: cyberspace.amethyst_helmet
+    lore:
+    - ''
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cosmetics/amethyst_helmet
+      model_id: 7121
+  amethyst_wings:
+    display_name: "&d紫水晶翼捆绑包"
+    permission: cyberspace.amethyst_jet
+    lore:
+    - ''
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cosmetics/amethyst_wings
+      model_id: 7122
+  amethyst_wings_self:
+    display_name: "11"
+    permission: cyberspace.amethyst_jet_self
+    lore:
+    - ''
+    resource:
+      material: PAPER
+      generate: false
+      model_path: cosmetics/amethyst_wings_self
+      model_id: 7123

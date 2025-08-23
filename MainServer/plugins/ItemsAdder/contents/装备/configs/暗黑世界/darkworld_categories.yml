@@ -1,0 +1,40 @@
+info:
+  namespace: darkworldpack
+categories:
+  darkworldpack:
+    enabled: true
+    skip_if_already: false
+    icon: "darkworldpack:darkworld_sword"
+    name: Dark World Set
+    permission: ia.menu
+    items:
+      - "darkworldpack:darkworld_axe"
+      - "darkworldpack:darkworld_claymore"
+      - "darkworldpack:darkworld_bow"
+      - "darkworldpack:darkworld_chest"
+      - "darkworldpack:darkworld_open_chest"
+      - "darkworldpack:darkworld_crossbow"
+      - "darkworldpack:darkworld_dagger"
+      - "darkworldpack:darkworld_halberd"
+      - "darkworldpack:darkworld_hoe"
+      - "darkworldpack:darkworld_katana"
+      - "darkworldpack:darkworld_key"
+      - "darkworldpack:darkworld_pickaxe"
+      - "darkworldpack:darkworld_shield"
+      - "darkworldpack:darkworld_shovel"
+      - "darkworldpack:darkworld_sickle"
+      - "darkworldpack:darkworld_spear"
+      - "darkworldpack:darkworld_staff"
+      - "darkworldpack:darkworld_sword"
+      - "darkworldpack:darkworld_wings"
+      - "darkworldpack:darkworld_helmet"
+      - "darkworldpack:darkworld_chestplate"
+      - "darkworldpack:darkworld_leggings"
+      - "darkworldpack:darkworld_boots"
+
+
+      
+
+
+    
+

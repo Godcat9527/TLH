@@ -1,0 +1,76 @@
+hourly1:
+  DisplayName: "&c治愈奖励"
+  # 是否自动获得，而不需要手动领取
+  AutoClaim: true
+  Description:
+  - "&2每两小时可以获得一次免费治疗"
+  # 多少秒可领
+  PayEvery: 7200
+  Commands:
+  - asConsole! cmi heal [playerName] -s
+every1:
+  DisplayName: "&c在线奖励"
+  # 是否自动获得，而不需要手动领取
+  AutoClaim: true
+  Description:
+  - "&2每两小时可以获得一次免费治疗"
+  # 多少秒可领
+  PayEvery: 10800
+  Commands:
+  - asConsole! money give [playerName] 500
+1hour:
+  DisplayName: "&f1小时奖励"
+  AutoClaim: true
+  Description:
+  - "&2你已经在线3小时了"
+  - "可以领取&b&l2000金币"
+  PayFor: 10800
+  Commands:
+  - asConsole! money give [playerName] 2000
+6hour:
+  DisplayName: "&f6小时奖励"
+  AutoClaim: true
+  Description:
+  - "&2你已经在线6小时了"
+  - "可以领取&b&l5000金币"
+  PayFor: 21600
+  Commands:
+  - asConsole! money give [playerName] 5000
+12hour:
+  DisplayName: "&f8000小时奖励"
+  AutoClaim: true
+  Description:
+  - "&2你已经在线12小时了"
+  - "可以领取&b&l8000金币"
+  PayFor: 43200
+  Commands:
+  - asConsole! money give [playerName] 8000
+24hour:
+  DisplayName: "&f24小时奖励"
+  AutoClaim: true
+  Description:
+  - "&2你已经在线24小时了"
+  - "可以领取&b&l15000金币"
+  PayFor: 86400
+  Commands:
+  - asConsole! money give [playerName] 15000
+7days:
+  DisplayName: "&f每周奖励"
+  AutoClaim: true
+  Description:
+  - "&a感谢你已经在线七天了！"
+  - "可以领取&e&l200点券！"
+  PayFor: 604800
+  Commands:
+  - asConsole! points give [playerName] 100
+30days:
+  DisplayName: "&f月度奖励"
+  AutoClaim: true
+  Description:
+  - "&a感谢你已经在线一个月了！"
+  - "可以领取&e&l500点券！"
+  PayFor: 2592000
+  Commands:
+  - asConsole! points give [playerName] 500
+
+  

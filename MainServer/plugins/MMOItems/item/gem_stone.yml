@@ -1,0 +1,104 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+RUBY:
+  base:
+    material: EMERALD
+    name: '&f怒放红花'
+    critical-strike-power:
+      base: 11.0
+      spread: 0.028
+      max-spread: 0.083
+    attack-damage:
+      base: 1.5
+      spread: 0.083
+      max-spread: 0.25
+    required-level: 5.0
+    disable-crafting: true
+GEM_OF_ACCURACY:
+  base:
+    material: DIAMOND
+    disable-crafting: true
+    name: '&f水蓝精石'
+    success-rate:
+      base: 94.5
+      spread: 0.015
+      max-spread: 0.045
+    attack-speed:
+      base: 0.075
+      spread: 0.08
+      max-spread: 0.25
+    tier: COMMON
+    critical-strike-chance:
+      base: 12.5
+      spread: 0.06
+      max-spread: 0.17
+    gem-color: Blue
+    displayed-type: 水蓝宝石
+GEM_OF_LIFE:
+  base:
+    material: RED_DYE
+    max-health: 4.0
+    name: '&f活力精华'
+    item-type-restriction:
+    - ARMOR
+    gem-color: Red
+    displayed-type: 火红宝石(盔甲)
+    block-power: 3.0
+    disable-crafting: true
+NATURE_GIFT:
+  base:
+    material: EMERALD
+    name: '&f自然的馈赠'
+    displayed-type: 自然宝石
+    fire-damage-reduction:
+      base: 25.0
+      spread: 0.06
+      max-spread: 0.17
+    required-level: 6.0
+SPITEFUL_OPAQUE_DIAMOND:
+  base:
+    material: DIAMOND
+    name: '&9恨意透钻'
+    success-rate:
+      base: 11.0
+      spread: 0.03
+      max-spread: 0.08
+    attack-damage:
+      base: 3.5
+      spread: 0.04
+      max-spread: 0.13
+    armor: 2.0
+    disable-crafting: true
+    gem-color: Blue
+    displayed-type: 水蓝宝石
+GOLDEN_RELIC:
+  base:
+    material: GOLD_NUGGET
+    name: '&e黄金遗物'
+    lore:
+    - '&7可装备在 &e任意&7 插槽中.'
+    - '&7'
+    critical-strike-chance:
+      base: 15.0
+      spread: 0.08
+      max-spread: 0.25
+    required-level: 20.0
+    disable-crafting: true
+BLAZE_SOUL:
+  base:
+    material: ORANGE_DYE
+    disable-crafting: true
+    name: '&c炽魂'
+    required-level: 15.0
+    displayed-type: 火红宝石
+    hide-enchants: true
+    enchants:
+      unbreaking: 1
+    fire-damage-reduction:
+      base: 55.0
+      spread: 0.03
+      max-spread: 0.08
+    success-rate:
+      base: 70.0
+      spread: 0.042
+      max-spread: 0.13

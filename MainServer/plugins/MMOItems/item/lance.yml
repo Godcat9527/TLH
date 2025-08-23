@@ -1,0 +1,29 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+FIRE_GREATLANCE:
+  base:
+    material: BLAZE_ROD
+    required-level: 30.0
+    attack-damage:
+      base: 14.5
+      spread: 0.01
+      max-spread: 0.03
+    attack-speed: 1.1
+    name: '&f火焰长矛'
+    ability:
+      on-hit:
+        type: LIFE_ENDER
+        mode: ATTACK
+        damage: 10.0
+        cooldown: 30.0
+    lore:
+    - '&7在战斗中，每 40s 将生成一次'
+    - '&7毁灭性的 &6火焰彗星 &7砸向地面'
+    - '&7同时将对附近敌人造成剧烈伤害'
+    item-particles:
+      type: DOUBLE_RINGS
+      particle: FLAME
+      radius: 1.3
+      rotation-speed: 0.4
+    disable-crafting: true
+    two-handed: true

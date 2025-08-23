@@ -1,0 +1,43 @@
+info:
+  namespace: t-material
+categories:
+  material_menu:
+    enabled: true
+    skip_if_already: false
+    icon: "t-material:t-material-1"
+    name: 材料
+    permission: ia.menu
+    items:
+      - "t-material:t-material-1"
+      - "t-material:t-material-2"
+      - "t-material:t-material-3"
+      - "t-material:t-material-4"
+      - "t-material:t-material-5"
+      - "t-material:t-material-6"
+      - "t-material:t-material-7"
+      - "t-material:t-material-8"
+      - "t-material:t-material-9"
+      - "t-material:t-material-10"
+      - "t-material:t-material-11"
+      - "t-material:t-material-12"
+      - "t-material:t-material-13"
+      - "t-material:t-material-14"
+      - "t-material:t-material-15"
+      - "t-material:t-material-16"
+      - "t-material:t-material-17"
+      - "t-material:t-material-18"
+      - "t-material:t-material-19"
+      - "t-material:t-material-20"
+      - "t-material:t-material-21"
+      - "t-material:t-material-22"
+      - "t-material:t-material-23"
+      - "t-material:t-material-24"
+      - "t-material:t-material-25"
+      - "t-material:t-material-26"
+      - "t-material:t-material-27"
+      - "t-material:t-material-28"
+      - "t-material:t-material-29"
+      - "t-material:t-material-30"
+      - "t-material:t-material-31"
+      - "t-material:t-material-32"
+      - "t-material:t-material-33"

@@ -1,0 +1,21 @@
+Name: '&a&l农具出售'
+Description: []
+Icon:
+  Material: minecraft:paper
+  Lore: []
+  Item_Name: <!italic><white>肥料
+  Display_Name: <!italic><white>肥料
+  Model:
+    Data: 2736.0
+Pages: 1
+Permission_Required: false
+Transaction_Allowed:
+  BUY: true
+  SELL: true
+MainMenu:
+  Slot: -1
+Aliases: []
+Layout:
+  Name: default
+  ByPage:
+    '1': farming

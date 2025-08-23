@@ -1,0 +1,837 @@
+Title:
+  - '&f:offset_-8::ranks:'
+
+Layout:
+  - '####A####'
+  - '#########'
+  - '#1234567#'
+  - '#########'
+  - 'C###B####'
+    
+Options:
+  Arguments: false
+  Default-Arguments: [ ]
+  Default-Layout: 0
+  Min-Click-Delay: 200
+  Pure-Packet: false
+
+Icons:
+
+  A:
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdlNWI5OWU4NjQ2NTkzZjE3MDY1NDY4ODAzZWI2N2YzZjk0MDMxMmUxNzkxMjIwZjdjNTNlZjBmNjIyOGJjIn19fQ=='
+    icons:
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTdlNWI5OWU4NjQ2NTkzZjE3MDY1NDY4ODAzZWI2N2YzZjk0MDMxMmUxNzkxMjIwZjdjNTNlZjBmNjIyOGJjIn19fQ=='
+          name: '&{#CD6090}&l初来乍到'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 普通玩家'
+            - '&{#B0C4DE}下一个等级: 初来乍到'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成新手教导'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+        priority: 100    
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThiMjJjZTZkOTY4ZTUzMWRhZWU2ODc2MDU5YzAwYTc3MjExNWZkMjkyMzQ2ZmNmNzM5YzU0YTE3MDZiMTNlZCJ9fX0='
+          name: '&{#CD6090}&l小试牛刀'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 初来乍到'
+            - '&{#B0C4DE}下一个等级: 小试牛刀'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 10 个任务'  
+            - ''
+            - '&{#B0C4DE}&l手续费: 1 万金币'
+            - ''
+            - '&fㆵ &{#FFFACD}点击以解锁'
+        actions:
+          all:
+            - condition: 'money *10000'
+              actions:
+                - 'console: money take %player_name% 10000; lp user %player_name% parent set 小试牛刀'
+                - 'tell: &f &{#FFFACD}您已成功购买该会员等级!'
+                - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+                - 'refresh'
+              deny:
+                - 'tell: &f &{#ff3300}您没有足够的金币!'
+                - 'sound: BLOCK_ANVIL_DESTROY-1-2'
+# Su p e r ior v  5 by @ PQ g u a nfa ng QQ:1686965528，服 务端免费，倒卖死全家！ 
+        condition: 'all [ perm *group.初来乍到 check papi *%math_0:0_{excellentchallenges_completed_Daily}+{excellentchallenges_completed_Weekly}+{excellentchallenges_completed_Monthly}% >= *10 ]'
+        priority: 98
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThiMjJjZTZkOTY4ZTUzMWRhZWU2ODc2MDU5YzAwYTc3MjExNWZkMjkyMzQ2ZmNmNzM5YzU0YTE3MDZiMTNlZCJ9fX0='
+          name: '&{#CD6090}&l小试牛刀'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 初来乍到'
+            - '&{#B0C4DE}下一个等级: 小试牛刀'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 10 个任务' 
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'            
+        condition: 'perm *group.初来乍到'
+        priority: 99
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTllYjdkZjE4ZDNjYjcyODAwMTNhYjM2NDY1ZjQ2NGUyZjA5M2RhZmQ5ZTI3YzMxODVhYjJmN2NiZjVhMTNmZiJ9fX0='
+          name: '&{#CD6090}&l渐入佳境'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 小试牛刀'
+            - '&{#B0C4DE}下一个等级: 渐入佳境'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 20 个任务' 
+            - ''
+            - '&{#B0C4DE}&l手续费: 2 万金币'
+            - ''
+            - '&fㆵ &{#FFFACD}点击以解锁'
+        actions:
+          all:
+            - condition: 'money *20000'
+              actions:
+                - 'console: money take %player_name% 20000; lp user %player_name% parent set 渐入佳境'
+                - 'tell: &f &{#FFFACD}您已成功购买该会员等级!'
+                - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+                - 'refresh'
+              deny:
+                - 'tell: &f &{#ff3300}您没有足够的金币!'
+                - 'sound: BLOCK_ANVIL_DESTROY-1-2'           
+        condition: 'all [ perm *group.小试牛刀 check papi *%math_0:0_{excellentchallenges_completed_Daily}+{excellentchallenges_completed_Weekly}+{excellentchallenges_completed_Monthly}% >= *20 ]'
+        priority: 97
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTllYjdkZjE4ZDNjYjcyODAwMTNhYjM2NDY1ZjQ2NGUyZjA5M2RhZmQ5ZTI3YzMxODVhYjJmN2NiZjVhMTNmZiJ9fX0='
+          name: '&{#CD6090}&l渐入佳境'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 小试牛刀'
+            - '&{#B0C4DE}下一个等级: 渐入佳境'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 20 个任务' 
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'
+        condition: 'perm *group.小试牛刀'
+        priority: 97
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgyZjc0YTUyYjVlZjdiMTNjMTg1ZmRkNjgwMmZiYmVkZGFmZGY5ZTdhNmEzNGE4Mjg4NGRjODc2NjlkMWMyMiJ9fX0='
+          name: '&{#CD6090}&l小有成就'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 渐入佳境'
+            - '&{#B0C4DE}下一个等级: 小有成就'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 30 个任务'
+            - ''
+            - '&{#B0C4DE}&l手续费: 5 万金币'
+            - ''
+            - '&fㆵ &{#FFFACD}点击以解锁'
+        actions:
+          all:
+            - condition: 'money *50000'
+              actions:
+                - 'console: money take %player_name% 50000; lp user %player_name% parent set 渐入佳境'
+                - 'tell: &f &{#FFFACD}您已成功购买该会员等级!'
+                - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+                - 'refresh'
+              deny:
+                - 'tell: &f &{#ff3300}您没有足够的金币!'
+                - 'sound: BLOCK_ANVIL_DESTROY-1-2'
+        condition: 'all [ perm *group.渐入佳境 check papi *%math_0:0_{excellentchallenges_completed_Daily}+{excellentchallenges_completed_Weekly}+{excellentchallenges_completed_Monthly}% >= *30 ]'
+        priority: 94
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzgyZjc0YTUyYjVlZjdiMTNjMTg1ZmRkNjgwMmZiYmVkZGFmZGY5ZTdhNmEzNGE4Mjg4NGRjODc2NjlkMWMyMiJ9fX0='
+          name: '&{#CD6090}&l小有成就'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 渐入佳境'
+            - '&{#B0C4DE}下一个等级: 小有成就'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 30 个任务'
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'            
+        condition: 'perm *group.渐入佳境'
+        priority: 95
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJmNTJmOTI3ZWZmZmQ1ZDZjZGI0ZWU2Yjc4ZjliNTRhZGJkMDJmZTcyMzQ0NTYwOWQ5MzliOTI1MjNiNmY2NyJ9fX0='
+          name: '&{#CD6090}&l有口皆碑'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 小有成就'
+            - '&{#B0C4DE}下一个等级: 有口皆碑'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 50 个任务'  
+            - ''
+            - '&{#B0C4DE}&l手续费: 10 万金币'
+            - ''
+            - '&fㆵ &{#FFFACD}点击以解锁'
+        actions:
+          all:
+            - condition: 'money *100000'
+              actions:
+                - 'console: money take %player_name% 100000; lp user %player_name% parent set 有口皆碑'
+                - 'tell: &f &{#FFFACD}您已成功购买该会员等级!'
+                - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+                - 'refresh'
+              deny:
+                - 'tell: &f &{#ff3300}您没有足够的金币!'
+                - 'sound: BLOCK_ANVIL_DESTROY-1-2'           
+        condition: 'all [ perm *group.小有成就 check papi *%math_0:0_{excellentchallenges_completed_Daily}+{excellentchallenges_completed_Weekly}+{excellentchallenges_completed_Monthly}% >= *50 ]'
+        priority: 92
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjJmNTJmOTI3ZWZmZmQ1ZDZjZGI0ZWU2Yjc4ZjliNTRhZGJkMDJmZTcyMzQ0NTYwOWQ5MzliOTI1MjNiNmY2NyJ9fX0='
+          name: '&{#CD6090}&l有口皆碑'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 小有成就'
+            - '&{#B0C4DE}下一个等级: 有口皆碑'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 50 个任务' 
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'             
+        condition: 'perm *group.小有成就'
+        priority: 93
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZhNDQ3MTRiYmNmNDk5YmUyNTk2MzY4MzgwOGVmOWI0ZmI4NWY4YzUwYzVlNTEwOWVmN2I5ZDU0Zjc3NWQzMyJ9fX0='
+          name: '&{#CD6090}&l大有作为'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 有口皆碑'
+            - '&{#B0C4DE}下一个等级: 大有作为'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 75 个任务'  
+            - ''
+            - '&{#B0C4DE}&l手续费: 20 万金币'
+            - ''
+            - '&fㆵ &{#FFFACD}点击以解锁'
+        actions:
+          all:
+            - condition: 'money *200000'
+              actions:
+                - 'console: money take %player_name% 200000; lp user %player_name% parent set 大有作为'
+                - 'tell: &f &{#FFFACD}您已成功购买该会员等级!'
+                - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+                - 'refresh'
+              deny:
+                - 'tell: &f &{#ff3300}您没有足够的金币!'
+                - 'sound: BLOCK_ANVIL_DESTROY-1-2'
+        condition: 'all [ perm *group.有口皆碑 check papi *%math_0:0_{excellentchallenges_completed_Daily}+{excellentchallenges_completed_Weekly}+{excellentchallenges_completed_Monthly}% >= *75 ]'
+        priority: 90
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZhNDQ3MTRiYmNmNDk5YmUyNTk2MzY4MzgwOGVmOWI0ZmI4NWY4YzUwYzVlNTEwOWVmN2I5ZDU0Zjc3NWQzMyJ9fX0='
+          name: '&{#CD6090}&l大有作为'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 有口皆碑'
+            - '&{#B0C4DE}下一个等级: 大有作为'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 75 个任务' 
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!' 
+        condition: 'perm *group.有口皆碑'
+        priority: 91
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZhNDQ3MTRiYmNmNDk5YmUyNTk2MzY4MzgwOGVmOWI0ZmI4NWY4YzUwYzVlNTEwOWVmN2I5ZDU0Zjc3NWQzMyJ9fX0='
+          name: '&{#CD6090}&l众望攸归'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 大有作为'
+            - '&{#B0C4DE}下一个等级: 众望攸归'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 100 个任务'  
+            - ''
+            - '&{#B0C4DE}&l手续费: 50 万金币'
+            - ''
+            - '&fㆵ &{#FFFACD}点击以解锁'
+        actions:
+          all:
+            - condition: 'money *500000'
+              actions:
+                - 'console: money take %player_name% 500000; lp user %player_name% parent set 众望攸归'
+                - 'tell: &f &{#FFFACD}您已成功购买该会员等级!'
+                - 'sound: BLOCK_NOTE_BLOCK_PLING-1-2'
+                - 'refresh'
+              deny:
+                - 'tell: &f &{#ff3300}您没有足够的金币!'
+                - 'sound: BLOCK_ANVIL_DESTROY-1-2'
+        condition: 'all [ perm *group.大有作为 check papi *%math_0:0_{excellentchallenges_completed_Daily}+{excellentchallenges_completed_Weekly}+{excellentchallenges_completed_Monthly}% >= *100 ]'
+        priority: 88
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZhNDQ3MTRiYmNmNDk5YmUyNTk2MzY4MzgwOGVmOWI0ZmI4NWY4YzUwYzVlNTEwOWVmN2I5ZDU0Zjc3NWQzMyJ9fX0='
+          name: '&{#CD6090}&l众望攸归'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 大有作为'
+            - '&{#B0C4DE}下一个等级: 众望攸归'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成 100 个任务' 
+            - ''
+            - '&{#ff3300}尚未达到解锁条件!'             
+        condition: 'perm *group.大有作为'
+        priority: 89
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZhNDQ3MTRiYmNmNDk5YmUyNTk2MzY4MzgwOGVmOWI0ZmI4NWY4YzUwYzVlNTEwOWVmN2I5ZDU0Zjc3NWQzMyJ9fX0='
+          name: '&{#CD6090}&l众望攸归'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 众望攸归'
+            - ''
+            - '&{#ff3300}已满级'  
+        condition: 'perm *group.众望攸归'
+        priority: 87
+        
+  1:
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWQ1YjE3ODYyNmVhMjNkMGIwYzNkMmRmNWMwODVlODM3NTA1NmJmNjg1YjVlZDViYjQ3N2ZlODQ3MmQ5NCJ9fX0='
+    icons:
+      - display:
+          material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI4OWQ1YjE3ODYyNmVhMjNkMGIwYzNkMmRmNWMwODVlODM3NTA1NmJmNjg1YjVlZDViYjQ3N2ZlODQ3MmQ5NCJ9fX0='
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#ff3300}当前等级下尚未解锁该特权!'
+        priority: 100    
+      - display:
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#B0C4DE}200 金币 -> 194 金币'
+            - '&{#B0C4DE}1000 格 -> 1500 格 &{#ff3300}(末地除外)'
+        condition: 'perm *group.初来乍到'
+        priority: 99   
+      - display:
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#B0C4DE}200 金币 -> 190 金币'
+            - '&{#B0C4DE}1000 格 -> 2000 格 &{#ff3300}(末地除外)'
+        condition: 'perm *group.小试牛刀'
+        priority: 98
+      - display:
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#B0C4DE}200 金币 -> 180 金币'
+            - '&{#B0C4DE}1000 格 -> 2500 格 &{#ff3300}(末地除外)'
+        condition: 'perm *group.渐入佳境'
+        priority: 97 
+      - display:
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#B0C4DE}200 金币 -> 170 金币'
+            - '&{#B0C4DE}1000 格 -> 3500 格 &{#ff3300}(末地除外)'
+        condition: 'perm *group.小有成就'
+        priority: 96 
+      - display:
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#B0C4DE}200 金币 -> 160 金币'
+            - '&{#B0C4DE}1000 格 -> 4500 格 &{#ff3300}(末地除外)'
+        condition: 'perm *group.有口皆碑'
+        priority: 95
+      - display:
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#B0C4DE}200 金币 -> 140 金币'
+            - '&{#B0C4DE}1000 格 -> 5500 格 &{#ff3300}(末地除外)'
+        condition: 'perm *group.大有作为'
+        priority: 94
+      - display:
+          name: '&{#D3D3D3}&l世界传送'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你使用 NPC 传送到地狱和末地'
+            - '&{#B0C4DE}时的费用更加便宜同时传送的更远!'
+            - ''
+            - '&{#B0C4DE}200 金币 -> 120 金币'
+            - '&{#B0C4DE}1000 格 -> 7500 格 &{#ff3300}(末地除外)'
+        condition: 'perm *group.众望攸归'
+        priority: 93  
+        
+  2:
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU2ZjZkMzU2MGEyOWEzYWIwYzI4ZjhiNzJjMDU4MmMwYTc1NzkwYjkzNzIwYTljMDU4NmJmOGExZTU5NTk1ZCJ9fX0='
+    icons:
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#ff3300}当前等级下尚未解锁该特权!'
+        priority: 100    
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#B0C4DE}10 分钟 -> 11 分钟'
+            - '&{#B0C4DE}50/100 金币 -> 48/96 金币'
+            - '&{#B0C4DE}30% 经验值损失 -> 28% 经验值损失'
+        condition: 'perm *group.初来乍到'
+        priority: 99   
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#B0C4DE}10 分钟 -> 12 分钟'
+            - '&{#B0C4DE}50/100 金币 -> 45/90 金币'
+            - '&{#B0C4DE}30% 经验值损失 -> 25% 经验值损失'
+        condition: 'perm *group.小试牛刀'
+        priority: 98
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#B0C4DE}10 分钟 -> 13 分钟'
+            - '&{#B0C4DE}50/100 金币 -> 40/80 金币'
+            - '&{#B0C4DE}30% 经验值损失 -> 20% 经验值损失'
+        condition: 'perm *group.渐入佳境'
+        priority: 97 
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#B0C4DE}10 分钟 -> 15 分钟'
+            - '&{#B0C4DE}50/100 金币 -> 35/70 金币'
+            - '&{#B0C4DE}30% 经验值损失 -> 15% 经验值损失'
+        condition: 'perm *group.小有成就'
+        priority: 96 
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#B0C4DE}10 分钟 -> 20 分钟'
+            - '&{#B0C4DE}50/100 金币 -> 30/60 金币'
+            - '&{#B0C4DE}30% 经验值损失 -> 10% 经验值损失'
+        condition: 'perm *group.有口皆碑'
+        priority: 95
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#B0C4DE}10 分钟 -> 25 分钟'
+            - '&{#B0C4DE}50/100 金币 -> 25/50 金币'
+            - '&{#B0C4DE}30% 经验值损失 -> 5% 经验值损失'
+        condition: 'perm *group.大有作为'
+        priority: 94
+      - display:
+          name: '&{#D3D3D3}&l天使之箱'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你死亡后生成的天使之箱有效期更长，'
+            - '&{#B0C4DE}减少损失的经验值，降低传送和拿回的费用!'
+            - ''
+            - '&{#B0C4DE}10 分钟 -> 30 分钟'
+            - '&{#B0C4DE}50/100 金币 -> 20/40 金币'
+            - '&{#B0C4DE}30% 经验值损失 -> 0% 经验值损失'
+        condition: 'perm *group.众望攸归'
+        priority: 93  
+        
+  3:
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjExMDlkM2ZhN2I0NTc4YzMwYjZmZTRkNDBmZjc4MzcxZjcwZTY4YThiYzZmMjYwMjA0ODk1YjMwNmJjNGU0OSJ9fX0='
+    icons:
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#ff3300}当前等级下尚未解锁该特权!'
+        priority: 100    
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#B0C4DE}0/0 人 -> 2/2 人'
+        condition: 'perm *group.初来乍到'
+        priority: 99   
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#B0C4DE}0/0 人 -> 3/3 人'
+        condition: 'perm *group.小试牛刀'
+        priority: 98
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#B0C4DE}0/0 人 -> 4/4 人'
+        condition: 'perm *group.渐入佳境'
+        priority: 97 
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#B0C4DE}0/0 人 -> 5/5 人'
+        condition: 'perm *group.小有成就'
+        priority: 96 
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#B0C4DE}0/0 人 -> 6/6 人'
+        condition: 'perm *group.有口皆碑'
+        priority: 95
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#B0C4DE}0/0 人 -> 7/7 人'
+        condition: 'perm *group.大有作为'
+        priority: 94
+      - display:
+          name: '&{#D3D3D3}&l地皮家园'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你添加或者信任更多数量的玩家!'
+            - ''
+            - '&{#B0C4DE}0/0 人 -> 8/8 人'
+        condition: 'perm *group.众望攸归'
+        priority: 93  
+    
+  4:
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0='
+    icons:
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#ff3300}当前等级下尚未解锁该特权!'
+        priority: 100    
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#B0C4DE}2 个 -> 3 个 '
+        condition: 'perm *group.初来乍到'
+        priority: 99   
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#B0C4DE}2 个 -> 4 个 '
+        condition: 'perm *group.小试牛刀'
+        priority: 98
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#B0C4DE}2 个 -> 6 个'
+        condition: 'perm *group.渐入佳境'
+        priority: 97 
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#B0C4DE}0 个 -> 9 个'
+        condition: 'perm *group.小有成就'
+        priority: 96 
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#B0C4DE}0 个 -> 12 个'
+        condition: 'perm *group.有口皆碑'
+        priority: 95
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#B0C4DE}0 个 -> 15 个'
+        condition: 'perm *group.大有作为'
+        priority: 94
+      - display:
+          name: '&{#D3D3D3}&l设置家'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你设置更多的家!'
+            - ''
+            - '&{#B0C4DE}0 个 -> 16 个'
+        condition: 'perm *group.众望攸归'
+        priority: 93  
+   
+  5:
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2UzZGViNTdlYWEyZjRkNDAzYWQ1NzI4M2NlOGI0MTgwNWVlNWI2ZGU5MTJlZTJiNGVhNzM2YTlkMWY0NjVhNyJ9fX0='
+    icons:
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#ff3300}当前等级下尚未解锁该特权!'
+        priority: 100    
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#B0C4DE}1 个 -> 2 个'
+        condition: 'perm *group.初来乍到'
+        priority: 99   
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#B0C4DE}1 个 -> 2 个'
+        condition: 'perm *group.小试牛刀'
+        priority: 98
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#B0C4DE}1 个 -> 3 个'
+        condition: 'perm *group.渐入佳境'
+        priority: 97 
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#B0C4DE}1 个 -> 3 个'
+        condition: 'perm *group.小有成就'
+        priority: 96 
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#B0C4DE}1 个 -> 4 个'
+        condition: 'perm *group.有口皆碑'
+        priority: 95
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#B0C4DE}1 个 -> 4 个'
+        condition: 'perm *group.大有作为'
+        priority: 94
+      - display:
+          name: '&{#D3D3D3}&l职业系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你同时参加更多的职业!'
+            - ''
+            - '&{#B0C4DE}1 个 -> 5 个'
+        condition: 'perm *group.众望攸归'
+        priority: 93   
+    
+  6:
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQzNmJlOTI4ODdkYzQwY2RmMzcyYmIzYzM4MTFiYWY1YzM2ZmYxMzExNjFiODJmMDY3NTY0MTM2YmJhYiJ9fX0='
+    icons:
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#ff3300}当前等级下尚未解锁该特权!'
+        priority: 100    
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#B0C4DE}64 个 -> 96 个'
+            - '&{#B0C4DE}4 个 -> 8 个'
+        condition: 'perm *group.初来乍到'
+        priority: 99   
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#B0C4DE}64 个 -> 128 个'
+            - '&{#B0C4DE}4 个 -> 12 个'
+        condition: 'perm *group.小试牛刀'
+        priority: 98
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#B0C4DE}64 个 -> 160 个'
+            - '&{#B0C4DE}4 个 -> 16 个'
+        condition: 'perm *group.渐入佳境'
+        priority: 97 
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#B0C4DE}64 个 -> 192 个'
+            - '&{#B0C4DE}4 个 -> 20 个'
+        condition: 'perm *group.小有成就'
+        priority: 96 
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#B0C4DE}64 个 -> 224 个'
+            - '&{#B0C4DE}4 个 -> 25 个'
+        condition: 'perm *group.有口皆碑'
+        priority: 95
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#B0C4DE}64 个 -> 256 个'
+            - '&{#B0C4DE}4 个 -> 30 个'
+        condition: 'perm *group.大有作为'
+        priority: 94
+      - display:
+          name: '&{#D3D3D3}&l市场系统'
+          lore:
+            - ''
+            - '&{#B0C4DE}可以让你的市场出售更多的商品，发布更多的求购!'
+            - ''
+            - '&{#B0C4DE}64 个 -> 320 个'
+            - '&{#B0C4DE}4 个 -> 35 个'
+        condition: 'perm *group.众望攸归'
+        priority: 93 
+    
+  '7':
+    display:
+      material: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTBkNDY0MTg2ZTFhNTBkZGFhMTRiZTIyNTk2MTFhNGU4NDU4NTE1YTUzNjdhOTM4OWE5Y2M3Yzg5Yzk0YTkzYiJ9fX0='
+      name: '&{#D3D3D3}&l等级称号'
+      lore: 
+        - ''
+        - '&{#B0C4DE}聊天框、Tab、头顶等位置显示你的等级称号，'
+        - '&{#B0C4DE}让你成就感满满!'
+
+   
+  'B':
+    display:
+      material: 'arrow'
+      name: '&{#ff3300}&l返回'
+      lore: 
+        - ''
+        - '&{#B0C4DE}返回到主菜单!'
+        - ''
+        - '&fㆵ &{#FFFACD}点击以返回'
+      flags:
+      - 'HIDE_ENCHANTS'
+      - 'HIDE_ATTRIBUTES'
+    actions:
+      all: 
+        - 'open: Main'  
+        
+  'C':
+    display:
+      material: 'amethyst_shard'
+      name: '&{#FFFACD}&l特权等级'
+      lore:
+        - ''
+        - '&{#B0C4DE}花费少量的点券可以租赁特权等级，并'
+        - '&{#B0C4DE}快速获得一些特权!'
+        - ''
+        - '&fㆵ &{#FFFACD}点击以查看'
+      flags:
+      - 'HIDE_ENCHANTS'
+      - 'HIDE_ATTRIBUTES'
+    actions:
+      all: 
+        - 'open: VipPurchase'  

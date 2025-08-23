@@ -1,0 +1,48 @@
+info:
+  namespace: "workshop_six"
+items:
+  oak_elytra:
+    display_name: "橡木鞘翅"
+    permission: admin
+    nbt: "{components:{'minecraft:equippable':{'slot':'chest','asset_id':'minecraft:oak_elytra'}}}"
+    resource:
+      material: "ELYTRA"
+      generate: true
+      textures:
+        - entity/equipment/wings/oak_elytra_icon.png
+      model_id: 10
+      # equipment:
+      #   slot_attribute_modifiers:
+      #     armor: 3
+      #     armor_toughness: 3
+      #     knockback_resistance: 0.1
+  blossom_elytra:
+    display_name: "樱花鞘翅"
+    permission: admin
+    nbt: "{components:{'minecraft:equippable':{'slot':'chest','asset_id':'minecraft:blossom_elytra'}}}"
+    resource:
+      material: "ELYTRA"
+      generate: true
+      textures:
+        - entity/equipment/wings/blossom_elytra_icon.png
+      model_id: 11
+      # equipment:
+      #   slot_attribute_modifiers:
+      #     armor: 3
+      #     armor_toughness: 3
+      #     knockback_resistance: 0.1
+  mushroom_elytra:
+    display_name: "蘑菇鞘翅"
+    permission: admin
+    nbt: "{components:{'minecraft:equippable':{'slot':'chest','asset_id':'minecraft:mushroom_elytra'}}}"
+    resource:
+      material: "ELYTRA"
+      generate: true
+      textures:
+        - entity/equipment/wings/mushroom_elytra_icon.png
+      model_id: 12
+    equipment:
+      slot_attribute_modifiers:
+        armor: 3
+        armor_toughness: 3
+# 01280O2I9X7EME

@@ -1,0 +1,54 @@
+cosmetics:
+
+  # 示例使用CustomModelData创建的帽子物品
+  snow_fox_sleeping:
+    enabled: true
+    display_name: "睡着的雪狐"
+    type: HAT
+    model:
+      gui: potion:400005
+      normal: potion:400005
+    dye:
+      enabled: false
+
+  # 手动使用CustomModelData创建的帽子示例
+  cowboy_hat:
+    enabled: true
+    display_name: "牛仔帽"
+    type: HAT
+    model:
+      gui: potion:300003
+      normal: potion:300003
+    dye:
+      enabled: true
+
+  # 手动使用CustomModelData创建的帽子示例
+  chef_hat:
+    enabled: true
+    display_name: "厨师帽"
+    type: HAT
+    model:
+      gui: potion:400006
+      normal: potion:400006
+    dye:
+      enabled: false
+
+  # 手动使用CustomModelData创建的帽子示例
+  witch_hat:
+    enabled: true
+    display_name: "女巫帽"
+    type: HAT
+    model:
+      gui: potion:400007
+      normal: potion:400007
+    dye:
+      enabled: true
+  littleshark_hat:
+    enabled: true
+    display_name: "Little Shark Hat"
+    type: HAT
+    model:
+      gui: paper:2192004
+      normal: paper:2192004
+    dye:
+      enabled: false

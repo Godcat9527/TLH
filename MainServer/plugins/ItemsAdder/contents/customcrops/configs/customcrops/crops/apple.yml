@@ -1,0 +1,87 @@
+info:
+  namespace: customcrops
+items:
+  apple_stage_1:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_1
+      model_id: 2110
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  apple_stage_2:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_2
+      model_id: 2111
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  apple_stage_3:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_3
+      model_id: 2112
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  apple_stage_4:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_4
+      model_id: 2113
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  apple_stage_5:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_5
+      model_id: 2114
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+  apple_stage_6:
+    display_name: ""
+    resource:
+      generate: false
+      material: PAPER
+      model_path: item/crops/apple/stage_6
+      model_id: 2115
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_WIRE
+        cancel_drop: true
+categories:
+  customcrops_apple:
+    enabled: true
+    icon: APPLE
+    name: 'Apple'
+    items:
+      - customcrops:apple_stage_1
+      - customcrops:apple_stage_2
+      - customcrops:apple_stage_3
+      - customcrops:apple_stage_4
+      - customcrops:apple_stage_5
+      - customcrops:apple_stage_6

@@ -1,0 +1,171 @@
+info:
+  namespace: voxelspawns_megaflintlocks
+items:
+  vs_pistol:
+    display_name: Flintlock_Pistol
+    permission: vs_pistol
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_pistol
+      model_id: 300
+  vs_revolver:
+    display_name: Revolver
+    permission: vs_revolver
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_revolver
+      model_id: 301
+  vs_pistol3:
+    display_name: Pistol
+    permission: vs_pistol3
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_pistol_3
+      model_id: 302
+  vs_pistol_multi:
+    display_name: Multishot Pistol
+    permission: vs_pistol_multi
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_pistol_multi
+      model_id: 303
+  vs_rifle:
+    display_name: Flintlock_Rifle
+    permission: vs_rifle
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle
+      model_id: 304
+  vs_rifle_bayonet:
+    display_name: Bayonet_Rifle
+    permission: vs_rifle_bayonet
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_bayonet
+      model_id: 305
+  vs_rifle_double:
+    display_name: Double_Barrel_Shotgun
+    permission: vs_rifle_double
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_double
+      model_id: 306
+  vs_rifle_3:
+    display_name: Rifle
+    permission: vs_rifle_3
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_3
+      model_id: 307
+  vs_rifle_epic:
+    display_name: Epic_Rifle
+    permission: vs_rifle_epic
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_epic
+      model_id: 308
+  vs_rifle_magic:
+    display_name: Magic_Rifle
+    permission: vs_rifle_magic
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_magic
+      model_id: 309
+  vs_rifle_alchemy:
+    display_name: Alchemy_Rifle
+    permission: vs_rifle_alchemy
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_alchemy
+      model_id: 310
+  vs_snipe:
+    display_name: Sniper_Rifle
+    permission: vs_snipe
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_snipe
+      model_id: 311
+  vs_snipe_epic:
+    display_name: Epic_Sniper_Rifle
+    permission: vs_snipe_epic
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_snipe_epic
+      model_id: 312
+  vs_cannon:
+    display_name: Hand_Cannon
+    permission: vs_cannon
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_cannon
+      model_id: 313
+  vs_rifle_magic2:
+    display_name: Magic_Rifle
+    permission: vs_rifle_magic
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_magic2
+      model_id: 314
+  vs_rifle_magic3:
+    display_name: Magic_Rifle
+    permission: vs_rifle_magic
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_magic3
+      model_id: 315
+  vs_rifle_magic4:
+    display_name: Magic_Rifle
+    permission: vs_rifle_magic
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_magic4
+      model_id: 316
+  vs_rifle_alchemy2:
+    display_name: Alchemy_Rifle
+    permission: vs_rifle_alchemy
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_alchemy2
+      model_id: 317
+  vs_rifle_alchemy3:
+    display_name: Alchemy_Rifle
+    permission: vs_rifle_alchemy
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_alchemy3
+      model_id: 318
+  vs_rifle_alchemy4:
+    display_name: Alchemy_Rifle
+    permission: vs_rifle_alchemy
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_alchemy4
+      model_id: 319
+  vs_rifle_alchemy5:
+    display_name: Alchemy_Rifle
+    permission: vs_rifle_alchemy
+    resource:
+      material: CROSSBOW
+      generate: false
+      model_path: item/vs_rifle_alchemy5
+      model_id: 320

@@ -1,0 +1,81 @@
+Title: '&6&lTLH &a&l技能'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@ @ @ @ @' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'Skill_open':
+    display: 
+      material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmUwYTkwZDI4MTA4OWFiMjY5MmE3ZDkxNTJhZjdhZjMxNDEwNTY5MmMzYjNhNzliMmI3Mjg4ZjNkYmE1ZWNjZCJ9fX0=
+      name: '&f[技能面板&f]'
+      slots: 10
+      lore: 
+      - ''
+      - '&a➥点我查看技能面板'
+    action: 
+      all: 
+        - 'player: sk' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL'
+      
+
+  'Skill_level':
+    display: 
+      material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjFkNGZkZDA5MTg0MGQ5ZTdkZjA2MDE2ODFhZGRlYzYwNTE0ODVhNDg0YmE3ZjUzNmIzNWQ0ZTA1YWE4NmVmOSJ9fX0=
+      name: '&f[个人技能等级&f]'
+      slots: 12
+      lore: 
+      - ''
+      - '&a➥点我查看个人技能等级'
+    action: 
+      all: 
+        - 'player: skillrank' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'Skill_top':
+    display: 
+      material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM5NGZhMjI2YjlkN2I0MDRlZDZkMzZmNzM5MzA2MmFkOTg5OTRjMjk2YmJlNWMxYzNiYmNiMjE3ZGMyOTgzYiJ9fX0=
+      name: '&f[排行榜&f]'
+      slots: 14
+      lore: 
+      - ''
+      - '&a➥点我查看你在本服务器的技能排名'
+    action: 
+      all: 
+        - 'player: sk top' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'Skill_set':
+    display: 
+      material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmNjQ4ZDcyYjQwZTYxYmE2YWMyMzI3N2M2ZGVlOTdlMzg0MDEwYWMwMzI0MDFiZGUxOWVmYzAyYmRmNDgwZCJ9fX0=
+      name: '&f[&f开/关技能状态显示栏]'
+      slots: 16
+      lore: 
+      - ''
+      - '&a➥好熟悉的功能？'
+    action: 
+      all: 
+        - 'player: abtoggle' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 

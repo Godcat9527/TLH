@@ -1,0 +1,357 @@
+info:
+  namespace: elitecreatures
+categories:
+  industrial_kitchen_v1: 
+    enabled: true
+    icon: elitecreatures:ik_fridge
+    name:  Industrial Kitchen v1
+    permission: permission.industrial_kitchen_v1
+    items:
+    - elitecreatures:ik_fridge
+    - elitecreatures:ik_fridge_white
+    - elitecreatures:ik_fridge_with_dish
+    - elitecreatures:ik_grill
+    - elitecreatures:ik_hood
+    - elitecreatures:ik_microwave
+    - elitecreatures:ik_mixer
+    - elitecreatures:ik_table
+    - elitecreatures:ik_table_bar
+    - elitecreatures:ik_table_corner
+    - elitecreatures:ik_table_fireplace
+    - elitecreatures:ik_table_long
+    - elitecreatures:ik_table_with_cupboard
+    - elitecreatures:ik_table_with_cupboard_2
+    - elitecreatures:ik_table_with_dishwasher 
+
+items:
+  ik_fridge:
+    display_name: '冰箱'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_fridge
+      model_id: 5071
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_fridge_white:
+    display_name: '白色冰箱'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_fridge_white
+      model_id: 5072
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_fridge_with_dish:
+    display_name: '带餐盘的冰箱'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_fridge_with_dish
+      model_id: 5073
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_grill:
+    display_name: '烤架'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_grill
+      model_id: 5074
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_hood:
+    display_name: '抽油烟机'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_hood
+      model_id: 5075
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_microwave:
+    display_name: '微波炉'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_microwave
+      model_id: 5076
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_mixer:
+    display_name: '搅拌机'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_mixer
+      model_id: 5077
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table:
+    display_name: '桌子'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table
+      model_id: 5078
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table_bar:
+    display_name: '吧台桌'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table_bar
+      model_id: 5079
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table_corner:
+    display_name: '角落桌'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table_corner
+      model_id: 5080
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table_fireplace:
+    display_name: '壁炉桌'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table_fireplace
+      model_id: 5081
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table_long:
+    display_name: '长桌'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table_long
+      model_id: 5082
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table_with_cupboard:
+    display_name: '带橱柜的桌子'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table_with_cupboard
+      model_id: 5083
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table_with_cupboard_2:
+    display_name: '带橱柜的桌子 2'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table_with_cupboard_2
+      model_id: 5084
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+  ik_table_with_dishwasher:
+    display_name: '带洗碗机的桌子'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: industrial_kitchen_v1/ik_table_with_dishwasher
+      model_id: 5085
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: true
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+# YksSs#91vDg/ErmwQ5pkUYI62UuNreJppcYYrf++thqP5HfpCzE+k4BBS8toWSYQcR17fo

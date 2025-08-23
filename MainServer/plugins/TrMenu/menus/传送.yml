@@ -1,0 +1,57 @@
+title: '&6&lTLH &a&l传送'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@@ @@@ @@' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+
+  '#':
+    display:
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all:
+        - 'menu open 主菜单'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  '@':
+    display:
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+
+  'Teleport_spawn':
+    display:
+      material: white_banner
+      name: '&f[&6前往主城&f]'
+      slots: 11
+      lore: 
+      - ''
+      - '&a➥点击回到主城'
+    action: 
+      all:
+        - 'command: spawn {delay=6}'
+        - 'console: cmi flyc %player_name% false -s'
+        - 'sound BLOCK_NOTE_BLOCK_COW_BELL{delay=6}'
+
+
+  'Teleport_player':
+    display:
+      material: grass_block
+      name: '&f[&6世界传送&f]'
+      slots: 15
+      lore: 
+      - ''
+      - '&a➥传送到各个世界'
+    action: 
+     all:
+       - 'menu open 世界传送'
+       - 'sound BLOCK_NOTE_BLOCK_COW_BELL'

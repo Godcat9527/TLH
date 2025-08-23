@@ -1,0 +1,66 @@
+cosmetics:
+  creature_cosmetic_1_panda_hat:
+    display_name: "熊猫帽"
+    type: HAT
+    model:
+      gui: creature_cosmetic_set:panda_hat
+      normal: creature_cosmetic_set:panda_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  creature_cosmetic_1_bamboo_pot:
+    display_name: "竹筒"
+    type: BODY_ITEM
+    model:
+      gui: creature_cosmetic_set:bamboo_pot
+      normal: creature_cosmetic_set:bamboo_pot
+      self: creature_cosmetic_set:bamboo_pot_self
+    dye:
+      enabled: true
+  creature_cosmetic_1_fox_hat:
+    display_name: "狐狸帽"
+    type: HAT
+    model:
+      gui: creature_cosmetic_set:fox_hat
+      normal: creature_cosmetic_set:fox_hat
+    dye:
+      enabled: true
+  creature_cosmetic_1_fox_backpack:
+    display_name: "狐狸背包"
+    type: BODY_ITEM
+    model:
+      gui: creature_cosmetic_set:fox_backpack
+      normal: creature_cosmetic_set:fox_backpack
+      self: creature_cosmetic_set:fox_backpack_self
+    dye:
+      enabled: true
+  creature_cosmetic_1_fox_tail:
+    display_name: "狐狸尾巴"
+    type: BODY_ITEM
+    model:
+      gui: creature_cosmetic_set:fox_tail
+      normal: creature_cosmetic_set:fox_tail
+      self: creature_cosmetic_set:fox_tail_self
+    dye:
+      enabled: true
+  creature_cosmetic_1_warden_hat:
+    display_name: "守卫帽"
+    type: HAT
+    model:
+      gui: creature_cosmetic_set:warden_hat
+      normal: creature_cosmetic_set:warden_hat
+    dye:
+      enabled: true
+  creature_cosmetic_1_backy_shrieker:
+    display_name: "背刺尖叫者"
+    type: BODY_ITEM
+    model:
+      gui: creature_cosmetic_set:backy_shrieker
+      normal: creature_cosmetic_set:backy_shrieker
+      self: creature_cosmetic_set:backy_shrieker_self
+    dye:
+      enabled: true
+  
+
+
+ 

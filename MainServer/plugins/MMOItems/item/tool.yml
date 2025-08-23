@@ -1,0 +1,14 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+SILK_SHEARS:
+  base:
+    material: SHEARS
+    enchants:
+      silk_touch: 1.0
+    lore:
+      - §7一遍遍做剪刀不胜其烦？
+      - §7试试我们的新技术吧！
+      - §7能够采集§9草§7和§2玻璃§7。
+    tier: UNCOMMON
+    required-level: 5.0
+

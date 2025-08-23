@@ -1,0 +1,236 @@
+info:
+  namespace: t-key
+items:
+  dungeon_key_amethyst:
+    display_name: "<#9370DB>三级副本钥匙"
+    lore:
+    - ''  
+    - '想追求更稀有的宝物？' 
+    - '你需要面临更大的挑战'
+    - '' 
+    - '<#8B8386>→前往公会选择你要挑战副本!' 
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - dungeon_key_amethyst.png
+      model_id: 192
+  dungeon_key_crimson:
+    display_name: "&4&l秘境级副本钥匙"
+    lore:
+    - ''  
+    - '****未知***' 
+    - '' 
+    - '<#FF4500>→请时刻保持警惕!' 
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - dungeon_key_crimson.png
+      model_id: 170
+  dungeon_key_gold:
+    display_name: "<#FFD700>神炼级副本钥匙"
+    lore:
+    - ''  
+    - '你将成为探索的先驱' 
+    - '在此处留下你的印记吧'
+    - '' 
+    - '<#F5F5DC>→祝你一帆风顺!' 
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - dungeon_key_gold.png
+      model_id: 171
+  key_fragment_common:
+    display_name: "破碎的香草宝箱钥匙"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - key_fragment_common.png
+      model_id: 172
+  key_fragment_epic:
+    display_name: "破碎的史诗宝箱钥匙"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - key_fragment_epic.png
+      model_id: 173
+  key_fragment_legendary:
+    display_name: "破碎的传说宝箱钥匙"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - key_fragment_legendary.png
+      model_id: 174
+  key_fragment_rare:
+    display_name: "破碎的稀有宝箱钥匙"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - key_fragment_rare.png
+      model_id: 175
+  key_fragment_uncommon:
+    display_name: "不常见的钥匙碎片"
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - key_fragment_uncommon.png
+      model_id: 176
+  key_golden:
+    display_name: "<#1E90FF>二级副本钥匙"
+    lore:
+    - ''  
+    - '如果你想进一步提升自己' 
+    - '那就去战胜它们吧'
+    - '' 
+    - '<#8B8386>→前往公会选择你要挑战副本!' 
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - key_golden.png
+      model_id: 177
+  key_silver:
+    display_name: "<#00FA9A>一级副本钥匙"
+    lore:
+    - ''  
+    - '这是你正式踏上冒险的地方' 
+    - '' 
+    - '<#8B8386>→前往公会选择你要挑战副本!' 
+    resource:
+      generate: true
+      material: PAPER
+      textures:
+      - key_silver.png
+      model_id: 178
+  t-key-1:
+    display_name: "<#FFFF00>随机金币宝箱钥匙"
+    enabled: true
+    lore:
+    - ''  
+    - '开启后可获得300/600/' 
+    - '1200/2400/4800星币' 
+    - ''
+    - '<#8B8386>→前往主城藏宝阁使用' 
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-1
+      model_id: 179
+  t-key-2:
+    display_name: "钥匙-2"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-2
+      model_id: 180
+  t-key-3:
+    display_name: "<#BBFFFF>秘石宝箱钥匙"
+    enabled: true
+    lore:
+    - ''  
+    - '开启后可获得强化石' 
+    - '，技能石等隐秘宝石'
+    - ''
+    - '<#8B8386>→前往主城藏宝阁使用' 
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-3
+      model_id: 182
+  t-key-4:
+    display_name: "钥匙-4"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-4
+      model_id: 183
+  t-key-5:
+    display_name: "钥匙-5"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-5
+      model_id: 184
+  t-key-6:
+    display_name: "钥匙-6"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-6
+      model_id: 185
+  t-key-7:
+    display_name: "钥匙-7"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-7
+      model_id: 186
+  t-key-8:
+    display_name: "<#F0F8FF>普通卡牌宝箱钥匙"
+    enabled: true
+    lore:
+    - ''  
+    - '开启后可获得一张收集卡牌' 
+    - ''
+    - '<#8B8386>→前往主城藏宝阁使用'
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-8
+      model_id: 187
+  t-key-9:
+    display_name: "钥匙-9"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-2
+      model_id: 188
+  t-key-10:
+    display_name: "钥匙-10"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-10
+      model_id: 189
+  t-key-11:
+    display_name: "钥匙-11"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-11
+      model_id: 190
+  t-key-12:
+    display_name: "钥匙-12"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-key-12
+      model_id: 191

@@ -1,0 +1,59 @@
+cosmetics:
+  zoo_cozy_cosmetic_bear_backpack:
+    display_name: "[复古动物系列] 棕熊背包"
+    type: BODY_ITEM
+    model:
+      gui: elitecreatures:zoo_cozy_cosmetic_bear_backpack
+      normal: elitecreatures:zoo_cozy_cosmetic_bear_backpack
+      self: elitecreatures:zoo_cozy_cosmetic_bear_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  zoo_cozy_cosmetic_frog_backpack:
+    display_name: "[复古动物系列] 青蛙背包"
+    type: BODY_ITEM
+    model:
+      gui: elitecreatures:zoo_cozy_cosmetic_frog_backpack
+      normal: elitecreatures:zoo_cozy_cosmetic_frog_backpack
+      self: elitecreatures:zoo_cozy_cosmetic_frog_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  zoo_cozy_cosmetic_rabbit_backpack:
+    display_name: "[复古动物系列] 兔子背包"
+    type: BODY_ITEM
+    model:
+      gui: elitecreatures:zoo_cozy_cosmetic_rabbit_backpack
+      normal: elitecreatures:zoo_cozy_cosmetic_rabbit_backpack
+      self: elitecreatures:zoo_cozy_cosmetic_rabbit_backpack_self
+    dye:
+      enabled: false
+      default: "#000000"
+  zoo_cozy_cosmetic_bear_hat:
+    display_name: "[复古动物系列] 棕熊头"
+    type: HAT
+    model:
+      gui: elitecreatures:zoo_cozy_cosmetic_bear_hat
+      normal: elitecreatures:zoo_cozy_cosmetic_bear_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  zoo_cozy_cosmetic_frog_hat:
+    display_name: "[复古动物系列] 青蛙眼睛"
+    type: HAT
+    model:
+      gui: elitecreatures:zoo_cozy_cosmetic_frog_hat
+      normal: elitecreatures:zoo_cozy_cosmetic_frog_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  zoo_cozy_cosmetic_rabbit_ears:
+    display_name: "[复古动物系列] 兔耳"
+    type: HAT
+    model:
+      gui: elitecreatures:zoo_cozy_cosmetic_rabbit_ears
+      normal: elitecreatures:zoo_cozy_cosmetic_rabbit_ears
+    dye:
+      enabled: false
+      default: "#000000"
+#IFRPhnRLRXVvVkaKlHZvhUMjZ1TyUFRPVTT65UeVRUT6lVVUFjd3QVWqZ2bplTaolXYuNmN

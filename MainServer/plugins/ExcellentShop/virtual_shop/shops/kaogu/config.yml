@@ -1,0 +1,15 @@
+Name: 考古研究
+Description: []
+Icon:
+  Material: minecraft:brush
+  Lore: []
+Pages: 1
+Permission_Required: false
+Transaction_Allowed:
+  BUY: true
+  SELL: true
+MainMenu:
+  Slot: -1
+Aliases: []
+Layout:
+  Name: default

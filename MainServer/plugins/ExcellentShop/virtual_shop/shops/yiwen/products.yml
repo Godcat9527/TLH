@@ -1,0 +1,55 @@
+List:
+  mmoitems_material:mm_drop_1:
+    Type: PLUGIN
+    Handler: MMOItems
+    Content:
+      ItemId: MATERIAL:MM_DROP_1
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 500.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+    Shop_View:
+      Slot: 0
+      Page: 1
+  mmoitems_material:mm_drop_2:
+    Type: PLUGIN
+    Handler: MMOItems
+    Content:
+      ItemId: MATERIAL:MM_DROP_2
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 1500.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: 100
+        RestockTime: 86400
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 10
+        RestockTime: 86400
+    Shop_View:
+      Slot: 1
+      Page: 1

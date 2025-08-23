@@ -1,0 +1,514 @@
+List:
+  gold_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:gold_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: 0.0
+      SELL: 40.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 40
+        RestockTime: 86400
+    Shop_View:
+      Slot: 9
+      Page: 1
+    Handler: bukkit_item
+  redstone_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:redstone_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 10.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 40
+        RestockTime: 86400
+    Shop_View:
+      Slot: 10
+      Page: 1
+    Handler: bukkit_item
+  lapis_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:lapis_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 50.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 40
+        RestockTime: 86400
+    Shop_View:
+      Slot: 11
+      Page: 1
+    Handler: bukkit_item
+  emerald_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:emerald_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 80.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 40
+        RestockTime: 86400
+    Shop_View:
+      Slot: 12
+      Page: 1
+    Handler: bukkit_item
+  diamond_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:diamond_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 100.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 40
+        RestockTime: 86400
+    Shop_View:
+      Slot: 13
+      Page: 1
+    Handler: bukkit_item
+  itemsadder_minerals_pack:silver:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: minerals_pack:silver
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 35.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 10
+        RestockTime: 86400
+    Shop_View:
+      Slot: 16
+      Page: 1
+  itemsadder_minerals_pack:amethyst:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: minerals_pack:amethyst
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 50.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 10
+        RestockTime: 86400
+    Shop_View:
+      Slot: 17
+      Page: 1
+  deepslate_gold_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:deepslate_gold_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 70.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 30
+        RestockTime: 86400
+    Shop_View:
+      Slot: 18
+      Page: 1
+    Handler: bukkit_item
+  deepslate_redstone_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:deepslate_redstone_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 40.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 30
+        RestockTime: 86400
+    Shop_View:
+      Slot: 19
+      Page: 1
+    Handler: bukkit_item
+  deepslate_lapis_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:deepslate_lapis_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 80.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 30
+        RestockTime: 86400
+    Shop_View:
+      Slot: 20
+      Page: 1
+    Handler: bukkit_item
+  deepslate_emerald_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:deepslate_emerald_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 110.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 30
+        RestockTime: 86400
+    Shop_View:
+      Slot: 21
+      Page: 1
+    Handler: bukkit_item
+  deepslate_diamond_ore:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:deepslate_diamond_ore"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 130.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 30
+        RestockTime: 86400
+    Shop_View:
+      Slot: 22
+      Page: 1
+    Handler: bukkit_item
+  itemsadder_minerals_pack:silver_ingot:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: minerals_pack:silver_ingot
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 350.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 10
+        RestockTime: 172800
+    Shop_View:
+      Slot: 25
+      Page: 1
+  itemsadder_minerals_pack:amethyst_ingot:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: minerals_pack:amethyst_ingot
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 500.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 10
+        RestockTime: 172800
+    Shop_View:
+      Slot: 26
+      Page: 1
+  raw_copper:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:raw_copper"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 10.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 100
+        RestockTime: 86400
+    Shop_View:
+      Slot: 27
+      Page: 1
+    Handler: bukkit_item
+  raw_iron:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:raw_iron"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 15.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 100
+        RestockTime: 86400
+    Shop_View:
+      Slot: 28
+      Page: 1
+    Handler: bukkit_item
+  raw_gold:
+    Type: VANILLA
+    Content:
+      Item: '{count:1,id:"minecraft:raw_gold"}'
+    Item_Meta_Enabled: false
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 15.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 100
+        RestockTime: 86400
+    Shop_View:
+      Slot: 29
+      Page: 1
+    Handler: bukkit_item
+  itemsadder_minerals_pack:malachite:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: minerals_pack:malachite
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 70.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 10
+        RestockTime: 86400
+    Shop_View:
+      Slot: 15
+      Page: 1
+  itemsadder_minerals_pack:malachite_ingot:
+    Type: PLUGIN
+    Handler: ItemsAdder
+    Content:
+      ItemId: minerals_pack:malachite_ingot
+      Amount: 1
+    Rotating: false
+    Allowed_Ranks: []
+    Required_Permissions: []
+    Forbidden_Permissions: []
+    Currency: vault
+    Price:
+      Type: FLAT
+      BUY: -1.0
+      SELL: 700.0
+    Stock:
+      GLOBAL:
+        BuyAmount: -1
+        SellAmount: -1
+        RestockTime: 0
+      PLAYER:
+        BuyAmount: -1
+        SellAmount: 10
+        RestockTime: 172800
+    Shop_View:
+      Slot: 24
+      Page: 1

@@ -1,0 +1,29 @@
+info:
+  namespace: thunderboltset
+categories:
+  thunderboltset:
+    enabled: true
+    skip_if_already: false
+    icon: "thunderboltset:thunderbolt_wings"
+    name: 圣骑士武器和工具套装
+    permission: ia.menu
+    items:
+      - "thunderboltset:thunderbolt_sword"
+      - "thunderboltset:thunderbolt_spear"
+      - "thunderboltset:thunderbolt_hammer"
+      - "thunderboltset:thunderbolt_bow"
+      - "thunderboltset:thunderbolt_axe"
+      - "thunderboltset:thunderbolt_hoe"
+      - "thunderboltset:thunderbolt_pickaxe"
+      - "thunderboltset:thunderbolt_shovel"
+      - "thunderboltset:thunderbolt_fishing_rod"
+      - "thunderboltset:thunderbolt_shield"
+      - "thunderboltset:thunderbolt_chest"
+      - "thunderboltset:thunderbolt_chest_opening"
+      - "thunderboltset:thunderbolt_key"
+      - "thunderboltset:thunderbolt_chestplate"
+      - "thunderboltset:thunderbolt_leggings"
+      - "thunderboltset:thunderbolt_boots"
+      - "thunderboltset:thunderbolt_helmet"
+      - "thunderboltset:thunderbolt_wings"
+      - "thunderboltset:thunderbolt_scythe"

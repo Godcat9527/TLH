@@ -1,0 +1,14 @@
+display-name: "&f考古铲"
+lore:
+  - "&7考古铲"
+texture: archaeological_shovel
+recipe_1:
+  shape:
+    - " AA"
+    - " BA"
+    - "B  "
+  ingredients:
+    A:
+      material: copper_ingot
+    B:
+      material: stick

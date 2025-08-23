@@ -1,0 +1,301 @@
+#### SOUNDS ####
+
+GoblinDeath_Random_sound:
+  Skills:
+  - randomskill{skills=GoblinDeath1_sound,GoblinDeath2_sound} @Self
+
+GoblinDeath1_sound:
+  Skills:
+  - sound{s=healong_goblin:healong.goblin.goblindeath1;v=1;sc=HOSTILE} @Self
+
+GoblinDeath2_sound:
+  Skills:
+  - sound{s=healong_goblin:healong.goblin.goblindeath2;v=1;sc=HOSTILE} @Self
+
+GoblinkingDEATH_sound:
+  Skills:
+  - delay 18
+  - sound{s=healong_goblin:healong.goblin.goblinkingdeath;v=1;sc=HOSTILE} @Self
+
+Goblinking_jump_sound:
+  Skills:
+  - sound{s=healong_goblin:healong.goblin.goblinking_jump1;v=2;sc=HOSTILE} @Self
+
+Goblinking_Random_sound:
+  Skills:
+  - randomskill{skills=Goblinking_hahahaa_sound,Goblinking_hahahaa1_sound,Goblinking_go_sound} @Self
+
+Goblinking_hahahaa_sound:
+  Skills:
+  - sound{s=healong_goblin:healong.goblin.goblinking_hahahaa;v=1;sc=HOSTILE} @Self
+
+Goblinking_hahahaa1_sound:
+  Skills:
+  - sound{s=healong_goblin:healong.goblin.goblinking_hahahaa1;v=1;sc=HOSTILE} @Self
+  
+Goblinking_go_sound:
+  Skills:
+  - sound{s=healong_goblin:healong.goblin.goblinking_go;v=1;sc=HOSTILE} @Self
+
+CancelDamageEvent:
+  Skills:
+  - CancelEvent
+
+GoblinonAttacksync:
+  Skills:
+  - CancelEvent
+  - skill{s=GoblinonAttack} @Self
+
+GoblinonAttack:
+  Cooldown: 1
+  Conditions:
+  - incombat true
+  - lastsignal{s=skill} false
+  - offgcd
+  Skills:
+  - gcd{ticks=20}
+  - signal{s=skill} @Self
+  - state{mid=goblin;s=attack;li=3;lo=2} @Self
+  - damage{a=8} @PIR{r=2}
+  - sound{s=block.bamboo.place} @PIR
+  - signal{s=clear} @Self
+  
+GoblinCombat:
+  Skills:
+  - defaultstate{m=goblin;t=walk;s=run;sp=3} @Self
+  - setspeed{speed=2;type=walking} @Self
+
+GoblinPeace:
+  Skills:
+  - defaultstate{m=goblin;t=walk;s=walk} @Self
+  - setspeed{speed=1;type=walking} @Self
+
+goblinarcherShoot:
+  Cooldown: 3
+  Conditions:
+  - incombat true
+  TargetConditions:
+  - lineofsight true
+  - fieldofview{angle=90} true
+  - distance{d=<18}
+  Skills:
+  - state{mid=goblinarcher;s=walk;li=3;lo=2} @Self
+  - state{mid=goblinarcher;s=attack;li=3;lo=2} @Self
+  - potion{t=SLOW;l=7;d=20;p=false} @Self
+  - delay 20
+  - sound{s=item.crossbow.shoot} @Self
+  - projectile{bulletType=ARROW;oT=GoblinShootTick;oH=GoblinShootHit;a=1;i=1;v=14;mr=25;hp=true;hR=0.2;vR=0.2} @Target
+
+GoblinShootTick:
+  Skills:
+  - delay 3
+  - effect:particles{p=reddust;c=#ffffff;a=1;hs=0;vs=0}
+
+GoblinShootHit:
+  Skills:
+  - damage{a=12} @PIR{ignore=goblin,goblinarcher,goblinsoldier,goblinshaman,goblinking}
+
+GoblinFireBall:
+  Conditions:
+  - incombat true
+  - lastsignal{s=skill} false
+  TriggerConditions:
+  - lineofsight true
+  Skills:
+  - signal{s=skill} @Self
+  - state{mid=goblinshaman;s=walk;li=3;lo=2} @Self
+  - state{mid=goblinshaman;s=attack;li=3;lo=2} @Self
+  - projectile{oT=GoblinFireBallTick;oH=GoblinFireBallHit;i=1;v=14;mr=15;sE=true}
+  - sound{s=entity.ghast.shoot;p=0.7;v=2} @Self
+  - delay 3
+  - signal{s=clear} @Self
+
+GoblinFireBallTick:
+  Skills:
+  - delay 3
+  - effect:particles{p=reddust;c=#ff2e00;a=10;hs=0.2;vs=0.2} @Origin
+  - effect:particles{p=reddust;c=#ffbc00;a=10;hs=0.1;vs=0.1} @Origin
+
+GoblinFireBallHit:
+  Skills:
+  - damage{a=12}
+  - effect:explosion @Origin
+  - effect:particles{p=lava;s=-1;a=20;hs=0;vs=0} @Origin
+
+GoblinHeal:
+  Cooldown: 15
+  Conditions:
+  - lastsignal{s=skill} false
+  - incombat true
+  Skills:
+  - signal{s=skill} @Self
+  - potion{t=SLOW;l=7;d=60;p=false} @Self
+  - sound{s=entity.witch.celebrate;p=1.9;v=1} @Self
+  - state{mid=goblinshaman;s=heal;li=0;lo=0} @Self
+  - delay 3
+  - effect:particleorbital{particle=reddust;color=#7CFC00;amount=3;r=1;p=30;i=1;t=40;repeat=4;repeatInterval=7;vs=1} @Self
+  - sound{s=entity.evoker.prepare_summon;p=0.8;v=0.5} @Self
+  - delay 40
+  - effect:particles{particle=villager_happy;a=20;y=1;s=1;hs=0.4;vs=0.4} @MobsInRadius{r=30;types=goblin,goblinarcher,goblinsoldier,goblinshaman,goblinking}
+  - effect:particles{particle=villager_happy;a=30;y=1;s=1;hs=1;vs=1;y=1.5} @MobsInRadius{r=30;types=goblinking}
+  - sound{s=healong_goblin:healong.goblin.shaman_heal;v=0.3;sc=HOSTILE} @self
+  - effect:particles{particle=totem_of_undying;speed=0.4;amount=60;hs=.2;vs=1;y=4} @Self
+  - heal{amount=50} @MobsInRadius{r=30;types=goblin,goblinarcher,goblinsoldier,goblinshaman,goblinking}
+  - heal{amount=50} @Self
+  - delay 3
+  - state{mid=goblinshaman;s=walk;li=0;lo=0} @Self
+  - delay 10
+  - signal{s=clear} @Self
+
+GoblinSoldieronAttacksync:
+  Skills:
+  - CancelEvent
+  - skill{s=GoblinonSoldierAttack} @Self
+
+GoblinonSoldierAttack:
+  Cooldown: 2
+  Conditions:
+  - incombat true
+  - lastsignal{s=skill} false
+  - offgcd
+  Skills:
+  - gcd{ticks=20}
+  - signal{s=skill} @Self
+  - state{s=attack;li=2;lo=2} @Self
+  - delay 10
+  - damage{a=14} @PIR{r=2}
+  - sound{s=entity.witch.throw;p=0.5;v=1} @Self
+  - signal{s=clear} @Self
+
+GoblinSoldierLunge:
+  Skills:
+  - CancelEvent
+  - skill{s=SoldierLunge} @Self
+
+SoldierLunge:
+  Cooldown: 5
+  Conditions:
+  - lastsignal{s=skill} false
+  - incombat true
+  - offgcd
+  TargetConditions:
+  - targetwithin{d=7} true
+  - targetnotwithin{d=3} true
+  Skills:
+  - gcd{ticks=20}
+  - signal{s=skill} @Self
+  - lunge{velocity=6;velocityY=-1} @Target 
+  - delay 10
+  - sound{s=entity.witch.ambient;p=1.5;v=1} @Self
+  - jump{velocity=0.5}
+  - state{mid=goblinsoldier;s=attack1;li=3;lo=2} @Self
+  - delay 11
+  - projectile{oT=GoblinJumpShootOT;oH=GoblinJumpShootOH;d=40;hnp=true}
+  - sound{s=entity.witch.hurt;p=1.5;v=1} @Self
+  - delay 10
+  - signal{s=clear} @Self
+  
+GoblinJumpShootOT:
+  Skills:
+  - effect:particlering{particle=campfire_cosy_smoke;radius=1;points=5;amount=1;hS=0.5;vS=0} @Self
+  - delay 2
+  - effect:particlering{particle=explosion_normal;radius=2;points=10;amount=1;hS=0.5;vS=0} @Self
+
+GoblinJumpShootOH:
+  Skills:
+  - delay 3
+  - stun{d=40} @PIR{r=3}
+  - damage{a=10} @PIR{r=3}
+
+GoblinkingAttack:
+  Cooldown: 3
+  Conditions:
+  - targetwithin{d=3} true
+  - lastsignal{s=skill} false
+  - incombat true
+  - onground true
+  Skills:
+  - cancelevent
+  - signal{s=skill} @Self
+  - state{s=attack;li=3;lo=2} @Self
+  - delay 10
+  - sound{s=entity.hoglin.hurt;v=0.8} @Self
+  - damage{a=10} @Target
+  - signal{s=clear} @Self
+
+GoblinkingWideAreaAttack:
+  Conditions:
+  - targetwithin{d=5} true
+  - lastsignal{s=skill} false
+  - incombat true
+  - onground true
+  - offgcd true
+  Skills:
+  - signal{s=skill} @Self
+  - CancelEvent
+  - gcd{ticks=20}
+  - setspeed{speed=0;type=walking} @Self
+  - skill{s=Goblinking_Random_sound} @Self
+  - state{mid=goblinking;s=attack1;li=3;lo=2} @Self
+  - effect:particleorbital{particle=campfire_cosy_smoke;amount=3;r=1;p=30;i=1;t=15;repeat=3;repeatInterval=7;vs=1} @Self
+  - delay 25
+  - skill{s=Goblinking_jump_sound} @Self
+  - projectile{oT=WideAreaAttackOT;oH=WideAreaAttackOH;d=40;hnp=true}
+  - defaultstate{m=goblinking;t=walk;s=idle} @Self
+  - delay 35
+  - setspeed{speed=1.2;type=walking} @Self
+  - defaultstate{m=goblinking;t=walk;s=walk} @Self
+  - signal{s=clear} @Self
+
+WideAreaAttackOT:
+  Skills:
+  - effect:particlering{particle=campfire_cosy_smoke;radius=2;points=10;amount=1;hS=0.5;vS=0} @Self
+  - delay 2
+  - effect:particlering{particle=explosion_normal;radius=3;points=5;amount=1;hS=0.5;vS=0} @Self
+  - delay 2
+  - effect:particlering{particle=explosion_normal;radius=4;points=10;amount=1;hS=0.5;vS=0} @Self
+  - delay 2
+  - effect:particlering{particle=explosion_normal;radius=5;points=20;amount=1;hS=0.5;vS=0} @Self
+
+WideAreaAttackOH:
+  Skills:
+  - throw{velocity=15;velocityY=1} @PIR
+  - damage{a=20} @PIR
+
+GoblinkingSummon:
+  Cooldown: 5
+  Conditions:
+  - lastsignal{s=skill} false
+  - incombat true
+  - children{a=0} ture
+  - offgcd true
+  Skills:
+  - signal{s=skill} @Self
+  - gcd{ticks=20}
+  - setspeed{speed=0;type=walking} @Self
+  #- speak{offset=0.6f;radius=30;maxlinelength=22;lineprefix="&5";message=" 짐을 보호하라! ";duration=200} @Self
+  - sound{s=block.portal.travel;p=1;v=0.09} @Self
+  - effect:particles{particle=end_rod;a=4;hs=1.5;vs=1.5;s=0.3;y=3;directional=true;dir=0,1,0;repeat=7;repeatInterval=7} @Self
+  - defaultstate{m=goblinking;t=walk;s=idle} @Self
+  - effect:particleorbital{particle=reddust;color=#f1c232;t=20;i=1;amount=40;p=39;radius=2;oy=1;rZ=-0.26;hs=0.1;vs=0.1} @Self
+  - delay 20
+  - effect:particleorbital{particle=reddust;color=#f1c232;t=20;i=1;amount=40;p=39;radius=2;oy=2;rX=3.14;rZ=3.4;hs=0.1;vs=0.1} @Self
+  - delay 20
+  - effect:particleorbital{particle=reddust;color=#f1c232;t=21;i=1;amount=40;p=39;radius=2;oy=3.6;ox=0.15;rZ=-0.52;hs=0.1;vs=0.1} @Self
+  - delay 25
+  - effect:particleorbital{particle=reddust;color=#ffffff;points=4;y=2;ticks=45;i=1;r=2;yOffset=2;hs=0.8;vs=0.8} @Self
+  - state{s=attack2;li=3;lo=2} @Self
+  - delay 14
+  - sound{s=entity.evoker.prepare_wololo;p=2;v=2} @Self
+  - summon{type=goblin;amount=1;radius=4;yRadius=0.1;inheritThreatTable=true;sip=true} @PIR{r=20}
+  - delay 2
+  - summon{type=goblinarcher;amount=1;radius=4;yRadius=0.1;inheritThreatTable=true;sip=true} @PIR{r=20}
+  - delay 2
+  - summon{type=goblinshaman;amount=1;radius=4;yRadius=0.1;inheritThreatTable=true;sip=true} @PIR{r=20}
+  - delay 2
+  - summon{type=goblinsoldier;amount=1;radius=4;yRadius=0.1;inheritThreatTable=true;sip=true} @PIR{r=20}
+  - delay 2
+  - defaultstate{m=goblinking;t=walk;s=walk} @Self
+  - delay 20
+  - setspeed{speed=1.2;type=walking} @Self
+  - signal{s=clear} @Self

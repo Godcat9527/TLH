@@ -1,0 +1,178 @@
+#武器数据
+attack-damage: '&f 뀁 &fᎈ <#AEC6CF>攻击伤害: &f{value}'
+attack-speed: '&f 뀁 &fᎊ <#AEC6CF>攻击速度: &f{value}/s'
+critical-strike-chance: '&f 뀁 &fᎋ <#FBE7C6>暴击率: &f<plus>{value}%'
+critical-strike-power: '&f 뀁 &fᎌ <#FBE7C6>暴击伤害比例: &f<plus>{value}%'
+skill-critical-strike-chance: '&f 뀁 &fᎬ <#ecacec>技能暴击率: &f<plus>{value}%'
+skill-critical-strike-power: '&f 뀁 &fᎫ <#ecacec>技能暴击伤害比例: &f<plus>{value}%'
+range: '&f 뀁 &fᎪ <#e8bc9c>范围: &f{value}'
+mana-cost: '&f 뀁 &fᎤ &7消耗 &b{value} 法力值'
+stamina-cost: '&f 뀁 &fᎤ &7消耗 &b{value} 耐力'
+arrow-velocity: '&f 뀁 &fᎠ <#c7e3e6>箭矢速度: &f{value}'
+blunt-power: '&f 뀁 &3 &7■ AOE伤害半径: &f{value}'
+blunt-rating: '&f 뀁 &3 &7■ AOE伤害比例: &f{value}%'
+two-handed: '&f 뀁 &3 &7■ 双手使用'
+handworn: '&f 뀁 &3 &7■ 戴在手上'
+knockback: '&f 뀁 &3 &7■ 击退: &f{value}'
+recoil: '&f 뀁 &3 &7■ 后坐力: &f{value}%'
+note-weight: '&f 뀁 &3 &7■ 音符强度: &f{value}'
+lifesteal: '&f 뀁 &f᎐ <#800000>生命窃取: &f{value}%'
+spell-vampirism: '&f 뀁 &f᎖ <#702963>技能吸血比例: &f{value}%'
+
+#额外伤害
+pve-damage: '&f 뀁 &fᎥ <#fcc42c>PvE伤害加成: &f<plus>{value}%'
+pvp-damage: '&f 뀁 &fᎩ <#FF5733>PvP伤害加成: &f<plus>{value}%'
+magic-damage: '&f 뀁 &f᎕ <#C3B1E1>魔法伤害加成: &f<plus>{value}%'
+weapon-damage: '&f 뀁 &f᎓ <#FF5733>武器伤害加成: &f<plus>{value}%'
+undead-damage: '&f 뀁 <#FAA0A0>Ꭹ &7亡灵生物伤害加成: &f<plus>{value}%' #
+skill-damage: '&f 뀁 &f᎕ <#C3B1E1>技能伤害加成: &f<plus>{value}%'
+physical-damage: '&f 뀁 &f᎓ <#FAA0A0>物理伤害加成: &f<plus>{value}%'
+projectile-damage: '&f 뀁 &f᎔ <#FF5733>弹射物伤害加成: &f<plus>{value}%'
+faction-damage-undead: '&f 뀁 &f &7■ 亡灵派系伤害加成: &f<plus>{value}%'
+
+#技能
+ability-format: '&f 뀁 &a>&8| &7{trigger} &8|&e|&8| &7&l{ability}'
+ability-modifier: '&f 뀁  &3>&8|&7 {modifier}&8: &f{value}'
+ability-splitter: '&f 뀁 &8'
+ability-combo-attack: '&f 뀁  连击'
+ability-firebolt: '&f 뀁  火球术'
+ability-life-ender: '&f 뀁  陨星术'
+
+#防具数据
+block-power: '&f 뀁 &fᎡ <#9cacb4>格挡比例: &f<plus>{value}%'
+block-rating: '&f 뀁 &fᎡ <#9cacb4>格挡几率: &f<plus>{value}%'
+block-cooldown-reduction: '&f 뀁 &fᎡ <#9cacb4>格挡冷却缩减: &f<plus>{value}%'
+dodge-rating: '&f 뀁 &fᎢ <#9ca4f4>闪避几率: &f<plus>{value}%'
+dodge-cooldown-reduction: '&f 뀁 &fᎢ <#9ca4f4>闪避冷却缩减: &f<plus>{value}%'
+parry-rating: '&f 뀁 &fᎦ <#7c748c>招架几率: &f<plus>{value}%'
+parry-cooldown-reduction: '&f 뀁 &fᎦ <#7c748c>招架冷却缩减: &f<plus>{value}%'
+armor: '&f 뀁 &fᎎ <#cfcfc4>护甲值: &f<plus>{value}'
+armor-toughness: '&f 뀁 &fᎎ <#cfcfc4>盔甲韧性: &f<plus>{value}'
+knockback-resistance: '&f 뀁 &f᎗ <#0096FF>击退抗性: &f<plus>{value}%'
+max-health: '&f 뀁 &fᎏ <#D22B2B>生命上限:&f <plus>{value}'
+movement-speed: '&f 뀁 &f᎒ <#c7c4bf>移动速度: &f{value}/s'
+
+#减少伤害
+defense: '&f 뀁 &fᎎ <#cfcfc4>护甲: &f<plus>{value}'
+damage-reduction: '&f 뀁 ᎍ <#cfcfc4>伤害减免: &f<plus>{value}%'
+fall-damage-reduction: '&f 뀁 <HEXADD8E6>ᎍ 摔落伤害减免: &f<plus>{value}%'
+fire-damage-reduction: '&f 뀁 <HEXFFD580>ᎍ 火焰伤害减免: &f<plus>{value}%'
+magic-damage-reduction: '&f 뀁 <#C3B1E1>ᎍ 魔法伤害减免: &f<plus>{value}%'
+projectile-damage-reduction: '&f 뀁 &6ᎍ 弹射物伤害减免: &f<plus>{value}%'
+physical-damage-reduction: '&f 뀁 <HEXFFA07A>ᎍ 物理伤害减免: &f<plus>{value}%'
+pve-damage-reduction: '&f 뀁 <#fcc42c>ᎍ PVE伤害减免: &f<plus>{value}%'
+pvp-damage-reduction: '&f 뀁 <#FF5733>ᎍ PvP伤害减免: &f<plus>{value}%'
+
+#RPG 统计
+health-regeneration: '&f 뀁 &3 &7■ 生命恢复: &f<plus>{value}'
+max-mana: '&f 뀁 &fᎤ &b法力上限: &f<plus>{value}'
+mana-regeneration: '&f 뀁 &3 &7■ 法力恢复: &f<plus>{value}'
+max-stamina: '&f 뀁 &3 &7■ 耐力上限: &f<plus>{value}'
+stamina-regeneration: '&f 뀁 &3 &7■ 耐力恢复: &f<plus>{value}'
+cooldown-reduction: '&f 뀁 &fᎉ <#6495ED>技能冷却缩减: &f<plus>{value}%'
+additional-experience: '&f 뀁 &6★ &7额外职业经验: &f<plus>{value}%'
+additional-experience-alchemy: '&f 뀁 &7■ 额外炼金经验: &f<plus>{value}%'
+additional-experience-enchanting: '&f 뀁 &7■ 额外附魔经验: &f<plus>{value}%'
+additional-experience-farming: '&f 뀁 &7■ 额外农业经验: &f<plus>{value}%'
+additional-experience-fishing: '&f 뀁 &7■ 额外垂钓经验: &f<plus>{value}%'
+additional-experience-mining: '&f 뀁 &7■ 额外采矿经验: &f<plus>{value}%'
+additional-experience-smelting: '&f 뀁 &7■ 额外锻造经验: &f<plus>{value}%'
+additional-experience-smithing: '&f 뀁 &7■ 额外冶炼经验: &f<plus>{value}%'
+additional-experience-woodcutting: '&f 뀁 &7■ 额外伐木经验: &f<plus>{value}%'
+
+#额外选项
+perm-effect: '&f 뀁 &3 &7■ 永久效果 &f{value}'
+command: '&f 뀁 &3 &7■ 指令: &f{value}c &3 &7(&f{value}d&3 &7s)'
+item-cooldown: '&f 뀁 &fᎧ <#e03c6c>时间: &f{value}秒'
+arrow-potion-effects: '&f 뀁 &3 &7■ 箭矢药水效果: &f{value}'
+
+#消耗品
+restore-health: '&f 뀁 &fᎏ &7恢复 &c{value}生命值'
+restore-food: '&f 뀁 &fᎣ &7 恢复 &f{value} &7饥饿值'
+restore-saturation: '&f 뀁 &fᎣ &7 恢复 &f{value} &7饱和度'
+restore-mana: '&f 뀁 &fᎤ &7恢复 &b{value} 法力值'
+restore-stamina: '&f 뀁 &fᎤ &7 恢复 &f{value} &7耐力'
+effect: '&f 뀁 &3 &7■ 获得 &f{value}e &7持续 &f{value}d &7秒'
+repair: '&f 뀁 &3 &7■ 修复: &f{value}'
+repair-percent: '&f 뀁 &3 &7■ 修复: &f{value}%'
+can-identify: '&f 뀁 &3 &7■ 用于鉴定物品.'
+can-deconstruct: '&f 뀁 &3 &7■ 用于拆解物品'
+can-deskin: '&f 뀁 &3 &7■ 用于揭下物品皮肤'
+success-rate: '&f 뀁 &3 &7■ 成功几率: &a&l{value}%'
+max-consume: '&f 뀁 &fᎨ <#94303c>剩余使用次数: &f{value}'
+
+#宝石
+empty-gem-socket: '&f 뀁 <#cabbcb>◇ 空 &8(&3{name}宝石槽)'
+filled-gem-socket: '&f 뀁 <#886b8a>♦ '
+when-applied: '&f 뀁 &a镶嵌时间:'
+gem-stone-lore: '&f 뀁 &8&l[&2&l*&8&l] &a将宝石拖放到物品上 &7以镶嵌!'
+
+
+#=====================================================================
+#灵魂绑定
+soulbinding-chance: '&f 뀁 &3 &7■ Has a &a{value}% &7几率灵魂绑定你的物品'
+soulbound-break-chance: '&f 뀁 &3 &7■ Has a &a{value}% &7几率破坏灵魂绑定'
+soulbound-level: '&f 뀁 &3 &7■ Level &e{value} &7灵魂绑定等级'
+
+#工具
+autosmelt: '&f 뀁 &3 &7■ &f自动熔炼'
+bouncing-crack: '&f 뀁 &3 &7■ &f范围破坏'
+pickaxe-power: '&f 뀁 &e⛏ &7挖掘强度: &f{value}'
+durability: '&f 뀁 &8耐久: &3{current}/{max}'
+
+#一般情况
+item-type: '&f 뀁 &c{type}'
+tier: '&f{value}'
+required-class: '&f 뀁 &3 &7{value} Item'
+required-level: '&f 뀁 &eʀᴇQᴜɪʀᴇꜱ Lvl {value}'
+
+#MMOCore 属性
+required-dexterity: '&e所需敏捷 &c{value}'
+required-strength: '&e所需力量 &c{value}'
+required-intelligence: '&e所需智慧 &c{value}'
+
+additional-dexterity: '&3 &7■ 额外敏捷: &f<plus>{value}'
+additional-intelligence: '&3 &7■ 额外智慧: &f<plus>{value}'
+
+#职业
+profession-alchemy: '&f 뀁 &e炼金等级: &c{value}'
+profession-enchanting: '&f 뀁 &e附魔等级: &c{value}'
+profession-farming: '&f 뀁 &e农业等级: &c{value}'
+profession-fishing: '&f 뀁 &e垂钓等级: &c{value}'
+profession-mining: '&f 뀁 &e采矿等级: &c{value}'
+profession-smelting: '&f 뀁 &e锻造等级: &c{value}'
+profession-smithing: '&f 뀁 &e冶炼等级: &c{value}'
+profession-woodcutting: '&f 뀁 &e伐木等级: &c{value}'
+
+#元素统计格式
+elemental-damage: '&f 뀁 {color}{icon}&7 {value} {element} 伤害'
+elemental-damage-percent: '&f 뀁 {color}{icon}&7 +{value}% {element} 伤害加成'
+elemental-defense: '&f 뀁 {color}{icon}&7 {value} {element} 防御'
+elemental-defense-percent: '&f 뀁 {color}{icon}&7 +{value}% {element} 防御加成'
+elemental-weakness: '&f 뀁 {color}{icon}&7 {value}% {element} 弱化'
+
+#自定义属性
+custom-myluck: '&f 뀁 &3 &7■ 幸运: &f<plus>{value}'
+
+#AS技能
+additional-wisdom: '&f 뀁  &7■ 所需的技能智力等级: &f{value}'
+additional-health: '&f 뀁  &7■ 所需的技能生命值等级: &f{value}'
+additional-regeneration: '&f 뀁  &7■ 所需的技能再生等级: &f{value}'
+additional-luck: '&f 뀁  &7■ 所需的技能幸运值等级: &f{value}'
+additional-toughness: '&f 뀁  &7■ 所需的技能韧性等级: &f{value}'
+additional-strength: '&f 뀁  &7■ 所需的技能力量等级: &f{value}'
+required-farming: '&f 뀁 <#FF4500>需要:<#00FF00>草药学{value}'
+required-foraging: '&f 뀁 <#FF4500>需要:<#C0FF3E>伐树{value}'
+required-mining: '&f 뀁 <#FF4500>需要:<#CD853F>采掘{value}'
+required-fishing: '&f 뀁 <#FF4500>需要:<#1E90FF>钓鱼{value}'
+required-excavation: '&f 뀁 <#FF4500>需要:<#8B7E66>挖掘{value}'
+required-archery: '&f 뀁 <#FF4500>需要:<#F4A460>弓箭手{value}'
+required-defense: '&f 뀁 <#FF4500>需要:<#9ACD32>防御{value}'
+required-fighting: '&f 뀁 <#FF4500>需要:<#E0EEE0>&l战士{value}'
+required-endurance: '&f 뀁 <#FF4500>需要:<#EEDD82>耐力{value}'
+required-agility: '&f 뀁 <#FF4500>需要:<#E0FFFF>敏捷{value}'
+required-alchemy: '&f 뀁 <#FF4500>需要:<#FFFF00>炼金{value}'
+required-enchanting: '&f 뀁 <#FF4500>需要:<#FF1493>附魔{value}'
+required-sorcery: '&f 뀁 <#FF4500>需要:<#1E90FF>法术{value}'
+required-healing: '&f 뀁 <#FF4500>需要:<#FFF8DC>药水学{value}'
+required-forging: '&f 뀁 <#FF4500>需要:<#8B5A00>锻造{value}'

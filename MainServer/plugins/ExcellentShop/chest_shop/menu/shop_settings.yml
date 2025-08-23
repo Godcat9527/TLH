@@ -1,0 +1,170 @@
+# ==================== [SECTION] SETTINGS ====================
+# > [MenuType] : String | Represents the menu type. Allowed values: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/MenuType.html
+# > [Title] : String | Sets menu title.
+# > [Auto_Refresh] : Integer | Defines menu refresh rate in seconds. Set 0 to disable.
+# > [PlaceholderAPI -> Enabled] : Boolean | When enabled, applies PlaceholderAPI placeholders for all items in the menu per player.
+#  
+# ==================== [SECTION] CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# > [Item] : Section | Item to display.
+#     [*] Navigate to https://nightexpressdev.com/nightcore/configuration/item-formation/ for a list of available options.
+# > [Priority] : Integer | Item priority. Higher values will override other item(s) in the same slot(s).
+# > [Slots] : Int Array | Item slots, starts from 0. Split with commas.
+#     Slots: '0,4,9,10'
+# > [Type] : String | Defines item click action.
+#     [*] Available types: ['close', 'shop_change_type', 'shop_change_name', 'shop_change_products', 'shop_display', 'shop_buying', 'shop_selling', 'shop_rent_settings', 'shop_rent_extend', 'shop_storage', 'shop_bank', 'shop_delete']
+# > [Click_Commands] : Section | Executes commands on click with PlaceholderAPI support.
+#     [*] Works only if [Type] is not set (null).
+#     [*] Available click types: [LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, DRAG_N_DROP]
+#     [*] Use prefix 'player:' to run command by a player.
+#     Click_Commands:
+#       LEFT:
+#       - say Hello
+#       - give %player_name% diamond 1
+#       - player: warp shop
+# ==================================================
+Settings:
+  MenuType: generic_9x5
+  Title: <black>%shop_name%</black>
+  Auto_Refresh: -1
+  PlaceholderAPI:
+    Enabled: false
+Content:
+  shop_change_type:
+    Priority: 10
+    Item:
+      Material: minecraft:red_banner
+      Display_Name: <lyellow><b>Admin Shop</b></lyellow>
+      Lore:
+      - '<lyellow>✔ <lgray>Enabled: </lgray>%shop_is_admin%</lyellow>'
+      - ''
+      - <lgray>Controls whether shop is <lyellow>admin shop</lyellow>.</lgray>
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+    Slots: '4'
+    Type: shop_change_type
+  shop_change_name:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b>Display Name</b></lyellow>
+      Lore:
+      - '<lyellow>✔ <lgray>Current: </lgray>%shop_name%</lyellow>'
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>change</lyellow>.</lgray>
+      SkinURL: f5a19af0e61ca42532c0599fa0a391753df6b71f9fa4a177f1aa9b1d81fe6ee2
+    Slots: '20'
+    Type: shop_change_name
+  shop_change_products:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b>Products</b></lyellow>
+      Lore:
+      - <lgray>Manage shop products here.</lgray>
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>navigate</lyellow>.</lgray>
+      SkinURL: 900d28ff7b543dd088d004b1b1f95b38d444ea0461ff5ae3c68d76c0c16e2527
+    Slots: '21'
+    Type: shop_change_products
+  shop_display:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b>Display Settings</b></lyellow>
+      Lore:
+      - <lgray>Customize display of your shop!</lgray>
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>navigate</lyellow>.</lgray>
+      SkinURL: 28a47804b73e454a5992cf6411a7872df56788237c246bb245199d30a1eed58e
+    Slots: '22'
+    Type: shop_display
+  shop_buying:
+    Priority: 10
+    Item:
+      Material: minecraft:green_dye
+      Display_Name: <lyellow><b>Buying</b></lyellow>
+      Lore:
+      - '<lyellow>✔ <lgray>Allowed: </lgray>%shop_buy_allowed%</lyellow>'
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+    Slots: '23'
+    Type: shop_buying
+  shop_selling:
+    Priority: 10
+    Item:
+      Material: minecraft:red_dye
+      Display_Name: <lyellow><b>Selling</b></lyellow>
+      Lore:
+      - '<lyellow>✔ <lgray>Allowed: </lgray>%shop_sell_allowed%</lyellow>'
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>toggle</lyellow>.</lgray>
+    Slots: '24'
+    Type: shop_selling
+  shop_rent_settings:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b>Rent Settings</b></lyellow>
+      Lore:
+      - <lgray>Manage rent settings here.</lgray>
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>navigate</lyellow>.</lgray>
+      SkinURL: 8fa065f04290ecf431f9aa900ab6ea17bc354f70a596f1826bb23592f87ddba7
+    Slots: '30'
+    Type: shop_rent_settings
+  shop_rent_extend:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <green><b>Extend Rent</b></green>
+      Lore:
+      - <green>● <lgray>Expires in </lgray>%shop_rent_expires_in%</green>
+      - '<green>● <lgray>Period: </lgray>%shop_rent_duration%</green>'
+      - '<green>● <lgray>Price: </lgray>%shop_rent_price%</green>'
+      - ''
+      - <lgray><green>➥</green> Click to <green>extend</green>.</lgray>
+      SkinURL: a77be664b48eb834c05a79cf2bcea4a0b49215211254b0b4d965ccb221dbedbb
+    Slots: '30'
+    Type: shop_rent_extend
+  shop_storage:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b>Storage</b></lyellow>
+      Lore:
+      - <lgray>Store items here.</lgray>
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>navigate</lyellow>.</lgray>
+      SkinURL: edc36c9cb50a527aa55607a0df7185ad20aabaa903e8d9abfc78260705540def
+    Slots: '31'
+    Type: shop_storage
+  shop_bank:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b>Bank</b></lyellow>
+      Lore:
+      - '<lyellow>▪ <lgray>Balance: </lgray>%shop_bank_balance%</lyellow>'
+      - ''
+      - <lgray>Bank used to store your funds.</lgray>
+      - ''
+      - <lgray>Bank <lgreen>gains</lgreen> funds on sales,</lgray>
+      - <lgray>and <lred>spends</lred> them on purchases.</lgray>
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>navigate</lyellow>.</lgray>
+      SkinURL: 5f96717bef61c37ce4dcd0b067da4b57c8a1b0f83c2926868b083444f7eade54
+    Slots: '32'
+    Type: shop_bank
+  shop_delete:
+    Priority: 10
+    Item:
+      Material: minecraft:player_head
+      Display_Name: <lyellow><b>Destroy Shop</b></lyellow>
+      Lore:
+      - <lgray>Permanently removes the shop.</lgray>
+      - ''
+      - <lgray><lyellow>[▶]</lyellow> Click to <lyellow>remove</lyellow>.</lgray>
+      SkinURL: b465f80bf02b408885987b00957ca5e9eb874c3fa88305099597a333a336ee15
+    Slots: '8'
+    Type: shop_delete

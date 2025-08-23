@@ -1,0 +1,92 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+FLOWING_KATANA:
+  base:
+    material: IRON_SWORD
+    max-durability: 2400.0
+    tier: RARE
+    element:
+      earth:
+        defense:
+          base: 15.0
+          scale: 0.0
+          spread: 0.02
+          max-spread: 0.1
+      water:
+        defense:
+          base: 30.0
+          scale: 0.0
+          spread: 0.05
+          max-spread: 0.12
+    gem-sockets:
+      - White
+      - White
+    name: §3§l名刀「潺流」
+    lore:
+      - §7§o一把用水锻造成的太刀。
+    attack-damage:
+      base: 9.0
+      scale: 0.08
+      spread: 0.03
+      max-spread: 0.1
+    attack-speed: 1.6
+    critical-strike-chance:
+      base: 20.0
+      spread: 0.04
+      max-spread: 0.11
+    critical-strike-power:
+      base: 39.0
+      spread: 0.03
+      max-spread: 0.7
+    parry-rating:
+      base: 12.0
+      spread: 0.04
+      max-spread: 0.085
+    parry-cooldown-reduction:
+      base: 7.0
+      spread: 0.04
+      max-spread: 0.085
+    weapon-damage:
+      base: 8.0
+      spread: 0.04
+      max-spread: 0.06
+    required-level: 4.0
+    movement-speed: 0.035
+MASTER_KATANA:
+  base:
+    material: IRON_SWORD
+    name: §f§l§o太刀「天云」 
+    required-level: 20.0
+    tier: EPIC
+    attack-damage:
+      base: 20.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    critical-strike-chance: 30.0
+    critical-strike-power:
+      base: 30.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    weapon-damage:
+      base: 10.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    pvp-damage: 25.0
+    max-durability: 9000.0
+    gem-sockets:
+      - Cyan
+      - Cyan
+    disable-enchanting: true
+    disable-repairing: true
+    lore:
+      - §7这是一把§b完美的§7太刀
+      - §7当你没有足够的§b熟练度时§7请不要使用它。
+      - §7它不会§b损坏§7或者被§b作为材料被升级§7.
+    durability-bar: true
+    unbreakable: true
+    enchants:
+      sharpness: 3.0
+      sweeping: 3.0

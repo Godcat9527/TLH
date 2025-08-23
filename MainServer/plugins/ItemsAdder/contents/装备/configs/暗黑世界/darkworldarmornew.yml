@@ -1,0 +1,59 @@
+info:
+  namespace: darkworldpack
+equipments:
+  darkworldpack_armor:
+    type: armor
+    layer_1: normal/armor/darkworld_armor_layer_1
+    layer_2: normal/armor/darkworld_armor_layer_2
+items:
+  darkworld_helmet:
+    name: 暗黑世界[头盔]
+    resource:
+      generate: false
+      model_path: normal/helmet
+      material: IRON_HELMET
+      model_id: 220
+    durability:
+      max_durability: 165
+    equipment:
+      slot_attribute_modifiers:
+        armor: 2.5
+  darkworld_chestplate:
+    name: 暗黑世界[胸甲]
+    resource:
+      generate: true
+      texture: normal/armor/chestplate
+      material: IRON_CHESTPLATE
+      model_id: 220
+    durability:
+      max_durability: 165
+    equipment:
+      id: darkworldpack:darkworldpack_armor
+      slot_attribute_modifiers:
+        armor: 1
+  darkworld_leggings:
+    name: 暗黑世界[护腿]
+    resource:
+      generate: true
+      texture: normal/armor/leggings
+      material: IRON_LEGGINGS
+      model_id: 220
+    durability:
+      max_durability: 165
+    equipment:
+      id: darkworldpack:darkworldpack_armor
+      slot_attribute_modifiers:
+        armor: 1
+  darkworld_boots:
+    name: 暗黑世界[靴子]
+    resource:
+      generate: true
+      texture: normal/armor/boots
+      material: IRON_BOOTS
+      model_id: 220
+    durability:
+      max_durability: 165
+    equipment:
+      id: darkworldpack:darkworldpack_armor
+      slot_attribute_modifiers:
+        armor: 1

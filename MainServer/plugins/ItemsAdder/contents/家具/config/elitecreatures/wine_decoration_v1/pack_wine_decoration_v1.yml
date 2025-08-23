@@ -1,0 +1,395 @@
+info:
+  namespace: elitecreatures
+items:
+  wine_decoration_v1_cheese:
+    display_name: '奶酪'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/cheese
+      model_id: 5054
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_picture_wine:
+    display_name: '葡萄酒画'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/picture_wine
+      model_id: 5055
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: false
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: true
+          ceiling: false
+          floor: false
+  wine_decoration_v1_poster:
+    display_name: '海报'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/poster
+      model_id: 5056
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: true
+          ceiling: false
+          floor: false
+  wine_decoration_v1_shelf_wine:
+    display_name: '葡萄酒架'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/shelf_wine
+      model_id: 5057
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 2
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_steak:
+    display_name: '牛排'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/steak
+      model_id: 5058
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_tray:
+    display_name: '托盘'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/tray
+      model_id: 5059
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_barrel_no_wine:
+    display_name: '空葡萄酒桶'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_barrel_no_wine
+      model_id: 5060
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_barrel_wine:
+    display_name: '装满葡萄酒的桶'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_barrel_wine
+      model_id: 5061
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_barrel_vertical:
+    display_name: '竖立葡萄酒桶'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_barrel_vertical
+      model_id: 5062
+    behaviours:
+      furniture:
+        solid: true
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 2
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_bottle:
+    display_name: '葡萄酒瓶'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_bottle
+      model_id: 5063
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_case:
+    display_name: '葡萄酒箱'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_case
+      model_id: 5064
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_glass_no_wine:
+    display_name: '空葡萄酒杯'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_glass_no_wine
+      model_id: 5065
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_glass_red_wine:
+    display_name: '红葡萄酒杯'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_glass_red_wine
+      model_id: 5066
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_opener:
+    display_name: '开瓶器'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_opener
+      model_id: 5067
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+  wine_decoration_v1_wine_sign_black:
+    display_name: '黑色葡萄酒标志'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_sign_black
+      model_id: 5068
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: true
+          floor: false
+  wine_decoration_v1_wine_sign_wood:
+    display_name: '木质葡萄酒标志'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_sign_wood
+      model_id: 5069
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: true
+          floor: false
+  wine_decoration_v1_wine_tray:
+    display_name: '葡萄酒托盘'
+    resource:
+      material: paper
+      generate: false
+      model_path: wine_decoration_v1/wine_tray
+      model_id: 5070
+    behaviours:
+      furniture:
+        solid: false
+        fixed_rotation: true
+        entity: item_frame
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+          width_offset: 0
+          height_offset: 0
+        placeable_on:
+          walls: false
+          ceiling: false
+          floor: true
+# IJnuc#vWB+CiK+9t9WNuFPveCuAJzWtZWlYFW80Xxmd5kdvrCO2jNuahQiQA+TOmbURqvG

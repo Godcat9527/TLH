@@ -1,0 +1,98 @@
+title: '&6&lTLH &a&l建材购买'
+
+
+Layout:
+  - '@ @ @ @ @'
+  - '@@@@@@@@@' 
+  - '@ @ @ @ @'
+
+
+
+
+Icons: 
+
+  '@':
+    display:
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'stone':
+    display:
+      material: stone
+      name: '&f[&6石材商店&f]'
+      slots: 1
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open stone %player_name%'
+
+  'brick':
+    display:
+      material: bricks
+      name: '&f[&6砖块商店&f]'
+      slots: 3
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open bricks %player_name%'
+  
+  'wool':
+    display:
+      material: white_wool
+      name: '&f[&6羊毛商店&f]'
+      slots: 5
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open wool %player_name%'
+    
+  'concrete':
+    display:
+      material: white_concrete
+      name: '&f[&6混凝土商店&f]'
+      slots: 19
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open concrete %player_name%'
+
+  'terracotta':
+    display:
+      material: terracotta
+      name: '&f[&6陶瓦商店&f]'
+      slots: 21
+    action:
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open terracotta %player_name%'
+
+  'glass':
+    display:
+      material: glass
+      name: '&f[&6玻璃商店&f]'
+      slots: 25
+    action:
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open glass %player_name%'
+
+  'facility':
+    display:
+      material: crafting_table
+      name: "&f[&6设施商店&f]"
+      slots: 7
+    action:
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open facility %player_name%'
+
+  'wood':
+    display:
+      material: oak_leaves
+      name: "&f[&6园艺商店&f]"
+      slots: 23
+    action:
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: vshop open tree %player_name%'

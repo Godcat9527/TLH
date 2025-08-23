@@ -1,0 +1,1565 @@
+# 注意: 这些是插件的默认配置
+# 并不一定意味着玩家会有良好的游戏体验。我们希望您会根据自己的想法创建定制的配置，让玩家体验到您服务器的独特之处。
+
+# 原版战利品设置
+# 注意：原版战利品不能设置 instant-game 为 true
+vanilla:
+  show-in-fishfinder: false
+  disable-stat: true
+  group:
+    - river
+# 一些垃圾
+stick:
+  tag: false
+  nick: '<#EEE685>没用的木棍</#EEE685>'
+  material: stick
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+shoes:
+  tag: false
+  nick: '<#8B814C>有股奇怪的味道</#8B814C>'
+  material: leather_boots
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+  random-durability: true
+seagrass:
+  tag: false
+  nick: '<green>海草</green>'
+  material: seagrass
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+kelp:
+  tag: false
+  nick: '<green>海带</green>'
+  material: kelp
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+nether_brick:
+  tag: false
+  nick: '<gray>硬砖头</gray>'
+  material: nether_brick
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+flint:
+  tag: false
+  nick: '<gray>硬石头</gray>'
+  material: flint
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+stone:
+  tag: false
+  nick: '<gray>硬石头</gray>'
+  material: stone
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+netherrack:
+  tag: false
+  nick: '<gray>硬石头</gray>'
+  material: netherrack
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+gold_ingot:
+  tag: false
+  nick: '<yellow>闪耀的金锭</yellow>'
+  material: gold_ingot
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+gold_nugget:
+  tag: false
+  nick: '<yellow>闪耀的金粒</yellow>'
+  material: gold_nugget
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+cobblestone:
+  tag: false
+  nick: '<gray>硬石头</gray>'
+  material: cobblestone
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+obsidian:
+  tag: false
+  nick: '<gray>硬石头</gray>'
+  material: obsidian
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+diamond:
+  tag: false
+  nick: '<#00FFFF>钻石</#00FFFF>'
+  material: diamond
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+rubbish:
+  material: cod
+  nick: <#00BFFF>放射性鱼</#00BFFF>
+  display:
+    name: <#00BFFF>放射性鱼</#00BFFF>
+    lore:
+      - <gray>请保护环境...
+  custom-model-data: 50000
+  show-in-fishfinder: false
+  disable-stat: true
+  disable-game: true
+  instant-game: false
+  prevent-grabbing: false
+rainbow_fish:
+  material: cod
+  nick: <Rainbow>彩虹鱼</Rainbow>
+  display:
+    name: <Rainbow>彩虹鱼</Rainbow>
+    lore:
+      - <gray>给你带来一天的好心情!
+  custom-model-data: 50100
+  price:
+    base: 10
+#mi物品
+mi_shengji:
+  tag: false
+  nick: '<#DA70D6>紫晶升级石'
+  material: MMOItems:consumable:SHENGJI
+  show-in-fishfinder: true
+  disable-stat: true
+  disable-game: true
+mi_qkl_pf:
+  tag: false
+  nick: '巧克力配方'
+  material: MMOItems:consumable:QKL_PF
+  show-in-fishfinder: true
+  disable-stat: true
+  disable-game: true
+mi_hb_pf:
+  tag: false
+  nick: '汉堡配方'
+  material: MMOItems:consumable:HB_PF
+  show-in-fishfinder: true
+  disable-stat: true
+  disable-game: true
+mi_htsmz_pf:
+  tag: false
+  nick: '火腿三明治配方'
+  material: MMOItems:consumable:HTSMZ_PF
+  show-in-fishfinder: true
+  disable-stat: true
+  disable-game: true
+mi_jrc_pf:
+  tag: false
+  nick: '鸡肉串配方'
+  material: MMOItems:consumable:JRC_PF
+  show-in-fishfinder: true
+  disable-stat: true
+  disable-game: true
+mi_jgnn_pf:
+  tag: false
+  nick: '浆果牛奶配方'
+  material: MMOItems:consumable:JGNN_PF
+  show-in-fishfinder: true
+  disable-stat: true
+  disable-game: true
+# Enchantments
+sharpness_book:
+  tag: false
+  material: enchanted_book
+  nick: "<lang:item.minecraft.enchanted_book>"
+  group: enchantments
+  show-in-fishfinder: false
+  disable-stat: true
+  random-stored-enchantments:
+    lv5:
+      enchant: minecraft:sharpness
+      level: 5
+      chance: 0.1
+    lv4:
+      enchant: minecraft:sharpness
+      level: 4
+      chance: 0.2
+    lv3:
+      enchant: minecraft:sharpness
+      level: 3
+      chance: 0.4
+    lv2:
+      enchant: minecraft:sharpness
+      level: 2
+      chance: 0.7
+    lv1:
+      enchant: minecraft:sharpness
+      level: 1
+      chance: 1
+efficiency_book:
+  tag: false
+  material: enchanted_book
+  nick: "<lang:item.minecraft.enchanted_book>"
+  group: enchantments
+  show-in-fishfinder: false
+  disable-stat: true
+  random-stored-enchantments:
+    lv5:
+      enchant: minecraft:efficiency
+      level: 5
+      chance: 0.1
+    lv4:
+      enchant: minecraft:efficiency
+      level: 4
+      chance: 0.2
+    lv3:
+      enchant: minecraft:efficiency
+      level: 3
+      chance: 0.4
+    lv2:
+      enchant: minecraft:efficiency
+      level: 2
+      chance: 0.7
+    lv1:
+      enchant: minecraft:efficiency
+      level: 1
+      chance: 1
+unbreaking_book:
+  tag: false
+  material: enchanted_book
+  nick: "<lang:item.minecraft.enchanted_book>"
+  group: enchantments
+  show-in-fishfinder: false
+  disable-stat: true
+  random-stored-enchantments:
+    lv3:
+      enchant: minecraft:unbreaking
+      level: 3
+      chance: 0.2
+    lv2:
+      enchant: minecraft:unbreaking
+      level: 2
+      chance: 0.5
+    lv1:
+      enchant: minecraft:unbreaking
+      level: 1
+      chance: 1
+protection_book:
+  tag: false
+  material: enchanted_book
+  nick: "<lang:item.minecraft.enchanted_book>"
+  group: enchantments
+  show-in-fishfinder: false
+  disable-stat: true
+  random-stored-enchantments:
+    lv4:
+      enchant: minecraft:protection
+      level: 4
+      chance: 0.1
+    lv3:
+      enchant: minecraft:protection
+      level: 3
+      chance: 0.2
+    lv2:
+      enchant: minecraft:protection
+      level: 2
+      chance: 0.5
+    lv1:
+      enchant: minecraft:protection
+      level: 1
+      chance: 1
+# Fish
+tuna_fish:
+  material: cod
+  nick: '<gradient:#F0FFFF:#4682B4:#F0FFFF>金枪鱼</gradient>'
+  display:
+    name: '<gradient:#F0FFFF:#4682B4:#F0FFFF>金枪鱼</gradient>'
+    lore:
+      - '<gray>金枪鱼是一种健康的食物。'
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50001
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 5
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 20
+          target: fishing
+  size: 15~50
+  price:
+    base: 3
+    bonus: 0.6
+tuna_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#F0FFFF:#4682B4:#F0FFFF>金枪鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - '<gray>金枪鱼是一种健康的食物。'
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50002
+  group:
+    - sliver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 7
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 60
+          target: fishing
+  size: 30~100
+  price:
+    base: 5
+    bonus: 0.6
+tuna_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#F0FFFF:#4682B4:#F0FFFF>金枪鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - '<gray>金枪鱼是一种健康的食物。'
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50003
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 9
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 80~190
+  price:
+    base: 8
+    bonus: 0.7
+pike_fish:
+  material: cod
+  display:
+    name: '<gradient:#F0F8FF:#5F9EA0:#F0F8FF>梭子鱼</gradient>'
+    lore:
+      - '<gray>它喜欢栖息在咸淡水交界处。'
+      - '<gray>可以在海水、咸淡水和内陆淡水湖泊中生存。'
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50004
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 4
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 20
+          target: fishing       
+  size: 5~15
+  price:
+    base: 3
+    bonus: 1.5
+pike_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#F0F8FF:#5F9EA0:#F0F8FF>梭子鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - '<gray>它喜欢栖息在咸淡水交界处。'
+      - '<gray>可以在海水、咸淡水和内陆淡水湖泊中生存。'
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50005
+  group:
+    - sliver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 5
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 60
+          target: fishing
+  size: 10~25
+  price:
+    base: 4
+    bonus: 1.5
+pike_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#F0F8FF:#5F9EA0:#F0F8FF>梭子鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - '<gray>它喜欢栖息在咸淡水交界处。'
+      - '<gray>可以在海水、咸淡水和内陆淡水湖泊中生存。'
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50006
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 7
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 15~30
+  price:
+    base: 5
+    bonus: 1.5
+gold_fish:
+  material: cod
+  display:
+    name: <gradient:#40E0D0:#FFD700:#F0F8FF>金鱼</gradient>
+    lore:
+      - <gray>金鱼是世界上最著名的观赏鱼之一。
+      - <gray>它起源于中国，有1700多年的历史。
+      - '<white>大小：{size}厘米'
+  price:
+    base: 7
+    bonus: 3
+  size: 2~3
+  custom-model-data: 50007
+  group: river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 5
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 80
+          target: fishing
+gold_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#40E0D0:#FFD700:#F0F8FF>金鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>金鱼是世界上最著名的观赏鱼之一。
+      - <gray>它起源于中国，有1700多年的历史。
+      - '<white>大小：{size}厘米'
+  price:
+    base: 8
+    bonus: 4
+  size: 3~4
+  custom-model-data: 50008
+  group:
+    - sliver_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 7
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+gold_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#40E0D0:#FFD700:#F0F8FF>金鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>金鱼是世界上最著名的观赏鱼之一。
+      - <gray>它起源于中国，有1700多年的历史。
+      - '<white>大小：{size}厘米'
+  price:
+    base: 12
+    bonus: 6
+  size: 4~7
+  custom-model-data: 50009
+  group:
+    - golden_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 9
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 320
+          target: fishing
+perch_fish:
+  material: cod
+  display:
+    name: <gradient:#BDB76B:#2E8B57:#008B8B>鲈鱼</gradient>
+    lore:
+      - <gray>生活在各种栖息地中，
+      - <gray>在黄昏和清晨时分觅食
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50010
+  group: river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 3
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 20
+          target: fishing
+  size: 5~12
+  price:
+    base: 1
+    bonus: 3
+perch_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#BDB76B:#2E8B57:#008B8B>鲈鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>生活在各种栖息地中，
+      - <gray>在黄昏和清晨时分觅食
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50011
+  group:
+    - silver_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 60
+          target: fishing
+  size: 10~19
+  price:
+    base: 2
+    bonus: 4
+perch_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#BDB76B:#2E8B57:#008B8B>鲈鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>生活在各种栖息地中，
+      - <gray>在黄昏和清晨时分觅食
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50012
+  group:
+    - golden_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 12
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 20~39
+  price:
+    base: 2
+    bonus: 5
+mullet_fish:
+  material: cod
+  display:
+    name: <gradient:#D4F2E7:#E1FFFF:#D4F2E7>鲻鱼</gradient>
+    lore:
+      - <gray>在传统中医中用于
+      - <gray>治疗脾胃虚弱
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50013
+  group: river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 40
+          target: fishing
+  size: 1~3
+  price:
+    base: 2
+    bonus: 2
+mullet_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#D4F2E7:#E1FFFF:#D4F2E7>鲻鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>用于传统中药
+      - <gray>治疗脾胃虚弱
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50014
+  group:
+    - silver_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 8
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 80
+          target: fishing
+  size: 4~9
+  price:
+    base: 3
+    bonus: 2
+mullet_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#D4F2E7:#E1FFFF:#D4F2E7>鲻鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>用于传统中药
+      - <gray>治疗脾胃虚弱
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50015
+  group:
+    - golden_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 12
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 180
+          target: fishing
+  size: 10~20
+  price:
+    base: 6
+    bonus: 2.5
+sardine_fish:
+  material: cod
+  display:
+    name: <gradient:#E1FFFF:#5F9EA0>沙丁鱼</gradient>
+    lore:
+      - <gray>沙丁鱼富含DHA，有助于提高记忆力
+      - <gray>因此，沙丁鱼也被称为"益智食品"
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50016
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 7
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 20
+          target: fishing
+  size: 1~5
+  price:
+    base: 1
+    bonus: 3.4
+sardine_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#E1FFFF:#5F9EA0>沙丁鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>沙丁鱼富含DHA，有助于提高记忆力
+      - <gray>因此，沙丁鱼也被称为"益智食品"
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50017
+  group:
+    - silver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 9
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 60
+          target: fishing
+  size: 4~8
+  price:
+    base: 1.3
+    bonus: 3.4
+sardine_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#E1FFFF:#5F9EA0>沙丁鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>沙丁鱼富含DHA，有助于提高记忆力
+      - <gray>因此，沙丁鱼也被称为"益智食品"
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50018
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 14
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 7~14
+  price:
+    base: 2
+    bonus: 4
+carp_fish:
+  material: cod
+  display:
+    name: <gradient:#808000:#556B2F>鲤鱼</gradient>
+    lore:
+      - <gray>是最常见的食用鱼之一
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50019
+  group: river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 15
+          target: fishing
+  size: 7~19
+  price:
+    base: 2
+    bonus: 2
+carp_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#808000:#556B2F>鲤鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>是最常见的食用鱼之一
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50020
+  group:
+    - silver_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 8
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 35
+          target: fishing
+  size: 15~28
+  price:
+    base: 2.2
+    bonus: 2.5
+carp_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#808000:#556B2F>鲤鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>是最常见的食用鱼之一
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50021
+  group:
+    - golden_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 10
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 80
+          target: fishing
+  size: 27~48
+  price:
+    base: 3.2
+    bonus: 2.8
+cat_fish:
+  material: cod
+  display:
+    name: <#BDB76B>鲶鱼</#BDB76B>
+    lore:
+      - <gray>鲶鱼是一种凶猛的肉食性鱼类，
+      - <gray>有锋利的下颚牙齿，短小的肠和胃
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50022
+  group: river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 80
+          target: fishing
+  size: 3~12
+  price:
+    base: 2.7
+    bonus: 1.8
+cat_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#BDB76B>鲶鱼</#BDB76B> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>鲶鱼是一种凶猛的肉食性鱼类，
+      - <gray>有锋利的下颚牙齿，短小的肠和胃
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50023
+  group:
+    - silver_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 10
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 10~28
+  price:
+    base: 1.4
+    bonus: 2.2
+cat_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#BDB76B>鲶鱼</#BDB76B> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>鲶鱼是一种凶猛的肉食性鱼类，
+      - <gray>有锋利的下颚牙齿，短小的肠和胃
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50024
+  group:
+    - golden_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 13
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 280
+          target: fishing
+  size: 40~70
+  price:
+    base: 1.6
+    bonus: 2.2
+octopus:
+  material: cod
+  display:
+    name: <gradient:#D2691E:#FF6347>章鱼</gradient>
+    lore:
+      - <gray>章鱼对各种器皿都感兴趣
+      - <gray>所以人们常常用瓶子捕捉章鱼
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50025
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 80
+          target: fishing
+  size: 1~4
+  price:
+    base: 5
+    bonus: 2.2
+octopus_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#D2691E:#FF6347>章鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>章鱼对各种器皿都感兴趣
+      - <gray>所以人们常常用瓶子捕捉章鱼
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50026
+  group:
+    - silver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 7
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 4~12
+  price:
+    base: 5
+    bonus: 2.2
+octopus_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#D2691E:#FF6347>章鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>章鱼对各种器皿都感兴趣
+      - <gray>所以人们常常用瓶子捕捉章鱼
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50027
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 8
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 260
+          target: fishing
+  size: 12~100
+  price:
+    base: 1
+    bonus: 1.5
+sunfish:
+  material: cod
+  display:
+    name: <#F5DEB3>太阳鱼</#F5DEB3>
+    lore:
+      - <gray>它有一个巨大的头部
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50028
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 9
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 50
+          target: fishing
+  size: 5~18
+  price:
+    base: 1
+    bonus: 1.5
+sunfish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#F5DEB3>太阳鱼 <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>它只有一个巨大的脑袋
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50029
+  group:
+    - silver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 10
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 100
+          target: fishing
+  size: 17~28
+  price:
+    base: 1.8
+    bonus: 1.5
+sunfish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#F5DEB3>太阳鱼 <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>它只有一个巨大的脑袋
+      - '<white>size: {size}cm'
+  custom-model-data: 50030
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 15
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 26~50
+  price:
+    base: 2.6
+    bonus: 1.5
+red_snapper_fish:
+  material: cod
+  display:
+    name: <gradient:#FF4500:#FFA07A:#FF4500>红鲷鱼</gradient>
+    lore:
+      - <gray>它们通常有一个由十到二十只鱼组成的大家庭
+      - <gray>以一只雄性鱼作为“家庭的领袖”
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50031
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 10
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 40
+          target: fishing
+  size: 1~4
+  price:
+    base: 1
+    bonus: 2.3
+red_snapper_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#FF4500:#FFA07A:#FF4500>红鲷鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>它们通常有一个由十到二十只鱼组成的大家庭
+      - <gray>以一只雄性鱼作为“家庭的领袖”
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50032
+  group:
+    - silver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 12
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 60
+          target: fishing
+  size: 3~12
+  price:
+    base: 1
+    bonus: 2.3
+red_snapper_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#FF4500:#FFA07A:#FF4500>红鲷鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>它们通常有一个由十到二十只鱼组成的大家庭
+      - <gray>以一只雄性鱼作为“家庭的领袖”
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50033
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 14
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 130
+          target: fishing
+  size: 9~18
+  price:
+    base: 1
+    bonus: 2.3
+salmon_void_fish:
+  material: cod
+  display:
+    name: <gradient:#800000:#800080>虚空鲑鱼</gradient>
+    lore:
+      - <gray>来自地狱的一条鱼
+      - <gray>它正在盯着你...
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50034
+  group: lava
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 20
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 100
+          target: fishing
+  size: 8~10
+  price:
+    base: 2
+    bonus: 2.4
+salmon_void_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#800000:#800080>虚空鲑鱼</gradient> <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>来自地狱的一条鱼
+      - <gray>它正在盯着你...
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50035
+  group:
+    - silver_star
+    - lava
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 24
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 200
+          target: fishing
+  size: 10~14
+  price:
+    base: 5
+    bonus: 2.6
+salmon_void_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <gradient:#800000:#800080>虚空鲑鱼</gradient> <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>来自地狱的一条鱼
+      - <gray>它正在盯着你...
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50036
+  group:
+    - golden_star
+    - lava
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 28
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 300
+          target: fishing
+  size: 12~18
+  price:
+    base: 10
+    bonus: 3
+woodskip_fish:
+  material: cod
+  display:
+    name: <#CD5C5C>木跃鱼</#CD5C5C>
+    lore:
+      - <gray>一种非常敏感的鱼，只能
+      - <gray>生活在森林深处的池塘中
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50037
+  group: river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 40
+          target: fishing
+  size: 3~7
+  price:
+    base: 1
+    bonus: 2.3
+woodskip_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#CD5C5C>木跃鱼 <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>一种非常敏感的鱼，只能
+      - <gray>生活在森林深处的池塘中
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50038
+  group:
+    - silver_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 9
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 80
+          target: fishing
+  size: 7~18
+  price:
+    base: 1.7
+    bonus: 2.5
+woodskip_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#CD5C5C>木跃鱼 <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>一种非常敏感的鱼，只能
+      - <gray>生活在森林深处的池塘中
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50039
+  group:
+    - golden_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 13
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 160
+          target: fishing
+  size: 16~29
+  price:
+    base: 2.5
+    bonus: 2.8
+sturgeon_fish:
+  material: cod
+  display:
+    name: <#48D1CC>鲟鱼</#48D1CC>
+    lore:
+      - <gray>一种古老的底栖鱼，种群在逐渐减少
+      - <gray>雌性鲟鱼可以活到150岁
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50040
+  group: river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 28
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 100
+          target: fishing
+  size: 1~5
+  price:
+    base: 20
+    bonus: 10
+sturgeon_fish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#48D1CC>鲟鱼 <#F5F5F5>(银星)</#F5F5F5>
+    lore:
+      - <gray>一种古老的底栖鱼，种群在逐渐减少
+      - <gray>雌性鲟鱼可以活到150岁
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50041
+  group:
+    - silver_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 35
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 200
+          target: fishing
+  size: 5~15
+  price:
+    base: 25
+    bonus: 10
+sturgeon_fish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#48D1CC>鲟鱼 <#FFD700>(金星)</#FFD700>
+    lore:
+      - <gray>一种古老的底栖鱼，种群在逐渐减少
+      - <gray>雌性鲟鱼可以活到150岁
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50042
+  group:
+    - golden_star
+    - river
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 42
+        chance: 1.0
+      aurelium_xp:
+        type: plugin-exp
+        value:
+          plugin: AuraSkills
+          exp: 300
+          target: fishing
+  size: 15~30
+  price:
+    base: 30
+    bonus: 10
+blue_jellyfish:
+  material: cod
+  display:
+    name: <#87CEFA>蓝色水母</#87CEFA>
+    lore:
+      - <gray>看起来像一把蓝色的伞
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50043
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 4
+        chance: 1.0
+  size: 1~3
+  price:
+    base: 2
+    bonus: 6.4
+blue_jellyfish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#87CEFA>蓝色水母</#87CEFA>
+    lore:
+      - <gray>看起来像一把蓝色的伞
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50044
+  group:
+    - silver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+  size: 3~5
+  price:
+    base: 2
+    bonus: 7.2
+blue_jellyfish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#87CEFA>蓝色水母</#87CEFA>
+    lore:
+      - <gray>看起来像一把蓝色的伞
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50045
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 8
+        chance: 1.0
+  size: 5~10
+  price:
+    base: 3
+    bonus: 8
+pink_jellyfish:
+  material: cod
+  display:
+    name: <#FFC0CB>粉色水母</#FFC0CB>
+    lore:
+      - <gray>看起来很甜美
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50046
+  group: ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 4
+        chance: 1.0
+  size: 1~3
+  price:
+    base: 2
+    bonus: 6.4
+pink_jellyfish_silver_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#FFC0CB>粉色水母</#FFC0CB>
+    lore:
+      - <gray>看起来很甜美
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50047
+  group:
+    - silver_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 6
+        chance: 1.0
+  size: 3~5
+  price:
+    base: 2.5
+    bonus: 7.2
+pink_jellyfish_golden_star:
+  show-in-fishfinder: false
+  material: cod
+  display:
+    name: <#FFC0CB>粉色水母</#FFC0CB>
+    lore:
+      - <gray>看起来很甜美
+      - '<white>大小：{size}厘米'
+  custom-model-data: 50048
+  group:
+    - golden_star
+    - ocean
+  events:
+    success:
+      action_mending:
+        type: mending
+        value: 8
+        chance: 1.0
+  size: 5~10
+  price:
+    base: 3
+    bonus: 8

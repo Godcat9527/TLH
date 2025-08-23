@@ -1,0 +1,46 @@
+cosmetics:
+
+  # 示例使用ItemsAdder实体创建的自定义气球（也支持动画ItemsAdder实体模型）
+  amogus_balloon:
+    enabled: true
+    display_name: "阿莫古斯气球"
+    type: BALLOON_ENTITY
+    # 在GUI中显示不同的物品（在这种情况下是必需的，因为ItemsAdder实体不能放在GUI中）
+    model:
+      gui: potion:400014
+      normal: cosmetics:amogus
+    dye:
+      enabled: true
+      default: "#ff0000"
+
+  # 示例使用ItemsAdder实体创建的自定义风筝（也支持动画ItemsAdder实体模型）
+  star_kite:
+    enabled: true
+    display_name: "星星风筝"
+    type: BALLOON_ENTITY
+    # 在GUI中显示不同的物品（在这种情况下是必需的，因为ItemsAdder实体不能放在GUI中）
+    model:
+      gui: potion:400016
+      normal: cosmetics:star_kite
+    dye:
+      enabled: true
+
+  ballon_cluster:
+    enabled: true
+    display_name: "气球簇"
+    type: BALLOON_ENTITY
+    model:
+      gui: potion:400015
+      normal: cosmetics:ballon_cluster
+    dye:
+      enabled: false
+
+  locomotive:
+    enabled: true
+    display_name: "火车头"
+    type: BALLOON_ENTITY
+    model:
+      gui: potion:400017
+      normal: cosmetics:locomotive
+    dye:
+      enabled: false

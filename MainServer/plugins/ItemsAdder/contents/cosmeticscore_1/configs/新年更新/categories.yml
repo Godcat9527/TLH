@@ -1,0 +1,17 @@
+info:
+  namespace: cosmeticspack3
+categories:
+  cosmeticspack3:
+    enabled: true
+    name: "&5Custom Hats"
+    title: ""
+    permission: "ia.menu.seecategory.hats"
+    icon: cosmeticspack3:ear1
+    items:
+      - cosmeticspack3:bearhat
+      - cosmeticspack3:ear1
+      - cosmeticspack3:ear2
+      - cosmeticspack3:mask
+      - cosmeticspack3:hornhat
+      - cosmeticspack3:divingglasses
+      - cosmeticspack3:headphone

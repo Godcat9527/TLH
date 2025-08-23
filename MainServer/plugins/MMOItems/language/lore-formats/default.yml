@@ -1,0 +1,4 @@
+lore-format:
+  # - '{bar}&8&m--------&f&l &nGeneral&8 &m--------------'
+  - '#lore#'
+

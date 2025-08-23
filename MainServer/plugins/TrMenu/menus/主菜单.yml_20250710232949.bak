@@ -1,0 +1,288 @@
+Title: 
+  - '&6&lTLH &2&l&k| &r&l主菜单'
+
+Title-Update: 50
+
+
+Layout:
+  - '@#@# #@#@' 
+  - ' $$$ $$$ '
+  - '@$$ % $$@' 
+  - '#$ % % $#' 
+  - ' $$ % $$ ' 
+  - '#@#@ @#@#' 
+Bindings:
+  # 绑定命令, 支持正则
+  Commands:
+    - 'opencd'
+  Items:
+    - 'material:nether_star' 
+
+
+
+Icons:
+
+  '#':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+    action: 
+      all: 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+  
+  '@':
+    display: 
+      material: blue_stained_glass_pane 
+      name: ' '
+    action: 
+      all: 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  '$':
+    display: 
+      material: gray_stained_glass_pane 
+      name: ' '
+    action: 
+      all: 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  '%':
+    display: 
+      material: lime_stained_glass_pane 
+      name: ' '
+    action: 
+      all: 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'Introduce':
+    display: 
+      material: writable_book
+      name: '&6服务器介绍 &f[&8&oIntroduce&f]'
+      slots: 31
+      lore: 
+      - ''
+      - '&a使用/help获取常用指令帮助'
+      - '&a➥请前往服务器wiki查询更多'
+    action: 
+      all: 
+        - 'tell: &{#FFE1FF}&l请前往以下网址查看服务器WIKI:&f https://www.yuque.com/naixiya/tlh'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+   'Money'::
+    display: 
+      material: head:%player_name%
+      name: '&6你当前拥有的各项资产 &f[&8&oMoney&f]'
+      slots: 4
+      lore: 
+      - ''
+      - '你当前拥有的星币: %coinsengine_balance_money%'
+      - '你当前拥有的星辰点: '
+      - '你当前拥有的建筑基质: %coinsengine_balance_building%'
+      - '你当前拥有的粘液点: %coinsengine_balance_islands%'
+      - '你当前拥有的考古经验: %coinsengine_balance_archaeology%'
+    action: 
+      all: 
+        - 'close'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL'
+
+
+  'Resource_packs_settings':
+    display: 
+     material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDYxODU0ODFkNWIxYzg1OTMwYjNmOTlkMjMyMTY3NCJ9fX0=
+     name: '&6关闭UI显示 &f[&8&oSettings&f]'
+     slots: 9
+     lore: 
+     - ''
+     - '&a➥ '
+    action: 
+      all: 
+        - 'close'
+        - 'open: 游戏设置' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'lands':
+    display: 
+      material: light_blue_banner
+      name: '&b领地帮助 &f[&8&olands&f]'
+      slots: 23
+      lore: 
+      - ''
+      - '&a➥点击查看领地帮助菜单'
+      - '  &b使用指令/lands create 领地名称'
+      - '  &b创建一个领地,首次创建免费'
+    action: 
+      all: 
+        - 'close'
+        - 'open: 领地菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  'Task':
+    display: 
+      material: 'source:ITEMSADDER:easy_quest'
+      name: '&6每日任务 &f[&8&oTask&f]'
+      slots: 17
+      lore: 
+      - ''
+      - '&a➥点我查看今日任务'
+    action: 
+      all: 
+        - 'close'
+        - 'command: dailyquests'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'Server_selection':
+    display: 
+      material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM5ZTc5OWRiNGM0Mjg5NGU1YzM4MWM1ZWRmYTFlZTUwODVlMDA1ZTNhZTNmNTgyYmE1N2IxYzNjMWYyNGVjYyJ9fX0=
+      name: '&6身份组 &f[&8&oGroup&f]'
+      slots: 36
+      lore: 
+      - ''
+      - '&{#FF8247}&l提升你的身份组'
+      - '&{#FF8247}&l解锁更多权益和奖励'
+      - ''
+      - '&a➥点我进入'
+    action: 
+      all: 
+        - 'open: 等级' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  'Flyc':
+    display: 
+      material: elytra
+      name: '&6启用/禁用&f&l云翼能量 &f[&8&oFlyc&f]'
+      slots: 39
+      lore: 
+      - ''
+      - '&a➥左键启用或禁用&f&l云翼能量&r'
+      - '&a➥右键查看当前&f&l云翼能量&r'
+    action: 
+      left: 
+        - 'close'
+        - 'player: flyc' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+      right:
+        - 'close'
+        - 'player: flightcharge show' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'player_information':
+    display: 
+      material: 'source:ITEMSADDER:arrow_right'
+      name: '&6服务器地标 &f[&8&oWARP&f]'
+      slots: 44
+      lore: 
+      - ''
+      - '&{#FF8247}&l前往服务器地标'
+    action:
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'player: warp'
+      right:
+        - 'player: warp'
+
+
+  'Socialize':
+    display: 
+      material: totem_of_undying
+      name: '&6社交功能 &f[&8&oSocialize&f]'
+      slots: 33
+      lore: 
+      - ''
+      - '&a包含以下内容 ▼'
+      - ''
+      - '▊ 个人称号'
+      - '▊ 玩家地标'
+      - ''
+      - '&a➥点我进入下级菜单'
+    action: 
+      all: 
+        - 'open: 社交系统'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'Travel':
+    display: 
+      material: end_portal_frame
+      name: '&6传送 &f[&8&oTravel&f]'
+      slots: 21
+      lore: 
+      - ''
+      - '&a包含以下内容 ▼'
+      - ''
+      - '▊ 世界传送'
+      - '▊ 回到主城'
+      - '▊ 玩家互传'
+      - ''
+      - '&a➥点我进入下级菜单'
+    action: 
+      all: 
+        - 'open: 传送'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'Economy':
+    display: 
+      material: emerald
+      name: '&6交易 &f[&8&oEconomy&f]'
+      slots: 13
+      lore: 
+      - ''
+      - '&a包含以下内容 ▼'
+      - ''
+      - '▊ 全球市场'
+      - '▊ 前往服务器集市'
+      - ''
+      - '&a➥点我进入下级菜单'
+    action: 
+      all:
+        - 'open: 交易' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+      
+  'Recharge':
+    display: 
+      material: 'sugar{model-data=1012}'
+      name: '&6星辰点菜单 &f[&8&oRecharge&f]'
+      slots: 41
+      lore: 
+      - ''
+      - '&a包含以下内容 ▼'
+      - ''
+      - '▊ 升级权限'
+      - '▊ 获取星辰点'
+      - ''
+      - '&a➥点我进入下级菜单'
+    action: 
+      all: 
+        - 'open: 副本选择'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+  'Welfare':
+    display: 
+      material: gold_ingot
+      name: '&6签到与在线奖励 &f[&8&oOnlineRewards&f]'
+      slots: 29
+      lore: 
+      - ''
+      - '&a连续签到奖励更丰富'
+    action: 
+      all: 
+        - 'close'
+        - 'open: 签到与奖励'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+  'kit':
+    display: 
+      material: 'source:ITEMSADDER:icon_arrow_chest'
+      name: '&b&l领取维护补偿'
+      slots: 49
+      lore: 
+      - ''
+    action: 
+      all: 
+        - 'close'
+       # - 'player: kit 维护补偿' 

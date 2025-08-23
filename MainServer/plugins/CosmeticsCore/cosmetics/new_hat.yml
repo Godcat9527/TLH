@@ -1,0 +1,127 @@
+cosmetics:
+  galaxy_hat:
+    display_name: "银河帽"
+    type: HAT
+    model:
+      gui: customhats:galaxy_hat
+      normal: customhats:galaxy_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  capybara_hat:
+    display_name: "水豚帽"
+    type: HAT
+    model:
+      gui: customhats:capybara_hat
+      normal: customhats:capybara_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  pumpkin_hat:
+    display_name: "南瓜帽"
+    type: HAT
+    model:
+      gui: customhats:pumpkin_hat
+      normal: customhats:pumpkin_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  pokemon_hat:
+    display_name: "口袋妖怪帽"
+    type: HAT
+    model:
+      gui: customhats:pokemon_hat
+      normal: customhats:pokemon_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  lemon_slice_hat:
+    display_name: "柠檬片帽"
+    type: HAT
+    model:
+      gui: customhats:lemon_slice_hat
+      normal: customhats:lemon_slice_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  brown_paper_bag_hat:
+    display_name: "牛皮纸袋帽"
+    type: HAT
+    model:
+      gui: customhats:brown_paper_bag_hat
+      normal: customhats:brown_paper_bag_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  cherry_blossom_hat:
+    display_name: "樱花帽"
+    type: HAT
+    model:
+      gui: customhats:cherry_blossom_hat
+      normal: customhats:cherry_blossom_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  cowboy_hat:
+    display_name: "牛仔帽"
+    type: HAT
+    model:
+      gui: customhats:cowboy_hat
+      normal: customhats:cowboy_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  drowned_hat:
+    display_name: "溺水帽"
+    type: HAT
+    model:
+      gui: customhats:drowned_hat
+      normal: customhats:drowned_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  hard_hat:
+    display_name: "安全帽"
+    type: HAT
+    model:
+      gui: customhats:hard_hat
+      normal: customhats:hard_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  jet_pilot_helmet_hat:
+    display_name: "喷气飞行员头盔"
+    type: HAT
+    model:
+      gui: customhats:jet_pilot_helmet_hat
+      normal: customhats:jet_pilot_helmet_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  rubber_duck_hat:
+    display_name: "橡皮鸭帽"
+    type: HAT
+    model:
+      gui: customhats:rubber_duck_hat
+      normal: customhats:rubber_duck_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  shark_hat:
+    display_name: "鲨鱼帽"
+    type: HAT
+    model:
+      gui: customhats:shark_hat
+      normal: customhats:shark_hat
+    dye:
+      enabled: false
+      default: "#000000"
+  turkey_hat:
+    display_name: "火鸡帽"
+    type: HAT
+    model:
+      gui: customhats:turkey_hat
+      normal: customhats:turkey_hat
+    dye:
+      enabled: false
+      default: "#000000"

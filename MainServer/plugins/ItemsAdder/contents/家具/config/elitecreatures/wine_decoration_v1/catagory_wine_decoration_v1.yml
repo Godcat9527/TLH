@@ -1,0 +1,26 @@
+info:
+  namespace: elitecreatures
+categories:
+  wine_decoration_v1:
+    enabled: true
+    icon: "elitecreatures:wine_decoration_v1_wine_barrel_no_wine"
+    name: "Wine Decoration v1"
+    permission: "ia.menu.wine_decoration_v1"
+    items:
+    - "elitecreatures:wine_decoration_v1_cheese"
+    - "elitecreatures:wine_decoration_v1_picture_wine"
+    - "elitecreatures:wine_decoration_v1_poster"
+    - "elitecreatures:wine_decoration_v1_shelf_wine"
+    - "elitecreatures:wine_decoration_v1_steak"
+    - "elitecreatures:wine_decoration_v1_tray"
+    - "elitecreatures:wine_decoration_v1_wine_barrel_no_wine"
+    - "elitecreatures:wine_decoration_v1_wine_barrel_wine"
+    - "elitecreatures:wine_decoration_v1_wine_barrel_vertical"
+    - "elitecreatures:wine_decoration_v1_wine_bottle"
+    - "elitecreatures:wine_decoration_v1_wine_case"
+    - "elitecreatures:wine_decoration_v1_wine_glass_no_wine"
+    - "elitecreatures:wine_decoration_v1_wine_glass_red_wine"
+    - "elitecreatures:wine_decoration_v1_wine_opener"
+    - "elitecreatures:wine_decoration_v1_wine_sign_black"
+    - "elitecreatures:wine_decoration_v1_wine_sign_wood"
+    - "elitecreatures:wine_decoration_v1_wine_tray"

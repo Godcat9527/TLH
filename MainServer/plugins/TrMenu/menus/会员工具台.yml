@@ -1,0 +1,77 @@
+Title: '&{#CD6090}&l快捷工具台'
+
+
+Layout:
+    - '@@abcde@@'
+
+
+Bindings:
+  Commands:
+    - 'fs'
+ # Items:
+ #   - 'material:clock'
+
+  Close:
+    - 'sound: BLOCK_CHEST_CLOSE-1-0'
+
+Icons:
+  '@':
+    display:
+      material: pink Stained Glass Pane
+      name: '&e&l升级权益获取'
+      lore:
+        - ''
+        - '&e&l选择对应的图标'
+        - '&2&l即可打开对应的工具台界面'
+
+  'a':
+    display:
+      material: crafting_table
+      name: '&{#5F9EA0}&l工作台'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'command: workbench' 
+
+
+  'b':
+    display:
+      material: cartography_table
+      name: '&{#5F9EA0}&l制图台'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'command: cartographytable'
+
+
+  'c':
+    display:
+      material: 'grindstone'
+      name: '&{#5F9EA0}&l砂轮'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'command: grindstone'
+
+  'd':
+    display:
+      material: loom
+      name: '&{#5F9EA0}&l织布机'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'command: loom'
+
+  'e':
+    display:
+      material: stonecutter
+      name: '&{#5F9EA0}&l切石机'
+      lore: []
+    actions:
+       all:
+         - close
+         - 'command: stonecutter'

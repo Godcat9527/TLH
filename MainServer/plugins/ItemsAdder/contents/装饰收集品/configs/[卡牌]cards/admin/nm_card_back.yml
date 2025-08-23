@@ -1,0 +1,10 @@
+info:
+  namespace: nogs_menagerie
+items:
+  nm_card_back:
+    display_name: '&4Doubled-Backed Card'
+    resource:
+      material: PAPER
+      model_id: 630000
+      generate: false
+      model_path: cards/admin/nm_card_back

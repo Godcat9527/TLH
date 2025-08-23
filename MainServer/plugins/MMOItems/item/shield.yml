@@ -1,0 +1,137 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+PALADIN_SHIELD:
+  base:
+    material: SHIELD
+    name: §e§l烈日之盾
+    tier: MAGICAL
+    two-handed: false
+    armor: 6.0
+    armor-toughness: 3.0
+    unbreakable: true
+    block-power: 50.0
+    block-rating:
+      base: 20.0
+      scale: 0.02
+      spread: 0.09
+      max-spread: 0.17
+    perm-effects:
+      SLOW: 3
+    gem-sockets:
+      - Yellow
+      - Yellow
+    required-level: 25.0
+    shield-pattern:
+      color: YELLOW
+      '0':
+        pattern: CURLY_BORDER
+        color: ORANGE
+      '1':
+        pattern: STRIPE_MIDDLE
+        color: YELLOW
+    attack-damage:
+      base: 6.0
+      scale: 0.05
+      spread: 0.1
+      max-spread: 0.2
+    attack-speed:
+      base: 1.4
+      spread: 0.06
+      max-spread: 0.14
+    block-cooldown-reduction:
+      base: 10.0
+      scale: 0.02
+      spread: 0.09
+      max-spread: 0.17
+MAGICAL_SHIELD:
+  base:
+    material: SHIELD
+    required-level: 5.0
+    tier: MAGICAL
+    perm-effects:
+      SLOW: 4
+      DAMAGE_RESISTANCE: 4
+    gem-sockets:
+      - Red
+      - Red
+    shield-pattern:
+      color: WHITE
+      '0':
+        pattern: STRAIGHT_CROSS
+        color: YELLOW
+      '1':
+        pattern: FLOWER
+        color: ORANGE
+      '2':
+        pattern: BORDER
+        color: YELLOW
+    name: '&f魔盾'
+    lore:
+      - '&7镶嵌宝石？'
+      - '&7它可能不够格。'
+    block-rating: 5.0
+    block-power:
+      base: 6.0
+      spread: 0.05
+      max-spread: 0.14
+ABSORBING_SHIELD:
+  base:
+    material: SHIELD
+    required-level: 15.0
+    shield-pattern:
+      color: BLUE
+    name: '&9同化之盾'
+    unbreakable: true
+    damage-reduction:
+      base: 55.0
+      spread: 0.03
+      max-spread: 0.08
+    movement-speed: -0.03
+    two-handed: true
+    disable-smelting: false
+    disable-crafting: true
+
+SUPREME_SHIELD:
+  base:
+    material: SHIELD
+    tier: LEGENDARY
+    block-power: 100.0
+    block-rating:
+      base: 60.0
+      scale: 0.1
+      spread: 0.1
+      max-spread: 0.2
+    attack-damage:
+      base: 25.0
+      scale: 0.05
+      spread: 0.1
+      max-spread: 0.2
+    required-class:
+      - Warrior
+    name: §9§l§o至尊之盾
+    lore:
+      - §7最强力的§e盾牌§7。
+    movement-speed: -0.03
+    shield-pattern:
+      color: PURPLE
+    element:
+      earth:
+        defense: 25.0
+      lightness:
+        defense: 25.0
+      wind:
+        defense: 25.0
+      fire:
+        defense: 25.0
+    pve-damage-reduction:
+      base: 30.0
+      scale: 0.1
+      spread: 0.2
+      max-spread: 0.3
+    armor-toughness: 2.0
+    armor: 8.0
+    projectile-damage-reduction:
+      base: 100.0
+      scale: 0.1
+      spread: 0.2
+      max-spread: 0.3

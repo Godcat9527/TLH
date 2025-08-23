@@ -1,0 +1,208 @@
+Title: '&6&lTLH &a&l等级副本'
+
+Layout:
+  - '@@@@A@@@@'
+  - '@1234567@' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'A':
+      display: 
+        material: red_bed
+      icons:
+       - display: 
+          material: red_bed
+          name: '&{#FFE7BA}&l初来乍到'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 普通玩家'
+            - '&{#B0C4DE}下一个等级: 初来乍到'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成5个每日任务'
+            - ''
+            - '&{#ff3300}花费5000星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *5000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 5000'
+                  - 'console: lp user %player_name% parent set 初来乍到1'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 100
+         #condition: 'check papi *%odailyquests_total% >= *0'
+#==========================================================
+       - display: 
+          material: red_bed
+          name: '&{#FFE7BA}&l初来乍到'
+          condition: 'all [ perm *group.初来乍到1 check papi *%odailyquests_total% >= *2 && check papi *%auraskills_power%% >= *20'         
+          #condition: 'all [ perm *group.初来乍到1 check papi *%odailyquests_total% >= *30'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 初来乍到'
+            - '&{#B0C4DE}下一个等级: 踏上旅程'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成20个每日任务'
+            - ''
+            - '&{#ff3300}花费2万星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *20000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 20000'
+                  - 'console: lp user %player_name% parent set 踏上旅程2'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 97
+#========================================================
+       - display: 
+          material: red_bed
+          name: '&{#63B8FF}&l冒险家'
+          condition: 'all [ perm *group.踏上旅程2 check papi *%odailyquests_total% >= *30'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 踏上旅程'
+            - '&{#B0C4DE}下一个等级: 冒险家'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成30个每日任务'
+            - ''
+            - '&{#ff3300}花费4w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *40000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 40000'
+                  - 'console: lp user %player_name% parent set 冒险家3'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 95
+#===========================================================
+       - display: 
+          material: red_bed
+          name: '&{#8B658B}&l探索先锋'
+          condition: 'all [ perm *group.冒险家3 check papi *%odailyquests_total% >= *60'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 冒险家'
+            - '&{#B0C4DE}下一个等级: 探索先锋'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成60个每日任务'
+            - ''
+            - '&{#ff3300}花费20w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *200000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 200000'
+                  - 'console: lp user %player_name% parent set 探索先锋4'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 93
+#========================================================
+       - display: 
+          material: red_bed
+          name: '&{#FFE4E1}&l远航使者'
+          condition: 'all [ perm *group.探索先锋4 check papi *%odailyquests_total% >= *120 && check papi *%auraskills_power%% >= *20'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 探索先锋'
+            - '&{#B0C4DE}下一个等级: 远航使者'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成120个每日任务'
+            - '&{#B0C4DE}玩家属性综合等级达到20级'
+            - ''
+            - '&{#ff3300}花费50w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *500000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 500000'
+                  - 'console: lp user %player_name% parent set 远航使者5'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 89
+#========================================================
+       - display: 
+          material: red_bed
+          name: '&{#8B658B}&l开拓者'
+          condition: 'all [ perm *group.探索先锋4 check papi *%odailyquests_total% >= *200 && check papi *%auraskills_power%% >= *40'
+          lore:
+            - ''
+            - '&{#B0C4DE}当前等级: 远航使者'
+            - '&{#B0C4DE}下一个等级: 开拓者'
+            - ''
+            - '&{#D3D3D3}&l解锁条件:'
+            - '&{#B0C4DE}完成200个每日任务'
+            - '&{#B0C4DE}玩家属性综合等级达到40级'
+            - ''
+            - '&{#ff3300}花费100w星币解锁!'
+            - ''
+            - '&fㆵ &{#FFFACD}点击进行解锁'
+         action: 
+            left:
+              - condition: 'money *1000000'
+                actions:
+                  - 'close'
+                  - ''
+                  - 'take-money: 1000000'
+                  - 'console: lp user %player_name% parent set 开拓者6'
+                  - 'title: &a你已经成功解锁!' 
+                deny:
+                  - 'close'
+                  - 'title: &c你的星币不足!' 
+         priority: 91
+#====================================================

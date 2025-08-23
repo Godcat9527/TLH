@@ -1,0 +1,12 @@
+info:
+  namespace: t-pendant
+categories:
+  pendant_menu:
+    enabled: true
+    skip_if_already: false
+    icon: "t-pendant:t-pendant-1"
+    name: 吊饰
+    permission: ia.menu
+    items:
+      - "t-pendant:t-pendant-1"
+      - "t-pendant:t-pendant-2"

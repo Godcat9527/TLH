@@ -1,0 +1,14 @@
+name: 远航使者
+permissions:
+- betterrtp.group.远航使者
+- cmi.command.sethome.5
+- cmi.command.grindstone
+- auraskills.multiplier.60
+parents:
+- 探索先锋4
+prefixes:
+- '&#B0C4DE[&#FFE4E1远航使者&#B0C4DE]':
+    priority: 50
+suffixes:
+- '&#ffffff':
+    priority: 50

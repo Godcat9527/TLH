@@ -1,0 +1,27 @@
+Name: 泥石商店
+Description: []
+Icon:
+  Material: minecraft:stone
+  Lore: []
+Pages: 1
+Permission_Required: false
+Transaction_Allowed:
+  BUY: true
+  SELL: true
+MainMenu:
+  Slot: -1
+Aliases: []
+Layout:
+  Name: default
+  ByPage:
+    '1': building
+Rotations:
+  daily_discount:
+    SlotsByPage:
+      '1': '40'
+    Icon:
+      Material: minecraft:player_head
+      SkinURL: a70216baf1b9675f805dfdf95db043afe6f881c82b25937e46b15068e8f3e882
+    Refresh:
+      Type: INTERVAL
+      Interval: 86400

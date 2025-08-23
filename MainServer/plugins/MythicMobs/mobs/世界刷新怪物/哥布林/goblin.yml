@@ -1,0 +1,28 @@
+goblin:
+  Type: VINDICATOR
+  Display: '哥布林'
+  Health: 30
+  Equipment:
+  - air HEAD
+  Modules:
+    ThreatTable: true
+  Damage: 5
+  Drops:
+  - goblinDrops_1
+  Faction: goblin
+  Options:
+    Silent: true
+    FollowRange: 35
+    MovementSpeed: 0.5
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    PreventMobKillDrops: true
+  Skills:
+  - model{mid=goblin;n=true} @self ~onSpawn
+  - skill{s=CancelDamageEvent;sync=true} @Self ~onAttack
+  - skill{s=GoblinonAttacksync;sync=true} @Self ~onAttack 1
+  - skill{s=GoblinCombat} @Self ~onEnterCombat
+  - skill{s=GoblinPeace} @Self ~onDropCombat
+  - sound{s=entity.witch.throw} @self ~onAttack
+  - state{s=death;li=3;lo=2} @Self ~onDeath
+  - skill{s=GoblinDeath_Random_sound} @Self ~onDeath

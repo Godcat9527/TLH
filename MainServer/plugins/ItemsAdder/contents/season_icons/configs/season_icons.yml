@@ -1,0 +1,59 @@
+info:
+  namespace: "season_icons"
+font_images:
+  winter:
+    permission: winter
+    show_in_gui: true
+    path: "font/icons/winter"
+    scale_ratio: 10
+    y_position: 4
+  summer:
+    permission: summer
+    show_in_gui: true
+    path: "font/icons/summer"
+    scale_ratio: 9
+    y_position: 4
+  fall:
+    permission: fall
+    show_in_gui: true
+    path: "font/icons/fall"
+    scale_ratio: 10
+    y_position: 4
+  cold:
+    permission: cold
+    show_in_gui: true
+    path: "font/icons/cold"
+    scale_ratio: 9
+    y_position: 4
+  hot:
+    permission: hot
+    show_in_gui: true
+    path: "font/icons/hot"
+    scale_ratio: 9
+    y_position: 4
+  snow:
+    permission: snow
+    show_in_gui: true
+    path: "font/icons/snow"
+    scale_ratio: 9
+    y_position: 4
+  thunder:
+    permission: thunder
+    show_in_gui: true
+    path: "font/icons/thunder"
+    scale_ratio: 9
+    y_position: 4
+  rain:
+    permission: rain
+    show_in_gui: true
+    path: "font/icons/rain"
+    scale_ratio: 9
+    y_position: 4
+  cloud:
+    permission: cloud
+    show_in_gui: true
+    path: "font/icons/cloud"
+    scale_ratio: 9
+    y_position: 4
+
+# o00XmY25ICQxQ29rJE3YMYftabYmkFS5lf/wsCgAXsWzuOQAHmE7v694bHfTzlNc/uS+v4esXpFY5QUu0aHB+u997sHxSc4ssOgLB4VyAy4=

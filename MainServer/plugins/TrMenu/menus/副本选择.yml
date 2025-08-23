@@ -1,0 +1,79 @@
+title: '&6&lTLH &a&l副本选择'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@ @ @ @ @' 
+  - '@@@@@@@@@'
+
+
+
+
+Icons: 
+ 
+  '@':
+    display:
+      material: red_stained_glass_pane
+      name: ' '
+
+
+  'F_1':
+    display:
+      material: iron_sword
+      name: '[&f海盗船&f]'
+      slots: 10
+      lore: 
+      - ''
+      - '难度:&f★★'
+      - '新手玩家的第一个副本'
+    action: 
+      all:                               
+        - 'console: cmi flyc %player_name% false -s'
+        - 'player: md play dungeon_4 {delay=10}'  
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL{delay=10}'
+
+  'F_2':
+    display:
+      material: iron_sword
+      name: '[&a侵蚀花园&f]'
+      slots: 12
+      lore: 
+      - ''
+      - '难度:&f★★★★'
+      - '建议做好防毒'
+    action: 
+      all:
+        - 'console: cmi flyc %player_name% false -s'
+        - 'player: md play dungeon_2 {delay=10}'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL{delay=10}'
+
+
+  'F_3':
+    display:
+      material: iron_sword
+      name: '&f[&4亡骸地牢&f]'
+      slots: 14
+      lore: 
+      - ''
+      - '难度:&a★&f★★'
+      - '难度较高的中级副本'
+    action: 
+     all:
+       - 'console: cmi flyc %player_name% false -s'
+       - 'player: md play dungeon_3 {delay=10}'
+       - 'sound: BLOCK_NOTE_BLOCK_COW_BELL{delay=10}'
+
+  'F_4':
+    display:
+      material: iron_sword
+      name: '即将上线'
+      slots: 16
+      lore: 
+      - ''
+      - '难度:&a★&f★★★★'
+      - '敬请期待'
+    action: 
+     all:
+       - 'console: cmi flyc %player_name% false -s'
+       - 'player: md play TL_F3 {delay=10}'
+       - 'sound: BLOCK_NOTE_BLOCK_COW_BELL{delay=10}'

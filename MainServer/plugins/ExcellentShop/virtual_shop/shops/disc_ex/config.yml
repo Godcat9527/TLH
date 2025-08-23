@@ -1,0 +1,20 @@
+Name: 专题唱片商店
+Description: []
+Icon:
+  Material: minecraft:paper
+  Lore: []
+  Item_Name: TLH音乐包唱片-塞壬唱片专题
+  Model:
+    Data: 1137.0
+Pages: 1
+Permission_Required: false
+Transaction_Allowed:
+  BUY: true
+  SELL: true
+MainMenu:
+  Slot: -1
+Aliases: []
+Layout:
+  Name: default
+  ByPage:
+    '1': building

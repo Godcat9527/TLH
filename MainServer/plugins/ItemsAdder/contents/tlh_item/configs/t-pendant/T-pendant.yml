@@ -1,0 +1,21 @@
+info:
+  namespace: t-pendant
+items:   
+  t-pendant-1:
+    display_name: "吊饰-1"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-pendant-1
+      model_id: 1001
+  t-pendant-2:
+    display_name: "吊饰-2"
+    enabled: true
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+      - t-pendant-2
+      model_id: 1002

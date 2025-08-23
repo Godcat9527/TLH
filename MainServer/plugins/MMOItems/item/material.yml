@@ -1,0 +1,99 @@
+ANHEI_PICEC:
+  base:
+    material: PAPER
+    tier: B
+    name: '&f 뀊 &f           <#8B1A1A>暗黑之源碎片'
+    custom-model-data: 130.0
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+YAOGUAN_PICEC:
+  base:
+    material: PAPER
+    tier: B
+    name: '&f 뀊 &f           <#FFF5EE>耀光之源碎片'
+    custom-model-data: 134.0
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+DTIANSHI_PICEC:
+  base:
+    material: PAPER
+    tier: B
+    name: '&f 뀊 &f          <#FFFF00>大天使之源碎片'
+    custom-model-data: 131.0
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+SHENGQI_PICEC:
+  base:
+    material: PAPER
+    tier: B
+    name: '&f 뀊 &f           <#00BFFF>圣骑士之源碎片'
+    custom-model-data: 135.0
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+MONEY_1:
+  base:
+    material: PAPER
+    name: '<#DA70D6>锈迹斑斑的铜币'
+    custom-model-data: 117.0
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+    lore-format: default
+MONEY_2:
+  base:
+    material: PAPER
+    name: '<#DA70D6>海盗的银币'
+    custom-model-data: 118.0
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+    lore-format: default
+MONEY_3:
+  base:
+    material: PAPER
+    name: '<#DA70D6>亮闪闪的金币'
+    custom-model-data: 116.0
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+    lore-format: default
+MM_DROP_1:
+  base:
+    material: PAPER
+    name: '冰术师结晶'
+    custom-model-data: 159
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+    lore-format: sell_material
+MM_DROP_2:
+  base:
+    material: PAPER
+    name: '腐烂之根'
+    custom-model-data: 143
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-interaction: true
+    disable-repairing: true
+    lore-format: sell_material

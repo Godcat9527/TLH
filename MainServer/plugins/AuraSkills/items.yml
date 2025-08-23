@@ -1,0 +1,33 @@
+items:
+  auraskills/titanium_ingot:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: PAPER
+    amount: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Titanium Ingot","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#7F56FC"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":"Its special property of magic","italic":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"resistance makes it the most","italic":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"preferable choice for witch","italic":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"hunter.","italic":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":"஻","italic":false,"color":"white"}]}'
+      custom-model-data:
+        ==: CustomModelData
+        floats:
+        - 19.0
+        flags: []
+        strings: []
+        colors: []
+      attribute-modifiers:
+        minecraft:attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          operation: 0
+          key: minecraft:87851e28-af12-43f6-898e-c62bde6bd0ec
+      ItemFlags:
+      - HIDE_ATTRIBUTES

@@ -1,0 +1,535 @@
+info:
+  namespace: lzfurniture
+items:
+  outdoor_bench:
+    display_name: '户外长椅'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_bench
+      model_id: 5036
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 2
+          height: 1
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.9
+  outdoor_chair:
+    display_name: '户外椅子'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_chair
+      model_id: 5037
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.9
+  outdoor_doghut:
+    display_name: '户外狗屋'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_doghut
+      model_id: 5038
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+  outdoor_grill:
+    display_name: '户外烧烤架'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_grill
+      model_id: 5039
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.metal.place
+          break:
+            name: block.metal.break
+  outdoor_lawnmower:
+    display_name: '户外割草机'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_lawnmower
+      model_id: 5040
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.metal.place
+          break:
+            name: block.metal.break
+  outdoor_sunbed:
+    display_name: '户外躺椅'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_sunbed
+      model_id: 5041
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 2
+          width: 1
+          height: 1
+          length_offset: 0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.7
+  outdoor_picnictable:
+    display_name: '户外野餐桌'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_picnictable
+      model_id: 5042
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+  outdoor_small_table:
+    display_name: '户外小桌子'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_small_table
+      model_id: 5043
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+  outdoor_pool:
+    display_name: '户外泳池'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_pool
+      model_id: 5044
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 2
+          width: 2
+          height: 1
+          length_offset: 0.5
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+      furniture_sit:
+        sit_height: 0.5
+  outdoor_trampolin:
+    display_name: '户外蹦床'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_trampolin
+      model_id: 5045
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 2
+          width: 2
+          height: 1
+          length_offset: 0.5
+          width_offset: -0.5
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break
+  outdoor_rocks_big:
+    display_name: '户外大石头'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_rocks_big
+      model_id: 5046
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.stone.place
+          break:
+            name: block.stone.break
+  outdoor_rocks_medium:
+    display_name: '户外中石头'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_rocks_medium
+      model_id: 5047
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.stone.place
+          break:
+            name: block.stone.break
+  outdoor_rocks_small:
+    display_name: '户外小石头'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_rocks_small
+      model_id: 5048
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.stone.place
+          break:
+            name: block.stone.break
+  outdoor_rocks_tiny:
+    display_name: '户外小石子'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_rocks_tiny
+      model_id: 5049
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.stone.place
+          break:
+            name: block.stone.break  
+  outdoor_umbrella:
+    display_name: '户外遮阳伞'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_umbrella
+      model_id: 5050
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break          
+  outdoor_spade:
+    display_name: '户外铲子'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_spade
+      model_id: 5051
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break  
+  outdoor_wateringcan:
+    display_name: '户外浇水壶'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_wateringcan
+      model_id: 5052
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: false
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break 
+  outdoor_wheelbarrow:
+    display_name: '户外手推车'
+    permission: outdoor
+    resource:
+      material: PAPER
+      generate: false
+      model_path: furniture/outdoor/outdoor_wheelbarrow
+      model_id: 5053
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: false
+        small: false
+        solid: true
+        opposite_direction: false
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+          length_offset: 0
+        sound:
+          place:
+            name: block.wood.place
+          break:
+            name: block.wood.break

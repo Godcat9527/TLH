@@ -1,0 +1,31 @@
+info:
+  namespace: nogs_menagerie
+categories:
+  nogs_menagerie_menu:
+    enabled: true
+    skip_if_already: false
+    icon: "nogs_menagerie:nm_figure_armadillo"
+    name: 图腾
+    permission: ia.menu
+    items:
+      - "nogs_menagerie:nm_figure_armadillo"
+      - "nogs_menagerie:nm_figure_armadillo_unboxed"
+      - "nogs_menagerie:nm_figure_creeper"
+      - "nogs_menagerie:nm_figure_creeper_unboxed"
+      - "nogs_menagerie:nm_figure_drowned"
+      - "nogs_menagerie:nm_figure_drowned_unboxed"
+      - "nogs_menagerie:nm_figure_evoker"
+      - "nogs_menagerie:nm_figure_evoker_unboxed"
+      - "nogs_menagerie:nm_figure_fox"
+      - "nogs_menagerie:nm_figure_fox_unboxed"
+      - "nogs_menagerie:nm_figure_panda"
+      - "nogs_menagerie:nm_figure_panda_unboxed"
+      - "nogs_menagerie:nm_figure_parrot"
+      - "nogs_menagerie:nm_figure_parrot_unboxed"
+      - "nogs_menagerie:nm_figure_strider"
+      - "nogs_menagerie:nm_figure_strider_unboxed"
+      - "nogs_menagerie:nm_figure_wandering_trader"
+      - "nogs_menagerie:nm_figure_wandering_trader_unboxed"
+      - "nogs_menagerie:nm_figure_wolf"
+      - "nogs_menagerie:nm_figure_wolf_unboxed"
+

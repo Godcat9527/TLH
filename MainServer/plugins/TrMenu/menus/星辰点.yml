@@ -1,0 +1,67 @@
+Title: '&6&lTLH &a&l选择服务器'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@@ @ @ @@' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'open_tool':
+    display: 
+      material: enchanting_table
+      name: '&6打开快捷功能台'
+      slots: 11
+      lore: 
+      - ''
+      - '&b多功能随身台'
+    action: 
+      all: 
+        - 'open: 会员工具台'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'points_buy':
+    display: 
+      material: sugar{model-data=1012}
+      name: '&6购买星辰点'
+      slots: 13
+      lore: 
+      - ''
+      - '&c感谢您对服务器的支持'
+    action: 
+      all: 
+        - 'open: 星辰点购买'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  'vip_buy':
+    display: 
+      material: naem_tag{model-data=88}
+      name: '&6升级权益'
+      slots: 15
+      lore: 
+      - ''
+    action: 
+      all: 
+        - 'open: 升级权益' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 

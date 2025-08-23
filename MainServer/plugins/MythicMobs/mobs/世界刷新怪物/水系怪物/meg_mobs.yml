@@ -1,0 +1,213 @@
+##=============================================##
+##                                             ##
+##             Developed by T1n C4n            ##
+##                    My Shop                  ##
+##  https://mcmodels.net/vendors/119/t1n-c4n   ##
+##                                             ##
+##=============================================##
+
+##=============================================##
+##                  LEVIATHAN                  ##
+##=============================================##
+
+h_meg:
+  Type: DOLPHIN
+  Display: '&LEVIATHAN'
+  Faction: shark 
+  Health: 500
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 MeleeAttack
+  - 2 RandomStroll  
+  AITargetSelectors:
+  - 0 clear
+  - 1 SpecificFaction Frigate
+  - 2 attacker
+  - 3 players
+  - 4 OtherFaction
+  BossBar:
+    Enabled: true
+    Title: "♛"
+    Range: 64
+    Color: BLUE
+    Style: SOLID   
+  Modules:
+    ThreatTable: true
+  Damage: 1
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    FollowRange: 32
+    Despawn: false
+  Skills:     
+  - cancelevent{sync=true} @Self ~onAttack
+  - model{mid=leviathan;n=false;damagetint=false;i=true;pbone=driver} @self ~onSpawn 
+  - bodyclamp{m=leviathan;c=0} @self ~onSpawn
+  
+  - randomskill{skills=MegBite,MegRip;repeat=5;repeatInterval=1} @self
+  
+##=============================================##
+##                    SHARK                    ##
+##=============================================##
+
+h_shark:
+  Type: DOLPHIN  
+  Display: "Shark"
+  Faction: shark   
+  Health: 25
+  AITargetSelectors:
+  - players
+  AIGoalSelectors:
+  - meleeattack
+  Modules:
+    ThreatTable: true
+  Damage: 1
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    FollowRange: 32
+    Despawn: false
+  Skills:
+  - CancelEvent @self ~onInteract
+  - model{m=shark;usm=true;step=1;lp=true;h=true} @self ~onSpawn
+  - model{m=shark;usm=true;step=1;lp=true;h=true} @self ~onLoad
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onSpawn
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onLoad
+  
+  - skill{s=shark_cancel} @self ~onTimer:1
+  - skill{s=shark_bite1} @self ~onTimer:5
+  - skill{s=shark_bite1_close} @self ~onTimer:5
+  - skill{s=shark_player_aggro} @pir{r=16} ~onTimer:10
+  
+  - skill{s=shark_death} @self ~onDeath
+  - CancelEvent{sync=true} @self ~onAttack
+
+h_shark_hammer:
+  Type: DOLPHIN  
+  Display: "Shark"
+  Faction: shark   
+  Health: 25
+  AITargetSelectors:
+  - players
+  AIGoalSelectors:
+  - meleeattack
+  Modules:
+    ThreatTable: true
+  Damage: 1
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    KnockbackResistance: 1
+    FollowRange: 32
+    Despawn: false
+  Skills:
+  - CancelEvent @self ~onInteract
+  - model{m=shark_hammer;usm=true;step=1;lp=true;h=true} @self ~onSpawn
+  - model{m=shark_hammer;usm=true;step=1;lp=true;h=true} @self ~onLoad
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onSpawn
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onLoad
+  
+  - skill{s=shark_cancel} @self ~onTimer:1
+  - skill{s=shark_player_aggro} @pir{r=16} ~onTimer:10  
+  - skill{s=shark_bite1} @self ~onTimer:5
+  - skill{s=shark_bite1_close} @self ~onTimer:5
+  
+  - skill{s=shark_death} @self ~onDeath
+  - CancelEvent{sync=true} @self ~onAttack
+
+##=============================================##
+##                    JELLY                    ##
+##=============================================##
+
+h_t_jellypink:
+  Type: DROWNED
+  Health: 2
+  Display: "Jelly"
+  AITargetSelectors:
+  - clear
+  Options:
+    MovementSpeed: 0.1
+    Silent: true
+    PreventOtherDrops: true
+    Despawn: false
+  Skills:
+  - CancelEvent @self ~onInteract
+  - model{m=t_jellypink;usm=true;step=1;lp=true;h=true} @self ~onSpawn
+  - model{m=t_jellypink;usm=true;step=1;lp=true;h=true} @self ~onLoad
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onSpawn
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onLoad
+  
+  - skill{s=jelly_death} @self ~onDeath
+  - lockmodel{l=true} @self ~onSpawn
+  - state{s=idle} @self ~onSpawn
+  
+h_t_jellyblue:
+  Type: DROWNED
+  Health: 2
+  Display: "Jelly"
+  AITargetSelectors:
+  - clear
+  Options:
+    MovementSpeed: 0.1
+    Silent: true
+    PreventOtherDrops: true
+    Despawn: false
+  Skills:
+  - CancelEvent @self ~onInteract
+  - model{m=t_jellyblue;usm=true;step=1;lp=true;h=true} @self ~onSpawn
+  - model{m=t_jellyblue;usm=true;step=1;lp=true;h=true} @self ~onLoad
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onSpawn
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onLoad
+  
+  - skill{s=jelly_death} @self ~onDeath
+  - lockmodel{l=true} @self ~onSpawn
+  - state{s=idle} @self ~onSpawn
+  
+h_t_jellygreen:
+  Type: DROWNED
+  Health: 2
+  Display: "Jelly"
+  AITargetSelectors:
+  - clear
+  Options:
+    MovementSpeed: 0.1
+    Silent: true
+    PreventOtherDrops: true
+    Despawn: false
+  Skills:
+  - CancelEvent @self ~onInteract
+  - model{m=t_jellygreen;usm=true;step=1;lp=true;h=true} @self ~onSpawn
+  - model{m=t_jellygreen;usm=true;step=1;lp=true;h=true} @self ~onLoad
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onSpawn
+  - BodyClamp{mh=15;mb=15;rde=60;rdu=60} @self ~onLoad
+  
+  - skill{s=jelly_death} @self ~onDeath
+  - lockmodel{l=true} @self ~onSpawn
+  - state{s=idle} @self ~onSpawn  
+  
+##=============================================##
+##                 SEE MINE                    ##
+##=============================================##  
+
+h_t_mine:
+  Type: IRON_GOLEM
+  Display: "See Mine"  
+  AITargetSelectors:
+  - clear  
+  Options:
+    MovementSpeed: 0
+    PreventOtherDrops: true
+    Despawn: false
+    Persistent: true
+    KnockbackResistance: 1
+    Silent: true
+    NoAI: true
+    NoGravity: true
+  Skills:
+  - skill{s=mine_spawn} @origin{y=-16} ~onSpawn
+  - skill{s=mine_detonate} @eir{r=6} ~onTimer:10
+  - model{mid=t_mine;d=false;i=true;lp=true;step=1} @self ~onSpawn
+  - model{mid=t_mine;d=false;i=true;lp=true;step=1} @self ~onLoad    
+#U0Z5M1QxRXNYRlbhxWNGRVZrdVW3tGRPRTRq10dnRlTwMmVkxmVNZVYkdFbyUTTTJ3d44UO

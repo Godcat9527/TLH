@@ -1,0 +1,174 @@
+info:
+  namespace: t-money
+items: 
+  money_2:
+    display_name: "金币2"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_2
+      model_id: 101
+  money_7:
+    display_name: "金币-7"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_7
+      model_id: 102
+  money_8:
+    display_name: "金币-8"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_8
+      model_id: 103
+  money_9:
+    display_name: "金币-9"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_9
+      model_id: 104
+  money_10:
+    display_name: "金币-10"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_10
+      model_id: 105
+  money_11:
+    display_name: "金币-11"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_11
+      model_id: 106
+  money_12:
+    display_name: "金币-12"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_12  
+      model_id: 107
+  money_13:
+    display_name: "金币-13"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_13
+      model_id: 108
+  money_14:
+    display_name: "金币-14"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_14
+      model_id: 109
+  money_15:
+    display_name: "金币-15"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_15 
+      model_id: 110
+  money_16:
+    display_name: "金币-16"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_16
+      model_id: 111
+  money_17:
+    display_name: "金币-17"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_17
+      model_id: 112
+  money_18:
+    display_name: "金币-18"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_18   
+      model_id: 113
+  money_19:
+    display_name: "金币-19"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_19
+      model_id: 114
+  money_20:
+    display_name: "金币-20"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_20  
+      model_id: 115
+  money_21:
+    display_name: "古老的金币"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_21 
+      model_id: 116
+  money_22:
+    display_name: "古老的铜币"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_22 
+      model_id: 117
+  money_23:
+    display_name: "古老的银币"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_23 
+      model_id: 118
+  money_24:
+    display_name: "金币-24"
+    enabled: true
+    resource:
+      material: paper
+      generate: true
+      textures:
+      - money_24
+      model_id: 119

@@ -1,0 +1,15 @@
+name: 踏上旅程
+permissions:
+- betterrtp.group.踏上旅程
+- cmi.command.sethome.3
+- auraskills.multiplier.10
+- cmi.colors.publicmessage.
+- cmi.colors.signs.
+parents:
+- 初来乍到1
+prefixes:
+- '&#B0C4DE[&#FF8247踏上旅程&#B0C4DE]':
+    priority: 20
+suffixes:
+- '&#ffffff':
+    priority: 20

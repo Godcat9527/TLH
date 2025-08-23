@@ -1,0 +1,58 @@
+{
+	"credit": "Made by Nog's Menagerie",
+	"textures": {
+		"1": "nogs_menagerie:cards/admin/nm_card_back",
+		"2": "nogs_menagerie:cards/rare/nm_card_rare_salmon"
+	},
+	"elements": [
+		{
+			"from": [-8, -15, 8],
+			"to": [24, 17, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [10, 180, 0],
+			"translation": [0, 4.25, 0.75],
+			"scale": [0.22, 0.22, 0.22]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [10, 180, 0],
+			"translation": [0, 4.25, 0.75],
+			"scale": [0.22, 0.22, 0.22]
+		},
+		"firstperson_righthand": {
+			"rotation": [-22, 147, 16],
+			"translation": [1, 6.75, 0],
+			"scale": [0.28, 0.28, 0.28]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-22, 147, 16],
+			"translation": [1, 6.75, 0],
+			"scale": [0.28, 0.28, 0.28]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 1.75, 1.75],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"rotation": [-14, 165, 16],
+			"translation": [1, 2.75, 0],
+			"scale": [0.43, 0.43, 0.43]
+		},
+		"fixed": {
+			"translation": [0, 7, -0.25]
+		}
+	}
+}

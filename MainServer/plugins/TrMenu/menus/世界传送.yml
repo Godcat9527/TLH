@@ -1,0 +1,115 @@
+title: '&6&lTLH &a&l世界旅行'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - ' @ @ @ @ ' 
+  - '@@@@ @@@@'
+
+
+
+
+Icons: 
+
+  '@':
+    display:
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'world':
+    display:
+      material: grass_block
+      name: '&f[&a生存世界随机传送&f]'
+      slots: 9
+      lore: 
+      - ''
+      - '&{#FF8247}&l原版地形的生存世界,可圈地,适合安家的好地方'
+      - '&{#FA8072}世界限制:&f边界范围:30000*30000，禁止跑图'
+      - '&{#FA8072}超过规定范围内的区块将会定期删除'
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'console: rtp player %player_name% world'
+      right:
+        - 'console: rtp player %player_name% world'
+
+  'nether':
+    display:
+      material: netherrack
+      name: '&f[&b地狱随机传送&f]'
+      slots: 11
+      lore: 
+      - ''
+      - '&{#FF8247}&l原版地形的地狱世界'
+      - '&{#FA8072}世界限制:&f边界范围:30000*30000,不推荐做大型生电机器'
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'console: rtp player %player_name% world_nether {delay=6}'
+        - 'console: cmi flyc %player_name% false -s'
+      right:
+        - 'console: rtp player %player_name% world_nether {delay=6}'
+        - 'console: cmi flyc %player_name% false -s'
+    
+  'end':
+    display:
+      material: end_stone
+      name: '&f[&6末地传送&f]'
+      slots: 13
+      lore: 
+      - ''
+      - '&{#FF8247}&l原版地形的末地'
+      - '&{#FA8072}世界限制:定期重置主岛以外的区域'
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        #- 'player: tpend'
+        - 'console: cmi flyc %player_name% false -s'
+      right:
+       # - 'player: tpend'
+        - 'console: cmi flyc %player_name% false -s'
+
+  'resource':
+    display:
+      material: iron_ore
+      name: '&f[&6资源世界随机传送&f]'
+      slots: 15
+      lore: 
+      - ''
+      - '&{#FF8247}&l原版地形的生存世界,用以搜集资源'
+      - '&{#FA8072}世界限制:&f边界范围:30000*30000，禁止跑图'
+    action:
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+        - 'console: rtp player %player_name% world_resource {delay=6}'
+        - 'console: cmi flyc %player_name% false -s' 
+
+  'warps':
+    display:
+      material: beacon
+      name: '&f[&6WARP&f]'
+      slots: 17
+      lore: 
+      - ''
+      - '&{#FF8247}&l前往服务器地标'
+    action:
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'player: warp'
+      right:
+        - 'player: warp'
+
+  'back':
+    display:
+      material: red_stained_glass_pane
+      name: "返回上级菜单"
+      slots: 22
+    action:
+      all:
+        - 'menu open 传送'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL'

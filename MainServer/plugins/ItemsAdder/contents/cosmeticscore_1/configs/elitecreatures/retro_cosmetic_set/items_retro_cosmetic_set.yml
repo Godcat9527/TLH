@@ -1,0 +1,101 @@
+info:
+  namespace: elitecreatures
+items:
+  retro_cosmetic_set_backpack_1:
+    display_name: "[电子游戏系列]背包_1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/backpack_1
+      model_id: 7022
+  retro_cosmetic_set_backpack_1_self:
+    display_name: Backpack 1 Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/backpack_1_self
+      model_id: 7023
+  retro_cosmetic_set_backpack_2:
+    display_name: "[电子游戏系列]背包_2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/backpack_2
+      model_id: 7024
+  retro_cosmetic_set_backpack_2_self:
+    display_name: Backpack 2 Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/backpack_2_self
+      model_id: 7025
+  retro_cosmetic_set_backpack_3:
+    display_name: "[电子游戏系列]背包_3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/backpack_3
+      model_id: 7026
+  retro_cosmetic_set_backpack_3_self:
+    display_name: Backpack 3 Self
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/backpack_3_self
+      model_id: 7027
+  retro_cosmetic_set_balloon_1:
+    display_name: "[电子游戏系列]气球_1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/balloon_1
+      model_id: 7028
+  retro_cosmetic_set_balloon_2:
+    display_name: "[电子游戏系列]气球_2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/balloon_2
+      model_id: 7029
+  retro_cosmetic_set_balloon_3:
+    display_name: "[电子游戏系列]气球_3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/balloon_3
+      model_id: 7030
+  retro_cosmetic_set_helmet_1:
+    display_name: "[电子游戏系列]头饰_1"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/helmet_1
+      model_id: 7031
+    behaviours:
+      hat: true
+  retro_cosmetic_set_helmet_2:
+    display_name: "[电子游戏系列]头饰_2"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/helmet_2
+      model_id: 7032
+    behaviours:
+      hat: true
+  retro_cosmetic_set_helmet_3:
+    display_name: "[电子游戏系列]头饰_3"
+    resource:
+      material: PAPER
+      generate: false
+      model_path: retro_cosmetic_set/helmet_3
+      model_id: 7033
+    behaviours:
+      hat: true
+
+
+
+
+
+
+# Downloaded from https://nullforums.net/resources/elitecreatures-retro-cosmetic-set.5286/
+# 378949OX18BKZMTOBHXG7UD0XVJ787K4S3R344W153R4UFLV25BI

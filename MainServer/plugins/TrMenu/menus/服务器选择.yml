@@ -1,0 +1,87 @@
+Title: '&6&lTLH &a&l权限购买'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@@ @ @ @@' 
+  - '@@@@#@@@@'
+
+
+
+
+Icons: 
+  '#':
+    display: 
+      material: red_stained_glass_pane 
+      name: '&c返回主菜单'
+    action: 
+      all: 
+        - 'open: 主菜单' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 
+
+
+  '@':
+    display: 
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'sethome':
+    display: 
+      material: red_bed
+      name: '&f解锁home上限至4个'
+      slots: 11
+      lore: 
+      - ''
+      - '&f有效期一个月'
+      - '&b价格：100000星币'
+      - '&f你剩余的服务天数: *%luckperms_expiry_time_cmi.command.sethome.4%*'
+    action: 
+       left:
+        - condition: check papi *%vault_eco_balance% >= *100000
+          actions:
+            - 'close'
+            - ''
+            - 'take-money: 100000'
+            - 'console: lp user %player_name% permission settemp cmi.command.sethome.4 true 30d'
+            - 'title: &a你已经解锁honme上限至4个' 
+          deny:
+            - 'close'
+            - 'title: &c你的星币不足!' 
+
+
+  'lands':
+    display: 
+      material: white_banner
+      name: '&f解锁领地上限至4个'
+      slots: 13
+      lore: 
+      - ''
+      - '&f有效期一个月'
+      - '&b价格：100000星币'
+      - '&f你剩余的服务天数: *%luckperms_expiry_time_lands.lands.4%*'
+    action: 
+       left:
+        - condition: check papi *%vault_eco_balance% >= *100000
+          actions:
+            - 'close'
+            - ''
+            - 'take-money: 100000'
+            - 'title: &a你已经解锁领地上限至4个' 
+          deny:
+            - 'close'
+            - 'title: &c你的星币不足!'  
+
+
+  'Server_test':
+    display: 
+      material: structure_void
+      name: '&6尽请期待'
+      slots: 15
+      lore: 
+      - ''
+      - ''
+    action: 
+      all: 
+        - '' 
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL' 

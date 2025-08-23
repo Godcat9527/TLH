@@ -1,0 +1,59 @@
+info:
+  namespace: thunderboltset
+equipments:
+  thunderbolt_armor:
+    type: armor
+    layer_1: armor/thunderbolt_chestplate
+    layer_2: armor/thunderbolt_leggings
+items:
+  thunderbolt_helmet:
+    name: 圣骑士头盔
+    resource:
+      generate: false
+      model_path: helmet
+      material: IRON_HELMET
+      model_id: 200
+    durability:
+      max_durability: 165
+    equipment:
+      slot_attribute_modifiers:
+        armor: 2.5
+  thunderbolt_chestplate:
+    display_name: 圣骑士胸甲
+    resource:
+      generate: true
+      texture: armor/thunderbolt_chestplate_icon
+      material: IRON_CHESTPLATE
+      model_id: 200
+    durability:
+      max_durability: 165
+    equipment:
+      id: thunderboltset:thunderbolt_armor
+      slot_attribute_modifiers:
+        armor: 1
+  thunderbolt_leggings:
+    name: 圣骑士护腿
+    resource:
+      generate: true
+      texture: armor/thunderbolt_leggings_icon
+      material: IRON_LEGGINGS
+      model_id: 200
+    durability:
+      max_durability: 165
+    equipment:
+      id: thunderboltset:thunderbolt_armor
+      slot_attribute_modifiers:
+        armor: 1
+  thunderbolt_boots:
+    name: 圣骑士靴子
+    resource:
+      generate: true
+      texture: armor/thunderbolt_boots_icon
+      material: IRON_BOOTS
+      model_id: 200
+    durability:
+      max_durability: 165
+    equipment:
+      id: thunderboltset:thunderbolt_armor
+      slot_attribute_modifiers:
+        armor: 1

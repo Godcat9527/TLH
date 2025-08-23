@@ -1,0 +1,21 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+# 模板 ID，仅用作参考。这是您需要在编辑界面中输入的文本，
+# 以设置特定物品的升级选项。
+
+weapon-default:
+
+    # 每次物品升级时，其攻击伤害增加 3%（相对于当前值）
+    attack-damage: 3%
+    
+    # 每次物品升级时，其绝对暴击率增加 2%（独立于当前值）
+    critical-strike-chance: 2
+    
+    pve-damage: 1%
+
+armor-template-example:
+    armor: 3%
+    armor-toughness: 2%
+    block-rating: 5%
+    dodge-rating: 5%
+    parry-rating: 5%

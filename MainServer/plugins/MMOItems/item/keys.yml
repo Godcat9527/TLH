@@ -1,0 +1,94 @@
+DUNGEON_KEY_1:
+  base:
+    material: PAPER
+    tier: C
+    name: '&f 뀍             <#00FA9A>一级副本钥匙'
+    lore:
+    - '&f 뀁 '
+    - '&f 뀁 这是你正式踏上冒险的地方'
+    - '&f 뀁 '
+    - '&f 뀁 <#8B8386>→前往公会选择你要挑战副本!'
+    custom-model-data: 178
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    unstackable: true
+    disable-repairing: true
+DUNGEON_KEY_2:
+  base:
+    material: PAPER
+    tier: B
+    name: '&f 뀊             <#1E90FF>二级副本钥匙'
+    lore:
+    - '&f 뀁 '
+    - '&f 뀁 如果你想进一步提升自己'
+    - '&f 뀁 那就去战胜它们吧'
+    - '&f 뀁 '
+    - '&f 뀁 <#8B8386>→前往公会选择你要挑战副本!'
+    custom-model-data: 177
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    unstackable: true
+    disable-repairing: true
+DUNGEON_KEY_3:
+  base:
+    material: PAPER
+    tier: A
+    name: '&f 뀇             <#9370DB>三级副本钥匙'
+    lore:
+    - '&f 뀁 '
+    - '&f 뀁 想追求更稀有的宝物？'
+    - '&f 뀁 你需要面临更大的挑战'
+    - '&f 뀁 '
+    - '&f 뀁 <#8B8386>→前往公会选择你要挑战副本!'
+    custom-model-data: 192
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    unstackable: true
+    disable-repairing: true
+DUNGEON_KEY_4:
+  base:
+    material: PAPER
+    tier: S
+    name: '&f 뀄             <#FFD700>神炼级副本钥匙'
+    lore:
+    - '&f 뀁 '
+    - '&f 뀁 你将成为探索的先驱'
+    - '&f 뀁 在此处留下你的印记吧'
+    - '&f 뀁 '
+    - '&f 뀁 <#F5F5DC>→祝你一帆风顺!'
+    custom-model-data: 171
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    unstackable: true
+    disable-repairing: true
+DUNGEON_KEY_5:
+  base:
+    material: PAPER
+    tier: S+
+    name: '&f 뀀             &4&l秘境级副本钥匙'
+    lore:
+    - '&f 뀁 '
+    - '&f 뀁 ****未知***'
+    - '&f 뀁 '
+    - '&f 뀁 <#FF4500>→请时刻保持警惕!'
+    custom-model-data: 170
+    disable-enchanting: true
+    disable-smithing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    unstackable: true
+    disable-repairing: true
+

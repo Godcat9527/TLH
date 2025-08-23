@@ -1,0 +1,20 @@
+info:
+  namespace: elitecreatures
+categories:
+  superheroes_cosmetic_set:
+    enabled: true
+    icon: "elitecreatures:superheroes_cosmetic_set_backpack_1"
+    name: "Superheroes Cosmetic Set"
+    permission: "ia.menu.superheroes_cosmetic_set"
+    items:
+      - "elitecreatures:superheroes_cosmetic_set_backpack_1"
+      - "elitecreatures:superheroes_cosmetic_set_backpack_2"
+      - "elitecreatures:superheroes_cosmetic_set_backpack_3"
+      - "elitecreatures:superheroes_cosmetic_set_balloon_1"
+      - "elitecreatures:superheroes_cosmetic_set_balloon_2"
+      - "elitecreatures:superheroes_cosmetic_set_balloon_3"
+      - "elitecreatures:superheroes_cosmetic_set_helmet_1"
+      - "elitecreatures:superheroes_cosmetic_set_helmet_2"
+      - "elitecreatures:superheroes_cosmetic_set_helmet_3"
+
+# 02auClXtcW32XLGwTbKkEmeWVVvjKiACv2qncK8wtEN/O4Q+AmBluKpaQ9WZg3kOM6Jp28rM3evvp8U3AHj5QxS7FL7EibhsDuklTrYTRms=

@@ -1,0 +1,31 @@
+info:
+  namespace: elitecreatures
+categories:
+  knight_animated_weapon_set:
+    enabled: true
+    icon: "elitecreatures:knight_animated_weapon_set_axe"
+    name: "Knight Animated Weapon Set"
+    permission: "ia.menu.knight_animated_weapon_set"
+    items:
+      - "elitecreatures:knight_animated_weapon_set_axe"
+      - "elitecreatures:knight_animated_weapon_set_balloon"
+      - "elitecreatures:knight_animated_weapon_set_bow"
+      - "elitecreatures:knight_animated_weapon_set_chest"
+      - "elitecreatures:knight_animated_weapon_set_crossbow"
+      - "elitecreatures:knight_animated_weapon_set_fishing_rod"
+      - "elitecreatures:knight_animated_weapon_set_hammer"
+      - "elitecreatures:knight_animated_weapon_set_hoe"
+      - "elitecreatures:knight_animated_weapon_set_key"
+      - "elitecreatures:knight_animated_weapon_set_pickaxe"
+      - "elitecreatures:knight_animated_weapon_set_quiver"
+      - "elitecreatures:knight_animated_weapon_set_shield"
+      - "elitecreatures:knight_animated_weapon_set_shovel"
+      - "elitecreatures:knight_animated_weapon_set_spear"
+      - "elitecreatures:knight_animated_weapon_set_staff"
+      - "elitecreatures:knight_animated_weapon_set_sword"
+      - "elitecreatures:knight_animated_weapon_set_thornpendulum"
+      - "elitecreatures:knight_animated_weapon_set_wing"
+      - "elitecreatures:knight_animated_weapon_set_helmet"
+      - "elitecreatures:knight_animated_weapon_set_chestplate"
+      - "elitecreatures:knight_animated_weapon_set_leggings"
+      - "elitecreatures:knight_animated_weapon_set_boots"

@@ -1,0 +1,19 @@
+info:
+  namespace: creature_cosmetic_set
+categories:
+  creature_cosmetic_set:
+    enabled: true
+    skip_if_already: false
+    icon: "creature_cosmetic_set:panda_hat"
+    name: Creature Cosmetic Set
+    permission: ia.menu
+    items:
+      - "creature_cosmetic_set:panda_hat"
+      - "creature_cosmetic_set:bamboo_pot"
+      - "creature_cosmetic_set:bamboo_stick"
+      - "creature_cosmetic_set:fox_hat"
+      - "creature_cosmetic_set:fox_backpack"
+      - "creature_cosmetic_set:fox_tail"
+      - "creature_cosmetic_set:warden_hat"
+      - "creature_cosmetic_set:backy_shrieker"
+      - "creature_cosmetic_set:sculk_arm"

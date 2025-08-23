@@ -1,0 +1,72 @@
+info:
+  namespace: fairyset
+equipments:
+  fairy_armor:
+    type: armor
+    layer_1: armor/fairy_armor_layer_1
+    layer_2: armor/fairy_armor_layer_2
+items:
+  fairy_boots:
+    name: 天使靴
+    resource:
+      generate: true
+      texture: armor/fairy_boots_icon
+      material: IRON_BOOTS
+      model_id: 240
+    durability:
+      max_durability: 165
+    equipment:
+      id: fairyset:fairy_armor
+      slot_attribute_modifiers:
+        armor: 1
+  fairy_chestplate:
+    name: 天使胸甲
+    resource:
+      generate: true
+      texture: armor/fairy_chestplate_icon
+      material: IRON_CHESTPLATE
+      model_id: 240
+    durability:
+      max_durability: 165
+    equipment:
+      id: fairyset:fairy_armor
+      slot_attribute_modifiers:
+        armor: 1
+  fairy_leggings:
+    name: 天使腿甲
+    resource:
+      generate: true
+      texture: armor/fairy_leggings_icon
+      material: IRON_LEGGINGS
+      model_id: 240
+    durability:
+      max_durability: 165
+    equipment:
+      id: fairyset:fairy_armor
+      slot_attribute_modifiers:
+        armor: 1
+  fairy_helmet_1:
+    name: 天使头盔1
+    resource:
+      generate: true
+      texture: armor/fairy_helmet_icon
+      material: IRON_HELMET
+      model_id: 240
+    durability:
+      max_durability: 165
+    equipment:
+      id: fairyset:fairy_armor
+      slot_attribute_modifiers:
+        armor: 1
+  fairy_helmet_2:
+    name: 天使头盔2
+    resource:
+      generate: false
+      model_path: helmet
+      material: IRON_HELMET
+      model_id: 241
+    durability:
+      max_durability: 165
+    equipment:
+      slot_attribute_modifiers:
+        armor: 2.5

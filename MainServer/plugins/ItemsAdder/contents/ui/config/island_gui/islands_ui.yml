@@ -1,0 +1,145 @@
+info:
+  namespace: island_gui
+font_images:
+
+  gui-islandpanel:
+    symbol: ꀝ
+    path: island_panel.png
+    y_position: 19
+    scale_ratio: 256
+    permission: somerandom.perm
+
+  gui-islandupgrades:
+    symbol: ꀢ
+    path: island_upgrades.png
+    y_position: 19
+    scale_ratio: 256
+    permission: somerandom.perm
+
+  gui-islandbank:
+    symbol: ꀦ
+    path: island_bank.png
+    y_position: 19
+    scale_ratio: 256
+    permission: somerandom.perm
+
+  gui-islandchest:
+    symbol: ꀧ
+    path: island_chest.png
+    y_position: 19
+    scale_ratio: 256
+    permission: somerandom.perm
+
+  gui-islandgui:
+    symbol: ꀨ
+    path: island_gui.png
+    y_position: 19
+    scale_ratio: 256
+    permission: somerandom.perm
+
+  gui-islandcreate:
+    symbol: ꀭ
+    path: island_create.png
+    y_position: 19
+    scale_ratio: 256
+    permission: somerandom.perm
+items:
+  
+  islandchest-chest:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 22
+      textures:
+      - settings/chest
+
+  islandchest-lockedchest:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 23
+      textures:
+      - settings/lockedchest
+
+  island-next:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 24
+      textures:
+      - settings/next
+
+  island-back:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 25
+      textures:
+      - settings/back
+
+  island-home:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 26
+      textures:
+      - settings/home
+
+  island-sortworth:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 27
+      textures:
+      - settings/sortworth
+
+  island-sortlevel:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 28
+      textures:
+      - settings/sortlevel
+
+  island-sortplayer:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 29
+      textures:
+      - settings/sortplayer
+
+  island-sortrating:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 30
+      textures:
+      - settings/sortrating
+
+  island-uniquevisitor:
+    enabled: true
+    resource:
+      generate: true
+      material: BOOK
+      model_id: 31
+      textures:
+      - settings/uniquevisitor
+  slot-nothing:
+    enabled: true
+    resource:
+      generate: true
+      material: BARRIER
+      model_id: 1
+      textures:
+      - settings/air
+      

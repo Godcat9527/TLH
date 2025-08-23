@@ -1,0 +1,24 @@
+display-name: "&f合金考古铲"
+lore:
+  - "&7合金考古铲"
+texture: netherite_archaeological_shovel
+recipe_1:
+  shape:
+    - "AAA"
+    - "ABA"
+    - "AAA"
+  ingredients:
+    A:
+      material: netherite_ingot
+    B:
+      material: archaeological_shovel
+recipe_2:
+  shape:
+    - "AAA"
+    - "ABA"
+    - "AAA"
+  ingredients:
+    A:
+      material: netherite_ingot
+    B:
+      material: archaeological_shovel

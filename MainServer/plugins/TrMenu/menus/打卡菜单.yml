@@ -1,0 +1,65 @@
+title: '&6&lTLH &a&l周目游历'
+
+
+Layout:
+  - '@@@@@@@@@'
+  - '@@ @@@ @@' 
+  - '@@@@ @@@@'
+
+
+
+
+Icons: 
+
+  '@':
+    display:
+      material: light_blue_stained_glass_pane 
+      name: ' '
+
+
+  'one':
+    display:
+      material: grass_block
+      name: '&f[&a一周目游历&f]'
+      slots: 11
+      lore: 
+      - ''
+      - '&{#FF8247}&l时间:2021'
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'console: rtp player %player_name% one_world {delay=6}'
+        - 'console: cmi flyc %player_name% false -s'
+      right:
+        - 'console: rtp player %player_name% one_world {delay=6}'
+        - 'console: cmi flyc %player_name% false -s'
+
+  'three':
+    display:
+      material: grass_block
+      name: '&f[&a三周目游历&f]'
+      slots: 15
+      lore: 
+      - ''
+      - '&{#FF8247}&l时间:2023'
+    action: 
+      all:
+        - 'sound: UI_BUTTON_CLICK-1-2'
+      left:
+        - 'console: rtp player %player_name% three_world {delay=6}'
+        - 'console: cmi flyc %player_name% false -s'
+      right:
+        - 'console: rtp player %player_name% three_world {delay=6}'
+        - 'console: cmi flyc %player_name% false -s'
+    
+
+  'back':
+    display:
+      material: red_stained_glass_pane
+      name: "返回上级菜单"
+      slots: 22
+    action:
+      all:
+        - 'menu open 主菜单'
+        - 'sound: BLOCK_NOTE_BLOCK_COW_BELL'

@@ -1,0 +1,129 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  spawn:
+    Cmds:
+    - asConsole! cooldown:60! cmi flyc [playerName] false -s
+    - delay! 0.5
+    - cmi spawn
+  homes:
+    Cmds:
+    - asConsole! cooldown:60! cmi flyc [playerName] false -s
+    - delay! 0.5
+    - cmi homes $1
+  material:
+    Cmds: []
+    Perm: true
+  godatapack:
+    Cmds:
+    - fromConsole! server datapack [playerName]
+    Perm: true
+  wardenroar:
+    Cmds:
+    - fromConsole! sound entity_warden_emerge [playerName] -v:5
+    - delay! 3
+    - fromConsole! sound entity_warden_roar [playerName] -v:5
+    Perm: true
+  create_land:
+    Cmds:
+    - land create [playerName]的领地
+    - fromConsole! minecraft:clear [playerName] minecraft:grass_block{HideFlags:1}
+      1
+  default_lands:
+    Cmds:
+    - lands create [playerName]的领地
+    Tab: false
+  jump_force:
+    Cmds:
+    - fromConsole! launch [playerName] p:20
+    - fromConsole! effect [playerName] SlowFalling 3 1
+    - delay! 3
+  create_plate:
+    Cmds:
+    - fromConsole! minecraft:execute at [playerName] run fill ~-1 ~-1 ~-1 ~1 ~-1 ~1
+      minecraft:slime_block replace minecraft:air
+    - fromConsole! minecraft:clear [playerName] minecraft:honeycomb{HideFlags:1} 1
+  help:
+    Cmds:
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"yellow","text":"--------------------"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/back"},{"color":"white","text":"
+      - "},{"color":"yellow","text":"返回最近一次传送前位置"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/gcd"},{"color":"white","text":"
+      - "},{"color":"yellow","text":"获得快捷菜单"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/land"},{"color":"white","text":"
+      - "},{"color":"yellow","text":"打开领地菜单"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/land"},{"color":"white","text":"
+      create [领地名称] - "},{"color":"yellow","text":"新建领地"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/land"},{"color":"white","text":"
+      claim - "},{"color":"yellow","text":"扩大领地"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/land"},{"color":"white","text":"
+      deposit [金额] - "},{"color":"yellow","text":"向领地银行存钱"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/land"},{"color":"white","text":"
+      withdraw [金额] - "},{"color":"yellow","text":"从领地银行取钱"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/lspawn"},{"color":"white","text":"
+      [领地名称（可选）] - "},{"color":"yellow","text":"传送至某领地（默认自己领地）"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/msg"},{"color":"white","text":"
+      [玩家名称] [信息内容] - "},{"color":"yellow","text":"私聊其他玩家"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/pay"},{"color":"white","text":"
+      [玩家名称] [金额] - "},{"color":"yellow","text":"向其他玩家支付星币"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"gold","text":"/spawn"},{"color":"white","text":"
+      - "},{"color":"yellow","text":"前往主城"}],"text":""}
+    - fromConsole! tellraw [playerName] {"italic":false,"extra":[{"text":""},{"color":"yellow","text":"--------------------"}],"text":""}
+  builder_copy:
+    Cmds:
+    - fromConsole! give [playerName] %player_item_in_hand% 64
+    - fromConsole! minecraft:clear [playerName] minecraft:blaze_rod{HideFlags:2} 1
+    Perm: true
+  builder_flyc:
+    Cmds:
+    - fromConsole! flightcharge [playerName] set 30000
+    - fromConsole! minecraft:clear [playerName] minecraft:white_dye{HideFlags:2} 1
+    Perm: true
+  empty_command:
+    Cmds: []
+  mitem:
+    Cmds:
+    - minecraft:item modify entity [playerName] weapon.mainhand $1-
+    Perm: true
+  getitem:
+    Cmds:
+    - data get entity [playerName] SelectedItem
+    Perm: true
+  lspawn:
+    Cmds:
+    - land spawn $1-
+  elytra_rocket:
+    Cmds:
+    - fromConsole! execute if data entity [playerName] Inventory.[{Slot:102b,id:"minecraft:elytra"}]
+      run launch [playerName] p:1
+    - 'fromConsole! minecraft:clear [playerName] minecraft:firework_rocket[minecraft:custom_data={PublicBukkitValues:{"cmilib:nbtcommands":
+      ["qYnsIAke5ZVePbrSSShdnQ=="]}}] 1'
+  purchase_building:
+    Cmds:
+    - fromConsole! menu open 建材购买 [playerName]
+  fake_left:
+    Cmds:
+    - tellraw @a {"translate":"%s退出了游戏","with":[{"type":"selector","selector":"@s"}],"color":"yellow"}
+    - vanish [playerName] on
+    Perm: true
+  fake_back:
+    Cmds:
+    - tellraw @a {"translate":"%s加入了游戏","with":[{"type":"selector","selector":"@s"}],"color":"yellow"}
+    - vanish [playerName] off
+    Perm: true

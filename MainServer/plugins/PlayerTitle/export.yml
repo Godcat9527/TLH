@@ -1,0 +1,402 @@
+'1':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e一周目玩家的专属称号'
+  - '&f感谢你陪服务器走过的三个年头!'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[ §f[ &#BBFFFF一&#98F5FF周&#8EE5EE目&#00F5FF玩&#00FFFF家&#97FFFF专&#7FFFD4属
+    §f] §f]
+'2':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e二周目玩家的专属称号'
+  - '&f感谢你陪服务器走过的两个年头!'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[ §f[ &#FFC0CB二&#FF69B4周&#FF1493目&#EE82EE玩&#FF00FF家&#DA70D6专&#FFC0CB属
+    §f] §f]
+'3':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e三周目玩家的专属称号'
+  - '&f感谢你陪服务器走过的一个年头!'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[ §f[ &#FDF5E6三&#FAEBD7周&#FFEBCD目&#FFDAB9玩&#FFDEAD家&#FDF5E6专&#FAEBD7属
+    §f] §f]
+'6':
+  amount: 200000
+  buyType: vault
+  day: 0
+  description:
+  - '&e富甲一方'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[ &#FFC145富甲一方 §f]
+'7':
+  amount: 960
+  buyType: itemStack
+  day: 0
+  description:
+  - '&e面包吃到撑'
+  enable: false
+  isHide: false
+  itemStack: BREAD
+  titleName: §f[ &#EFB644小麦大丰收 §f]
+'8':
+  amount: 384
+  buyType: itemStack
+  day: 0
+  description:
+  - '&e钻石，璀璨夺目'
+  enable: false
+  isHide: false
+  itemStack: DEEPSLATE_DIAMOND_ORE
+  titleName: §f[ &#00E3E3钻石收藏家 §f]
+'9':
+  amount: 0
+  buyType: activity
+  day: 30
+  description:
+  - '&e宝贵建议提供者获得的称号'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[ &#008bff&l共&#409bff&l建&#7fabff&l未&#bfbbff&l来 §f]
+'10':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e获得萌妹认证的专属称号'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[ &#ff8a8a&l萌&#f896ae&l妹&#f2a1d3&l认&#ebadf7&l证 §f]
+'11':
+  amount: 320
+  buyType: itemStack
+  day: 0
+  description:
+  - '&e你就是珊瑚收藏大师'
+  enable: false
+  isHide: false
+  itemStack: BRAIN_CORAL_FAN
+  titleName: §f[ &#4F07FB深海绮梦编织者 §f]
+'12':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e活跃之星就是你！'
+  - 在线时长累计260小时填写申请表领取
+  enable: false
+  isHide: false
+  titleName: §f[ &#0098FB&l活&#00B2E7&l跃&#00CCD4&l启&#00E5C0&l明&#00FFAC&l星 §f]
+'16':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e感谢陪伴'
+  enable: false
+  isHide: false
+  titleName: §f[ &#0BAAFB&l传&#078BFD&l说&#026CFE&lの&#007DF8&l零&#00BEE9&l周&#00FFDA&l目
+    §f]
+'17':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e宣传大使专属称号'
+  enable: false
+  isHide: false
+  titleName: §f[ &#FBC54A&l宣&#FCA64A&l传&#FD884A&l委&#FE694A&l员&#FF4A4A&l会 §f]
+'68':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#FF0000巡查员专属'
+  - 夹击妹抖出击！
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'69':
+  amount: 0
+  buyType: activity
+  day: 60
+  description:
+  - '&#556B2F解答者'
+  - QQ频道问答板块
+  - 帮助发帖者解答累计5次
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'70':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#7D26CD开设商店被玩家累积投诉10次'
+  - 拿到这个称号
+  - 你觉得你很光荣吗?
+  - '&b期限：90天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'71':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#D15FEE累计接待超过5位新玩家'
+  - 感谢你为服务器留下新鲜血液做出的贡献
+  - '&b期限：365天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'72':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#90EE90VIP专属称号'
+  - 感谢您的赞助
+  - 服务器会有更好的发展
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'73':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#FF3E96MVP专属称号'
+  - 感谢您的赞助
+  - 服务器会有更好的发展
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'74':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#8B0000生存服和海岛服分别达到280小时'
+  - 希望10年后，还能在服务器见到你
+  - '&b期限：365天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'75':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#00BFFF加入服务器群超过两年'
+  - 但在线时长50低于小时
+  - 这么久都不怎么玩服务器
+  - 服务器真的这么无聊吗?
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'76':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#6495ED拥有至少50*20*50的原创建筑*1'
+  - 服务器不可多得的人才！
+  - '&b期限：90天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'77':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#6495ED拥有至少200*100*200的建筑*2'
+  - 服务器不可多得的人才！
+  - '&b期限：90天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'78':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&b在bilbil为服务器宣传累计达到1000浏览量'
+  - 感谢你为服务器宣传做出的贡献
+  - '&b期限：60天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'79':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#FFB90F服务器开设商店并超过20位访客购买'
+  - 看来你很有货
+  - '&b期限：60天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'80':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&b在抖音为服务器宣传累计达到3000浏览量'
+  - 感谢你为服务器宣传做出的贡献
+  - '&b期限：60天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'81':
+  amount: 100
+  buyType: playerPoints
+  day: 30
+  description:
+  - '&#FF1493樱桃'
+  - '&b期限：30天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'82':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&#FFFF00&l累计为服务器招新5人'
+  - 且上线时长均超过20小时
+  - '&c发现邀请玩家'
+  - 同IP超过3个
+  - 超过2个账号长时间挂机
+  - '&c将封禁全部邀请账户'
+  - 并清空邀请人账户数据
+  - '&b期限：365天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'83':
+  amount: 100
+  buyType: playerPoints
+  day: 30
+  description:
+  - '&#8A2BE2收藏家'
+  - '&b期限：30天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'84':
+  amount: 100
+  buyType: playerPoints
+  day: 30
+  description:
+  - 主管
+  - '&b期限：30天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'86':
+  amount: 100
+  buyType: playerPoints
+  day: 30
+  description:
+  - '&#00BFFF赛博朋克'
+  - '&b期限：30天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'87':
+  amount: 150
+  buyType: playerPoints
+  day: 30
+  description:
+  - '&#FFFFE0出家人'
+  - '&b期限：30天'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'88':
+  amount: 0
+  buyType: activity
+  day: 0
+  description: []
+  enable: false
+  isHide: true
+  titleName: §f[  §f]
+'103':
+  amount: 320
+  buyType: itemStack
+  day: 0
+  description:
+  - '&c你就是森林破坏者！'
+  enable: false
+  isHide: false
+  itemStack: OAK_LOG
+  titleName: §f[ &#DAA520伐木工 §f]
+'104':
+  amount: 0
+  buyType: not
+  day: 0
+  description: []
+  enable: false
+  isHide: true
+  titleName: §f[ 三周目玩家专属 §f]
+'109':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&e三周年活动专属'
+  - '&e三年光阴感谢有你！'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]
+'111':
+  amount: 0
+  buyType: activity
+  day: 0
+  description:
+  - '&b签到专属'
+  - '&b使用星辰粉末在群内进行兑换'
+  enable: false
+  isHide: false
+  itemStack: ''
+  titleName: §f[  §f]

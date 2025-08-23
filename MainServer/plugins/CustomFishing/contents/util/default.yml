@@ -1,0 +1,44 @@
+# 注意: 这些是插件的默认配置
+# 并不一定意味着玩家会有良好的游戏体验。我们希望您会根据自己的想法创建定制的配置，让玩家体验到您服务器的独特之处。
+
+fishfinder:
+  material: PAPER
+  display:
+    name: '<#1E90FF>鱼群探测器'
+    lore:
+      - ''
+      - '<#7FFFD4>描述:'
+      - '<gray> - 体积小却功能强大，它能精确扫描水域，'
+      - '<gray> - 揭示潜伏在水面下的各种鱼类。'
+      - '<gray> - 无论您是在未知的领域还是熟悉的水域，'
+      - '<gray> - 这个设备都确保您始终了解您的水生邻居。'
+      - ''
+  custom-model-data: 50000
+  events:
+    interact:
+      conditional_action:
+        type: conditional
+        value:
+          conditions:
+            condition_1:
+              type: cooldown
+              value:
+                key: fishfinder
+                time: 3000
+              not-met-actions:
+                action_1:
+                  type: message
+                  value:
+                    - '慢点! 你使用鱼群探测器的频率太高了.'
+          actions:
+            action_1:
+              type: fish-finder
+              value: false
+# 水效果
+water_effect:
+  material: PAPER
+  custom-model-data: 49998
+# 岩浆效果
+lava_effect:
+  material: PAPER
+  custom-model-data: 49999

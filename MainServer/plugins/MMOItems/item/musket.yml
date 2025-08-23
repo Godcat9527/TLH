@@ -1,0 +1,50 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+SNIPER_RIFLE:
+  base:
+    material: DIAMOND_HORSE_ARMOR
+    name: §b§l狙击步枪
+    max-durability: 6000.0
+    lore:
+      - §b帝国军工。精准，经典。
+    disable-interaction: true
+    range: 160.0
+    attack-damage:
+      base: 30.0
+      scale: 0.15
+      spread: 0.1
+      max-spread: 0.2
+    critical-strike-chance:
+      base: 30.0
+      spread: 0.15
+      max-spread: 0.3
+    critical-strike-power:
+      base: 60.0
+      spread: 0.15
+      max-spread: 0.3
+    required-level: 35.0
+    weapon-damage:
+      base: 10.0
+      scale: 0.05
+      spread: 0.05
+      max-spread: 0.1
+    projectile-damage:
+      base: 10.0
+      scale: 0.05
+      spread: 0.1
+      max-spread: 0.2
+    tier: EPIC
+    gem-sockets:
+      - Cyan
+      - Cyan
+    ability:
+      ability1:
+        type: STUN
+        mode: ATTACK
+        cooldown: 5.0
+        duration: 2.0
+    attack-speed: 0.9
+    knockback: 0.25
+    recoil: 0.01
+    displayed-type: Firearm
+    movement-speed: -0.05

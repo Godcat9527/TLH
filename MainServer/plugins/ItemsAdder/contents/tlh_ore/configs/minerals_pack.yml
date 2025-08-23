@@ -1,0 +1,1745 @@
+info:
+  namespace: minerals_pack
+recipes:
+  crafting_table:
+    raw_mythril_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:raw_mythril
+      result:
+        item: minerals_pack:raw_mythril_block
+        amount: 1
+    raw_mythril_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:raw_mythril_block
+      result:
+        item: minerals_pack:raw_mythril
+        amount: 9
+    raw_amber_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:amber
+      result:
+        item: minerals_pack:raw_amber_block
+        amount: 1
+    raw_amber_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:raw_amber_block
+      result:
+        item: minerals_pack:amber
+        amount: 9
+    raw_ruby_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:ruby
+      result:
+        item: minerals_pack:raw_ruby_block
+        amount: 1
+    raw_ruby_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:raw_ruby_block
+      result:
+        item: minerals_pack:ruby
+        amount: 9
+    raw_jade_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:raw_jade
+      result:
+        item: minerals_pack:raw_jade_block
+        amount: 1
+    raw_jade_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:raw_jade_block
+      result:
+        item: minerals_pack:raw_jade
+        amount: 9
+    raw_iridium_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:raw_iridium
+      result:
+        item: minerals_pack:raw_iridium_block
+        amount: 1
+    raw_iridium_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:raw_iridium_block
+      result:
+        item: minerals_pack:raw_iridium
+        amount: 9
+    mythril_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:mythril_ingot
+      result:
+        item: minerals_pack:mythril_block
+        amount: 1
+    mythril_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:mythril_block
+      result:
+        item: minerals_pack:mythril_ingot
+        amount: 9
+    amber_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:amber_ingot
+      result:
+        item: minerals_pack:amber_block
+        amount: 1
+    amber_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:amber_block
+      result:
+        item: minerals_pack:amber_ingot
+        amount: 9
+    ruby_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:ruby_ingot
+      result:
+        item: minerals_pack:ruby_block
+        amount: 1
+    ruby_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:ruby_block
+      result:
+        item: minerals_pack:ruby_ingot
+        amount: 9
+    jade_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:jade_ingot
+      result:
+        item: minerals_pack:jade_block
+        amount: 1
+    jade_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:jade_block
+      result:
+        item: minerals_pack:jade_ingot
+        amount: 9
+    iridium_block:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:iridium_ingot
+      result:
+        item: minerals_pack:iridium_block
+        amount: 1
+    iridium_block_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:iridium_block
+      result:
+        item: minerals_pack:iridium_ingot
+        amount: 9
+    mythril_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:mythril_nugget
+      result:
+        item: minerals_pack:mythril_ingot
+        amount: 1
+    mythril_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:mythril_ingot
+      result:
+        item: minerals_pack:mythril_nugget
+        amount: 9
+    malachite_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:malachite_nugget
+      result:
+        item: minerals_pack:malachite_ingot
+        amount: 1
+    malachite_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:malachite_ingot
+      result:
+        item: minerals_pack:malachite_nugget
+        amount: 9
+    amethyst_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:amethyst_nugget
+      result:
+        item: minerals_pack:amethyst_ingot
+        amount: 1
+    amethyst_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:amethyst_ingot
+      result:
+        item: minerals_pack:amethyst_nugget
+        amount: 9
+    amber_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:amber_nugget
+      result:
+        item: minerals_pack:amber_ingot
+        amount: 1
+    amber_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:amber_ingot
+      result:
+        item: minerals_pack:amber_nugget
+        amount: 9
+    ruby_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:ruby_nugget
+      result:
+        item: minerals_pack:ruby_ingot
+        amount: 1
+    ruby_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:ruby_ingot
+      result:
+        item: minerals_pack:ruby_nugget
+        amount: 9
+    jade_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:jade_nugget
+      result:
+        item: minerals_pack:jade_ingot
+        amount: 1
+    jade_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:jade_ingot
+      result:
+        item: minerals_pack:jade_nugget
+        amount: 9
+    silver_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:silver_nugget
+      result:
+        item: minerals_pack:silver_ingot
+        amount: 1
+    silver_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:silver_ingot
+      result:
+        item: minerals_pack:silver_nugget
+        amount: 9
+    iridium_ingot:
+      enabled: true
+      pattern:
+      - AAA
+      - AAA
+      - AAA
+      ingredients:
+        A: minerals_pack:iridium_nugget
+      result:
+        item: minerals_pack:iridium_ingot
+        amount: 1
+    iridium_ingot_2:
+      enabled: true
+      shapeless: true
+      ingredients:
+        A: minerals_pack:iridium_ingot
+      result:
+        item: minerals_pack:iridium_nugget
+        amount: 9
+#=====================================================================
+  cooking:
+    mythril:
+      ingredient:
+        item: minerals_pack:raw_mythril
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:mythril_ingot
+        amount: 1
+    mythril_2:
+      ingredient:
+        item: minerals_pack:raw_mythril
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:mythril_ingot
+        amount: 1
+    malachite:
+      ingredient:
+        item: minerals_pack:malachite
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:malachite_ingot
+        amount: 1
+    malachite_2:
+      ingredient:
+        item: minerals_pack:malachite
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:malachite_ingot
+        amount: 1
+    amethyst:
+      ingredient:
+        item: minerals_pack:amethyst
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:amethyst_nugget
+        amount: 1
+    amethyst_2:
+      ingredient:
+        item: minerals_pack:amethyst
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:amethyst_nugget
+        amount: 1
+    amber:
+      ingredient:
+        item: minerals_pack:amber
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:amber_ingot
+        amount: 1
+    amber_2:
+      ingredient:
+        item: minerals_pack:amber
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:amber_ingot
+        amount: 1
+    ruby:
+      ingredient:
+        item: minerals_pack:ruby
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:ruby_ingot
+        amount: 1
+    ruby_2:
+      ingredient:
+        item: minerals_pack:ruby
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:ruby_ingot
+        amount: 1
+    jade:
+      ingredient:
+        item: minerals_pack:raw_jade
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:jade_ingot
+        amount: 1
+    jade_2:
+      ingredient:
+        item: minerals_pack:raw_jade
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:jade_ingot
+        amount: 1
+    silver:
+      ingredient:
+        item: minerals_pack:silver
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:silver_nugget
+        amount: 1
+    silver_2:
+      ingredient:
+        item: minerals_pack:silver
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:silver_nugget
+        amount: 1
+    iridium:
+      ingredient:
+        item: minerals_pack:raw_iridium
+      machines:
+      - FURNACE
+      exp: 1
+      cook_time: 200
+      result:
+        item: minerals_pack:iridium_ingot
+        amount: 1
+    iridium_2:
+      ingredient:
+        item: minerals_pack:raw_iridium
+      machines:
+      - BLAST_FURNACE
+      exp: 1
+      cook_time: 100
+      result:
+        item: minerals_pack:iridium_ingot
+        amount: 1
+items:
+  mythril_ore:
+    display_name: "&f秘银矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - mythril_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        #- PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  mythril_ore_deepslate:
+    display_name: "&f深层秘银矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_mythril_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_mythril_block:
+    display_name: "&f原始秘银块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_mythril_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  mythril_block:
+    display_name: "&f秘银块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - mythril_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  malachite_ore:
+    display_name: "&f孔雀石矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - malachite_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  malachite_ore_deepslate:
+    display_name: "&f深层孔雀石矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_malachite_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_malachite_block:
+    display_name: "&f原始孔雀石块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_malachite_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  malachite_block:
+    display_name: "&f孔雀石块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - malachite_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  amethyst_ore:
+    display_name: "&f紫水晶矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amethyst_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  amethyst_ore_deepslate:
+    display_name: "&f深层紫水晶矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_amethyst_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_amethyst_block:
+    display_name: "&f原始紫水晶块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_amethyst_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  amethyst_block:
+    display_name: "&f紫水晶块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amethyst_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  amber_ore:
+    display_name: "&f琥珀矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amber_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  amber_ore_deepslate:
+    display_name: "&f深层琥珀矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_amber_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_amber_block:
+    display_name: "&f原始琥珀块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_amber_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  amber_block:
+    display_name: "&f琥珀块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amber_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  ruby_ore:
+    display_name: "&f红宝石矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ruby_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  ruby_ore_deepslate:
+    display_name: "&f深层红宝石矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_ruby_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_ruby_block:
+    display_name: "&f原始红宝石块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_ruby_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  ruby_block:
+    display_name: "&f红宝石块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ruby_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  jade_ore:
+    display_name: "&f玉矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jade_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  jade_ore_deepslate:
+    display_name: "&f深层玉矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_jade_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_jade_block:
+    display_name: "&f原始玉块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_jade_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  jade_block:
+    display_name: "&f玉块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jade_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  silver_ore:
+    display_name: "&f银矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  silver_ore_deepslate:
+    display_name: "&f深层银矿石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_silver_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_silver_block:
+    display_name: "&f原始银块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_silver_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  silver_block:
+    display_name: "&f银块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  iridium_ore:
+    display_name: "&f铱矿"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - iridium_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  iridium_ore_deepslate:
+    display_name: "&f深层铱矿"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - deepslate_iridium_ore.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  raw_iridium_block:
+    display_name: "&f原始铱块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_iridium_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  iridium_block:
+    display_name: "&f铱块"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - iridium_block.png
+    specific_properties:
+      block:
+        placed_model:
+          type: REAL_NOTE
+          break_particles: ITEM
+        cancel_drop: true
+        break_tools_whitelist:
+        - PICKAXE
+        - amethyst_pickaxe
+        - iridium_pickaxe
+        - amber_pickaxe
+        - malachite_pickaxe
+        - ruby_pickaxe
+        - jade_pickaxe
+        - silver_pickaxe
+        - mythril_pickaxe
+        hardness: 20
+  mythril_nugget:
+    display_name: "&f秘银粉"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - mythril_nugget.png
+      model_id: 1500
+  raw_mythril:
+    display_name: "&f粗制秘银"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_mythril.png
+      model_id: 1501
+  mythril_ingot:
+    display_name: "&f秘银锭"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - mythril_ingot.png
+      model_id: 1502
+  malachite_nugget:
+    display_name: "&f孔雀碎石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - malachite_nugget.png
+      model_id: 1503
+  malachite:
+    display_name: "&f粗制孔雀石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - malachite.png
+      model_id: 1504
+  malachite_ingot:
+    display_name: "&f孔雀石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - malachite_ingot.png
+      model_id: 1505
+  amethyst_nugget:
+    display_name: "&f紫水晶碎片"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amethyst_nugget.png
+      model_id: 1506
+  amethyst:
+    display_name: "&f粗制紫水晶"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amethyst.png
+      model_id: 1507
+  amethyst_ingot:
+    display_name: "&f紫水晶锭"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amethyst_ingot.png
+      model_id: 1508
+  amber_nugget:
+    display_name: "&f琥珀粉"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amber_nugget.png
+      model_id: 1509
+  amber:
+    display_name: "&f琥珀"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amber_shard.png
+      model_id: 1510
+  amber_ingot:
+    display_name: "&f琥珀锭"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - amber_ingot.png
+      model_id: 1511
+  ruby_nugget:
+    display_name: "&f红碎石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ruby_nugget.png
+      model_id: 1512
+  ruby:
+    display_name: "&f红宝石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ruby.png
+      model_id: 1513
+  ruby_ingot:
+    display_name: "&f红宝石锭"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - ruby_ingot.png
+      model_id: 1514
+  jade_nugget:
+    display_name: "&f碎玉"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jade_nugget.png
+      model_id: 1515
+  raw_jade:
+    display_name: "&f玉石"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - raw_jade.png
+      model_id: 1516
+  jade_ingot:
+    display_name: "&f玉锭"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - jade_ingot.png
+      model_id: 1517
+  silver_nugget:
+    display_name: "&f碎银"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver_nugget.png
+      model_id: 1518
+  silver:
+    display_name: "&f粗银"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver.png
+      model_id: 1519
+  silver_ingot:
+    display_name: "&f银锭"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - silver_ingot.png
+      model_id: 1520
+  iridium_nugget:
+    display_name: "&f碎铱"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - iridium_nugget.png
+      model_id: 1521
+  raw_iridium:
+    display_name: "&f铱"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - iridium.png
+      model_id: 1522
+  iridium_ingot:
+    display_name: "&f铱锭"
+    resource:
+      material: PAPER
+      generate: true
+      textures:
+        - iridium_ingot.png
+      model_id: 1523
+
+
+loots:
+  blocks:
+    mythril_ore:
+      type: minerals_pack:mythril_ore
+      items:
+        raw_mythril:
+          item: minerals_pack:raw_mythril
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    mythril_ore_deepslate:
+      type: minerals_pack:mythril_ore_deepslate
+      items:
+        raw_mythril:
+          item: minerals_pack:raw_mythril
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_mythril_block:
+      type: minerals_pack:raw_mythril_block
+      items:
+        raw_mythril_block:
+          item: minerals_pack:raw_mythril_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    mythril_block:
+      type: minerals_pack:mythril_block
+      items:
+        mythril_blck:
+          item: minerals_pack:mythril_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    malachite_ore:
+      type: minerals_pack:malachite_ore
+      items:
+        malachite:
+          item: minerals_pack:malachite
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    malachite_ore_deepslate:
+      type: minerals_pack:malachite_ore_deepslate
+      items:
+        malachite:
+          item: minerals_pack:malachite
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_malachite_block:
+      type: minerals_pack:raw_malachite_block
+      items:
+        raw_malchite_block:
+          item: minerals_pack:raw_malachite_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    malachite_block:
+      type: minerals_pack:malachite_block
+      items:
+        malachite_block:
+          item: minerals_pack:malachite_block
+          min_amount: 1
+          max_amount: 2
+          chance: 100
+          ignore_fortune: true
+    amethyst_ore:
+      type: minerals_pack:amethyst_ore
+      items:
+        raw_pink_ore:
+          item: minerals_pack:amethyst
+          min_amount: 1
+          max_amount: 2
+          chance: 100
+    amethyst_ore_deepslate:
+      type: minerals_pack:amethyst_ore_deepslate
+      items:
+        amethyst:
+          item: minerals_pack:amethyst
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_amethyst_block:
+      type: minerals_pack:raw_amethyst_block
+      items:
+        raw_amethyst_block:
+          item: minerals_pack:raw_amethyst_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    amethyst_block:
+      type: minerals_pack:amethyst_block
+      items:
+        amethyst_block:
+          item: minerals_pack:amethyst_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    amber_ore:
+      type: minerals_pack:amber_ore
+      items:
+        amber_shard:
+          item: minerals_pack:amber
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    amber_ore_deepslate:
+      type: minerals_pack:amber_ore_deepslate
+      items:
+        amber_shard:
+          item: minerals_pack:amber
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_amber_block:
+      type: minerals_pack:raw_amber_block
+      items:
+        raw_amber_block:
+          item: minerals_pack:raw_amber_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    amber_block:
+      type: minerals_pack:amber_block
+      items:
+        amber_block:
+          item: minerals_pack:amber_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    ruby_ore:
+      type: minerals_pack:ruby_ore
+      items:
+        ruby:
+          item: minerals_pack:ruby
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    ruby_ore_deepslate:
+      type: minerals_pack:ruby_ore_deepslate
+      items:
+        ruby:
+          item: minerals_pack:ruby
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_ruby_block:
+      type: minerals_pack:raw_ruby_block
+      items:
+        raw_ruby_block:
+          item: minerals_pack:raw_ruby_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    ruby_block:
+      type: minerals_pack:ruby_block
+      items:
+        ruby_block:
+          item: minerals_pack:ruby_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    jade_ore:
+      type: minerals_pack:jade_ore
+      items:
+        raw_jade:
+          item: minerals_pack:raw_jade
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    jade_ore_deepslate:
+      type: minerals_pack:jade_ore_deepslate
+      items:
+        raw_jade:
+          item: minerals_pack:raw_jade
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_jade_block:
+      type: minerals_pack:raw_jade_block
+      items:
+        raw_ruby_block:
+          item: minerals_pack:raw_jade_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    jade_block:
+      type: minerals_pack:jade_block
+      items:
+        jade_block:
+          item: minerals_pack:jade_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    silver_ore:
+      type: minerals_pack:silver_ore
+      items:
+        silver:
+          item: minerals_pack:silver
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    silver_ore_deepslate:
+      type: minerals_pack:silver_ore_deepslate
+      items:
+        silver:
+          item: minerals_pack:silver
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_silver_block:
+      type: minerals_pack:raw_silver_block
+      items:
+        raw_silver_block:
+          item: minerals_pack:raw_silver_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    silver_block:
+      type: minerals_pack:silver_block
+      items:
+        silver_block:
+          item: minerals_pack:silver_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    iridium_ore:
+      type: minerals_pack:iridium_ore
+      items:
+        iridium:
+          item: minerals_pack:raw_iridium
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    iridium_ore_deepslate:
+      type: minerals_pack:iridium_ore_deepslate
+      items:
+        iridium:
+          item: minerals_pack:raw_iridium
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+    raw_iridium_block:
+      type: minerals_pack:raw_iridium_block
+      items:
+        raw_iridium_block:
+          item: minerals_pack:raw_iridium_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true
+    iridium_block:
+      type: minerals_pack:iridium_block
+      items:
+        iridium_block:
+          item: minerals_pack:iridium_block
+          min_amount: 1
+          max_amount: 1
+          chance: 100
+          ignore_fortune: true

@@ -1,0 +1,26 @@
+info:
+  namespace: nogs_menagerie
+items:
+  nm_pack_nascent_nature:
+    display_name: '&e新生的Nature&f增强包'
+    lore:
+    - ' '
+    - '&7Contains &f&l4 &r&7Trading Cards!'
+    - ' '
+    - '&83x &fCommon &7(50% Chance of &81x &bRare&7)'
+    - '&81x &bRare &7(5.2% Chance of &81x &dUltra-Rare&7)'
+    resource:
+      material: PAPER
+      model_id: 633000
+      generate: false
+      model_path: cards/packs/nm_pack_nascent_nature
+    events:
+      interact.right:
+          execute_commands:
+            grantperm:
+              command: 'mm m spawn -p {player} nm_pack_sudo_nascent_nature'
+              as_console: true
+              delay: 0
+          decrement_amount:
+            amount: 1
+            delay: 0

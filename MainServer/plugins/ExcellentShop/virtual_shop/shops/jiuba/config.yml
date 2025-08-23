@@ -1,0 +1,16 @@
+Name: 酒厅用具
+Description: []
+Icon:
+  Material: minecraft:player_head
+  Lore: []
+  SkinURL: 34ccb52750e97e830aebfa8a21d5da0d364d0fdad9fb0cc220fe2ca8411842c3
+Pages: 1
+Permission_Required: false
+Transaction_Allowed:
+  BUY: true
+  SELL: true
+MainMenu:
+  Slot: -1
+Aliases: []
+Layout:
+  Name: default

@@ -1,0 +1,22 @@
+Economy:
+  Enabled: false
+  # # 是否启用传送收费？
+  Enable: true
+  # # 传送价格 设置为 "0" 即代表免费
+  # # 拥有权限 "betterrtp.bypass.economy" 的玩家可免去费用
+  Price: 50
+
+Hunger: # 随机传送花费饥饿值？
+  Enabled: true
+  Honches: 5
+
+CustomWorlds:
+  Prices:
+  - world_end: 0
+  # # 特殊世界特殊传送费用
+  Enabled: true
+  Worlds:
+    # # 当玩家在world世界里使用/rtp时将支付5金币 有权限 "betterrtp.bypass.economy" 的玩家免费
+    # # 设置为 "0" 代表免费
+    world: 50
+    world_end: 0

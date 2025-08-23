@@ -1,0 +1,15 @@
+goblinDrops_1:
+  Conditions:
+  - biome{b=minecraft:plains} true
+  Drops:
+  - money 20-40 30%
+goblinDrops_2:
+  Conditions:
+  - biome{b=minecraft:plains} true
+  Drops:
+  - money 50-100 40%
+goblinDrops_3:
+  Conditions:
+  - biome{b=minecraft:plains} true
+  Drops:
+  - money 100-300 50%

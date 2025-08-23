@@ -1,0 +1,396 @@
+info:
+  namespace: food_pack_v1
+categories:
+  food_pack_v1:
+    enabled: true
+    icon: food_pack_v1:food_1
+    name: Furniture Subpack – Food Decorations
+    permission: permission.food_pack_v1
+    items:
+    - food_pack_v1:food_1
+    - food_pack_v1:food_2
+    - food_pack_v1:food_3
+    - food_pack_v1:food_4
+    - food_pack_v1:food_5
+    - food_pack_v1:food_6
+    - food_pack_v1:food_7
+    - food_pack_v1:food_8
+    - food_pack_v1:food_9
+    - food_pack_v1:food_10
+    - food_pack_v1:food_11
+    - food_pack_v1:food_12
+    - food_pack_v1:food_13
+    - food_pack_v1:food_14
+    - food_pack_v1:food_15
+    - food_pack_v1:food_16
+    - food_pack_v1:food_17
+    - food_pack_v1:food_18
+items:
+  food_1:
+    display_name: '食物模型1'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_1
+      model_id: 5000
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_2:
+    display_name: '食物模型2'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_2
+      model_id: 5001
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_3:
+    display_name: '食物模型3'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_3
+      model_id: 5002
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_4:
+    display_name: '食物模型4'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_4
+      model_id: 5003
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_5:
+    display_name: '食物模型5'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_5
+      model_id: 5004
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_6:
+    display_name: '食物模型6'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_6
+      model_id: 5005
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_7:
+    display_name: '食物模型7'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_7
+      model_id: 5006
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_8:
+    display_name: '食物模型8'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_8
+      model_id: 5007
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_9:
+    display_name: '食物模型9'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_9
+      model_id: 5008
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_10:
+    display_name: '食物模型10'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_10
+      model_id: 5009
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_11:
+    display_name: '食物模型11'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_11
+      model_id: 5010
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_12:
+    display_name: '食物模型12'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_12
+      model_id: 5011
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_13:
+    display_name: '食物模型13'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_13
+      model_id: 5012
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_14:
+    display_name: '食物模型14'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_14
+      model_id: 5013
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_15:
+    display_name: '食物模型15'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_15
+      model_id: 5014
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_16:
+    display_name: '食物模型16'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_16
+      model_id: 5015
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_17:
+    display_name: '食物模型17'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_17
+      model_id: 5016
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+  food_18:
+    display_name: '食物模型18'
+    resource:
+      material: PAPER
+      generate: false
+      model_path: food_18
+      model_id: 5017
+    behaviours:
+      furniture:
+        fixed_rotation: false
+        small: false
+        solid: false
+        hitbox:
+          length: 1
+          width: 1
+          height: 1
+        placeable_on:
+          floor: true
+          ceiling: false
+          walls: false
+
+
+
+
+
+
+# Downloaded from https://nullforums.net/resources/magic-store-furniture-subpack-food-decorations.5282/
+# 45721Q97RMUESXFHFYJGKTLY32ZVCUJN09ZKH658EVBLY9

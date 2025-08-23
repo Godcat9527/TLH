@@ -1,0 +1,15 @@
+# 禁止倒卖 汉化作者 INSide_734
+# QQ: 3217962725
+
+TOOLTIP_GOLD_SWORD:
+  base:
+    material: GOLDEN_SWORD
+    name: Gold Shortsword
+    attack-damage: 10.0
+    attack-speed: 1.6
+    tooltip: GOLD
+    element:
+      fire:
+        damage: 3.0
+    required-class:
+      - Warrior

@@ -1,0 +1,715 @@
+info:
+  namespace: infinityexpansion
+items:
+  adamantite:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: BRICK
+      generate: false
+      model_id: 2200601
+      model_path: "materials/adamantite"
+  earth_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHER_STAR
+      generate: false
+      model_id: 2200602
+      model_path: "singularities/earth_singularity"
+  end_essence:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: BLAZE_POWDER
+      generate: false
+      model_id: 2200603
+      model_path: "materials/end_essence"
+  ender_flame:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: ENCHANTED_BOOK
+      generate: false
+      model_id: 2200604
+      model_path: "materials/ender_flame"
+  fortune_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHER_STAR
+      generate: false
+      model_id: 2200605
+      model_path: "singularities/fortune_singularity"
+  infinite_ingot:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_INGOT
+      generate: false
+      model_id: 2200606
+      model_path: "materials/infinite_ingot"
+  infinity_matrix:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHER_STAR
+      generate: false
+      model_id: 2200607
+      model_path: "materials/infinity_matrix"
+  machine_circuit:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: GOLD_INGOT
+      generate: false
+      model_id: 2200608
+      model_path: "materials/machine_circuit"
+  machine_plate:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: PAPER
+      generate: false
+      model_id: 2200609
+      model_path: "materials/machine_plate"
+  magic_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHER_STAR
+      generate: false
+      model_id: 2200610
+      model_path: "singularities/magic_singularity"
+  magnonium:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHER_BRICK
+      generate: false
+      model_id: 2200611
+      model_path: "materials/magnonium"
+  magsteel:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: BRICK
+      generate: false
+      model_id: 2200612
+      model_path: "materials/magsteel"
+  magsteel_plate:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_SCRAP
+      generate: false
+      model_id: 2200613
+      model_path: "materials/magsteel_plate"
+  metal_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHER_STAR
+      generate: false
+      model_id: 2200614
+      model_path: "singularities/metal_singularity"
+  mythril:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_INGOT
+      generate: false
+      model_id: 2200615
+      model_path: "materials/mythril"
+  titanium:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_INGOT
+      generate: false
+      model_id: 2200616
+      model_path: "materials/titanium"
+  void_bit:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_NUGGET
+      generate: false
+      model_id: 2200617
+      model_path: "materials/void_bit"
+  void_dust:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: GUNPOWDER
+      generate: false
+      model_id: 2200618
+      model_path: "materials/void_dust"
+  void_ingot:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_INGOT
+      generate: false
+      model_id: 2200619
+      model_path: "materials/void_ingot"
+  aluminum_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_BLOCK
+      generate: false
+      model_id: 2200620
+      model_path: "singularities/aluminum_singularity"
+  coal_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: COAL_BLOCK
+      generate: false
+      model_id: 2200621
+      model_path: "singularities/coal_singularity"
+  copper_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: BRICKS
+      generate: false
+      model_id: 2200622
+      model_path: "singularities/copper_singularity"
+  diamond_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_BLOCK
+      generate: false
+      model_id: 2200623
+      model_path: "singularities/diamond_singularity"
+  compressed_cobblestone_2:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: ANDESITE
+      generate: false
+      model_id: 2200624
+      model_path: "materials/compressed_cobblestone_2"
+  emerald_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: EMERALD_BLOCK
+      generate: false
+      model_id: 2200625
+      model_path: "singularities/emerald_singularity"
+  gold_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: GOLD_BLOCK
+      generate: false
+      model_id: 2200626
+      model_path: "singularities/gold_singularity"
+  infinity_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: SMOOTH_QUARTZ
+      generate: false
+      model_id: 2200627
+      model_path: "singularities/infinity_singularity"
+  iron_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_BLOCK
+      generate: false
+      model_id: 2200628
+      model_path: "singularities/iron_singularity"
+  lapis_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: LAPIS_BLOCK
+      generate: false
+      model_id: 2200629
+      model_path: "singularities/lapis_singularity"
+  lead_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_BLOCK
+      generate: false
+      model_id: 2200630
+      model_path: "singularities/lead_singularity"
+  machine_core:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_BLOCK
+      generate: false
+      model_id: 2200631
+      model_path: "materials/machine_core"
+  magnesium_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHER_BRICKS
+      generate: false
+      model_id: 2200632
+      model_path: "singularities/magnesium_singularity"
+  netherite_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_BLOCK
+      generate: false
+      model_id: 2200633
+      model_path: "singularities/netherite_singularity"
+  compressed_cobblestone_4:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: STONE
+      generate: false
+      model_id: 2200634
+      model_path: "materials/compressed_cobblestone_4"
+  quartz_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: QUARTZ_BLOCK
+      generate: false
+      model_id: 2200635
+      model_path: "singularities/quartz_singularity"
+  compressed_cobblestone_5:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: POLISHED_ANDESITE
+      generate: false
+      model_id: 2200636
+      model_path: "materials/compressed_cobblestone_5"
+  redstone_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: REDSTONE_BLOCK
+      generate: false
+      model_id: 2200637
+      model_path: "singularities/redstone_singularity"
+  silver_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_BLOCK
+      generate: false
+      model_id: 2200638
+      model_path: "singularities/silver_singularity"
+  compressed_cobblestone_1:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: ANDESITE
+      generate: false
+      model_id: 2200639
+      model_path: "materials/compressed_cobblestone_1"
+  tin_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_BLOCK
+      generate: false
+      model_id: 2200640
+      model_path: "singularities/tin_singularity"
+  compressed_cobblestone_3:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: STONE
+      generate: false
+      model_id: 2200641
+      model_path: "materials/compressed_cobblestone_3"
+  zinc_singularity:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_BLOCK
+      generate: false
+      model_id: 2200642
+      model_path: "singularities/zinc_singularity"
+  infinity_blade:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_id: 2200643
+      model_path: "tools/infinity_blade"
+  infinity_bow:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: BOW
+      generate: false
+      model_id: 2200644
+      model_path: "tools/sky_piercer/sky_piercer"
+  infinity_crown:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_HELMET
+      generate: false
+      model_id: 2200645
+      model_path: "armor/infinity_crown"
+  infinity_chestplate:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_CHESTPLATE
+      generate: false
+      model_id: 2200646
+      model_path: "armor/infinity_chestplate"
+  infinity_leggings:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_LEGGINGS
+      generate: false
+      model_id: 2200647
+      model_path: "armor/infinity_leggings"
+  infinity_boots:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_BOOTS
+      generate: false
+      model_id: 2200648
+      model_path: "armor/infinity_boots"
+  infinity_pickaxe:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_PICKAXE
+      generate: false
+      model_id: 2200649
+      model_path: "tools/world_breaker"
+  infinity_axe:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_AXE
+      generate: false
+      model_id: 2200650
+      model_path: "tools/nature_ruin"
+  infinity_shovel:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_SHOVEL
+      generate: false
+      model_id: 2200651
+      model_path: "tools/mountain_eater"
+  infinity_capacitor:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 2200652
+      model_path: "machines/infinity_capacitor"
+  empty_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: CHAINMAIL_CHESTPLATE
+      generate: false
+      model_id: 2200653
+      model_path: "mob_simulation/empty_data_card"
+  zombie_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200654
+      model_path: "mob_simulation/zombie_data_card"
+  slime_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_CHESTPLATE
+      generate: false
+      model_id: 2200655
+      model_path: "mob_simulation/slime_data_card"
+  magma_cube_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_CHESTPLATE
+      generate: false
+      model_id: 2200656
+      model_path: "mob_simulation/magma_cube_data_card"
+  cow_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_CHESTPLATE
+      generate: false
+      model_id: 2200657
+      model_path: "mob_simulation/cow_data_card"
+  sheep_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_CHESTPLATE
+      generate: false
+      model_id: 2200658
+      model_path: "mob_simulation/sheep_data_card"
+  spider_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200659
+      model_path: "mob_simulation/spider_data_card"
+  skeleton_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200660
+      model_path: "mob_simulation/skeleton_data_card"
+  wither_skeleton_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200661
+      model_path: "mob_simulation/wither_skeleton_data_card"
+  endermen_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200662
+      model_path: "mob_simulation/endermen_data_card"
+  creeper_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200663
+      model_path: "mob_simulation/creeper_data_card"
+  guardian_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200664
+      model_path: "mob_simulation/guardian_data_card"
+  chicken_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_CHESTPLATE
+      generate: false
+      model_id: 2200665
+      model_path: "mob_simulation/chicken_data_card"
+  iron_golem_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200666
+      model_path: "mob_simulation/iron_golem_data_card"
+  blaze_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200667
+      model_path: "mob_simulation/blaze_data_card"
+  wither_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_CHESTPLATE
+      generate: false
+      model_id: 2200668
+      model_path: "mob_simulation/wither_data_card"
+  ender_dragon_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: NETHERITE_CHESTPLATE
+      generate: false
+      model_id: 2200669
+      model_path: "mob_simulation/ender_dragon_data_card"
+  bee_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_CHESTPLATE
+      generate: false
+      model_id: 2200670
+      model_path: "mob_simulation/bee_data_card"
+  villager_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: IRON_CHESTPLATE
+      generate: false
+      model_id: 2200671
+      model_path: "mob_simulation/villager_data_card"
+  witch_data_card:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_CHESTPLATE
+      generate: false
+      model_id: 2200672
+      model_path: "mob_simulation/witch_data_card"
+  quarry_oscillator_redstone:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: REDSTONE
+      generate: false
+      model_id: 2200673
+      model_path: "materials/quarry_oscillator_redstone"
+  quarry_oscillator_lapis_lazuli:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: LAPIS_LAZULI
+      generate: false
+      model_id: 2200674
+      model_path: "materials/quarry_oscillator_lapis_lazuli"
+  quarry_oscillator_emerald:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: EMERALD
+      generate: false
+      model_id: 2200675
+      model_path: "materials/quarry_oscillator_emerald"
+  quarry_oscillator_diamond:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND
+      generate: false
+      model_id: 2200676
+      model_path: "materials/quarry_oscillator_diamond"
+  quarry_oscillator_quartz:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: QUARTZ
+      generate: false
+      model_id: 2200677
+      model_path: "materials/quarry_oscillator_quartz"
+  vein_miner_rune:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND
+      generate: false
+      model_id: 2200678
+      model_path: "materials/vein_miner_rune"
+  infinity_forge:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: RESPAWN_ANCHOR
+      generate: false
+      model_id: 2200679
+      model_path: "machines/infinity_workbench"
+  infinite_machine_circuit:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND
+      generate: false
+      model_id: 2200680
+      model_path: "materials/infinite_machine_circuit"
+  infinite_machine_core:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: DIAMOND_BLOCK
+      generate: false
+      model_id: 2200681
+      model_path: "materials/infinite_machine_core"
+  void_capacitor:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 2200682
+      model_path: "machines/void_capacitor"
+  advanced_enchanter:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: ENCHANTING_TABLE
+      generate: false
+      model_id: 2200683
+      model_path: "machines/advanced_enchanter"
+  advanced_disenchanter:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: ENCHANTING_TABLE
+      generate: false
+      model_id: 2200684
+      model_path: "machines/advanced_disenchanter"
+  advanced_geo_miner:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 2200685
+      model_path: "machines/advanced_geo_miner"
+  advanced_nether_star_reactor:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: PLAYER_HEAD
+      generate: false
+      model_id: 2200686
+      model_path: "machines/advanced_nether_star_reactor"
+  infinity_enchanter:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: ENCHANTING_TABLE
+      generate: false
+      model_id: 2200687
+      model_path: "machines/infinity_enchanter"
+  infinity_disenchanter:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: ENCHANTING_TABLE
+      generate: false
+      model_id: 2200688
+      model_path: "machines/infinity_disenchanter"
+  infinity_shield:
+    display_name: infinityexpansion
+    permission: infinityexpansion
+    resource:
+      material: SHIELD
+      generate: false
+      model_id: 2200689
+      model_path: "tools/cosmic_aegis/cosmic_aegis"
